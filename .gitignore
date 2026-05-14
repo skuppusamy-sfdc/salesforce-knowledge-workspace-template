@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local config (must be copied from .example)
+workspace.config.yaml
+
+# Customer data — NEVER commit actual project data to this template repo
+knowledge/sprints/*.html
+knowledge/sprints/**/*.html
+knowledge/traceability/*.csv
+knowledge/traceability/*.xlsx
+knowledge/metadata/**/*.xml
+knowledge/metadata/**/*.cls
+knowledge/metadata/**/*.trigger
+knowledge/metadata/**/*.js
+knowledge/metadata/**/*.html
+knowledge/metadata/**/*.css
+knowledge/metadata/**/force-app/
+
+# Generated per-story markdown files (rebuild via split-sprint-stories.py)
+knowledge/sprints/*/stories/
+
+# Generated indexes (rebuild from scripts/)
+knowledge/AC-INDEX.md
+knowledge/SOLUTION-INDEX.md
+knowledge/COMPONENT-TO-STORY-MAP.md
+knowledge/FEATURE-TO-STORY-MAP.md
+knowledge/DEPENDENCY-GRAPH.md
+knowledge/TRACEABILITY-INDEX.md
+knowledge/sprints/MASTER-STORY-INDEX.md
+knowledge/sprints/SPRINT-INDEX.md
+knowledge/metadata/COMPONENT-CATALOG.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local agent artifacts
+.cursor-cache/
+agent-tools/
