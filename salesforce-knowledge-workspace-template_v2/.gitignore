@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local config (must be copied from .example)
+workspace.config.yaml
+
+# Project data — excluded from version control
+knowledge/sprints/*.html
+knowledge/sprints/**/*.html
+knowledge/traceability/*.csv
+knowledge/traceability/*.xlsx
+
+# Salesforce metadata repo clone.
+# Do NOT add blanket extension rules (*.cls, *.xml, *.trigger, *.js, force-app/).
+# Cursor's Glob tool respects .gitignore — those patterns make metadata invisible
+# to the agent even though Grep and Shell can still see the files.
+
+# Generated per-story markdown files (rebuild via split-sprint-stories.py)
+knowledge/sprints/*/stories/
+
+# Generated indexes (rebuild from scripts/)
+knowledge/AC-INDEX.md
+knowledge/SOLUTION-INDEX.md
+knowledge/COMPONENT-TO-STORY-MAP.md
+knowledge/FEATURE-TO-STORY-MAP.md
+knowledge/DEPENDENCY-GRAPH.md
+knowledge/TRACEABILITY-INDEX.md
+knowledge/sprints/MASTER-STORY-INDEX.md
+knowledge/sprints/SPRINT-INDEX.md
+knowledge/metadata/COMPONENT-CATALOG.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local agent artifacts
+.cursor-cache/
+agent-tools/

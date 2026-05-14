@@ -1,0 +1,76 @@
+---
+description: JIRA story sources must be HTML exports. Strikethrough / deleted / superseded rich-text content is non-authoritative and must be ignored when extracting AC, Solution, and other fields.
+alwaysApply: true
+---
+
+# JIRA HTML Parsing Rules
+
+## Required Source Format: HTML
+
+Sprint exports under `/knowledge/sprints/Sprint N/` **must be JIRA HTML exports** — not CSV, not plain text, not screenshots.
+
+**Why HTML, not CSV:**
+
+- HTML preserves rich-text markup (strikethrough, bold, lists, tables, links).
+- CSV / plain-text exports flatten everything to one stream — **struck-through deprecated content becomes indistinguishable from live authoritative content.**
+- Stories often have AC bullets or Solution paragraphs that have been **struck through** to indicate "no longer in scope" or "superseded by AC-N". Without HTML markup, those are invisible.
+
+If a teammate hands you a CSV or pasted-text export, **ask for the HTML re-export** before analyzing. Do not infer or guess what was struck through.
+
+### How to export from JIRA
+
+In JIRA: **Issues → Filter or JQL search → Export → HTML (Current fields)** or **HTML (All fields)**. Save under `/knowledge/sprints/Sprint N/`.
+
+## Strikethrough = Non-Authoritative
+
+When extracting `Acceptance Criteria`, `Solution`, `Description`, or any other field from sprint HTML, treat the following as **non-authoritative and excluded from analysis**:
+
+- `<s>...</s>` (HTML5 strikethrough — semantic "no longer accurate")
+- `<strike>...</strike>` (legacy strikethrough)
+- `<del>...</del>` (deletion marker)
+- Any inline style with `text-decoration: line-through` (JIRA's rich-text editor often emits this)
+
+**Treat struck-through content as if it were not in the field.** Do not:
+
+- Quote it as part of the AC or Solution
+- Include it in a count of AC criteria
+- Use it to infer the design or current state
+- Surface it as "what was originally planned" (that's intent-archaeology, out of scope)
+
+If, after stripping struck-through content, a field becomes empty or trivial, treat the field as **missing** and call that out (per the existing skill workflows).
+
+## Other Rich-Text Signals to Respect
+
+| Markup | Meaning | How to handle |
+|---|---|---|
+| `<s>`, `<strike>`, `<del>`, `text-decoration: line-through` | Withdrawn / superseded | **Exclude** |
+| `<strong>`, `<b>`, `<em>`, `<i>` | Emphasis | Preserve emphasis when quoting; treat as authoritative content |
+| `<ul><li>`, `<ol><li>` | List structure (often the AC enumeration) | Preserve as list items; each `<li>` is typically one AC |
+| `<a href="...">` | Cross-references to other stories or external docs | Preserve the link target; cite when relevant |
+| `<table>` | Structured data inside Solution (data model, mapping tables) | Preserve table structure when quoting |
+| Color highlights, background colors | Often used for "in review" / "TBD" markers — varies by team | Quote the text; note the highlight if it might signal a status |
+
+## Quoting AC and Solution
+
+When quoting AC or Solution text in your output:
+
+1. Strip strikethrough content first
+2. Preserve list structure (each `<li>` becomes a numbered or bulleted line)
+3. Preserve emphasis (`**bold**`, `*italic*`) so the reader sees what JIRA highlighted
+4. If a field has been heavily edited (lots of strikethroughs), say so briefly: *"AC-2 had previous criteria struck through; the live criteria are listed below."*
+
+## Edge Cases
+
+- **Whole AC bullet struck through**: skip the entire bullet; renumber the live ones as needed and note the count change.
+- **Mid-sentence strikethrough**: skip the struck-through span; the surrounding live text remains authoritative.
+- **Strikethrough inside a code block / `<pre>` / `<table>`**: still treat as non-authoritative — same rule.
+- **A whole field is struck through**: treat the field as missing; trigger the "Missing Solution" branch of the relevant skill workflow.
+
+## Script Behavior
+
+`scripts/split-sprint-stories.py` generates per-story markdown files under `Sprint N/stories/STORY-ID.md` — these are the **preferred source** for single-story lookups. `scripts/parse-sprint-html.py` and the index-building scripts generate aggregate indexes. Both should ideally strip strikethrough markup when generating output. If they currently do not, the AI must still apply this rule when reading the raw HTML directly — and you may flag the script as a candidate for enhancement.
+
+## Out of Scope
+
+- This rule does **not** authorize generating code, even to "clean" the HTML. The strict `plan-and-ask-only.mdc` rule still applies.
+- This rule does **not** override `metadata-is-source-of-truth.mdc` — deployed metadata still wins for current-state facts. Strikethrough handling only affects how JIRA *intent* is read.
