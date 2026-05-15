@@ -1,6 +1,6 @@
 ---
 name: ta-historic-context
-description: Help a Salesforce Technical Architect design, review, augment, or extend a technical solution for a JIRA story by mining historic context from prior sprints. Use when the user asks to design, review, refine, augment, or extend a technical solution for a JIRA story (e.g. "design solution for STORY-XXX", "review the technical solution for [Story-ID]", "what's the impact of [Story-ID]", "how should we approach [Story-ID]", "is there a prior pattern for this", "does [Story-ID] conflict with previous sprints"). The bot acts as institutional memory: it pulls the existing JIRA Solution and AC, surfaces prior stories that touched the same components, identifies reusable patterns, flags conflicts with prior work, and proposes additive augmentations rather than fresh greenfield designs. Plan & design only — never produces code, deployment scripts, or implementation artifacts.
+description: 'Help a Salesforce Technical Architect design, review, augment, or extend a technical solution for a JIRA story by mining historic context from prior sprints. Use when the user asks to design, review, refine, augment, or extend a technical solution for a JIRA story (e.g. "design solution for STORY-XXX", "review the technical solution for [Story-ID]", "what''s the impact of [Story-ID]", "how should we approach [Story-ID]", "is there a prior pattern for this", "does [Story-ID] conflict with previous sprints"). The bot acts as institutional memory — it pulls the existing JIRA Solution and AC, surfaces prior stories that touched the same components, identifies reusable patterns, flags conflicts with prior work, and proposes additive augmentations rather than fresh greenfield designs. Plan and design only — never produces code, deployment scripts, or implementation artifacts.'
 ---
 
 # Technical Architect — Historic Context Assistant
@@ -33,22 +33,27 @@ Always follow these steps in order. Do not skip Step 1 or Step 2.
 
 ### Step 1 — Read the JIRA Story First
 
-Use the token-efficient strategy from `_cursor/AGENTS.md`:
+Use the hybrid data access strategy from `_cursor/AGENTS.md`:
 
-1. Check `/knowledge/sprints/SPRINT-INDEX.md` to locate the story.
-2. **Read the per-story markdown file first**: `knowledge/sprints/Sprint N/stories/STORY-ID.md` — contains full AC, Solution, and Description in clean markdown.
-3. Fall back to `grep`-ing the sprint HTML only if the per-story file doesn't exist.
+1. **Try MCP first** (if Atlassian MCP is configured) — call `getJiraIssue` via the Atlassian MCP server with the story key. This returns the live, current AC, Solution, Description, comments, linked issues, and transitions in one call. If you have a `_cursor/rules/jira-mcp-custom-fields.mdc` rule, follow its call template for required custom fields.
+2. **If MCP is unavailable or fails**, fall back to the local per-story markdown file: `knowledge/sprints/Sprint N/stories/STORY-ID.md`. Locate it via `SPRINT-INDEX.md`.
+3. Fall back to `grep`-ing the sprint HTML only if neither MCP nor per-story file is available.
 
 Quote the existing `Solution` and `AC` text in your response so the TA sees the source of truth. Do not paraphrase prior architects' wording without surfacing the original.
 
-> **HTML parsing — strikethrough is non-authoritative.** Sprint exports must be JIRA HTML (not CSV / not pasted text). When extracting AC or Solution text, **ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through`** — that is deprecated/superseded content. See `_cursor/rules/jira-html-parsing.mdc`. If a CSV / plain-text export is provided instead of HTML, ask for an HTML re-export before proceeding.
+> **MCP returns live state; local files preserve point-in-time snapshots.** When comparing the current Solution against what was committed at sprint start (e.g., drift detection), use the local files for the historic snapshot and MCP for the current state.
+
+> **HTML parsing — strikethrough is non-authoritative.** When falling back to local HTML files, ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through` — that is deprecated/superseded content. See `_cursor/rules/jira-html-parsing.mdc`.
 
 ### Step 2 — Pull Historic Context
 
 Before proposing anything, gather:
 
 - **Deployed metadata for affected components**: read `/knowledge/metadata/` first — this is the **source of truth for current state** (see `_cursor/rules/metadata-is-source-of-truth.mdc`). When metadata and the JIRA `Solution` describe the same component differently, use the metadata and note the discrepancy in one sentence.
-- **Prior stories on the same components**: `grep -l "<Component>" knowledge/sprints/**/*.html`
+- **Prior stories on the same components** — use local files for cross-sprint search (MCP cannot free-text search AC/Solution bodies):
+  - `grep -rl "<Component>" knowledge/sprints/*/stories/` → prior sprints (per-story files preferred)
+  - Fall back to `grep -l "<Component>" knowledge/sprints/**/*.html` if per-story files are missing
+- **Optionally supplement with MCP** — use `getJiraIssue` to fetch linked issues, comments, or transitions for specific prior stories discovered via local grep, when the TA needs context beyond the local snapshot.
 - **Architectural decisions**: scan `/knowledge/architecture/` for relevant decisions
 - **Reusable patterns**: prior `Solution` content from earlier sprints touching the same area
 - **Traceability**: `/knowledge/traceability/` matrices for cross-sprint links
@@ -125,7 +130,7 @@ Use this when the JIRA Solution exists and needs validation, contextualization, 
 
 - ❌ **No source code in any artifact.** Pseudo-flow or short clearly-labeled pseudo-code only when essential.
 - ❌ **Do not propose a fresh design when an existing JIRA Solution covers the requirement** — augment instead.
-- ❌ **Do not skip Step 1.** Always read the JIRA `Solution` and `AC` first.
+- ❌ **Do not skip Step 1.** Always read the JIRA `Solution` and `AC` first (from MCP or local files).
 - ❌ **Do not ignore prior sprints.** Always pull historic context before proposing.
 - ❌ **Do not ask the user to switch to Agent / build mode.** Do not suggest, hint, or offer it.
 - ❌ **Do not ask "should I implement this?"** in any form.

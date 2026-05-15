@@ -28,7 +28,7 @@ Knowledge management and planning workspace for a Salesforce program. **Suppleme
 - **Story IDs bridge both** — the regex from `workspace.config.yaml > story_id.pattern` is the lingua franca
 
 ### What the AI Should Focus On
-- Analyzing requirements and acceptance criteria (from sprint HTML exports)
+- Analyzing requirements and acceptance criteria (via MCP for live data, local files for historic/bulk)
 - Drafting and reviewing technical solutions (design only)
 - Identifying cross-sprint conflicts and dependencies
 - Authoring architecture decision records (ADRs)
@@ -57,33 +57,69 @@ When sources conflict on **current-state facts** about a component:
 
 When metadata and JIRA Solution describe the same component differently, use the metadata as truth and note the discrepancy briefly in one sentence — no separate alert section, no blocking. See `rules/metadata-is-source-of-truth.mdc`.
 
+## Data Access Strategy (Hybrid: MCP + Local Files)
+
+This workspace supports **two complementary data sources** for JIRA story data. Each has a distinct role:
+
+| Source | Role | Best for |
+|--------|------|----------|
+| **Atlassian MCP** (if configured) | Live query interface | Single-story lookups, current field values, comments, transitions, issue links, stories not yet exported, structured JQL queries, creating/updating issues |
+| **Local files** (`knowledge/sprints/`) | Historic corpus & cross-sprint search engine | Bulk pattern search across sprints, cross-sprint conflict detection, point-in-time audit trail, combined metadata + story grep, offline access |
+
+### When to use MCP (live queries)
+
+- Fetching a **single story by ID** — MCP returns the current AC, Solution, Description, comments, transitions, and linked issues in one call. If you have a `rules/jira-mcp-custom-fields.mdc` rule, follow its call template for required custom fields.
+- Querying stories **not yet exported** to local files (new stories, mid-sprint additions).
+- Checking **comments and activity history** — local files don't capture these.
+- **Structured JQL queries** — filtering by status, priority, assignee, sprint, component, etc.
+- Getting **linked issues, epics, and sub-task relationships** — MCP returns these natively.
+
+### When to use local files (historic corpus)
+
+- **Bulk cross-sprint searches** — `grep -rl "<Component>" knowledge/sprints/*/stories/` to find all prior stories touching a component. MCP cannot free-text search across AC/Solution custom field bodies.
+- **Cross-sprint conflict detection** — comparing AC/Solution text across many sprints requires local grep, not paginated JQL.
+- **Point-in-time audit trail** — local HTML exports are frozen snapshots of sprint state at export time. JIRA fields get edited; local files preserve what was committed at sprint start.
+- **Combined metadata + story search** — both `knowledge/metadata/` and `knowledge/sprints/` live in the same filesystem, enabling cross-corpus grep.
+- **Repeated access to the same stories** — reading a 200-token local markdown file is cheaper than an API call per access.
+- **Offline / disconnected** — local files work without network connectivity.
+
+### Fallback behavior
+
+If MCP is unavailable (not configured, auth expired, network down, API error), fall back to local files silently. If local files are missing for a story, try MCP before reporting the story as not found.
+
+> **Setup note**: MCP is optional. Workspaces without an Atlassian MCP server configured will rely entirely on local files. When MCP is available, skills automatically use it for single-story lookups.
+
 ## Token-Efficient Response Strategy
 
 Follow this order to minimize token use:
 
-1. **Read Per-Story Markdown Files First (always)**
-   - For single-story lookups: `knowledge/sprints/Sprint N/stories/STORY-ID.md`
-   - Each file has full AC, Solution, Description in clean markdown (~200-500 tokens)
-   - Fall back to HTML only if per-story file doesn't exist
+1. **Single-story lookup → MCP first, local fallback**
+   - If Atlassian MCP is configured, use `getJiraIssue` to fetch the live story (AC, Solution, Description, comments, linked issues) in one call. If you have a `rules/jira-mcp-custom-fields.mdc` rule, follow its call template for required custom fields.
+   - If MCP is unavailable or fails, fall back to the local per-story markdown file: `knowledge/sprints/Sprint N/stories/STORY-ID.md` (~200-500 tokens).
+   - Fall back to HTML only if neither MCP nor per-story file is available.
 
 2. **Check Index Files for Cross-Story Lookups**
    - Read `/knowledge/sprints/SPRINT-INDEX.md` and `/knowledge/AC-INDEX.md` before raw HTML
    - Cost: ~200 tokens vs 8,000+ for a full HTML read
 
-3. **Use Shell/Grep for Bulk Searches**
+3. **Use Local Files for Bulk / Cross-Sprint Searches (always)**
    - Across per-story files: `grep -rl "Component" knowledge/sprints/*/stories/`
    - Story location: `grep -rl "STORY-ID" knowledge/sprints/*/stories/`
-   - Full HTML only for sprint-wide analysis or missing per-story files
+   - MCP cannot free-text search across AC/Solution custom field bodies — local grep is the only reliable option for cross-sprint pattern matching.
 
-4. **Provide Summaries First**
+4. **Supplement with MCP for Structured Queries**
+   - JQL queries for filtering by status, priority, assignee, sprint, or component are faster and more expressive than parsing HTML columns.
+   - Use `searchJiraIssuesUsingJql` when the question maps naturally to structured filters.
+
+5. **Provide Summaries First**
    - Show Issue Key, Summary, Status (table form)
    - Offer to expand: "Want AC? Solution? Full details?"
 
-5. **Remember Context**
-   - Don't re-read HTML for follow-up questions
+6. **Remember Context**
+   - Don't re-read or re-fetch for follow-up questions
    - Reference previous responses; build on what's already in context
 
-6. **Progressive Disclosure**
+7. **Progressive Disclosure**
    - Start minimal; expand only on request
 
 See `rules/token-optimization.md` for full guidance.
@@ -188,14 +224,15 @@ Use `templates/technical-solution-template.md`. Design only — no code.
 
 ## Search Hierarchy
 
-1. `knowledge/metadata/` — current state of components (source of truth)
-2. `knowledge/TRACEABILITY-INDEX.md` — story ↔ component
-3. `knowledge/sprints/SPRINT-INDEX.md` — story directory
-4. `knowledge/AC-INDEX.md` / `SOLUTION-INDEX.md` — priority fields
-5. `knowledge/architecture/` — ADRs
-6. `artifacts/` — prior solutions / analyses
-7. Per-story markdown — `knowledge/sprints/Sprint N/stories/STORY-ID.md` (preferred for single-story lookups)
-8. Raw sprint HTML — last resort, scoped to a single matched row
+1. **MCP (live Jira)** — for single-story lookups, current field values, comments, transitions, linked issues, and structured JQL queries (when MCP is configured)
+2. `knowledge/metadata/` — current state of deployed components (source of truth)
+3. `knowledge/TRACEABILITY-INDEX.md` — story ↔ component
+4. `knowledge/sprints/SPRINT-INDEX.md` — story directory
+5. `knowledge/AC-INDEX.md` / `SOLUTION-INDEX.md` — priority fields
+6. `knowledge/architecture/` — ADRs
+7. `artifacts/` — prior solutions / analyses
+8. Per-story markdown — `knowledge/sprints/Sprint N/stories/STORY-ID.md` (for bulk cross-sprint searches and local fallback)
+9. Raw sprint HTML — last resort, scoped to a single matched row
 
 ## Proactive Behavior
 
@@ -226,7 +263,7 @@ The AI must **NOT** proactively:
 - ❌ Don't suggest, hint, or offer to switch to Agent / build mode
 - ❌ Don't ask "should I implement this?" in any form
 - ❌ Don't produce CLI / SFDX / deployment artifacts
-- ❌ Don't assume story details — read the indexes / HTML
+- ❌ Don't assume story details — read via MCP or local indexes / files
 - ❌ Don't provide generic solutions without checking actual AC
 - ❌ Don't ignore cross-sprint dependencies
 - ❌ Don't recommend changes without an impact analysis

@@ -1,6 +1,6 @@
 ---
 name: dev-story-prep
-description: Help a Salesforce developer prepare for implementation by analyzing a JIRA story's requirements, identifying impacted components, surfacing prior implementations on the same components, and planning unit-test scenarios — without writing any code. Use when the user asks to understand a story, plan an approach, identify edge cases, plan unit-test scenarios, list impacted components, or check for existing patterns (e.g. "explain [Story-ID]", "what components does [Story-ID] touch", "what's the approach for [Story-ID]", "edge cases for [Story-ID]", "unit-test scenarios for [Story-ID]", "is there an existing pattern for this", "what should I be careful about implementing [Story-ID]"). The bot mines the JIRA Solution + AC, surfaces prior stories that touched the same components, points out edge cases and integration touchpoints, and produces a story-prep brief plus unit-test scenarios in plain language. Plan & design only — never produces Apex, LWC, JS, test classes, deployment scripts, or any executable code; implementation happens in the separate Salesforce Dev/Sandbox environment.
+description: 'Help a Salesforce developer prepare for implementation by analyzing a JIRA story''s requirements, identifying impacted components, surfacing prior implementations on the same components, and planning unit-test scenarios — without writing any code. Use when the user asks to understand a story, plan an approach, identify edge cases, plan unit-test scenarios, list impacted components, or check for existing patterns (e.g. "explain [Story-ID]", "what components does [Story-ID] touch", "what''s the approach for [Story-ID]", "edge cases for [Story-ID]", "unit-test scenarios for [Story-ID]", "is there an existing pattern for this", "what should I be careful about implementing [Story-ID]"). The bot mines the JIRA Solution + AC, surfaces prior stories that touched the same components, points out edge cases and integration touchpoints, and produces a story-prep brief plus unit-test scenarios in plain language. Plan and design only — never produces Apex, LWC, JS, test classes, deployment scripts, or any executable code; implementation happens in the separate Salesforce Dev/Sandbox environment.'
 ---
 
 # Developer — Story Prep Assistant
@@ -31,21 +31,27 @@ This skill operates in **Plan / Ask / Design mode only**. **Never** produce Apex
 
 ### Step 1 — Read the JIRA Story First
 
-1. Locate the story via `/knowledge/sprints/SPRINT-INDEX.md`.
-2. **Read the per-story markdown file first**: `knowledge/sprints/Sprint N/stories/STORY-ID.md` — contains full AC, Solution, and Description in clean markdown.
-3. Fall back to `grep`-ing the sprint HTML only if the per-story file doesn't exist.
+Use the hybrid data access strategy from `_cursor/AGENTS.md`:
+
+1. **Try MCP first** (if Atlassian MCP is configured) — call `getJiraIssue` via the Atlassian MCP server with the story key. This returns the live, current AC, Solution, Description, comments, linked issues, and transitions in one call. If you have a `_cursor/rules/jira-mcp-custom-fields.mdc` rule, follow its call template for required custom fields.
+2. **If MCP is unavailable or fails**, fall back to the local per-story markdown file: `knowledge/sprints/Sprint N/stories/STORY-ID.md`. Locate it via `SPRINT-INDEX.md`.
+3. Fall back to `grep`-ing the sprint HTML only if neither MCP nor per-story file is available.
 4. Quote **AC** and **Solution** verbatim — that's the source of truth.
 
-> **HTML parsing — strikethrough is non-authoritative.** Sprint exports must be JIRA HTML (not CSV / not pasted text). When quoting AC or Solution, **ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through`** — that's withdrawn content. See `_cursor/rules/jira-html-parsing.mdc`. If a CSV / plain-text export is provided instead, ask for an HTML re-export.
+> **MCP returns live state; local files preserve point-in-time snapshots.** When comparing against what was committed at sprint start (e.g., drift detection), prefer the local files. For the current state of a story, MCP is authoritative.
+
+> **HTML parsing — strikethrough is non-authoritative.** When falling back to local HTML files, ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through` — that's withdrawn content. See `_cursor/rules/jira-html-parsing.mdc`.
 
 ### Step 2 — Pull Prior Touchpoints
 
 For every component mentioned:
 
 - **Read `/knowledge/metadata/` FIRST** — deployed metadata is the **source of truth for current state** (see `_cursor/rules/metadata-is-source-of-truth.mdc`). The dev needs to know what fields, validations, and logic actually exist today, not just what the JIRA Solution said should exist. When metadata and JIRA `Solution` disagree on current state, use the metadata and note the discrepancy in one sentence.
-- `grep -rl "<Component>" knowledge/sprints/*/stories/` → prior sprints (per-story files preferred)
-- Fall back to `grep -l "<Component>" knowledge/sprints/**/*.html` if per-story files are missing
+- **Use local files for cross-sprint search** (MCP cannot free-text search AC/Solution bodies):
+  - `grep -rl "<Component>" knowledge/sprints/*/stories/` → prior sprints (per-story files preferred)
+  - Fall back to `grep -l "<Component>" knowledge/sprints/**/*.html` if per-story files are missing
 - Read prior story Solutions for those components
+- **Optionally supplement with MCP** — use `getJiraIssue` to fetch linked issues, comments, or transitions for specific prior stories discovered via local grep, when the dev needs additional context beyond what the local snapshot captured.
 - Check `/knowledge/architecture/` for relevant patterns / decisions
 
 Cite each reference with `[Story-ID] (Sprint N)`. Cite metadata sources by file path.
@@ -157,7 +163,7 @@ Save to `/artifacts/test-plans/[story-id]-unit-scenarios.md`:
 ## Hard Constraints
 
 - ❌ **No Apex, no LWC, no Aura, no JavaScript, no test classes, no metadata XML, no SFDX/CLI commands.**
-- ❌ **Do not skip Step 1.** Always quote AC + Solution from the HTML.
+- ❌ **Do not skip Step 1.** Always quote AC + Solution (from MCP or local files).
 - ❌ **Do not skip Step 2.** Always check for prior implementations and existing patterns.
 - ❌ **Do not ask the user to switch to Agent / build mode.** Never suggest it.
 - ❌ **Do not ask "should I implement this?"** in any form. Implementation happens in Dev/Sandbox.
