@@ -19,9 +19,10 @@ A reusable, **strictly plan-and-design** workspace template for managing Salesfo
 
 ## What this workspace is **not**
 
-- ❌ Not a Salesforce metadata repository — `force-app/`, Apex, Flows, etc. live in your DX repo
 - ❌ Not a deployment tool — no SFDX commands, no CI
 - ❌ Not a code editor — code generation is intentionally disabled by AI rules
+
+> **Note:** A clone of the Salesforce metadata repo lives in `knowledge/metadata/` so the AI can search Flows, Apex, IPs, and other deployed components directly. This is read-only reference material, not a development environment.
 
 ---
 
@@ -81,7 +82,7 @@ A reusable, **strictly plan-and-design** workspace template for managing Salesfo
 │   │       ├── *.html                 ← original JIRA export
 │   │       └── stories/               ← auto-generated per-story markdown
 │   │           └── STORY-ID.md
-│   ├── metadata/                      ← deployed metadata docs (source of truth for current state)
+│   ├── metadata/                      ← cloned Salesforce DX repo (source of truth for current state)
 │   ├── traceability/                  ← traceability matrices per epic
 │   ├── architecture/                  ← architecture decision records (ADRs)
 │   └── components/                    ← deeper component write-ups
@@ -129,7 +130,7 @@ Open the folder in Cursor. The AI will pick up `.cursor/AGENTS.md`, the rules in
 | Detect cross-sprint conflicts | Ask Cursor: *"Find conflicts in Sprint X"* — the **SA skill** auto-fires |
 | Plan unit-test scenarios | Ask Cursor: *"What unit-test scenarios for [Story-ID]?"* — the **dev skill** auto-fires |
 | Plan QA scenarios | Ask Cursor: *"Test scenarios for [Story-ID]"* — the **QA skill** auto-fires |
-| Catalog the Salesforce metadata repo | `python scripts/catalog-metadata-components.py` (reads `metadata_repo.local_path` from config) |
+| Catalog the Salesforce metadata repo | Clone the DX repo into `knowledge/metadata/`, then `python scripts/catalog-metadata-components.py` |
 
 See `WORKFLOW-GUIDE.md` for the full role-by-role flow.
 

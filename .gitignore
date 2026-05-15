@@ -10,18 +10,16 @@
 # Local config (must be copied from .example)
 workspace.config.yaml
 
-# Customer data — NEVER commit actual project data to this template repo
+# Project data — excluded from version control
 knowledge/sprints/*.html
 knowledge/sprints/**/*.html
 knowledge/traceability/*.csv
 knowledge/traceability/*.xlsx
-knowledge/metadata/**/*.xml
-knowledge/metadata/**/*.cls
-knowledge/metadata/**/*.trigger
-knowledge/metadata/**/*.js
-knowledge/metadata/**/*.html
-knowledge/metadata/**/*.css
-knowledge/metadata/**/force-app/
+
+# Salesforce metadata repo clone.
+# Do NOT add blanket extension rules (*.cls, *.xml, *.trigger, *.js, force-app/).
+# Cursor's Glob tool respects .gitignore — those patterns make metadata invisible
+# to the agent even though Grep and Shell can still see the files.
 
 # Generated per-story markdown files (rebuild via split-sprint-stories.py)
 knowledge/sprints/*/stories/

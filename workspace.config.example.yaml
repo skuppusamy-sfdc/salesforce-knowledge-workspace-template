@@ -27,11 +27,12 @@ story_id:
 # ---------------------------------------------------------------------------
 # External Repositories
 # ---------------------------------------------------------------------------
-# Path (absolute or relative) to the Salesforce metadata source-of-truth repo.
-# Scripts that catalog metadata read from this location; this workspace itself
-# stays code-free.
+# Salesforce metadata source-of-truth repo.
+# Clone the repo into knowledge/metadata/ so the AI can search actual
+# deployed code (Flows, Apex, IPs, DataRaptors, etc.) directly.
+# The catalog script also reads from local_path if set.
 metadata_repo:
-  local_path: "../my-salesforce-repo"      # adjust per developer machine
+  local_path: "knowledge/metadata/my-salesforce-repo"  # path to the cloned repo
   remote_url: "https://github.com/your-org/your-sf-repo"
   default_branch: "main"
   metadata_root: "force-app/main/default"

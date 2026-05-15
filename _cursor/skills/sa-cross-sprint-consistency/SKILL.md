@@ -33,23 +33,29 @@ This skill operates in **Plan / Ask / Design mode only**. Never produce executab
 
 ### Step 1 — Read AC + Solution First
 
-Use the token-efficient strategy from `_cursor/AGENTS.md`:
+Use the hybrid data access strategy from `_cursor/AGENTS.md`:
 
-1. Check `/knowledge/sprints/SPRINT-INDEX.md` to locate stories.
-2. **Read per-story markdown files first**: `knowledge/sprints/Sprint N/stories/STORY-ID.md` — contains full AC, Solution, and Description in clean markdown.
-3. Fall back to `grep`-ing sprint HTML only if per-story files don't exist.
+1. **Try MCP first for the target story** (if Atlassian MCP is configured) — call `getJiraIssue` via the Atlassian MCP server with the story key. This returns the live, current AC, Solution, Description, comments, linked issues, and transitions. If you have a `_cursor/rules/jira-mcp-custom-fields.mdc` rule, follow its call template for required custom fields.
+2. **If MCP is unavailable or fails**, fall back to the local per-story markdown file: `knowledge/sprints/Sprint N/stories/STORY-ID.md`. Locate it via `SPRINT-INDEX.md`.
+3. Fall back to `grep`-ing sprint HTML only if neither MCP nor per-story file is available.
+4. **For sprint-wide analysis** (e.g., "find conflicts in Sprint X"), use local files — reading all stories in a sprint folder is faster than making N individual MCP calls. Use MCP selectively for specific stories that need live-state verification.
 
 Quote the AC and Solution text verbatim so the source of truth is visible.
 
-> **HTML parsing — strikethrough is non-authoritative.** Sprint exports must be JIRA HTML (not CSV / not pasted text). When extracting AC or Solution, **ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through`** — that's deprecated/superseded content. Conflict-detection across sprints must compare *live* AC only, not struck-through historical wording. See `_cursor/rules/jira-html-parsing.mdc`. If a CSV / plain-text export is provided instead, ask for an HTML re-export.
+> **Cross-sprint comparison requires both sources.** MCP gives the current live state of a story; local files preserve what was committed at sprint start. When detecting drift (AC changed since sprint commit), compare the MCP live state against the local snapshot. Both are needed for the SA workflow.
+
+> **HTML parsing — strikethrough is non-authoritative.** When falling back to local HTML files, ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through` — that's deprecated/superseded content. Conflict-detection across sprints must compare *live* AC only, not struck-through historical wording. See `_cursor/rules/jira-html-parsing.mdc`.
 
 ### Step 2 — Pull Prior-Sprint Touchpoints
 
 For every component mentioned in the target story:
 
 - **Read deployed metadata** in `/knowledge/metadata/` first — it is the **source of truth for current state** (see `_cursor/rules/metadata-is-source-of-truth.mdc`). If metadata describes the component differently than the JIRA `Solution`, use the metadata and note the discrepancy in one sentence.
-- `grep -l "<Component>" knowledge/sprints/**/*.html` → which sprints touched it
+- **Use local files for cross-sprint search** (MCP cannot free-text search AC/Solution bodies):
+  - `grep -rl "<Component>" knowledge/sprints/*/stories/` → which sprints touched it (per-story files preferred)
+  - Fall back to `grep -l "<Component>" knowledge/sprints/**/*.html` if per-story files are missing
 - For each match, read the AC + Solution for that prior story
+- **Optionally supplement with MCP** — use `getJiraIssue` to fetch linked issues, comments, or the current live state of specific prior stories discovered via local grep, especially when checking whether a prior story's Solution has drifted since the local snapshot.
 - Check `/knowledge/architecture/` for related decisions
 - Check `/knowledge/traceability/` matrices for cross-sprint links
 
@@ -137,7 +143,7 @@ When a reconciliation or pattern is agreed, record it in `/knowledge/architectur
 ## Hard Constraints
 
 - ❌ **No source code, no metadata XML, no deployment scripts** in any artifact.
-- ❌ **Do not skip Step 1.** Always quote AC + Solution from the HTML before analyzing.
+- ❌ **Do not skip Step 1.** Always quote AC + Solution (from MCP or local files) before analyzing.
 - ❌ **Do not assess in a vacuum.** Always pull prior-sprint touchpoints in Step 2.
 - ❌ **Do not ask the user to switch to Agent / build mode.** Never suggest it.
 - ❌ **Do not ask "should I implement this?"** in any form.

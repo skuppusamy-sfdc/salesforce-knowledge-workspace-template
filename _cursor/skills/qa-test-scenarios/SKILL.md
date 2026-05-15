@@ -33,20 +33,26 @@ This skill operates in **Plan / Ask / Design mode only**. **Never** produce `@is
 
 ### Step 1 — Read AC + Solution First
 
-1. Locate the story via `/knowledge/sprints/SPRINT-INDEX.md`.
-2. **Read the per-story markdown file first**: `knowledge/sprints/Sprint N/stories/STORY-ID.md` — contains full AC, Solution, and Description in clean markdown.
-3. Fall back to `grep`-ing the sprint HTML only if the per-story file doesn't exist.
+Use the hybrid data access strategy from `_cursor/AGENTS.md`:
+
+1. **Try MCP first** (if Atlassian MCP is configured) — call `getJiraIssue` via the Atlassian MCP server with the story key. This returns the live, current AC, Solution, Description, comments, and linked issues in one call. If you have a `_cursor/rules/jira-mcp-custom-fields.mdc` rule, follow its call template for required custom fields.
+2. **If MCP is unavailable or fails**, fall back to the local per-story markdown file: `knowledge/sprints/Sprint N/stories/STORY-ID.md`. Locate it via `SPRINT-INDEX.md`.
+3. Fall back to `grep`-ing the sprint HTML only if neither MCP nor per-story file is available.
 4. Quote **AC** and **Solution** verbatim — every scenario must trace back to AC text.
 
-> **HTML parsing — strikethrough is non-authoritative.** Sprint exports must be JIRA HTML (not CSV / not pasted text). When quoting AC, **ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through`** — those criteria have been withdrawn and must not produce test scenarios. See `_cursor/rules/jira-html-parsing.mdc`. If a CSV / plain-text export is provided instead, ask for an HTML re-export.
+> **MCP returns live state; local files preserve point-in-time snapshots.** Test scenarios should validate the current AC. Use MCP for the latest AC; use local files only as fallback or for comparing against what was originally committed.
+
+> **HTML parsing — strikethrough is non-authoritative.** When falling back to local HTML files, ignore content inside `<s>`, `<strike>`, `<del>`, or with `text-decoration: line-through` — those criteria have been withdrawn and must not produce test scenarios. See `_cursor/rules/jira-html-parsing.mdc`.
 
 ### Step 2 — Pull Prior Tests (Regression Scope)
 
 For every component mentioned:
 
 - **Read `/knowledge/metadata/` first** — deployed metadata is the **source of truth for current state** (see `_cursor/rules/metadata-is-source-of-truth.mdc`). Test scenarios must validate actual deployed behavior. If JIRA Solution describes a field/validation differently than the metadata shows, use the metadata as ground truth and note the discrepancy in one sentence.
-- `grep -rl "<Component>" knowledge/sprints/*/stories/` → prior sprints touching it (per-story files preferred)
-- Fall back to `grep -l "<Component>" knowledge/sprints/**/*.html` if per-story files are missing
+- **Use local files for cross-sprint search** (MCP cannot free-text search AC/Solution bodies):
+  - `grep -rl "<Component>" knowledge/sprints/*/stories/` → prior sprints touching it (per-story files preferred)
+  - Fall back to `grep -l "<Component>" knowledge/sprints/**/*.html` if per-story files are missing
+- **Optionally supplement with MCP** — use `getJiraIssue` to fetch linked issues, comments, or transitions for specific prior stories discovered via local grep, when the tester needs context beyond the local snapshot.
 - Check `/artifacts/test-plans/` for existing scenario docs covering those components
 - Check `/knowledge/traceability/` matrices to find linked test artifacts
 - Identify prior scenarios that should re-run as regression for this story
@@ -188,7 +194,7 @@ Every AC must map to at least one scenario. Flag any AC that has zero scenarios 
 ## Hard Constraints
 
 - ❌ **No Apex test classes, no `@isTest`, no `Test.startTest()`, no JS test code, no Selenium/Provar scripts, no automation code.**
-- ❌ **Do not skip Step 1.** Always quote AC + Solution before producing scenarios.
+- ❌ **Do not skip Step 1.** Always quote AC + Solution (from MCP or local files) before producing scenarios.
 - ❌ **Do not skip Step 4.** Every AC must map to a scenario; gaps must be called out.
 - ❌ **Do not ask the user to switch to Agent / build mode.** Never suggest it.
 - ❌ **Do not ask "should I write the test class?"** in any form. Tests live in the automation repo.

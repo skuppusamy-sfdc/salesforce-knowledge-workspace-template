@@ -55,3 +55,15 @@ When reporting which objects and fields a feature uses, organize by:
 4. **Purpose** (what the field is used for in the UI)
 
 Never present a DataRaptor analysis alone as complete. Always state which IPs and UiCards consume it, and whether those IPs add additional object access via inline SOQL.
+
+## Search Tool Guidance
+
+When searching for error messages, field references, or component names in the deployed metadata:
+
+1. **Use Grep with the explicit directory path** as the primary search tool for metadata content. Example:
+   - `Grep` with `path: knowledge/metadata/<repo>/force-app/main/default/flows` to search all flows
+   - `Grep` with `path: knowledge/metadata/<repo>/force-app/main/default/classes` to search Apex classes
+   - Replace `<repo>` with the actual cloned repo folder name under `knowledge/metadata/`
+2. **Use Glob for file discovery** (e.g., finding all `.flow-meta.xml` or `.cls` files).
+3. **Always search the actual metadata files** before concluding a component or error message doesn't exist. Never assume metadata is missing based on index files alone — the deployed XML/Apex/JSON is the source of truth.
+4. **Also search Copado traceability** (`knowledge/traceability/report*.csv`) to map JIRA stories to Copado user stories and their committed metadata components.

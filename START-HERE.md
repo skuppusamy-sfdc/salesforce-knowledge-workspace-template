@@ -18,7 +18,7 @@ A code-free, plan-and-design Cursor workspace for a Salesforce program. It holds
 - **Architecture** (decisions, diagrams)
 - **Metadata** (`/knowledge/metadata/` — source of truth for what's deployed)
 
-It does **not** hold Apex, Flows, LWC — those live in your Salesforce DX repo.
+It also holds a **clone of the Salesforce metadata repo** (`/knowledge/metadata/`) so the AI can search Flows, Apex classes, Integration Procedures, and other deployed components directly.
 
 ### Mental model
 
@@ -207,17 +207,24 @@ $EDITOR "artifacts/solutions/STORY-101-customer-onboarding.md"
 
 ---
 
-## 6. (Optional) Catalog the metadata repo
+## 6. Clone the metadata repo and catalog it
 
-Once you've set `metadata_repo.local_path` in your config:
+Clone your Salesforce DX repo into `knowledge/metadata/` so the AI can search actual deployed metadata (Flows, Apex, IPs, OmniScripts, etc.):
+
+```bash
+# Clone the QA/main branch into knowledge/metadata/
+git clone --depth 1 <your-sf-repo-url> knowledge/metadata/<repo-name>
+```
+
+Then generate the component catalog:
 
 ```bash
 python scripts/catalog-metadata-components.py
 ```
 
-This writes `knowledge/metadata/COMPONENT-CATALOG.md` — a flat inventory of every Apex class, Flow, object, LWC, etc. in your DX repo, grouped by metadata type. Now when the AI says *"this story touches `OrderService`"*, it can verify the file exists and tell you its path.
+This writes `knowledge/metadata/COMPONENT-CATALOG.md` — a flat inventory of every Apex class, Flow, object, LWC, etc. grouped by metadata type. The AI uses the **actual metadata files** (not just the catalog) to search for error messages, field references, and validation logic.
 
-> **v2 reminder:** `/knowledge/metadata/` is the **source of truth for current state**. When the JIRA `Solution` for a story disagrees with what's actually deployed, the metadata wins. Keep the catalog and your hand-written metadata docs accurate.
+> **Source of truth:** `/knowledge/metadata/` is the **source of truth for current state**. When the JIRA `Solution` for a story disagrees with what's actually deployed, the metadata wins. See `rules/metadata-is-source-of-truth.mdc`.
 
 ---
 
@@ -244,5 +251,6 @@ This writes `knowledge/metadata/COMPONENT-CATALOG.md` — a flat inventory of ev
 | Scripts run but find 0 stories | `story_id.pattern` regex doesn't match your real IDs | Edit `story_id.pattern` in your config; rerun `python scripts/parse-sprint-html.py` |
 | `parse-sprint-html.py` finds 0 stories despite HTML present | JIRA export uses non-standard column classes | Edit `COLUMN_HINTS` at the top of `scripts/parse-sprint-html.py` |
 | `catalog-metadata-components.py` says "path not set" | `metadata_repo.local_path` is empty or wrong | Set it to the absolute path of your DX repo on this machine |
+| AI says metadata files "don't exist" but they're on disk | `.gitignore` has blanket rules (`*.cls`, `force-app/`, etc.) that block Cursor's Glob tool | Remove or scope those rules — see the `.gitignore` comments. Grep and Shell still work as a fallback |
 | AI tries to write Apex code | Rules not loaded (see row 1) or you're in a fresh Cursor session that hasn't reloaded `.cursor/` | Reload the window in Cursor |
 | Skill doesn't auto-fire | Your phrasing doesn't match the skill's trigger description | Either rephrase, or read `_cursor/skills/<name>/SKILL.md` and follow the workflow manually |
