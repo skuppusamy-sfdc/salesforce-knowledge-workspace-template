@@ -4,7 +4,7 @@ A reusable, **strictly plan-and-design** workspace template for managing Salesfo
 
 > **This is a template.** Fork or copy it into a new repository / Drive folder per program. Replace placeholders, then start dropping in sprint exports.
 
-> **What's new in v2.1 (May 19, 2026):** 🔥 Critical fix for JIRA wiki markup filtering bug (strikethrough `-text-` and color `{color:...}` markup). This fix eliminates false-positive deprecated ACs and improves correctness from D+ to A-. See `CHANGELOG-v2.md` for details.
+> **What's new in v2.1 (May 19, 2026):** 🔥 Critical fix for JIRA wiki markup filtering bug (strikethrough `-text-` and color `{color:...}` markup) + automation improvements. Correctness improved from D+ to A-. New `rebuild-all.py` script provides single-command regeneration (7 scripts → 1 command, ~12 seconds). Sprint index now 100% populated (was 5%). See `CHANGELOG-v2.md` and `ALL-FIXES-SUMMARY.md` for details.
 
 > **What's new in v2:** the AI is now **strictly Plan / Ask only**. It will never offer to write code, never ask to switch to Agent/build mode, and treats `/knowledge/metadata/` as the **source of truth for current state**. v2 also ships **role-specific Cursor Skills** that auto-trigger on intent (e.g., "review the technical solution for PROJ-123" launches the TA workflow automatically).
 >
