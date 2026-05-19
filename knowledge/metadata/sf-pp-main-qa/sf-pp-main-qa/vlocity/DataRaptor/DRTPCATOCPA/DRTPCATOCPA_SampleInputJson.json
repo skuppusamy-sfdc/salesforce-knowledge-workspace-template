@@ -1,0 +1,148 @@
+{
+    "preventiveCareAgreement": [
+        {
+            "ContractPaymentAgreement": {
+                "Account__c": "0017x00001Bn7slAAB",
+                "Account__r": {
+                    "Id": "0017x00001Bn7slAAB",
+                    "Name": "Muskan Ser Acc",
+                    "RecordTypeId": "0127x00000Ga8ttAAB"
+                },
+                "AgreementType": "Preventive Care Agreement",
+                "ContractId": "8007x00000ZrVsjAAF",
+                "ContractPaymentAgreementKey": "17B2ADCB3A4D412EB85DC6D35D56EAC1-1457876826",
+                "Id": "0rR7x00000001wzEAA",
+                "Name": "Muskan Ser Acc",
+                "Status": "ACTIVATED",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000001wzEAA",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "Id": "0s47x00000005SjAAI",
+            "Name": "PCA-0069",
+            "Override_Prohibited__c": false,
+            "Rate__c": 78,
+            "Unit_of_Measure__c": "per Hour"
+        },
+        {
+            "ContractPaymentAgreement": {
+                "Account__c": "0017x000017KgM0AAK",
+                "Account__r": {
+                    "Id": "0017x000017KgM0AAK",
+                    "Name": "Test Service Account 001",
+                    "RecordTypeId": "0127x00000Ga8ttAAB"
+                },
+                "AgreementType": "Preventive Care Agreement",
+                "ContractId": "8007x00000ZrTqvAAF",
+                "ContractPaymentAgreementKey": "06D4DB1D4FD204AF396C01CEFC2030411527827970",
+                "Id": "0rR7x00000003FdEAI",
+                "Name": "Test Service Account 001-Shift",
+                "Status": "DRAFT",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000003FdEAI",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "Id": "0s47x00000007kfAAA",
+            "Name": "PCA-1093",
+            "Override_Prohibited__c": true,
+            "Rate__c": 1,
+            "Unit_of_Measure__c": "per Hour"
+        },
+        {
+            "ContractPaymentAgreement": {
+                "Account__c": "0017x000017KgM0AAK",
+                "Account__r": {
+                    "Id": "0017x000017KgM0AAK",
+                    "Name": "Test Service Account 001",
+                    "RecordTypeId": "0127x00000Ga8ttAAB"
+                },
+                "AgreementType": "Preventive Care Agreement",
+                "ContractId": "8007x00000ZrTqvAAF",
+                "ContractPaymentAgreementKey": "06D4DB1D4FD204AF396C01CEFC2030411527827970",
+                "Id": "0rR7x00000003FdEAI",
+                "Name": "Test Service Account 001-Shift",
+                "Status": "DRAFT",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000003FdEAI",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "Id": "0s47x00000007ntAAA",
+            "Name": "PCA-1096",
+            "Override_Prohibited__c": false,
+            "Rate__c": 1,
+            "Unit_of_Measure__c": "per Hour"
+        },
+        {
+            "ContractPaymentAgreement": {
+                "Account__c": "0017x000017KgM0AAK",
+                "Account__r": {
+                    "Id": "0017x000017KgM0AAK",
+                    "Name": "Test Service Account 001",
+                    "RecordTypeId": "0127x00000Ga8ttAAB"
+                },
+                "AgreementType": "Preventive Care Agreement",
+                "ContractId": "8007x00000ZrTqvAAF",
+                "ContractPaymentAgreementKey": "06D4DB1D4FD204AF396C01CEFC2030411527827970",
+                "Id": "0rR7x00000003FdEAI",
+                "Name": "Test Service Account 001-Shift",
+                "Status": "DRAFT",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000003FdEAI",
+            "FacilityTitle__c": "0hs7x0000007K8bAAE",
+            "Id": "0s47x00000007fpAAA",
+            "Name": "PCA-1088",
+            "Override_Prohibited__c": false,
+            "Rate__c": 2,
+            "Unit_of_Measure__c": "per Month"
+        },
+        {
+            "ContractPaymentAgreement": {
+                "Account__c": "0017x000017KgM0AAK",
+                "Account__r": {
+                    "Id": "0017x000017KgM0AAK",
+                    "Name": "Test Service Account 001",
+                    "RecordTypeId": "0127x00000Ga8ttAAB"
+                },
+                "AgreementType": "Preventive Care Agreement",
+                "ContractId": "8007x00000ZrTqvAAF",
+                "ContractPaymentAgreementKey": "06D4DB1D4FD204AF396C01CEFC2030411527827970",
+                "Id": "0rR7x00000003FdEAI",
+                "Name": "Test Service Account 001-Shift",
+                "Status": "DRAFT",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000003FdEAI",
+            "FacilityTitle__c": "0hs7x0000007K8bAAE",
+            "Id": "0s47x00000007pVAAQ",
+            "Name": "PCA-1098",
+            "Override_Prohibited__c": false,
+            "Rate__c": 7,
+            "Unit_of_Measure__c": "per Month"
+        },
+        {
+            "ContractPaymentAgreement": {
+                "Account__c": "0017x00001DqZwAAAV",
+                "Account__r": {
+                    "Id": "0017x00001DqZwAAAV",
+                    "Name": "ser acc richard",
+                    "RecordTypeId": "0127x00000Ga8ttAAB"
+                },
+                "AgreementType": "Preventive Care Agreement",
+                "ContractId": "8007x00000aKa2bAAC",
+                "ContractPaymentAgreementKey": "FD2B6410F3D6A6247F86D87D359E2B051299802487",
+                "Id": "0rR7x00000003cDEAQ",
+                "Name": "ser acc richard-Shift",
+                "Status": "DRAFT",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000003cDEAQ",
+            "FacilityTitle__c": "0hs7x0000007K8bAAE",
+            "Id": "0s47x00000008VRAAY",
+            "Name": "PCA-1128",
+            "Override_Prohibited__c": false,
+            "Rate__c": 290,
+            "Unit_of_Measure__c": "per Hour"
+        }
+    ]
+}

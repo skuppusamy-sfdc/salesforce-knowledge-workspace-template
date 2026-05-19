@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GA_MS_and_AL</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>PARENT_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,WY</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>contains</operation>
+        <value>Customer,Customer - EM,Customer - EM/HM,Customer – EM/HM/ICU,Customer - EM/HM/WW,Customer – EM/ICU,Customer - EM/WW,Customer - HM,Customer - ICP,Customer - ICP/WW,Customer – UC/ICP,Customer - WW,DO NOT USE</value>
+    </filters>
+    <filters>
+        <field>Hospital_Ownership__c</field>
+        <operation>contains</operation>
+        <value>Voluntary</value>
+    </filters>
+    <label>GA, MS and AL</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Share_Engage_Send_w_CEO_Role</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Engage Send w/ CEO Role</label>
+        <sharedTo>
+            <role>Business_Development_Manager_CC</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Business_Development_Manager_CC</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

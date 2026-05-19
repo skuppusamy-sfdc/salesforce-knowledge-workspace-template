@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HM_Satisfaction_del__c</fullName>
+    <label>HM Satisfaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0. Unknown</fullName>
+                <default>false</default>
+                <label>0. Unknown</label>
+            </value>
+            <value>
+                <fullName>1. Very dissatisfied</fullName>
+                <default>false</default>
+                <label>1. Very dissatisfied</label>
+            </value>
+            <value>
+                <fullName>2. Somewhat dissatisfied</fullName>
+                <default>false</default>
+                <label>2. Somewhat dissatisfied</label>
+            </value>
+            <value>
+                <fullName>3. Neutral</fullName>
+                <default>false</default>
+                <label>3. Neutral</label>
+            </value>
+            <value>
+                <fullName>4. Somewhat satisfied</fullName>
+                <default>false</default>
+                <label>4. Somewhat satisfied</label>
+            </value>
+            <value>
+                <fullName>5. Very satisfied</fullName>
+                <default>false</default>
+                <label>5. Very satisfied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

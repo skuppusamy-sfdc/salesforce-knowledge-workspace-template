@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source__c</fullName>
+    <label>Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Inbound Phone</fullName>
+                <default>false</default>
+                <label>Inbound Phone</label>
+            </value>
+            <value>
+                <fullName>Inbound Email</fullName>
+                <default>false</default>
+                <label>Inbound Email</label>
+            </value>
+            <value>
+                <fullName>Inbound Website</fullName>
+                <default>false</default>
+                <label>Inbound Website</label>
+            </value>
+            <value>
+                <fullName>Inbound Google Adwords</fullName>
+                <default>false</default>
+                <label>Inbound Google Adwords</label>
+            </value>
+            <value>
+                <fullName>Inbound In-person</fullName>
+                <default>false</default>
+                <label>Inbound In-person</label>
+            </value>
+            <value>
+                <fullName>Outbound Phone</fullName>
+                <default>false</default>
+                <label>Outbound Phone</label>
+            </value>
+            <value>
+                <fullName>Outbound Email</fullName>
+                <default>false</default>
+                <label>Outbound Email</label>
+            </value>
+            <value>
+                <fullName>Outbound In-person</fullName>
+                <default>false</default>
+                <label>Outbound In-person</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

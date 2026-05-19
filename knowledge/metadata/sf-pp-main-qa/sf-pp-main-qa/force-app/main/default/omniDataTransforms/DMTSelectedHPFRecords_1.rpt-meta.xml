@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;SelectedlstRecords&quot; : [ {
+    &quot;Id&quot; : &quot;0017x00001EJ4ztAAD&quot;,
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : null,
+    &quot;contractingStatus&quot; : null,
+    &quot;checked&quot; : true,
+    &quot;facilityTitle&quot; : &quot;External Locums&quot;,
+    &quot;accountName&quot; : &quot;test facility&quot;
+  }, {
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : null,
+    &quot;contractingStatus&quot; : null,
+    &quot;checked&quot; : true,
+    &quot;facilityTitle&quot; : &quot;Leased Employee&quot;,
+    &quot;accountName&quot; : &quot;test facility&quot;
+  } ]
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;SelectedlstRecords&quot; : [ {
+    &quot;SelectedId&quot; : &quot;0017x00001EJ4ztAAD&quot;,
+    &quot;SelectedhpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;SelectedeffectiveDate&quot; : null,
+    &quot;SelectedcontractingStatus&quot; : null,
+    &quot;Selectedchecked&quot; : true,
+    &quot;SelectedfacilityTitle&quot; : &quot;External Locums&quot;,
+    &quot;SelectedaccountName&quot; : &quot;test facility&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMTSelectedHPFRecords</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom7388</globalKey>
+        <inputFieldName>SelectedlstRecords:facilityTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedfacilityTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom7580</globalKey>
+        <inputFieldName>SelectedlstRecords:effectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedeffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom2369</globalKey>
+        <inputFieldName>SelectedlstRecords:accountName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedaccountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom3668</globalKey>
+        <inputFieldName>SelectedlstRecords:hpfStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedhpfStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom6526</globalKey>
+        <inputFieldName>SelectedlstRecords:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom9449</globalKey>
+        <inputFieldName>SelectedlstRecords:checked</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:Selectedchecked</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SelectedlstRecords:effectiveDate ISBLANK | TODAY var:SelectedlstRecords:effectiveDate IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(%SelectedlstRecords:effectiveDate%),TODAY(),%SelectedlstRecords:effectiveDate%)</formulaExpression>
+        <formulaResultPath>SelectedlstRecords:effectiveDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DMTSelectedHPFRecordsCustom7919</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom1310</globalKey>
+        <inputFieldName>SelectedlstRecords:NoOfHours</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedNoOfhours</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTSelectedHPFRecordsCustom675</globalKey>
+        <inputFieldName>SelectedlstRecords:contractingStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SelectedlstRecords:SelectedcontractingStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SelectedlstRecords&quot; : [ {
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : &quot;2025-07-27&quot;,
+    &quot;contractingStatus&quot; : null,
+    &quot;checked&quot; : true,
+    &quot;facilityTitle&quot; : &quot;External Locums&quot;,
+    &quot;accountName&quot; : &quot;test facility&quot;
+  }, {
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : null,
+    &quot;contractingStatus&quot; : null,
+    &quot;checked&quot; : true,
+    &quot;facilityTitle&quot; : &quot;Leased Employee&quot;,
+    &quot;accountName&quot; : &quot;test facility&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DMTSelectedHPFRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

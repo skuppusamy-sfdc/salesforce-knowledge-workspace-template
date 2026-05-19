@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Clinician_Contracts_Approved</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>Employment_Type__c</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <columns>Contract_Approval_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CONTRACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contract.Clinician</value>
+    </filters>
+    <filters>
+        <field>CONTRACT.STATUS</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <label>My Clinician Contracts - Approved</label>
+</ListView>

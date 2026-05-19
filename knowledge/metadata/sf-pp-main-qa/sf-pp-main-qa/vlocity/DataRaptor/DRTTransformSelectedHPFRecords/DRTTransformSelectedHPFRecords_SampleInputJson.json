@@ -1,0 +1,90 @@
+{
+    "HpfList": [
+        {
+            "Employment_Type__c": "Employee",
+            "HPFAccountId": "0017x000019xCh1AAE",
+            "HPFName": "ABC",
+            "Id": "0bS7x0000003LKrEAM",
+            "Name": "ABC",
+            "Selected": true,
+            "SelectedCount": 0,
+            "Status__c": "Prospect"
+        },
+        {
+            "Employment_Type__c": "Employee",
+            "HPFAccountId": "0017x00001IDihNAAT",
+            "HPFName": "Apollo hospital",
+            "Id": "0bS7x0000003LKsEAM",
+            "Name": "Apollo hospital",
+            "Selected": false,
+            "SelectedCount": 0,
+            "Status__c": "Prospect",
+            "UserID": "0057x00000RWwslAAD"
+        },
+        {
+            "Employment_Type__c": "Locum",
+            "HPFAccountId": "0017x000019oDCUAA2",
+            "HPFName": "BPC Hospital",
+            "Id": "0bS7x0000003LKtEAM",
+            "Name": "BPC Hospital",
+            "Selected": true,
+            "SelectedCount": 1,
+            "Status__c": "Candidate",
+            "UserId": "0057x00000RWwsbAAD"
+        },
+        {
+            "Employment_Type__c": "Employee",
+            "HPFAccountId": "0017x00001IJtijAAD",
+            "HPFName": "EM - Children Hospital",
+            "Id": "0bS7x0000003LKuEAM",
+            "Name": "EM - Children Hospital",
+            "Selected": false,
+            "SelectedCount": 0,
+            "Status__c": "Prospect"
+        },
+        {
+            "Employment_Type__c": "Employee",
+            "HPFAccountId": "0017x00001IFmFxAAL",
+            "HPFName": "Independent HPS",
+            "Id": "0bS7x0000003LKvEAM",
+            "Name": "Independent HPS",
+            "Selected": false,
+            "SelectedCount": 0,
+            "Status__c": "Prospect"
+        },
+        {
+            "Employment_Type__c": "Employee",
+            "HPFAccountId": "0017x00001K02HBAAZ",
+            "HPFName": "kent",
+            "Id": "0bS7x0000003LKxEAM",
+            "Name": "kent",
+            "Selected": false,
+            "SelectedCount": 0,
+            "Status__c": "Prospect"
+        },
+        {
+            "Employment_Type__c": "Locum",
+            "HPFAccountId": "0017x0000176IKHAA2",
+            "HPFName": "LLM Hospital",
+            "Id": "0bS7x0000003LKyEAM",
+            "Name": "LLM Hospital",
+            "Selected": false,
+            "SelectedCount": 0,
+            "Status__c": "Active",
+            "UserID": "0057x00000RWwseAAD"
+        },
+        {
+            "Employment_Type__c": "Employee",
+            "HPFAccountId": "0017x00001HgdibAAB",
+            "HPFName": "Locum Facility hospital",
+            "Id": "0bS7x0000003LKzEAM",
+            "Name": "Locum Facility hospital",
+            "Selected": false,
+            "SelectedCount": 0,
+            "Status__c": "Prospect"
+        }
+    ],
+    "elementName": "TransformSelectedHPFRecords",
+    "omniScriptId": "0jN7x0000004PCjEAM",
+    "operation": "transform"
+}

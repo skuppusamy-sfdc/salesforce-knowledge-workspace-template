@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Reason__c</fullName>
+    <label>Close Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solution – Recruitment/Coverage model</fullName>
+                <default>false</default>
+                <label>Solution – Recruitment/Coverage model</label>
+            </value>
+            <value>
+                <fullName>Solution – Economics (Overall cost)</fullName>
+                <default>false</default>
+                <label>Solution – Economics (Overall cost)</label>
+            </value>
+            <value>
+                <fullName>Solution – Multiple Service Lines</fullName>
+                <default>false</default>
+                <label>Solution – Multiple Service Lines</label>
+            </value>
+            <value>
+                <fullName>Solution – References/Service</fullName>
+                <default>false</default>
+                <label>Solution – References/Service</label>
+            </value>
+            <value>
+                <fullName>Solution – Clinical Quality/Medical Leadership</fullName>
+                <default>false</default>
+                <label>Solution – Clinical Quality/Medical Leadership</label>
+            </value>
+            <value>
+                <fullName>Solution - Strategy presented did not meet business needs</fullName>
+                <default>false</default>
+                <label>Solution - Strategy presented did not meet business needs</label>
+            </value>
+            <value>
+                <fullName>Sales Team – Ease of Purchase</fullName>
+                <default>false</default>
+                <label>Sales Team – Ease of Purchase</label>
+            </value>
+            <value>
+                <fullName>Sales Team – Responsiveness</fullName>
+                <default>false</default>
+                <label>Sales Team – Responsiveness</label>
+            </value>
+            <value>
+                <fullName>Company – Size and/or Presence in Market</fullName>
+                <default>false</default>
+                <label>Company – Size and/or Presence in Market</label>
+            </value>
+            <value>
+                <fullName>Company – Reputation and/or Future Direction</fullName>
+                <default>false</default>
+                <label>Company – Reputation and/or Future Direction</label>
+            </value>
+            <value>
+                <fullName>Preferred Competitor</fullName>
+                <default>false</default>
+                <label>Preferred Competitor</label>
+            </value>
+            <value>
+                <fullName>Project Complete</fullName>
+                <default>false</default>
+                <label>Project Complete</label>
+            </value>
+            <value>
+                <fullName>No Change Made</fullName>
+                <default>false</default>
+                <label>No Change Made</label>
+            </value>
+            <value>
+                <fullName>No Bid</fullName>
+                <default>false</default>
+                <label>No Bid</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pipeline Cleanup - not real oppty - Closed by Sales Ops</fullName>
+                <default>false</default>
+                <label>Pipeline Cleanup - not real oppty - Closed by Sales Ops</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

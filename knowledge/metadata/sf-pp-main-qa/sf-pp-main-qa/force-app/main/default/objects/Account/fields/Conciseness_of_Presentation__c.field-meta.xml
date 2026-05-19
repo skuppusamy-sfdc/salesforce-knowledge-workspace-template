@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conciseness_of_Presentation__c</fullName>
+    <description>Message delivered in fewer words; leaving memorable impression &amp; value supporting facts.</description>
+    <inlineHelpText>Message delivered in fewer words; leaving memorable impression &amp; value supporting facts.</inlineHelpText>
+    <label>Conciseness of Presentation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

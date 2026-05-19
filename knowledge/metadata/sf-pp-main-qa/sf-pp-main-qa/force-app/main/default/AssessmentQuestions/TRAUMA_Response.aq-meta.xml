@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>TRAUMA Response</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Response</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>TRAUMA_Response</developerName>
+    <name>TRAUMA Response</name>
+    <questionCategory>Physician</questionCategory>
+    <relatedQuestion>TRAUMA</relatedQuestion>
+</AssessmentQuestion>

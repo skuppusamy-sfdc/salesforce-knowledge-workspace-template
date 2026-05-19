@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>pqcrush__Account_Plan_Opportunity_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>pqcrush__Account_Plan_Opportunity__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>pqcrush__Key_Date_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>pqcrush__Key_Date__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>pqcrush__Objective_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>pqcrush__Objective__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>pqcrush__White_Space_Template_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>pqcrush__White_Space_Template__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>pqcrush__Cross_Cell_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>pqcrush__White_Space__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#00B398</headerColor>
+        <logo>pqcrush__Prolifiq_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Drive results with strategic account planning and execution</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>PROLIFIQ CRUSH</label>
+    <navType>Standard</navType>
+    <tabs>pqcrush__Account_Plan__c</tabs>
+    <tabs>pqcrush__Account_Plan_Tasks</tabs>
+    <tabs>pqcrush__pq_Master_Account_Plan__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>pqcrush__Org_Settings</tabs>
+    <tabs>pqcrush__My_Settings</tabs>
+    <tabs>pqcrush__White_Space_Template__c</tabs>
+    <tabs>pqcrush__White_Space_Amount_Type__c</tabs>
+    <tabs>pqcrush__WS_Data_Type__c</tabs>
+    <tabs>pqcrush__Account_Plan_Template__c</tabs>
+    <tabs>pqcrush__RM_Svg__c</tabs>
+    <tabs>pqcrush__Contact_Relationship_Type__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

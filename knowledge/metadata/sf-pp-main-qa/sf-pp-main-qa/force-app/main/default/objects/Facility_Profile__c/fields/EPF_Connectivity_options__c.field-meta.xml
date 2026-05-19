@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EPF_Connectivity_options__c</fullName>
+    <label>EPF Connectivity options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SFTP (TLS/SSL)</fullName>
+                <default>false</default>
+                <label>SFTP (TLS/SSL)</label>
+            </value>
+            <value>
+                <fullName>FTPS (SSH)</fullName>
+                <default>false</default>
+                <label>FTPS (SSH)</label>
+            </value>
+            <value>
+                <fullName>Direct Connect (Socket)</fullName>
+                <default>false</default>
+                <label>Direct Connect (Socket)</label>
+            </value>
+            <value>
+                <fullName>VPN</fullName>
+                <default>false</default>
+                <label>VPN</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

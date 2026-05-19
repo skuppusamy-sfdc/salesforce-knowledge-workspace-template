@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Reason__c</fullName>
+    <label>Primary Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agreement Not Returned,</fullName>
+                <default>false</default>
+                <label>Agreement Not Returned,</label>
+            </value>
+            <value>
+                <fullName>Coverage Discontinued,</fullName>
+                <default>false</default>
+                <label>Coverage Discontinued,</label>
+            </value>
+            <value>
+                <fullName>Deceased,</fullName>
+                <default>false</default>
+                <label>Deceased,</label>
+            </value>
+            <value>
+                <fullName>Hospital App Not Returned,</fullName>
+                <default>false</default>
+                <label>Hospital App Not Returned,</label>
+            </value>
+            <value>
+                <fullName>Hospital Contract Termination,</fullName>
+                <default>false</default>
+                <label>Hospital Contract Termination,</label>
+            </value>
+            <value>
+                <fullName>Insurance Expired,</fullName>
+                <default>false</default>
+                <label>Insurance Expired,</label>
+            </value>
+            <value>
+                <fullName>Past Issues with facility,</fullName>
+                <default>false</default>
+                <label>Past Issues with facility,</label>
+            </value>
+            <value>
+                <fullName>PEP Not Returned,</fullName>
+                <default>false</default>
+                <label>PEP Not Returned,</label>
+            </value>
+            <value>
+                <fullName>Per Hospital,</fullName>
+                <default>false</default>
+                <label>Per Hospital,</label>
+            </value>
+            <value>
+                <fullName>Per Provider,</fullName>
+                <default>false</default>
+                <label>Per Provider,</label>
+            </value>
+            <value>
+                <fullName>Per Risk Manager,</fullName>
+                <default>false</default>
+                <label>Per Risk Manager,</label>
+            </value>
+            <value>
+                <fullName>Privileges</fullName>
+                <default>false</default>
+                <label>Privileges</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,28 @@
+/* Target the Action Menu Button specifically Edit Block */
+[data-omni-key="HpfMismatchRecords"] button.action-btn-menu {
+    display: none !important;
+}
+
+/* Secondary selector using the data attribute */
+[data-omni-key="HpfMismatchRecords"] button[data-action-button-menu] {
+    display: none !important;
+}
+
+/* Target the container div to ensure no extra spacing is left behind */
+[data-omni-key="HpfMismatchRecords"] .slds-col_bump-left {
+    display: none !important;
+}
+/* Target the Action Menu Button specifically Edit Block */
+[data-omni-key="InValidHPFList"] button.action-btn-menu {
+    display: none !important;
+}
+
+/* Secondary selector using the data attribute*/
+[data-omni-key="InValidHPFList"] button[data-action-button-menu] {
+    display: none !important;
+}
+
+/* Target the container div to ensure no extra spacing is left behind */
+[data-omni-key="InValidHPFList"] .slds-col_bump-left {
+    display: none !important;
+}

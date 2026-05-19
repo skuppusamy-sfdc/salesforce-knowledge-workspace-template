@@ -1,0 +1,37 @@
+{
+    "FacilityList": [
+        {
+            "HPFName": "test S",
+            "HpfId": "0bS7x000000371lEAA",
+            "IsGrey": "Yes",
+            "Selected": false,
+            "clonedPNCId": "0bS7x000000371lEAA",
+            "facilityId": "0017x000017KgM0AAK",
+            "facilityName": "Test Service Account 001",
+            "facilityTitle": "Managed Physician",
+            "facilityTitleId": "0hs7x0000007K8wAAE",
+            "pncId": "0mw7x0000000rcDAAQ"
+        },
+        {
+            "HPFName": "BPC Hospital",
+            "HpfId": "0bS7x000000371mEAA",
+            "Selected": false,
+            "facilityId": "0017x000019oDCUAA2",
+            "facilityName": "BPC Hospital",
+            "facilityTitle": "EE Asst Hospital Med Program Director",
+            "facilityTitleId": "0hs7x0000007K8eAAE",
+            "pncId": "0mw7x0000000rcEAAQ"
+        },
+        {
+            "HPFName": "testSer1",
+            "HpfId": "0bS7x000000371nEAA",
+            "IsGreen": "Yes",
+            "Selected": false,
+            "facilityId": "0017x000019xCh1AAE",
+            "facilityName": "testSer1",
+            "facilityTitle": "Leased Medical Director",
+            "facilityTitleId": "0hs7x0000007K8sAAE",
+            "pncId": "0mw7x0000000rcFAAQ"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTransFormPrimaryHPCSpecialty</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPrimaryHPCSpecialty9781455811595845</globalKey>
+        <inputFieldName>PrimaryClinicianSpecialty:isPrimaryOrSub</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPrimaryHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isPrimary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPrimaryHPCSpecialty15320946068034091</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPrimaryHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isSubSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPrimaryHPCSpecialty6398465005101084</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPrimaryHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>PractionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPrimaryHPCSpecialty954694708018819</globalKey>
+        <inputFieldName>PrimaryClinicianSpecialty:TA_PrimarySpecialty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPrimaryHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CareSpecialtyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPrimaryHPCSpecialty8394493466697192</globalKey>
+        <inputFieldName>PrimaryClinicianSpecialty:RecordId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPrimaryHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CareSpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPrimaryHPCSpecialty9918132624831634</globalKey>
+        <inputFieldName>PrimaryClinicianSpecialty:PrimarySpecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPrimaryHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCPSpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;PrimaryClinicianSpecialty&quot; : [ {
+    &quot;TA_PrimarySpecialty&quot; : &quot;Cardiology&quot;,
+    &quot;RecordId&quot; : &quot;0bc7x0000000EcTAAU&quot;,
+    &quot;PrimarySpecId&quot; : null,
+    &quot;isPrimaryOrSub&quot; : &quot;true&quot;
+  }, {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;TA_PrimarySpecialty&quot; : &quot;Radiology&quot;,
+    &quot;PrimarySpecId&quot; : &quot;0bO7x0000000Y05EAE&quot;
+  } ],
+  &quot;ClinicianContactId&quot; : &quot;0037x000012S0m0AAC&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTransFormPrimaryHPCSpecialty_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

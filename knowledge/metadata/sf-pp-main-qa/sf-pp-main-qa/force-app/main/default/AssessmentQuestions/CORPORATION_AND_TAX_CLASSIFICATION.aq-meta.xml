@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>CORPORATION AND TAX CLASSIFICATION</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Tax Classification</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>CORPORATION_AND_TAX_CLASSIFICATION</developerName>
+    <name>CORPORATION AND TAX CLASSIFICATION</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

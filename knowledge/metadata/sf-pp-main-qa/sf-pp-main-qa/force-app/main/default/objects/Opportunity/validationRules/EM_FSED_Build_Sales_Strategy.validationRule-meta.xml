@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EM_FSED_Build_Sales_Strategy</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Build Sales Strategy for EM and FSED services.</description>
+    <errorConditionFormula>(RecordType.Name = &quot;EM Sales Opportunity&quot;||
+RecordType.Name = &quot;Free-Standing ED Opportunity&quot;) &amp;&amp; 
+(ISPICKVAL(StageName, &quot;Build Sales Strategy&quot;))&amp;&amp;
+(ISBLANK(EM__r.Name)||
+ ISPICKVAL(Bid_Process__c,&quot;&quot;))</errorConditionFormula>
+    <errorMessage>Required Fields: RFP Process &amp; EM Incumbent</errorMessage>
+</ValidationRule>

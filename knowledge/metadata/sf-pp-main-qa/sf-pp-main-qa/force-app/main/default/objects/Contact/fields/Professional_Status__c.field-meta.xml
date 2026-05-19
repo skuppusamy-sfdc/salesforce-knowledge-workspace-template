@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professional_Status__c</fullName>
+    <label>Professional Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Practicing</fullName>
+                <default>false</default>
+                <label>Practicing</label>
+            </value>
+            <value>
+                <fullName>Resident</fullName>
+                <default>false</default>
+                <label>Resident</label>
+            </value>
+            <value>
+                <fullName>Fellowship</fullName>
+                <default>false</default>
+                <label>Fellowship</label>
+            </value>
+            <value>
+                <fullName>Scribe</fullName>
+                <default>false</default>
+                <label>Scribe</label>
+            </value>
+            <value>
+                <fullName>New Graduate</fullName>
+                <default>false</default>
+                <label>New Graduate</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

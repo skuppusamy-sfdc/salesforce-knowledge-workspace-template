@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;pcaData&quot;: [
+        {
+            &quot;AccountName&quot;: &quot;BPC Hospital&quot;,
+            &quot;CPAId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;Type&quot;: &quot;0hs7x0000008zpWAAQ&quot;,
+            &quot;BonusMeasureType&quot;: &quot;NA&quot;,
+            &quot;PCAId&quot;: &quot;0s47x0000000QH4AAM&quot;,
+            &quot;CPAStatus&quot;: &quot;DRAFT&quot;,
+            &quot;FacilityTitleName&quot;: &quot;Medical Director&quot;,
+            &quot;RecordtypeName&quot;: &quot;Clinician&quot;,
+            &quot;CPAName&quot;: &quot;00002708-22--Locum&quot;,
+            &quot;TargetMeasurePercent&quot;: 0,
+            &quot;shiftReqOverrideProhibited&quot;: true,
+            &quot;BonusPayout&quot;: 0,
+            &quot;ContractPaymentAgreementId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;CPAType__c&quot;: &quot;Locum&quot;,
+            &quot;CPAKey&quot;: &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+            &quot;Name&quot;: &quot;PCA-10221&quot;,
+            &quot;PNCId&quot;: &quot;0mw7x0000000smnAAA&quot;,
+            &quot;CPAContractId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+            &quot;FacilityTitle__c&quot;: &quot;0hs7x0000007K8xAAE&quot;,
+            &quot;TypeName&quot;: &quot;Holiday&quot;,
+            &quot;CPAAgreementType&quot;: &quot;Preventive Care Agreement&quot;,
+            &quot;isSelectRate&quot;: true,
+            &quot;RateLocum&quot;: 40,
+            &quot;UnitofMeasure&quot;: &quot;per Hour&quot;,
+            &quot;Type_New&quot;: &quot;Holiday&quot;
+        },
+        {
+            &quot;isSelectRate&quot;: true,
+            &quot;AccountName&quot;: &quot;BPC Hospital&quot;,
+            &quot;CPAId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;Type&quot;: &quot;0hs7x0000008zpXAAQ&quot;,
+            &quot;BonusMeasureType&quot;: &quot;NA&quot;,
+            &quot;PCAId&quot;: &quot;0s47x0000000QH5AAM&quot;,
+            &quot;CPAStatus&quot;: &quot;DRAFT&quot;,
+            &quot;FacilityTitleName&quot;: &quot;Medical Director&quot;,
+            &quot;RecordtypeName&quot;: &quot;Clinician&quot;,
+            &quot;CPAName&quot;: &quot;00002708-22--Locum&quot;,
+            &quot;TargetMeasurePercent&quot;: 0,
+            &quot;shiftReqOverrideProhibited&quot;: true,
+            &quot;BonusPayout&quot;: 0,
+            &quot;ContractPaymentAgreementId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;CPAType__c&quot;: &quot;Locum&quot;,
+            &quot;CPAKey&quot;: &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+            &quot;Name&quot;: &quot;PCA-10222&quot;,
+            &quot;PNCId&quot;: &quot;0mw7x0000000smnAAA&quot;,
+            &quot;CPAContractId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+            &quot;FacilityTitle__c&quot;: &quot;0hs7x0000007K8xAAE&quot;,
+            &quot;TypeName&quot;: &quot;On Call&quot;,
+            &quot;CPAAgreementType&quot;: &quot;Preventive Care Agreement&quot;,
+            &quot;RateLocum&quot;: 5,
+            &quot;UnitofMeasure&quot;: &quot;per Hour&quot;,
+            &quot;Type_New&quot;: &quot;On Call&quot;
+        },
+        {
+            &quot;isSelectRate&quot;: true,
+            &quot;AccountName&quot;: &quot;BPC Hospital&quot;,
+            &quot;CPAId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;Type&quot;: &quot;0hs7x0000008zpYAAQ&quot;,
+            &quot;BonusMeasureType&quot;: &quot;NA&quot;,
+            &quot;PCAId&quot;: &quot;0s47x0000000QH6AAM&quot;,
+            &quot;CPAStatus&quot;: &quot;DRAFT&quot;,
+            &quot;FacilityTitleName&quot;: &quot;Medical Director&quot;,
+            &quot;RecordtypeName&quot;: &quot;Clinician&quot;,
+            &quot;CPAName&quot;: &quot;00002708-22--Locum&quot;,
+            &quot;TargetMeasurePercent&quot;: 0,
+            &quot;shiftReqOverrideProhibited&quot;: true,
+            &quot;BonusPayout&quot;: 0,
+            &quot;ContractPaymentAgreementId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;CPAType__c&quot;: &quot;Locum&quot;,
+            &quot;CPAKey&quot;: &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+            &quot;Name&quot;: &quot;PCA-10223&quot;,
+            &quot;PNCId&quot;: &quot;0mw7x0000000smnAAA&quot;,
+            &quot;CPAContractId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+            &quot;FacilityTitle__c&quot;: &quot;0hs7x0000007K8xAAE&quot;,
+            &quot;TypeName&quot;: &quot;HM Rounding&quot;,
+            &quot;CPAAgreementType&quot;: &quot;Preventive Care Agreement&quot;,
+            &quot;RateLocum&quot;: 56,
+            &quot;UnitofMeasure&quot;: &quot;per Hour&quot;,
+            &quot;Type_New&quot;: &quot;HM Rounding&quot;
+        },
+        {
+            &quot;isSelectRate&quot;: true,
+            &quot;AccountName&quot;: &quot;BPC Hospital&quot;,
+            &quot;CPAId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;Type&quot;: &quot;0hs7x0000008zpZAAQ&quot;,
+            &quot;BonusMeasureType&quot;: &quot;NA&quot;,
+            &quot;PCAId&quot;: &quot;0s47x0000000QH7AAM&quot;,
+            &quot;CPAStatus&quot;: &quot;DRAFT&quot;,
+            &quot;FacilityTitleName&quot;: &quot;Medical Director&quot;,
+            &quot;RecordtypeName&quot;: &quot;Clinician&quot;,
+            &quot;CPAName&quot;: &quot;00002708-22--Locum&quot;,
+            &quot;TargetMeasurePercent&quot;: 0,
+            &quot;shiftReqOverrideProhibited&quot;: true,
+            &quot;BonusPayout&quot;: 0,
+            &quot;ContractPaymentAgreementId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;CPAType__c&quot;: &quot;Locum&quot;,
+            &quot;CPAKey&quot;: &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+            &quot;Name&quot;: &quot;PCA-10224&quot;,
+            &quot;PNCId&quot;: &quot;0mw7x0000000smnAAA&quot;,
+            &quot;CPAContractId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+            &quot;FacilityTitle__c&quot;: &quot;0hs7x0000007K8xAAE&quot;,
+            &quot;TypeName&quot;: &quot;Travel Hourly&quot;,
+            &quot;CPAAgreementType&quot;: &quot;Preventive Care Agreement&quot;,
+            &quot;RateLocum&quot;: 2,
+            &quot;UnitofMeasure&quot;: &quot;per Hour&quot;,
+            &quot;Type_New&quot;: &quot;Travel Hourly&quot;
+        },
+        {
+            &quot;isSelectRate&quot;: true,
+            &quot;AccountName&quot;: &quot;BPC Hospital&quot;,
+            &quot;CPAId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;Type&quot;: &quot;0hs7x0000008zpaAAA&quot;,
+            &quot;BonusMeasureType&quot;: &quot;NA&quot;,
+            &quot;PCAId&quot;: &quot;0s47x0000000QH8AAM&quot;,
+            &quot;CPAStatus&quot;: &quot;DRAFT&quot;,
+            &quot;FacilityTitleName&quot;: &quot;Medical Director&quot;,
+            &quot;RecordtypeName&quot;: &quot;Clinician&quot;,
+            &quot;CPAName&quot;: &quot;00002708-22--Locum&quot;,
+            &quot;TargetMeasurePercent&quot;: 0,
+            &quot;shiftReqOverrideProhibited&quot;: false,
+            &quot;BonusPayout&quot;: 0,
+            &quot;ContractPaymentAgreementId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;CPAType__c&quot;: &quot;Locum&quot;,
+            &quot;CPAKey&quot;: &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+            &quot;Name&quot;: &quot;PCA-10225&quot;,
+            &quot;PNCId&quot;: &quot;0mw7x0000000smnAAA&quot;,
+            &quot;CPAContractId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+            &quot;FacilityTitle__c&quot;: &quot;0hs7x0000007K8xAAE&quot;,
+            &quot;TypeName&quot;: &quot;Shifts Requested&quot;,
+            &quot;CPAAgreementType&quot;: &quot;Preventive Care Agreement&quot;,
+            &quot;Shifts_Requested__c&quot;: 4,
+            &quot;UnitofMeasure&quot;: &quot;per Month&quot;,
+            &quot;Type_New&quot;: &quot;Shifts Requested&quot;
+        },
+        {
+            &quot;isSelectRate&quot;: true,
+            &quot;AccountName&quot;: &quot;BPC Hospital&quot;,
+            &quot;CPAId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;Type&quot;: &quot;0hs7x0000008zpVAAQ&quot;,
+            &quot;BonusMeasureType&quot;: &quot;NA&quot;,
+            &quot;PCAId&quot;: &quot;0s47x0000000QNVAA2&quot;,
+            &quot;CPAStatus&quot;: &quot;DRAFT&quot;,
+            &quot;FacilityTitleName&quot;: &quot;Medical Director&quot;,
+            &quot;RecordtypeName&quot;: &quot;Clinician&quot;,
+            &quot;CPAName&quot;: &quot;00002708-22--Locum&quot;,
+            &quot;TargetMeasurePercent&quot;: 0,
+            &quot;shiftReqOverrideProhibited&quot;: true,
+            &quot;BonusPayout&quot;: 0,
+            &quot;ContractPaymentAgreementId&quot;: &quot;0rR7x0000000N33EAE&quot;,
+            &quot;CPAType__c&quot;: &quot;Locum&quot;,
+            &quot;CPAKey&quot;: &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+            &quot;Name&quot;: &quot;PCA-10232&quot;,
+            &quot;PNCId&quot;: &quot;0mw7x0000000smnAAA&quot;,
+            &quot;CPAContractId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+            &quot;FacilityTitle__c&quot;: &quot;0hs7x0000007K8xAAE&quot;,
+            &quot;TypeName&quot;: &quot;Normal Hourly&quot;,
+            &quot;CPAAgreementType&quot;: &quot;Preventive Care Agreement&quot;,
+            &quot;RateLocum&quot;: 897,
+            &quot;UnitofMeasure&quot;: &quot;per Hour&quot;,
+            &quot;Type_New&quot;: &quot;Normal Hourly&quot;
+        }
+    ],
+    &quot;Err_ProcessType&quot;: &quot;IP&quot;,
+    &quot;Err_CtxId&quot;: &quot;8007x00000cWbOLAA0&quot;,
+    &quot;Err_RunningContext&quot;: &quot;Clinician_ConfigureRates&quot;,
+    &quot;ListPCASizeForLocum&quot;: 6,
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004bdhEAA&quot;,
+    &quot;elementName&quot;: &quot;IP_UpdateDelCPAandPCAForLocum&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>UpdateDelCPAandPCAForLocum</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RA_LoadResponse</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;RespCPA&quot; : &quot;%UpdateRespCPA%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : true,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DeleteCPA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(SV_DefaultValue:DeselectPCAlist) &amp;&amp; (SV_DefaultValue:CPASize == 1 || SV_DefaultValue:CPASize == SV_DefaultValue:PCASize)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;ContractPaymentAgreement&quot;,
+    &quot;Id&quot; : &quot;%SV_DefaultValue:DeselectCPAlist%&quot;,
+    &quot;AllOrNone&quot; : true
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DeletePCA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(SV_DefaultValue:DeselectPCAlist)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;PreventiveCareAgreement&quot;,
+    &quot;Id&quot; : &quot;%SV_DefaultValue:DeselectPCAlist%&quot;,
+    &quot;AllOrNone&quot; : true
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DM_UpdatePCA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(LA_ForPCAUpdate)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;UpdateRespCPA&quot;,
+  &quot;sendJSONPath&quot; : &quot;DRT_UpdatePCAForLocum:PCA&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMCreatePreventiveContractAgreement&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRT_UpdatePCAForLocum</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(LA_ForPCAUpdate)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;PCA&quot; : &quot;%LA_ForPCAUpdate%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRTUpdatePCAForLocum&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_ForPCADelete</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;matchingPath&quot; : &quot;facilityId&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;matchingPath&quot; : &quot;FacilityTitle__c&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  } ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;pcaData&quot; ],
+  &quot;filterListFormula&quot; : &quot;= isSelectRate == \&quot;false\&quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_ForPCAUpdate</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;matchingPath&quot; : &quot;facilityId&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;matchingPath&quot; : &quot;FacilityTitle__c&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  } ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;pcaData&quot; ],
+  &quot;filterListFormula&quot; : &quot;= isSelectRate == \&quot;true\&quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>SV_DefaultValue</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;DeselectPCAlist&quot; : &quot;=LIST(LA_ForPCADelete:PCAId)&quot;,
+    &quot;DeselectCPAlist&quot; : &quot;=LIST(LA_ForPCADelete:CPAId)&quot;,
+    &quot;CPASize&quot; : &quot;=LISTSIZE(pcaData)&quot;,
+    &quot;PCASize&quot; : &quot;=LISTSIZE(LA_ForPCADelete)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>ClinicianContract_UpdateDelCPAandPCAForLocum</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>UpdateDelCPAandPCAForLocum</subType>
+    <type>ClinicianContract</type>
+    <uniqueName>ClinicianContract_UpdateDelCPAandPCAForLocum_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>59491fd1-9b9e-adf1-ad93-6fa969d31b5c</webComponentKey>
+</OmniIntegrationProcedure>

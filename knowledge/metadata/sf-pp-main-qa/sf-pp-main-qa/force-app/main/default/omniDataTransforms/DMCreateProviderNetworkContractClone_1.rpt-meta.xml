@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMCreateProviderNetworkContractClone</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>$Vlocity.TODAY</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom1375</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartDate</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom2081</globalKey>
+        <inputFieldName>ProviderId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HealthcareProviderId</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom7536</globalKey>
+        <inputFieldName>hpfList:FacilityTitleName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Facility_Title__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom3008</globalKey>
+        <inputFieldName>PayerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HealthcarePayerNetworkId</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem4</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem3</globalKey>
+        <inputFieldName>hpfList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Healthcare_Practitioner_Facility__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem2</globalKey>
+        <inputFieldName>ContractId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContractId</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem1</globalKey>
+        <inputFieldName>Clinician</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>2999-01-01</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreateProviderNetworkContractCloneCustom7656</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreateProviderNetworkContractClone</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndDate</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;LA_MergeList&quot; : [ {
+    &quot;AccountName&quot; : &quot;Muskan Ser Acc&quot;,
+    &quot;effectiveDate&quot; : null,
+    &quot;Id&quot; : &quot;0bS7x0000003CELEA2&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x00000001wzEAA&quot;,
+    &quot;selectRate&quot; : true,
+    &quot;Unit_of_Measure__c&quot; : &quot;per Hour&quot;,
+    &quot;PCAId&quot; : &quot;0s47x00000005SjAAI&quot;,
+    &quot;CPAStatus&quot; : &quot;ACTIVATED&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Ambassador NP/PA&quot;,
+    &quot;facilityId&quot; : &quot;0hs7x0000007K8aAAE&quot;,
+    &quot;CPAName&quot; : &quot;Muskan Ser Acc&quot;,
+    &quot;contractingStatus&quot; : null,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x00000001wzEAA&quot;,
+    &quot;checked&quot; : true,
+    &quot;facilityTitle&quot; : &quot;Ambassador NP/PA&quot;,
+    &quot;Rate__c&quot; : 78,
+    &quot;CPAType__c&quot; : &quot;Shift&quot;,
+    &quot;CPAKey&quot; : &quot;17B2ADCB3A4D412EB85DC6D35D56EAC1-1457876826&quot;,
+    &quot;Name&quot; : &quot;PCA-0069&quot;,
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000ZrVsjAAF&quot;,
+    &quot;CPAAccount__c&quot; : &quot;0017x00001Bn7slAAB&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8aAAE&quot;,
+    &quot;accountName&quot; : &quot;Test Service Account&quot;,
+    &quot;OverrideProhibited&quot; : false,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DMCreateProviderNetworkContractClone_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

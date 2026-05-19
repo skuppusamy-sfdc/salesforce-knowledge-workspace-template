@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CPAList&quot; : {
+    &quot;Type__c&quot; : &quot;Text&quot;,
+    &quot;Description&quot; : &quot;Text&quot;,
+    &quot;AgreementType&quot; : &quot;Text&quot;,
+    &quot;ClonedFrom__c&quot; : &quot;Text&quot;,
+    &quot;Account__c&quot; : &quot;Text&quot;,
+    &quot;ContractId&quot; : &quot;Text&quot;,
+    &quot;EndDateTime&quot; : &quot;Text&quot;,
+    &quot;StartDateTime&quot; : &quot;Text&quot;,
+    &quot;Status&quot; : &quot;Text&quot;,
+    &quot;Name&quot; : &quot;Text&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMInsertClonedCPARecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem8</globalKey>
+        <inputFieldName>CPAList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem5</globalKey>
+        <inputFieldName>startDateTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartDateTime</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:CPAList:ClonedContractNumber &apos;-&apos; + var:CPAList:AccountName + &apos;-&apos; + var:CPAList:Type__c +</formulaConverted>
+        <formulaExpression>%CPAList:ClonedContractNumber%+&apos;-&apos;+%CPAList:AccountName%+&apos;-&apos;+%CPAList:Type__c%</formulaExpression>
+        <formulaResultPath>CPAList:Name</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem6</globalKey>
+        <inputFieldName>CPAList:Account__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account__c</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem2</globalKey>
+        <inputFieldName>CPAList:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem9</globalKey>
+        <inputFieldName>CPAList:ContractId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContractId</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem3</globalKey>
+        <inputFieldName>CPAList:Type__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type__c</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem1</globalKey>
+        <inputFieldName>CPAList:AgreementType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AgreementType</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem12</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem4</globalKey>
+        <inputFieldName>CPAList:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem13</globalKey>
+        <inputFieldName>CPAList:Facility_Rate__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Facility_Rate__c</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMInsertClonedCPARecordsCustom0jI7x00000021XtEAIItem10</globalKey>
+        <inputFieldName>CPAList:ClonedFrom__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMInsertClonedCPARecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Cloned_From__c</outputFieldName>
+        <outputObjectName>ContractPaymentAgreement</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CPAList&quot; : {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;Name&quot; : &quot;BPC Hospital&quot;,
+    &quot;ContractId&quot; : &quot;8007x00000fq49ZAAQ&quot;,
+    &quot;Account__c&quot; : &quot;0017x000019oDCUAA2&quot;,
+    &quot;ClonedFrom__c&quot; : &quot;0rR7x00000001ybEAA&quot;,
+    &quot;Type__c&quot; : &quot;Shift&quot;,
+    &quot;ContractNumber&quot; : &quot;00004963&quot;,
+    &quot;Status&quot; : &quot;Draft&quot;,
+    &quot;AgreementType&quot; : &quot;Preventive Care Agreement&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DMInsertClonedCPARecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

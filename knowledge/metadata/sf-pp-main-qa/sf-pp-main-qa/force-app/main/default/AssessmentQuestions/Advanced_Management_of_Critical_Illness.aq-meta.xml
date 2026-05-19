@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Advanced Management of Critical Illness</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;^&lt;/span&gt;These include but are not restricted to: providing admission or consultative services for critically ill patients; management of ethical, regulatory or legal issues related to critically ill patients; management of complex airway emergencies, coronary ischemia, arrhythmia and cardiogenic shock, gastrointestinal hemorrhage and shock, sepsis and septic shock, cerebral ischemia, cerebral infection, seizure, and post-resucitative injury, complex nutritional dilemmas and malnutrition, respiratory failure and severe lung disease, renal failure, electrolyte and metabolic emergencies, complex resuscitation interventions and shock, multi-system trauma and surgical illness</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>Advanced_Management_of_Critical_Illness</developerName>
+    <name>Advanced Management of Critical Illness</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

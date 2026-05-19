@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Rate_Pay_Code_Edit</fullName>
+    <active>true</active>
+    <description>Rate Pay Code should not be updated for Executed Contract.</description>
+    <errorConditionFormula>AND( Preventive_Care_Agreement__r.ContractPaymentAgreement.Contract.RecordType_DeveloperName__c = &quot;Client&quot;, ISPICKVAL( Preventive_Care_Agreement__r.ContractPaymentAgreement.Contract.Status, &quot;Executed&quot;) , OR( ISCHANGED( Pay_Code__c ) , ISNEW() ) )</errorConditionFormula>
+    <errorMessage>Rate Pay Code should not be updated for Executed Contract.</errorMessage>
+</ValidationRule>

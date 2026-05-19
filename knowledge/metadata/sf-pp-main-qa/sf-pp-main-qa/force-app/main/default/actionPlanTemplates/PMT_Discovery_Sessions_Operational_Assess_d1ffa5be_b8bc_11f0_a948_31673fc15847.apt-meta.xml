@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Onsite Operations Assessment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Business Development</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 10</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 10 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Client Implementation Director</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Onsite Operations Assessment</name>
+        <uniqueName>Onsite_Operations_Assessment_d21577b1_b8bc_11f0_a948_2572297f7ca9</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Will we utilize RN&apos;s and physicians for this program?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 20 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Will we utilize RN&apos;s and physicians for this program?</name>
+        <uniqueName>Will_we_utilize_RN_s_and_physicians_for_thi_d2172567_b8bc_11f0_a948_79c9ab3300a0</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Weekly meetings w/ various CCM stakeholder groups (Nursing, Resp, Pharmacy, Case Mngmt … Physicians Leaders of Service Lines</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Weekly meetings w/ various CCM stakeholder groups (Nursing, Respiratory, Pharmacy, Case Management … Physicians Leaders of Service Lines (closed vs open ICU) - Define go forward processes</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Practice Management</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Hospitalist Practice Manager</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Weekly meetings w/ various CCM stakeholder groups (Nursing, Resp, Pharmacy, Case Mngmt … Physicians Leaders of Service Lines</name>
+        <uniqueName>Weekly_meetings_w_various_CCM_stakeholder_d217c1a9_b8bc_11f0_a948_c97e47b93cfb</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 20 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Is ADT needed, if so the status?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Is ADT needed, if so the status?</name>
+        <uniqueName>Is_ADT_needed_if_so_the_status_d21613f3_b8bc_11f0_a948_23c5ff5ff38b</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>What services are we offering the client?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 20 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>What services are we offering the client?</name>
+        <uniqueName>What_services_are_we_offering_the_client_d216b035_b8bc_11f0_a948_c193be56e9c7</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 40 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Establish and sign off on scripting</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 40</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Establish and sign off on scripting</name>
+        <uniqueName>Establish_and_sign_off_on_scripting_d21b9247_b8bc_11f0_a948_231b1a7c39c6</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Connected Care start date and time</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 20 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Connected Care start date and time</name>
+        <uniqueName>Connected_Care_start_date_and_time_d21836db_b8bc_11f0_a948_bb9d5220dc73</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Hospitalist Practice Manager</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 15 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Critical care order set development and revisions</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 15</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Practice Management</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Critical care order set development and revisions</name>
+        <uniqueName>Critical_care_order_set_development_and_rev_d218d31d_b8bc_11f0_a948_df8237227455</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 20 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Is client nurse training needed?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Is client nurse training needed?</name>
+        <uniqueName>Is_client_nurse_training_needed_d21c2e89_b8bc_11f0_a948_dd032bfe7788</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>CPM Meetings - Ensure Amanda Ruhly&apos;s team has met non clinical hospital personnel</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>CPM Meetings - Ensure Amanda Ruhly&apos;s team has met non clinical hospital personnel affected in notification and conducting next steps</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 14</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Clinician Notification (client facing)</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 14 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Clinical Performance Manager</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>CPM Meetings - Ensure Amanda Ruhly&apos;s team has met non clinical hospital personnel</name>
+        <uniqueName>CPM_Meetings_Ensure_Amanda_Ruhly_s_team_h_d219484f_b8bc_11f0_a948_59a1255885ad</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>If physicians utilized will the hospital require credentialing/privileging?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>CCC,NCC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 20</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Connected Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Connected Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 20 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>If physicians utilized will the hospital require credentialing/privileging?</name>
+        <uniqueName>If_physicians_utilized_will_the_hospital_re_d21acef5_b8bc_11f0_a948_39d6587a42e4</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Can SCP doctor coats for HM programs be ordered a month ahead of go&apos; live?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Go Live</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Hospitalist Practice Coordinator</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Can SCP doctor coats for HM programs be ordered a month ahead of go&apos; live?</name>
+        <uniqueName>Can_SCP_doctor_coats_for_HM_programs_be_ord_d219bd81_b8bc_11f0_a948_dd1fea195723</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>HM/CC Practice Manager schedule onsite discovery meeting to meet with various depts.</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>HM/CC Practice Manager schedule onsite discovery meeting to meet with various depts. (i.e. HIM/CDI, Nursing,Registration/Admissions, Case Management, HR).</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Practice Management</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>HM,CC,ICPEM,ICPHM</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Hospitalist Practice Manager</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>HM/CC Practice Manager schedule onsite discovery meeting to meet with various depts.</name>
+        <uniqueName>HM_CC_Practice_Manager_schedule_onsite_disc_d21a32b3_b8bc_11f0_a948_a9b11c890fe7</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>PMT - Discovery Sessions/Operational Assessments</name>
+    <targetEntityType>Account</targetEntityType>
+    <uniqueName>PMT_Discovery_Sessions_Operational_Assess_d1ffa5be_b8bc_11f0_a948_31673fc15847</uniqueName>
+</ActionPlanTemplate>

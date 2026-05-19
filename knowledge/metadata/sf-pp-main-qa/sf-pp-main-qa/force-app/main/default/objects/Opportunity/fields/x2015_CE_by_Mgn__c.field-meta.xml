@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x2015_CE_by_Mgn__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Service_Line_s__c, 
+&quot;EM&quot;, Margin__c/600000,
+&quot;HM&quot;, Margin__c/135000,
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>2015 CE by Mgn</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

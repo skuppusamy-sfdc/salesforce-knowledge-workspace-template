@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Do you have any personal relationships</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Do you have any personal relationships, such as friends or family connections, who do business with or work for the Company that could lead you to provide preferential treatment, or that could cause others to believe that you are providing preferential treatment due to your personal relationship?</questionText>
+        <responseValues>No
+Yes</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Do_you_have_any_personal_relationships</developerName>
+    <name>Do you have any personal relationships</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

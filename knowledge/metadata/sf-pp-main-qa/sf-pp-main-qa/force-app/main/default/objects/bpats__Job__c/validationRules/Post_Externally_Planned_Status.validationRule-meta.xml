@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Externally_Planned_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (bpats__Post_Externally__c = True, ISBLANK (  Text (Planned_Status__c  )))</errorConditionFormula>
+    <errorDisplayField>Planned_Status__c</errorDisplayField>
+    <errorMessage>For an external job, fill in: Planned Status</errorMessage>
+</ValidationRule>

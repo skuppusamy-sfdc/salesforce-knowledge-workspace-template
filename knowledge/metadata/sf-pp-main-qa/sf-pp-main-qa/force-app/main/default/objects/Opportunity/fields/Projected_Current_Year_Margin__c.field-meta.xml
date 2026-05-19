@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projected_Current_Year_Margin__c</fullName>
+    <formula>IF( 
+NOT ( 
+ISBLANK( Actual_Start_Date__c ) 
+), 
+( Margin__c * (((DATE(YEAR(Actual_Start_Date__c), 12, 31) - Actual_Start_Date__c) + 1)/365)), 
+( Margin__c * (((DATE(YEAR(Target_Contract_Start_Date__c), 12, 31) - Target_Contract_Start_Date__c) + 1)/365)) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contribution Margin</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

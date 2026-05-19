@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MQL_Andrew</fullName>
+    <active>true</active>
+    <description>If lead status equals marketing qualified lead it automatically is owned by Andrew Beazley</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Status, &quot;	Marketing Qualified Lead&quot;),
+    	OwnerId &lt;&gt; &quot;005Hu00000QpzVvIAJ&quot;)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Only Andrew Beazley can own a Marketing Qualified Lead</errorMessage>
+</ValidationRule>

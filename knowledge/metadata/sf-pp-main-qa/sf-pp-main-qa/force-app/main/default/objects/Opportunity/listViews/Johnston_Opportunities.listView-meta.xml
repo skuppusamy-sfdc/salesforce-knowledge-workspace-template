@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Johnston_Opportunities</fullName>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Deal__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Total_Revenue__c</columns>
+    <columns>Margin__c</columns>
+    <columns>Projected_Current_Year_Margin__c</columns>
+    <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>Business_Dev_Mgr__c</columns>
+    <columns>Expected_Sign_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Marketing Qualified Lead,Sales Qualified Opportunity,Proposal Request,Proposal Presented,Down Select,Verbal Award,MOU Signed,Contract Signed,Started</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_YEAR</value>
+    </filters>
+    <filters>
+        <field>Market_Manager__c</field>
+        <operation>equals</operation>
+        <value>Bryan Johnston</value>
+    </filters>
+    <label>Johnston Opportunities</label>
+</ListView>

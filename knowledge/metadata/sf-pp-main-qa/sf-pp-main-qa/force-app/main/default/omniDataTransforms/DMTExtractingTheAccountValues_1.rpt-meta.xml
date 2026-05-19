@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DMTExtractingTheAccountValues&quot; : null,
+    &quot;ResponseAction1&quot; : null,
+    &quot;LoopBlock1&quot; : null,
+    &quot;DMTFilterSelectedServicesListForCARConfigureContract&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;LoopBlock1&quot; : { }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMTExtractingTheAccountValues</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SelectedRecords:ServicesList:Account__c LIST</formulaConverted>
+        <formulaExpression>LIST(%SelectedRecords:ServicesList:Account__c%)</formulaExpression>
+        <formulaResultPath>AccountList</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DMTExtractingTheAccountValuesCustom5443</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTExtractingTheAccountValues</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTExtractingTheAccountValuesCustom9661</globalKey>
+        <inputFieldName>AccountList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTExtractingTheAccountValues</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SelectedRecords&quot; : {
+    &quot;ServicesList&quot; : [ {
+      &quot;Name&quot; : &quot;Services-1302&quot;,
+      &quot;Id&quot; : &quot;a2H7x0000019XqbEAE&quot;,
+      &quot;Account__c&quot; : &quot;0017x0000176IKHAA2&quot;
+    }, {
+      &quot;Name&quot; : &quot;Services-1305&quot;,
+      &quot;Id&quot; : &quot;a2H7x0000019zuvEAA&quot;,
+      &quot;Account__c&quot; : &quot;0017x000017KgM0AAK&quot;
+    } ]
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DMTExtractingTheAccountValues_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

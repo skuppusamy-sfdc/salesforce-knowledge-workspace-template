@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>CORPORATE TAX ID</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Corporate Tax ID</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>CORPORATE_TAX_ID</developerName>
+    <name>CORPORATE TAX ID</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

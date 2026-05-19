@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;caseList&quot; : [ {
+    &quot;casePriority&quot; : &quot;Medium&quot;,
+    &quot;caseType&quot; : &quot;Facility&quot;,
+    &quot;ownerId&quot; : &quot;00537000001VDpPAAW&quot;,
+    &quot;casePncId&quot; : &quot;0mw7x0000001HV3AAM&quot;,
+    &quot;terminationTime&quot; : &quot;01:30:00.000Z&quot;,
+    &quot;caseId&quot; : null,
+    &quot;accountName&quot; : &quot;Jupiter Hospital&quot;,
+    &quot;caseAccountId&quot; : &quot;0017x00001IF7JFAA1&quot;,
+    &quot;caseOrigin&quot; : &quot;Manual&quot;,
+    &quot;terminationDate&quot; : &quot;2025-10-13&quot;,
+    &quot;caseSubject&quot; : &quot;Facility Offboarding - Jupiter Hospital&quot;
+  }, {
+    &quot;casePriority&quot; : &quot;Medium&quot;,
+    &quot;caseType&quot; : &quot;Facility&quot;,
+    &quot;ownerId&quot; : &quot;0057x00000WEitUAAT&quot;,
+    &quot;casePncId&quot; : &quot;0mw7x0000001HWfAAM&quot;,
+    &quot;terminationTime&quot; : &quot;01:00:00.000Z&quot;,
+    &quot;caseId&quot; : null,
+    &quot;accountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;caseAccountId&quot; : &quot;0017x000019oDCUAA2&quot;,
+    &quot;caseOrigin&quot; : &quot;Manual&quot;,
+    &quot;terminationDate&quot; : &quot;2025-10-21&quot;,
+    &quot;caseSubject&quot; : &quot;Facility Offboarding - BPC Hospital&quot;
+  } ],
+  &quot;caseRecordTypeId&quot; : &quot;0127x00000JEuQnAAL&quot;,
+  &quot;contractId&quot; : &quot;&quot;,
+  &quot;caseStatus&quot; : &quot;Not Started&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>LoadOnboardingCaseDM</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom2213</globalKey>
+        <inputFieldName>caseList:terminationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Termination_Request_Date__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom3768</globalKey>
+        <inputFieldName>caseList:terminationTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Termination_Request_Time__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom986</globalKey>
+        <inputFieldName>caseList:caseHPFId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Healthcare_Practitioner_Facility__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>LoadOnboardingCaseDMCustom9302</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom9228</globalKey>
+        <inputFieldName>caseList:caseId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom3118</globalKey>
+        <inputFieldName>caseList:casePriority</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Priority</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom1840</globalKey>
+        <inputFieldName>caseList:ownerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom6180</globalKey>
+        <inputFieldName>contractId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contract__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom4918</globalKey>
+        <inputFieldName>caseList:caseAccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom9883</globalKey>
+        <inputFieldName>caseList:caseType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom5713</globalKey>
+        <inputFieldName>caseList:casePncId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Provider_Network_Contract__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom6019</globalKey>
+        <inputFieldName>caseStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom8169</globalKey>
+        <inputFieldName>caseRecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom2547</globalKey>
+        <inputFieldName>caseList:caseOrigin</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Origin</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom524</globalKey>
+        <inputFieldName>caseList:caseSubject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadOnboardingCaseDMCustom9923</globalKey>
+        <inputFieldName>caseContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadOnboardingCaseDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;caseList&quot; : [ {
+    &quot;casePriority&quot; : &quot;Medium&quot;,
+    &quot;caseType&quot; : &quot;Facility&quot;,
+    &quot;ownerId&quot; : &quot;00537000001VDpPAAW&quot;,
+    &quot;casePncId&quot; : &quot;0mw7x0000001HV3AAM&quot;,
+    &quot;terminationTime&quot; : &quot;01:30:00.000Z&quot;,
+    &quot;accountName&quot; : &quot;Jupiter Hospital&quot;,
+    &quot;caseAccountId&quot; : &quot;0017x00001IF7JFAA1&quot;,
+    &quot;caseOrigin&quot; : &quot;Manual&quot;,
+    &quot;terminationDate&quot; : &quot;2025-10-23&quot;,
+    &quot;caseSubject&quot; : &quot;Facility Offboarding - Jupiter Hospital&quot;
+  }, {
+    &quot;casePriority&quot; : &quot;Medium&quot;,
+    &quot;caseType&quot; : &quot;Facility&quot;,
+    &quot;ownerId&quot; : &quot;0057x00000WEitUAAT&quot;,
+    &quot;casePncId&quot; : &quot;0mw7x0000001HWfAAM&quot;,
+    &quot;terminationTime&quot; : &quot;01:00:00.000Z&quot;,
+    &quot;accountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;caseAccountId&quot; : &quot;0017x000019oDCUAA2&quot;,
+    &quot;caseOrigin&quot; : &quot;Manual&quot;,
+    &quot;terminationDate&quot; : &quot;2025-10-26&quot;,
+    &quot;caseSubject&quot; : &quot;Facility Offboarding - BPC Hospital&quot;
+  } ],
+  &quot;caseRecordTypeId&quot; : &quot;0127x00000JEuQnAAL&quot;,
+  &quot;contractId&quot; : &quot;&quot;,
+  &quot;caseStatus&quot; : &quot;Not Started&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>LoadOnboardingCaseDM_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Signatory_Name__c</fullName>
+    <description>Signatory Name field on Corporate Entity</description>
+    <externalId>false</externalId>
+    <formula>Corporate_Entity__r.Signatory_Name__c</formula>
+    <label>Signatory Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

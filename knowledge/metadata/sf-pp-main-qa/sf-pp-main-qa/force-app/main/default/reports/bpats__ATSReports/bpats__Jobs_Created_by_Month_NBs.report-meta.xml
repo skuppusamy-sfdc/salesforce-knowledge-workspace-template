@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_17045018</developerName>
+        <masterLabel>Attrition/Growth</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>bpats__Job__c.Vacancy_Reason__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Attrition_Recruit_Over</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Attrition - Resignation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Attrition - Termination</sourceValue>
+            </sourceValues>
+            <value>Attrition</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Growth - New Coverage</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Growth - Startup</sourceValue>
+            </sourceValues>
+            <value>Growth</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CUST_CREATED_DATE</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_17045018</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>bpats__Job__c.bpats__Type__c</field>
+    </columns>
+    <columns>
+        <field>bpats__Job__c.bpats__Start_Date__c</field>
+    </columns>
+    <description>All-time Total Jobs created by Month</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_17045018</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Jobs Created by Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$bpats__Job__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>bpats__Job__c.bpats__End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

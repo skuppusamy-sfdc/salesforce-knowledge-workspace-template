@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Validate_Solution</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Validate Solution for Core services.</description>
+    <errorConditionFormula>NOT(RecordType.Name = &quot;Growth Opportunity&quot;) &amp;&amp;
+NOT(RecordType.Name = &quot;Patient Engagement Opportunity&quot;) &amp;&amp;
+ISPICKVAL(StageName, &quot;Validate Solution&quot;) &amp;&amp; 
+ (ISPICKVAL(Data_Extract_Received__c,&quot;&quot;)||
+ ISNULL(Proposal_Financial_Terms__c) ||
+ ISNULL(Proposal_Date__c)||
+ ISNULL(Revenue__c)||
+ ISNULL(Total_CORE_Operating_Margin__c)||
+ ISNULL(Volume__c)||
+ ISNULL(Subsidy__c))</errorConditionFormula>
+    <errorMessage>Required Fields: Proposal Financial Terms, Data Extract Received, Proposal Date, Patient Collections, Total Margin, Annual Encounters, and Subsidy.</errorMessage>
+</ValidationRule>

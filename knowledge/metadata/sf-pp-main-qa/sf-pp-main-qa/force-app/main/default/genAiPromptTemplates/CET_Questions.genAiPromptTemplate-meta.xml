@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>cYBnLdwl4FqvjzjQFhCZPDcT4qZqXscbvztvxfBkYxk=_2</activeVersionIdentifier>
+    <description>This template answers questions requested by CET assistant</description>
+    <developerName>CET_Questions</developerName>
+    <masterLabel>CET Questions</masterLabel>
+    <templateVersions>
+        <content>Instructions:
+&quot;&quot;&quot;&quot;
+When user asks any question with {!$Input:Query} then using data source {!$EinsteinSearch:File_CME_1Cx_sTN575b506f.results} provide answer to their questions.
+&quot;&quot;&quot;
+
+Guidelines:
+&quot;&quot;&quot;
+1. Use only provided data source to find answer.
+2. Narrow down search results by matching input query text with data source text keywords.
+3. Do not add own text.
+4. Do not summarize information from multiple paragraphs.
+5. Do not provide generic answer.
+&quot;&quot;&quot;
+
+Response:
+&quot;&quot;&quot;
+1. Provide clear and concise answer
+2. Provide formatted response: use bullets, list items, paragraph, rich text as appropriate and is easier to grasp.
+3. Information should be easy to understand and read. 
+&quot;&quot;&quot;
+
+</content>
+        <inputs>
+            <apiName>Query</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Query</masterLabel>
+            <referenceName>Input:Query</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_CME_1Cx_sTN575b506f</definition>
+            <description>File_CME</description>
+            <label>File_CME</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Query}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_CME_1Cx_sTN575b506f</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>cYBnLdwl4FqvjzjQFhCZPDcT4qZqXscbvztvxfBkYxk=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions:
+&quot;&quot;&quot;&quot;
+When user asks any question with {!$Input:Query} then using data source {!$EinsteinSearch:File_Benefits_1Cx_sTNfd3e035b.results} provide answer to their questions.
+&quot;&quot;&quot;
+
+Guidelines:
+&quot;&quot;&quot;
+1. Use only provided data source to find answer.
+2. Narrow down search results by matching input query text with data source text keywords.
+3. Do not add own text.
+4. Do not summarize information from multiple paragraphs.
+5. Do not provide generic answer.
+&quot;&quot;&quot;
+
+Response:
+&quot;&quot;&quot;
+1. Provide clear and concise answer
+2. Provide formatted response: use bullets, list items, paragraph, rich text as appropriate and is easier to grasp.
+3. Information should be easy to understand and read. 
+4. Response should not be provided in first-person grammar
+&quot;&quot;&quot;
+
+</content>
+        <inputs>
+            <apiName>Query</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Query</masterLabel>
+            <referenceName>Input:Query</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultGPT5</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Benefits_1Cx_sTNfd3e035b</definition>
+            <description>File_Benefits</description>
+            <label>File_Benefits</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Query}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Benefits_1Cx_sTNfd3e035b</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>cYBnLdwl4FqvjzjQFhCZPDcT4qZqXscbvztvxfBkYxk=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions:
+&quot;&quot;&quot;&quot;
+When user asks any question with {!$Input:Query} then using data source {!$EinsteinSearch:File_Documentation_and_System_1Cx_sTN42fed376.results} provide answer to their questions.
+&quot;&quot;&quot;
+
+Guidelines:
+&quot;&quot;&quot;
+1. Use only provided data source to find answer.
+2. Narrow down search results by matching input query text with data source text keywords.
+3. Do not add own text.
+4. Do not summarize information from multiple paragraphs.
+5. Do not provide generic answer.
+&quot;&quot;&quot;
+
+Response:
+&quot;&quot;&quot;
+1. Provide clear and concise answer
+2. Provide formatted response: use bullets, list items, paragraph, rich text as appropriate and is easier to grasp.
+3. Information should be easy to understand and read. 
+&quot;&quot;&quot;
+
+</content>
+        <inputs>
+            <apiName>Query</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Query</masterLabel>
+            <referenceName>Input:Query</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Documentation_and_System_1Cx_sTN42fed376</definition>
+            <description>File_Documentation_and_System</description>
+            <label>File_Documentation_and_System</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Query}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Documentation_and_System_1Cx_sTN42fed376</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>cYBnLdwl4FqvjzjQFhCZPDcT4qZqXscbvztvxfBkYxk=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions:
+&quot;&quot;&quot;&quot;
+When user asks any question with {!$Input:Query} then using data source {!$EinsteinSearch:File_Pay_And_Compensation_1Cx_sTNef59a95d.results} provide answer to their questions.
+&quot;&quot;&quot;
+
+Guidelines:
+&quot;&quot;&quot;
+1. Use only provided data source to find answer.
+2. Narrow down search results by matching input query text with data source text keywords.
+3. Do not add own text.
+4. Do not summarize information from multiple paragraphs.
+5. Do not provide generic answer.
+6. Do not provide self direction or guidance on what person should do.
+7. Do not provide answer in the first-person,second-person or third-person form
+&quot;&quot;&quot;
+
+Response:
+&quot;&quot;&quot;
+1. Provide clear and concise answer
+2. Provide formatted response: use bullets, list items, paragraph, rich text as appropriate and is easier to grasp.
+3. Information should be easy to understand and read. 
+&quot;&quot;&quot;
+
+</content>
+        <inputs>
+            <apiName>Query</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Query</masterLabel>
+            <referenceName>Input:Query</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Pay_And_Compensation_1Cx_sTNef59a95d</definition>
+            <description>File_Pay_And_Compensation</description>
+            <label>File_Pay_And_Compensation</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Query}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Pay_And_Compensation_1Cx_sTNef59a95d</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>cYBnLdwl4FqvjzjQFhCZPDcT4qZqXscbvztvxfBkYxk=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Your role is to support the user in finding the right answer for the given query or question provided as the input. 
+ 
+Instructions:
+&quot;&quot;&quot;&quot;
+User question is available in the form of {!$Input:Query} and answer should be provided by using the data source {!$EinsteinSearch:File_Schedules_1Cx_sTNa94b2a74.results} which are set of multiple documents.
+&quot;&quot;&quot;
+
+Guidelines:
+&quot;&quot;&quot;
+1. Find answer from within the provided data source or source of information.
+2. Narrow down search results by matching input query text with data source text using matching keywords.
+3. Do not add/enrich response with your own text.
+4. Do not summarize information from multiple paragraphs.
+5. Do not provide generic answer.
+6. Do not provide your own self direction or guidance on what person should do.
+7. Do not provide answer in the first-person,second-person or third-person form
+8. Do not assume information when looking for answer.
+9. Find answer closely matching to provided question or query
+&quot;&quot;&quot;
+
+Response:
+&quot;&quot;&quot;
+1. Provide clear and concise answer.
+2. Provide formatted response: use bullets, list items, paragraph, rich text as appropriate.
+3. Information should be easy to understand and read. 
+4. Do not provide long text or paragraphs as response.
+5. Only answer should be provided in the response.
+&quot;&quot;&quot;
+
+</content>
+        <inputs>
+            <apiName>Query</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Query</masterLabel>
+            <referenceName>Input:Query</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/File_Schedules_1Cx_sTNa94b2a74</definition>
+            <description>File_Schedules</description>
+            <label>File_Schedules</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Query}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:File_Schedules_1Cx_sTNa94b2a74</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>cYBnLdwl4FqvjzjQFhCZPDcT4qZqXscbvztvxfBkYxk=_5</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

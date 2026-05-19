@@ -1,0 +1,82 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "allRecordIds" : {
+      "title" : "All Record IDs",
+      "description" : "List of all record IDs for selection",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "clinicalDataList" : {
+      "title" : "Clinical Data List",
+      "description" : "Nested clinical data structure for Custom Lightning Types",
+      "lightning:type" : "c__clinicalManager",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "message" : {
+      "title" : "Message",
+      "description" : "Response message or error details",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "recordsJson" : {
+      "title" : "Records JSON",
+      "description" : "JSON string containing clinical records",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "selectedClinicianIds" : {
+      "title" : "Selected Clinician IDs",
+      "description" : "Value for selectedClinicianIds context variable",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "success" : {
+      "title" : "Success",
+      "description" : "Whether the operation was successful",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "totalRecords" : {
+      "title" : "Total Records",
+      "description" : "Total number of records available",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "triggerURLGeneration" : {
+      "title" : "trigger URLs Generation",
+      "description" : "Flag for triggering the 'Get Contract File Links' method when 'trigger URLs Generation' is TRUE",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

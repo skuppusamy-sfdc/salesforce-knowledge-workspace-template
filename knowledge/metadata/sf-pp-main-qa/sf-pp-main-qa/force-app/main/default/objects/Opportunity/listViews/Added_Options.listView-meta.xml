@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Added_Options</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Deal__c</columns>
+    <columns>Added_Options__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Added_Options__c</field>
+        <operation>includes</operation>
+        <value>Post-Acute</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Opportunity.Post_Acute_Care_Opportunity</value>
+    </filters>
+    <label>Added Options</label>
+</ListView>

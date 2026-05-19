@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Over_Rate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( NOT( Is_Deleted__c ) , IF( Rate__c  &gt; VALUE(Facility_Level_Rate__c), 1, 0) , 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Over Rate?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

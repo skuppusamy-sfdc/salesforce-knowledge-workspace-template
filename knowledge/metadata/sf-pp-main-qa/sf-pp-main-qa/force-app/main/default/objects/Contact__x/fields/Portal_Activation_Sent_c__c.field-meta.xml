@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Activation_Sent_c__c</fullName>
+    <externalDeveloperName>Portal_Activation_Sent__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Portal Activation Sent</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

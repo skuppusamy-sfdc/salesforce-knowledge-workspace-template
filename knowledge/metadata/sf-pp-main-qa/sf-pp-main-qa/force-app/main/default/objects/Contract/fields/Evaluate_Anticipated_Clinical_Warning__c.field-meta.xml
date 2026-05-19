@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evaluate_Anticipated_Clinical_Warning__c</fullName>
+    <formula>AND(
+    NOT(ISBLANK(TEXT(NPPA_Tier__c))),
+    NOT(ISBLANK(Anticipated_Clinical_Hours__c)),
+    Anticipated_Clinical_Hours__c &gt; VALUE(TEXT(NPPA_Tier__c)) * VALUE($Label.NPPATierMultiplyingFactor)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Evaluate Anticipated Clinical Warning</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

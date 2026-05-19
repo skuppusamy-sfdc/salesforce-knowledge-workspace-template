@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>MySCP Care application Setup for HM, CC, or ICP program</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 25</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Practice Management</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Hospitalist Practice Manager</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 25 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>MySCP Care application Setup for HM, CC, or ICP program</name>
+        <uniqueName>MySCP_Care_application_Setup_for_HM_CC_or_b74cd1d3_b8bd_11f0_9f32_7d4a80ebc099</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>PMT - Practice Management</name>
+    <targetEntityType>Account</targetEntityType>
+    <uniqueName>PMT_Practice_Management_b72b8e2d_b8bd_11f0_9f32_dfd054ca0b17</uniqueName>
+</ActionPlanTemplate>

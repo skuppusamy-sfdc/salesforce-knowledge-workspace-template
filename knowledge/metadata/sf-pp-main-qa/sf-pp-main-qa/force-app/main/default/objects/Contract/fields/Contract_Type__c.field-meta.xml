@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Type__c</fullName>
+    <label>Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketed</fullName>
+                <default>false</default>
+                <label>Marketed</label>
+            </value>
+            <value>
+                <fullName>TSG Contract</fullName>
+                <default>false</default>
+                <label>TSG Contract</label>
+            </value>
+            <value>
+                <fullName>Start Up</fullName>
+                <default>false</default>
+                <label>Start Up</label>
+            </value>
+            <value>
+                <fullName>Master</fullName>
+                <default>false</default>
+                <label>Master</label>
+            </value>
+            <value>
+                <fullName>Term &amp; Renewals</fullName>
+                <default>false</default>
+                <label>Term &amp; Renewals</label>
+            </value>
+            <value>
+                <fullName>Compensation</fullName>
+                <default>false</default>
+                <label>Compensation</label>
+            </value>
+            <value>
+                <fullName>Protection</fullName>
+                <default>false</default>
+                <label>Protection</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Special Terms</fullName>
+                <default>false</default>
+                <label>Special Terms</label>
+            </value>
+            <value>
+                <fullName>Legal Terms</fullName>
+                <default>false</default>
+                <label>Legal Terms</label>
+            </value>
+            <value>
+                <fullName>Termination</fullName>
+                <default>false</default>
+                <label>Termination</label>
+            </value>
+            <value>
+                <fullName>Terms &amp; Renewals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Terms &amp; Renewals</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

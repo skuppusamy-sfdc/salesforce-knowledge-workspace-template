@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Johnston_Colorado_C_Level_Execs</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>Account_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_State__c</field>
+        <operation>equals</operation>
+        <value>Colorado</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>equals</operation>
+        <value>Key Contact</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>equals</operation>
+        <value>Chief Executive Officer,Chief Medical Officer,Chief Operating Office</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>Account.ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>8000</value>
+    </filters>
+    <label>Johnston - Colorado C-Level Execs</label>
+</ListView>

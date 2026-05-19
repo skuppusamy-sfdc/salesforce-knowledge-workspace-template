@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPPA Tier --></label>
+    <name>NPPA_Tier__c</name>
+    <picklistValues>
+        <masterLabel>120</masterLabel>
+        <translation><!-- 120 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>140</masterLabel>
+        <translation><!-- 140 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>168</masterLabel>
+        <translation><!-- 168 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EST_READMISSION_PENALTY__c</fullName>
+    <description>FY2014 Est Revenue Loss Due to Readmission Penalty Adjustment</description>
+    <externalId>false</externalId>
+    <label>Est. Readmission Penalty</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_New_Documentation_Type</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Request New Documentation Type</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://na2.salesforce.com/_ui/core/email/author/EmailAuthor?p2_lkid=0034000000N403B&amp;rtype=003&amp;retURL=%2F0034000000K550G%3FsrPos%3D0%26srKp%3D003
+&amp;p6=Request for New Documentation Type&amp;p7=This is a request for a New Documentation Type.  Enter the Documentation Type Here.</url>
+</WebLink>

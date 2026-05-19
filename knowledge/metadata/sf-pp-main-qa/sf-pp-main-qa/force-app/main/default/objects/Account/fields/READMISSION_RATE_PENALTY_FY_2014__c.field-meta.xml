@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>READMISSION_RATE_PENALTY_FY_2014__c</fullName>
+    <description>FY2014 Medicare Readmission Rate Penalty Adjustment</description>
+    <label>Readmission Rate Penalty FY 2014</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

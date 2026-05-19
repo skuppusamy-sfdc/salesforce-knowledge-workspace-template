@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_Provided_By__c</fullName>
+    <label>Insurance Provided By</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SCP</fullName>
+                <default>false</default>
+                <label>SCP</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>SCP Insured Locums</fullName>
+                <default>false</default>
+                <label>SCP Insured Locums</label>
+            </value>
+            <value>
+                <fullName>Locum Company</fullName>
+                <default>false</default>
+                <label>Locum Company</label>
+            </value>
+            <value>
+                <fullName>Self Insured</fullName>
+                <default>false</default>
+                <label>Self Insured</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

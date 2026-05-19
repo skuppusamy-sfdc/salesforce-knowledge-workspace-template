@@ -1,0 +1,14 @@
+[
+    {
+        "BonusMeasureType": "NA",
+        "BonusPayout": 0,
+        "Rate": 4,
+        "ShiftsRequested": "",
+        "TargetMeasurePercent": 0,
+        "Type": {
+            "value": "0hs7x0000008zpWAAQ"
+        },
+        "UnitOfMeasure": "per Hour",
+        "contractPaymentAgreementId": "0rR7x0000000N33EAE"
+    }
+]

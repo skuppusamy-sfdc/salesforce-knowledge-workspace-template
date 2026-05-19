@@ -1,0 +1,48 @@
+<template>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Email Input -->
+			<div class="input-group">
+				<div id="sfdc_username_container" class="input-container">
+					<lightning-icon icon-name="utility:user" size="xx-small" class="input-icon"></lightning-icon>
+					<lightning-input type="email" label="Email" value={email} placeholder="Email Address"
+						onchange={handleEmailChange} variant="label-hidden" class="input-field">
+					</lightning-input>
+				</div>
+			</div>
+
+            <!-- Password Input -->
+			<template if:true={showPassword}>
+				<div class="input-group">
+					<div id="sfdc_password_container" class="input-container">
+						<lightning-icon icon-name="utility:lock" size="xx-small" class="input-icon"></lightning-icon>
+						<lightning-input type="password" label="Password" variant="label-hidden" value={password}
+							onchange={handlePasswordChange} class="input-field" placeholder="Password">
+						</lightning-input>
+					</div>
+				</div>
+			</template>
+
+            <!-- Error Message -->
+            <template if:true={errorMessage}>
+                <p class="error-text">{errorMessage}</p>
+            </template>
+
+            <!-- Login Button -->
+            <div class="button-section">
+                <lightning-button
+                    variant="brand"
+                    label={buttonLabel}
+                    onclick={handleLogin}
+					stretch
+                    class="login-btn">
+                </lightning-button>
+            </div>
+
+			<!-- Forgot Password -->
+            <template if:true={showPassword}>
+                <p class="forgot-password" onclick={handleForgotPassword}>Forgot your password?</p>
+            </template>
+        </div>
+    </div>
+</template>

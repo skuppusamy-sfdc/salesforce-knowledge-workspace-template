@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Shift_Name_Change_For_Coverage</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that when the parent Contract record has Shift Coverage Change (Shift_Coverage_Change__c) set to TRUE, users cannot modify the Shift Name (Shift_Name__c) field on the related Shift record. This prevents accidental or unauthori</description>
+    <errorConditionFormula>AND(
+   ISCHANGED(Shift_Name__c),
+   Contract__r.Shift_Coverage_Change__c = TRUE
+)</errorConditionFormula>
+    <errorDisplayField>Shift_Name__c</errorDisplayField>
+    <errorMessage>For Coverage Changes Shift Type changes not allowed</errorMessage>
+</ValidationRule>

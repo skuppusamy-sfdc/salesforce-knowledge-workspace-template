@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Hi ,</div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><font face="arial"><span style="font-size: 12pt;">A Client Agreement Request has been created for the following </span></font><span style="font-size: 12pt;"><a href="{!MID(Contract.Link,1,LEN(Contract.Link)-15)}{!Contract.Opportunity_Id__c}">Opportunity</a>&nbsp;</span><span style="font-size: 12pt;">and&nbsp;</span><span style="font-size: 12pt;"><a href="{!Contract.Link}">Contract</a>.</span></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></div><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">Thank you,</div><div style=""><font face="arial">{!Contract.OwnerFirstName}</font></div>]]></td>
+</tr>
+</table>

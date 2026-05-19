@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Issues_Reason__c</fullName>
+    <label>Business Issues Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mission Compliance</fullName>
+                <default>false</default>
+                <label>Mission Compliance</label>
+            </value>
+            <value>
+                <fullName>Malpractice History</fullName>
+                <default>false</default>
+                <label>Malpractice History</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Litigation History</fullName>
+                <default>false</default>
+                <label>Litigation History</label>
+            </value>
+            <value>
+                <fullName>Contractual Dispute</fullName>
+                <default>false</default>
+                <label>Contractual Dispute</label>
+            </value>
+            <value>
+                <fullName>Hospital Request</fullName>
+                <default>false</default>
+                <label>Hospital Request</label>
+            </value>
+            <value>
+                <fullName>Contractual Issue</fullName>
+                <default>false</default>
+                <label>Contractual Issue</label>
+            </value>
+            <value>
+                <fullName>Scheduling Concerns</fullName>
+                <default>false</default>
+                <label>Scheduling Concerns</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

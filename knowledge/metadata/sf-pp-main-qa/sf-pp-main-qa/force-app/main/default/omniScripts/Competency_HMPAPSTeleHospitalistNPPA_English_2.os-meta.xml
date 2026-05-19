@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <designerCustomizationType>Discovery Framework</designerCustomizationType>
+    <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>Competency_HM_PAPS_Tele_Hospitalist_NP_PA</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>IP_SaveAssessmentResponse</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;IP_SaveAssessmentResponse&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;Competency_SaveAssessmentResponse&quot;,
+  &quot;useContinuation&quot; : false,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : {
+    &quot;omniProcessId&quot; : &quot;%omniProcessId%&quot;,
+    &quot;omniscriptId&quot; : &quot;%omniscriptId%&quot;,
+    &quot;Step1&quot; : &quot;%Step1%&quot;,
+    &quot;AssessmentEnvelopeItemId&quot; : &quot;%ContextId%&quot;,
+    &quot;Err_RunningContext&quot; : &quot;IP_SaveAssessmentResponse&quot;,
+    &quot;Err_CtxId&quot; : &quot;%ContextId%&quot;,
+    &quot;Err_ProcessType&quot; : &quot;IP&quot;,
+    &quot;AssessmentName&quot; : &quot;1.5 Certification of Competency (HM-PAPS-Tele-Hospitalist NP-PA)&quot;
+  },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;sendOnlyExtraPayload&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Care_Continuity_Communication_Across_Inpatient_and_Outpatient_Settings</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Facilitates and communicates with patient, family and staff to promote continuity of care across the inpatient and outpatient continuum of care.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Care_Continuity_Communication_Across_Inpatient_and_Outpatient_Settings</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Care_Plan_Collaboration_and_Continuous_Patient_Follow_Up</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Collaborates in plan of care, and follows assigned patient population throughout the day.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Care_Plan_Collaboration_and_Continuous_Patient_Follow_Up</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>COBRA_EMTALA_Compliance</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;COBRA/EMTALA Compliance&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>13.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>COBRA_EMTALA_Compliance</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Collaboration_with_Physicians_Patients_and_Care_Teams</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Collaborate with Attending Physician(s), patients and families, and other health care providers.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Collaboration_with_Physicians_Patients_and_Care_Teams</uniqueIndex>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;CustomLWC1&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfCompetency_HMTeleHospitalistCertificationHeader&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ ]
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Diagnosis_of_Health_Conditions_Using_Advanced_Clinical_Decision_Making</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Diagnose health and medical conditions by reviewing all available health information, and applying advanced clinical decision making processes.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Diagnosis_of_Health_Conditions_Using_Advanced_Clinical_Decision_Making</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Familiarity_with_Restraint_Use_Protocols</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Familiar with protocols as it pertains to “use of restraints”&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Familiarity_with_Restraint_Use_Protocols</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>H_P_Progress_Notes_Transfers_and_Discharge_Summaries</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Documents in the medical record a complete history and physical examination for acute and complex chronically ill patients upon initial admission/consultation and key components of patient&apos;s progress via progress notes as medically necessary, transfer, and discharge summary.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>H_P_Progress_Notes_Transfers_and_Discharge_Summaries</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Health_Problem_Management_and_Care_Coordination_in_Post_Acute_Setting</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Manage health problems by developing an individualized plan of care, prescribing medications or treatments, obtaining consultations and referrals, and coordinating health care services in collaboration with the post acute setting.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Health_Problem_Management_and_Care_Coordination_in_Post_Acute_Setting</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>HIPAA_Compliance_Awareness_Electronic_Communication_and_Social_Media</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Knowledge and awareness of high-tech HIPAA compliance policies (electronic transmission by phone or text of X-ray and EKGs/Facebook and social media).&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>HIPAA_Compliance_Awareness_Electronic_Communication_and_Social_Media</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>History_Physical_Exam_and_Diagnostic_Interpretation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Evaluate an individual’s health by taking a history, performing a physical examination and ordering and interpreting results from appropriate laboratory and diagnostic tests/procedures.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>History_Physical_Exam_and_Diagnostic_Interpretation</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Post_Acute_Care_Role_Core_Expectations_Acknowledgment</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Core Expectations: Functions within the acute care hospital and/or sub-acute/post-acute setting, working in collaboration with, and being an integral member of the Post Acute Services team. Primary role involves the care of acute and complex chronically ill patients 16 years of age and older by managing the day to day patient care from admission to discharge.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Post_Acute_Care_Role_Core_Expectations_Acknowledgment</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Proficiency_in_Basic_Computer_Skills</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Proficient in basic computer skills required for completing electronic medical records&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Proficiency_in_Basic_Computer_Skills</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Risk_Assessment_for_Acute_and_Complex_Chronically_Ill_Patients</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Assesses for risks associated with the care of the acute and complex chronically ill patient including: medication side effects, immobility, impaired nutrition, fluid and electrolyte imbalance, immunocompetence, invasive interventions and diagnostic procedures.&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Risk_Assessment_for_Acute_and_Complex_Chronically_Ill_Patients</uniqueIndex>
+        </childElements>
+        <designerCustomizationType>Discovery Framework</designerCustomizationType>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Step1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;Certification of Competency (HM-PAPS-Tele-Hospitalist NP-PA)&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Previous&quot;,
+  &quot;previousWidth&quot; : 3,
+  &quot;nextLabel&quot; : &quot;Submit&quot;,
+  &quot;nextWidth&quot; : 3,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save for later&quot;,
+  &quot;saveMessage&quot; : &quot;Are you sure you want to save it for later?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : null,
+  &quot;allowSaveForLater&quot; : true,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:false,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:false,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:true,&quot;mergeSavedData&quot;:false,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:null,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;right&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;}</propertySetConfig>
+    <subType>HMPAPSTeleHospitalistNPPA</subType>
+    <type>Competency</type>
+    <uniqueName>Competency_HMPAPSTeleHospitalistNPPA_English_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>a77042bb-3e85-fb3a-a3a0-3feb32bfdb46</webComponentKey>
+</OmniScript>

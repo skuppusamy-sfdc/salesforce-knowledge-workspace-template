@@ -1,0 +1,90 @@
+[
+    {
+        "FilterGroup": 0,
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTUpdateSelectedCPAReviewCustom3809",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTUpdateSelectedCPAReview",
+        "OmniDataTransformationId": {
+            "Name": "DRTUpdateSelectedCPAReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTUpdateSelectedCPAReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTUpdateSelectedCPAReviewCustom8936",
+        "InputFieldName": "SelectedCPA:Id",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTUpdateSelectedCPAReview",
+        "OmniDataTransformationId": {
+            "Name": "DRTUpdateSelectedCPAReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTUpdateSelectedCPAReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedCPA:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTUpdateSelectedCPAReviewCustom7955",
+        "InputFieldName": "RelationshipStatus",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTUpdateSelectedCPAReview",
+        "OmniDataTransformationId": {
+            "Name": "DRTUpdateSelectedCPAReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTUpdateSelectedCPAReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedCPA:RelationshipStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTUpdateSelectedCPAReviewCustom5219",
+        "InputFieldName": "SupervisionCollaborationStatus",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTUpdateSelectedCPAReview",
+        "OmniDataTransformationId": {
+            "Name": "DRTUpdateSelectedCPAReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTUpdateSelectedCPAReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedCPA:SupervisionCollaborationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

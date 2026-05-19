@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Demographic</fullName>
+        <default>false</default>
+        <label>Demographic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial</fullName>
+        <default>false</default>
+        <label>Financial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Malpractice Claims History</fullName>
+        <default>false</default>
+        <label>Malpractice Claims History</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Personal History</fullName>
+        <default>false</default>
+        <label>Personal History</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recovery History</fullName>
+        <default>false</default>
+        <label>Recovery History</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Base</fullName>
+        <default>false</default>
+        <label>Base</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NP/PA</fullName>
+        <default>false</default>
+        <label>NP/PA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Physician</fullName>
+        <default>false</default>
+        <label>Physician</label>
+    </standardValue>
+</StandardValueSet>

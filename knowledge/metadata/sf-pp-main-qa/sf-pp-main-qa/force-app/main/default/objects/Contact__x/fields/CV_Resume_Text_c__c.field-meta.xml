@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CV_Resume_Text_c__c</fullName>
+    <externalDeveloperName>CV_Resume_Text__c</externalDeveloperName>
+    <isFilteringDisabled>true</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>true</isSortingDisabled>
+    <label>CV/Resume Text</label>
+    <length>32000</length>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

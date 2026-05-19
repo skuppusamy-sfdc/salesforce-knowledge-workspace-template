@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kansas_Hospitals</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>texcellency__DefHC_HQCity__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>Independent__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>Account_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>KS</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer - WW,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>guidance,counseling,addiction,senior,spine,surgical,guardian,psychiatric,behavioral,closed,select,rehabilitation,post acute,healthsouth</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>tammi_ne</value>
+    </filters>
+    <filters>
+        <field>ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>5000</value>
+    </filters>
+    <label>Kansas Hospitals</label>
+</ListView>

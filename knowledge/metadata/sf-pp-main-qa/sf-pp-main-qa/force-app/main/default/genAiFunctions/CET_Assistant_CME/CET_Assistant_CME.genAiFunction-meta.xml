@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This will deal with Continuing Medical Education topic</description>
+    <invocationTarget>CET_Assistant_CME</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>CET_Assistant_CME</masterLabel>
+    <progressIndicatorMessage>Bringing up the latest info</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclude_On_Agreement__c</fullName>
+    <formula>Billing_Only_Service_Account__c</formula>
+    <label>Exclude On Agreement</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

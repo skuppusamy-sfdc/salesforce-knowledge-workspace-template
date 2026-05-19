@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lockbox_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Facility__c</fields>
+    <fields>PhysicianEntity__c</fields>
+    <fields>BillingEntity__c</fields>
+    <fields>Bank__c</fields>
+    <fields>Billing_Company__c</fields>
+    <fields>Lockbox_Account_Number__c</fields>
+    <label>Lockbox Compact Layout</label>
+</CompactLayout>

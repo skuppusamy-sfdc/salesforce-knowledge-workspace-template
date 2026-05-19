@@ -1,0 +1,17 @@
+{
+    "Documents": [
+        {
+            "FileExtension": "pdf",
+            "Id": "0687x00000E3iPRAAZ",
+            "LastModifiedDate": "2025-09-21T08:03:55.000Z",
+            "Selected": true,
+            "Title": "Marcia Galbraith-AF Hospitals-TM Hospitals-2025-09-21-Termsheet"
+        }
+    ],
+    "Email": "iwaraich@salesforce.com",
+    "Name": "Marcia Galbraith",
+    "emailSettings": {
+        "emailBody": "Email Body",
+        "emailSubject": "Subject"
+    }
+}

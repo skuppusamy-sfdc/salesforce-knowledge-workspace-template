@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe4__Relationship_Explanation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text formula that constructs a sentence explaining the relationship between the two Contacts</description>
+    <externalId>false</externalId>
+    <formula>IF( $Setup.npe4__Relationship_Settings__c.npe4__Reciprocal_Method__c = &quot;Value Inversion&quot;
+&amp;&amp; CONTAINS(TEXT(npe4__Type__c), $Label.npe4__Relationship_Split),
+
+
+TEXT(npe4__RelatedContact__r.Salutation) + &quot; &quot; + npe4__RelatedContact__r.FirstName + &quot; &quot; + npe4__RelatedContact__r.LastName
++ &quot;  &quot;  +  IF(ISPICKVAL(npe4__Status__c, &quot;Former&quot;), &apos;was&apos;, $Label.npe4__Relationship_Explanation_Connector) + &quot; &quot; + 
+TEXT(npe4__Contact__r.Salutation) + &quot; &quot; + npe4__Contact__r.FirstName + &quot; &quot; + npe4__Contact__r.LastName + &quot;&apos;s &quot; + RIGHT(TEXT(npe4__Type__c), LEN(TEXT(npe4__Type__c))-FIND($Label.npe4__Relationship_Split,TEXT(npe4__Type__c))), 
+
+
+TEXT(npe4__RelatedContact__r.Salutation) + &quot; &quot; + npe4__RelatedContact__r.FirstName + &quot; &quot; + npe4__RelatedContact__r.LastName
++ &quot;  &quot;  +  IF(ISPICKVAL(npe4__Status__c, &quot;Former&quot;), &apos;was&apos;, $Label.npe4__Relationship_Explanation_Connector) + &quot; &quot; + 
+TEXT(npe4__Contact__r.Salutation) + &quot; &quot; + npe4__Contact__r.FirstName + &quot; &quot; + npe4__Contact__r.LastName + &quot;&apos;s &quot; + TEXT(npe4__Type__c)
+
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Text formula that constructs a sentence explaining the relationship between the two Contacts</inlineHelpText>
+    <label>Relationship Explanation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

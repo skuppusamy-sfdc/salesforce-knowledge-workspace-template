@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;ClinicianDetails&quot;: {
+        &quot;AdditionalInformation&quot;: {
+            &quot;MedicalLicense&quot;: &quot;AK;HI;MN&quot;,
+            &quot;PrimarySpecialty-Block&quot;: {
+                &quot;PrimarySpecialty&quot;: &quot;TEST Harsh&quot;,
+                &quot;Name&quot;: &quot;TEST Harsh&quot;,
+                &quot;RecordId&quot;: &quot;0bc7x0000000CVpAAM&quot;
+            },
+            &quot;Taxonomy-Block&quot;: {
+                &quot;Taxonomy&quot;: &quot;External AD&quot;,
+                &quot;Name&quot;: &quot;External AD&quot;,
+                &quot;RecordId&quot;: &quot;0bK7x0000001hCbEAI&quot;
+            },
+            &quot;BoardCertified&quot;: &quot;Yes&quot;,
+            &quot;LeadSource&quot;: &quot;Client Referral&quot;,
+            &quot;GeographicPreference&quot;: &quot;TG&quot;,
+            &quot;Comments&quot;: &quot;TEXT&quot;
+        },
+        &quot;ClinicianInformation&quot;: {
+            &quot;FirstNameN&quot;: &quot;Harsh&quot;,
+            &quot;LastNameN&quot;: &quot;G&quot;,
+            &quot;Suffix&quot;: &quot;Sr.&quot;,
+            &quot;ProfessionalTitle&quot;: &quot;CRNA&quot;,
+            &quot;Email&quot;: &quot;harsh@gm.com&quot;,
+            &quot;Mobile&quot;: &quot;3212235232&quot;
+        }
+    }
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ClinicianCreationIP</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ReturnClinicianRecord</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;CreateClinicianRecord:result&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CreateClinicianRecord</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;Suffix&quot; : &quot;=%ClinicianDetails:ClinicianInformation:Suffix%&quot;,
+    &quot;Email&quot; : &quot;=%ClinicianDetails:ClinicianInformation:Email%&quot;,
+    &quot;LeadSource&quot; : &quot;=%ClinicianDetails:AdditionalInformation:LeadSource%&quot;,
+    &quot;FirstName&quot; : &quot;=%ClinicianDetails:ClinicianInformation:FirstNameN%&quot;,
+    &quot;Comments&quot; : &quot;=%ClinicianDetails:AdditionalInformation:Comments%&quot;,
+    &quot;GeographicPreference&quot; : &quot;=%ClinicianDetails:AdditionalInformation:GeographicPreference%&quot;,
+    &quot;LastName&quot; : &quot;=%ClinicianDetails:ClinicianInformation:LastNameN%&quot;,
+    &quot;Mobile&quot; : &quot;=%ClinicianDetails:ClinicianInformation:Mobile%&quot;,
+    &quot;Salutation&quot; : &quot;=%ClinicianDetails:ClinicianInformation:Salutation%&quot;,
+    &quot;ProfessionalTitle&quot; : &quot;=%ClinicianDetails:ClinicianInformation:ProfessionalTitle%&quot;,
+    &quot;MiddleName&quot; : &quot;=%ClinicianDetails:ClinicianInformation:MiddleName%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;GuidedClinicianCreationController&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;createClinician&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Remote Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GETClinicianWithRelatedDetailsDM</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;recordId&quot; : &quot;=%CreateClinicianRecord:result:clinicianId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;GETClinicianWithRelatedDetailsDM&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadBoardCertificationDM</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ClinicianDetails:AdditionalInformation:BoardCertified% == \&quot;Yes\&quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;clinicianId&quot; : &quot;=%GETClinicianWithRelatedDetailsDM:clinicianAccountDetails:PersonContactId%&quot;,
+    &quot;status&quot; : &quot;Certified&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;LoadBoardCertificationDM&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadHealthCareTaxonomyDM</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ClinicianDetails:AdditionalInformation%&lt;&gt; $Vlocity.NULL &amp;&amp; %ClinicianDetails:AdditionalInformation:Taxonomy-Block% &lt;&gt; $Vlocity.NULL&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;TaxonomyId&quot; : &quot;=%ClinicianDetails:AdditionalInformation:Taxonomy-Block:RecordId%&quot;,
+    &quot;TaxonomyName&quot; : &quot;=%ClinicianDetails:AdditionalInformation:Taxonomy-Block:Name%&quot;,
+    &quot;PractitionerId&quot; : &quot;=%GETClinicianWithRelatedDetailsDM:clinicianAccountDetails:PersonContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;LoadHealthCareTaxonomyDM&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadMedicalLicenseDM</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ClinicianDetails:AdditionalInformation:MedicalLicense% &lt;&gt; $Vlocity.NULL&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;medicalLicenseList&quot; : &quot;=%ClinicianDetails:AdditionalInformation:medicalLicenseList%&quot;,
+    &quot;clinicianId&quot; : &quot;=%GETClinicianWithRelatedDetailsDM:clinicianAccountDetails:PersonContactId%&quot;,
+    &quot;LastName&quot; : &quot;=%ClinicianDetails:ClinicianInformation:LastNameN%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;LoadMedicalLicenseDM&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadPracticingSpecialtyDM</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ClinicianDetails:AdditionalInformation% &amp;&amp; %ClinicianDetails:AdditionalInformation:PracticingSpecialty-Block% &lt;&gt; $Vlocity.NULL&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;SpecialtyName&quot; : &quot;=%ClinicianDetails:AdditionalInformation:PracticingSpecialty-Block:Name%&quot;,
+    &quot;SpecialtyId&quot; : &quot;=%ClinicianDetails:AdditionalInformation:PracticingSpecialty-Block:RecordId%&quot;,
+    &quot;SubSpecialty&quot; : &quot;=\&quot;$Vlocity.TRUE\&quot;&quot;,
+    &quot;PractitionerId&quot; : &quot;=%GETClinicianWithRelatedDetailsDM:clinicianAccountDetails:PersonContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;LoadHealthCareSpecialtyDM&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadPrimarySpecialtyDM</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ClinicianDetails:AdditionalInformation% &amp;&amp; %ClinicianDetails:AdditionalInformation:PrimarySpecialty-Block% &lt;&gt; $Vlocity.NULL&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;SpecialtyName&quot; : &quot;=%ClinicianDetails:AdditionalInformation:PrimarySpecialty-Block:Name%&quot;,
+    &quot;SpecialtyId&quot; : &quot;=%ClinicianDetails:AdditionalInformation:PrimarySpecialty-Block:RecordId%&quot;,
+    &quot;PrimaryBoardSpecialty&quot; : &quot;=\&quot;$Vlocity.TRUE\&quot;&quot;,
+    &quot;PractitionerId&quot; : &quot;=%GETClinicianWithRelatedDetailsDM:clinicianAccountDetails:PersonContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;LoadHealthCareSpecialtyDM&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlockForCreation</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;disOnTplt&quot; : false,
+  &quot;isActive&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_CreationIP</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>CreationIP</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_CreationIP_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>7995bbb5-4647-4bc7-9295-8376b5488c89</webComponentKey>
+</OmniIntegrationProcedure>

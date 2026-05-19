@@ -1,0 +1,74 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DREGetClinicianDeatilsCustom4188",
+        "InputFieldName": "Name",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DREGetClinicianDeatils",
+        "OmniDataTransformationId": {
+            "Name": "DREGetClinicianDeatils",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetClinicianDeatils",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "clinicianAccountDetails",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DREGetClinicianDeatilsCustom9807",
+        "InputFieldName": "PersonContactId",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DREGetClinicianDeatils",
+        "OmniDataTransformationId": {
+            "Name": "DREGetClinicianDeatils",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetClinicianDeatils",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "clinicianAccountDetails",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "ID",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "DREGetClinicianDeatilsCustom3269",
+        "InputFieldName": "Id",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DREGetClinicianDeatils",
+        "OmniDataTransformationId": {
+            "Name": "DREGetClinicianDeatils",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetClinicianDeatils",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "clinicianAccountDetails",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

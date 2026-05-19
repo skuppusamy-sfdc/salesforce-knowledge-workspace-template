@@ -1,0 +1,100 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DELoadAccountTeamMembersCustom9755",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "AccountTeamMember",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DELoadAccountTeamMembers",
+        "OmniDataTransformationId": {
+            "Name": "DELoadAccountTeamMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DELoadAccountTeamMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "teamMemberList",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DELoadAccountTeamMembersCustom6863",
+        "InputFieldName": "UserId",
+        "InputObjectName": "AccountTeamMember",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DELoadAccountTeamMembers",
+        "OmniDataTransformationId": {
+            "Name": "DELoadAccountTeamMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DELoadAccountTeamMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "teamMemberList",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "IN",
+        "FilterValue": "accountId",
+        "GlobalKey": "DELoadAccountTeamMembersCustom4904",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "AccountTeamMember",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DELoadAccountTeamMembers",
+        "OmniDataTransformationId": {
+            "Name": "DELoadAccountTeamMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DELoadAccountTeamMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "teamMemberList",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "PICKLIST",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Clinician Experience Specialist'",
+        "GlobalKey": "DELoadAccountTeamMembersCustom551",
+        "InputFieldName": "TeamMemberRole",
+        "InputObjectName": "AccountTeamMember",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DELoadAccountTeamMembers",
+        "OmniDataTransformationId": {
+            "Name": "DELoadAccountTeamMembers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DELoadAccountTeamMembers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "teamMemberList",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;matchingHpfs&quot; : {
+    &quot;accountName&quot; : &quot;Text&quot;,
+    &quot;AccountId&quot; : &quot;Text&quot;,
+    &quot;contractingStatus&quot; : &quot;Text&quot;,
+    &quot;hpfStatus&quot; : &quot;Text&quot;,
+    &quot;facilityTitle&quot; : &quot;Text&quot;,
+    &quot;Id&quot; : &quot;Text&quot;,
+    &quot;recordId&quot; : &quot;Text&quot;,
+    &quot;checked&quot; : true,
+    &quot;Contracting_Corporate_Entity__c&quot; : &quot;&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>GetHpfByCorporateEntityIds</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom4267</globalKey>
+        <inputFieldName>HPFs:Contracting_Corporate_Entity__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:Contracting_Corporate_Entity__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;$Vlocity.NULL&apos;</filterValue>
+        <globalKey>GetHpfByCorporateEntityIdsCustom1413</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFs</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom3726</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>matchingHpfs</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom6695</globalKey>
+        <inputFieldName>HPFs:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom8072</globalKey>
+        <inputFieldName>HPFs:Contracting_Status__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:contractingStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom6106</globalKey>
+        <inputFieldName>HPFs:Status__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:hpfStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;Inactive&apos;</filterValue>
+        <globalKey>GetHpfByCorporateEntityIdsCustom373</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFs</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom1815</globalKey>
+        <inputFieldName>HPFs:Facility_Title__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:facilityTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>ClinicianId</filterValue>
+        <globalKey>GetHpfByCorporateEntityIdsCustom3274</globalKey>
+        <inputFieldName>Practitioner.AccountId</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFs</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>SelectedHpfs:Contracting_Corporate_Entity__c</filterValue>
+        <globalKey>GetHpfByCorporateEntityIdsCustom1446</globalKey>
+        <inputFieldName>Contracting_Corporate_Entity__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFs</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom413</globalKey>
+        <inputFieldName>HPFs:AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:AccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetHpfByCorporateEntityIdsCustom7609</globalKey>
+        <inputFieldName>HPFs:Account.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetHpfByCorporateEntityIds</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>matchingHpfs:accountName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SelectedHpfs&quot; : [ {
+    &quot;Contracting_Corporate_Entity__c&quot; : &quot;0017x00001LqddWAAR&quot;
+  } ],
+  &quot;ClinicianId&quot; : &quot;0017x00001F8BqvAAF&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>GetHpfByCorporateEntityIds_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

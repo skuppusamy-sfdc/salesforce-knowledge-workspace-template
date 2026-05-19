@@ -1,0 +1,51 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRFetchPCADataCustom6247",
+        "InputFieldName": "Name",
+        "InputObjectName": "PreventiveCareAgreement",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRFetchPCAData",
+        "OmniDataTransformationId": {
+            "Name": "DRFetchPCAData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFetchPCAData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pcaRec",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CPAId",
+        "GlobalKey": "DRFetchPCADataCustom3811",
+        "InputFieldName": "ContractPaymentAgreementId",
+        "InputObjectName": "PreventiveCareAgreement",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRFetchPCAData",
+        "OmniDataTransformationId": {
+            "Name": "DRFetchPCAData",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFetchPCAData",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "pcaRec",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

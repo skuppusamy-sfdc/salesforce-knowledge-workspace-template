@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EE_Partnership_Model_BW_HG</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account.ED_Volume__c</columns>
+    <columns>Account.Current_EM_Incumbent__c</columns>
+    <columns>Account.Group_Ownership__c</columns>
+    <columns>Account.Current_HM_Incumbent__c</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer - WW,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AL,CT,FL,MA,MS,NJ,NY</value>
+    </filters>
+    <filters>
+        <field>Account.Current_HM_Incumbent__c</field>
+        <operation>contains</operation>
+        <value>Employed,Local</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Medical Information Officer,Chief Medical Officer,Physician in Chief</value>
+    </filters>
+    <label>EE Partnership Model - BW/HG</label>
+</ListView>

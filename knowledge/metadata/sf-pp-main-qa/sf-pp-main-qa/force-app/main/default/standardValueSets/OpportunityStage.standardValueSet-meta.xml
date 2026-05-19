@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+        <label>Prospecting</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>5</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualify and Discover Needs</fullName>
+        <default>false</default>
+        <label>Qualify and Discover Needs</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Build Sales Strategy and Develop Sponsorship</fullName>
+        <default>false</default>
+        <label>Build Sales Strategy and Develop Sponsorship</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Validate Solution</fullName>
+        <default>false</default>
+        <label>Validate Solution</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiate Contract &amp; Close</fullName>
+        <default>false</default>
+        <label>Negotiate Contract &amp; Close</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Implement</fullName>
+        <default>false</default>
+        <label>Implement</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Confirm Customer Satisfaction</fullName>
+        <default>false</default>
+        <label>Confirm Customer Satisfaction</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed-No Bid</fullName>
+        <default>false</default>
+        <label>Closed-No Bid</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <description>No sale.</description>
+        <label>Closed Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - SCP Declined</fullName>
+        <default>false</default>
+        <label>Closed - SCP Declined</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Client Abandoned Proposal</fullName>
+        <default>false</default>
+        <label>Closed - Client Abandoned Proposal</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - No Change</fullName>
+        <default>false</default>
+        <label>Closed - No Change</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - No Change/Lost</fullName>
+        <default>false</default>
+        <label>Closed - No Change/Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>0</probability>
+        <won>true</won>
+    </standardValue>
+</StandardValueSet>

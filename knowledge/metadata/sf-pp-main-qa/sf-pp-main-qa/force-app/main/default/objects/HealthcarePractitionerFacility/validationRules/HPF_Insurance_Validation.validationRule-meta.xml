@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HPF_Insurance_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  ISCHANGED( Insurance_Provided_By__c ) ,OR( AND( Facility_Title__r.Name   &lt;&gt; &quot;External Locums&quot; , OR( ISPICKVAL( Insurance_Provided_By__c , &quot;SCP Insured Locums&quot;) ,ISPICKVAL( Insurance_Provided_By__c , &quot;Locum Company&quot;))) , AND(Facility_Title__r.Name   =   &quot;External Locums&quot;, OR( ISPICKVAL( Insurance_Provided_By__c , &quot;SCP&quot;) ,ISPICKVAL( Insurance_Provided_By__c , &quot;Commercial&quot;),ISPICKVAL( Insurance_Provided_By__c , &quot;Hospital&quot;)))) , NOT( ISBLANK( Facility_Title__c ) ) )</errorConditionFormula>
+    <errorMessage>The selected value is invalid for this clinician’s HPF</errorMessage>
+</ValidationRule>

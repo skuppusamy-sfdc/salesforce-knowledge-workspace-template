@@ -1,0 +1,39 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "fileLinks" : {
+      "title" : "File Preview Links",
+      "description" : "List of preview letter URLs to be displayed in List format",
+      "maxItems" : 2000,
+      "items" : {
+        "maxLength" : 100000,
+        "lightning:type" : "lightning__richTextType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "message" : {
+      "title" : "Message",
+      "description" : "Response message or error details",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "success" : {
+      "title" : "Success",
+      "description" : "Whether the operation was successful",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

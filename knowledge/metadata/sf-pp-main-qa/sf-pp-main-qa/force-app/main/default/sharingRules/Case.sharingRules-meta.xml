@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Case_Edit_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares Case records excluding Risk Review with edit access</description>
+        <label>Case Edit Access</label>
+        <sharedTo>
+            <group>Manage_Cases</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Risk Review</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Clinical Match</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Clinical_Match_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Clinical Match Sharing Rule</label>
+        <sharedTo>
+            <group>Clinical_Match_Request</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Clinical Match</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Risk_Review_Case_Edit_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares Case records with Risk Review record type with edit access</description>
+        <label>Risk Review Case Edit Access</label>
+        <sharedTo>
+            <group>Clinician_Risk_Review</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Risk Review</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SCP_Offboarding_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SCP Offboarding Cases</label>
+        <sharedTo>
+            <group>Integration_SCP_Cases</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Clinician Offboarding</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>SCP</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

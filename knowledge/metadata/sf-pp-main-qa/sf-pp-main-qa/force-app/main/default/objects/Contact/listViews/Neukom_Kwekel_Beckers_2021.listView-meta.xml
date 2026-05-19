@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Neukom_Kwekel_Beckers_2021</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_State__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Account.Current_EM_Incumbent__c</columns>
+    <columns>Account.Current_HM_Incumbent__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Owner__c</field>
+        <operation>equals</operation>
+        <value>Tammi Neukom</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AZ,CA,CO,ID,IA,KS,MN,MT,NE,NV,NM,ND,OK,OR,SD,UT,WA,WI,WY</value>
+    </filters>
+    <filters>
+        <field>Account.Current_EM_Incumbent__c</field>
+        <operation>notContain</operation>
+        <value>SCP Health</value>
+    </filters>
+    <filters>
+        <field>Account.Current_HM_Incumbent__c</field>
+        <operation>notContain</operation>
+        <value>SCP Health</value>
+    </filters>
+    <filters>
+        <field>Account.Do_Not_Call__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>equals</operation>
+        <value>Key Contact</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Executive Officer,Chief Financial Officer,Chief Nursing Officer,Chief Operating Officer,Chief Quality Officer,Vice President of Operations</value>
+    </filters>
+    <filters>
+        <field>Account.ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>5000</value>
+    </filters>
+    <label>Neukom/Kwekel Beckers 2021</label>
+</ListView>

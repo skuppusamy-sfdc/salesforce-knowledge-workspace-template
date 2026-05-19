@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FQ_State__c</fullName>
+    <description>Foreign Qualification state. Used on Task records (Corporate Entity record type) to differentiate filings for an entity registered to do business in a state outside its state of formation.</description>
+    <inlineHelpText>Foreign Qualification state — the state in which the entity is registered to do business outside its state of formation.</inlineHelpText>
+    <label>FQ State</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>StateGlobalPicklist</valueSetName>
+    </valueSet>
+</CustomField>

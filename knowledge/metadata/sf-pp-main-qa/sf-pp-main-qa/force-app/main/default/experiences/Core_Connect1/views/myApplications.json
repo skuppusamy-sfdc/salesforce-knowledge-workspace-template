@@ -1,0 +1,81 @@
+{
+  "appPageId" : "0835824d-10ae-4bcb-a5d9-d167369a2555",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "e8d8837f-dd30-4170-923e-308844d87505",
+  "label" : "My Applications",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "7e377c18-079e-4aaf-82d5-dd35c4cfd715",
+          "columns" : [ {
+            "UUID" : "41248631-95ae-4da2-b630-217b35c841aa",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "7e377c18-079e-4aaf-82d5-dd35c4cfd715",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.Prospect_Portal_Graphic_Assets131.1}\" alt=\"\"></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5b9ce24f-62ce-417e-a25c-635b84e925b1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "flexcardName" : "HCPortal_ClinicanApplication",
+            "objectApiName" : "{!objectApiName}",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "runtime_omnistudio:flexcard",
+          "id" : "e2fb1091-4e84-4235-973c-31a8d2d1d300",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "41248631-95ae-4da2-b630-217b35c841aa",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d4708ba4-97bf-4d63-afec-a689f1087cb3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Applications"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "44d2799e-58b7-42ed-8623-e63f60e5dfba",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "17e22ba0-0424-4572-b178-03698f167eee",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-applications"
+}

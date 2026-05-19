@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EM Physician TRAUMA</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;TRAUMA – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Interpretation of cervical spine x-rays&lt;/li&gt;
+&lt;li&gt;Management of head injury&lt;/li&gt;
+&lt;li&gt;Recognition and management of spinal injury&lt;/li&gt;
+&lt;li&gt;Fluid resuscitation in shock (adults/pediatrics)&lt;/li&gt;
+&lt;li&gt;Initial management of pediatric and adult trauma&lt;/li&gt;
+&lt;li&gt;Gunshot wounds and knife injuries&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>EM_Physician_TRAUMA</developerName>
+    <name>EM Physician TRAUMA</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Contract_Type__c</fullName>
+    <label>Financial Contract Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case Rate</fullName>
+                <default>false</default>
+                <label>Case Rate</label>
+            </value>
+            <value>
+                <fullName>Collections Floor</fullName>
+                <default>false</default>
+                <label>Collections Floor</label>
+            </value>
+            <value>
+                <fullName>Cost +</fullName>
+                <default>false</default>
+                <label>Cost +</label>
+            </value>
+            <value>
+                <fullName>Guaranteed Management Fee ($)</fullName>
+                <default>false</default>
+                <label>Guaranteed Management Fee ($)</label>
+            </value>
+            <value>
+                <fullName>Guaranteed Management Fee (%)</fullName>
+                <default>false</default>
+                <label>Guaranteed Management Fee (%)</label>
+            </value>
+            <value>
+                <fullName>Flat Subsidy</fullName>
+                <default>false</default>
+                <label>Flat Subsidy</label>
+            </value>
+            <value>
+                <fullName>Flat Subsidy w/ Leaseback</fullName>
+                <default>false</default>
+                <label>Flat Subsidy w/ Leaseback</label>
+            </value>
+            <value>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+                <label>Hourly</label>
+            </value>
+            <value>
+                <fullName>LifePoint Agreement</fullName>
+                <default>false</default>
+                <label>LifePoint Agreement</label>
+            </value>
+            <value>
+                <fullName>LifePoint Agreement Carve Out</fullName>
+                <default>false</default>
+                <label>LifePoint Agreement Carve Out</label>
+            </value>
+            <value>
+                <fullName>MSA</fullName>
+                <default>false</default>
+                <label>MSA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

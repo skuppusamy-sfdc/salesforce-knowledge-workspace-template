@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Externally_Monthly_Hours</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (bpats__Post_Externally__c = True, ISBLANK (  Monthly_Hours_Requested__c  ))</errorConditionFormula>
+    <errorDisplayField>Monthly_Hours_Requested__c</errorDisplayField>
+    <errorMessage>For an external job, fill in: Monthly Hours Requested</errorMessage>
+</ValidationRule>

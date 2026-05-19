@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>CES Responsiveness</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>When I had a question or issue before or during my first shift, my CES responded in a timely manner.</questionText>
+        <responseValues>1
+2
+3
+4
+5</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>CES_Responsiveness</developerName>
+    <name>CES Responsiveness</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

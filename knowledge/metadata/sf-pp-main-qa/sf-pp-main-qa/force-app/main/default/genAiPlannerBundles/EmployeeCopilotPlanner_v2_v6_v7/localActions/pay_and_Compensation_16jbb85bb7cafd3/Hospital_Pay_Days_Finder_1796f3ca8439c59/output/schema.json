@@ -1,0 +1,27 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ACHPayDays" : {
+      "title" : "ACHPayDays",
+      "description" : "Stores the ACHPayDays based on the GlobalFacilityID",
+      "maxLength" : 100000,
+      "lightning:type" : "lightning__richTextType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "CheckPayDays" : {
+      "title" : "CheckPayDays",
+      "description" : "Stores the CheckPayDays based on the GlobalFacilityID",
+      "maxLength" : 100000,
+      "lightning:type" : "lightning__richTextType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

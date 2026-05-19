@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Clsd_Abnd_Decld</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is closed.</description>
+    <errorConditionFormula>NOT(RecordType.Name = &quot;Patient Engagement Opportunity&quot;) &amp;&amp;
+(ISPICKVAL(StageName, &quot;Closed - SCP Declined&quot;)||
+ ISPICKVAL(StageName, &quot;Closed - Client Abandoned Proposal&quot;))&amp;&amp;
+  
+(ISNULL(CloseDate)||
+ ISPICKVAL(Close_Reason__c, &quot;&quot;)||
+ ISBLANK(Other_Detail__c) ||
+ ISNULL(Lost_Date__c) ||
+ ISNULL(Who_Won__c))</errorConditionFormula>
+    <errorMessage>Required Fields: Lost Date, Close Date, Close Reason, Closed Stage Detail and Who Won.</errorMessage>
+</ValidationRule>

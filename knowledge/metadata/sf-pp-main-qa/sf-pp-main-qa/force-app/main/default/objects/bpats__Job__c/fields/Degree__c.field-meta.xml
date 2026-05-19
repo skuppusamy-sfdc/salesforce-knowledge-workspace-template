@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Degree__c</fullName>
+    <description>Degree for XML Feed to DocCafe</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Degree for DocCafe</inlineHelpText>
+    <label>Degree</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

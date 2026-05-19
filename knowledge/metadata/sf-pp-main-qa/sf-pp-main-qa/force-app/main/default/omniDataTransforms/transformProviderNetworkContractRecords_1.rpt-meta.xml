@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>transformProviderNetworkContractRecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>transformProviderNetworkContractRecordsCustom7856</globalKey>
+        <inputFieldName>AccountIdICurrentLoop</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Service_Account__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>transformProviderNetworkContractRecordsCustom1267</globalKey>
+        <inputFieldName>HealthcarePayerNetworkId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HealthcarePayerNetworkId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>transformProviderNetworkContractRecordsCustom9085</globalKey>
+        <inputFieldName>HealthcareProviderRecordswithaccount:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HealthcareProviderId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:HCErecs LIST &apos;AccountId/\/\/==/\/\/&quot;&apos; var:AccountIdICurrentLoop + &apos;&quot;&apos; + FILTER</formulaConverted>
+        <formulaExpression>FILTER(
+  LIST(%HCErecs%),
+  &apos;AccountId == &quot;&apos; + %AccountIdICurrentLoop% + &apos;&quot;&apos;
+)</formulaExpression>
+        <formulaResultPath>HealthcareProviderRecordswithaccount</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>transformProviderNetworkContractRecordsCustom9752</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>transformProviderNetworkContractRecordsCustom3112</globalKey>
+        <inputFieldName>ServcieRecordIdIinCurrentLoop</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>transformProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Related_Opty_Service_Id__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>[ {
+  &quot;ElapsedTime&quot; : 87,
+  &quot;Type&quot; : &quot;DataRaptor Transform Action&quot;,
+  &quot;Input&quot; : {
+    &quot;elementName&quot; : &quot;IP_CreateRelatedRecordsForConfigureContract&quot;,
+    &quot;DMTFilterSelectedServicesListForCARConfigureContract&quot; : {
+      &quot;ServicesList&quot; : {
+        &quot;Name&quot; : &quot;Services-1302&quot;,
+        &quot;Id&quot; : &quot;a2H7x0000019XqbEAE&quot;,
+        &quot;Account__c&quot; : &quot;0017x0000176IKHAA2&quot;
+      }
+    },
+    &quot;DMTgetAccountAndHealthcareProviderRecords&quot; : {
+      &quot;HealthcareProviderRecords&quot; : [ {
+        &quot;Id&quot; : &quot;0cm7x000001JONpAAO&quot;,
+        &quot;AccountId&quot; : &quot;0017x0000176IKHAA2&quot;
+      }, {
+        &quot;Id&quot; : &quot;0cm7x000001UTX3AAO&quot;,
+        &quot;AccountId&quot; : &quot;0017x000017KgM0AAK&quot;
+      } ]
+    },
+    &quot;omniScriptId&quot; : &quot;0jN7x0000004mPREAY&quot;,
+    &quot;DMTFilterSelectedServicesListForCARConfigureContractStatus&quot; : true,
+    &quot;options&quot; : {
+      &quot;forceQueueable&quot; : false,
+      &quot;mockHttpResponse&quot; : null,
+      &quot;vlcApexResponse&quot; : true,
+      &quot;useFuture&quot; : false,
+      &quot;isTestProcedure&quot; : false,
+      &quot;resetCache&quot; : false,
+      &quot;integrationProcedureKey&quot; : null,
+      &quot;vlcIPData&quot; : null,
+      &quot;OmniAnalyticsTrackingDebug&quot; : false,
+      &quot;ignoreCache&quot; : true,
+      &quot;shouldCommit&quot; : false,
+      &quot;vlcTestSuiteUniqueKey&quot; : null,
+      &quot;vlcTestUniqueKey&quot; : null,
+      &quot;vlcCacheKey&quot; : null,
+      &quot;continuationStepResult&quot; : null,
+      &quot;vlcFilesMap&quot; : null,
+      &quot;ParentInteractionToken&quot; : null,
+      &quot;useQueueable&quot; : false,
+      &quot;disableMetadataCache&quot; : false,
+      &quot;isDebug&quot; : true,
+      &quot;queueableChainable&quot; : false,
+      &quot;useContinuation&quot; : false,
+      &quot;chainable&quot; : false,
+      &quot;ignoreMetadataPermissions&quot; : false,
+      &quot;useHttpCalloutMock&quot; : false,
+      &quot;useQueueableApexRemoting&quot; : false
+    },
+    &quot;DMTgetAccountAndHealthcareProviderRecordsStatus&quot; : true,
+    &quot;DMTExtractingTheAccountValuesStatus&quot; : true,
+    &quot;DMTExtractingTheAccountValues&quot; : {
+      &quot;AccountList&quot; : [ &quot;0017x0000176IKHAA2&quot;, &quot;0017x000017KgM0AAK&quot; ]
+    },
+    &quot;currentAccountrec&quot; : &quot;0017x0000176IKHAA2&quot;,
+    &quot;ServiceAccounts&quot; : {
+      &quot;ServiceAccountsToInclude&quot; : [ {
+        &quot;Name&quot; : &quot;Services-1302&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Selected&quot; : true,
+        &quot;Id&quot; : &quot;a2H7x0000019XqbEAE&quot;,
+        &quot;Account__c&quot; : &quot;0017x0000176IKHAA2&quot;,
+        &quot;Type__c&quot; : &quot;EM&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1305&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x0000019zuvEAA&quot;,
+        &quot;Selected&quot; : true,
+        &quot;Account__c&quot; : &quot;0017x000017KgM0AAK&quot;,
+        &quot;Type__c&quot; : &quot;VH&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1306&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x0000019zzlEAA&quot;,
+        &quot;Selected&quot; : false,
+        &quot;Account__c&quot; : &quot;0017x000019oDCUAA2&quot;,
+        &quot;Type__c&quot; : &quot;EM&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1307&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x000001A01NEAS&quot;,
+        &quot;Selected&quot; : false,
+        &quot;Account__c&quot; : &quot;0017x00001Bn7slAAB&quot;,
+        &quot;Type__c&quot; : &quot;EM&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1308&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x000001Abc1EAC&quot;,
+        &quot;Selected&quot; : false,
+        &quot;Account__c&quot; : &quot;0017x00001GZnIlAAL&quot;
+      } ]
+    }
+  },
+  &quot;Status&quot; : true
+}, {
+  &quot;ElapsedTime&quot; : 13,
+  &quot;Type&quot; : &quot;DataRaptor Transform Action&quot;,
+  &quot;Input&quot; : {
+    &quot;elementName&quot; : &quot;IP_CreateRelatedRecordsForConfigureContract&quot;,
+    &quot;DMTFilterSelectedServicesListForCARConfigureContract&quot; : {
+      &quot;ServicesList&quot; : {
+        &quot;Name&quot; : &quot;Services-1305&quot;,
+        &quot;Id&quot; : &quot;a2H7x0000019zuvEAA&quot;,
+        &quot;Account__c&quot; : &quot;0017x000017KgM0AAK&quot;
+      }
+    },
+    &quot;DMTgetAccountAndHealthcareProviderRecords&quot; : {
+      &quot;HealthcareProviderRecords&quot; : [ {
+        &quot;Id&quot; : &quot;0cm7x000001JONpAAO&quot;,
+        &quot;AccountId&quot; : &quot;0017x0000176IKHAA2&quot;
+      }, {
+        &quot;Id&quot; : &quot;0cm7x000001UTX3AAO&quot;,
+        &quot;AccountId&quot; : &quot;0017x000017KgM0AAK&quot;
+      } ]
+    },
+    &quot;omniScriptId&quot; : &quot;0jN7x0000004mPREAY&quot;,
+    &quot;DMTFilterSelectedServicesListForCARConfigureContractStatus&quot; : true,
+    &quot;options&quot; : {
+      &quot;forceQueueable&quot; : false,
+      &quot;mockHttpResponse&quot; : null,
+      &quot;vlcApexResponse&quot; : true,
+      &quot;useFuture&quot; : false,
+      &quot;isTestProcedure&quot; : false,
+      &quot;resetCache&quot; : false,
+      &quot;integrationProcedureKey&quot; : null,
+      &quot;vlcIPData&quot; : null,
+      &quot;OmniAnalyticsTrackingDebug&quot; : false,
+      &quot;ignoreCache&quot; : true,
+      &quot;shouldCommit&quot; : false,
+      &quot;vlcTestSuiteUniqueKey&quot; : null,
+      &quot;vlcTestUniqueKey&quot; : null,
+      &quot;vlcCacheKey&quot; : null,
+      &quot;continuationStepResult&quot; : null,
+      &quot;vlcFilesMap&quot; : null,
+      &quot;ParentInteractionToken&quot; : null,
+      &quot;useQueueable&quot; : false,
+      &quot;disableMetadataCache&quot; : false,
+      &quot;isDebug&quot; : true,
+      &quot;queueableChainable&quot; : false,
+      &quot;useContinuation&quot; : false,
+      &quot;chainable&quot; : false,
+      &quot;ignoreMetadataPermissions&quot; : false,
+      &quot;useHttpCalloutMock&quot; : false,
+      &quot;useQueueableApexRemoting&quot; : false
+    },
+    &quot;DMTgetAccountAndHealthcareProviderRecordsStatus&quot; : true,
+    &quot;DMTExtractingTheAccountValuesStatus&quot; : true,
+    &quot;DMTExtractingTheAccountValues&quot; : {
+      &quot;AccountList&quot; : [ &quot;0017x0000176IKHAA2&quot;, &quot;0017x000017KgM0AAK&quot; ]
+    },
+    &quot;currentAccountrec&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;ServiceAccounts&quot; : {
+      &quot;ServiceAccountsToInclude&quot; : [ {
+        &quot;Name&quot; : &quot;Services-1302&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Selected&quot; : true,
+        &quot;Id&quot; : &quot;a2H7x0000019XqbEAE&quot;,
+        &quot;Account__c&quot; : &quot;0017x0000176IKHAA2&quot;,
+        &quot;Type__c&quot; : &quot;EM&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1305&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x0000019zuvEAA&quot;,
+        &quot;Selected&quot; : true,
+        &quot;Account__c&quot; : &quot;0017x000017KgM0AAK&quot;,
+        &quot;Type__c&quot; : &quot;VH&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1306&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x0000019zzlEAA&quot;,
+        &quot;Selected&quot; : false,
+        &quot;Account__c&quot; : &quot;0017x000019oDCUAA2&quot;,
+        &quot;Type__c&quot; : &quot;EM&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1307&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x000001A01NEAS&quot;,
+        &quot;Selected&quot; : false,
+        &quot;Account__c&quot; : &quot;0017x00001Bn7slAAB&quot;,
+        &quot;Type__c&quot; : &quot;EM&quot;
+      }, {
+        &quot;Name&quot; : &quot;Services-1308&quot;,
+        &quot;Status__c&quot; : &quot;Active&quot;,
+        &quot;Id&quot; : &quot;a2H7x000001Abc1EAC&quot;,
+        &quot;Selected&quot; : false,
+        &quot;Account__c&quot; : &quot;0017x00001GZnIlAAL&quot;
+      } ]
+    }
+  },
+  &quot;Status&quot; : true
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>transformProviderNetworkContractRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

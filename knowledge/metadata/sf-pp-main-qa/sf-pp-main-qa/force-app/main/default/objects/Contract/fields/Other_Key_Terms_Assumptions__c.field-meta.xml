@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Key_Terms_Assumptions__c</fullName>
+    <inlineHelpText>i.e. MOR/Governance/GME program, Malpractice limits, etc.</inlineHelpText>
+    <label>Other Key Terms &amp; Assumptions</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

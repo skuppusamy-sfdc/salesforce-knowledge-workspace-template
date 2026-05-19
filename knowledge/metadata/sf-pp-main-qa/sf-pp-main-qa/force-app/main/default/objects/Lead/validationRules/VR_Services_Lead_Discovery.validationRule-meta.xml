@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Services_Lead_Discovery</fullName>
+    <active>false</active>
+    <description>This validation throws an error if the user is trying to convert or upadate a Lead Discovery record without any Service(s) [Interested / Targeted SG Services Section] selected</description>
+    <errorConditionFormula>(
+ !ISNEW() &amp;&amp; 
+ ISBLANK(Service_s__c) &amp;&amp; 
+  RecordType.Name = &apos;Sales Lead&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Service_s__c</errorDisplayField>
+    <errorMessage>You must select at least one option in Service(s).</errorMessage>
+</ValidationRule>

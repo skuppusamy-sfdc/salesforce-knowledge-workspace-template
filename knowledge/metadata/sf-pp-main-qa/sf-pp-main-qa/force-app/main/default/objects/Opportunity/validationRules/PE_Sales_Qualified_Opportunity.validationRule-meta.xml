@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PE_Sales_Qualified_Opportunity</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is Contract Signed for PE service line.</description>
+    <errorConditionFormula>RecordType.Name = &quot;Patient Engagement Opportunity&quot; &amp;&amp;
+ISPICKVAL(StageName, &quot;Sales Qualified Opportunity&quot;) &amp;&amp;
+(ISPICKVAL(Product_Line__c,&quot;&quot;) ||
+ISPICKVAL(Service__c,&quot;&quot;) ||
+ISPICKVAL(Type,&quot;&quot;))</errorConditionFormula>
+    <errorMessage>Required Fields: Product Line, Service and Type.</errorMessage>
+</ValidationRule>

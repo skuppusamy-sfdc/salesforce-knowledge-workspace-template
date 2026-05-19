@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NP_Relationship_Status__c</fullName>
+    <label>NP Relationship Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternate Collaborating Physician</fullName>
+                <default>false</default>
+                <label>Alternate Collaborating Physician</label>
+            </value>
+            <value>
+                <fullName>Alternate Supervising Physician</fullName>
+                <default>false</default>
+                <label>Alternate Supervising Physician</label>
+            </value>
+            <value>
+                <fullName>Attending Physician</fullName>
+                <default>false</default>
+                <label>Attending Physician</label>
+            </value>
+            <value>
+                <fullName>Back-up Supervising Physician</fullName>
+                <default>false</default>
+                <label>Back-up Supervising Physician</label>
+            </value>
+            <value>
+                <fullName>Collaborating Phys &amp; Resource Person</fullName>
+                <default>false</default>
+                <label>Collaborating Phys &amp; Resource Person</label>
+            </value>
+            <value>
+                <fullName>Collaborating Physician</fullName>
+                <default>false</default>
+                <label>Collaborating Physician</label>
+            </value>
+            <value>
+                <fullName>Covering Physician</fullName>
+                <default>false</default>
+                <label>Covering Physician</label>
+            </value>
+            <value>
+                <fullName>Delegating Physician</fullName>
+                <default>false</default>
+                <label>Delegating Physician</label>
+            </value>
+            <value>
+                <fullName>Designated Physician</fullName>
+                <default>false</default>
+                <label>Designated Physician</label>
+            </value>
+            <value>
+                <fullName>Locum Tenens Supervising Physician</fullName>
+                <default>false</default>
+                <label>Locum Tenens Supervising Physician</label>
+            </value>
+            <value>
+                <fullName>Not needed–NP/PA practice solo</fullName>
+                <default>false</default>
+                <label>Not needed–NP/PA practice solo</label>
+            </value>
+            <value>
+                <fullName>Not needed-practicing in hospital</fullName>
+                <default>false</default>
+                <label>Not needed-practicing in hospital</label>
+            </value>
+            <value>
+                <fullName>NP in Same Specialty</fullName>
+                <default>false</default>
+                <label>NP in Same Specialty</label>
+            </value>
+            <value>
+                <fullName>Peer Physician</fullName>
+                <default>false</default>
+                <label>Peer Physician</label>
+            </value>
+            <value>
+                <fullName>Physician Refuses to Superv/Collab</fullName>
+                <default>false</default>
+                <label>Physician Refuses to Superv/Collab</label>
+            </value>
+            <value>
+                <fullName>Primary Supervising Physician</fullName>
+                <default>false</default>
+                <label>Primary Supervising Physician</label>
+            </value>
+            <value>
+                <fullName>Responsible Physician</fullName>
+                <default>false</default>
+                <label>Responsible Physician</label>
+            </value>
+            <value>
+                <fullName>Sponsoring Physician</fullName>
+                <default>false</default>
+                <label>Sponsoring Physician</label>
+            </value>
+            <value>
+                <fullName>Substitute Supervising Physician</fullName>
+                <default>false</default>
+                <label>Substitute Supervising Physician</label>
+            </value>
+            <value>
+                <fullName>Supervising Physician</fullName>
+                <default>false</default>
+                <label>Supervising Physician</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

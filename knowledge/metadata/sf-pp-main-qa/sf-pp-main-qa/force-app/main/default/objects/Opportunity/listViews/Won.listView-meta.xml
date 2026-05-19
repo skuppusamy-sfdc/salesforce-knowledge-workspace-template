@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won</fullName>
+    <columns>Total_Revenue__c</columns>
+    <columns>Adjusted_Total_Revenue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.WON</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Actual_Start_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2020</value>
+    </filters>
+    <label>Won</label>
+</ListView>

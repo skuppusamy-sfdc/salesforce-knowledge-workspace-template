@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_on_File__c</fullName>
+    <label>Form on File</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Copy Received</fullName>
+                <default>false</default>
+                <label>Copy Received</label>
+            </value>
+            <value>
+                <fullName>Need Copy</fullName>
+                <default>false</default>
+                <label>Need Copy</label>
+            </value>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

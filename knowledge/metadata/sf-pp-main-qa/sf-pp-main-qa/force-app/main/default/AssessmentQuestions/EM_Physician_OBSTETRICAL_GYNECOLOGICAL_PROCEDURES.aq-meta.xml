@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EM Physician OBSTETRICAL/GYNECOLOGICAL PROCEDURES</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;OBSTETRICAL/GYNECOLOGICAL PROCEDURES – INCLUDING: &lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Precipitous delivery of newborn&lt;/li&gt;
+&lt;li&gt;Management of trauma in pregnancy&lt;/li&gt;
+&lt;li&gt;Recognition and Management of emergency pregnancy complications&lt;/li&gt;
+&lt;li&gt;Sexual Assault Examination&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>EM_Physician_OBSTETRICAL_GYNECOLOGICAL_PROCEDURES</developerName>
+    <name>EM Physician OBSTETRICAL/GYNECOLOGICAL PROCEDURES</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

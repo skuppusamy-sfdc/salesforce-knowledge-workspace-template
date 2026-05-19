@@ -1,0 +1,30 @@
+{
+    "ElapsedTime": 310,
+    "Input": {
+        "AccTeamId": "01M7x00000GLF1FEAX",
+        "AccountId": "0017x00001LCOLOAA5",
+        "ContactId": "0037x00001A7C9aAAF",
+        "OffboardingCases": {
+            "HfLastDay": null,
+            "HfName": "EM - Children Hospital",
+            "HfStatus": "Candidate",
+            "HpfEmploymentType": "Locum",
+            "HpfId": "0bS7x0000003LJJEA2",
+            "HpfName": "EM - Children Hospital",
+            "HpfStatus": "Candidate",
+            "IsBonusRepayment": null,
+            "IsExitInterviewRequired": null,
+            "dateTerminationReceived": "2025-09-04",
+            "isVoluntaryTermination": false,
+            "lastDay": "2025-09-02",
+            "terminationReason": null,
+            "terminationRequestDate": "2025-08-31"
+        },
+        "QueueId": "00G7x00000CqgAjEAJ",
+        "caseStatus": "Not Started",
+        "caseType": "SCP",
+        "recordTypeId": "0127x00000ILIyrAAH"
+    },
+    "Status": false,
+    "Type": "DataRaptor Post Action"
+}

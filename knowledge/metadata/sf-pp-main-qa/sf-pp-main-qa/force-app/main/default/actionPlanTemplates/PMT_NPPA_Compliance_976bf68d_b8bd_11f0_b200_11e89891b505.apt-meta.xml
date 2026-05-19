@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>AccountTeamMember.Role.Medical Staff Liaison - CPA</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 45 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>NPPA Compliance: State Board Form - protocols signed by NPPA and supervising physician, NP/PA Compliance template uploaded</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>NPPA Compliance</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 45</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>NPPA Compliance: State Board Form - protocols signed by NPPA and supervising physician, NP/PA Compliance template uploaded</name>
+        <uniqueName>NPPA_Compliance_State_Board_Form_protoco_97815351_b8bd_11f0_b200_7bfa82f24702</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>PMT - NPPA Compliance</name>
+    <targetEntityType>Account</targetEntityType>
+    <uniqueName>PMT_NPPA_Compliance_976bf68d_b8bd_11f0_b200_11e89891b505</uniqueName>
+</ActionPlanTemplate>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qtrly_Forecast_Category__c</fullName>
+    <label>Qtrly Forecast Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+                <label>Omitted</label>
+            </value>
+            <value>
+                <fullName>Current Year Closed Deals</fullName>
+                <default>false</default>
+                <label>Current Year Closed Deals</label>
+            </value>
+            <value>
+                <fullName>Current Year Commited Deals</fullName>
+                <default>false</default>
+                <label>Current Year Commited Deals</label>
+            </value>
+            <value>
+                <fullName>Current Year Upside Deals</fullName>
+                <default>false</default>
+                <label>Current Year Upside Deals</label>
+            </value>
+            <value>
+                <fullName>Previous Year Contributing Deals</fullName>
+                <default>false</default>
+                <label>Previous Year Contributing Deals</label>
+            </value>
+            <value>
+                <fullName>Christus Deals</fullName>
+                <default>false</default>
+                <label>Christus Deals</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

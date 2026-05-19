@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMUpdateExistingPNCForAddHPF</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMUpdateExistingPNCForAddHPFCustom8373</globalKey>
+        <inputFieldName>ExistingPNCList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMUpdateExistingPNCForAddHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMUpdateExistingPNCForAddHPFCustom7687</globalKey>
+        <inputFieldName>Deleted</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMUpdateExistingPNCForAddHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>Deleted__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DMUpdateExistingPNCForAddHPFCustom1960</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DMUpdateExistingPNCForAddHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ExistingPNCList&quot; : [ {
+    &quot;Deleted__c&quot; : false,
+    &quot;Id&quot; : &quot;0mw7x0000001Ji9AAE&quot;,
+    &quot;Healthcare_Practitioner_Facility__c&quot; : &quot;0bS7x000000371mEAA&quot;
+  }, {
+    &quot;Deleted__c&quot; : false,
+    &quot;Id&quot; : &quot;0mw7x0000001RvpAAE&quot;,
+    &quot;Healthcare_Practitioner_Facility__c&quot; : &quot;0bS7x000000371nEAA&quot;
+  }, {
+    &quot;Deleted__c&quot; : false,
+    &quot;Id&quot; : &quot;0mw7x0000001Rz3AAE&quot;,
+    &quot;Healthcare_Practitioner_Facility__c&quot; : &quot;0bS7x000000371nEAA&quot;
+  }, {
+    &quot;Deleted__c&quot; : false,
+    &quot;Id&quot; : &quot;0mw7x0000001S0fAAE&quot;,
+    &quot;Healthcare_Practitioner_Facility__c&quot; : &quot;0bS7x000000371nEAA&quot;
+  }, {
+    &quot;Deleted__c&quot; : false,
+    &quot;Id&quot; : &quot;0mw7x0000001S2HAAU&quot;,
+    &quot;Healthcare_Practitioner_Facility__c&quot; : &quot;0bS7x000000371nEAA&quot;
+  } ],
+  &quot;Deleted&quot; : &quot;true&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DMUpdateExistingPNCForAddHPF_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

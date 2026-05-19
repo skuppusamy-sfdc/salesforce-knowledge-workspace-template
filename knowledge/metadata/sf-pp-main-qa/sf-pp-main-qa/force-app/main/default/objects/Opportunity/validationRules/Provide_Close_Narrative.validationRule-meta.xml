@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_Close_Narrative</fullName>
+    <active>false</active>
+    <description>Force the user to provide a reason code when the Opportunity Stage is Closed-No Bid and Closed-Lost</description>
+    <errorConditionFormula>AND(
+  OR(
+  ISPICKVAL(StageName, &quot;Closed-No Bid&quot;),
+  ISPICKVAL(StageName, &quot;Closed Lost&quot;)        
+  ),
+    ISBLANK(Close_Narrative__c)
+)</errorConditionFormula>
+    <errorDisplayField>Close_Narrative__c</errorDisplayField>
+    <errorMessage>Please provide the Closed / Lost Narrative.</errorMessage>
+</ValidationRule>

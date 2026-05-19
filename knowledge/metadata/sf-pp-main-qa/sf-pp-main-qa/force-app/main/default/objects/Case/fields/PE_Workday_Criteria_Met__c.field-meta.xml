@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PE_Workday_Criteria_Met__c</fullName>
+    <description>This field is used in &apos;&apos;Case Closure Workday Intimation Flow&apos; to compare the close date with todays date and determine if the record can be picked up for Workday intimation</description>
+    <formula>DATEVALUE(ClosedDate) = TODAY() - VALUE( $Label.Offboarding_PE_Delay_Days )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PE Workday Criteria Met</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

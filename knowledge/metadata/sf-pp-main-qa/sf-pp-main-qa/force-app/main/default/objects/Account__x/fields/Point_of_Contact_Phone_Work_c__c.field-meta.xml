@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Point_of_Contact_Phone_Work_c__c</fullName>
+    <externalDeveloperName>Point_of_Contact_Phone_Work__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Point of Contact Phone (Work)</label>
+    <required>false</required>
+    <type>Phone</type>
+</CustomField>

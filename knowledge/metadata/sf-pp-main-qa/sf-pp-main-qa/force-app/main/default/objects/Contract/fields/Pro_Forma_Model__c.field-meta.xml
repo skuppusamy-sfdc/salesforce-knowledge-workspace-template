@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pro_Forma_Model__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Pro Forma Model</label>
+    <referenceTo>Pro_Forma_Model__c</referenceTo>
+    <relationshipLabel>Contracts</relationshipLabel>
+    <relationshipName>Pro_Forma_Model</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

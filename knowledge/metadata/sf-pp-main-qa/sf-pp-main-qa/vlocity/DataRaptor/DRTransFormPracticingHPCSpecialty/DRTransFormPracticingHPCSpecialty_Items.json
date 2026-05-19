@@ -1,0 +1,136 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem2",
+        "InputFieldName": "PracticingClinicianSpecialty:RecordId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTransFormPracticingHPCSpecialty",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFormPracticingHPCSpecialty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFormPracticingHPCSpecialty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CareSpecialtyId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem1",
+        "InputFieldName": "PracticingClinicianSpecialty:TA_PracticingSpecialty",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTransFormPracticingHPCSpecialty",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFormPracticingHPCSpecialty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFormPracticingHPCSpecialty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CareSpecialtyName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem0",
+        "InputFieldName": "PracticingClinicianSpecialty:PracSpecId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTransFormPracticingHPCSpecialty",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFormPracticingHPCSpecialty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFormPracticingHPCSpecialty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCPSpecialtyId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem5",
+        "InputFieldName": "ClinicianContactId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTransFormPracticingHPCSpecialty",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFormPracticingHPCSpecialty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFormPracticingHPCSpecialty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "PractionerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "FilterGroup": 0,
+        "GlobalKey": "DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem3",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTransFormPracticingHPCSpecialty",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFormPracticingHPCSpecialty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFormPracticingHPCSpecialty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isPrimary",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "FilterGroup": 0,
+        "GlobalKey": "DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem4",
+        "InputFieldName": "PracticingClinicianSpecialty:isPrimaryOrSub",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTransFormPracticingHPCSpecialty",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFormPracticingHPCSpecialty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFormPracticingHPCSpecialty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isSubSpecialty",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

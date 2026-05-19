@@ -1,0 +1,14 @@
+{
+  "required" : [ "ContractNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ContractNumber" : {
+      "title" : "Contract Name",
+      "description" : "Pass ContractNumber field value of user selected Contract record",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

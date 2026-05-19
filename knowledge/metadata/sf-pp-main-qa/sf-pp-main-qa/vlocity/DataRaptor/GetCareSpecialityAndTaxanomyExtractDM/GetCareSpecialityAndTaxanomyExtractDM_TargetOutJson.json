@@ -1,0 +1,27 @@
+{
+    "careSpecialtyList": [
+        {
+            "Id": "0bc7x0000000CUDAA2",
+            "Name": "Testing 1",
+            "SpecialtyCode": "213423"
+        },
+        {
+            "Id": "0bc7x0000000CVpAAM",
+            "Name": "TEST Harsh",
+            "RecordId": "",
+            "SpecialtyCode": "12332"
+        },
+        {
+            "Id": "0bc7x0000000CXRAA2",
+            "Name": "TEST KL",
+            "SpecialtyCode": "32253"
+        }
+    ],
+    "careTaxonomyList": [
+        {
+            "Id": "0bK7x0000001hCbEAI",
+            "Name": "External AD",
+            "RecordId": ""
+        }
+    ]
+}

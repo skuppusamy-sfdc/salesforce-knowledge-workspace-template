@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_PACS_COVID_SW_WC</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_DHC_Network_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Facility_Type__c</field>
+        <operation>equals</operation>
+        <value>Skilled Nursing Facility</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Executive Administrator,Executive Director</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>FL,GA,NC,PA,SC,VA</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Palm Garden,Miami Jewish,Avante</value>
+    </filters>
+    <filters>
+        <field>Account.Planned_Targeted_Account__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Account.texcellency__DefHC_Network_Name__c</field>
+        <operation>notContain</operation>
+        <value>Palm,Avalere,Miami Jewish</value>
+    </filters>
+    <label>PACS COVID-Atlantic</label>
+</ListView>

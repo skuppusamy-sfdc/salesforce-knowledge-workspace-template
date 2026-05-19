@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>CE_by_Rev_2017</fullName>
+        <field>CE_by_Rev__c</field>
+        <formula>CASE( RecordType.Name , 
+&quot;EM Sales Opportunity&quot;, Total_Revenue__c/4200000, 
+&quot;UC Sales Opportunity&quot;, Total_Revenue__c/4200000, 
+&quot;ICP Sales Opportunity&quot;, Total_Revenue__c/4200000, 
+&quot;HM Sales Opportunity&quot;, Total_Revenue__c/1530000, 
+&quot;TELE Sales Opportunity&quot;, Total_Revenue__c/1530000, 
+&quot;ICU Sales Opportunity&quot;, Total_Revenue__c/1530000, 
+null)</formula>
+        <name>CE by Rev 2017</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CE_by_Vol</fullName>
+        <field>CE_by_Vol__c</field>
+        <formula>CASE( RecordType.Name , 
+&quot;EM Sales Opportunity&quot;, Volume__c/23000, 
+&quot;HM Sales Opportunity&quot;, Volume__c/9500, 
+null)</formula>
+        <name>CE by Vol</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CE_by_Vol_2017</fullName>
+        <field>CE_by_Vol__c</field>
+        <formula>CASE( RecordType.Name , 
+&quot;EM Sales Opportunity&quot;, Volume__c/23000, 
+&quot;UC Sales Opportunity&quot;, Volume__c/23000, 
+&quot;ICP Sales Opportunity&quot;, Volume__c/23000, 
+&quot;HM Sales Opportunity&quot;, Volume__c/9500, 
+&quot;TELE Sales Opportunity&quot;, Volume__c/9500, 
+&quot;ICU Sales Opportunity&quot;, Volume__c/9500, 
+null)</formula>
+        <name>CE by Vol 2017</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Other_Detail_Field</fullName>
+        <field>Other_Detail__c</field>
+        <name>Clear Other Detail Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EM_Change_Generic_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>EM_Sales_Opportunity</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>EM Change Generic Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HM_Change_Generic_Record_Type</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>HM_Sales_Opportunity</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>HM Change Generic Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opportunity_Close_Reason</fullName>
+        <field>Close_Reason__c</field>
+        <literalValue>Project Complete</literalValue>
+        <name>Opportunity - Close Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateConvertedDate</fullName>
+        <field>Converted_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>UpdateConvertedDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Amount</fullName>
+        <field>Amount</field>
+        <formula>Total_Revenue__c</formula>
+        <name>Update Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Clear Other Detail Field</fullName>
+        <actions>
+            <name>Clear_Other_Detail_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Close_Reason__c</field>
+            <operation>notEqual</operation>
+            <value>Other</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opportunity - Close Reason</fullName>
+        <actions>
+            <name>Opportunity_Close_Reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed - Consulting Project Complete</value>
+        </criteriaItems>
+        <description>Auto-populate Close Reason when Stage is Closed - Consulting Project Complete.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update CE Fields 2016</fullName>
+        <actions>
+            <name>CE_by_Vol</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2016</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>lessOrEqual</operation>
+            <value>12/31/2016</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update CE Fields 2017</fullName>
+        <actions>
+            <name>CE_by_Rev_2017</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CE_by_Vol_2017</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>lessOrEqual</operation>
+            <value>12/31/2017</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record Type EM</fullName>
+        <actions>
+            <name>EM_Change_Generic_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Service_s__c</field>
+            <operation>equals</operation>
+            <value>EM</value>
+        </criteriaItems>
+        <description>Automatically Updates Record Type from Service Line.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record Type HM</fullName>
+        <actions>
+            <name>HM_Change_Generic_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Service_s__c</field>
+            <operation>equals</operation>
+            <value>HM</value>
+        </criteriaItems>
+        <description>Automatically Updates Record Type from Service Line.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Total Revenue</fullName>
+        <actions>
+            <name>Update_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Total_Revenue__c</field>
+            <operation>notEqual</operation>
+            <value>$0.00</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

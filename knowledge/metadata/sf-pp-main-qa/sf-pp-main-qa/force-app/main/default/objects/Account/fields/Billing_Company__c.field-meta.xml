@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Company__c</fullName>
+    <label>Billing Company</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Caledonia</fullName>
+                <default>false</default>
+                <label>Caledonia</label>
+            </value>
+            <value>
+                <fullName>Clinix</fullName>
+                <default>false</default>
+                <label>Clinix</label>
+            </value>
+            <value>
+                <fullName>EMBCC</fullName>
+                <default>false</default>
+                <label>EMBCC</label>
+            </value>
+            <value>
+                <fullName>EPBS</fullName>
+                <default>false</default>
+                <label>EPBS</label>
+            </value>
+            <value>
+                <fullName>Hourly Account</fullName>
+                <default>false</default>
+                <label>Hourly Account</label>
+            </value>
+            <value>
+                <fullName>Insurance Data Services</fullName>
+                <default>false</default>
+                <label>Insurance Data Services</label>
+            </value>
+            <value>
+                <fullName>LOYA</fullName>
+                <default>false</default>
+                <label>LOYA</label>
+            </value>
+            <value>
+                <fullName>Non-Billed</fullName>
+                <default>false</default>
+                <label>Non-Billed</label>
+            </value>
+            <value>
+                <fullName>Optimal</fullName>
+                <default>false</default>
+                <label>Optimal</label>
+            </value>
+            <value>
+                <fullName>PRehab</fullName>
+                <default>false</default>
+                <label>PRehab</label>
+            </value>
+            <value>
+                <fullName>Synergistics Systems, Inc.</fullName>
+                <default>false</default>
+                <label>Synergistics Systems, Inc.</label>
+            </value>
+            <value>
+                <fullName>Billed Under Parent</fullName>
+                <default>false</default>
+                <label>Billed Under Parent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

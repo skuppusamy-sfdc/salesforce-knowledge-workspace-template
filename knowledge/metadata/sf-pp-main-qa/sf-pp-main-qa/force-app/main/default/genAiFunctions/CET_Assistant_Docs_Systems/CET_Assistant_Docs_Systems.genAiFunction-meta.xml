@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This will pull info regarding Documents/Systems</description>
+    <invocationTarget>CET_Assistant_Docs</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>CET_Assistant_Docs_Systems</masterLabel>
+    <progressIndicatorMessage>Loading</progressIndicatorMessage>
+</GenAiFunction>

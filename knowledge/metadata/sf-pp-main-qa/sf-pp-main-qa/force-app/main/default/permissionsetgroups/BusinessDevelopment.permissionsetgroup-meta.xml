@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access needed to perform Client Business Development activities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Business Development</label>
+    <permissionSets>LID__LinkedIn_Sales_Navigator_Standard_User</permissionSets>
+    <permissionSets>Manage_Client_BD</permissionSets>
+    <permissionSets>Manage_Client_Contracts</permissionSets>
+    <permissionSets>Manage_Client_Rates</permissionSets>
+    <permissionSets>Manage_Facilities_Service_Lines_and_Client_Contacts</permissionSets>
+    <permissionSets>View_Client_Onboarding</permissionSets>
+    <permissionSets>force__SalesEngagementBasicUser</permissionSets>
+    <permissionSets>pqcrush__PROLIFIQ_RELATIONSHIP_MAP_Standard_User</permissionSets>
+    <permissionSets>texcellency__DHC_Standard_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

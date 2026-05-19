@@ -1,0 +1,42 @@
+# Knowledge Source Priority: Google Drive First, Jira MCP Only on Request
+
+## Core Principle
+
+This Google Drive workspace is the **brain** — the accumulated learning, historical context, deployed metadata, and institutional knowledge. Always search here first. The Jira MCP is for **future sprint work** and should only be accessed when the user explicitly asks.
+
+## Mandatory Search Order
+
+1. **Google Drive (this workspace) — ALWAYS FIRST**
+   - `/knowledge/sprints/` — historical sprint stories (HTML + per-story markdown)
+   - `/knowledge/metadata/` — deployed Salesforce metadata (source of truth for current state)
+   - `/knowledge/architecture/` — architecture decisions and patterns
+   - `/knowledge/COMPONENT-TO-STORY-MAP.md`, `FEATURE-TO-STORY-MAP.md`, `DEPENDENCY-GRAPH.md`, `TRACEABILITY-INDEX.md` — indexes and cross-references
+   - `/artifacts/` — prior analyses, solutions, corpus profiles
+   - `/guidelines/` — role-specific guidelines
+
+2. **Jira MCP (`plugin-atlassian-atlassian`) — ONLY when the user explicitly requests it**
+   - User says "fetch from Jira", "pull the story from Jira", "check Jira for…", "get the latest from Jira", or names a story ID that doesn't exist in the local knowledge base and asks you to retrieve it
+   - User asks to solution or write test scenarios for a **future/upcoming sprint** story not yet in Google Drive
+   - User explicitly asks to search Jira for something
+
+## What This Means in Practice
+
+- **"How does X work?"** → Search Google Drive only. Metadata, sprint stories, indexes, component catalog.
+- **"What components does story Y touch?"** → Search Google Drive first (`/knowledge/sprints/`, indexes). Only go to Jira if the story isn't found locally AND the user asks you to fetch it.
+- **"Solution story PR1050558-XXXX"** → Check Google Drive for the story. If it's a future sprint story not yet captured locally, tell the user it's not in the knowledge base and ask if they want you to fetch it from Jira.
+- **"What's in the next sprint?"** → Ask the user if they want you to query Jira, since future sprint data lives there.
+- **"Find all stories that touched Account triggers"** → Google Drive grep/search across sprint files and indexes. Do NOT query Jira unless asked.
+
+## Why This Matters
+
+- Google Drive contains curated, organized knowledge with context that raw Jira data lacks
+- Searching Jira first wastes tokens on raw API responses when cleaner local data exists
+- The local knowledge base has metadata, component catalogs, and cross-references that Jira doesn't have
+- Jira MCP calls are slow and produce large JSON payloads; local file searches are fast and precise
+
+## Anti-Patterns (Do NOT Do These)
+
+- Do NOT call `getJiraIssue` or `searchJiraIssuesUsingJql` as a first step for any question
+- Do NOT search Jira "just to be thorough" — only when the user asks or local data is confirmed missing and user approves
+- Do NOT run parallel Jira + Google Drive searches — always start with Google Drive
+- Do NOT assume Google Drive is incomplete without checking first

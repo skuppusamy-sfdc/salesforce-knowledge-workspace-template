@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;ContextId&quot;: &quot;8007x00000aO82vAAC&quot;,
+    &quot;Rate&quot;: 34,
+    &quot;UnitOfMeasure&quot;: &quot;per Hour&quot;,
+    &quot;ListOfFacilityTitleIds&quot;: [
+        {
+            &quot;value&quot;: &quot;0hs7x0000007K8cAAE&quot;,
+            &quot;label&quot;: &quot;Assistant Medical Director&quot;
+        }
+    ],
+    &quot;typeOfRate&quot;: &quot;Stipend&quot;,
+    &quot;ListOfType&quot;: [
+        {
+            &quot;value&quot;: &quot;0hs7x0000007YplAAE&quot;,
+            &quot;label&quot;: &quot;Director Base Stipend&quot;
+        }
+    ],
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;OverrideProhibited&quot;: false,
+    &quot;timeType&quot;: &quot;&quot;,
+    &quot;dailyEncounterThreshold&quot;: &quot;&quot;,
+    &quot;dailyEncounterPayCap&quot;: &quot;&quot;,
+    &quot;targetPlanRate&quot;: &quot;&quot;,
+    &quot;monthsProviderGuarantee&quot;: &quot;&quot;,
+    &quot;monthsStartupGuarantee&quot;: &quot;&quot;,
+    &quot;rVUMetricType&quot;: &quot;&quot;,
+    &quot;shifts&quot;: &quot;&quot;,
+    &quot;stipendTier&quot;: &quot;Tier 1&quot;,
+    &quot;adminHours&quot;: 34,
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004YuLEAU&quot;,
+    &quot;elementName&quot;: &quot;IP_FetchAndCreateShiftRatesRecords&quot;
+}</customJavaScript>
+    <description>This IP creates records for contract, contract payment agreement and Preventive Care Agreement</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>CreatePreventiveCareAgreementRecords</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RA_SavedData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;PCACreated&quot; : &quot;=IF(%DM_CreatePreventiveContractAgreement:error% == \&quot;OK\&quot; , true, false)&quot;,
+    &quot;CPACreated&quot; : &quot;=IF(%DM_CreateContractPaymentAgreement:error% == \&quot;OK\&quot; , true, false)&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DM_CreateContractPaymentAgreement</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISBLANK(DRE_FetchContractAndCPA:cpaRec)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;accountName&quot; : &quot;=%DRE_FetchContractAndCPA:contractRec:AccountName%&quot;,
+    &quot;contractId&quot; : &quot;=%ContextId%&quot;,
+    &quot;accountId&quot; : &quot;=%DRE_FetchContractAndCPA:contractRec:AccountId%&quot;,
+    &quot;agreementType&quot; : &quot;=\&quot;Preventive Care Agreement\&quot;&quot;,
+    &quot;typeOfRate&quot; : &quot;=%typeOfRate%&quot;,
+    &quot;Status&quot; : &quot;=\&quot;Draft\&quot;&quot;,
+    &quot;contractNumber&quot; : &quot;=%DRE_FetchContractAndCPA:contractRec:ContractNumber%&quot;,
+    &quot;pncId&quot; : &quot;%pncId%&quot;,
+    &quot;globalAccountId&quot; : &quot;=%DRFetchServiceAccountDetails:pncRec:Healthcare_Practitioner_Facility__r:Account:Global_Account_ID__c%&quot;,
+    &quot;StartDate&quot; : &quot;=FORMATDATETIME(%DRE_FetchContractAndCPA:contractRec:StartDate%,\&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss\&quot;,\&quot;America/Chicago\&quot;)&quot;,
+    &quot;HPFNumber&quot; : &quot;=%DRFetchServiceAccountDetails:pncRec:Healthcare_Practitioner_Facility__r:HPF_Number__c%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMCreateContractPaymentAgreement&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DM_CreatePreventiveContractAgreement</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;contractPaymentAgreementId&quot; : &quot;=IF(ISBLANK(DRE_FetchContractAndCPA:cpaRec),%DM_CreateContractPaymentAgreement:ContractPaymentAgreement_1:Id%,%DRE_FetchContractAndCPA:cpaRec:Id%)&quot;,
+    &quot;FacilityTitle&quot; : &quot;%ListOfFacilityTitleIds%&quot;,
+    &quot;Rate&quot; : &quot;%Rate%&quot;,
+    &quot;UnitOfMeasure&quot; : &quot;%UnitOfMeasure%&quot;,
+    &quot;BonusMeasureType&quot; : &quot;=\&quot;NA\&quot;&quot;,
+    &quot;TargetMeasurePercent&quot; : &quot;=0&quot;,
+    &quot;BonusPayout&quot; : &quot;=0&quot;,
+    &quot;Type&quot; : &quot;=%ListOfType%&quot;,
+    &quot;typeOfRate&quot; : &quot;=%typeOfRate%&quot;,
+    &quot;Notes&quot; : &quot;=%Notes%&quot;,
+    &quot;OverrideProhibited&quot; : &quot;=%OverrideProhibited%&quot;,
+    &quot;Shift&quot; : &quot;=LIST(FILTER(LIST(%shifts%), &apos;selected == true &apos;))&quot;,
+    &quot;TimeType&quot; : &quot;%timeType%&quot;,
+    &quot;dailyEncounterThreshold&quot; : &quot;%dailyEncounterThreshold%&quot;,
+    &quot;dailyEncounterPayCap&quot; : &quot;%dailyEncounterPayCap%&quot;,
+    &quot;targetPlanRate&quot; : &quot;%targetPlanRate%&quot;,
+    &quot;monthsProviderGuarantee&quot; : &quot;%monthsProviderGuarantee%&quot;,
+    &quot;monthsStartupGuarantee&quot; : &quot;%monthsStartupGuarantee%&quot;,
+    &quot;rVUMetricType&quot; : &quot;%rVUMetricType%&quot;,
+    &quot;Payments&quot; : &quot;%Payments%&quot;,
+    &quot;PayrollCycle&quot; : &quot;%PayrollCycle%&quot;,
+    &quot;DurationMonths&quot; : &quot;%DurationMonths%&quot;,
+    &quot;WorkCommitmentPerMonth&quot; : &quot;%WorkCommitmentPerMonth%&quot;,
+    &quot;WorkCommitmentFrequency&quot; : &quot;%WorkCommitmentFrequency%&quot;,
+    &quot;RepaymentTerms&quot; : &quot;%RepaymentTerms%&quot;,
+    &quot;stipendTier&quot; : &quot;%stipendTier%&quot;,
+    &quot;adminHours&quot; : &quot;%adminHours%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMCreatePreventiveContractAgreement&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRE_FetchContractAndCPA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContextId&quot; : &quot;%ContextId%&quot;,
+    &quot;typeOfRate&quot; : &quot;%typeOfRate%&quot;,
+    &quot;pncId&quot; : &quot;=IF(ISBLANK(%pncId%),\&quot;$Vlocity.NULL\&quot;,%pncId%)&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DREFetchContractAndCPA&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRFetchServiceAccountDetails</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(pncId)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;pncId&quot; : &quot;%pncId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRFetchServiceAccountDetails&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTurboAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Turbo Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatch</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>FacilityRate_CreatePreventiveCareAgreementRecords</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>CreatePreventiveCareAgreementRecords</subType>
+    <type>FacilityRate</type>
+    <uniqueName>FacilityRate_CreatePreventiveCareAgreementRecords_Procedure_10</uniqueName>
+    <versionNumber>10.0</versionNumber>
+    <webComponentKey>b164907a-bedd-291c-e872-18d8a2c0674d</webComponentKey>
+</OmniIntegrationProcedure>

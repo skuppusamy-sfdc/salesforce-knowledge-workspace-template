@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADT_CDF_Penalty_Frequency__c</fullName>
+    <label>ADT/CDF Penalty Frequency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>per quarter</fullName>
+                <default>false</default>
+                <label>per quarter</label>
+            </value>
+            <value>
+                <fullName>one-time</fullName>
+                <default>false</default>
+                <label>one-time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

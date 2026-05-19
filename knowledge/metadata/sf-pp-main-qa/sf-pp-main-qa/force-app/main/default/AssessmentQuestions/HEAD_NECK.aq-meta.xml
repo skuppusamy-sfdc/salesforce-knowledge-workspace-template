@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HEAD &amp; NECK</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;HEAD &amp; NECK – INCLUDING:  &lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Indirect laryngoscopy&lt;/li&gt;
+&lt;li&gt;Epistaxis control&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>HEAD_NECK</developerName>
+    <name>HEAD &amp; NECK</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

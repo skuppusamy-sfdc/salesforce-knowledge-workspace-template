@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Clsd_Abnd_Decld_NoChange</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is closed for Core services.</description>
+    <errorConditionFormula>NOT(
+OR(RecordType.Name = &quot;Optum Sales Opportunity&quot;,
+RecordType.Name = &quot;Consulting Services Sales&quot;,
+RecordType.Name = &quot;Primary Care Opportunity&quot;,
+RecordType.Name = &quot;Patient Engagement Opportunity&quot;,
+RecordType.Name = &quot;SNF - Skilled Nursing Facility&quot;,
+RecordType.Name = &quot;AL - Assisted Living Facility&quot;,
+RecordType.Name = &quot;eMAC Sales Opportunity&quot;)) &amp;&amp;
+
+(ISPICKVAL(StageName, &quot;Closed - SCP Declined&quot;)||
+ ISPICKVAL(StageName, &quot;Closed - Client Abandoned Proposal&quot;)||
+ ISPICKVAL(StageName, &quot;Closed - No Change&quot;))&amp;&amp;
+  
+(ISNULL(CloseDate)||
+ ISPICKVAL(Close_Reason__c, &quot;&quot;)||
+ ISNULL(Lost_Date__c))</errorConditionFormula>
+    <errorMessage>Required Fields: Lost Date, Close Date and Close Reason.</errorMessage>
+</ValidationRule>

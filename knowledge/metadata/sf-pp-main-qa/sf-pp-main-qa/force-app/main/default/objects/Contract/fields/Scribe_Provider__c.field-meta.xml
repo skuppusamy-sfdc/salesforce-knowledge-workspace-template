@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scribe_Provider__c</fullName>
+    <label>Scribe Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Live Scribe</fullName>
+                <default>false</default>
+                <label>Live Scribe</label>
+            </value>
+            <value>
+                <fullName>ProScribe</fullName>
+                <default>false</default>
+                <label>ProScribe</label>
+            </value>
+            <value>
+                <fullName>Scribe America</fullName>
+                <default>false</default>
+                <label>Scribe America</label>
+            </value>
+            <value>
+                <fullName>Southern Scribes</fullName>
+                <default>false</default>
+                <label>Southern Scribes</label>
+            </value>
+            <value>
+                <fullName>Virtual Scribe</fullName>
+                <default>false</default>
+                <label>Virtual Scribe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

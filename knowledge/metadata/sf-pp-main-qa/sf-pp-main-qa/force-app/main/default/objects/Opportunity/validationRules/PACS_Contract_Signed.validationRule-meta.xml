@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PACS_Contract_Signed</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is Contract Signed for PACS service line.</description>
+    <errorConditionFormula>RecordType.Name = &quot;Post Acute Care Services Opportunity&quot; &amp;&amp;
+ ISPICKVAL(StageName, &quot;Contract Signed&quot;) &amp;&amp; 
+(ISNULL(Contract_Customer_Signed_Date__c )||
+ ISNULL(Actual_Start_Date__c ))</errorConditionFormula>
+    <errorMessage>Required Fields: Contract Signed Date and Actual Start Date.</errorMessage>
+</ValidationRule>

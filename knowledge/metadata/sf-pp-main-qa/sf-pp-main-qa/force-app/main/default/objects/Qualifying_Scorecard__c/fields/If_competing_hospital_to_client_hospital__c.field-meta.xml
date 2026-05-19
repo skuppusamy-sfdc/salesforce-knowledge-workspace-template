@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_competing_hospital_to_client_hospital__c</fullName>
+    <description>If competing hospital to client hospital</description>
+    <externalId>false</externalId>
+    <inlineHelpText>- 2 points</inlineHelpText>
+    <label>If competing hospital to client hospital</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

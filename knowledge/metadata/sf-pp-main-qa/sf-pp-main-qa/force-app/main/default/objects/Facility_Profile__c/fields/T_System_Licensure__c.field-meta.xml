@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T_System_Licensure__c</fullName>
+    <label>T-System Licensure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SG - T-System</fullName>
+                <default>false</default>
+                <label>SG - T-System</label>
+            </value>
+            <value>
+                <fullName>T-System - Facility</fullName>
+                <default>false</default>
+                <label>T-System - Facility</label>
+            </value>
+            <value>
+                <fullName>No Licensure</fullName>
+                <default>false</default>
+                <label>No Licensure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

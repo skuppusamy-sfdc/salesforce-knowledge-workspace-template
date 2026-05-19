@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRERetrieveHPFAndJobDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;Placement&apos;</filterValue>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom7132</globalKey>
+        <inputFieldName>Job_Applicant__r.bpats__Stage__r.Name</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom7589</globalKey>
+        <inputFieldName>HPFRecords:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords:HpfName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom4911</globalKey>
+        <inputFieldName>HPFRecords:Job_Applicant__r.bpats__Job__r.bpats__Start_Date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords:JobStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:HPFRecords:Id ISNOTBLANK | var:ContractStartDate var:HPFRecords:Job_Applicant__r.bpats__Job__r.bpats__Start_Date__c DATEDIFF 0 != &amp;&amp; true false IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(%HPFRecords:Id%) &amp;&amp; DATEDIFF(%ContractStartDate%,%HPFRecords:Job_Applicant__r.bpats__Job__r.bpats__Start_Date__c%) != 0, true, false)</formulaExpression>
+        <formulaResultPath>HPFRecords:mismatch</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom1706</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom9537</globalKey>
+        <inputFieldName>HPFRecords:Job_Applicant__r.bpats__Job__r.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords:JobName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>HPFs:Id</filterValue>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom9790</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;$Vlocity.NULL&apos;</filterValue>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom7883</globalKey>
+        <inputFieldName>Job_Applicant__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:HPFRecords:Name &quot;/\/\/|/\/\/&quot; + var:HPFRecords:Job_Applicant__r.bpats__Job__r.Name + &quot;/\/\/|/\/\/&quot; + var:HPFRecords:Job_Applicant__r.bpats__Job__r.bpats__Start_Date__c +</formulaConverted>
+        <formulaExpression>%HPFRecords:Name% + &quot; | &quot; + %HPFRecords:Job_Applicant__r.bpats__Job__r.Name% + &quot; | &quot; + %HPFRecords:Job_Applicant__r.bpats__Job__r.bpats__Start_Date__c%</formulaExpression>
+        <formulaResultPath>HPFRecords:hpfTitle</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom5601</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom8732</globalKey>
+        <inputFieldName>HPFRecords:hpfTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords:HpfTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom9843</globalKey>
+        <inputFieldName>HPFRecords:mismatch</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords:Mismatch</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;true&quot; : &quot;1&quot;,
+  &quot;false&quot; : &quot;0&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRERetrieveHPFAndJobDetailsCustom9826</globalKey>
+        <inputFieldName>HPFRecords:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRERetrieveHPFAndJobDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;HPFs&quot; : [ {
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : &quot;2025-08-29&quot;,
+    &quot;contractingStatus&quot; : &quot;Executed&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003L37EAE&quot;,
+    &quot;professionalTitle&quot; : &quot;&quot;,
+    &quot;NPPATier&quot; : &quot;120&quot;,
+    &quot;facilityTitle&quot; : &quot;Ambassador NP/PA&quot;,
+    &quot;NoOfHours&quot; : null,
+    &quot;accountName&quot; : &quot;Naga Service Account&quot;,
+    &quot;facilityId&quot; : &quot;0hs7x0000007K8aAAE&quot;,
+    &quot;accountId&quot; : &quot;0017x00001KsxtVAAR&quot;
+  }, {
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : null,
+    &quot;contractingStatus&quot; : null,
+    &quot;Id&quot; : &quot;0bS7x0000003mePEAQ&quot;,
+    &quot;professionalTitle&quot; : &quot;&quot;,
+    &quot;NPPATier&quot; : &quot;&quot;,
+    &quot;facilityTitle&quot; : &quot;EE System Medical Officer&quot;,
+    &quot;NoOfHours&quot; : null,
+    &quot;accountName&quot; : &quot;Test Service Account&quot;,
+    &quot;facilityId&quot; : &quot;0hs7x0000007K8mAAE&quot;,
+    &quot;accountId&quot; : &quot;0017x00001CK7PLAA1&quot;
+  } ],
+  &quot;ContractStartDate&quot; : &quot;2025-10-27&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DRERetrieveHPFAndJobDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

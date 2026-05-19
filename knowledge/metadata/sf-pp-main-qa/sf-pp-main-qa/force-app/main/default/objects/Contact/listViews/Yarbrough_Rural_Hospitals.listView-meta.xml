@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yarbrough_Rural_Hospitals</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT.NAME</columns>
+    <columns>Account_DHC_Network_Name__c</columns>
+    <columns>Account_Geo_Classification__c</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>Business_Development_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>Target,Prospect</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>equals</operation>
+        <value>President,President &amp; Chief Executive Officer,Chief Executive Officer,CEO,President &amp; CEO,President and Chief Executive Officer,President and CEO</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>notContain</operation>
+        <value>Retired,Gone,Do Not Use,DNU</value>
+    </filters>
+    <filters>
+        <field>Account_Owner__c</field>
+        <operation>equals</operation>
+        <value>Katy Yarbrough</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Promise,ContinueCare,closed,rehab,psychiatric,long term care,rehabilitation,mental,kindred,select,acuity</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notContain</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>Account_Geo_Classification__c</field>
+        <operation>equals</operation>
+        <value>Rural</value>
+    </filters>
+    <filters>
+        <field>Account_ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>8000</value>
+    </filters>
+    <label>Yarbrough Rural Hospitals (Erin)</label>
+</ListView>

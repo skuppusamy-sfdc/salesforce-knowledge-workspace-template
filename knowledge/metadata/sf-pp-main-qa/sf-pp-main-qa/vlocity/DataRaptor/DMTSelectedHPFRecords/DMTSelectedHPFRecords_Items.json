@@ -1,0 +1,179 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom6526",
+        "InputFieldName": "SelectedlstRecords:Id",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom1310",
+        "InputFieldName": "SelectedlstRecords:NoOfHours",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedNoOfhours",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom2369",
+        "InputFieldName": "SelectedlstRecords:accountName",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedaccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom9449",
+        "InputFieldName": "SelectedlstRecords:checked",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:Selectedchecked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom675",
+        "InputFieldName": "SelectedlstRecords:contractingStatus",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedcontractingStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "$Vlocity.TODAY",
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom7580",
+        "InputFieldName": "SelectedlstRecords:effectiveDate",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedeffectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom7388",
+        "InputFieldName": "SelectedlstRecords:facilityTitle",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedfacilityTitle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTSelectedHPFRecordsCustom3668",
+        "InputFieldName": "SelectedlstRecords:hpfStatus",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedlstRecords:SelectedhpfStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

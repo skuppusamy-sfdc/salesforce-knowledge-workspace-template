@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTTransformPreventiveContractAgreementForShiftRates</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformPreventiveContractAgreementForShiftRatesCustom5845</globalKey>
+        <inputFieldName>ExistingPCARecs:FacilityTitle__r:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformPreventiveContractAgreementForShiftRates</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FacilityTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformPreventiveContractAgreementForShiftRatesCustom2626</globalKey>
+        <inputFieldName>ExistingPCARecs:Rate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformPreventiveContractAgreementForShiftRates</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Rate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;$&quot; var:ExistingPCARecs:Rate__c + &quot;/\/\/&quot; + var:ExistingPCARecs:Unit_of_Measure__c +</formulaConverted>
+        <formulaExpression>&quot;$&quot;+ExistingPCARecs:Rate__c +&quot; &quot;+ ExistingPCARecs:Unit_of_Measure__c</formulaExpression>
+        <formulaResultPath>ExistingPCARecs:Rate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTTransformPreventiveContractAgreementForShiftRatesCustom4192</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformPreventiveContractAgreementForShiftRates</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformPreventiveContractAgreementForShiftRatesCustom9193</globalKey>
+        <inputFieldName>ExistingPCARecs:Shift__r:Shift_Day_of_the_Week__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformPreventiveContractAgreementForShiftRates</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShiftDay</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformPreventiveContractAgreementForShiftRatesCustom9245</globalKey>
+        <inputFieldName>ExistingPCARecs:Shift__r:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformPreventiveContractAgreementForShiftRates</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShiftName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ExistingPCARecs&quot; : [ {
+    &quot;Id&quot; : &quot;0s47x00000004ZuAAI&quot;,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x00000001lhEAA&quot;,
+    &quot;FacilityTitle__r&quot; : {
+      &quot;Name&quot; : &quot;Assistant Medical Director&quot;,
+      &quot;Id&quot; : &quot;0hs7x0000007K8cAAE&quot;
+    },
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8cAAE&quot;,
+    &quot;Rate__c&quot; : 12,
+    &quot;Unit_of_Measure__c&quot; : &quot;per Metric&quot;
+  }, {
+    &quot;Id&quot; : &quot;0s47x00000004q2AAA&quot;,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x00000001lhEAA&quot;,
+    &quot;FacilityTitle__r&quot; : {
+      &quot;Name&quot; : &quot;Ambassador NP/PA&quot;,
+      &quot;Id&quot; : &quot;0hs7x0000007K8aAAE&quot;
+    },
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8aAAE&quot;,
+    &quot;Rate__c&quot; : 12,
+    &quot;Unit_of_Measure__c&quot; : &quot;per Metric&quot;
+  }, {
+    &quot;Id&quot; : &quot;0s47x00000004rdAAA&quot;,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x00000001lhEAA&quot;,
+    &quot;FacilityTitle__r&quot; : {
+      &quot;Name&quot; : &quot;Ambassador Physician&quot;,
+      &quot;Id&quot; : &quot;0hs7x0000007K8bAAE&quot;
+    },
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8bAAE&quot;,
+    &quot;Rate__c&quot; : 12,
+    &quot;Unit_of_Measure__c&quot; : &quot;% Salary Reduction&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTTransformPreventiveContractAgreementForShiftRates_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

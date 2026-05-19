@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICU_Provider_Group_Histories</fullName>
+    <columns>NAME</columns>
+    <columns>Incumbent__c</columns>
+    <columns>Hospital__c</columns>
+    <columns>Current_or_Previous__c</columns>
+    <columns>Group_Type__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Provider_Group_History__c.ICU_Provider_Group</value>
+    </filters>
+    <label>ICU Provider Group Histories</label>
+</ListView>

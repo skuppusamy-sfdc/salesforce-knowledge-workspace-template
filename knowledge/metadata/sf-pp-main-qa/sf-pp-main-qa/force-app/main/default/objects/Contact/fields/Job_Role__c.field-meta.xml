@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Role__c</fullName>
+    <label>Job Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+                <label>Analyst</label>
+            </value>
+            <value>
+                <fullName>Auditor</fullName>
+                <default>false</default>
+                <label>Auditor</label>
+            </value>
+            <value>
+                <fullName>Claims Processing Executive</fullName>
+                <default>false</default>
+                <label>Claims Processing Executive</label>
+            </value>
+            <value>
+                <fullName>Clinical Reviewer</fullName>
+                <default>false</default>
+                <label>Clinical Reviewer</label>
+            </value>
+            <value>
+                <fullName>Coder</fullName>
+                <default>false</default>
+                <label>Coder</label>
+            </value>
+            <value>
+                <fullName>Collections Management</fullName>
+                <default>false</default>
+                <label>Collections Management</label>
+            </value>
+            <value>
+                <fullName>Editor</fullName>
+                <default>false</default>
+                <label>Editor</label>
+            </value>
+            <value>
+                <fullName>Edits</fullName>
+                <default>false</default>
+                <label>Edits</label>
+            </value>
+            <value>
+                <fullName>EMR Contact</fullName>
+                <default>false</default>
+                <label>EMR Contact</label>
+            </value>
+            <value>
+                <fullName>HM Auditor</fullName>
+                <default>false</default>
+                <label>HM Auditor</label>
+            </value>
+            <value>
+                <fullName>HM Billing</fullName>
+                <default>false</default>
+                <label>HM Billing</label>
+            </value>
+            <value>
+                <fullName>HM Coder</fullName>
+                <default>false</default>
+                <label>HM Coder</label>
+            </value>
+            <value>
+                <fullName>HM Payment Poster</fullName>
+                <default>false</default>
+                <label>HM Payment Poster</label>
+            </value>
+            <value>
+                <fullName>Indexing</fullName>
+                <default>false</default>
+                <label>Indexing</label>
+            </value>
+            <value>
+                <fullName>Insurance Verification</fullName>
+                <default>false</default>
+                <label>Insurance Verification</label>
+            </value>
+            <value>
+                <fullName>IV</fullName>
+                <default>false</default>
+                <label>IV</label>
+            </value>
+            <value>
+                <fullName>Log Mgmt</fullName>
+                <default>false</default>
+                <label>Log Mgmt</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Operations Manager</fullName>
+                <default>false</default>
+                <label>Operations Manager</label>
+            </value>
+            <value>
+                <fullName>Patient Registrar</fullName>
+                <default>false</default>
+                <label>Patient Registrar</label>
+            </value>
+            <value>
+                <fullName>Patient Registration</fullName>
+                <default>false</default>
+                <label>Patient Registration</label>
+            </value>
+            <value>
+                <fullName>Payment Posting</fullName>
+                <default>false</default>
+                <label>Payment Posting</label>
+            </value>
+            <value>
+                <fullName>Payment Posting Research</fullName>
+                <default>false</default>
+                <label>Payment Posting Research</label>
+            </value>
+            <value>
+                <fullName>PR</fullName>
+                <default>false</default>
+                <label>PR</label>
+            </value>
+            <value>
+                <fullName>PreCoder</fullName>
+                <default>false</default>
+                <label>PreCoder</label>
+            </value>
+            <value>
+                <fullName>Process Associate</fullName>
+                <default>false</default>
+                <label>Process Associate</label>
+            </value>
+            <value>
+                <fullName>Quality Control Analyst</fullName>
+                <default>false</default>
+                <label>Quality Control Analyst</label>
+            </value>
+            <value>
+                <fullName>Quality Control Auditor</fullName>
+                <default>false</default>
+                <label>Quality Control Auditor</label>
+            </value>
+            <value>
+                <fullName>Refunds</fullName>
+                <default>false</default>
+                <label>Refunds</label>
+            </value>
+            <value>
+                <fullName>TCS</fullName>
+                <default>false</default>
+                <label>TCS</label>
+            </value>
+            <value>
+                <fullName>Team Lead</fullName>
+                <default>false</default>
+                <label>Team Lead</label>
+            </value>
+            <value>
+                <fullName>Claim Processing Executive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Claim Processing Executive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Do you have or are you able to obtain procedure / case logs showing that you have performed these procedures within the last 2 years? Question</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;font-weight:bold;&quot;&gt;Do you have or are you able to obtain procedure / case logs showing that you have performed these procedures within the last 2 years?&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Procedure / Case logs are records that track the number of patients treated and/or procedures performed by a clinician, often used to document competency and meet training requirements. A copy of these logs can be requested from the hospital/employer&apos;s medical staff office, quality assurance department, Health Information Management department, or billing office. Typically, these records are only released to the clinician themselves.&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>Do_you_have_or_are_you_able_to_obtain_procedure_case_logs_showing_thatQT</developerName>
+    <name>Do you have or are you able to obtain procedure / case logs showing that you have performed these procedures within the last 2 years? Question</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

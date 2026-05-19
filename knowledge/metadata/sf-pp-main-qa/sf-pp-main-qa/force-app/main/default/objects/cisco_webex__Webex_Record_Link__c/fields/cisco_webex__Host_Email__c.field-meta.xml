@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cisco_webex__Host_Email__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Host Email for scheduled meetings.</description>
+    <externalId>false</externalId>
+    <label>Host Email</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

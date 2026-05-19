@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Performance_Quality_Metrics_PkList__c</fullName>
+    <label>Performance Quality Metrics</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agreed Upon</fullName>
+                <default>false</default>
+                <label>Agreed Upon</label>
+            </value>
+            <value>
+                <fullName>To be Negotiated prior to Start Date</fullName>
+                <default>false</default>
+                <label>To be Negotiated prior to Start Date</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

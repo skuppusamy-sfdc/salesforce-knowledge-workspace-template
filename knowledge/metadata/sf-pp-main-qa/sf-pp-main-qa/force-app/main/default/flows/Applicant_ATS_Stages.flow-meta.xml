@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_New_Task</name>
+        <label>Create Candidate Profile</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>bpats__NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <connector>
+            <targetReference>Copy_2_of_New_Task</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <elementReference>CreateCandidateProfile</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ActivityDate</name>
+            <value>
+                <elementReference>WithinOneDay</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhoId</name>
+            <value>
+                <elementReference>$Record.bpats__ATS_Applicant__r.Account.PersonContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>$Record.bpats__Job__r.Recruiter__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Status</name>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>bpats__NewTask</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Copy_2_of_New_Task</name>
+        <label>Check Candidate References</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>bpats__NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <elementReference>CheckCandidateReferences</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ActivityDate</name>
+            <value>
+                <elementReference>WithinFiveDays</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhoId</name>
+            <value>
+                <elementReference>$Record.bpats__ATS_Applicant__r.Account.PersonContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>$Record.bpats__Job__r.Recruiter__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Status</name>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>bpats__NewTask</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>New_Task_Action_1</name>
+        <label>Conduct Recruiter Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>bpats__NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <elementReference>ConductRecruiterScreen</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhoId</name>
+            <value>
+                <elementReference>$Record.bpats__ATS_Applicant__r.Account.PersonContactId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>$Record.bpats__Job__r.Recruiter__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Status</name>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>bpats__NewTask</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Presenting</name>
+        <label>Presenting?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_3_of_Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.bpats__Stage__r.bpats__Sequence__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>4.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_New_Task</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Recruiter_Screen</name>
+        <label>Recruiter Screen?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Presenting</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.bpats__Stage__r.bpats__Sequence__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>2.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>New_Task_Action_1</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Actions that are taken as the applicant traverses different ATS template stages</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Adds 5 business days to today&apos;s date</description>
+        <name>WithinFiveDays</name>
+        <dataType>Date</dataType>
+        <expression>CASE(
+    MOD( TODAY() - DATE(1985,6,24), 7),
+    0, TODAY() + 7, /* Sunday → +7 */
+    1, TODAY() + 7, /* Monday → +7 */
+    2, TODAY() + 7, /* Tuesday → +7 */
+    3, TODAY() + 7, /* Wednesday → +7 */
+    4, TODAY() + 7, /* Thursday → +7 */
+    5, TODAY() + 7, /* Friday → +7 */
+    6, TODAY() + 7, /* Saturday → +7 */
+    TODAY() + 7     /* Fallback */
+)</expression>
+    </formulas>
+    <formulas>
+        <name>WithinOneDay</name>
+        <dataType>Date</dataType>
+        <expression>CASE( 
+  MOD( TODAY() - DATE( 1900, 1, 7 ), 7 ),
+  3, TODAY() + 2 + 1,
+  4, TODAY() + 2 + 1,
+  5, TODAY() + 2 + 1,
+  6, TODAY() + 1 + 1,
+  TODAY() + 1
+)</expression>
+    </formulas>
+    <formulas>
+        <name>WithinTwoDays</name>
+        <dataType>Date</dataType>
+        <expression>CASE( 
+  MOD( TODAY() - DATE( 1900, 1, 7 ), 7 ),
+  3, TODAY() + 2 + 2,
+  4, TODAY() + 2 + 2,
+  5, TODAY() + 2 + 2,
+  6, TODAY() + 1 + 2,
+  TODAY() + 2
+)</expression>
+    </formulas>
+    <interviewLabel>Applicant ATS Stages {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Applicant ATS Stages</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Recruiter_Screen</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED ( {!$Record.bpats__Stage__r.bpats__Sequence__c} )</filterFormula>
+        <object>bpats__ATS_Applicant__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>CheckCandidateReferences</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Check the Candidate&apos;s References</text>
+    </textTemplates>
+    <textTemplates>
+        <name>ConductRecruiterScreen</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Conduct Recruiter Screen</text>
+    </textTemplates>
+    <textTemplates>
+        <name>CreateCandidateProfile</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Create a Candidate Profile</text>
+    </textTemplates>
+</Flow>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NUM_DENIED_CLAIMS_MEDICARE__c</fullName>
+    <description>Number of Denied Medicare Inpatient Claims</description>
+    <externalId>false</externalId>
+    <label>Num. Denied Claims Medicare</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

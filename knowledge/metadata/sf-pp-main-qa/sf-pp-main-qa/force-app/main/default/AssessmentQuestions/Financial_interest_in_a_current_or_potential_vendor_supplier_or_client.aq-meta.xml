@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Financial interest in a current or potential vendor, supplier, or client</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Do you or a family member have a financial interest in a current or potential vendor, supplier, or client of the Company?</questionText>
+        <responseValues>No
+Yes</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Financial_interest_in_a_current_or_potential_vendor_supplier_or_client</developerName>
+    <name>Financial interest in a current or potential vendor, supplier, or client</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

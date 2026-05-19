@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>DEA SUBTITLE</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Due to changes in the DEA Registration verification process, we will need to know some information prior to querying the site. For the state you are anticipating working with us in, please list your DEA Registration information below and attach a copy to this form. If you do not have a DEA for this state yet, either list another state’s DEA Registration information or insert N/A into the fields below.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>DEA_SUBTITLE</developerName>
+    <name>DEA SUBTITLE</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

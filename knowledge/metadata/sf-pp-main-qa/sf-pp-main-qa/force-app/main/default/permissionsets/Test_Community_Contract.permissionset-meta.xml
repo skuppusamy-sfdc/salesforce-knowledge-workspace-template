@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Contract_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Test Community Contract</label>
+    <license>HealthCloudExperienceCloudAccessPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AECommunityAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ActivitiesAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditTask</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EntityAccessHealthCloudCommunity</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>FHIRCmtyAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>FSCArcGraphCommunityUser</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>HcPnmSiteUser</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>UtilMgmtProviderExprcCloudUser</name>
+    </userPermissions>
+</PermissionSet>

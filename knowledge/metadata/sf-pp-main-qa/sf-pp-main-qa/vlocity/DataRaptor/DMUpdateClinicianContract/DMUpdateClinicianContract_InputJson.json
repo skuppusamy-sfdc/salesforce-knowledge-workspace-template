@@ -1,0 +1,18 @@
+{
+    "ContextId": null,
+    "TryCatchBlock1": {
+        "CB_CheckCorporateEntityOnNewHPF": {
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "RA_CreatePNCRecords": null,
+        "TryCatchBlock1": null
+    }
+}

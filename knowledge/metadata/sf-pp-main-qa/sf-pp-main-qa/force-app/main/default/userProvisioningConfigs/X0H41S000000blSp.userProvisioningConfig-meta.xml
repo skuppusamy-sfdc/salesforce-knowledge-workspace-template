@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserProvisioningConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectedApp>scp_website</connectedApp>
+    <enabled>true</enabled>
+    <masterLabel>X0H41S000000blSp</masterLabel>
+</UserProvisioningConfig>

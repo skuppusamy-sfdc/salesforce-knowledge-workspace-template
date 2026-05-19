@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UC_Sales_Opportunity</fullName>
+    <active>false</active>
+    <businessProcess>Sales Opportunity Process</businessProcess>
+    <description>For Urgent Care Sales</description>
+    <label>UC Sales Opportunity</label>
+    <picklistValues>
+        <picklist>Accelerate_Process__c</picklist>
+        <values>
+            <fullName>Accelerate Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must Win</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Added_Options__c</picklist>
+        <values>
+            <fullName>MyPoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OA %28Operational Assessment%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS Collections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Acute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scribes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telemedicine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BDA_Assigned__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - Pam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes - Susan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bid_Process__c</picklist>
+        <values>
+            <fullName>Formal Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP By Invitation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Questionnaire_Status__c</picklist>
+        <values>
+            <fullName>Assessment Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Due Process Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Received</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ready for Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission Incomplete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Close_Reason__c</picklist>
+        <values>
+            <fullName>Company %E2%80%93 Reputation and%2For Future Direction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company %E2%80%93 Size and%2For Presence in Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Bid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Change Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline Cleanup - not real oppty - Closed by Sales Ops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Team %E2%80%93 Ease of Purchase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Team %E2%80%93 Responsiveness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution %E2%80%93 Clinical Quality%2FMedical Leadership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution %E2%80%93 Economics %28Overall cost%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution %E2%80%93 Multiple Service Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution %E2%80%93 Recruitment%2FCoverage model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution %E2%80%93 References%2FService</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competitors__c</picklist>
+        <values>
+            <fullName>Apollo MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Groups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sound Physicians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEAMHealth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Acute Care Solutions %28USACS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vituity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DAM_Status__c</picklist>
+        <values>
+            <fullName>Model Approved %28for contracting%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Model Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Deal_Category_Old__c</picklist>
+        <values>
+            <fullName>Innovations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steady State</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Division__c</picklist>
+        <values>
+            <fullName>Division 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Division 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Division 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EM_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral%09Not Checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employed_Outsourced_Leaseback__c</picklist>
+        <values>
+            <fullName>Employed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaseback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCS Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HM_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral%09Not Checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__DeliveryInstallationStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to begin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDA Cadence - Felecia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDA Cadence - Mark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DefinitiveHC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engage_CXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Sales Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound BDM Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound VP Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show %2F Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source__c</picklist>
+        <values>
+            <fullName>Inbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Google Adwords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound In-person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound In-person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legacy_Company_Sales__c</picklist>
+        <values>
+            <fullName>ECI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Must_Win_Qtr__c</picklist>
+        <values>
+            <fullName>2015 Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2015 Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016 Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016 Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016 Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2016 Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017 Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017 Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017 Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2017 Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None Selected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Source__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Call - Loss Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current EM Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exec Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Google Adwords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound In-person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound In-person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prev Business Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales VP Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outbound_Lead_Source__c</picklist>
+        <values>
+            <fullName>In-person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eMail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>not applicable</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pipeline_Stage__c</picklist>
+        <values>
+            <fullName>Contract Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Negotiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Qualified Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Presented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Qualified Lead</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Line__c</picklist>
+        <values>
+            <fullName>Patient Access Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program_Type__c</picklist>
+        <values>
+            <fullName>Manpower Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manpower HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manpower Payroll</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Projection_Category__c</picklist>
+        <values>
+            <fullName>Top of Funnel</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Verbal Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verbal Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wild Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Won</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proposal_Financial_Terms__c</picklist>
+        <values>
+            <fullName>Cost %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flat Sub%2FZero Sub %28VP%2CPP%2Cand%2For At-Risk%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flat Sub%2FZero Sub %28no protection%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Fee Guarantee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variable Subsidy %28Case Rate%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variable Subsidy %28Lease-Back%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qtrly_Forecast_Category__c</picklist>
+        <values>
+            <fullName>Christus Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Year Closed Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Year Commited Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Year Upside Deals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previous Year Contributing Deals</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_First_Meeting__c</picklist>
+        <values>
+            <fullName>BDA Tenacity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moving to Employed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staffing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Stage_Progression__c</picklist>
+        <values>
+            <fullName>Request Progression to Contract Request%2FMOU Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Progression to Down Select</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Progression to Proposal Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Progression to Proposal Presented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Progression to Proposal Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Progression to Sales Qualified Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request to Close Opportunity%2FContract Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Line_s__c</picklist>
+        <values>
+            <fullName>UC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service__c</picklist>
+        <values>
+            <fullName>Customized Clinical Support Programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facilitated Scheduling Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Information and Nurse Triage Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced Back-Office Navigation %26 Administrative Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced Marketing%2C Consulting%2C and Contract Management Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Engagement Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post - Discharge Care Coordination Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider Locator Line</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_s__c</picklist>
+        <values>
+            <fullName>EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subsidium_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral%09Not Checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TM_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing%2FIncremental Margin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WW_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral%09Not Checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>What_level_is_this_opportunity_sold_to__c</picklist>
+        <values>
+            <fullName>Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-sub-system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;recordList&quot;: [
+        {
+            &quot;effectiveDate&quot;: &quot;2025-11-22&quot;,
+            &quot;Id&quot;: &quot;0bSgP000000093KUAQ&quot;,
+            &quot;professionalTitle&quot;: &quot;&quot;,
+            &quot;facilityId&quot;: &quot;0hsgP00000003kfQAA&quot;,
+            &quot;accountId&quot;: &quot;001gP000001KlYTQA0&quot;,
+            &quot;checked&quot;: true,
+            &quot;NPPATierFormulaValue&quot;: null,
+            &quot;checkFacilitytitle&quot;: 0,
+            &quot;hpfStatus&quot;: &quot;Prospect&quot;,
+            &quot;contractingStatus&quot;: null,
+            &quot;NPPATier&quot;: null,
+            &quot;facilityTitle&quot;: &quot;Leased Employee&quot;,
+            &quot;NoOfHours&quot;: null,
+            &quot;accountName&quot;: &quot;ABC pvt ltd.&quot;
+        },
+        {
+            &quot;effectiveDate&quot;: &quot;2025-11-21&quot;,
+            &quot;Id&quot;: &quot;0bSgP000000093KUAQ&quot;,
+            &quot;professionalTitle&quot;: &quot;&quot;,
+            &quot;facilityId&quot;: &quot;0hsgP00000003kfQAA&quot;,
+            &quot;accountId&quot;: &quot;001gP000001KlYTQA0&quot;,
+            &quot;checked&quot;: true,
+            &quot;NPPATierFormulaValue&quot;: null,
+            &quot;checkFacilitytitle&quot;: 0,
+            &quot;hpfStatus&quot;: &quot;Prospect&quot;,
+            &quot;contractingStatus&quot;: null,
+            &quot;NPPATier&quot;: null,
+            &quot;facilityTitle&quot;: &quot;Leased Employee&quot;,
+            &quot;NoOfHours&quot;: null,
+            &quot;accountName&quot;: &quot;ABC pvt ltd.&quot;
+        }
+    ]
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>CheckSelectedRecords</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RA_ReturnSelectedRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;selectedRecords&quot; : &quot;=IF(ISBLANK(%LA_CheckSelectedHPFRecords%),false,true)&quot;,
+    &quot;SelectedlstRecords&quot; : &quot;%LA_CheckSelectedHPFRecords%&quot;,
+    &quot;TransformedHPFRecords&quot; : &quot;%DMT_SelectedHPFRecords:SelectedlstRecords%&quot;,
+    &quot;SelectedRecordsHPFRecords&quot; : &quot;=IF(ISBLANK(%LA_ChcekSelectedHPFRecordsCC|1:Id%),false,true)&quot;,
+    &quot;Facilitylist&quot; : &quot;=LIST(%LA_CheckSelectedHPFRecords:facilityId%)&quot;,
+    &quot;accountlist&quot; : &quot;=LIST(%LA_CheckSelectedHPFRecords:accountId%)&quot;,
+    &quot;isNPPA&quot; : &quot;=IF(ISBLANK(%LA_CheckNPPA%),false,true)&quot;,
+    &quot;SelectedHPFRecToUpdate&quot; : &quot;=IF(ISBLANK(%LA_MergeSelectedHPFRecords%),false,true)&quot;,
+    &quot;TransformedRec&quot; : &quot;%DMT_SelectedHPFRecords:SelectedlstRecords%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DMT_SelectedHPFRecords</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;SelectedlstRecords&quot; : &quot;%LA_MergeSelectedHPFRecords%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMTSelectedHPFRecords&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_ChcekSelectedHPFRecordsCC</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;recordList&quot; ],
+  &quot;filterListFormula&quot; : &quot;= checked == \&quot;true\&quot; &amp;&amp;  (facilityTitle == \&quot;External Locums\&quot; || facilityTitle == \&quot;Leased Employee\&quot; || facilityTitle == \&quot;Leased Medical Director\&quot; || facilityTitle == \&quot;Managed NP/PA\&quot; || facilityTitle == \&quot;Managed Nurse\&quot; || facilityTitle == \&quot;Managed Physician\&quot;) &amp;&amp; Id!= null&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_CheckNPPA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;recordList&quot; ],
+  &quot;filterListFormula&quot; : &quot;= checked == \&quot;true\&quot; &amp;&amp;  (facilityTitle == \&quot;Nurse Practitioner\&quot; || facilityTitle == \&quot;Physician Assistant\&quot;)&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_CheckSelectedHPFRecords</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;recordList&quot; ],
+  &quot;filterListFormula&quot; : &quot;= checked == \&quot;true\&quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_MergeSelectedHPFRecords</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ &quot;Id&quot; ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;LA_CheckSelectedHPFRecords&quot;, &quot;LA_ChcekSelectedHPFRecordsCC&quot; ],
+  &quot;filterListFormula&quot; : &quot;Id != null&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>HealthCarePractitioner_CheckSelectedRecords</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>CheckSelectedRecords</subType>
+    <type>HealthCarePractitioner</type>
+    <uniqueName>HealthCarePractitioner_CheckSelectedRecords_Procedure_4</uniqueName>
+    <versionNumber>4.0</versionNumber>
+    <webComponentKey>e958658f-ed5b-b580-002c-48f232d99d90</webComponentKey>
+</OmniIntegrationProcedure>

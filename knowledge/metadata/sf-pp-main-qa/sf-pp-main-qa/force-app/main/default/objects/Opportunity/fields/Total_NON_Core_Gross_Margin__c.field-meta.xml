@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_NON_Core_Gross_Margin__c</fullName>
+    <label>Total NON-Core Gross Margin</label>
+    <summarizedField>Services__c.Gross_Margin__c</summarizedField>
+    <summaryFilterItems>
+        <field>Services__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Other Service Lines (NON-CORE), Connected Care - Complete, Connected Care - During, Connected Care - Next, Connected Care - Proactive, Value-Based Solutions, Virtual &amp; Hybrid Care Solutions, Innovation / Non-commercial</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Services__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Services__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

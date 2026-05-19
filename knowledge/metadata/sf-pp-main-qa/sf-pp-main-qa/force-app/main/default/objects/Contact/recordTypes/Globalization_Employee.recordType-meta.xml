@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Globalization_Employee</fullName>
+    <active>true</active>
+    <label>Globalization Employee</label>
+    <picklistValues>
+        <picklist>Eligible_Auditor__c</picklist>
+        <values>
+            <fullName>Audits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Role__c</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auditor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Claims Processing Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinical Reviewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collections Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMR Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Editor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM Auditor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM Coder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM Payment Poster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indexing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Log Mgmt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Registrar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Posting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Posting Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PreCoder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Associate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Control Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Control Auditor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refunds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Lead</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Office_Location__c</picklist>
+        <values>
+            <fullName>AGSHealth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlanta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chattanooga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CitiusTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dallas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeBBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Houston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lafayette - Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Picayune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG Durham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG Hollywood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG Lafayette %E2%80%93 West Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Antonio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works from Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works in Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e4e</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

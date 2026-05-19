@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_TSG_Convert_Lead</fullName>
+    <active>true</active>
+    <description>TSG Profile just can convert Lead Discovery Records when they are the owners of that records.</description>
+    <errorConditionFormula>(!IsOwnerTSG__c &amp;&amp;  $Profile.Name = &apos;TSG Sales&apos; &amp;&amp; IsConverted = TRUE) 
+||  
+($User.Id !=  OwnerId &amp;&amp; $Profile.Name = &apos;TSG Sales&apos; &amp;&amp; IsConverted = TRUE)</errorConditionFormula>
+    <errorMessage>You can only convert a Lead Discovery record if you are the owner of that record, otherwise you must Request Progression to Opportunity</errorMessage>
+</ValidationRule>

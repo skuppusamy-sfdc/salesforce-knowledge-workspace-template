@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Bonus_Cap__c</fullName>
+    <defaultValue>true</defaultValue>
+    <inlineHelpText>If checked, will create and post the Posted Bonus Phrase from the Bonus Cap</inlineHelpText>
+    <label>Post Bonus Cap?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

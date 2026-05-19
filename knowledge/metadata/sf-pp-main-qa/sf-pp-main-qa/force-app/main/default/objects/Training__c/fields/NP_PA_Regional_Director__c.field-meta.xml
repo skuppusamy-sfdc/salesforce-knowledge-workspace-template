@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NP_PA_Regional_Director__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>NP/PA Regional Director</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Trainings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Line (2) --></label>
+    <name>Service_Line_2__c</name>
+    <picklistValues>
+        <masterLabel>CC</masterLabel>
+        <translation><!-- CC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCC</masterLabel>
+        <translation><!-- CCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EM</masterLabel>
+        <translation><!-- EM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HINT</masterLabel>
+        <translation><!-- HINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HM</masterLabel>
+        <translation><!-- HM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HM2Home</masterLabel>
+        <translation><!-- HM2Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HMTELE</masterLabel>
+        <translation><!-- HMTELE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICPEM</masterLabel>
+        <translation><!-- ICPEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICPHM</masterLabel>
+        <translation><!-- ICPHM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCC</masterLabel>
+        <translation><!-- NCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBSEM</masterLabel>
+        <translation><!-- OBSEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OBSHM</masterLabel>
+        <translation><!-- OBSHM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEDSEM</masterLabel>
+        <translation><!-- PEDSEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEDSHM</masterLabel>
+        <translation><!-- PEDSHM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UC</masterLabel>
+        <translation><!-- UC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VH</masterLabel>
+        <translation><!-- VH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WCCM</masterLabel>
+        <translation><!-- WCCM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

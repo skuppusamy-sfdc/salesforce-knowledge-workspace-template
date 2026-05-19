@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>texcellency__Event_Time__c</fullName>
+    <defaultValue>NOW()</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Date and time on which this event occurred.</description>
+    <inlineHelpText>Date and time on which this event occurred.</inlineHelpText>
+    <label>Event Time</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

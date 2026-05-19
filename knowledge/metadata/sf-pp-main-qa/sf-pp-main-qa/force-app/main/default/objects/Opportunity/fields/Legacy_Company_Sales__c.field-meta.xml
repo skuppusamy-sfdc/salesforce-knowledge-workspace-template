@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Company_Sales__c</fullName>
+    <label>Legacy Company Sales</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ECI</fullName>
+                <default>false</default>
+                <label>ECI</label>
+            </value>
+            <value>
+                <fullName>SCP</fullName>
+                <default>false</default>
+                <label>SCP</label>
+            </value>
+            <value>
+                <fullName>HPP</fullName>
+                <default>false</default>
+                <label>HPP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

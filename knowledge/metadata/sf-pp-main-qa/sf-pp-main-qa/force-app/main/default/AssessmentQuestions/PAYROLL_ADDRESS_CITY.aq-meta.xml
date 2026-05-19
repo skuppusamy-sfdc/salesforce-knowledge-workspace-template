@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PAYROLL ADDRESS CITY</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Payroll Address City</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>PAYROLL_ADDRESS_CITY</developerName>
+    <name>PAYROLL ADDRESS CITY</name>
+    <questionCategory>Base</questionCategory>
+    <relatedQuestion>MAILING_ADDRESS_SAME_AS_PAYROLL_ADDRESS</relatedQuestion>
+</AssessmentQuestion>

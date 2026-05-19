@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Find CET answers</description>
+    <invocationTarget>CET_Reference</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>CET Reference</masterLabel>
+    <progressIndicatorMessage>Bringing up the latest info</progressIndicatorMessage>
+</GenAiFunction>

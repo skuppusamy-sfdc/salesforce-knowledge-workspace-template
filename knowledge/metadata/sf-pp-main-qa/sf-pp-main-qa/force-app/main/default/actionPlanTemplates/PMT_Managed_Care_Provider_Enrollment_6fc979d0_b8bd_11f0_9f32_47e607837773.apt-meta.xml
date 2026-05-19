@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 45 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Enrollment Specialist Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Send and receive PEPs to clinicians working the first month of service- status</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Enrollment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 45</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Send and receive PEPs to clinicians working the first month of service- status</name>
+        <uniqueName>Send_and_receive_PEPs_to_clinicians_working_6fddc524_b8bd_11f0_9f32_0d1291a6f619</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Negotiate and contract w/ Managed care carriers required for the startup . Obtain agreements..</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Managed Care</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Managed Care Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Negotiate and contract w/ Managed care carriers required for the startup . Obtain agreements..</name>
+        <uniqueName>Negotiate_and_contract_w_Managed_care_carr_6fde3a56_b8bd_11f0_9f32_3fad125df24b</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Enrollment Specialist Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Request NPI for group enrollment; add NPI service location</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Enrollment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 5</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 5 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Request NPI for group enrollment; add NPI service location</name>
+        <uniqueName>Request_NPI_for_group_enrollment_add_NPI_s_6fdeaf88_b8bd_11f0_9f32_c163f5bf732b</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>PEP for leased clinician sent and received</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Leased Clinicians</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Enrollment Specialist Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>PEP for leased clinician sent and received</name>
+        <uniqueName>PEP_for_leased_clinician_sent_and_received_6fdfc0fe_b8bd_11f0_9f32_bb512b07a3b1</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>VISA Providers</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Enrollment Specialist Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Visa clinicians PEP sent and received</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Applies_to_Service_Line__c</name>
+            <valueLiteral>HM,CC,ICPEM,ICPHM</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Visa clinicians PEP sent and received</name>
+        <uniqueName>Visa_clinicians_PEP_sent_and_received_6fe00f20_b8bd_11f0_9f32_1f0698c42b1b</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Prepare and submit group applications to the carriers (Medicare, Medicaid, Railroad, BCBS).</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Enrollment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 45</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 45 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Enrollment Specialist Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Prepare and submit group applications to the carriers (Medicare, Medicaid, Railroad, BCBS).</name>
+        <uniqueName>Prepare_and_submit_group_applications_to_th_6fdf72dc_b8bd_11f0_9f32_a9434f08f5d8</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Can the PEP be sent electronically or need to be mailed due to wet signature requirements?</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 1</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>Enrollment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Enrollment Specialist Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 1 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Can the PEP be sent electronically or need to be mailed due to wet signature requirements?</name>
+        <uniqueName>Can_the_PEP_be_sent_electronically_or_need_6fdefdaa_b8bd_11f0_9f32_253403ae3030</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>PMT - Managed Care / Provider Enrollment</name>
+    <targetEntityType>Account</targetEntityType>
+    <uniqueName>PMT_Managed_Care_Provider_Enrollment_6fc979d0_b8bd_11f0_9f32_47e607837773</uniqueName>
+</ActionPlanTemplate>

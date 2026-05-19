@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- EE NP/PA Full Time Weekly Blended --></label>
+    <name>EE_NPPA_Full_Time_Weekly_Blended__c</name>
+</CustomFieldTranslation>

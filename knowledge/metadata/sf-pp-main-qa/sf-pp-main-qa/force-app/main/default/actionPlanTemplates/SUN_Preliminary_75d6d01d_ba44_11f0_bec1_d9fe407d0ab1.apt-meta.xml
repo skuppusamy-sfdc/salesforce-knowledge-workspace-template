@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Preliminary SUN - Provider Onboarding</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>CaseTeamMember.TeamRole.Dir Staffing Fulfillment Optimization</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Preliminary SUN - Provider Onboarding
+ 
+Please send all rosters, schedules, and provider enrollment data to RCS.</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Preliminary SUN - Provider Onboarding</name>
+        <uniqueName>Preliminary_SUN_Provider_Onboarding_75fc8095_ba44_11f0_bec1_cb065cf79de7</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>CaseTeamMember.TeamRole.Performance Analyst</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Preliminary SUN - Review Details</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Preliminary SUN - Please See Details
+
+Fields located on the Service Account unless otherwise stated: 
+Account Name
+Service Line
+Global Facility ID
+Parent Account
+Services Sold: Object = PMT Phase, Field = Services Sold
+Physical Address: Parent Account (Facility/Hospital), Field = Physical Address
+Phone
+Client Owner: Object = Account Account Relationship, Party Role Relationship = Client Owner
+Client Owner Type
+Facility Short Name: Parent Account (Facility/Hospital), Field = Facility Short Name
+Annual ED Billable Volume: Object = Pro Froma Facility Detail, Field = ED Volume
+Annual HM Patient Encounters: Object = Pro Froma Facility Detail, Field = HM Volume
+Tele Services Active: Object = Pro Froma Facility Detail, Field = TeleMedicine
+Leased Employees: Object = PMT Phase, Field = Leased Employees
+If Leased Employees Ins Provided By: Object = PMT Phase, Field = If Leased Employees Ins Provided By
+Medical Malpractice Insurance Limits per Occurrence: Object = Pro Froma Facility Detail, Field = Insurance Limits per Occurrence
+Medical Malpractice Insurance Aggregate: Object = Pro Froma Facility Detail, Field = Insurance Limits Aggregate
+Insurance Provided By
+Corporate Entity: Object = Account Account Relationship, Party Role Relationship = Client
+Client Start Up Date: Object = PMT Phase, Field = Client Start Up Date
+Client Start Up Time: Object = PMT Phase, Field = Client Start Up Time
+Client Start Up Time Zone: Object = PMT Phase, Field = Client Start Up Time Zone
+Billing Company
+Staffing Team
+Client Division
+Client Region
+Position being Recruited</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Preliminary SUN - Review Details</name>
+        <uniqueName>Preliminary_SUN_Review_Details_75fbbd41_ba44_11f0_bec1_834dc36359ab</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Preliminary SUN - Billing Requirements Discovery
+ 
+Identify &amp; provide to RCS additional procedures/services performed, APP bylaws, Charity and Financial Assistance expectations, Compliance guidelines on federal and state policies</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Preliminary SUN - Billing Requirements Discovery</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>CaseTeamMember.TeamRole.VP Operations</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Preliminary SUN - Billing Requirements Discovery</name>
+        <uniqueName>Preliminary_SUN_Billing_Requirements_Disc_75fc0b63_ba44_11f0_bec1_237d6b3d6b55</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Client Contracting Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Begin preliminary activities: Locate the account record and attach to Google Docs, set new task to reactivate account, mark contract type as Startup</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Begin preliminary SUN activities</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Begin preliminary SUN activities</name>
+        <uniqueName>Begin_preliminary_SUN_activities_75fcceb7_ba44_11f0_bec1_dda236799042</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Data Acquisition Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Perform Data Entry Activities - Preliminary SUN</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Perform Data Entry Activities - Preliminary SUN</name>
+        <uniqueName>Perform_Data_Entry_Activities_Preliminary_75fd1cd9_ba44_11f0_bec1_cf8a881e8c28</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Preliminary SUN - Establish Data Feed 
+ 
+Establish ADT feed for patient registration, clinical data feed for medical records, census &amp; log files, EMR access.</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 30</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Preliminary SUN - Establish Data Feed</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.Data Acquisition Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 30 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Preliminary SUN - Establish Data Feed</name>
+        <uniqueName>Preliminary_SUN_Establish_Data_Feed_75fe2e4f_ba44_11f0_bec1_1dbb7221c565</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>Queue.RMSI Queue</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Create or Term Medical Malpractice Liability Insurance (MPL) Coverage Period</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Create or Term Medical Malpractice Liability Insurance (MPL) Coverage Period</name>
+        <uniqueName>Create_or_Term_Medical_Malpractice_Liabilit_75fde02d_ba44_11f0_bec1_eda9c59202e4</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>IsReminderSet</name>
+            <valueLiteral>false</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Category__c</name>
+            <valueLiteral>SUN - Preliminary</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>OwnerId</name>
+            <valueFormula>CaseTeamMember.TeamRole.RCS Client Services Director</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ReminderDateTime</name>
+            <valueFormula>StartDate + 7 - 0 +</valueFormula>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Preliminary SUN - Log Volume in New Startup Tracker spreadsheet</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Preliminary SUN - Log Volume in New Startup Tracker spreadsheet
+
+See related details below:
+Facility NPI: See Object = Account (Service Account), Field = Organization NPI Number
+Lockbox addresses: See Object = Corporate Entity Lockbox
+Service Locations: See Object = Account (Facility/Hospital), Field = Physical Address
+States for Border Enrollment: Object = Account (Service Account), Field = Bordering States (NEW, Text Area (255)) Health System Affiliation:  Object = Account (Service Account), Field = Group Ownership
+Hospital Documentation Platforms (EHRs): Object = Facility Profile, Field = Type of Order Entry System</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 7</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Preliminary SUN - Log Volume in New Startup Tracker spreadsheet</name>
+        <uniqueName>Preliminary_SUN_Log_Volume_in_New_Startup_75fd920b_ba44_11f0_bec1_07dd21e0a42a</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>SUN - Preliminary</name>
+    <targetEntityType>Case</targetEntityType>
+    <uniqueName>SUN_Preliminary_75d6d01d_ba44_11f0_bec1_d9fe407d0ab1</uniqueName>
+</ActionPlanTemplate>

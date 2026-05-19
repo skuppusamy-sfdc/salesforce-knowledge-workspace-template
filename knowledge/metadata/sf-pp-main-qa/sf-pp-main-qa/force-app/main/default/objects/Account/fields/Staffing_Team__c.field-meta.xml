@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staffing_Team__c</fullName>
+    <label>Staffing Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10 - United</fullName>
+                <default>false</default>
+                <label>10 - United</label>
+            </value>
+            <value>
+                <fullName>1 - Atlantic</fullName>
+                <default>false</default>
+                <label>1 - Atlantic</label>
+            </value>
+            <value>
+                <fullName>1 - National</fullName>
+                <default>false</default>
+                <label>1 - National</label>
+            </value>
+            <value>
+                <fullName>2 - Atlantic</fullName>
+                <default>false</default>
+                <label>2 - Atlantic</label>
+            </value>
+            <value>
+                <fullName>2 - National</fullName>
+                <default>false</default>
+                <label>2 - National</label>
+            </value>
+            <value>
+                <fullName>3 - Atlantic</fullName>
+                <default>false</default>
+                <label>3 - Atlantic</label>
+            </value>
+            <value>
+                <fullName>3 - National</fullName>
+                <default>false</default>
+                <label>3 - National</label>
+            </value>
+            <value>
+                <fullName>4 - Atlantic</fullName>
+                <default>false</default>
+                <label>4 - Atlantic</label>
+            </value>
+            <value>
+                <fullName>5 - Continental</fullName>
+                <default>false</default>
+                <label>5 - Continental</label>
+            </value>
+            <value>
+                <fullName>6 - Continental</fullName>
+                <default>false</default>
+                <label>6 - Continental</label>
+            </value>
+            <value>
+                <fullName>7 - Continental</fullName>
+                <default>false</default>
+                <label>7 - Continental</label>
+            </value>
+            <value>
+                <fullName>8 - Continental</fullName>
+                <default>false</default>
+                <label>8 - Continental</label>
+            </value>
+            <value>
+                <fullName>9 - United</fullName>
+                <default>false</default>
+                <label>9 - United</label>
+            </value>
+            <value>
+                <fullName>ArchWell Health</fullName>
+                <default>false</default>
+                <label>ArchWell Health</label>
+            </value>
+            <value>
+                <fullName>Capital - Blue</fullName>
+                <default>false</default>
+                <label>Capital - Blue</label>
+            </value>
+            <value>
+                <fullName>Capital - Gold</fullName>
+                <default>false</default>
+                <label>Capital - Gold</label>
+            </value>
+            <value>
+                <fullName>Capital - Green</fullName>
+                <default>false</default>
+                <label>Capital - Green</label>
+            </value>
+            <value>
+                <fullName>Capital - Orange</fullName>
+                <default>false</default>
+                <label>Capital - Orange</label>
+            </value>
+            <value>
+                <fullName>Capital - Purple</fullName>
+                <default>false</default>
+                <label>Capital - Purple</label>
+            </value>
+            <value>
+                <fullName>Capital - Red</fullName>
+                <default>false</default>
+                <label>Capital - Red</label>
+            </value>
+            <value>
+                <fullName>Capital - Silver</fullName>
+                <default>false</default>
+                <label>Capital - Silver</label>
+            </value>
+            <value>
+                <fullName>Capital - Yellow</fullName>
+                <default>false</default>
+                <label>Capital - Yellow</label>
+            </value>
+            <value>
+                <fullName>CM</fullName>
+                <default>false</default>
+                <label>CM</label>
+            </value>
+            <value>
+                <fullName>Colonial - Black</fullName>
+                <default>false</default>
+                <label>Colonial - Black</label>
+            </value>
+            <value>
+                <fullName>Colonial - Blue</fullName>
+                <default>false</default>
+                <label>Colonial - Blue</label>
+            </value>
+            <value>
+                <fullName>Colonial - Gold</fullName>
+                <default>false</default>
+                <label>Colonial - Gold</label>
+            </value>
+            <value>
+                <fullName>Colonial - Green</fullName>
+                <default>false</default>
+                <label>Colonial - Green</label>
+            </value>
+            <value>
+                <fullName>Colonial - Purple</fullName>
+                <default>false</default>
+                <label>Colonial - Purple</label>
+            </value>
+            <value>
+                <fullName>Colonial - Red</fullName>
+                <default>false</default>
+                <label>Colonial - Red</label>
+            </value>
+            <value>
+                <fullName>Colonial - Yellow</fullName>
+                <default>false</default>
+                <label>Colonial - Yellow</label>
+            </value>
+            <value>
+                <fullName>Colonial - Silver</fullName>
+                <default>false</default>
+                <label>Colonial - Silver</label>
+            </value>
+            <value>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <label>Delta</label>
+            </value>
+            <value>
+                <fullName>Delta - Black</fullName>
+                <default>false</default>
+                <label>Delta - Black</label>
+            </value>
+            <value>
+                <fullName>Delta - Blue</fullName>
+                <default>false</default>
+                <label>Delta - Blue</label>
+            </value>
+            <value>
+                <fullName>Delta - Gold</fullName>
+                <default>false</default>
+                <label>Delta - Gold</label>
+            </value>
+            <value>
+                <fullName>Delta - Green</fullName>
+                <default>false</default>
+                <label>Delta - Green</label>
+            </value>
+            <value>
+                <fullName>Delta - Red</fullName>
+                <default>false</default>
+                <label>Delta - Red</label>
+            </value>
+            <value>
+                <fullName>ECI</fullName>
+                <default>false</default>
+                <label>ECI</label>
+            </value>
+            <value>
+                <fullName>eHealth</fullName>
+                <default>false</default>
+                <label>eHealth</label>
+            </value>
+            <value>
+                <fullName>ES - Blue</fullName>
+                <default>false</default>
+                <label>ES - Blue</label>
+            </value>
+            <value>
+                <fullName>ES - Gold</fullName>
+                <default>false</default>
+                <label>ES - Gold</label>
+            </value>
+            <value>
+                <fullName>ES - Green</fullName>
+                <default>false</default>
+                <label>ES - Green</label>
+            </value>
+            <value>
+                <fullName>ES - Orange</fullName>
+                <default>false</default>
+                <label>ES - Orange</label>
+            </value>
+            <value>
+                <fullName>ES - Red</fullName>
+                <default>false</default>
+                <label>ES - Red</label>
+            </value>
+            <value>
+                <fullName>Frontier - Blue</fullName>
+                <default>false</default>
+                <label>Frontier - Blue</label>
+            </value>
+            <value>
+                <fullName>Frontier - Yellow</fullName>
+                <default>false</default>
+                <label>Frontier - Yellow</label>
+            </value>
+            <value>
+                <fullName>Frontier - Gold</fullName>
+                <default>false</default>
+                <label>Frontier - Gold</label>
+            </value>
+            <value>
+                <fullName>Frontier - Green</fullName>
+                <default>false</default>
+                <label>Frontier - Green</label>
+            </value>
+            <value>
+                <fullName>Frontier - Orange</fullName>
+                <default>false</default>
+                <label>Frontier - Orange</label>
+            </value>
+            <value>
+                <fullName>Frontier - Red</fullName>
+                <default>false</default>
+                <label>Frontier - Red</label>
+            </value>
+            <value>
+                <fullName>GL I</fullName>
+                <default>false</default>
+                <label>GL I</label>
+            </value>
+            <value>
+                <fullName>GL II</fullName>
+                <default>false</default>
+                <label>GL II</label>
+            </value>
+            <value>
+                <fullName>Heartland - Blue</fullName>
+                <default>false</default>
+                <label>Heartland - Blue</label>
+            </value>
+            <value>
+                <fullName>Heartland - Gold</fullName>
+                <default>false</default>
+                <label>Heartland - Gold</label>
+            </value>
+            <value>
+                <fullName>Heartland - Green</fullName>
+                <default>false</default>
+                <label>Heartland - Green</label>
+            </value>
+            <value>
+                <fullName>Heartland - Orange</fullName>
+                <default>false</default>
+                <label>Heartland - Orange</label>
+            </value>
+            <value>
+                <fullName>Heartland - Purple</fullName>
+                <default>false</default>
+                <label>Heartland - Purple</label>
+            </value>
+            <value>
+                <fullName>Heartland - Red</fullName>
+                <default>false</default>
+                <label>Heartland - Red</label>
+            </value>
+            <value>
+                <fullName>Heartland - Silver</fullName>
+                <default>false</default>
+                <label>Heartland - Silver</label>
+            </value>
+            <value>
+                <fullName>HM Central</fullName>
+                <default>false</default>
+                <label>HM Central</label>
+            </value>
+            <value>
+                <fullName>HM East</fullName>
+                <default>false</default>
+                <label>HM East</label>
+            </value>
+            <value>
+                <fullName>HM West</fullName>
+                <default>false</default>
+                <label>HM West</label>
+            </value>
+            <value>
+                <fullName>Horizon - Blue</fullName>
+                <default>false</default>
+                <label>Horizon - Blue</label>
+            </value>
+            <value>
+                <fullName>Horizon - Gold</fullName>
+                <default>false</default>
+                <label>Horizon - Gold</label>
+            </value>
+            <value>
+                <fullName>Horizon - Green</fullName>
+                <default>false</default>
+                <label>Horizon - Green</label>
+            </value>
+            <value>
+                <fullName>Horizon - Orange</fullName>
+                <default>false</default>
+                <label>Horizon - Orange</label>
+            </value>
+            <value>
+                <fullName>Horizon - Purple</fullName>
+                <default>false</default>
+                <label>Horizon - Purple</label>
+            </value>
+            <value>
+                <fullName>Horizon - Red</fullName>
+                <default>false</default>
+                <label>Horizon - Red</label>
+            </value>
+            <value>
+                <fullName>Horizon - Silver</fullName>
+                <default>false</default>
+                <label>Horizon - Silver</label>
+            </value>
+            <value>
+                <fullName>Horizon - Yellow</fullName>
+                <default>false</default>
+                <label>Horizon - Yellow</label>
+            </value>
+            <value>
+                <fullName>Legacy</fullName>
+                <default>false</default>
+                <label>Legacy</label>
+            </value>
+            <value>
+                <fullName>Midwest - Orange</fullName>
+                <default>false</default>
+                <label>Midwest - Orange</label>
+            </value>
+            <value>
+                <fullName>Midwest - Purple</fullName>
+                <default>false</default>
+                <label>Midwest - Purple</label>
+            </value>
+            <value>
+                <fullName>Midwest - Silver</fullName>
+                <default>false</default>
+                <label>Midwest - Silver</label>
+            </value>
+            <value>
+                <fullName>Midwest - Teal</fullName>
+                <default>false</default>
+                <label>Midwest - Teal</label>
+            </value>
+            <value>
+                <fullName>MW</fullName>
+                <default>false</default>
+                <label>MW</label>
+            </value>
+            <value>
+                <fullName>MW II</fullName>
+                <default>false</default>
+                <label>MW II</label>
+            </value>
+            <value>
+                <fullName>National - Blue</fullName>
+                <default>false</default>
+                <label>National - Blue</label>
+            </value>
+            <value>
+                <fullName>National - Gold</fullName>
+                <default>false</default>
+                <label>National - Gold</label>
+            </value>
+            <value>
+                <fullName>National - Green</fullName>
+                <default>false</default>
+                <label>National - Green</label>
+            </value>
+            <value>
+                <fullName>National - Red</fullName>
+                <default>false</default>
+                <label>National - Red</label>
+            </value>
+            <value>
+                <fullName>PAPS</fullName>
+                <default>false</default>
+                <label>PAPS</label>
+            </value>
+            <value>
+                <fullName>PAS</fullName>
+                <default>false</default>
+                <label>PAS</label>
+            </value>
+            <value>
+                <fullName>Phoenix - Orange</fullName>
+                <default>false</default>
+                <label>Phoenix - Orange</label>
+            </value>
+            <value>
+                <fullName>Pioneer - Blue</fullName>
+                <default>false</default>
+                <label>Pioneer - Blue</label>
+            </value>
+            <value>
+                <fullName>Pioneer - Gold</fullName>
+                <default>false</default>
+                <label>Pioneer - Gold</label>
+            </value>
+            <value>
+                <fullName>Pioneer - Green</fullName>
+                <default>false</default>
+                <label>Pioneer - Green</label>
+            </value>
+            <value>
+                <fullName>Pioneer - Red</fullName>
+                <default>false</default>
+                <label>Pioneer - Red</label>
+            </value>
+            <value>
+                <fullName>Post Acute Services</fullName>
+                <default>false</default>
+                <label>Post Acute Services</label>
+            </value>
+            <value>
+                <fullName>PT</fullName>
+                <default>false</default>
+                <label>PT</label>
+            </value>
+            <value>
+                <fullName>S1T1</fullName>
+                <default>false</default>
+                <label>S1T1</label>
+            </value>
+            <value>
+                <fullName>S1T2</fullName>
+                <default>false</default>
+                <label>S1T2</label>
+            </value>
+            <value>
+                <fullName>S1T3</fullName>
+                <default>false</default>
+                <label>S1T3</label>
+            </value>
+            <value>
+                <fullName>S2T1</fullName>
+                <default>false</default>
+                <label>S2T1</label>
+            </value>
+            <value>
+                <fullName>S2T2</fullName>
+                <default>false</default>
+                <label>S2T2</label>
+            </value>
+            <value>
+                <fullName>S2T3</fullName>
+                <default>false</default>
+                <label>S2T3</label>
+            </value>
+            <value>
+                <fullName>S2T4</fullName>
+                <default>false</default>
+                <label>S2T4</label>
+            </value>
+            <value>
+                <fullName>S2T5</fullName>
+                <default>false</default>
+                <label>S2T5</label>
+            </value>
+            <value>
+                <fullName>S3T1</fullName>
+                <default>false</default>
+                <label>S3T1</label>
+            </value>
+            <value>
+                <fullName>S3T2</fullName>
+                <default>false</default>
+                <label>S3T2</label>
+            </value>
+            <value>
+                <fullName>S3T3</fullName>
+                <default>false</default>
+                <label>S3T3</label>
+            </value>
+            <value>
+                <fullName>S3T4</fullName>
+                <default>false</default>
+                <label>S3T4</label>
+            </value>
+            <value>
+                <fullName>S4T1</fullName>
+                <default>false</default>
+                <label>S4T1</label>
+            </value>
+            <value>
+                <fullName>S4T2</fullName>
+                <default>false</default>
+                <label>S4T2</label>
+            </value>
+            <value>
+                <fullName>S4T3</fullName>
+                <default>false</default>
+                <label>S4T3</label>
+            </value>
+            <value>
+                <fullName>SC I</fullName>
+                <default>false</default>
+                <label>SC I</label>
+            </value>
+            <value>
+                <fullName>SC II</fullName>
+                <default>false</default>
+                <label>SC II</label>
+            </value>
+            <value>
+                <fullName>SC III</fullName>
+                <default>false</default>
+                <label>SC III</label>
+            </value>
+            <value>
+                <fullName>SE</fullName>
+                <default>false</default>
+                <label>SE</label>
+            </value>
+            <value>
+                <fullName>SE II</fullName>
+                <default>false</default>
+                <label>SE II</label>
+            </value>
+            <value>
+                <fullName>SE III</fullName>
+                <default>false</default>
+                <label>SE III</label>
+            </value>
+            <value>
+                <fullName>SE IV</fullName>
+                <default>false</default>
+                <label>SE IV</label>
+            </value>
+            <value>
+                <fullName>SE V</fullName>
+                <default>false</default>
+                <label>SE V</label>
+            </value>
+            <value>
+                <fullName>SE VI</fullName>
+                <default>false</default>
+                <label>SE VI</label>
+            </value>
+            <value>
+                <fullName>SE VII</fullName>
+                <default>false</default>
+                <label>SE VII</label>
+            </value>
+            <value>
+                <fullName>Sierra - Blue</fullName>
+                <default>false</default>
+                <label>Sierra - Blue</label>
+            </value>
+            <value>
+                <fullName>Sierra - Gold</fullName>
+                <default>false</default>
+                <label>Sierra - Gold</label>
+            </value>
+            <value>
+                <fullName>Sierra - Green</fullName>
+                <default>false</default>
+                <label>Sierra - Green</label>
+            </value>
+            <value>
+                <fullName>Sierra - Orange</fullName>
+                <default>false</default>
+                <label>Sierra - Orange</label>
+            </value>
+            <value>
+                <fullName>Sierra - Purple</fullName>
+                <default>false</default>
+                <label>Sierra - Purple</label>
+            </value>
+            <value>
+                <fullName>Sierra - Yellow</fullName>
+                <default>false</default>
+                <label>Sierra - Yellow</label>
+            </value>
+            <value>
+                <fullName>Sierra - Red</fullName>
+                <default>false</default>
+                <label>Sierra - Red</label>
+            </value>
+            <value>
+                <fullName>Sierra - Silver</fullName>
+                <default>false</default>
+                <label>Sierra - Silver</label>
+            </value>
+            <value>
+                <fullName>Sierra - Black</fullName>
+                <default>false</default>
+                <label>Sierra - Black</label>
+            </value>
+            <value>
+                <fullName>Southern - Orange</fullName>
+                <default>false</default>
+                <label>Southern - Orange</label>
+            </value>
+            <value>
+                <fullName>Southern - Purple</fullName>
+                <default>false</default>
+                <label>Southern - Purple</label>
+            </value>
+            <value>
+                <fullName>Southern - Silver</fullName>
+                <default>false</default>
+                <label>Southern - Silver</label>
+            </value>
+            <value>
+                <fullName>Southern - Teal</fullName>
+                <default>false</default>
+                <label>Southern - Teal</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Blue</fullName>
+                <default>false</default>
+                <label>Southwestern - Blue</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Gold</fullName>
+                <default>false</default>
+                <label>Southwestern - Gold</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Purple</fullName>
+                <default>false</default>
+                <label>Southwestern - Purple</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Silver</fullName>
+                <default>false</default>
+                <label>Southwestern - Silver</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Teal</fullName>
+                <default>false</default>
+                <label>Southwestern - Teal</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Yellow</fullName>
+                <default>false</default>
+                <label>Southwestern - Yellow</label>
+            </value>
+            <value>
+                <fullName>Southwestern - Green</fullName>
+                <default>false</default>
+                <label>Southwestern - Green</label>
+            </value>
+            <value>
+                <fullName>Spirit - Blue</fullName>
+                <default>false</default>
+                <label>Spirit - Blue</label>
+            </value>
+            <value>
+                <fullName>Spirit - Gold</fullName>
+                <default>false</default>
+                <label>Spirit - Gold</label>
+            </value>
+            <value>
+                <fullName>Spirit - Green</fullName>
+                <default>false</default>
+                <label>Spirit - Green</label>
+            </value>
+            <value>
+                <fullName>Spirit - Orange</fullName>
+                <default>false</default>
+                <label>Spirit - Orange</label>
+            </value>
+            <value>
+                <fullName>Spirit - Purple</fullName>
+                <default>false</default>
+                <label>Spirit - Purple</label>
+            </value>
+            <value>
+                <fullName>SW I</fullName>
+                <default>false</default>
+                <label>SW I</label>
+            </value>
+            <value>
+                <fullName>SW II</fullName>
+                <default>false</default>
+                <label>SW II</label>
+            </value>
+            <value>
+                <fullName>SW III</fullName>
+                <default>false</default>
+                <label>SW III</label>
+            </value>
+            <value>
+                <fullName>SW IV</fullName>
+                <default>false</default>
+                <label>SW IV</label>
+            </value>
+            <value>
+                <fullName>SW V</fullName>
+                <default>false</default>
+                <label>SW V</label>
+            </value>
+            <value>
+                <fullName>Teladoc</fullName>
+                <default>false</default>
+                <label>Teladoc</label>
+            </value>
+            <value>
+                <fullName>UC</fullName>
+                <default>false</default>
+                <label>UC</label>
+            </value>
+            <value>
+                <fullName>WW</fullName>
+                <default>false</default>
+                <label>WW</label>
+            </value>
+            <value>
+                <fullName>WW1</fullName>
+                <default>false</default>
+                <label>WW1</label>
+            </value>
+            <value>
+                <fullName>WW2</fullName>
+                <default>false</default>
+                <label>WW2</label>
+            </value>
+            <value>
+                <fullName>WW3</fullName>
+                <default>false</default>
+                <label>WW3</label>
+            </value>
+            <value>
+                <fullName>WW4</fullName>
+                <default>false</default>
+                <label>WW4</label>
+            </value>
+            <value>
+                <fullName>WW5</fullName>
+                <default>false</default>
+                <label>WW5</label>
+            </value>
+            <value>
+                <fullName>WW6</fullName>
+                <default>false</default>
+                <label>WW6</label>
+            </value>
+            <value>
+                <fullName>WW7</fullName>
+                <default>false</default>
+                <label>WW7</label>
+            </value>
+            <value>
+                <fullName>WW8</fullName>
+                <default>false</default>
+                <label>WW8</label>
+            </value>
+            <value>
+                <fullName>CS Connect EM</fullName>
+                <default>false</default>
+                <label>CS Connect EM</label>
+            </value>
+            <value>
+                <fullName>CS Connect HM</fullName>
+                <default>false</default>
+                <label>CS Connect HM</label>
+            </value>
+            <value>
+                <fullName>CS Connect ISV</fullName>
+                <default>false</default>
+                <label>CS Connect ISV</label>
+            </value>
+            <value>
+                <fullName>CS Connect CCM</fullName>
+                <default>false</default>
+                <label>CS Connect CCM</label>
+            </value>
+            <value>
+                <fullName>Heartland - Yellow</fullName>
+                <default>false</default>
+                <label>Heartland - Yellow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

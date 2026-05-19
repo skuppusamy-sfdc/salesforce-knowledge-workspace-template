@@ -1,0 +1,33 @@
+{
+    "BoardCertified": "Certified",
+    "ClinicianContactId": "0037x00000ydCZ0AAM",
+    "ClinicianId": "0017x000019J4IjAAK",
+    "Comments": "TEXT",
+    "EndDate": "2025-06-12T00:00:00.000Z",
+    "LastName": "G",
+    "MedicalLicense": "License",
+    "Name": "Harsh G Sr.",
+    "PracticingPreference": "HM",
+    "PracticingSpecialty": [
+        {
+            "Id": "0bO7x0000000LajEAE",
+            "IsPrimary": false,
+            "Name": "TEST KL"
+        },
+        {
+            "Id": "0bO7x0000000LcLEAU",
+            "IsPrimary": false,
+            "Name": "TEST Harsh"
+        }
+    ],
+    "ProfessionalStatus": "Text",
+    "ProfessionalTitle": "CRNA",
+    "Program": "2",
+    "Taxonomy": [
+        {
+            "Id": "0bP7x0000000BebEAE",
+            "Name": "TEST 124"
+        }
+    ],
+    "VisaType": "Birth Abroad Cert"
+}

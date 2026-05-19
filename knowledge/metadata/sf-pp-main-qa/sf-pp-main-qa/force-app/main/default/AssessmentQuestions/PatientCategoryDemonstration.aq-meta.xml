@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PatientCategoryDemonstration</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>I can demonstrate training and competency to manage the following categories of patients (check all that apply):</questionText>
+        <responseValues>Pediatrics
+Adults
+Psychiatric
+Obstetrical/Gynecological
+Geriatric</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PatientCategoryDemonstration</developerName>
+    <name>PatientCategoryDemonstration</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

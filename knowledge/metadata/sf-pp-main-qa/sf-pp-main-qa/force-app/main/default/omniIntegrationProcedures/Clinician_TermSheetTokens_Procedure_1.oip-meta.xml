@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;ContextId&quot;: &quot;8007x00000fBIejAAG&quot;,
+    &quot;UserId&quot;: &quot;005Ps000006JRqjIAG&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>TermSheetTokens</name>
+    <omniProcessElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>EmployeeTokenData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;TodayDate&quot; : &quot;=TODAY()&quot;,
+    &quot;ClinicianName&quot; : &quot;%ExtractTermSheetData:ClinicianName%&quot;,
+    &quot;ClinicianMailingAddress&quot; : &quot;%ExtractTermSheetData:ClinicianMailingAddress%&quot;,
+    &quot;Clinician&quot; : &quot;%ExtractTermSheetData:Clinician%&quot;,
+    &quot;JobTitle&quot; : &quot;=%HpfListEmpRate:JobTitle%&quot;,
+    &quot;HiringManagerName&quot; : &quot;=%HpfListEmpRate:HiringManager%&quot;,
+    &quot;StartDate&quot; : &quot;%ExtractTermSheetData:StartDate%&quot;,
+    &quot;TimeType&quot; : &quot;%ExtractTermSheetData:TimeType%&quot;,
+    &quot;AnticipatedMonthlyHours&quot; : &quot;%ExtractTermSheetData:AnticipatedMonthlyHours%&quot;,
+    &quot;SpecialTerms&quot; : &quot;%ExtractTermSheetData:SpecialTerms%&quot;,
+    &quot;Hpflist&quot; : &quot;%HpfListEmpRate:Hpflist%&quot;,
+    &quot;UserFullName&quot; : &quot;%ExtractTermSheetData:UserFullName%&quot;,
+    &quot;UserTitle&quot; : &quot;%ExtractTermSheetData:UserTitle%&quot;,
+    &quot;Employee&quot; : {
+      &quot;Rate&quot; : &quot;%ExtractTermSheetData:EmployeeRate%&quot;
+    }
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;TokenData&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>HpfListEmpRate</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContractId&quot; : &quot;%ContextId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;ExtractTermSheetLocationsEmployee&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>DataRaptor Extract Action</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Employee</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ExtractTermSheetData:EmployeeType% == \&quot;Employee\&quot; &amp;&amp; %ExtractTermSheetData:ShiftType% == \&quot;NP/PA\&quot; &amp;&amp;\n(%ExtractTermSheetData:TimeType% == \&quot;Full Time\&quot; || %ExtractTermSheetData:TimeType% == \&quot;Part Time\&quot;)&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>HpfListWithRate</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContractId&quot; : &quot;%ContextId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;ExtractTermSheetLocations&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>DataRaptor Extract Action</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>OtherTokenData</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;TodayDate&quot; : &quot;=TODAY()&quot;,
+    &quot;ClinicianName&quot; : &quot;%ExtractTermSheetData:ClinicianName%&quot;,
+    &quot;ClinicianMailingAddress&quot; : &quot;%ExtractTermSheetData:ClinicianMailingAddress%&quot;,
+    &quot;Clinician&quot; : &quot;%ExtractTermSheetData:Clinician%&quot;,
+    &quot;JobTitle&quot; : &quot;%HpfListWithRate:JobTitle%&quot;,
+    &quot;HiringManagerName&quot; : &quot;%HpfListWithRate:HiringManager%&quot;,
+    &quot;StartDate&quot; : &quot;%ExtractTermSheetData:StartDate%&quot;,
+    &quot;TimeType&quot; : &quot;%ExtractTermSheetData:TimeType%&quot;,
+    &quot;AnticipatedMonthlyHours&quot; : &quot;%ExtractTermSheetData:AnticipatedMonthlyHours%&quot;,
+    &quot;SpecialTerms&quot; : &quot;%ExtractTermSheetData:SpecialTerms%&quot;,
+    &quot;Hpflist&quot; : &quot;%HpfListWithRate:Hpflist%&quot;,
+    &quot;UserFullName&quot; : &quot;%ExtractTermSheetData:UserFullName%&quot;,
+    &quot;UserTitle&quot; : &quot;%ExtractTermSheetData:UserTitle%&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;TokenData&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OtherRoles</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ByEmployeeType</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;isIfElseBlock&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>EvaluateCriteria</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;WhenNoPreviousContract&quot; : &quot;=%ExtractTermSheetData:CurrentContractStatus% == \&quot;Approved\&quot; &amp;&amp; ISBLANK(%ExtractTermSheetData:PreviousContractId%)&quot;,
+    &quot;WhenPreviousContract&quot; : &quot;=ISNOTBLANK(%ExtractTermSheetData:PreviousContractId%) &amp;&amp; %ExtractTermSheetData:PreviousEmployeeType% == \&quot;Independent Contractor\&quot; &amp;&amp; %ExtractTermSheetData:EmployeeType% == \&quot;Employee\&quot; &amp;&amp; (%ExtractTermSheetData:StartDate% &gt; %ExtractTermSheetData:PreviousStartDate% &amp;&amp; %ExtractTermSheetData:StartDate% &lt; %ExtractTermSheetData:PreviousEndDate%)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ExtractTermSheetData</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContextId&quot; : &quot;%ContextId%&quot;,
+    &quot;UserId&quot; : &quot;%UserId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;ExtractTermSheetData&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;TokenData&quot; : &quot;=SERIALIZE(%TokenData%)&quot;,
+    &quot;TemplateId&quot; : &quot;%ExtractTermSheetData:TemplateId%&quot;,
+    &quot;DocumentTitle&quot; : &quot;=IF(%ExtractTermSheetData:EmployeeType%==\&quot;Employee\&quot;,CONCAT(%ExtractTermSheetData:ClinicianName%,\&quot;-\&quot;,%HpfListEmpRate:FacilityName%,&apos;-&apos;,%TokenData:TodayDate%,\&quot;-Termsheet\&quot;),CONCAT(%ExtractTermSheetData:ClinicianName%,\&quot;-\&quot;,%HpfListWithRate:FacilityName%,&apos;-&apos;,%TokenData:TodayDate%,\&quot;-Termsheet\&quot;)&quot;,
+    &quot;Valid&quot; : &quot;=%EvaluateCriteria:WhenNoPreviousContract% || %EvaluateCriteria:WhenPreviousContract%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_TermSheetTokens</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>TermSheetTokens</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_TermSheetTokens_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>62315706-6041-d16d-a8b3-f1fdda5bbaa7</webComponentKey>
+</OmniIntegrationProcedure>

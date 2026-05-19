@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>ADMINISTRATIVE AND LEGAL</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;ADMINISTRATIVE AND LEGAL –   
+INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Familiar with guidelines regarding transfer of   
+patients&lt;/li&gt;
+&lt;li&gt;Proficient in basic computer skills required for   
+completing electronic medical records order   
+entry&lt;/li&gt;
+&lt;li&gt;Familiar with the requirements of EMTALA&lt;/li&gt;
+&lt;li&gt;Familiar with the requirements for medical   
+screening examination for patients and my   
+obligatio&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>ADMINISTRATIVE_AND_LEGAL</developerName>
+    <name>ADMINISTRATIVE AND LEGAL</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

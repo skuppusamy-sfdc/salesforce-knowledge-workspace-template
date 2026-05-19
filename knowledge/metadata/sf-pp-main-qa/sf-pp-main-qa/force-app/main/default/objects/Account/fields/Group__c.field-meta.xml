@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Text(Region__c),
+&quot;S1T1&quot;, &quot;A&quot;,
+&quot;S1T2&quot;, &quot;A&quot;,
+&quot;S1T3&quot;, &quot;A&quot;,
+&quot;S2T1&quot;, &quot;A&quot;,
+&quot;S2T2&quot;, &quot;A&quot;,
+&quot;S2T3&quot;, &quot;A&quot;,
+&quot;S2T4&quot;, &quot;A&quot;,
+&quot;S2T5&quot;, &quot;A&quot;,
+&quot;S3T1&quot;, &quot;B&quot;,
+&quot;S3T2&quot;, &quot;B&quot;,
+&quot;S3T3&quot;, &quot;B&quot;,
+&quot;S4T1&quot;, &quot;B&quot;,
+&quot;S4T2&quot;, &quot;B&quot;,
+&quot;S4T3&quot;, &quot;B&quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

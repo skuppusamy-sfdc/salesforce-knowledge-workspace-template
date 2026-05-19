@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposal_Financial_Terms__c</fullName>
+    <label>Proposal Financial Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Year Contract, Auto Renew</fullName>
+                <default>false</default>
+                <label>1 Year Contract, Auto Renew</label>
+            </value>
+            <value>
+                <fullName>2% Annual Escalation</fullName>
+                <default>false</default>
+                <label>2% Annual Escalation</label>
+            </value>
+            <value>
+                <fullName>2 Year Contract, Auto Renew</fullName>
+                <default>false</default>
+                <label>2 Year Contract, Auto Renew</label>
+            </value>
+            <value>
+                <fullName>3% Annual</fullName>
+                <default>false</default>
+                <label>3% Annual</label>
+            </value>
+            <value>
+                <fullName>4% Annual</fullName>
+                <default>false</default>
+                <label>4% Annual</label>
+            </value>
+            <value>
+                <fullName>60 Day Term</fullName>
+                <default>false</default>
+                <label>60 Day Term</label>
+            </value>
+            <value>
+                <fullName>90 Day Term</fullName>
+                <default>false</default>
+                <label>90 Day Term</label>
+            </value>
+            <value>
+                <fullName>Cost +</fullName>
+                <default>false</default>
+                <label>Cost +</label>
+            </value>
+            <value>
+                <fullName>Flat Sub/Zero Sub (no protection)</fullName>
+                <default>false</default>
+                <label>Flat Sub/Zero Sub (no protection)</label>
+            </value>
+            <value>
+                <fullName>Flat Sub/Zero Sub (VP,PP,and/or At-Risk)</fullName>
+                <default>false</default>
+                <label>Flat Sub/Zero Sub (VP,PP,and/or At-Risk)</label>
+            </value>
+            <value>
+                <fullName>Management Fee Guarantee</fullName>
+                <default>false</default>
+                <label>Management Fee Guarantee</label>
+            </value>
+            <value>
+                <fullName>Management Solutions</fullName>
+                <default>false</default>
+                <label>Management Solutions</label>
+            </value>
+            <value>
+                <fullName>Non Solicitation for CHC</fullName>
+                <default>false</default>
+                <label>Non Solicitation for CHC</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Variable Subsidy (Case Rate)</fullName>
+                <default>false</default>
+                <label>Variable Subsidy (Case Rate)</label>
+            </value>
+            <value>
+                <fullName>Variable Subsidy (Lease-Back)</fullName>
+                <default>false</default>
+                <label>Variable Subsidy (Lease-Back)</label>
+            </value>
+            <value>
+                <fullName>Managed Services Agreement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Managed Services Agreement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

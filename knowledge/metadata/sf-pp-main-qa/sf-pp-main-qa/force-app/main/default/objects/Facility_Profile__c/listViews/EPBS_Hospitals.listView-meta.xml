@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EPBS_Hospitals</fullName>
+    <columns>NAME</columns>
+    <columns>ADT_Contact__c</columns>
+    <columns>Billing_Company__c</columns>
+    <columns>Facility_Name__c</columns>
+    <columns>Hospital_Information_System__c</columns>
+    <columns>ADT_Feeds_Active__c</columns>
+    <columns>ADT_START_DATE__c</columns>
+    <columns>ADT_TERM_DATE__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Billing_Company__c</field>
+        <operation>equals</operation>
+        <value>epbs</value>
+    </filters>
+    <label>EPBS Hospitals</label>
+</ListView>

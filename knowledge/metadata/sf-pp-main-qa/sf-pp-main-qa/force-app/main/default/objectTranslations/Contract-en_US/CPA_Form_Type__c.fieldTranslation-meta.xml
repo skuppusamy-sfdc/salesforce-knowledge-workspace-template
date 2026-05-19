@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CPA Form Type --></label>
+    <name>CPA_Form_Type__c</name>
+    <picklistValues>
+        <masterLabel>APRN New Employment/Change of Practice Request Form</masterLabel>
+        <translation><!-- APRN New Employment/Change of Practice Request Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APRN Protocol</masterLabel>
+        <translation><!-- APRN Protocol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APRN Protocol Agreement</masterLabel>
+        <translation><!-- APRN Protocol Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APRN Protocol Agreement Information Form</masterLabel>
+        <translation><!-- APRN Protocol Agreement Information Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acknowledgement of Alternate Physician</masterLabel>
+        <translation><!-- Acknowledgement of Alternate Physician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Add/Change Alternative Supervisor</masterLabel>
+        <translation><!-- Add/Change Alternative Supervisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Add/Change Primary Supervisor</masterLabel>
+        <translation><!-- Add/Change Primary Supervisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Addendum to add PA</masterLabel>
+        <translation><!-- Addendum to add PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adding Alternate Physicians Form</masterLabel>
+        <translation><!-- Adding Alternate Physicians Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agr for Phys-Superv Adv Prac Prescr Auth</masterLabel>
+        <translation><!-- Agr for Phys-Superv Adv Prac Prescr Auth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alternate Supervising Phys App</masterLabel>
+        <translation><!-- Alternate Supervising Phys App --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alternate Supervising Physician Form</masterLabel>
+        <translation><!-- Alternate Supervising Physician Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alternate Supervising Physician Log</masterLabel>
+        <translation><!-- Alternate Supervising Physician Log --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>App for Registration as Superv Physician</masterLabel>
+        <translation><!-- App for Registration as Superv Physician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application for Approval of a Supervising Relationship with a Licensed Physician or NP</masterLabel>
+        <translation><!-- Application for Approval of a Supervising Relationship with a Licensed Physician or NP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application for Controlled Substance as a PA</masterLabel>
+        <translation><!-- Application for Controlled Substance as a PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application for Licensure as a PA</masterLabel>
+        <translation><!-- Application for Licensure as a PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Back-up Supervising Physician(s) Form</masterLabel>
+        <translation><!-- Back-up Supervising Physician(s) Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Backup Supervising Physician Application</masterLabel>
+        <translation><!-- Backup Supervising Physician Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basic Job Description Form</masterLabel>
+        <translation><!-- Basic Job Description Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Board Approval Email/Letter</masterLabel>
+        <translation><!-- Board Approval Email/Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAPA-CS</masterLabel>
+        <translation><!-- CAPA-CS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAPA-NS</masterLabel>
+        <translation><!-- CAPA-NS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CON1 &amp; CPA</masterLabel>
+        <translation><!-- CON1 &amp; CPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPA with prescriptive authority</masterLabel>
+        <translation><!-- CPA with prescriptive authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPA without prescriptive authority</masterLabel>
+        <translation><!-- CPA without prescriptive authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Certificate to Prescribe</masterLabel>
+        <translation><!-- Certificate to Prescribe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chart Review</masterLabel>
+        <translation><!-- Chart Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Prac/Prescr Guide/Protocols</masterLabel>
+        <translation><!-- Clinical Prac/Prescr Guide/Protocols --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collaboration Information Form</masterLabel>
+        <translation><!-- Collaboration Information Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collaborative Practice Agreement</masterLabel>
+        <translation><!-- Collaborative Practice Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collaborative Practice Agreement Termination</masterLabel>
+        <translation><!-- Collaborative Practice Agreement Termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collaborative Practice Protocol</masterLabel>
+        <translation><!-- Collaborative Practice Protocol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorado APRN/RXN Articulated Plan</masterLabel>
+        <translation><!-- Colorado APRN/RXN Articulated Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Continuing Education Tracking form</masterLabel>
+        <translation><!-- Continuing Education Tracking form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Covering Physician Letter</masterLabel>
+        <translation><!-- Covering Physician Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOCP1</masterLabel>
+        <translation><!-- DOCP1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delegation Agreement</masterLabel>
+        <translation><!-- Delegation Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delegation of Prescribing Controlled Substances To Physician Assistants and Nurse Practitioners</masterLabel>
+        <translation><!-- Delegation of Prescribing Controlled Substances To Physician Assistants and Nurse Practitioners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duties and Delegation Agreement</masterLabel>
+        <translation><!-- Duties and Delegation Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extra signature pgs from collab phys</masterLabel>
+        <translation><!-- Extra signature pgs from collab phys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Form 5-App to Prac as Phys Asst</masterLabel>
+        <translation><!-- Form 5-App to Prac as Phys Asst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Form B - APRN Termination Form</masterLabel>
+        <translation><!-- Form B - APRN Termination Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Form C - Nurse Protocol Worksheet</masterLabel>
+        <translation><!-- Form C - Nurse Protocol Worksheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intent to Practice</masterLabel>
+        <translation><!-- Intent to Practice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mentorship Agreement</masterLabel>
+        <translation><!-- Mentorship Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NP-CR Attestation Form</masterLabel>
+        <translation><!-- NP-CR Attestation Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPS1</masterLabel>
+        <translation><!-- NPS1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice of Delegated Authority for Prescription and Schedule Controlled Substance</masterLabel>
+        <translation><!-- Notice of Delegated Authority for Prescription and Schedule Controlled Substance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notif to NV of Superv of APRN</masterLabel>
+        <translation><!-- Notif to NV of Superv of APRN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notif to NV of Superv of PA (Allopathic PA)</masterLabel>
+        <translation><!-- Notif to NV of Superv of PA (Allopathic PA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notif to NV of Superv of PA (Osteopathic PA)</masterLabel>
+        <translation><!-- Notif to NV of Superv of PA (Osteopathic PA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification of CAPA-NS</masterLabel>
+        <translation><!-- Notification of CAPA-NS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification of Termination Form</masterLabel>
+        <translation><!-- Notification of Termination Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification of a CAPA-CS</masterLabel>
+        <translation><!-- Notification of a CAPA-CS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Verification and Form A</masterLabel>
+        <translation><!-- Nursing Verification and Form A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Delegate Agr &amp; Stand Proc Reference</masterLabel>
+        <translation><!-- PA Delegate Agr &amp; Stand Proc Reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Notice of Supervisory Control</masterLabel>
+        <translation><!-- PA Notice of Supervisory Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Practice Agreement</masterLabel>
+        <translation><!-- PA Practice Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Protocol &amp; Delegation of Serv Agr</masterLabel>
+        <translation><!-- PA Protocol &amp; Delegation of Serv Agr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Supervisory Agreement-PASA</masterLabel>
+        <translation><!-- PA Supervisory Agreement-PASA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Verification of Supervision Form</masterLabel>
+        <translation><!-- PA Verification of Supervision Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA Written Agreement</masterLabel>
+        <translation><!-- PA Written Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAC1</masterLabel>
+        <translation><!-- PAC1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAC2</masterLabel>
+        <translation><!-- PAC2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAI1</masterLabel>
+        <translation><!-- PAI1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Assistant Application for Prescriptive Authority</masterLabel>
+        <translation><!-- Physician Assistant Application for Prescriptive Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Assistant Formulary</masterLabel>
+        <translation><!-- Physician Assistant Formulary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Assistant Job Description</masterLabel>
+        <translation><!-- Physician Assistant Job Description --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Assistant Supervisory Form</masterLabel>
+        <translation><!-- Physician Assistant Supervisory Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Supervisory Plan</masterLabel>
+        <translation><!-- Physician Supervisory Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan of Supervision</masterLabel>
+        <translation><!-- Plan of Supervision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Practice Agreement</masterLabel>
+        <translation><!-- Practice Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Practice Arrangement Plan</masterLabel>
+        <translation><!-- Practice Arrangement Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Practice Notification</masterLabel>
+        <translation><!-- Practice Notification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Practice Protocol</masterLabel>
+        <translation><!-- Practice Protocol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prescription Delegation Form</masterLabel>
+        <translation><!-- Prescription Delegation Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prescriptive Authority</masterLabel>
+        <translation><!-- Prescriptive Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prescriptive Authority CPA</masterLabel>
+        <translation><!-- Prescriptive Authority CPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QA Plan &amp; Certif of Prescriptive Auth</masterLabel>
+        <translation><!-- QA Plan &amp; Certif of Prescriptive Auth --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QI Meeting Documentation</masterLabel>
+        <translation><!-- QI Meeting Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Assurance Plan</masterLabel>
+        <translation><!-- Quality Assurance Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regis-Prescriptive Delegation &amp; Superv</masterLabel>
+        <translation><!-- Regis-Prescriptive Delegation &amp; Superv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Report of Supervising Physicians</masterLabel>
+        <translation><!-- Report of Supervising Physicians --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SED Attestation</masterLabel>
+        <translation><!-- SED Attestation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scope of Practice Agreement</masterLabel>
+        <translation><!-- Scope of Practice Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Separation Form</masterLabel>
+        <translation><!-- Separation Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Care Agreement (aka CPA)</masterLabel>
+        <translation><!-- Standard Care Agreement (aka CPA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervising Phys on Malpractice App</masterLabel>
+        <translation><!-- Supervising Phys on Malpractice App --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervising Physician Application</masterLabel>
+        <translation><!-- Supervising Physician Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervising Physician Form</masterLabel>
+        <translation><!-- Supervising Physician Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervising Physician Statement of Responsibility</masterLabel>
+        <translation><!-- Supervising Physician Statement of Responsibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervision Agreement</masterLabel>
+        <translation><!-- Supervision Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervision Agreement Form</masterLabel>
+        <translation><!-- Supervision Agreement Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervision Data Form</masterLabel>
+        <translation><!-- Supervision Data Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervision Registration Form</masterLabel>
+        <translation><!-- Supervision Registration Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transition to Practice Agreement</masterLabel>
+        <translation><!-- Transition to Practice Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verif of CPA &amp; Practice Protocol-Form 4P</masterLabel>
+        <translation><!-- Verif of CPA &amp; Practice Protocol-Form 4P --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Website verification</masterLabel>
+        <translation><!-- Website verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written Agreement</masterLabel>
+        <translation><!-- Written Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written Collaborative Agreement</masterLabel>
+        <translation><!-- Written Collaborative Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written Guidelines</masterLabel>
+        <translation><!-- Written Guidelines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written Protocol</masterLabel>
+        <translation><!-- Written Protocol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written Supervisory Agreement</masterLabel>
+        <translation><!-- Written Supervisory Agreement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

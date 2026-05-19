@@ -1,0 +1,135 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMLATSWithdrwalCustom8528",
+        "InputFieldName": "IPDataFeed:WithdrawalReason",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMLATSWithdrwal",
+        "OmniDataTransformationId": {
+            "Name": "DMLATSWithdrwal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMLATSWithdrwal",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Declined_Detail__c",
+        "OutputObjectName": "bpats__ATS_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMLATSWithdrwalCustom1985",
+        "InputFieldName": "IPDataFeed:DeclinedReason",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMLATSWithdrwal",
+        "OmniDataTransformationId": {
+            "Name": "DMLATSWithdrwal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMLATSWithdrwal",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Declined__c",
+        "OutputObjectName": "bpats__ATS_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMLATSWithdrwalCustom5129",
+        "InputFieldName": "IPDataFeed:ApplicationID",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "LinkedObjectSequence": 0,
+        "Name": "DMLATSWithdrwal",
+        "OmniDataTransformationId": {
+            "Name": "DMLATSWithdrwal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMLATSWithdrwal",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "bpats__ATS_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "DMLATSWithdrwalCustom8783",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DMLATSWithdrwal",
+        "OmniDataTransformationId": {
+            "Name": "DMLATSWithdrwal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMLATSWithdrwal",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "bpats__ATS_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMLATSWithdrwalCustom4742",
+        "InputFieldName": "IPDataFeed:WithdrawalOtherReason",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMLATSWithdrwal",
+        "OmniDataTransformationId": {
+            "Name": "DMLATSWithdrwal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMLATSWithdrwal",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Other_Reason__c",
+        "OutputObjectName": "bpats__ATS_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMLATSWithdrwalCustom2744",
+        "InputFieldName": "IPDataFeed:ApplicationStatus",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMLATSWithdrwal",
+        "OmniDataTransformationId": {
+            "Name": "DMLATSWithdrwal",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMLATSWithdrwal",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "bpats__Applicant_Status__c",
+        "OutputObjectName": "bpats__ATS_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

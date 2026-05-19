@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Intake_Form_case_passed_date</name>
+        <label>Check Intake Form case passed date</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>if_60_days_passed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>X60DaysFromCreatedDate</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Cases</targetReference>
+            </connector>
+            <label>if 60 days passed</label>
+        </rules>
+    </decisions>
+    <description>PR1050558-852 : If intake form case is not attended within 60 days from date of creation, It should be auto closed with Expired status</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>X60DaysFromCreatedDate</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.CreatedDate}+60</expression>
+    </formulas>
+    <interviewLabel>Clinician {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Clinician Intake Form Closure Scheduled Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Cases</name>
+        <label>Update Cases</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Closed_Reason__c</field>
+            <value>
+                <stringValue>Expired</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Intake_Form_case_passed_date</targetReference>
+        </connector>
+        <filterLogic>(1 OR 2) AND 3</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Clinician_Intake_Form</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2025-07-18</startDate>
+            <startTime>09:45:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

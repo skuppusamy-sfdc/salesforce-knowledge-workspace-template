@@ -1,0 +1,76 @@
+<template>
+    <lightning-card title="Draft Contracts" icon-name="standard:contract">
+        <template if:true={isLoading}>
+            <div class="slds-align_absolute-center slds-m-vertical_large">
+                <lightning-spinner alternative-text="Loading draft contracts..." variant="brand"
+                    size="medium"></lightning-spinner>
+                <div class="slds-m-top_small slds-text-align_center">
+                    <p class="slds-text-body_small slds-text-color_weak">Loading draft contracts...</p>
+                </div>
+            </div>
+        </template>
+
+        <template if:false={isLoading}>
+            <div class="slds-m-around_medium">
+                <template if:true={hasData}>
+                    <div class="slds-m-bottom_small slds-grid slds-grid_vertical-align-center slds-gutters">
+                        <span class="slds-badge slds-theme_success">
+                            {selectedCount}/{totalRecords} selected
+                        </span>
+                        <lightning-button
+                            label="Save"
+                            variant="brand"
+                            onclick={handleSubmit}
+                            disabled={isSaveDisabled}
+                            class="slds-m-left_small">
+                        </lightning-button>
+                    </div>
+                    <div class="card-stack">
+                        <template for:each={dataWithSelection} for:item="item">
+                            <div key={item.id} class="contract-card" data-id={item.id}>
+                                <div class="card-checkbox">
+                                    <lightning-input
+                                        type="checkbox"
+                                        data-id={item.id}
+                                        checked={item.isSelected}
+                                        onchange={handleCheckboxChange}>
+                                    </lightning-input>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-row">
+                                        <span class="card-label">Contract Number</span>
+                                        <span class="card-value">{item.contractNumber}</span>
+                                    </div>
+                                    <div class="card-row">
+                                        <span class="card-label">Start Date</span>
+                                        <span class="card-value">{item.startDate}</span>
+                                    </div>
+                                    <div class="card-row">
+                                        <span class="card-label">Clinician Name</span>
+                                        <span class="card-value">{item.clinicianName}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+                <template if:true={submitMessage}>
+                    <div class="slds-m-top_small slds-p-around_small {submitMessageClass}">
+                        <p class="slds-text-body_small">{submitMessage}</p>
+                    </div>
+                </template>
+                <template if:false={hasData}>
+                    <p class="slds-text-body_regular slds-text-color_weak">{emptyMessage}</p>
+                </template>
+                <template if:true={showDebug}>
+                    <div class="slds-m-top_medium slds-p-around_small debug-panel">
+                        <p class="slds-text-body_small slds-text-color_weak slds-m-bottom_x-small">
+                            <strong>Debug:</strong>
+                        </p>
+                        <pre class="debug-output">{debugInfo}</pre>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </lightning-card>
+</template>

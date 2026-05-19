@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_a_call_before_next_stage</fullName>
+    <active>true</active>
+    <description>A call with the applicant must be logged before moving to the next stage.</description>
+    <errorConditionFormula>AND 
+(bpats__Stage__r.bpats__Sequence__c = 3, 
+Call_Logged_with_Applicant__c  &lt;&gt; True )</errorConditionFormula>
+    <errorMessage>You must log a call with the applicant before moving to the Awaiting Intake Form stage. Please check the checkbox on the applicant record after logging a call.</errorMessage>
+</ValidationRule>

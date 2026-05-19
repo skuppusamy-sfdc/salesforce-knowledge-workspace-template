@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users in this group are granted read and edit access to Accounts with record type Corporate Entity</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <name>Manage Corporate Entities</name>
+</Group>

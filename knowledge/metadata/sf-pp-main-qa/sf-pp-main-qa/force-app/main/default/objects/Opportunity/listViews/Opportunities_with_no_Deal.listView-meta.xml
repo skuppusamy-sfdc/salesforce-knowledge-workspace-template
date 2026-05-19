@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_with_no_Deal</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Expected_Sign_Date__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Accelerate_Process__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Volume__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Service_s__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Deal__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Opportunities with no Deal</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Care Continuity Communication Across Inpatient and Outpatient Settings</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Facilitates and communicates with patient, family and staff to promote continuity of care across the inpatient and outpatient continuum of care.</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Care_Continuity_Communication_Across_Inpatient_and_Outpatient_Settings</developerName>
+    <name>Care Continuity Communication Across Inpatient and Outpatient Settings</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

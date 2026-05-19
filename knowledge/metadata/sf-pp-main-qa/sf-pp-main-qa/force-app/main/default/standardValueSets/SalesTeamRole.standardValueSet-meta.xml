@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Client Service VP</fullName>
+        <default>false</default>
+        <label>Client Service VP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Svc VP</fullName>
+        <default>false</default>
+        <label>Client Svc VP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clinical Performance Manager</fullName>
+        <default>false</default>
+        <label>Clinical Performance Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clinician Experience Specialist</fullName>
+        <default>false</default>
+        <label>Clinician Experience Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credentialing Manager</fullName>
+        <default>false</default>
+        <label>Credentialing Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Director of Recruiting</fullName>
+        <default>false</default>
+        <label>Director of Recruiting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Director of Scheduling</fullName>
+        <default>false</default>
+        <label>Director of Scheduling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dir Staffing Fulfillment Optimization</fullName>
+        <default>false</default>
+        <label>Dir Staffing Fulfillment Optimization</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Division Medical Officer</fullName>
+        <default>false</default>
+        <label>Division Medical Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Division Operating Officer</fullName>
+        <default>false</default>
+        <label>Division Operating Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Documentation Manager</fullName>
+        <default>false</default>
+        <label>Documentation Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Documentation Specialist</fullName>
+        <default>false</default>
+        <label>Documentation Specialist</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ED Practice Coordinator</fullName>
+        <default>false</default>
+        <label>ED Practice Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EDRC Director</fullName>
+        <default>false</default>
+        <label>EDRC Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EDRC Lead</fullName>
+        <default>false</default>
+        <label>EDRC Lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EDRC Manager</fullName>
+        <default>false</default>
+        <label>EDRC Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Emergency Dept Records Coordinator</fullName>
+        <default>false</default>
+        <label>Emergency Dept Records Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Assistant</fullName>
+        <default>false</default>
+        <label>Executive Assistant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Facility Data Access</fullName>
+        <default>false</default>
+        <label>Facility Data Access</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HM Records Coordinator</fullName>
+        <default>false</default>
+        <label>HM Records Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospitalist Practice Coordinator</fullName>
+        <default>false</default>
+        <label>Hospitalist Practice Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospitalist Practice Coordinator Cross Coverage</fullName>
+        <default>false</default>
+        <label>Hospitalist Practice Coordinator Cross Coverage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospitalist Practice Management Liaison</fullName>
+        <default>false</default>
+        <label>Hospitalist Practice Management Liaison</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospitalist Practice Manager</fullName>
+        <default>false</default>
+        <label>Hospitalist Practice Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Billing Client Representative</fullName>
+        <default>false</default>
+        <label>Medical Billing Client Representative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Staff Coordinator</fullName>
+        <default>false</default>
+        <label>Medical Staff Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Staff Liaison - CPA</fullName>
+        <default>false</default>
+        <label>Medical Staff Liaison - CPA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ops Finance</fullName>
+        <default>false</default>
+        <label>Ops Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Performance Analyst</fullName>
+        <default>false</default>
+        <label>Performance Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Program Manager</fullName>
+        <default>false</default>
+        <label>Program Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Provider Coverage Coordinator</fullName>
+        <default>false</default>
+        <label>Provider Coverage Coordinator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RCS Client Services Director</fullName>
+        <default>false</default>
+        <label>RCS Client Services Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RCS Client Services Manager</fullName>
+        <default>false</default>
+        <label>RCS Client Services Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recruiter-Primary</fullName>
+        <default>false</default>
+        <label>Recruiter-Primary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recruiting Manager</fullName>
+        <default>false</default>
+        <label>Recruiting Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Director of NP/PA Services</fullName>
+        <default>false</default>
+        <label>Regional Director of NP/PA Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Medical Officer</fullName>
+        <default>false</default>
+        <label>Regional Medical Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regional Vice President</fullName>
+        <default>false</default>
+        <label>Regional Vice President</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Risk Management</fullName>
+        <default>false</default>
+        <label>Risk Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduling Manager</fullName>
+        <default>false</default>
+        <label>Scheduling Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Subsidium</fullName>
+        <default>false</default>
+        <label>Subsidium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SVP Operations</fullName>
+        <default>false</default>
+        <label>SVP Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SVP Recruiting</fullName>
+        <default>false</default>
+        <label>SVP Recruiting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SVP Scheduling</fullName>
+        <default>false</default>
+        <label>SVP Scheduling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VP Business Development</fullName>
+        <default>false</default>
+        <label>VP Business Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VP Credentialing</fullName>
+        <default>false</default>
+        <label>VP Credentialing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VP Operations</fullName>
+        <default>false</default>
+        <label>VP Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VP Recruiting</fullName>
+        <default>false</default>
+        <label>VP Recruiting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Owner</fullName>
+        <default>false</default>
+        <label>Opportunity Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chief Medical Officer - EM</fullName>
+        <default>false</default>
+        <label>Chief Medical Officer - EM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chief Medical Officer - HM</fullName>
+        <default>false</default>
+        <label>Chief Medical Officer - HM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BD Finance</fullName>
+        <default>false</default>
+        <label>BD Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>BD Enablement</fullName>
+        <default>false</default>
+        <label>BD Enablement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Implementation Director</fullName>
+        <default>false</default>
+        <label>Client Implementation Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hybrid Care Leader</fullName>
+        <default>false</default>
+        <label>Hybrid Care Leader</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Implementation Project Director</fullName>
+        <default>false</default>
+        <label>Implementation Project Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RN/LPN Manager</fullName>
+        <default>false</default>
+        <label>RN/LPN Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Virtual Health Program Manager</fullName>
+        <default>false</default>
+        <label>Virtual Health Program Manager</label>
+    </standardValue>
+</StandardValueSet>

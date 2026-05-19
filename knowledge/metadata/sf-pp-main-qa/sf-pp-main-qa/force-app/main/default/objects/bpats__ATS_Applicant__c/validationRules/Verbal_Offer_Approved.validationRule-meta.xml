@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verbal_Offer_Approved</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    bpats__Stage__r.bpats__Sequence__c = 6,
+    OR(
+        ISBLANK( Verbal_Offer_Approved_By__c ),
+        ISBLANK( Verbal_Offer_Approval_Date__c ),
+        ISBLANK( Requested_Start_Date__c )
+    )
+)</errorConditionFormula>
+    <errorMessage>Before moving to the Offer stage, the fields Verbal Offer Approved By, Verbal Offer Approval Date, and Requested Start Date must be filled out on the Applicant record.</errorMessage>
+</ValidationRule>

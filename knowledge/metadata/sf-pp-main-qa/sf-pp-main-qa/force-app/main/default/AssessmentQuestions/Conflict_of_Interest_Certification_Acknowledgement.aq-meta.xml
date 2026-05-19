@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Conflict of Interest Certification &amp; Acknowledgement</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:#6fa7d9;font-weight: bold&quot;&gt;SCP Health Conflict of Interest
+Certification and Acknowledgement&lt;/span&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>4</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>Conflict_of_Interest_Certification_Acknowledgement</developerName>
+    <name>Conflict of Interest Certification &amp; Acknowledgement</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

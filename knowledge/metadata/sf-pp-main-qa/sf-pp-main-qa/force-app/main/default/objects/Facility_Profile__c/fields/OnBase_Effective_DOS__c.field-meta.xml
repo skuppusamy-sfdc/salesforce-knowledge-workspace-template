@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnBase_Effective_DOS__c</fullName>
+    <description>The Date of Service to Start Using Onbase Workflow for a facility.</description>
+    <inlineHelpText>Enter the Date of Service to Start Using Onbase Workflow for a facility.</inlineHelpText>
+    <label>OnBase Effective DOS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

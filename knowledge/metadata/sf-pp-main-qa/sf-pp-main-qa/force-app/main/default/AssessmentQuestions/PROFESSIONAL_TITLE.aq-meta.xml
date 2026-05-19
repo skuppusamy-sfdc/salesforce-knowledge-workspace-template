@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PROFESSIONAL TITLE</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Professional Title</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Select</dataType>
+    <developerName>PROFESSIONAL_TITLE</developerName>
+    <name>PROFESSIONAL TITLE</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

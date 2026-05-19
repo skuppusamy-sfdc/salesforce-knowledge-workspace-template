@@ -1,0 +1,23 @@
+<template>
+    <div class="job-monitor slds-p-around_small">
+        <div class="slds-grid slds-grid_vertical-align-center slds-gutters_small">
+            <div class="slds-col slds-col_shrink">
+                <template if:true={showProgressRing}>
+                    <lightning-spinner alternative-text="Processing" size="small"></lightning-spinner>
+                </template>
+                <template if:false={showProgressRing}>
+                    <lightning-icon icon-name={statusIcon} size="small" variant={iconVariant} alternative-text="Status"></lightning-icon>
+                </template>
+            </div>
+            <div class="slds-col slds-grow">
+                <p class="slds-text-heading_small slds-m-bottom_xx-small">{jobLabel}</p>
+                <p class="slds-text-body_small slds-text-color_weak">{message}</p>
+                <template if:true={showProgressBar}>
+                    <p class="slds-text-body_small slds-m-top_xx-small slds-text-color_weak">
+                        {processedCount} of {totalCount} — {progressPercent}%
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

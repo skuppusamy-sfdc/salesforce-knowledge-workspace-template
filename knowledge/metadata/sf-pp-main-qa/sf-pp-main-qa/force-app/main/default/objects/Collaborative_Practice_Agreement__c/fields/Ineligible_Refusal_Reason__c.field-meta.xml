@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ineligible_Refusal_Reason__c</fullName>
+    <label>Ineligible/Refusal Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName># of APPs being supervised</fullName>
+                <default>false</default>
+                <label># of APPs being supervised</label>
+            </value>
+            <value>
+                <fullName>Affiliate medical staff membership category</fullName>
+                <default>false</default>
+                <label>Affiliate medical staff membership category</label>
+            </value>
+            <value>
+                <fullName>Comfortable managing the known NP/PAs, but not unknown/new</fullName>
+                <default>false</default>
+                <label>Comfortable managing the known NP/PAs, but not unknown/new</label>
+            </value>
+            <value>
+                <fullName>Conflict of Interest</fullName>
+                <default>false</default>
+                <label>Conflict of Interest</label>
+            </value>
+            <value>
+                <fullName>LOCUM Physician</fullName>
+                <default>false</default>
+                <label>LOCUM Physician</label>
+            </value>
+            <value>
+                <fullName>Mentorship program participant</fullName>
+                <default>false</default>
+                <label>Mentorship program participant</label>
+            </value>
+            <value>
+                <fullName>Not BC w/one year of practice experience</fullName>
+                <default>false</default>
+                <label>Not BC w/one year of practice experience</label>
+            </value>
+            <value>
+                <fullName>Objects to Telemedicine language in CPA</fullName>
+                <default>false</default>
+                <label>Objects to Telemedicine language in CPA</label>
+            </value>
+            <value>
+                <fullName>Out of State Physician</fullName>
+                <default>false</default>
+                <label>Out of State Physician</label>
+            </value>
+            <value>
+                <fullName>Physician on the roster, but not actively working</fullName>
+                <default>false</default>
+                <label>Physician on the roster, but not actively working</label>
+            </value>
+            <value>
+                <fullName>Physician works weekends only on a shift that does not work alongside an NP or PA</fullName>
+                <default>false</default>
+                <label>Physician works weekends only on a shift that does not work alongside an NP or PA</label>
+            </value>
+            <value>
+                <fullName>PRN physician unwilling to supervise due to limited exposure</fullName>
+                <default>false</default>
+                <label>PRN physician unwilling to supervise due to limited exposure</label>
+            </value>
+            <value>
+                <fullName>Requires reimbursement for supervision duties</fullName>
+                <default>false</default>
+                <label>Requires reimbursement for supervision duties</label>
+            </value>
+            <value>
+                <fullName>Resident</fullName>
+                <default>false</default>
+                <label>Resident</label>
+            </value>
+            <value>
+                <fullName>Tele-Hospitalist</fullName>
+                <default>false</default>
+                <label>Tele-Hospitalist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

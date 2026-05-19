@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_Default</name>
+        <label>Send Email Default</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>get_Email_Address_Configurations.Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>CurrentUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Email_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
+        <name>SUN_Final_Send_Email</name>
+        <label>SUN - Final Send Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>get_Email_Address_Configurations.Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>CurrentUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Email_Body_Final</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_CO</name>
+        <label>Assign CO</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>ClientOwnerName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_AAR.Account.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_AAR</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_SC</name>
+        <label>Assign SC</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>ServicesContractingEntityName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_AAR.Account.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_AAR</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Role_check</name>
+        <label>Role check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Loop_AAR</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Services_Contracting_Entity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_AAR.PartyRoleRelation.RoleName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Services Contracting Entity</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_SC</targetReference>
+            </connector>
+            <label>Services Contracting Entity</label>
+        </rules>
+        <rules>
+            <name>Client_Owner</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_AAR.PartyRoleRelation.RoleName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Client Owner</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_CO</targetReference>
+            </connector>
+            <label>Client Owner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Type_Check</name>
+        <label>Type Check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Send_Email_Default</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Final</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varType</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SUN - Final</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SUN_Final_Send_Email</targetReference>
+            </connector>
+            <label>Final</label>
+        </rules>
+    </decisions>
+    <description>Created as part of PR1050558-887</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AccountLink</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_260}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_260})) &amp;{!Get_PMT_Phase.Service_Account__c}</expression>
+    </formulas>
+    <formulas>
+        <name>FullLogoURL</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_340}, FIND(&apos;/services/&apos;, {!$Api.Partner_Server_URL_340})) 
+&amp; &apos;servlet/servlet.ImageServer?id=&apos; &amp; {!Get_SCPHealth_Logo_from_Document.Id}
+&amp; &apos;&amp;oid=&apos; &amp; {!Get_Org.Id}</expression>
+    </formulas>
+    <formulas>
+        <name>LastSentence</name>
+        <dataType>String</dataType>
+        <expression>IF({!varType}==&quot;SUN - Final&quot;, &quot;Any future changes to be managed by field operations via client management functions.&lt;br/&gt;Thank you&quot;, &quot;Thank you&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>OrgDomainURL</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_580}, FIND(&apos;/services/&apos;, {!$Api.Partner_Server_URL_580}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>PMTClientStartUpTime</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!Get_PMT_Phase.Client_Start_Up_Time__c})</expression>
+    </formulas>
+    <formulas>
+        <name>Q1ClientStartUpTime</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!Get_PNC_Q1.Facility_Start_Up_Time__c})</expression>
+    </formulas>
+    <formulas>
+        <name>Subject</name>
+        <dataType>String</dataType>
+        <expression>{!SubjectFirstLetter}&amp;&apos;Startup Notification - &apos;&amp;{!Get_PMT_Phase.Service_Account__r.Name}</expression>
+    </formulas>
+    <formulas>
+        <name>SubjectFirstLetter</name>
+        <dataType>String</dataType>
+        <expression>IF({!varType}==&quot;SUN - Final&quot;, &quot;FINAL &quot;, IF({!varType}==&quot;SUN - Preliminary&quot;, &quot;Preliminary &quot;, IF({!varType}==&quot;SUN - Revision&quot;, &quot;REVISION to &quot;, null )))</expression>
+    </formulas>
+    <formulas>
+        <name>TeleServicesActive</name>
+        <dataType>String</dataType>
+        <expression>IF({!Get_Pro_Forma_Facility_Detail.TeleMedicine__c} &gt; 0,&quot;Yes&quot;,&quot;No&quot;)</expression>
+    </formulas>
+    <interviewLabel>SUN Orchestration Email Alert : AutoLaunchFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SubFlow: SUN Orchestration Email Alert : AutoLaunchFlow</label>
+    <loops>
+        <name>Loop_AAR</name>
+        <label>Loop AAR</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_AccountAccount_Relationship</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Role_check</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Pro_Forma_Facility_Detail</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_AccountAccount_Relationship</name>
+        <label>Get AccountAccount Relationship</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_AAR</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RelatedAccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PMT_Phase.Service_Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PartyRoleRelationId</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>prrId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>StartDate</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>EndDate</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AccountAccountRelation</object>
+        <sortField>StartDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_Email_Address_Configurations</name>
+        <label>get Email Address Configurations</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Type_Check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Label</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>DL.Notice Of Operations Changes</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Email_Address_Configuration__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_NoReply_Org_Wide_Address</name>
+        <label>Get NoReply Org Wide Address</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>get_Email_Address_Configurations</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DisplayName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>No Reply</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Org</name>
+        <label>Get Org</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_NoReply_Org_Wide_Address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Organization</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Party_Role_Relationship</name>
+        <label>Get Party Role Relationship</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>prrId</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>RoleName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Client Owner</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RoleName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Services Contracting Entity</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>PartyRoleRelation</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PMT_Phase</name>
+        <label>Get PMT Phase</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_PNC_Q1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varPMTPhaseId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>inov8__PMT_Phase__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PNC_Q1</name>
+        <label>Get PNC Q1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Party_Role_Relationship</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Contract_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Master</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SourceOpportunityId__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PMT_Phase.inov8__Project__r.Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PMT_Phase.Service_Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Contract_Agreement_Category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Facility Agreement</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Contract_RecordType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Client_Contract</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ProviderNetworkContract</object>
+        <sortField>Contract_Start_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PNC_Q2</name>
+        <label>Get PNC Q2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_SCPHealth_Logo_from_Document</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Contract_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Insurance</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SourceOpportunityId__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PMT_Phase.inov8__Project__r.Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Service_Account_Id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PMT_Phase.Service_Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Parent_Contract_Id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PNC_Q1.ContractId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Contract_Agreement_Category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Facility Agreement</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contract_Provider_Network_Relation__c</object>
+        <sortField>Contract_StartDate__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Pro_Forma_Facility_Detail</name>
+        <label>Get Pro Forma Facility Detail</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_PNC_Q2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Pro_Form_Model_Opportunity_Id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PMT_Phase.inov8__Project__r.Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Pro_Form_Model_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved for Contracting</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Pro_Forma_Facility_Detail__c</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_SCPHealth_Logo_from_Document</name>
+        <label>Get SCPHealth Logo from Document</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Org</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SCPHealthLogo_Banner</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Document</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_PMT_Phase</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Email_Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Client Termination Report&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;margin: 0; padding: 0; background-color: #f6f6f6;&quot;&gt;
+Hello All,&lt;br/&gt;
+Please see the {!SubjectFirstLetter} startup notification for the following site: &lt;a href={!AccountLink}&gt;{!Get_PMT_Phase.Service_Account__r.Name} &lt;/a&gt;&lt;br/&gt;
+    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;background-color: #f6f6f6; padding: 20px 0;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td align=&quot;center&quot;&gt;
+
+                &lt;table width=&quot;600&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width: 600px; max-width: 100%; border: 1px solid #ddd; background-color: #ffffff; font-family: Arial, sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.05);&quot;&gt;
+                    
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 20px 0 10px 0;&quot; align=&quot;center&quot;&gt;
+                            &lt;h1 style=&quot;color: #9B007A; font-size: 24px; margin: 0; font-weight: 900; letter-spacing: 0.5px;&quot;&gt;{!SubjectFirstLetter} Startup Notification Report&lt;/h1&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                    &lt;tr&gt;
+                        &lt;td height=&quot;30&quot; style=&quot;background-color: #1F4E79; font-size: 0; line-height: 0;&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 20px;&quot;&gt;
+                            
+                            &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;8&quot; cellspacing=&quot;0&quot; style=&quot;font-size: 13px; color: #333333; line-height: 1.4;&quot;&gt;
+                                
+                                &lt;style&gt;
+                                    .label-col {
+                                        background-color: #F0F0F0; 
+                                        font-weight: bold; 
+                                        padding-right: 15px; 
+                                        border-bottom: 1px solid #eee;
+                                    }
+                                    .value-col {
+                                        border-bottom: 1px solid #eee;
+                                    }
+                                &lt;/style&gt;
+                                
+                                &lt;tr&gt;
+                                    &lt;td width=&quot;35%&quot; style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Account / Hospital Name&lt;/td&gt;
+                                    &lt;td width=&quot;65%&quot; style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Name} &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Service Line&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Service_Line__r.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Global Facility ID&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt; {!Get_PMT_Phase.Service_Account__r.Global_Facility_ID__c} &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Parent Account / Hospital&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Services Sold&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Services_Sold__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Physical Address&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingStreet}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;City&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingCity}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;State&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingStateCode}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Zip&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingPostalCode}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Phone&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Phone}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Owner&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!ClientOwnerName}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Owner Type&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Client_Owner_Type__c} &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Facility Short Name&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Facility_Short_Name__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+
+
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Annual ED Billable Volume&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Pro_Forma_Facility_Detail.ED_Volume__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Annual HM Patient Encounters&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Pro_Forma_Facility_Detail.HM_Volume__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Tele Services Active&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!TeleServicesActive}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Leased Employees&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Leased_Employees__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;If Leased Employees Ins Provided By&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.If_Leased_Employees_Ins_Provided_By__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Medical Malpractice Insurance Limits per Occurrence&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Pro_Forma_Facility_Detail.Insurance_Limits_per_Occurrence__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Medical Malpractice Insurance Aggregate&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Pro_Forma_Facility_Detail.Insurance_Limits_Aggregate__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Insurance Provided By&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Insurance_Provided_By__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+
+
+
+                                 &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Corporate Entity&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!ServicesContractingEntityName}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Start Up Date&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Client_Start_Up_Date__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Start Up Time&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!PMTClientStartUpTime}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Start Up Time Zone&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Client_Start_Up_Time_Zone__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                               &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Billing Company&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Billing_Company__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Staffing Team&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Staffing_Team__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Division&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Client_Division__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Region&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Client_Region__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Position being Recruited&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Position_being_Recruited__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 0 20px 20px 20px; border-top: 1px solid #ddd;&quot;&gt;
+			    &lt;p style=&quot;font-size: 11px; margin-bottom: 2px; color: #333333;&quot;&gt;{!$User.FirstName} {!$User.LastName}&lt;/p&gt;
+                            &lt;p style=&quot;font-size: 11px; margin-top: 0; margin-bottom: 15px; color: #333333;&quot;&gt;{!$Flow.CurrentDateTime}&lt;/p&gt;
+                            &lt;p style=&quot;font-size: 11px; font-weight: bold; color: #333333; margin-bottom: 10px;&quot;&gt;Confidential Information – Do Not Distribute&lt;/p&gt;
+&lt;div style=&quot;margin-top: 15px;&quot;&gt;
+    &lt;img src=&quot;{!FullLogoURL}&quot;
+         alt=&quot;SCP Health Logo&quot; 
+         style=&quot;max-width: 100%; height: auto; max-height: 50px;&quot; /&gt;
+&lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;&lt;br/&gt;
+{!LastSentence}
+&lt;/body&gt;
+
+&lt;/html&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_Body_Final</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Client Termination Report&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;margin: 0; padding: 0; background-color: #f6f6f6;&quot;&gt;
+Hello All,&lt;br/&gt;
+Please see the {!SubjectFirstLetter} startup notification for the following site: &lt;a href={!AccountLink}&gt;{!Get_PMT_Phase.Service_Account__r.Name} &lt;/a&gt;&lt;br/&gt;
+    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;background-color: #f6f6f6; padding: 20px 0;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td align=&quot;center&quot;&gt;
+
+                &lt;table width=&quot;600&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width: 600px; max-width: 100%; border: 1px solid #ddd; background-color: #ffffff; font-family: Arial, sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.05);&quot;&gt;
+                    
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 20px 0 10px 0;&quot; align=&quot;center&quot;&gt;
+                            &lt;h1 style=&quot;color: #9B007A; font-size: 24px; margin: 0; font-weight: 900; letter-spacing: 0.5px;&quot;&gt;{!SubjectFirstLetter} Startup Notification Report&lt;/h1&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                    &lt;tr&gt;
+                        &lt;td height=&quot;30&quot; style=&quot;background-color: #1F4E79; font-size: 0; line-height: 0;&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 20px;&quot;&gt;
+                            
+                            &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;8&quot; cellspacing=&quot;0&quot; style=&quot;font-size: 13px; color: #333333; line-height: 1.4;&quot;&gt;
+                                
+                                &lt;style&gt;
+                                    .label-col {
+                                        background-color: #F0F0F0; 
+                                        font-weight: bold; 
+                                        padding-right: 15px; 
+                                        border-bottom: 1px solid #eee;
+                                    }
+                                    .value-col {
+                                        border-bottom: 1px solid #eee;
+                                    }
+                                &lt;/style&gt;
+                                
+                                &lt;tr&gt;
+                                    &lt;td width=&quot;35%&quot; style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Account / Hospital Name&lt;/td&gt;
+                                    &lt;td width=&quot;65%&quot; style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Name} &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Service Line&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Service_Line__r.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Global Facility ID&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt; {!Get_PMT_Phase.Service_Account__r.Global_Facility_ID__c} &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Parent Account / Hospital&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Services Sold&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q1.Services_Sold__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Physical Address&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingStreet}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;City&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingCity}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;State&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingStateCode}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Zip&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Parent.BillingPostalCode}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Phone&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Phone}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Owner&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!ClientOwnerName}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Owner Type&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Client_Owner_Type__c} &lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Facility Short Name&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Facility_Short_Name__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+
+
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Annual ED Billable Volume&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Pro_Forma_Facility_Detail.ED_Volume__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Annual HM Patient Encounters&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Pro_Forma_Facility_Detail.HM_Volume__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Tele Services Active&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!TeleServicesActive}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Leased Employees&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q1.Leased_Employee__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;If Leased Employees Ins Provided By&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q1.If_Leased_Employees_Ins_Provided_By__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Medical Malpractice Insurance Limits per Occurrence&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q2.Contract__r.Occurrence_Limit__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Medical Malpractice Insurance Aggregate&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q2.Contract__r.Annual_Aggregate__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Insurance Provided By&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Insurance_Provided_By__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+
+
+
+                                 &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Corporate Entity&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!ServicesContractingEntityName}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Start Up Date&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q1.Client_Start_Up_Date__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Start Up Time&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Q1ClientStartUpTime}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Start Up Time Zone&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Q1.Client_Start_Up_Time_Zone__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                               &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Billing Company&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Billing_Company__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Staffing Team&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Staffing_Team__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+			&lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Division&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Client_Division__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Region&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Client_Region__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Position being Recruited&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PMT_Phase.Service_Account__r.Position_being_Recruited__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 0 20px 20px 20px; border-top: 1px solid #ddd;&quot;&gt;
+			    &lt;p style=&quot;font-size: 11px; margin-bottom: 2px; color: #333333;&quot;&gt;{!$User.FirstName} {!$User.LastName}&lt;/p&gt;
+                            &lt;p style=&quot;font-size: 11px; margin-top: 0; margin-bottom: 15px; color: #333333;&quot;&gt;{!$Flow.CurrentDateTime}&lt;/p&gt;
+                            &lt;p style=&quot;font-size: 11px; font-weight: bold; color: #333333; margin-bottom: 10px;&quot;&gt;Confidential Information – Do Not Distribute&lt;/p&gt;
+&lt;div style=&quot;margin-top: 15px;&quot;&gt;
+    &lt;img src=&quot;{!FullLogoURL}&quot;
+         alt=&quot;SCP Health Logo&quot; 
+         style=&quot;max-width: 100%; height: auto; max-height: 50px;&quot; /&gt;
+&lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;&lt;br/&gt;
+{!LastSentence}
+&lt;/body&gt;
+
+&lt;/html&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SUNFinalEmailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello All,&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please see the {!SubjectFirstLetter} startup notification for the following site:&lt;/p&gt;&lt;p&gt;{!Get_PMT_Phase.Service_Account__r.Name} {!Get_PMT_Phase.Service_Account__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;Display - see&amp;nbsp;Fields to be visible in the Email.&amp;nbsp;In the table there are a few fields that are prefixed with “FINAL”, use those labels and field mapping to populate the value. &amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Any future changes to be managed by field operations via client management functions.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Thank you&lt;/p&gt;</text>
+    </textTemplates>
+    <transforms>
+        <name>prrId</name>
+        <label>prrId</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_AccountAccount_Relationship</targetReference>
+        </connector>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <scale>0</scale>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <transformValues>
+            <transformValueActions>
+                <transformType>Map</transformType>
+                <value>
+                    <elementReference>Get_Party_Role_Relationship[$EachItem].Id</elementReference>
+                </value>
+            </transformValueActions>
+        </transformValues>
+    </transforms>
+    <variables>
+        <name>caseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ClientOwnerName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ServicesContractingEntityName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varPMTPhaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

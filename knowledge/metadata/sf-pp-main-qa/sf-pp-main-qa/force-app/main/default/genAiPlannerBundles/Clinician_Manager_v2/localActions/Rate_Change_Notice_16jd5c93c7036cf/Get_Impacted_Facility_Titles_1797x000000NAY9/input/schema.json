@@ -1,0 +1,14 @@
+{
+  "required" : [ "ContractId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ContractId" : {
+      "title" : "ContractId",
+      "description" : "Contract Id for which impacted facility titles are queried",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

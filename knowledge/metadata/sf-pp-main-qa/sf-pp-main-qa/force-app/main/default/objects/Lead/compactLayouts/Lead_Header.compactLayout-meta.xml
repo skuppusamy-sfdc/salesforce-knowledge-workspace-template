@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Header</fullName>
+    <fields>Title</fields>
+    <fields>MQL_Conversion__c</fields>
+    <fields>Account_LD__c</fields>
+    <fields>Company</fields>
+    <fields>Phone</fields>
+    <fields>DoNotCall</fields>
+    <fields>Email</fields>
+    <fields>HasOptedOutOfEmail</fields>
+    <label>Lead Header</label>
+</CompactLayout>

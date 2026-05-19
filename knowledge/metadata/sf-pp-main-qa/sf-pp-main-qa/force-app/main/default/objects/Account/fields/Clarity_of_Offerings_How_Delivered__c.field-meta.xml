@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clarity_of_Offerings_How_Delivered__c</fullName>
+    <description>Clarity of Offerings / How Delivered - People, Process, Tools &amp;/or Technology</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Clarity of Offerings / How Delivered - People, Process, Tools &amp;/or Technology</inlineHelpText>
+    <label>Clarity of Offerings / How Delivered</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

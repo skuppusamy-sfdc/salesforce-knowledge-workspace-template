@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Offboarding_Email_for_Non_Revision</name>
+        <label>Send Offboarding Email for Non Revision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Assigning_Task_Record_for_Non_Revision</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>get_Email_Address_Configurations.Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>Get_NoReply_Org_Wide_Address.Address</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Email_Subect2</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Email_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientId</name>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Offboarding_Email_for_Revision</name>
+        <label>Send Offboarding Email for Revision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Assigning_Task_Record_for_Revision</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>get_Email_Address_Configurations.Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <elementReference>Get_NoReply_Org_Wide_Address.Address</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Email_Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Email_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useLineBreaks</name>
+        </inputParameters>
+        <inputParameters>
+            <name>relatedRecordId</name>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assigning_Task_Record_for_Non_Revision</name>
+        <label>Assigning Task Record for Non Revision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Type</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Email</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Email_Subect2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TaskComment</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_RecordType_Default_Task.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_PNC_Records.HealthcareProvider.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Task_Record_for_Non_Revision</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assigning_Task_Record_for_Revision</name>
+        <label>Assigning Task Record for Revision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Type</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Email</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Email_Subject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TaskComment</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_RecordType_Default_Task.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>TaskRecord.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_PNC_Records.HealthcareProvider.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Task_Record_for_Revision</targetReference>
+        </connector>
+    </assignments>
+    <customProperties>
+        <name>ScreenProgressIndicator</name>
+        <value>
+            <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
+        </value>
+    </customProperties>
+    <decisions>
+        <name>Check_Revision_Is_Checked_Or_Not</name>
+        <label>Check Revision Is Checked Or Not</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Send_Offboarding_Email_for_Non_Revision</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Revision_Checked</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>RevisionCheckBox</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Offboarding_Email_for_Revision</targetReference>
+            </connector>
+            <label>Revision Checked</label>
+        </rules>
+    </decisions>
+    <description>This Screen flow is used to send offboarding email via PNC record using button.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FullLogoURL</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_340}, FIND(&apos;/services/&apos;, {!$Api.Partner_Server_URL_340})) 
+&amp; &apos;servlet/servlet.ImageServer?id=&apos; &amp; {!Get_SCPHealth_Logo_from_Document.Id}
+&amp; &apos;&amp;oid=&apos; &amp; {!Get_Org.Id}</expression>
+    </formulas>
+    <formulas>
+        <name>OrgDomainURL</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_580}, FIND(&apos;/services/&apos;, {!$Api.Partner_Server_URL_580}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>TODAY</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Facility Term Offboarding Email Screen Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Facility Term Send Offboarding Email Screen Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Task_Record_for_Non_Revision</name>
+        <label>Create Task Record for Non Revision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>TaskRecord</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Task_Record_for_Revision</name>
+        <label>Create Task Record for Revision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>TaskRecord</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_AccountAccountRelationship</name>
+        <label>Get AccountAccountRelationship</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_RecordType_Practice_Operations</targetReference>
+        </connector>
+        <filterLogic>1 AND 3 AND 4 AND (2 OR 5)</filterLogic>
+        <filters>
+            <field>RelatedAccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PNC_Records.HealthcareProvider.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>EndDate</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>TODAY</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PartyRoleRelationId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PartyRoleRelation_Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>StartDate</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>TODAY</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>EndDate</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>AccountAccountRelation</object>
+        <sortField>StartDate</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_Email_Address_Configurations</name>
+        <label>get Email Address Configurations</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Revision_Is_Checked_Or_Not</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Label</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>DL.Notice Of Operations Changes</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Email_Address_Configuration__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Executed_Contract</name>
+        <label>Get Executed Contract</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Revision_Details</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Executed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StartDate</field>
+            <operator>LessThan</operator>
+            <value>
+                <elementReference>TODAY</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_PNC_Records.HealthcareProvider.AccountId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_RecordType_Practice_Operations.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contract</object>
+        <sortField>StartDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_NoReply_Org_Wide_Address</name>
+        <label>Get NoReply Org Wide Address</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_PNC_Records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DisplayName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>No Reply</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>OrgWideEmailAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Org</name>
+        <label>Get Org</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_NoReply_Org_Wide_Address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Organization</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PartyRoleRelation_Record</name>
+        <label>Get PartyRoleRelation Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_AccountAccountRelationship</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RoleName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Services Contracting Entity</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>PartyRoleRelation</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_PNC_Records</name>
+        <label>Get PNC Records</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_PartyRoleRelation_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ProviderNetworkContract</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_RecordType_Default_Task</name>
+        <label>Get RecordType Default Task</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Executed_Contract</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Task</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Default</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_RecordType_Practice_Operations</name>
+        <label>Get RecordType Practice Operations</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_RecordType_Default_Task</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Contract</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Client</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_SCPHealth_Logo_from_Document</name>
+        <label>Get SCPHealth Logo from Document</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Org</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SCPHealthLogo_Banner</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Document</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Revision_Details</name>
+        <label>Revision_Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>get_Email_Address_Configurations</targetReference>
+        </connector>
+        <fields>
+            <name>RevisionCheckBox</name>
+            <dataType>Boolean</dataType>
+            <defaultValue>
+                <booleanValue>false</booleanValue>
+            </defaultValue>
+            <fieldText>Revision</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Revision_Number</name>
+            <dataType>Number</dataType>
+            <fieldText>Revision Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>RevisionCheckBox</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <nextOrFinishButtonLabel>Send Email</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+        <stageReference>
+            <elementReference>GatStage_GatherInput</elementReference>
+        </stageReference>
+    </screens>
+    <stages>
+        <name>GatStage_GatherInput</name>
+        <isActive>true</isActive>
+        <label>Gather Details</label>
+        <stageOrder>5</stageOrder>
+    </stages>
+    <stages>
+        <name>Stage_EmailSent</name>
+        <isActive>true</isActive>
+        <label>Email Sent</label>
+        <stageOrder>10</stageOrder>
+    </stages>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_SCPHealth_Logo_from_Document</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Email_Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Client Termination Report&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;margin: 0; padding: 0; background-color: #f6f6f6;&quot;&gt;
+
+    &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;background-color: #f6f6f6; padding: 20px 0;&quot;&gt;
+        &lt;tr&gt;
+            &lt;td align=&quot;center&quot;&gt;
+
+                &lt;table width=&quot;600&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width: 600px; max-width: 100%; border: 1px solid #ddd; background-color: #ffffff; font-family: Arial, sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.05);&quot;&gt;
+                    
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 20px 0 10px 0;&quot; align=&quot;center&quot;&gt;
+                            &lt;h1 style=&quot;color: #9B007A; font-size: 24px; margin: 0; font-weight: 900; letter-spacing: 0.5px;&quot;&gt;Client Termination Report&lt;/h1&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                    &lt;tr&gt;
+                        &lt;td height=&quot;30&quot; style=&quot;background-color: #1F4E79; font-size: 0; line-height: 0;&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 20px;&quot;&gt;
+                            
+                            &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellpadding=&quot;8&quot; cellspacing=&quot;0&quot; style=&quot;font-size: 13px; color: #333333; line-height: 1.4;&quot;&gt;
+                                
+                                &lt;style&gt;
+                                    .label-col {
+                                        background-color: #F0F0F0; 
+                                        font-weight: bold; 
+                                        padding-right: 15px; 
+                                        border-bottom: 1px solid #eee;
+                                    }
+                                    .value-col {
+                                        border-bottom: 1px solid #eee;
+                                    }
+                                &lt;/style&gt;
+                                
+                                &lt;tr&gt;
+                                    &lt;td width=&quot;35%&quot; style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Account / Hospital Name&lt;/td&gt;
+                                    &lt;td width=&quot;65%&quot; style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Service Line&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Service_Line__r.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Global Facility ID&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Global_Facility_ID__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Services Sold&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.Services_Sold__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Physical Address&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingStreet}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;City&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingCity}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;State&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingState}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Zip&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingPostalCode}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Facility Short Name&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Parent.Facility_Short_Name__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Staffing Team&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Staffing_Team__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Division&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Client_Division__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Region&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Client_Region__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Termination Date&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.Contract_Termination__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Termination Time&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.Facility_Termination_Time__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Client Termination Time Zone&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.Client_Termination_Time_Zone__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Terminated By&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.Terminated_By__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Billing Company&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_PNC_Records.HealthcareProvider.Account.Billing_Company__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Corporate Entity&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_AccountAccountRelationship.Account.Name}&lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;tr&gt;
+                                    &lt;td style=&quot;background-color: #F0F0F0; font-weight: bold; padding-right: 15px; border-bottom: 1px solid #eee;&quot;&gt;Scribe Hours per Day&lt;/td&gt;
+                                    &lt;td style=&quot;border-bottom: 1px solid #eee;&quot;&gt;{!Get_Executed_Contract.Scribe_Hours_per_Day__c}&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+
+                    &lt;tr&gt;
+                        &lt;td style=&quot;padding: 0 20px 20px 20px; border-top: 1px solid #ddd;&quot;&gt;
+			    &lt;p style=&quot;font-size: 11px; margin-bottom: 2px; color: #333333;&quot;&gt;{!$User.FirstName} {!$User.LastName}&lt;/p&gt;
+                            &lt;p style=&quot;font-size: 11px; margin-top: 0; margin-bottom: 15px; color: #333333;&quot;&gt;{!$Flow.CurrentDateTime}&lt;/p&gt;
+                            &lt;p style=&quot;font-size: 11px; font-weight: bold; color: #333333; margin-bottom: 10px;&quot;&gt;Confidential Information – Do Not Distribute&lt;/p&gt;
+&lt;div style=&quot;margin-top: 15px;&quot;&gt;
+    &lt;img src=&quot;{!FullLogoURL}&quot;
+         alt=&quot;SCP Health Logo&quot; 
+         style=&quot;max-width: 100%; height: auto; max-height: 50px;&quot; /&gt;
+&lt;/div&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    
+                &lt;/table&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_Subect2</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Client Termination Notice - {!Get_PNC_Records.HealthcareProvider.Account.Name} {!Get_PNC_Records.Contract_Termination__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Email_Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Client Termination Notice - {!Get_PNC_Records.HealthcareProvider.Account.Name} {!Get_PNC_Records.Contract_Termination__c} Rev {!Revision_Number}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TaskComment</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Account / Hospital Name - {!Get_PNC_Records.HealthcareProvider.Account.Name}
+Service Line - {!Get_PNC_Records.HealthcareProvider.Account.Service_Line__r.Name}
+Global Facility ID - {!Get_PNC_Records.HealthcareProvider.Account.Global_Facility_ID__c}
+Services Sold - {!Get_PNC_Records.Services_Sold__c}
+Physical Address - {!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingStreet}
+City - {!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingCity}
+State - {!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingState}
+Zip - {!Get_PNC_Records.HealthcareProvider.Account.Parent.BillingPostalCode}
+Facility Short Name - {!Get_PNC_Records.HealthcareProvider.Account.Parent.Facility_Short_Name__c}
+Staffing Team - {!Get_PNC_Records.HealthcareProvider.Account.Staffing_Team__c}
+Client Division - {!Get_PNC_Records.HealthcareProvider.Account.Client_Division__c}
+Client Region - {!Get_PNC_Records.HealthcareProvider.Account.Client_Region__c}
+Client Termination Date - {!Get_PNC_Records.Contract_Termination__c}
+Client Termination Time - {!Get_PNC_Records.Facility_Termination_Time__c}
+Client Termination Time Zone - {!Get_PNC_Records.Client_Termination_Time_Zone__c}
+Terminated By - {!Get_PNC_Records.Terminated_By__c}
+Billing Company - {!Get_PNC_Records.HealthcareProvider.Account.Billing_Company__c}
+Corporate Entity - {!Get_AccountAccountRelationship.Account.Name}
+Scribe Hours per Day - {!Get_Executed_Contract.Scribe_Hours_per_Day__c}</text>
+    </textTemplates>
+    <variables>
+        <name>lstEmail</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>TaskRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+</Flow>

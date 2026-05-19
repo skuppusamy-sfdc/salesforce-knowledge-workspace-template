@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_Contract_Request_Date</fullName>
+    <active>false</active>
+    <description>Enforce the user to provide expected target contract start date when Opportunity Stage is moved to Contract Request</description>
+    <errorConditionFormula>AND(
+  OR(
+    ISPICKVAL(StageName, &quot;Contract Request&quot;), 
+    ISPICKVAL(Request_Stage_Progression__c,&apos;Request Progression to Contract Request/MOU Approved&apos;)
+  )       
+  ,
+  ISBLANK(Target_Contract_Start_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>Target_Contract_Start_Date__c</errorDisplayField>
+    <errorMessage>No Close Date, to request propossal you have to provide target contract start date on the Opportunity</errorMessage>
+</ValidationRule>

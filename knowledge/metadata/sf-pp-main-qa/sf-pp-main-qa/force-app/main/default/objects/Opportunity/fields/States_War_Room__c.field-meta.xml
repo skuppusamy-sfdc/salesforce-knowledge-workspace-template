@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>States_War_Room__c</fullName>
+    <description>Used for war room reporting.  Manually entered by analyst based on service line details.</description>
+    <externalId>false</externalId>
+    <label>Service State(s) - War Room</label>
+    <length>30</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

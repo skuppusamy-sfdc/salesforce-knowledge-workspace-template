@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;NRPCertified&quot; : true,
+  &quot;PALSCertified&quot; : false,
+  &quot;ATLSCertified&quot; : true,
+  &quot;ProfessionalTitle&quot; : &quot;NP&quot;,
+  &quot;LastName&quot; : &quot;Miki&quot;,
+  &quot;TiesToLocation&quot; : &quot;wdesw&quot;,
+  &quot;YearsOfLeadExp&quot; : 3,
+  &quot;ApplicantContactId&quot; : &quot;0037x000012S0m0AAC&quot;,
+  &quot;VisaType&quot; : &quot;E-2&quot;,
+  &quot;RequestedHours&quot; : 12,
+  &quot;BLSCertified&quot; : false,
+  &quot;ShiftPreference&quot; : &quot;jhbd&quot;,
+  &quot;WillingToDoVentMngmt&quot; : false,
+  &quot;RequestedStartDate&quot; : &quot;2024-12-23&quot;,
+  &quot;EndDate&quot; : &quot;2027-09-01T00:00:00.000Z&quot;,
+  &quot;PrimarySpecialty&quot; : {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;CareSpecialityId&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;Id&quot; : &quot;0bO7x0000000c3hEAA&quot;,
+    &quot;IsPrimary&quot; : true
+  },
+  &quot;AdditionalSpecialties&quot; : [ {
+    &quot;Name&quot; : &quot;Osteopathy&quot;,
+    &quot;CareSpecialityId&quot; : &quot;0bc7x0000000Em9AAE&quot;,
+    &quot;Id&quot; : &quot;0bO7x0000000aTJEAY&quot;,
+    &quot;IsPrimary&quot; : false
+  }, {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;CareSpecialityId&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;Id&quot; : &quot;0bO7x0000000aTKEAY&quot;,
+    &quot;IsPrimary&quot; : false
+  }, {
+    &quot;Name&quot; : &quot;test&quot;,
+    &quot;Id&quot; : &quot;0bO7x0000000bqpEAA&quot;,
+    &quot;IsPrimary&quot; : false
+  }, {
+    &quot;Name&quot; : &quot;best&quot;,
+    &quot;Id&quot; : &quot;0bO7x0000000bqqEAA&quot;,
+    &quot;IsPrimary&quot; : false
+  } ],
+  &quot;ApplicantName&quot; : &quot;Roberto Miki&quot;,
+  &quot;NALSCerified&quot; : false,
+  &quot;PreScreenAdditionalDetails&quot; : &quot;klmlk&quot;,
+  &quot;Program&quot; : &quot;Post Graduation&quot;,
+  &quot;PersonalInterests&quot; : &quot;wdew&quot;,
+  &quot;PracticingSpecialty&quot; : {
+    &quot;Name&quot; : &quot;Nephrology&quot;,
+    &quot;CareSpecialityId&quot; : &quot;0bc7x0000000DzlAAE&quot;,
+    &quot;Id&quot; : &quot;0bO7x0000000c5JEAQ&quot;,
+    &quot;IsPrimary&quot; : false
+  },
+  &quot;SponsershipNeed&quot; : &quot;Yes&quot;,
+  &quot;ProfessionalStatus&quot; : &quot;Resident&quot;,
+  &quot;IsExistingPortalUser&quot; : false,
+  &quot;ACLSCertified&quot; : false,
+  &quot;PersonEducationId&quot; : &quot;0Sr7x0000001AdFCAU&quot;,
+  &quot;BestTimeToContact&quot; : &quot;ewdwhkj&quot;,
+  &quot;YearsOfExp&quot; : 6,
+  &quot;IMLCCertified&quot; : true,
+  &quot;WillingToDoProcedures&quot; : true,
+  &quot;PreScreenQueriesClear&quot; : &quot;Yes&quot;,
+  &quot;DEACertified&quot; : false,
+  &quot;MedicalLicense&quot; : [ {
+    &quot;State&quot; : &quot;AZ&quot;
+  }, {
+    &quot;State&quot; : &quot;DC&quot;
+  }, {
+    &quot;State&quot; : &quot;FL&quot;
+  }, {
+    &quot;State&quot; : &quot;AR&quot;
+  } ],
+  &quot;BoardCertified&quot; : &quot;Eligible&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTATSApplicantData</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom542</globalKey>
+        <inputFieldName>CredentiallingAddDetails</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:CredentiallingAddDetails</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom3998</globalKey>
+        <inputFieldName>PracticingSpecialty:SpecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PracticingSpecialty-Block:SpecId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom3851</globalKey>
+        <inputFieldName>PersonEducationId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:PersonEducationId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom8425</globalKey>
+        <inputFieldName>Program</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:Program</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom1327</globalKey>
+        <inputFieldName>WillingToDoProcedures</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:WillingToDoProcedures</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4646</globalKey>
+        <inputFieldName>ShiftPreference</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Interest:BLK_Interest:ShiftPreference</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom1820</globalKey>
+        <inputFieldName>PracticingSpecialty:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PracticingSpecialty-Block:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom9694</globalKey>
+        <inputFieldName>RequestedHours</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Interest:BLK_Interest:RequestedHours</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom599</globalKey>
+        <inputFieldName>BestTimeToContact</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Interest:BLK_Interest:BestTimeToContact</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom8104</globalKey>
+        <inputFieldName>Comments</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:Comments</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom8616</globalKey>
+        <inputFieldName>VisaType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:VisaType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6906</globalKey>
+        <inputFieldName>SponsershipNeed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:SponsershipNeed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom7644</globalKey>
+        <inputFieldName>RequestedStartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Interest:BLK_Interest:RequestedStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6790</globalKey>
+        <inputFieldName>ApplicantName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:ApplicantName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4600</globalKey>
+        <inputFieldName>ProfessionalStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:ProfessionalStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom9033</globalKey>
+        <inputFieldName>PrimarySpecialty:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PrimarySpecialty-Block:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4491</globalKey>
+        <inputFieldName>PrimarySpecialty:SpecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PrimarySpecialty-Block:SpecId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:MedicalLicense:State &quot;;&quot; JOIN</formulaConverted>
+        <formulaExpression>JOIN(%MedicalLicense:State%,&quot;;&quot;)</formulaExpression>
+        <formulaResultPath>FRML_MedicalLicense</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTATSApplicantDataCustom9106</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4838</globalKey>
+        <inputFieldName>ATLSCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:ATLSCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4581</globalKey>
+        <inputFieldName>CredentiallingDelay</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:CredentiallingDelay</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4506</globalKey>
+        <inputFieldName>PreScreenAdditionalDetails</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:PreScreenAdditionalDetails</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom7518</globalKey>
+        <inputFieldName>ACLSCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:ACLSCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom7869</globalKey>
+        <inputFieldName>DEACertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:DEACertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom1031</globalKey>
+        <inputFieldName>PracticingSpecialty:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PracticingSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4529</globalKey>
+        <inputFieldName>FRML_MedicalLicense</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:MUL_MedicalLicenseState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom1344</globalKey>
+        <inputFieldName>PreScreenQueriesClear</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:PreScreenQueriesClear</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6783</globalKey>
+        <inputFieldName>PrimarySpecialty:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PrimarySpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4360</globalKey>
+        <inputFieldName>LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:LastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6941</globalKey>
+        <inputFieldName>YearsOfLeadExp</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:YearsOfLeadExp</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom9917</globalKey>
+        <inputFieldName>EndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:EndDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom378</globalKey>
+        <inputFieldName>MDDOAgrees</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:MDDOAgrees</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom3022</globalKey>
+        <inputFieldName>PracticingSpecialty:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PracticingSpecialty-Block:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom9990</globalKey>
+        <inputFieldName>WillingToDoVentMngmt</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:WillingToDoVentMngmt</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom3493</globalKey>
+        <inputFieldName>ProfessionalTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:ProfessionalTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6377</globalKey>
+        <inputFieldName>BoardCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:BoardCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom2811</globalKey>
+        <inputFieldName>NRPCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:NRPCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom3484</globalKey>
+        <inputFieldName>PersonalInterests</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Interest:BLK_Interest:PersonalInterests</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4937</globalKey>
+        <inputFieldName>PrimarySpecialty:IsPrimary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PrimarySpecialty-Block:IsPrimary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom2650</globalKey>
+        <inputFieldName>PracticingSpecialty:IsPrimary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PracticingSpecialty-Block:IsPrimary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom7716</globalKey>
+        <inputFieldName>CurrentCV</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:CurrentCV</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6691</globalKey>
+        <inputFieldName>NALSCerified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:NALSCerified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom6784</globalKey>
+        <inputFieldName>BLSCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:BLSCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom4214</globalKey>
+        <inputFieldName>NPType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:NPType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom134</globalKey>
+        <inputFieldName>PrimarySpecialty:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Applicant:BLK_Applicant:TA_PrimarySpecialty-Block:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom7701</globalKey>
+        <inputFieldName>IMLCCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:IMLCCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom747</globalKey>
+        <inputFieldName>EHRProficiencies</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:EHRProficiencies</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom9781</globalKey>
+        <inputFieldName>TiesToLocation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Interest:BLK_Interest:TiesToLocation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom5047</globalKey>
+        <inputFieldName>PALSCertified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:PALSCertified</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTATSApplicantDataCustom1778</globalKey>
+        <inputFieldName>YearsOfExp</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTATSApplicantData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Qualification:BLK_Qualification:YearsOfExp</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;InterestDetails&quot; : {
+    &quot;BLK_Interest&quot; : {
+      &quot;RequestedStartDate&quot; : &quot;2024-12-23&quot;,
+      &quot;RequestedHours&quot; : 12,
+      &quot;ShiftPreference&quot; : &quot;jshbxd&quot;,
+      &quot;BestTimeToContact&quot; : &quot;decw&quot;,
+      &quot;TiesToLocation&quot; : &quot;edews&quot;,
+      &quot;PersonalInterests&quot; : &quot;decxwes&quot;
+    }
+  },
+  &quot;ApplicantDetails&quot; : {
+    &quot;BLK_Applicant&quot; : {
+      &quot;NPType&quot; : null,
+      &quot;Program&quot; : &quot;dceswk&quot;,
+      &quot;EndDate&quot; : null,
+      &quot;VisaType&quot; : &quot;H-1B&quot;,
+      &quot;TA_PrimarySpecialty-Block&quot; : {
+        &quot;Name&quot; : &quot;Radiology&quot;,
+        &quot;Id&quot; : &quot;0bO7x0000000c0TEAQ&quot;,
+        &quot;IsPrimary&quot; : true,
+        &quot;CareSpecialtyId&quot; : &quot;0bc7x0000000EarAAE&quot;,
+        &quot;TA_PrimarySpecialty&quot; : &quot;Radiology&quot;
+      },
+      &quot;TA_PracticingSpecialty-Block&quot; : {
+        &quot;Name&quot; : &quot;Cardiology&quot;,
+        &quot;Id&quot; : &quot;0bO7x0000000c0UEAQ&quot;,
+        &quot;IsPrimary&quot; : false,
+        &quot;CareSpecialtyId&quot; : &quot;0bc7x0000000EcTAAU&quot;,
+        &quot;TA_PracticingSpecialty&quot; : &quot;Cardiology&quot;
+      },
+      &quot;SponsershipNeed&quot; : &quot;Yes&quot;,
+      &quot;ProfessionalTitle&quot; : &quot;DO&quot;,
+      &quot;BoardCertified&quot; : &quot;Ineligible&quot;,
+      &quot;TA_AdditionalSpecialties-Block&quot; : {
+        &quot;TA_AdditionalSpecialties&quot; : &quot;Radiology&quot;,
+        &quot;Name&quot; : &quot;Radiology&quot;,
+        &quot;Id&quot; : &quot;0bc7x0000000EarAAE&quot;,
+        &quot;RecordId&quot; : &quot;0bc7x0000000EarAAE&quot;,
+        &quot;isPrimaryOrSub&quot; : &quot;true&quot;
+      },
+      &quot;ProfessionalStatus&quot; : &quot;Resident&quot;
+    }
+  },
+  &quot;QualificationDetails&quot; : {
+    &quot;BLK_Qualification&quot; : {
+      &quot;WillingToDoProcedures&quot; : true,
+      &quot;WillingToDoVentMngmt&quot; : true,
+      &quot;ACLSCertified&quot; : true,
+      &quot;ATLSCertified&quot; : true,
+      &quot;BLSCertified&quot; : true,
+      &quot;PALSCertified&quot; : true,
+      &quot;NALSCerified&quot; : true,
+      &quot;NRPCertified&quot; : true,
+      &quot;MUL_MedicalLicenseState&quot; : &quot;AK;AL;AR;AZ;CA;CO;CT;DC;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;MO&quot;,
+      &quot;IMLCCertified&quot; : true,
+      &quot;DEACertified&quot; : true,
+      &quot;PreScreenAdditionalDetails&quot; : &quot;edwxs&quot;,
+      &quot;CredentiallingAddDetails&quot; : &quot;edfce&quot;,
+      &quot;YearsOfExp&quot; : 2,
+      &quot;YearsOfLeadExp&quot; : 3,
+      &quot;Electronic Health Record System Proficiencies&quot; : &quot;edfc&quot;,
+      &quot;PreScreenQueriesClear&quot; : &quot;Yes&quot;,
+      &quot;CurrentCV&quot; : &quot;Yes&quot;,
+      &quot;CredentiallingDelay&quot; : &quot;Yes&quot;,
+      &quot;MDDOAgrees&quot; : &quot;Yes&quot;,
+      &quot;Comments&quot; : &quot;edsxw&quot;
+    }
+  },
+  &quot;OriginalApplicantInfo&quot; : {
+    &quot;Applicant&quot; : {
+      &quot;BLK_Applicant&quot; : {
+        &quot;TA_PrimarySpecialty-Block&quot; : {
+          &quot;Name&quot; : &quot;Radiology&quot;,
+          &quot;Id&quot; : &quot;0bO7x0000000c0TEAQ&quot;,
+          &quot;IsPrimary&quot; : true,
+          &quot;CareSpecialtyId&quot; : &quot;0bc7x0000000EarAAE&quot;
+        },
+        &quot;SponsershipNeed&quot; : &quot;No&quot;,
+        &quot;ProfessionalTitle&quot; : &quot;DO&quot;,
+        &quot;TA_PrimarySpecialty&quot; : &quot;Radiology&quot;,
+        &quot;TA_PracticingSpecialty-Block&quot; : {
+          &quot;Name&quot; : &quot;Cardiology&quot;,
+          &quot;Id&quot; : &quot;0bO7x0000000c0UEAQ&quot;,
+          &quot;IsPrimary&quot; : false,
+          &quot;CareSpecialtyId&quot; : &quot;0bc7x0000000EcTAAU&quot;
+        },
+        &quot;TA_PracticingSpecialty&quot; : &quot;Cardiology&quot;,
+        &quot;BoardCertified&quot; : &quot;Ineligible&quot;
+      }
+    },
+    &quot;Qualification&quot; : {
+      &quot;BLK_Qualification&quot; : {
+        &quot;BLSCertified&quot; : false,
+        &quot;NRPCertified&quot; : false,
+        &quot;DEACertified&quot; : false,
+        &quot;PALSCertified&quot; : false,
+        &quot;ATLSCertified&quot; : false,
+        &quot;WillingToDoVentMngmt&quot; : false,
+        &quot;ACLSCertified&quot; : false,
+        &quot;MUL_MedicalLicenseState&quot; : &quot;AZ;CA;CO;CT;DC;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;AL;AK;AR&quot;,
+        &quot;NALSCerified&quot; : false,
+        &quot;IMLCCertified&quot; : false,
+        &quot;WillingToDoProcedures&quot; : false
+      }
+    },
+    &quot;Interest&quot; : {
+      &quot;BLK_Interest&quot; : {
+        &quot;RequestedStartDate&quot; : &quot;2024-12-23&quot;,
+        &quot;RequestedHours&quot; : 12
+      }
+    }
+  },
+  &quot;block&quot; : &quot;SaveApplicantData&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTATSApplicantData_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Model__c</fullName>
+    <label>Financial Model</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fee for Service</fullName>
+                <default>false</default>
+                <label>Fee for Service</label>
+            </value>
+            <value>
+                <fullName>Fixed Management Fee</fullName>
+                <default>false</default>
+                <label>Fixed Management Fee</label>
+            </value>
+            <value>
+                <fullName>Flat Hourly</fullName>
+                <default>false</default>
+                <label>Flat Hourly</label>
+            </value>
+            <value>
+                <fullName>Margin Guarantee</fullName>
+                <default>false</default>
+                <label>Margin Guarantee</label>
+            </value>
+            <value>
+                <fullName>Cost Plus %</fullName>
+                <default>false</default>
+                <label>Cost Plus %</label>
+            </value>
+            <value>
+                <fullName>Cost Plus Management Fee</fullName>
+                <default>false</default>
+                <label>Cost Plus Management Fee</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Guaranteed Management Fee [Inactive]</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Guaranteed Management Fee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

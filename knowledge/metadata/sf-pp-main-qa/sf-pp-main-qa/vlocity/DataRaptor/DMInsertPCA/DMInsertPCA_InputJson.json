@@ -1,0 +1,21 @@
+{
+    "pcaList": {
+        "BonusMeasureType": "Text",
+        "BonusPayout": "Text",
+        "ClonedFrom__c": "Text",
+        "Daily_Encounter_Pay_Cap__c": "Text",
+        "Daily_Encounter_Threshold__c": "Text",
+        "FacilityTitle__c": "Text",
+        "Months_Provider_Guarantee__c": "Text",
+        "Months_Startup_Guarantee__c": "Text",
+        "Notes__c": "Text",
+        "Override_Prohibited__c": "Text",
+        "Rate__c": "Text",
+        "Shift__c": "Text",
+        "TargetMeasurePercent": "Text",
+        "Time_Type__c": "Text",
+        "Unit_of_Measure__c": "Text",
+        "contractPaymentAgreementIdNew": "Text",
+        "pcaType": "Text"
+    }
+}

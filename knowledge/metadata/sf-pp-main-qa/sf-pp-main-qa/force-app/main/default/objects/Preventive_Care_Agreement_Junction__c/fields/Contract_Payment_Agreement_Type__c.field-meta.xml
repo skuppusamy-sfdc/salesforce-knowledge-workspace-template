@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Payment_Agreement_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Preventive_Care_Agreement__r.ContractPaymentAgreement.Type__c)</formula>
+    <label>Contract Payment Agreement Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

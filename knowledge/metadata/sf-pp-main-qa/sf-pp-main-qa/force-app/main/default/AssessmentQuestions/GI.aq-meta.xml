@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>GI</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;GI – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Evaluation and management of abdominal   
+pain&lt;/li&gt;
+&lt;li&gt;Evaluation and management of rectal   
+complaints/bleediing&lt;/li&gt;
+&lt;li&gt;Evaluation and management of vomiting and   
+diarrhea&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>GI</developerName>
+    <name>GI</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

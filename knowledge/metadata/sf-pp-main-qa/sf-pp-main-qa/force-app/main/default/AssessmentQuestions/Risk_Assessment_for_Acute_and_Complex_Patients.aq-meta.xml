@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Risk Assessment for Acute and Complex Patients</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Assesses for risks associated with the care of the acute and complex chronically ill patient including: medication side effects, immobility, impaired nutrition, fluid and electrolyte imbalance, immunocompetence, invasive interventions and diagnostic procedures</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Risk_Assessment_for_Acute_and_Complex_Patients</developerName>
+    <name>Risk Assessment for Acute and Complex Patients</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Practicing Preference --></label>
+    <name>Practicing_Preference__c</name>
+    <picklistValues>
+        <masterLabel>CC</masterLabel>
+        <translation><!-- CC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EM</masterLabel>
+        <translation><!-- EM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HM</masterLabel>
+        <translation><!-- HM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tele</masterLabel>
+        <translation><!-- Tele --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UC</masterLabel>
+        <translation><!-- UC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

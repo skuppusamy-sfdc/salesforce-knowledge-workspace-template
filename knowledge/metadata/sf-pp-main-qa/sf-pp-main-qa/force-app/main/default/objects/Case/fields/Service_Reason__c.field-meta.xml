@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Reason__c</fullName>
+    <label>Service Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interpersonal Skills</fullName>
+                <default>false</default>
+                <label>Interpersonal Skills</label>
+            </value>
+            <value>
+                <fullName>Anger Management</fullName>
+                <default>false</default>
+                <label>Anger Management</label>
+            </value>
+            <value>
+                <fullName>Shift Attendance</fullName>
+                <default>false</default>
+                <label>Shift Attendance</label>
+            </value>
+            <value>
+                <fullName>Organizational Skills</fullName>
+                <default>false</default>
+                <label>Organizational Skills</label>
+            </value>
+            <value>
+                <fullName>Patient Complaints</fullName>
+                <default>false</default>
+                <label>Patient Complaints</label>
+            </value>
+            <value>
+                <fullName>Provider Behavior</fullName>
+                <default>false</default>
+                <label>Provider Behavior</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

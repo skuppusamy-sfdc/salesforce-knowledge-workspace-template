@@ -1,0 +1,20 @@
+<aura:component description="RequestFeedbackButton" implements="flexipage:availableForRecordHome,force:hasRecordId" controller="TruSalesAppController">
+
+	<aura:attribute name="isSuitableOpportunity" type="Boolean" default="false"  access="private"/>
+	<aura:attribute name="needFeedback"          type="Boolean" default="false"  access="private"/>
+<!--    <aura:attribute name="settings"              type="TruSales_App_Settings__c" access="private"/>-->
+    <aura:attribute name="settings"              type="Discovery_Bots_Settings__c" access="private"/>
+
+    <aura:handler event="force:refreshView"   action="{!c.forceRefreshViewHandler}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:registerEvent name="OpenRequestFeedbackEvent" type="c:OpenRequestFeedbackEvent"/>
+
+        <aura:if isTrue="{!v.isSuitableOpportunity}">
+            <button class="{!v.needFeedback ? 'slds-button slds-button--neutral alert' : 'slds-button slds-button--neutral'}" onclick="{!c.openFeedbackRequest}" style="padding-left: 8px">
+                <img src="{!$Resource.TruSalesPicture}" alt="Request Feedback" style="position: relative; top: -1px; height: 16px; padding-right: 3px"/>
+                {!v.needFeedback ? 'Need Feedback' : 'Request Feedback' }
+            </button>
+        </aura:if>
+
+</aura:component>

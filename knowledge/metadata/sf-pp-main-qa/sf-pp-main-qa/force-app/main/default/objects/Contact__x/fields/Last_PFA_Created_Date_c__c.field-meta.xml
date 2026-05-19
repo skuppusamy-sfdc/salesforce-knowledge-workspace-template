@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_PFA_Created_Date_c__c</fullName>
+    <externalDeveloperName>Last_PFA_Created_Date__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Last PFA Created Date</label>
+    <readOnlyProxy>true</readOnlyProxy>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

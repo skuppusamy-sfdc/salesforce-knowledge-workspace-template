@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Basic Computer Skills for Electronic Medical Records Proficiency</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Proficient in basic computer skills required for completing electronic medical records</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Basic_Computer_Skills_for_Electronic_Medical_Records_Proficiency</developerName>
+    <name>Basic Computer Skills for Electronic Medical Records Proficiency</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

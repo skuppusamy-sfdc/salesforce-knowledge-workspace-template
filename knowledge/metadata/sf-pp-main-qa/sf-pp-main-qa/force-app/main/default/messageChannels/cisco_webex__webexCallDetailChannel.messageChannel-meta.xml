@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to save values in local storage</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <description>whoId</description>
+        <fieldName>whoId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>whatId</description>
+        <fieldName>whatId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>phoneNumber</description>
+        <fieldName>phoneNumber</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>personName</description>
+        <fieldName>personName</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>email</description>
+        <fieldName>email</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>callType</description>
+        <fieldName>callType</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>objectType</description>
+        <fieldName>objectType</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>openLog</description>
+        <fieldName>openLog</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>callSubType</description>
+        <fieldName>callSubType</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>outboundCallInitiatedFromSalesforce</description>
+        <fieldName>outboundCallInitiatedFromSalesforce</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexCallDetailChannel</masterLabel>
+</LightningMessageChannel>

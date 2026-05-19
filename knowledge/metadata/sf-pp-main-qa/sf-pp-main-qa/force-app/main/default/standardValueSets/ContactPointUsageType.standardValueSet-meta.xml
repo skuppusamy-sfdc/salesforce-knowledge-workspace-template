@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Work</fullName>
+        <default>false</default>
+        <label>Work</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Ext</fullName>
+        <default>false</default>
+        <label>Work Ext</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Home</fullName>
+        <default>false</default>
+        <label>Home</label>
+    </standardValue>
+</StandardValueSet>

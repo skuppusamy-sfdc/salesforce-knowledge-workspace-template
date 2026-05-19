@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Searches for Accounts (facility names) when user inputs the search text .</description>
+    <invocationTarget>ClinicalManager</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <mappingAttributes>
+        <label>searchText</label>
+        <name>input_searchText</name>
+        <parameterName>searchText</parameterName>
+        <parameterType>input</parameterType>
+    </mappingAttributes>
+    <masterLabel>Get Facility Name</masterLabel>
+</GenAiFunction>

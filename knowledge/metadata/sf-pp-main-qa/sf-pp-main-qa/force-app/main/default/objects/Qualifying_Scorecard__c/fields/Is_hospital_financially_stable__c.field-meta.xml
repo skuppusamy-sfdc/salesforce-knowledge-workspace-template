@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_hospital_financially_stable__c</fullName>
+    <description>Is hospital financially stable? (Yes = +1 point, No = -1 point)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>(Yes = +1 point, No = -1 point)</inlineHelpText>
+    <label>Is hospital financially stable?</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,37 @@
+{
+    "ExistingPCARecs": [
+        {
+            "ContractPaymentAgreementId": "0rR7x00000001lhEAA",
+            "FacilityTitle__c": "0hs7x0000007K8cAAE",
+            "FacilityTitle__r": {
+                "Id": "0hs7x0000007K8cAAE",
+                "Name": "Assistant Medical Director"
+            },
+            "Id": "0s47x00000004ZuAAI",
+            "Rate__c": 12,
+            "Unit_of_Measure__c": "per Metric"
+        },
+        {
+            "ContractPaymentAgreementId": "0rR7x00000001lhEAA",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "FacilityTitle__r": {
+                "Id": "0hs7x0000007K8aAAE",
+                "Name": "Ambassador NP/PA"
+            },
+            "Id": "0s47x00000004q2AAA",
+            "Rate__c": 12,
+            "Unit_of_Measure__c": "per Metric"
+        },
+        {
+            "ContractPaymentAgreementId": "0rR7x00000001lhEAA",
+            "FacilityTitle__c": "0hs7x0000007K8bAAE",
+            "FacilityTitle__r": {
+                "Id": "0hs7x0000007K8bAAE",
+                "Name": "Ambassador Physician"
+            },
+            "Id": "0s47x00000004rdAAA",
+            "Rate__c": 12,
+            "Unit_of_Measure__c": "% Salary Reduction"
+        }
+    ]
+}

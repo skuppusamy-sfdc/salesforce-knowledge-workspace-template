@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amanda_Gibbs_Planned_Target_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>texcellency__DefHC_NumBeds__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Planned_Targeted_Account__c</columns>
+    <columns>Account_Type__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Planned_Targeted_Account__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Skilled Nursing Facility,Assisted Living Facility</value>
+    </filters>
+    <label>Amanda Gibbs - Planned Target Accounts</label>
+</ListView>

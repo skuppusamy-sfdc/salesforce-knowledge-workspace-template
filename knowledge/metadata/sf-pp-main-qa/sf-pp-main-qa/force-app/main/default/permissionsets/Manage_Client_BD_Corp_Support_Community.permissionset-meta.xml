@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants edit access to Accounts, Opportunities, Services, and their fields related to managing new business (For Corp Support Community Users)</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Offboarding_Decision__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Pro_Forma_Facility_Detail__c.Pro_Form_Model_Opportunity_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Pro_Forma_Facility_Detail__c.Pro_Form_Model_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Offboarding_Decision__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Client BD (Corp Support Community)</label>
+</PermissionSet>

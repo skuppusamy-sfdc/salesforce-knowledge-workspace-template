@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_10_and_Independents</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_EM_Incumbent_Group_Type__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Current_ICU_Incumbent__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>Planned_Targeted_Account__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Planned_Targeted_Account__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Top 10 and Independents</label>
+</ListView>

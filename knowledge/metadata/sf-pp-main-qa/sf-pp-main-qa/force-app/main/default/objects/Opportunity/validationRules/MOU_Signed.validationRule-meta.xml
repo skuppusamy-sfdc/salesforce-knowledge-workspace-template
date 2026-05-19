@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MOU_Signed</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is MOU Signed for all service lines.</description>
+    <errorConditionFormula>ISPICKVAL(StageName, &quot;MOU Signed&quot;) &amp;&amp; 
+(ISNULL(MOU_Sign_Date__c))</errorConditionFormula>
+    <errorDisplayField>MOU_Sign_Date__c</errorDisplayField>
+    <errorMessage>Required Fields: MOU Sign Date.</errorMessage>
+</ValidationRule>

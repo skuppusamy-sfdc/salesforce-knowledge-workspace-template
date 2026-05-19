@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlatformEventChannelMember xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enrichedFields>
+        <name>Start_Admin_Work_Ahead_of_Clinical_Work__c</name>
+    </enrichedFields>
+    <eventChannel>Contract_HireDate_Trigger__chn</eventChannel>
+    <filterExpression>(Status = &apos;Executed&apos; AND RecordTypeId = &apos;0127x00000GcMEPAA3&apos; AND Hire_Date__c != null AND (Employment_Type__c = &apos;Employee&apos; OR Employment_Type__c = &apos;Independent Contractor&apos;) AND Contract_HireDate_Trigger_Ack__c = false)</filterExpression>
+    <selectedEntity>ContractChangeEvent</selectedEntity>
+</PlatformEventChannelMember>

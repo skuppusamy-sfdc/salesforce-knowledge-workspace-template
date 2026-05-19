@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Health Cloud Restricted User Group - Manage Client Contracts</label>
+    <permissionSets>Create_and_Manage_Personal_Reports</permissionSets>
+    <permissionSets>Create_and_Manage_Public_Reports</permissionSets>
+    <permissionSets>Export_Reports</permissionSets>
+    <permissionSets>Health_Cloud_PNM</permissionSets>
+    <permissionSets>Health_Cloud_Restricted_User_Corporate_Support_Permission</permissionSets>
+    <permissionSets>Health_Cloud_Restricted_User_Health_Cloud_Platform</permissionSets>
+    <permissionSets>Health_Cloud_Restricted_User_Manage_Client_Contracts</permissionSets>
+    <permissionSets>Manage_Client_Contracts</permissionSets>
+    <permissionSets>Manage_Facility_Profiles</permissionSets>
+    <permissionSets>OmniStudio_User_Extension</permissionSets>
+    <permissionSets>View_Client_BD</permissionSets>
+    <permissionSets>View_Client_Rates</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

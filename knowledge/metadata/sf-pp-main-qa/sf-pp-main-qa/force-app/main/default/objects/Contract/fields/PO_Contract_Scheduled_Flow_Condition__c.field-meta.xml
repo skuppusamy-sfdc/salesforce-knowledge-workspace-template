@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Contract_Scheduled_Flow_Condition__c</fullName>
+    <description>created as part of PR1050558-3207. It is used to identify contract records in the scheduled flow entry condition so that only those contracts are processed. The flow runs daily, and if this field is set to True (checked), the record will be picked up by the scheduled flow.</description>
+    <formula>IF(RecordType.DeveloperName == &apos;Client&apos; &amp;&amp;  ISPICKVAL(Status, &apos;Executed&apos;) &amp;&amp; StartDate == TODAY(), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PO Contract Scheduled Flow Condition</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

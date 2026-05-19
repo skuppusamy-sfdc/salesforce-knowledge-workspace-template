@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_EM_HM_FSED_PE_Build_Sales_Strategy</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Build Sales Strategy.</description>
+    <errorConditionFormula>IF(
+  NOT(
+    OR(RecordType.Name = &quot;EM Sales Opportunity&quot; ||
+       RecordType.Name = &quot;Patient Engagement Opportunity&quot; ||
+       RecordType.Name = &quot;Free-Standing ED Opportunity&quot; ||
+       RecordType.Name = &quot;HM Sales Opportunity&quot;)) &amp;&amp;
+  (ISPICKVAL(StageName, &quot;Build Sales Strategy&quot;)&amp;&amp;
+  TEXT(Bid_Process__c)= &quot;&quot;),true,false
+)</errorConditionFormula>
+    <errorMessage>Required Field: RFP Process</errorMessage>
+</ValidationRule>

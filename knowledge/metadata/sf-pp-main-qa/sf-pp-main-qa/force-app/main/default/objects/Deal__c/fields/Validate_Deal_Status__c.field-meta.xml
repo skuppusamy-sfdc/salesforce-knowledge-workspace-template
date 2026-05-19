@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Deal_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Count_of_Opportunities__c =  Won_Opportunities__c &amp;&amp; text(Status__c) != &quot;Won&quot;, 1,
+IF(Count_of_Opportunities__c =  Lost_Opportunities__c &amp;&amp; text(Status__c) != &quot;Lost&quot;, 1,
+IF(Count_of_Opportunities__c =  Open_Opportunities__c &amp;&amp; text(Status__c) != &quot;Open&quot;, 1,
+IF(Count_of_Opportunities__c =  Closed_Client_Abandoned_Proposal_Opps__c &amp;&amp; text(Status__c) != &quot;Closed - Client Abandoned Proposal&quot;, 1,
+IF(Count_of_Opportunities__c =  Closed_No_Change_Opportunities__c &amp;&amp; text(Status__c) != &quot;Closed - No Change&quot;, 1,
+0)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Validate Deal Status</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

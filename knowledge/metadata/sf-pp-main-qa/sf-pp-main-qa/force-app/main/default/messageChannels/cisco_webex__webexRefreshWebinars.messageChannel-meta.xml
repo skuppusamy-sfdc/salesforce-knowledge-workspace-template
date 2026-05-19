@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to refresh webinar component when a change event occurs</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <fieldName>activeTab</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>site</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexRefreshWebinars</masterLabel>
+</LightningMessageChannel>

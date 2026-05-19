@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clinician_Offboarding</fullName>
+    <active>true</active>
+    <businessProcess>Clinician Offboarding Support Process</businessProcess>
+    <label>Clinician Offboarding</label>
+    <picklistValues>
+        <picklist>Bonus_Unit_of_Measure__c</picklist>
+        <values>
+            <fullName>per Hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>per Shift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Issues_Reason__c</picklist>
+        <values>
+            <fullName>Contractual Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractual Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Litigation History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malpractice History</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mission Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduling Concerns</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closed_Reason__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance Edge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Offboarding_Decision__c</picklist>
+        <values>
+            <fullName>Confirmed Exit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Exiting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Reason__c</picklist>
+        <values>
+            <fullName>Agreement Not Returned%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coverage Discontinued%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deceased%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital App Not Returned%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Contract Termination%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Expired%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEP Not Returned%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Issues with facility%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Hospital%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Provider%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Risk Manager%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privileges</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Professionalism_Reason__c</picklist>
+        <values>
+            <fullName>Inappropriateness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Hygiene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Integrity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurrent Tardiness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qualifications_Reason__c</picklist>
+        <values>
+            <fullName>Application Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Criminal Background</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impairment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Revocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>References</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quality_Reason__c</picklist>
+        <values>
+            <fullName>Clinical Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Acuity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider Skillset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider%27s Efficiencies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Shift_Bonus__c</picklist>
+        <values>
+            <fullName>Abrupt Removal of Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core Provider Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Higher Hourly Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holiday Pay Extra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Start-Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shift Travel-Expenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surge%2FAdditional Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiered Bonus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Termination__c</picklist>
+        <values>
+            <fullName>ADA Accommodation Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accepted Another Job</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acquisition%2FMerger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agreement Expired%2FTerminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agreement Not Returned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Career Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coverage Discontinued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gross Misconduct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital App Not Returned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Contract Termination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hours of Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Abandonment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack Of Advancement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Flexibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misconduct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutual Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Disclosed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEP Not Returned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Issues with Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Relationship - K-1 Use Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Risk Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privilege Expiration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privileges Expired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider Inactivity %3E12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider Unresponsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reduction in Force</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reorganization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Status Change - Provider Use Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violation of Company Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Job</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Request_Type__c</picklist>
+        <values>
+            <fullName>Initial Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revised Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Reason__c</picklist>
+        <values>
+            <fullName>Anger Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interpersonal Skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organizational Skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shift Attendance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Type__c</picklist>
+        <values>
+            <fullName>Critical Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intake Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

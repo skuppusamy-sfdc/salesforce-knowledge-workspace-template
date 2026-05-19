@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accepted Another Job</fullName>
+        <default>false</default>
+        <label>Accepted Another Job</label>
+    </customValue>
+    <customValue>
+        <fullName>Acquisition/Merger</fullName>
+        <default>false</default>
+        <label>Acquisition/Merger</label>
+    </customValue>
+    <customValue>
+        <fullName>ADA Accommodation Denied</fullName>
+        <default>false</default>
+        <label>ADA Accommodation Denied</label>
+    </customValue>
+    <customValue>
+        <fullName>Agreement Expired/Terminated</fullName>
+        <default>false</default>
+        <label>Agreement Expired/Terminated</label>
+    </customValue>
+    <customValue>
+        <fullName>Agreement Not Returned</fullName>
+        <default>false</default>
+        <label>Agreement Not Returned</label>
+    </customValue>
+    <customValue>
+        <fullName>Attendance</fullName>
+        <default>false</default>
+        <label>Attendance</label>
+    </customValue>
+    <customValue>
+        <fullName>Career Change</fullName>
+        <default>false</default>
+        <label>Career Change</label>
+    </customValue>
+    <customValue>
+        <fullName>Compensation</fullName>
+        <default>false</default>
+        <label>Compensation</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Termination</fullName>
+        <default>false</default>
+        <label>Contract Termination</label>
+    </customValue>
+    <customValue>
+        <fullName>Coverage Discontinued</fullName>
+        <default>false</default>
+        <label>Coverage Discontinued</label>
+    </customValue>
+    <customValue>
+        <fullName>Deceased</fullName>
+        <default>false</default>
+        <label>Deceased</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Reasons</fullName>
+        <default>false</default>
+        <label>Family Reasons</label>
+    </customValue>
+    <customValue>
+        <fullName>Gross Misconduct</fullName>
+        <default>false</default>
+        <label>Gross Misconduct</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital App Not Returned</fullName>
+        <default>false</default>
+        <label>Hospital App Not Returned</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Contract Termination</fullName>
+        <default>false</default>
+        <label>Hospital Contract Termination</label>
+    </customValue>
+    <customValue>
+        <fullName>Hours of Coverage</fullName>
+        <default>false</default>
+        <label>Hours of Coverage</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Expired</fullName>
+        <default>false</default>
+        <label>Insurance Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Job Abandonment</fullName>
+        <default>false</default>
+        <label>Job Abandonment</label>
+    </customValue>
+    <customValue>
+        <fullName>Lack Of Advancement</fullName>
+        <default>false</default>
+        <label>Lack Of Advancement</label>
+    </customValue>
+    <customValue>
+        <fullName>Lack of Flexibility</fullName>
+        <default>false</default>
+        <label>Lack of Flexibility</label>
+    </customValue>
+    <customValue>
+        <fullName>Location</fullName>
+        <default>false</default>
+        <label>Location</label>
+    </customValue>
+    <customValue>
+        <fullName>Management</fullName>
+        <default>false</default>
+        <label>Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Misconduct</fullName>
+        <default>false</default>
+        <label>Misconduct</label>
+    </customValue>
+    <customValue>
+        <fullName>Mutual Agreement</fullName>
+        <default>false</default>
+        <label>Mutual Agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Disclosed</fullName>
+        <default>false</default>
+        <label>Not Disclosed</label>
+    </customValue>
+    <customValue>
+        <fullName>Past Issues with Facility</fullName>
+        <default>false</default>
+        <label>Past Issues with Facility</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment Relationship - K-1 Use Only</fullName>
+        <default>false</default>
+        <label>Payment Relationship - K-1 Use Only</label>
+    </customValue>
+    <customValue>
+        <fullName>PEP Not Returned</fullName>
+        <default>false</default>
+        <label>PEP Not Returned</label>
+    </customValue>
+    <customValue>
+        <fullName>Performance</fullName>
+        <default>false</default>
+        <label>Performance</label>
+    </customValue>
+    <customValue>
+        <fullName>Per Hospital</fullName>
+        <default>false</default>
+        <label>Per Hospital</label>
+    </customValue>
+    <customValue>
+        <fullName>Per Provider</fullName>
+        <default>false</default>
+        <label>Per Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Per Risk Manager</fullName>
+        <default>false</default>
+        <label>Per Risk Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Privilege Expiration</fullName>
+        <default>false</default>
+        <label>Privilege Expiration</label>
+    </customValue>
+    <customValue>
+        <fullName>Privileges Expired</fullName>
+        <default>false</default>
+        <label>Privileges Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider Inactivity &gt;12 Months</fullName>
+        <default>false</default>
+        <label>Provider Inactivity &gt;12 Months</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider Unresponsive</fullName>
+        <default>false</default>
+        <label>Provider Unresponsive</label>
+    </customValue>
+    <customValue>
+        <fullName>Reduction in Force</fullName>
+        <default>false</default>
+        <label>Reduction in Force</label>
+    </customValue>
+    <customValue>
+        <fullName>Reorganization</fullName>
+        <default>false</default>
+        <label>Reorganization</label>
+    </customValue>
+    <customValue>
+        <fullName>Retirement</fullName>
+        <default>false</default>
+        <label>Retirement</label>
+    </customValue>
+    <customValue>
+        <fullName>School</fullName>
+        <default>false</default>
+        <label>School</label>
+    </customValue>
+    <customValue>
+        <fullName>Status Change - Provider Use Only</fullName>
+        <default>false</default>
+        <label>Status Change - Provider Use Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Violation of Company Policy</fullName>
+        <default>false</default>
+        <label>Violation of Company Policy</label>
+    </customValue>
+    <customValue>
+        <fullName>Work Environment</fullName>
+        <default>false</default>
+        <label>Work Environment</label>
+    </customValue>
+    <customValue>
+        <fullName>Working Conditions</fullName>
+        <default>false</default>
+        <label>Working Conditions</label>
+    </customValue>
+    <customValue>
+        <fullName>Wrong Job</fullName>
+        <default>false</default>
+        <label>Wrong Job</label>
+    </customValue>
+    <customValue>
+        <fullName>Clean Up</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clean Up</label>
+    </customValue>
+    <customValue>
+        <fullName>Declined to comply w/Covid vaccine req</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Declined to comply w/Covid vaccine req</label>
+    </customValue>
+    <customValue>
+        <fullName>Employment Terminated</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Employment Terminated</label>
+    </customValue>
+    <customValue>
+        <fullName>INTVW @facility - exp</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>INTVW @facility - exp</label>
+    </customValue>
+    <customValue>
+        <fullName>Without Cause</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Without Cause</label>
+    </customValue>
+    <customValue>
+        <fullName>Midlevel coverage discontinued</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Midlevel coverage discontinued</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Responsive</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Not Responsive</label>
+    </customValue>
+    <customValue>
+        <fullName>Paperwork Not Returned</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Paperwork Not Returned</label>
+    </customValue>
+    <customValue>
+        <fullName>Per SVP/SMO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Per SVP/SMO</label>
+    </customValue>
+    <customValue>
+        <fullName>PFA Not Required</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFA Not Required</label>
+    </customValue>
+    <customValue>
+        <fullName>Inactive</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Inactive</label>
+    </customValue>
+    <customValue>
+        <fullName>test</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>test</label>
+    </customValue>
+    <customValue>
+        <fullName>Per Provider. Per Risk Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Per Provider. Per Risk Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Physician Never Worked</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Physician Never Worked</label>
+    </customValue>
+    <customValue>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Qualification</label>
+    </customValue>
+    <customValue>
+        <fullName>Resigned</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Resigned</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheduling</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Scheduling</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheduling Issues</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Scheduling Issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown - clean up</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unknown - clean up</label>
+    </customValue>
+    <customValue>
+        <fullName>Lengthy Licensing Process</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lengthy Licensing Process</label>
+    </customValue>
+    <customValue>
+        <fullName>Billing/Enrollment Issues</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Billing/Enrollment Issues</label>
+    </customValue>
+    <masterLabel>Inactive Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

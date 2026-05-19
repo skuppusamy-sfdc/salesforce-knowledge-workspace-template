@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SM_Sync__c</fullName>
+    <formula>AND(Account.RecordType_DeveloperName__c = &quot;Clinician&quot;, TEXT(bpats__Contact_Relationship__c) &lt;&gt; &quot;Do Not Use&quot; )</formula>
+    <label>SM Sync</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

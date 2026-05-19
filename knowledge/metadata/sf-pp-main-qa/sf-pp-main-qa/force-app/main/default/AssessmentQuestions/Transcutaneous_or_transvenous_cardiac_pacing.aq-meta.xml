@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Transcutaneous or transvenous cardiac pacing</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Transcutaneous or transvenous cardiac pacing</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Transcutaneous_or_transvenous_cardiac_pacing</developerName>
+    <name>Transcutaneous or transvenous cardiac pacing</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

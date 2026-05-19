@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Texas_Activity</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>ED_Volume__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>TX</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,No Interest,Target</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>6/1/2019</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>The hospitals of providence,wise regional,Tenet Healthcare,Altus Health,LifeCare,Nexus,Texas Health Resources,Nobilis,Pine Creek,Specialty,Surgery,CLOSED,SUrgical,Rehab,behavioral,LTAC,Kindred,Select Specialty,Acuity</value>
+    </filters>
+    <filters>
+        <field>Account_Type__c</field>
+        <operation>equals</operation>
+        <value>System,Sub-system,Hospital</value>
+    </filters>
+    <filters>
+        <field>ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>8000</value>
+    </filters>
+    <label>Texas Activity</label>
+</ListView>

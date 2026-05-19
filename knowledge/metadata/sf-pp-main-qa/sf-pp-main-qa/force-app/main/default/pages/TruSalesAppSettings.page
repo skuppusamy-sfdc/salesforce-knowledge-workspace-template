@@ -1,0 +1,3343 @@
+<apex:page id="TruSalesAppSettings" title="Discovery Bot Settings" controller="TruSalesAppSettingsController"
+           action="{!checkSettingsExisting}"
+           standardStylesheets="true" docType="html-5.0">
+
+    <script src='https://cdn.tiny.cloud/1/3wye1gebnib52fzvxv0cf4detpujdf8p390j3x44l4syh20i/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+    </script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    </script>
+
+
+    <!--title="Feedback Request Settings"-->
+
+    <apex:slds />
+    <apex:form >
+        <apex:actionFunction name="updateProductMapFieldObject" action="{!updateProductMapFieldObject}"
+                             reRender="productMapTable"
+                             onComplete="getTruVoiceProducts()">
+            <apex:param name="selectedFields" value="{!selectedFieldsForProductMap}"
+                        assignTo="{!selectedFieldsForProductMap}"/>
+        </apex:actionFunction>
+
+        <apex:actionFunction name="setTruVoiceProducts" action="{!setTruVoiceProducts}" reRender="productMapTable">
+            <apex:param name="products" value="" assignTo="{!truVoiceProductsJSON}"/>
+        </apex:actionFunction>
+
+<!--        STARUS BAR-->
+        <apex:actionPoller id="actionPollerStatusBar" action="{!checkStatus}" enabled="{!bProcess}" interval="5" reRender="statusBarSave" />
+
+
+        <apex:actionFunction name="getProducFieldsView" action="{!getProducFieldsView}" reRender="scripts,testBlock">
+            <apex:param name="productFields" value="{!checkedProductFieldsValueView}" assignTo="{!checkedProductFieldsValueView}"/>
+        </apex:actionFunction>
+
+        <apex:actionFunction name="getOpportunityFieldsView" action="{!getOpportunityFieldsView}" reRender="scripts,testBlock">
+            <apex:param name="opportunityFields" value="{!checkedOpportunityFieldsValueView}" assignTo="{!checkedOpportunityFieldsValueView}"/>
+        </apex:actionFunction>
+
+        <apex:actionFunction name="UpdateBlockForProductTrigger" reRender="BlockForProductTriggers" onComplete="showAllCheckboxOnProductTrigger()"/>
+
+        <apex:actionFunction name="updateProductTriggerFieldValuesWithProduct" action="{!updateProductTriggerFieldValuesWithProduct}"  reRender="testBlock" >
+            <apex:param name="selecterValuePickListFromProductTrigger" value="{!selectedValuePickListFromProductTrigger}"
+                         assignTo="{!selectedValuePickListFromProductTrigger}"/>
+            <apex:param name="statusSelectedValuePickListFromProductTrigger" value="{!statusSelectedValuePickListFromProductTrigger}"
+                         assignTo="{!statusSelectedValuePickListFromProductTrigger}"/>
+        </apex:actionFunction>
+
+        <apex:actionFunction name="updateProductTriggerFieldValuesWithOpportunity" action="{!updateProductTriggerFieldValuesWithOpportunity}"  reRender="testBlock" >
+            <apex:param name="selectedOpportunityValuePickListFromProductTrigger" value="{!selectedOpportunityValuePickListFromProductTrigger}"
+                         assignTo="{!selectedOpportunityValuePickListFromProductTrigger}"/>
+            <apex:param name="statusSelectedOpportunityValuePickListFromProductTrigger" value="{!statusSelectedOpportunityValuePickListFromProductTrigger}"
+                         assignTo="{!statusSelectedOpportunityValuePickListFromProductTrigger}"/>
+        </apex:actionFunction>
+
+        <apex:actionFunction name="clearProductFields" action="{!clearProductFields}" reRender="timeoutCheck"/>
+        <apex:actionFunction name="clearOpportunityFields" action="{!clearOpportunityFields}" reRender="timeoutCheck"/>
+
+        <apex:actionFunction name="passSalesStages" action="{!updateSalesStages}" reRender="salesStagesPanel">
+            <apex:param name="salesStagesList" value=""></apex:param>
+        </apex:actionFunction>
+
+        <apex:actionFunction name="passSalesStagesFilter" action="{!updateSalesStagesFilter}" reRender="salesStagesFilterPanel">
+            <apex:param name="filterEnabled" value=""></apex:param>
+        </apex:actionFunction>
+
+
+        <!--ISSUE45-->
+        <!--Update All Selected Product From Product Trigger -->
+        <apex:actionFunction name="updatedAllSelectedProduct" action="{!updatedAllSelectedProduct}" reRender="testBlock">
+            <apex:param name="allProductUpdated" value="{!allProductUpdated}" assignTo="{!allProductUpdated}"/>
+        </apex:actionFunction>
+
+
+        <!--Update All Selected Opp From Product Trigger -->
+        <apex:actionFunction name="updatedAllSelectedOpportunity" action="{!updatedAllSelectedOpportunity}" reRender="testBlock">
+            <apex:param name="allProductUpdated" value="{!allOpportunityUpdated}" assignTo="{!allOpportunityUpdated}"/>
+        </apex:actionFunction>
+
+        <script>
+
+            function updateUsersCheckBoxes() {
+
+                console.log('updateUsersCheckBoxes');
+
+                let allUserCb = document.getElementById('all-users-field-map');
+                let allUserInput = Array.from(document.querySelectorAll('.userFieldMap'));
+
+                let UserInp = allUserInput.filter(checkbox=>{
+                    return checkbox.checked === true;
+                });
+
+
+                if(UserInp.length > 0 && allUserInput.length != UserInp.length)
+                {
+                    if (allUserCb.readOnly)
+                    {
+                        allUserCb.checked = allUserCb.readOnly = false;
+                    }
+                    else
+                    {
+                        allUserCb.readOnly = allUserCb.indeterminate = true;
+                    }
+
+                }
+                else if(UserInp.length == 0)
+                {
+                    allUserCb.checked = false;
+                    allUserCb.indeterminate = false;
+                    allUserCb.readOnly = false;
+                }
+                else if(UserInp.length > 0 && allUserInput.length == UserInp.length)
+                {
+
+                    allUserCb.checked = true;
+                    allUserCb.indeterminate = false;
+                    allUserCb.readOnly = false;
+                }
+
+
+            }
+
+
+
+
+            function updateProfileFieldValuesInCustomSetting() {
+
+                console.log('updateProfileFieldValuesInCustomSetting');
+
+                let allProfileCb = document.getElementById('all-profiles-field-map');
+                let allProfileInput = Array.from(document.querySelectorAll('.profileCheckBox'));
+
+
+                allProfileInput.forEach(input => {
+                    if (input.getAttribute('data-is-selected') == 'true') {
+                        input.checked = true;
+                        input.setAttribute('data-is-selected','false');
+                    }
+                });
+
+                let profileInp = allProfileInput.filter(checkbox=>{
+                    return checkbox.checked === true;
+                });
+
+
+                if(profileInp.length > 0 && allProfileInput.length != profileInp.length)
+                {
+                    if (allProfileCb.readOnly)
+                    {
+                        allProfileCb.checked = allProfileCb.readOnly = false;
+                    }
+                    else
+                    {
+                        allProfileCb.readOnly = allProfileCb.indeterminate = true;
+                    }
+
+                }
+                else if(profileInp.length == 0)
+                {
+                    allProfileCb.checked = false;
+                    allProfileCb.indeterminate = false;
+                    allProfileCb.readOnly = false;
+                }
+                else if(profileInp.length > 0 && allProfileInput.length == profileInp.length)
+                {
+                    allProfileCb.checked = true;
+                    allProfileCb.indeterminate = false;
+                    allProfileCb.readOnly = false;
+                }
+
+
+                let resultStr = '';
+                let ObjArray = new Array();
+
+                profileInp.forEach(item=>{
+                    let objResponse = {
+                        'Id' : item.dataset.profileId,
+                        'label' : item.dataset.profileLabel
+                    };
+
+                    ObjArray.push(objResponse);
+                });
+
+
+                resultStr = JSON.stringify(ObjArray);
+
+                let profileInpHidden = document.getElementById('{!$Component.profileInpHidden}');
+                profileInpHidden.value = resultStr;
+
+            }
+
+
+
+
+            function updateRolesFieldValuesInCustomSetting() {
+
+                console.log('updateRolesFieldValuesInCustomSetting');
+
+
+
+                let allRoleCb = document.getElementById('all-roles-field-map');
+                let allRoleInput = Array.from(document.querySelectorAll('.roleCheckBox'));
+
+                allRoleInput.forEach(input => {
+                    if (input.getAttribute('data-is-selected') == 'true') {
+                        input.checked = true;
+                        input.setAttribute('data-is-selected','false');
+                    }
+                });
+
+
+                let roleInp = allRoleInput.filter(checkbox=>{
+                    return (checkbox.checked === true);
+                });
+
+
+                if(roleInp.length > 0 && allRoleInput.length != roleInp.length)
+                {
+                    if (allRoleCb.readOnly)
+                    {
+                        allRoleCb.checked = allRoleCb.readOnly = false;
+                    }
+                    else
+                    {
+                        allRoleCb.readOnly = allRoleCb.indeterminate = true;
+                    }
+
+                }
+                else if(roleInp.length == 0)
+                {
+                    allRoleCb.checked = false;
+                    allRoleCb.indeterminate = false;
+                    allRoleCb.readOnly = false;
+                }
+                else if(roleInp.length > 0 && allRoleInput.length == roleInp.length)
+                {
+                    allRoleCb.checked = true;
+                    allRoleCb.indeterminate = false;
+                    allRoleCb.readOnly = false;
+                }
+
+
+
+
+                let resultStr = '';
+                let ObjArray = new Array();
+
+                roleInp.forEach(item=>{
+                    let objResponse = {
+                        'Id' : item.dataset.roleId,
+                        'label' : item.dataset.roleLabel
+                    };
+
+                    ObjArray.push(objResponse);
+                });
+
+
+                resultStr = JSON.stringify(ObjArray);
+
+                let roleInpHidden = document.getElementById('{!$Component.rolesInpHidden}');
+                roleInpHidden.value = resultStr;
+
+            }
+
+
+            function showAllCheckboxOnProductTrigger() {
+
+                console.log('showAllCheckboxOnProductTrigger');
+
+                let allSelectedCheckbox = document.getElementById('all-productTrigger-field-map');
+
+
+                let allProductTriggerCheckboxesFirst = Array.from(document.querySelectorAll('.productTriggerFirst'));
+                let allProductTriggerCheckboxesSecond = Array.from(document.querySelectorAll('.productTriggerSecond'));
+                allProductTriggerCheckboxesFirst.push(...allProductTriggerCheckboxesSecond);
+
+                let productTriggerCheckbox = allProductTriggerCheckboxesFirst.filter(checkbox=>{
+                    return checkbox.checked === true;
+                });
+
+
+                if(productTriggerCheckbox.length > 0 && allProductTriggerCheckboxesFirst.length != productTriggerCheckbox.length)
+                {
+                    if (allSelectedCheckbox.readOnly)
+                    {
+                        allSelectedCheckbox.checked = allSelectedCheckbox.readOnly = false;
+                    }
+                    else
+                    {
+                        allSelectedCheckbox.readOnly = allSelectedCheckbox.indeterminate = true;
+                    }
+
+                }
+                else if(productTriggerCheckbox.length == 0)
+                {
+                    allSelectedCheckbox.checked = false;
+                    allSelectedCheckbox.indeterminate = false;
+                    allSelectedCheckbox.readOnly = false;
+                }
+                else if(productTriggerCheckbox.length > 0 && allProductTriggerCheckboxesFirst.length == productTriggerCheckbox.length)
+                {
+
+                    allSelectedCheckbox.checked = true;
+                    allSelectedCheckbox.indeterminate = false;
+                    allSelectedCheckbox.readOnly = false;
+                }
+
+            }
+
+            function showOpoOwner() {
+                alert('Owner!!!!');
+            }
+
+
+
+        </script>
+
+
+        <div class="slds-scope slds-m-around--medium" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div style="display:flex; justify-content:center; position:sticky; top:0; height:0px!important">
+                <apex:outputPanel style="width:1000px" id="msg">
+                    <div id="msgs">
+                        <apex:pageMessages />
+                    </div>
+                    <script>
+                        (() => {
+                            let messages = document.getElementById('msgs');
+                            setTimeout(() => {
+                                messages.innerHTML = '';
+                            }, 7000);
+                        })()
+                    </script>
+                </apex:outputPanel>
+            </div>
+            <article class="slds-card" style="position:static!important">
+                <div class="slds-card__header">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate slds-card__header">
+                        <div class="slds-media__figure slds-icon_container slds-icon-standard-account"
+                             title="Feedback Request Settings">
+                            <img src="{!$Resource.TruSalesPicture}" alt="Feedback Request Settings"
+                                 style="height: 32px"/>
+                            <span class="slds-assistive-text">Feedback Request Settings</span>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title slds-truncate" title="Discovery Bot Settings"
+                                style="font-size: 2rem;">Discovery Bot Settings </h2>
+                        </div>
+
+                        <div id="statusBarSaveDiv" style = "display:none;width: 250px; text-align: center;">
+                            <apex:outputPanel styleClass="statusBarSave" id="statusBarSave" >
+                                <div class="slds-grid slds-gutters" style="margin-left:1%;">
+                                    <div class="slds-col slds-size_1-of-3">
+                                        <h1 style=" font-weight: bold;">
+                                            Save status
+                                        </h1>
+                                        <div style="display: block; margin-top:5%;" class="slds-progress-bar slds-progress-bar_circular" aria-valuemin="0" aria-valuemax="100"
+                                             aria-valuenow="{!deProgressBarWidth}" role="progressbar">
+                                        <span class="slds-progress-bar__value slds-progress-bar__value_success" style="width:{!deProgressBarWidth}%;">
+                                            <span class="slds-assistive-text">Progress: {!deProgressBarWidth}%</span>
+                                        </span>
+                                            <div class="slds-text-align--center slds-text-title" style="color:forestgreen;">
+                                            {!strStatus}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </div>
+
+                    </header>
+                    <div>Configure the opportunity settings that will cause the request feedback process to
+                        automatically load for a sales representative when they close an opportunity.
+                    </div>
+                </div>
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="slds-tabs_default slds-tabs_medium">
+                        <ul class="slds-tabs_default__nav" role="tablist">
+                            <li class="slds-tabs_default__item slds-active " title="Integration" role="presentation">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="0"
+                                   aria-selected="true" aria-controls="tab-panel-Integration"
+                                   id="tab-anchor-Integration">Integration</a>
+                            </li>
+
+                                <!--EMAIL-->
+<!--                            <li class="slds-tabs_default__item" title="Email" role="presentation">-->
+<!--                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"-->
+<!--                                   aria-selected="false" aria-controls="tab-panel-EmailTab" id="tab-anchor-Email">Email</a>-->
+<!--                            </li>-->
+
+                            <li class="slds-tabs_default__item " title="Triggers" role="presentation">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-Triggers" id="tab-anchor-Triggers">Field &amp; Value Triggers</a>
+                            </li>
+<!--                            <li class="slds-tabs_default__item " title="FieldValueTriggers" role="presentation">-->
+<!--                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"-->
+<!--                                   aria-selected="false" aria-controls="tab-panel-FieldValueTriggers" id="tab-anchor-FieldValueTriggers">Field &amp; Value Triggers</a>-->
+<!--                            </li>-->
+                            <li class="slds-tabs_default__item" title="Users" role="presentation">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-UsersTab" id="tab-anchor-Products">Users</a>
+                            </li>
+                            <li class="slds-tabs_default__item" title="Outcomes" role="presentation"
+                                style="{!IF(settings.TruVoiceIntegration__c==true,'display:block;','display:none;')}">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-Outcomes" id="tab-anchor-Outcomes">Outcomes</a>
+                            </li>
+                            <li class="slds-tabs_default__item" title="Types" role="presentation"
+                                style="{!IF(settings.TruVoiceIntegration__c==true,'display:block;','display:none;')}">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-Types" id="tab-anchor-Types">Types</a>
+                            </li>
+                            <li class="slds-tabs_default__item" title="Amount" role="presentation"
+                                style="{!IF(settings.TruVoiceIntegration__c==true,'display:block;','display:none;')}">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-Amount"
+                                   id="tab-anchor-Amount">Amount</a>
+                            </li>
+                            <li class="slds-tabs_default__item" title="ProductDefinition" role="presentation">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-ProductsDefinition" id="tab-anchor-ProductDefinition">Product Definition</a>
+                            </li>
+                            <li class="slds-tabs_default__item" title="ProductTriggers" role="presentation"
+                                style="{!IF(settings.TruVoiceIntegration__c==false,'display:block;','display:none;')}">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-ProductTriggers" id="tab-anchor-ProductTriggers">Product Triggers</a>
+                            </li>
+<!--                            <li class="slds-tabs_default__item" title="Products" role="presentation"-->
+<!--                                style="{!IF(settings.TruVoiceIntegration__c==true,'display:block;','display:none;')}">-->
+<!--                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"-->
+<!--                                   aria-selected="false" aria-controls="tab-panel-Products" id="tab-anchor-Products">Products</a>-->
+<!--                            </li>-->
+                            <li class="slds-tabs_default__item" title="MapProducts" role="presentation"
+                                style="{!IF(settings.TruVoiceIntegration__c==true,'display:block;','display:none;')}">
+                                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1"
+                                   aria-selected="false" aria-controls="tab-panel-MapProducts"
+                                   id="tab-anchor-MapProducts" onclick="clickMapProducts()">Map Products</a>
+                            </li>
+                        </ul>
+
+                        <!--INTEGRATION-->
+                        <div id="tab-panel-Integration" class="slds-tabs_default__content slds-show slds-m-top--medium"
+                             role="tabpanel" aria-labelledby="tab-anchor-Integration">
+                            <h1 class="slds-text-heading--medium">Activate Automated Feedback Request Process</h1>
+                            <hr/>
+                            When enabled, the request feedback process will automatically happen as your sales
+                            representatives close an opportunity that meets the settings enabled below.
+                            <div class="slds-m-around--medium">
+                                <div class="slds-form-element">
+                                    <label class="slds-checkbox_toggle slds-grid">
+                                        <apex:inputCheckbox value="{!settings.Is_Active__c}" id="isActiveCheckbox"/>
+                                        <span id="isActiveCheckbox" class="slds-checkbox_faux_container"
+                                              aria-live="assertive">
+												<span class="slds-checkbox_faux"></span>
+												<span class="slds-checkbox_on">Activate on opportunity close.</span>
+												<span class="slds-checkbox_off">Feedback Request Process Disabled</span>
+											</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <h1 class="slds-text-heading--medium">Integration Path</h1>
+                            <hr/>
+                            Select TruSales, if you have TruSales enabled, otherwise select TruVoice
+                            <div class="slds-m-around--medium">
+                                <div class="slds-form-element slds-grid slds-wrap slds-grid--vertical-align-center">
+                                    <div class="slds-col slds-no-flex"><p>Integration path</p></div>
+                                    <div class="slds-col slds-no-flex slds-m-left--small">
+                                        <apex:selectList size="1" multiSelect="false"
+                                                         value="{!settings.TruVoiceIntegration__c}"
+                                                         id="integrationSelectList" styleClass="slds-select"
+                                                         onChange="changeTabVisible()">
+                                            <apex:selectOption itemLabel="TruVoice"
+                                                               itemValue="true"></apex:selectOption>
+                                            <apex:selectOption itemLabel="TruSales"
+                                                               itemValue="false"></apex:selectOption>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h1 class="slds-text-heading--medium">TruVoice API Key and Client ID</h1>
+                            <hr/>
+                            <div>Add your TruVoice API Key and Client ID, which can be found in the
+                                <a href="https://apps.primary-intel.com/settings/client-settings" target="_blank">Client
+                                    Settings module in TruVoice</a>, to enable TruVoice REST API calls.
+                            </div>
+                            <div class="slds-grid slds-m-around--medium">
+                                <div class="slds-form-element">
+                                    <label class="slds-form-element__label" for="text-input-id-1">TruVoice API
+                                        Key</label>
+                                    <div class="slds-form-element__control">
+                                        <apex:inputField styleClass="slds-input"
+                                                         value="{!settings.TruVoice_API_Key__c}"/>
+                                    </div>
+                                </div>
+                                <div class="slds-form-element slds-m-left--small">
+                                    <label class="slds-form-element__label" for="text-input-id-1">TruVoice Client
+                                        ID</label>
+                                    <div class="slds-form-element__control">
+                                        <apex:inputField styleClass="slds-input"
+                                                         value="{!settings.TruVoice_Client_ID__c}"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-m-top--small">
+                                Select TruVoice endpoint
+                                <div class="slds-form-element slds-grid slds-grid--vertical-align-center slds-m-top--medium">
+                                    <div class="slsd-col slds-no-flex"><p>TrueVoice Endpoint</p></div>
+                                    <div class="slsd-col slds-no-flex slds-m-left--small">
+                                        <apex:selectList id="endpointList" styleClass="slds-select" multiselect="false"
+                                                         size="1" value="{!selectedAPI}">
+                                            <apex:selectOptions value="{!endpoints}"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+                            </div>
+                            <apex:commandButton value="Update" action="{!UpdateIntegrationTab}"
+                                                styleClass="slds-button slds-button--brand slds-m-top--medium"
+                                                rerender="collectorList,endpointList,ERRORSBLOCK"/>
+                            <!--							CollectorBlock-->
+                            <div class="slds-m-top--medium" id="CollectorBlock">
+                                <!--								style="{!IF(settings.TruVoiceIntegration__c==true,'display:block;','display:none;')}"-->
+                                <h1 class="slds-text-heading--medium">Survey Collector</h1>
+                                <hr/>
+                                Select the TruVoice survey collector to use for feedback requests.
+                                <div class="slds-grid slds-grid_align-spread">
+                                    <div class="slds-m-around--medium slds-size--1-of-2">
+                                        <div class="slds-form-element slds-grid slds-grid--vertical-align-center">
+                                            <div class="slsd-col slds-no-flex">Collector</div>
+                                            <div class="slsd-col slds-no-flex slds-m-left--small">
+                                                <apex:selectList id="collectorList" styleClass="slds-select"
+                                                                 multiselect="false" size="1" value="{!initiativeId}">
+                                                    <apex:selectOptions value="{!selectValuesCollectors}"/>
+                                                    <apex:actionSupport event="onchange" action="{!setCollectorID}"
+                                                                        reRender="collectorList"/>
+                                                </apex:selectList>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slds-m-top--medium">
+                                <apex:inputHidden value="{!showErrorMsg}" id="errorMsgInput"/>
+                                <apex:outputPanel style="{!IF(showErrorMsg==true,'display:block;','display:none;')}"
+                                                  id="ERRORSBLOCK">
+                                    <div style="font-weight: bold; text-align: center; font-size: 1rem"
+                                         id="msgBlockError">
+                                        <apex:pageMessages />
+                                        <div>
+                                            <apex:commandButton styleClass="slds-button slds-button--destructive"
+                                                                reRender="ERRORSBLOCK" onClick="hideErrorMsg()"
+                                                                value="OK"/>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        function hideErrorMsg() {
+                                            console.log('clicked');
+                                            let msgBlockError = document.getElementById('msgBlockError');
+                                            let errorMsgInput = document.getElementById('{!$Component.errorMsgInput}');
+                                            errorMsgInput.value = false;
+                                            console.log('ERRROR CLICKED');
+                                        }
+                                    </script>
+                                </apex:outputPanel>
+                            </div>
+
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Open Feedback Request Form In</h1>
+                                <hr/>
+                                Select how you want the feedback request form to open when a sales representative closes
+                                an opportunity. NOTE: We recommend using the "New Browser Window" option.
+                                <div class="slds-m-around--medium">
+                                    <div class="slds-form-element slds-grid slds-grid--vertical-align-center">
+                                        <div class="slsd-col slds-no-flex"><p>Feedback Request Form</p></div>
+                                        <div class="slsd-col slds-no-flex slds-m-left--small">
+                                            <apex:selectList id="formOpenIn" styleClass="slds-select"
+                                                             multiselect="false" size="1" value="{!openIn}">
+                                                <apex:selectOption itemLabel="New Browser Window"
+                                                                   itemValue="NewWindow"></apex:selectOption>
+                                                <apex:selectOption itemLabel="Dialog Window (Lightning Only)"
+                                                                   itemValue="DialogWindow"></apex:selectOption>
+                                            </apex:selectList>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--EMAIL-->
+<!--                            <div class="slds-m-top&#45;&#45;medium">-->
+<!--                                <h1 class="slds-text-heading&#45;&#45;medium">Enable Automated Email</h1>-->
+<!--                                <hr/>-->
+<!--                                When enable, an email will be sent to the selected parties with a URL to the Discovery Bot when an opportunity is closed.-->
+<!--                                <div class="slds-m-around&#45;&#45;medium">-->
+<!--                                    <div class="slds-form-element">-->
+<!--                                        <div class="slds-form-element">-->
+<!--                                            <label class="slds-checkbox_toggle slds-grid">-->
+<!--                                                <apex:inputCheckbox value="{!settings.Enable_Automated_Email__c}"-->
+<!--                                                        id="enableEmail"/>-->
+<!--                                                <span id="isActiveCheckbox" class="slds-checkbox_faux_container"-->
+<!--                                                      aria-live="assertive" style="width: 96px">-->
+<!--													<span class="slds-checkbox_faux"></span>-->
+<!--													<span class="slds-checkbox_on">Enabled</span>-->
+<!--													<span class="slds-checkbox_off">Disabled</span>-->
+<!--												</span>-->
+<!--                                            </label>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Salesforce Classic</h1>
+                                <hr/>
+                                Add a button, in Salesforce Classic, that allows manual feedback requests.
+                                <div class="slds-m-around--medium">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element">
+                                            <label class="slds-checkbox_toggle slds-grid">
+                                                <apex:inputCheckbox value="{!settings.Enable_Manual_Button_on_VF__c}"
+                                                                    id="enableManualButtonVF"/>
+                                                <span id="isActiveCheckbox" class="slds-checkbox_faux_container"
+                                                      aria-live="assertive" style="width: 96px">
+													<span class="slds-checkbox_faux"></span>
+													<span class="slds-checkbox_on">Enabled</span>
+													<span class="slds-checkbox_off">Disabled</span>
+												</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--TRIGGERS-->
+                        <div id="tab-panel-Triggers" class="slds-tabs_default__content slds-hide slds-m-top--medium"
+                             role="tabpanel" aria-labelledby="tab-anchor-Triggers">
+                            <h1 class="slds-text-heading--medium">Closed Opportunity Stages</h1>
+                            <hr/>
+                            Select the opportunity stages that will automatically display the request feedback form to
+                            the sales representative and allow them to select contact(s) they want to request feedback
+                            from.
+                            <div class="slds-m-top--medium slds-m-right--medium slds-grid slds-wrap stateful-buttons-container opportunity-closed-stages">
+                                <apex:inputHidden value="{!settings.Enabled_Opportunity_Stages__c}"
+                                                  id="enabledOpportunityStagesHidden"/>
+                                <apex:repeat value="{!opportunityStages}" var="opportunityStage">
+                                    <div class="slds-m-bottom--medium slds-m-left--medium">
+                                        <button type="button" aria-pressed="{!opportunityStage.isSelected}"
+                                                class="slds-button {!IF(opportunityStage.isSelected, 'slds-button_success', 'slds-button_neutral')}"
+                                                role="button" data-id="{!opportunityStage.Id}"
+                                                data-name="enabledOpportunityStagesHidden">{!opportunityStage.Label}</button>
+                                    </div>
+                                </apex:repeat>
+                            </div>
+                            <div class="enabledOpportunityStagesHidden counter slds-m-bottom--small">Closed opportunity
+                                stages:
+                                <span class="enabled">0</span> enabled /
+                                <span class="disabled">0</span> disabled
+                            </div>
+                            <!--********************** Sales Stages Section ***********************-->
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Sales Stages</h1>
+                                <hr/>
+                                <div class="slds-m-bottom--small">
+                                    Select the sales stages a closed opportunity will have to have in its history (at least one) to have the feedback request process enabled.
+                                </div>
+                                <apex:outputPanel id="salesStagesFilterPanel">
+                                    <div class="slds-m-around--medium">
+                                        <div class="slds-form-element">
+                                            <label class="slds-checkbox_toggle slds-grid">
+                                                <apex:inputCheckbox value="{!settings.Enable_Sales_Stages__c}"
+                                                                    id="enableSalesStages"
+                                                                    onChange="checkSalesStagesEnabled()"/>
+                                                <span id="isActiveCheckbox" class="slds-checkbox_faux_container"
+                                                      aria-live="assertive" style="width: 96px">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-checkbox_on">Enabled</span>
+                                                <span class="slds-checkbox_off">Disabled</span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+
+                                <apex:outputPanel id="salesStagesPanel">
+                                    <div id="salesStagesBtnSection">
+                                        <script>
+                                            let salesStagesBtnSection2 = document.getElementById('salesStagesBtnSection');
+                                            if (!document.getElementById('{!$Component.enableSalesStages}').checked && !salesStagesBtnSection2.classList.contains('slds-hide') && salesStagesBtnSection2 != null) {
+                                                console.log('This part will add the slds-hide class in case of rerendering this outputPanel');
+                                                salesStagesBtnSection2.classList.add('slds-hide');
+                                            }
+                                        </script>
+                                        <div class="slds-m-bottom--medium slds-m-right--medium slds-grid slds-wrap">
+                                            <apex:repeat value="{!salesStages}" var="saleStage">
+                                                <div class="slds-m-bottom--medium slds-m-left--medium">
+                                                    <button type="button" aria-pressed="{!saleStage.isSelected}"
+                                                            class="slds-button
+                                                            {!IF(saleStage.isSelected, 'slds-button_success', 'slds-button_neutral')}
+                                                            salesStageBtns "
+                                                            role="button"
+                                                            data-id="{!saleStage.Id}"
+                                                            onClick="handleSalesStageClick(event)"
+                                                    >{!saleStage.Label}</button>
+                                                </div>
+                                            </apex:repeat>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+
+
+                            </div>
+                            <!--*** END OF Sales Stages Section     ***-->
+
+                            <div class="slds-m-bottom--medium">
+                                <h1 class="slds-text-heading--medium">Opportunity Amount</h1>
+                                <hr/>
+                                <div class="slds-m-bottom--small">When the opportunity amount setting is enabled and an
+                                    amount threshold is set, the feedback request form will only be displayed to a sales
+                                    representative if the opportunity's amount is greater than the threshold amount set
+                                    here.
+                                </div>
+                                <div class="slds-grid">
+                                    <div class="slds-m-around--medium">
+                                        <div class="slds-form-element">
+                                            <label class="slds-checkbox_toggle slds-grid">
+                                                <apex:inputCheckbox value="{!settings.Enable_Opportunity_Amount__c}"
+                                                                    id="enableOpportunityAmount"/>
+                                                <span id="isActiveCheckbox" class="slds-checkbox_faux_container"
+                                                      aria-live="assertive" style="width: 96px">
+											<span class="slds-checkbox_faux"></span>
+											<span class="slds-checkbox_on">Enabled</span>
+											<span class="slds-checkbox_off">Disabled</span>
+										</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slds-grid" id="opportunityAmountFields">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label"
+                                                   for="{!$Component.opportunityAmountField}">Select Field</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="slds-select_container">
+                                                    <apex:selectList id="opportunityAmountField"
+                                                                     styleClass="slds-select"
+                                                                     value="{!settings.Opportunity_Amount_Field__c}"
+                                                                     size="1">
+                                                        <apex:selectOptions value="{!opportunityAvailableAmountFields}"/>
+                                                    </apex:selectList>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element slds-m-left--medium">
+                                            <label class="slds-form-element__label"
+                                                   for="{!$Component.opportunityAmountValue}">Opportunity Threshold
+                                                Amount</label>
+                                            <div class="slds-form-element__control">
+                                                <apex:inputField styleClass="slds-input" id="opportunityAmountValue"
+                                                                 value="{!settings.Opportunity_Amount_Value__c}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1 class="slds-text-heading--medium">Opportunity Record Types</h1>
+                                <hr/>
+                                Select the opportunity record types that will have the feedback request process enabled.
+                                <div class="slds-form-element slds-m-around--medium">
+                                    <div class="slds-form-element">
+                                        <label class="slds-checkbox_toggle slds-grid">
+                                            <apex:inputCheckbox value="{!settings.Enable_Record_Types__c}"
+                                                                id="enableRecordTypes"/>
+                                            <span id="isActiveCheckbox" class="slds-checkbox_faux_container"
+                                                  aria-live="assertive" style="width: 96px">
+												<span class="slds-checkbox_faux"></span>
+												<span class="slds-checkbox_on">Enabled</span>
+												<span class="slds-checkbox_off">Disabled</span>
+											</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <apex:outputPanel id="recordTypesContainer">
+                                    <div id="opportunityRecordTypesButtons">
+                                        <div class="slds-m-top--medium slds-m-right--medium slds-grid slds-wrap stateful-buttons-container">
+                                            <apex:inputHidden value="{!settings.Enabled_Record_Types__c}"
+                                                              id="enabledRecordTypesHidden"/>
+                                            <apex:repeat value="{!opportunityRecordTypes}" var="recordType">
+                                                <div class="slds-m-bottom--medium slds-m-left--medium">
+                                                    <button type="button" aria-pressed="{!recordType.isSelected}"
+                                                            class="slds-button {!IF(recordType.isSelected, 'slds-button_success', 'slds-button_neutral')}"
+                                                            role="button" data-id="{!recordType.Id}"
+                                                            data-name="enabledRecordTypesHidden">{!recordType.Label}</button>
+                                                </div>
+                                            </apex:repeat>
+                                        </div>
+                                        <div class="enabledRecordTypesHidden counter slds-m-bottom--small">Record types:
+                                            <span class="enabled">0</span> enabled /
+                                            <span class="disabled">0</span> disabled
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                            </div>
+                            <div>
+                                <h1 class="slds-text-heading--medium">Opportunity Type</h1>
+                                <hr/>
+                                <div class="slds-m-bottom--small">Select the opportunity types that will trigger the
+                                    feedback request form when an opportunity is closed.
+                                </div>
+                                <div class="slds-grid">
+                                    <div class="slds-form-element slds-m-around--medium">
+                                        <div class="slds-form-element">
+                                            <label class="slds-checkbox_toggle slds-grid">
+                                                <apex:inputCheckbox value="{!settings.Enable_Opportunity_Types__c}"
+                                                                    id="enableOpportunityTypes"/>
+                                                <span id="isActiveCheckbox" class="slds-checkbox_faux_container"
+                                                      aria-live="assertive" style="width: 96px">
+													<span class="slds-checkbox_faux"></span>
+													<span class="slds-checkbox_on">Enabled</span>
+													<span class="slds-checkbox_off">Disabled</span>
+												</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slds-form-element" id="opportunityTypeSelect">
+                                        <label class="slds-form-element__label"
+                                               for="{!$Component.opportunityTypeField}">Select Field</label>
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-select_container">
+                                                <apex:selectList id="opportunityTypeField" styleClass="slds-select"
+                                                                 value="{!settings.Opportunity_Type_Field__c}" size="1">
+                                                    <apex:actionSupport event="onchange"
+                                                                        reRender="opportunityTypesPanel"
+                                                                        onComplete="attachStatefulButtonsClickEvent(); updateStatefulButtonsCounter('enabledOpportunityTypesHidden');"/>
+                                                    <apex:selectOptions value="{!opportunityAvailableTypeFields}"/>
+                                                </apex:selectList>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <apex:outputPanel id="opportunityTypesPanel" layout="block">
+                                    <div id="opportunityTypeButtons">
+                                        <div class="slds-m-bottom--medium slds-m-right--medium slds-grid slds-wrap stateful-buttons-container">
+                                            <apex:inputHidden value="{!settings.Enabled_Opportunity_Types__c}"
+                                                              id="enabledOpportunityTypesHidden"/>
+                                            <apex:repeat value="{!opportunityTypes}" var="type">
+                                                <div class="slds-m-top--medium slds-m-left--medium">
+                                                    <button type="button" aria-pressed="{!type.isSelected}"
+                                                            class="slds-button {!IF(type.isSelected, 'slds-button_success', 'slds-button_neutral')}"
+                                                            role="button" data-id="{!type.Id}"
+                                                            data-name="enabledOpportunityTypesHidden">
+                                                         {!type.Label}</button>
+                                                </div>
+                                            </apex:repeat>
+                                        </div>
+                                        <div class="enabledOpportunityTypesHidden counter slds-m-bottom--small">
+                                            Opportunity types:
+                                            <span class="enabled">0</span> enabled /
+                                            <span class="disabled">0</span> disabled
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                            </div>
+                        </div>
+
+
+                        <!-- Email-->
+<!--                        <div id="tab-panel-EmailTab" class="slds-tabs_default__content slds-hide slds-m-top&#45;&#45;medium"-->
+<!--                             role="tabpanel" aria-labelledby="tab-anchor-Email">-->
+
+<!--                            <div class="slds-m-top&#45;&#45;medium">-->
+<!--                                <h1 class="slds-text-heading&#45;&#45;medium">Automated Email Template</h1>-->
+<!--                                <hr/>-->
+<!--&lt;!&ndash;                                When enable, an email will be sent to the selected parties with a URL to the Discovery Bot when an opportunity is closed.&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="slds-m-around&#45;&#45;medium">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="slds-form-element">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="slds-form-element">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <label class="slds-checkbox_toggle slds-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <apex:inputCheckbox value="{!settings.Enable_Automated_Email__c}"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                    id="enableEmail"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <span id="isActiveCheckbox" class="slds-checkbox_faux_container"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                      aria-live="assertive" style="width: 96px">&ndash;&gt;-->
+<!--&lt;!&ndash;													<span class="slds-checkbox_faux"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;													<span class="slds-checkbox_on">Enabled</span>&ndash;&gt;-->
+<!--&lt;!&ndash;													<span class="slds-checkbox_off">Disabled</span>&ndash;&gt;-->
+<!--&lt;!&ndash;												</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+
+<!--                            </div>-->
+
+
+
+<!--                            <div class="slds-m-top&#45;&#45;medium">-->
+<!--                                <h1 class="slds-text-heading&#45;&#45;medium">Send Email to Opportunity Owner</h1>-->
+<!--                                <hr/>-->
+<!--                                When enable, an email will be sent to opportunity owner.-->
+<!--                                <div style="display: flex" class="slds-m-around&#45;&#45;medium">-->
+<!--                                    <div>-->
+<!--                                        <div class="slds-m-around&#45;&#45;medium">-->
+<!--                                            <div class="slds-form-element">-->
+<!--                                                <div class="slds-form-element">-->
+<!--                                                    <label class="slds-checkbox_toggle slds-grid">-->
+<!--                                                        <apex:inputCheckbox-->
+<!--                                                                id="sendToOwner"/>-->
+<!--                                                        <span id="isActiveCheckbox" class="slds-checkbox_faux_container"-->
+<!--                                                              aria-live="assertive" style="width: 96px">-->
+<!--													<span class="slds-checkbox_faux"></span>-->
+<!--													<span class="slds-checkbox_on">Enabled</span>-->
+<!--													<span class="slds-checkbox_off">Disabled</span>-->
+<!--												</span>-->
+<!--                                                    </label>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <div class="slds-m-around&#45;&#45;medium">-->
+<!--                                            <div class="slds-form-element slds-grid slds-grid&#45;&#45;vertical-align-center">-->
+<!--                                                <div class="slsd-col slds-no-flex"><p>Send Email From</p></div>-->
+<!--                                                <div class="slsd-col slds-no-flex slds-m-left&#45;&#45;small">-->
+<!--                                                    <apex:selectList id="sendEmailFrom" styleClass="slds-select"-->
+<!--                                                                     multiselect="false" size="1" >-->
+<!--                                                        <apex:selectOption itemLabel="Test1"-->
+<!--                                                                           itemValue="Test1"></apex:selectOption>-->
+<!--                                                        <apex:selectOption itemLabel="Test2"-->
+<!--                                                                           itemValue="Test2"></apex:selectOption>-->
+<!--                                                    </apex:selectList>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div>-->
+<!--                                    <div class="slds-m-around&#45;&#45;medium">-->
+<!--                                        <div class="slds-form-element slds-grid slds-grid&#45;&#45;vertical-align-center">-->
+<!--                                            <div class="slsd-col slds-no-flex"><p>To Recepients List</p></div>-->
+<!--                                            <div class="slsd-col slds-no-flex slds-m-left&#45;&#45;small">-->
+<!--                                                <div class="slds-form-element__control">-->
+
+<!--                                                    <apex:inputField Styleclass="slds-input" value="{!settings.Recepient__c}" list="{!testListStrings}" id="recipientInpt" ></apex:inputField>-->
+
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+
+
+
+<!--                            &lt;!&ndash;Subject&ndash;&gt;-->
+<!--                            <div class="slds-m-top&#45;&#45;medium">-->
+<!--                                <h1 class="slds-text-heading&#45;&#45;medium">Email Subject</h1>-->
+<!--                                <hr/>-->
+<!--                                The email subject line content for the automated email.-->
+<!--                                <input type="text" id="emailSubjectInpt"  style="margin-top: 15px;"-->
+<!--                                       class="slds-input" list="{!emailSubject}"/>-->
+<!--                            </div>-->
+
+<!--                            &lt;!&ndash;Body&ndash;&gt;-->
+<!--                            <div class="slds-m-top&#45;&#45;medium">-->
+<!--                                <h1 class="slds-text-heading&#45;&#45;medium">Email Body</h1>-->
+<!--                                <hr/>-->
+<!--                                The email body content for the automated email.-->
+<!--                                <apex:inputTextarea id="mytextarea"  value="{!emailBody}" richText="true" />-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <!--UsersTab-->
+                        <div id="tab-panel-UsersTab" class="slds-tabs_default__content slds-hide" role="tabpanel"
+                             aria-labelledby="tab-anchor-UsersTab">
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Feedback Request Users</h1>
+                                <hr/>
+                                When enabled, the request feedback process will be enabled for all users. When disabled,
+                                the feedback request process will only be enabled for the users you select in the table
+                                below.
+
+                                <div class="slds-m-around--medium">
+                                    <div class="slds-form-element">
+
+
+                                        <label class="slds-checkbox_toggle slds-grid" >
+                                            <apex:inputCheckbox value="{!settings.Active_All_Users__c}"
+                                                                id="isActiveCheckboxUsers"
+                                                                onChange="SelectUsersView()"/>
+                                            <span id="isActiveCheckboxUsers" class="slds-checkbox_faux_container"
+                                                  aria-live="assertive">
+												<span class="slds-checkbox_faux"></span>
+												<span id="spanCheckbox_on" class="slds-checkbox_on">All Users.</span>
+												<span class="slds-checkbox_off">Select Users Below</span>
+											</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <span id="UsersTabSelectUsers"
+                                      style="{!IF(settings.Active_All_Users__c==false,'display:block;','display:none;')}">
+								<h1 class="slds-text-heading--medium">Select Users</h1>
+								<hr/>
+								<div class="slds-m-bottom--small">Select the users that will have access to the feedback request features.</div>
+
+
+<!--                                    ISSUE 43-->
+
+                                    <div class="slds-m-bottom--small">Select by:</div>
+
+
+
+                                    <div class="slds-grid slds-m-vertical--medium slds-grid_align-spread">
+                                    <div class="slds-form-element slds-col slds-size--1-of-8">
+                                        <apex:inputHidden id="selectByValueInpHidden" value="{!selectByValue}"/>
+                                        <apex:selectList styleClass="slds-select" id="UserFilterSelect"
+                                                         multiSelect="false" size="1"
+                                                         value="{!selectedUserValueForUserFilterSelect}"
+                                                         onChange="ChangeUserTabView()">
+                                            <apex:selectOptions value="{!SelectOptionFromUserFilterSelect}"/>
+
+                                        </apex:selectList>
+                                    </div>
+                                    <div class="slds-form-element slds-col slds-size--4-of-8">
+                                       <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+										<svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default"
+                                             aria-hidden="true">
+											<use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#search')}"></use>
+										</svg>
+
+										<input type="text" id="inputSearchUsers" placeholder="Search users ..."
+                                               class="slds-input" onkeyup="searchUsers()"/>
+                                           <input type="text" id="inputSearchUserProfiles" placeholder="Search profiles ..."
+                                                  class="slds-input" onkeyup="searchProfiles()"/>
+                                           <input type="text" id="inputSearchUserRoles" placeholder="Search roles ..."
+                                                  class="slds-input" onkeyup="searchRoles()"/>
+									</div>
+                                    </div>
+                                </div>
+
+
+								<div class="slds-form-element slds-size--2-of-6">
+									<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+										<svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default"
+                                             aria-hidden="true">
+											<use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#search')}"></use>
+										</svg>
+<!--										<input type="text" id="inputSearchUsers" placeholder="Search users ..."-->
+<!--                                               class="slds-input" onkeyup="searchUsers()"/>-->
+									</div>
+								</div>
+								<div class="slds-m-top--small table-max-height-500" id="userTable">
+                                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                           id="users-amount-fields-table">
+										<thead>
+										<tr class="slds-line-height_reset">
+											<th scope="col" class="width-full slds-truncate">Active CRM Users</th>
+											<th scope="col" class="slds-truncate" style="display: flex">
+                                                <div id="timeoutCheckAllUsers"
+                                                     class="slds-truncate slds-align--absolute-center">
+                                                    <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <span class="slds-checkbox" id="AllUsersCheckBoxes">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="allUsersCheckBox"
+                                                                           id="all-users-field-map"
+                                                                           name="users-field-map-group"
+                                                                           onchange="selectedAllUsersFieldValues()"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="all-users-field-map">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>Enable Feedback Requests</p>
+                                            </th>
+										</tr>
+										</thead>
+										<tbody>
+<!--											<apex:variable var="index" value="{!1}"/>-->
+<!--											<apex:repeat value="{!UsersFields}" var="Users">-->
+<!--													<tr class="slds-hint-parent" id="UsersFields">-->
+<!--														<td>{!Users.Name}</td>-->
+<!--														<td class="slds-truncate slds-align&#45;&#45;absolute-center">-->
+<!--														<div class="slds-form-element">-->
+<!--														  <div class="slds-form-element__control">-->
+<!--															<div class="slds-checkbox">-->
+<!--															  <label class="slds-checkbox__label">-->
+<!--																<apex:inputCheckbox styleClass="slds-input"-->
+<!--                                                                                    value="{!Users.Feedback_Request_Allowed__c}"/>-->
+<!--																<span class="slds-checkbox_faux"></span>-->
+<!--															  </label>-->
+<!--															</div>-->
+<!--														  </div>-->
+<!--														</div>-->
+<!--													</td>-->
+<!--												</tr>-->
+<!--											</apex:repeat>-->
+<!--                                        <apex:variable var="index" value="{!1}"/>-->
+                                            <apex:repeat value="{!UsersFieldsList}" var="UsersList" id="UsersListRepeat">
+											    <apex:repeat value="{!UsersList}" var="Users">
+													<tr class="slds-hint-parent" id="UsersFields">
+														<td>{!Users.Name}</td>
+														<td class="slds-truncate slds-align--absolute-center">
+														<div class="slds-form-element">
+														  <div class="slds-form-element__control">
+															<div class="slds-checkbox">
+															  <label class="slds-checkbox__label">
+																<apex:inputCheckbox styleClass="slds-input userFieldMap"
+                                                                        value="{!Users.Feedback_Request_Allowed__c}"
+                                                                        onChange="updateUsersCheckBoxes()"/>
+																<span class="slds-checkbox_faux"></span>
+															  </label>
+															</div>
+														  </div>
+														</div>
+													</td>
+												</tr>
+											    </apex:repeat>
+                                            </apex:repeat>
+										</tbody>
+									</table>
+                                </div>
+                                    <script>
+                                        updateUsersCheckBoxes();
+                                    </script>
+
+
+
+<!--                                    ISSUE 43-->
+
+                                    <!--*************Profiles************-->
+
+                                    <div class="slds-m-top--small table-max-height-500" id="userProfilesTable">
+                                        <apex:inputHidden value="{!UserProfilesSelected}" id="profileInpHidden">
+                                        </apex:inputHidden>
+                                        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                               id="users-profile-fields-table">
+										<thead>
+										<tr class="slds-line-height_reset">
+											<th scope="col" class="width-full slds-truncate">Salesforce Profiles</th>
+											<th scope="col" class="slds-truncate" style="display: flex">
+
+                                                <div id="timeoutCheckAllProfiles"
+                                                     class="slds-truncate slds-align--absolute-center">
+                                                    <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <span class="slds-checkbox" id="AllProfilesCheckBoxes">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="allProfileCheckBox"
+                                                                           id="all-profiles-field-map"
+                                                                           name="profiles-field-map-group"
+                                                                           onchange="selectedAllProfilesFieldValues()"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="all-profiles-field-map">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>Enable Feedback Requests</p>
+                                            </th>
+										</tr>
+										</thead>
+										<tbody>
+
+                                          <apex:variable var="index" value="{!1}"/>
+                                        <apex:repeat value="{!userProfiles}" var="Profiles">
+                                            <apex:repeat value="{!Profiles}" var="Profile">
+                                            <tr class="slds-hint-parent" id="ProfilesFields" >
+                                                <td class="slds-truncate slds-p-left--small">{!Profile.Label}</td>
+                                                <td>
+                                                    <div id="timeoutCheckProfiles"
+                                                         class="slds-truncate slds-align--absolute-center">
+
+                                                        <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+															<span class="slds-checkbox" id="profileCheckBoxes">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="profileCheckBox"
+                                                                           value="{!Profile.Id}"
+                                                                           id="profile-field-map-{!index}"
+                                                                           name="profile-field-map-group"
+                                                                           onchange="updateProfileFieldValuesInCustomSetting()"
+                                                                           data-profile-id ="{!Profile.Id}"
+                                                                           data-profile-label = "{!Profile.Label}"
+                                                                           data-is-selected="{!Profile.isSelected}"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="profile-field-map-{!index}">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <apex:variable var="index" value="{!index + 1}"/>
+                                            </apex:repeat>
+                                        </apex:repeat>
+										</tbody>
+									</table>
+                                    </div>
+                                    <script>
+                                      updateProfileFieldValuesInCustomSetting();
+                                    </script>
+
+
+                                    <!--*************Roles************-->
+
+                                    <div class="slds-m-top--small table-max-height-500" id="userRoleTable">
+                                        <apex:inputHidden value="{!UserRolesSelected}" id="rolesInpHidden">
+                                        </apex:inputHidden>
+                                         <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                                id="users-roles-fields-table">
+										<thead>
+										<tr class="slds-line-height_reset">
+											<th scope="col" class="width-full slds-truncate">Salesforce Roles</th>
+											<th scope="col" class="slds-truncate" style="display: flex">
+                                                <div id="timeoutCheckAllRoles"
+                                                     class="slds-truncate slds-align--absolute-center">
+                                                    <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <span class="slds-checkbox" id="AllRolesCheckBoxes">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="allRoleCheckBox"
+                                                                           id="all-roles-field-map"
+                                                                           name="roles-field-map-group"
+                                                                           onchange="selectedAllRolesFieldValues()"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="all-roles-field-map">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>Enable Feedback Requests</p>
+                                            </th>
+										</tr>
+										</thead>
+										<tbody>
+                                        <apex:variable var="index" value="{!1}"/>
+                                        <apex:repeat value="{!userRoles}" var="Roles" id="UserRolesListRepeat">
+                                            <apex:repeat value="{!Roles}" var="Role">
+                                            <tr class="slds-hint-parent" id="RolesFields" >
+                                                <td class="slds-truncate slds-p-left--small">{!Role.Label}</td>
+                                                <td>
+                                                    <div id="timeoutCheckRole"
+                                                         class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+															<span class="slds-checkbox" id="RolesCheckBoxes">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="roleCheckBox"
+                                                                           value="{!Role.Id}"
+                                                                           id="roles-field-map-{!index}"
+                                                                           name="roles-field-map-group"
+                                                                           onchange="updateRolesFieldValuesInCustomSetting()"
+                                                                           data-role-id ="{!Role.Id}"
+                                                                           data-role-label = "{!Role.Label}"
+                                                                           data-is-selected="{!Role.isSelected}"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="roles-field-map-{!index}">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                             <apex:variable var="index" value="{!index + 1}"/>
+                                            </apex:repeat>
+                                             <script>
+                                            updateRolesFieldValuesInCustomSetting();
+                                        </script>
+                                        </apex:repeat>
+										</tbody>
+									</table>
+
+                                    </div>
+							</span>
+                            </div>
+                        </div>
+
+
+                        <!--Product Triggers-->
+                        <div id="tab-panel-ProductTriggers" class="slds-tabs_default__content slds-hide slds-m-top--medium"
+                             role="tabpanel" aria-labelledby="tab-anchor-ProductTriggers">
+
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Product Trigger</h1>
+                                <hr/>
+                                When the Product Trigger is enabled, the feedback request form will only be displayed to sales reps closing opportunities that have at least one of the enabled products.
+                                The manual feedback request button will also only appear for closed opportunities that have at least one of the enabled products.
+                                <div class="slds-m-around--medium">
+                                    <div class="slds-form-element">
+                                        <label class="slds-checkbox_toggle slds-grid">
+                                            <apex:inputCheckbox value="{!settings.Active_Product_Fields__c}"
+                                                                id="isActiveCheckboxProductTriggers"
+                                                                onChange="SelectProductFieldsView()"/>
+                                            <span id="isActiveCheckboxProductTriggers" class="slds-checkbox_faux_container"
+                                                  aria-live="assertive">
+												<span class="slds-checkbox_faux"></span>
+												<span id="spanCheckbox_on" class="slds-checkbox_on">Enabled</span>
+												<span class="slds-checkbox_off">Disabled</span>
+											</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <span id="ProductTriggersTabSelectProduct"
+                                      style="{!IF(settings.Active_Product_Fields__c==false,'display:none;','display:block;')}">
+                                        <h1 class="slds-text-heading--medium">Trigger on Enabled Products</h1>
+								    <hr/>
+								        <div class="slds-m-bottom--small">The feedback request form will only be displayed to sales reps closing opportunities that have at least one of the enabled products selected in the table below.
+                                        The manual feedback request button will also only appear for opportunities with at least one of the products you enable in the table below.</div>
+								        <div class="slds-form-element slds-size--2-of-6">
+									<div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+										<svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default"
+                                             aria-hidden="true">
+											<use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#search')}"></use>
+										</svg>
+										<input type="text" id="inputSearchProductTriggers" placeholder="Search fields ..."
+                                               class="slds-input" onkeyup="searchProductsFields()"/>
+									</div>
+								</div>
+
+                                <apex:outputPanel id="BlockForProductTriggers">
+								<div class="slds-m-top--small table-max-height-500">
+									<table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                           id="users-amount-fields-table">
+										<thead>
+										<tr class="slds-line-height_reset">
+											<th scope="col" class="width-full slds-truncate">Salesforce Product</th>
+											<th scope="col" class="slds-truncate" style="display: flex">
+                                                <div id="timeoutCheckAllProductTrigger"
+                                                     class="slds-truncate slds-align--absolute-center">
+                                                    <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <span class="slds-checkbox" id="AllProductTriggerCheckBox">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="allProductTriggerCheckBox"
+                                                                           id="all-productTrigger-field-map"
+                                                                           name="all-productTrigger-field-map"
+                                                                           onchange="SelectAllProductTriggerValue()"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="all-productTrigger-field-map">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>Enable Feedback Process</p>
+                                            </th>
+										</tr>
+										</thead>
+										<tbody>
+                                        <apex:variable var="index" value="{!1}"/>
+                                        <apex:repeat value="{!productPicklistFieldsSelected}" var="productPicklistFieldSelected">
+                                            <tr class="slds-hint-parent" id="productsTriggerRow" >
+                                                <td class="slds-truncate slds-p-left--small">{!productPicklistFieldSelected.Label}</td>
+                                                <td>
+                                                    <div id="timeoutCheck"
+                                                         class="slds-truncate slds-align--absolute-center">
+
+                                                        <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+															<span class="slds-checkbox" id="productTriggerCheckBoxes">
+																<apex:outputPanel layout="none"
+                                                                                  rendered="{!productPicklistFieldSelected.isSelected}">
+																	<input type="checkbox"
+                                                                           value="{!productPicklistFieldSelected.Id}"
+                                                                           id="productTrigger-field-map-{!index}"
+                                                                           checked="checked"
+                                                                           name="productTrigger-field-map-group"
+                                                                           class = "productTriggerFirst"
+                                                                           onchange = "updateFieldValuesInCustomSetting('{!productPicklistFieldSelected.Id}', '{!productPicklistFieldSelected.Label}', this.checked)"/>
+																</apex:outputPanel>
+																<apex:outputPanel layout="none"
+                                                                                  rendered="{!!productPicklistFieldSelected.isSelected}">
+																	<input type="checkbox"
+                                                                           value="{!productPicklistFieldSelected.Id}"
+                                                                           id="productTrigger-field-map-{!index}"
+                                                                           name="productTrigger-field-map-group"
+                                                                           class = "productTriggerSecond"
+                                                                           onchange="updateFieldValuesInCustomSetting('{!productPicklistFieldSelected.Id}', '{!productPicklistFieldSelected.Label}', this.checked)"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="productTrigger-field-map-{!index}">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <apex:variable var="index" value="{!index + 1}"/>
+                                        </apex:repeat>
+										</tbody>
+									</table>
+								</div>
+                                    </apex:outputPanel>
+							</span>
+
+                            </div>
+                        </div>
+
+
+                        <!--OUTCOMES-->
+                        <div id="tab-panel-Outcomes" class="slds-tabs_default__content slds-hide slds-m-top--medium"
+                             role="tabpanel" aria-labelledby="tab-anchor-Outcomes">
+                            <h1 class="slds-text-heading--medium">Set Outcome Types</h1>
+                            <hr/>
+                            <div class="slds-m-bottom--small">Map each of your closed sales stages to the outcome type
+                                values.
+                            </div>
+                            <div>
+                                <apex:inputHidden value="{!outcomeTypesMap}" id="outcomeTypesMapHidden"/>
+                                <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                       id="outcome-types-map-table">
+                                    <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th scope="col" class="width-full slds-truncate">Stage Name</th>
+                                        <th scope="col" class="slds-truncate">Won</th>
+                                        <th scope="col" class="slds-truncate">Lost</th>
+                                        <th scope="col" class="slds-truncate">No Decision</th>
+                                        <th scope="col"
+                                            class="slds-border--left slds-align--absolute-center slds-truncate">Exclude
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="slds-hint-parent template">
+                                        <td>
+                                            <div class="slds-truncate" data-value="name">Test</div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="1">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="1"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="2">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="2"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="3">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="3"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="slds-border--left">
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="-1">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="-1"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--TYPES-->
+                        <div id="tab-panel-Types" class="slds-tabs_default__content slds-hide slds-m-top--medium"
+                             role="tabpanel" aria-labelledby="tab-anchor-Types">
+                            <h1 class="slds-text-heading--medium">Set Opportunity Types</h1>
+                            <hr/>
+                            <div class="slds-m-bottom--small">Select the CRM field that defines the opportunity type
+                                (e.g. "new business", or "renewal") and map the values of the
+                                selected field to the opportunity type values.
+                            </div>
+                            <div class="slds-grid">
+                                <div class="slds-form-element" id="opportunityTypeSyncSelect">
+                                    <label class="slds-form-element__label"
+                                           for="{!$Component.opportunityTypeSyncField}">Select Field</label>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-select_container">
+                                            <apex:selectList id="opportunityTypeSyncField" styleClass="slds-select"
+                                                             value="{!settings.Opportunity_Type_Sync_Field__c}"
+                                                             size="1">
+                                                <apex:actionSupport event="onchange" reRender="scripts"/>
+                                                <apex:selectOptions value="{!opportunityAvailableTypeFields}"/>
+                                            </apex:selectList>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-m-top--small">
+                                <apex:inputHidden value="{!opportunityTypesMap}" id="opportunityTypesMapHidden"/>
+                                <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                       id="opportunity-types-map-table">
+                                    <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th scope="col" class="width-full slds-truncate">Types</th>
+                                        <th scope="col" class="slds-truncate">Renewal</th>
+                                        <th scope="col" class="slds-truncate">New business</th>
+                                        <th scope="col" class="slds-truncate">Add-on</th>
+                                        <th scope="col" class="slds-truncate">Upsell</th>
+                                        <th scope="col"
+                                            class="slds-border--left slds-align--absolute-center slds-truncate">Exclude
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="slds-hint-parent template">
+                                        <td>
+                                            <div class="slds-truncate" data-value="name"></div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="1">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="1"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="2">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="2"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="3">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="3"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="4">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="4"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="slds-border--left">
+                                            <div class="slds-truncate slds-align--absolute-center" data-value="-1">
+                                                <div class="slds-form-element">
+                                                    <div class="slds-form-element__control">
+													<span class="slds-radio">
+														<input type="radio" value="-1"/>
+														<label class="slds-radio__label">
+															<span class="slds-radio_faux"></span>
+														</label>
+													</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--Amount-->
+                        <div id="tab-panel-Amount" class="slds-tabs_default__content slds-hide" role="tabpanel"
+                             aria-labelledby="tab-anchor-Amount">
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Set Opportunity Amount</h1>
+                                <hr/>
+                                <p class="slds-m-bottom--small">Select the CRM field(s) that define the opportunity
+                                    amount (e.g. deal size). Selecting more than one field will cause those fields to be
+                                    summed to get the total deal size for an opportunity.</p>
+                                <div class="slds-m-vertical--medium slds-grid">
+                                    <div class="slds-form-element slds-col slds-size--1-of-3 slds-no-flex">
+                                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                                            <svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default"
+                                                 aria-hidden="true">
+                                                <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#search')}"></use>
+                                            </svg>
+                                            <input type="text" id="inputSearchAmount" placeholder="Search fields ..."
+                                                   class="slds-input" onkeyup="searchAmount()"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-m-top--small table-max-height-500">
+                                    <apex:inputHidden value="{!settings.Opportunity_Amount_Fields__c}"
+                                                      id="opportunityAmountFieldsHidden"/>
+                                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                           id="opportunity-amount-fields-table">
+                                        <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <th scope="col" class="width-full slds-truncate">Field Name</th>
+                                            <th scope="col" class="slds-truncate">Use to Calculate Amount</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <apex:variable var="index" value="{!1}"/>
+                                        <apex:repeat value="{!opportunityAmountFields}" var="amountField">
+                                            <tr class="slds-hint-parent" id="amountRows">
+                                                <td class="slds-truncate">{!amountField.Label}</td>
+                                                <td class="slds-truncate slds-align--absolute-center">
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+														<span class="slds-checkbox">
+															<apex:outputPanel layout="none"
+                                                                              rendered="{!amountField.isSelected}">
+																<input type="checkbox" value="{!amountField.Id}"
+                                                                       id="amount-field-{!index}" checked="checked"
+                                                                       name="amount-fields-group"/>
+															</apex:outputPanel>
+															<apex:outputPanel layout="none"
+                                                                              rendered="{!!amountField.isSelected}">
+																<input type="checkbox" value="{!amountField.Id}"
+                                                                       id="amount-field-{!index}"
+                                                                       name="amount-fields-group"/>
+															</apex:outputPanel>
+															<label class="slds-checkbox__label"
+                                                                   for="amount-field-{!index}">
+																<span class="slds-checkbox_faux"></span>
+															</label>
+														</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <apex:variable var="index" value="{!index + 1}"/>
+                                        </apex:repeat>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Products-->
+                        <div id="tab-panel-ProductsDefinition" class="slds-tabs_default__content slds-hide" role="tabpanel"
+                             aria-labelledby="tab-anchor-ProductDefinition">
+                            <div class="slds-m-top--medium">
+                                <h1 class="slds-text-heading--medium">Product Family Definition</h1>
+<!--                                <h1 class="slds-text-heading&#45;&#45;medium">Identify Your Products or Product Families</h1>-->
+                                <hr/>
+<!--                                <p class="slds-m-bottom&#45;&#45;small">Select the Salesforce Object and field combination that-->
+<!--                                    best describes your products or product families. Once you have selected the-->
+<!--                                    appropriate field(s) to use, click on the "Map Products" tab to map the values of-->
+<!--                                    the field(s) selected here to your product families defined in TruVoice.</p>-->
+
+                                <p class="slds-m-bottom--small" id ="product-family-help--truSales" style="display: {!IF(settings.TruVoiceIntegration__c !=  true, 'block', 'none')}; ">
+                                    Select the Salesforce Object and field combination that best describes your product families.
+                                    Once you have selected the appropriate field(s) to use, click on the "Product Triggers" tab to enable the product
+                                    families that will use the feedback request process.</p>
+
+
+                                <p class="slds-m-bottom--small" id ="product-family-help--truVoice" style="display: {!IF(settings.TruVoiceIntegration__c !=  false, 'block', 'none')}; ">
+                                    Select the Salesforce Object and field combination that best describes your product families.
+                                    Once you have selected the appropriate field(s) to use, click on the "Map Products" tab to map the values of the field(s)
+                                    selected here to your product families defined in TruVoice.</p>
+
+
+                                <div class="slds-grid slds-m-vertical--medium slds-grid_align-spread">
+                                    <div class="slds-form-element slds-col slds-size--2-of-8">
+                                        <apex:selectList styleClass="slds-select" id="productsSelect"
+                                                         multiSelect="false" size="1"
+                                                         onChange="changeProductsVisible()">
+                                            <apex:selectOption itemValue="Opportunity"
+                                                               itemLabel="Opportunity Object"></apex:selectOption>
+                                            <apex:selectOption itemValue="Product"
+                                                               itemLabel="Product2 Object"></apex:selectOption>
+                                        </apex:selectList>
+                                    </div>
+                                    <div class="slds-form-element slds-col slds-size--4-of-8">
+                                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                                            <svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default"
+                                                 aria-hidden="true">
+                                                <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#search')}"></use>
+                                            </svg>
+                                            <input type="text" id="inputSearchProducts" placeholder="Search fields ..."
+                                                   class="slds-input" onkeyup="searchProducts()"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-m-top--small table-max-height-500">
+                                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                           id="opportunity-amount-fields-table">
+                                        <thead>
+                                        <tr class="slds-line-height_reset" >
+                                            <th scope="col" class="width-full slds-truncate">Field Name</th>
+                                            <th scope="col" class="slds-truncate" style="display: flex">
+
+
+<!--                                                ISSUE 45-->
+                                                <div id="timeoutCheckAllProductAndOpp"
+                                                     class="slds-truncate slds-align--absolute-center">
+                                                    <div class="slds-truncate slds-align--absolute-center">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <span class="slds-checkbox" id="AllProductCheckBox">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="allProductAndOppCheckBox"
+                                                                           id="all-product-field-map"
+                                                                           name="allproduct-field-map-group"
+                                                                           onchange = "selectedAllProductValues()"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="all-product-field-map">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+
+                                                                <span class="slds-checkbox" id="AllOppCheckBox">
+                                                                <apex:outputPanel layout="none">
+																	<input type="checkbox"
+                                                                           class="allOppCheckBox"
+                                                                           id="all-opp-field-map"
+                                                                           name="allopp-field-map-group"
+                                                                           onchange = "selectedAllOppValues()"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="all-opp-field-map">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>Use as Product Field</p>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <apex:variable var="index" value="{!1}"/>
+                                        <apex:repeat value="{!productPicklistFields}" var="picklistField">
+                                            <tr class="slds-hint-parent" id="productsRow" style="display:none">
+                                                <td class="slds-truncate slds-p-left--small">{!picklistField.Label}</td>
+                                                <td>
+                                                    <div id="timeoutCheck"
+                                                         class="slds-truncate slds-align--absolute-center"
+                                                         onChange="updateProductMap()">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+															<span class="slds-checkbox">
+																<apex:outputPanel layout="none"
+                                                                                  rendered="{!picklistField.isSelected}">
+																	<input type="checkbox"
+                                                                           value="Product2.{!picklistField.Id}"
+                                                                           id="product-field-map-{!index}"
+                                                                           checked="checked"
+                                                                           name="product-field-map-group"
+                                                                           class="productChk1" />
+																</apex:outputPanel>
+																<apex:outputPanel layout="none"
+                                                                                  rendered="{!!picklistField.isSelected}">
+																	<input type="checkbox"
+                                                                           value="Product2.{!picklistField.Id}"
+                                                                           id="product-field-map-{!index}"
+                                                                           name="product-field-map-group"
+                                                                            class="productChk2"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="product-field-map-{!index}">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <apex:variable var="index" value="{!index + 1}"/>
+                                        </apex:repeat>
+                                        <apex:repeat value="{!opportunityPicklistFields}" var="picklistField">
+                                            <tr class="slds-hint-parent" id="opportunityRow">
+                                                <td class="slds-truncate slds-p-left--small">{!picklistField.Label}</td>
+                                                <td>
+                                                    <div id="timeoutCheck"
+                                                         class="slds-truncate slds-align--absolute-center"
+                                                         onChange="updateProductMap()">
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+															<span class="slds-checkbox">
+																<apex:outputPanel layout="none"
+                                                                                  rendered="{!picklistField.isSelected}">
+																	<input type="checkbox"
+                                                                           value="Opportunity.{!picklistField.Id}"
+                                                                           id="product-field-map-{!index}"
+                                                                           checked="checked"
+                                                                           name="product-field-map-group"
+                                                                            class="optChk1"/>
+																</apex:outputPanel>
+																<apex:outputPanel layout="none"
+                                                                                  rendered="{!!picklistField.isSelected}">
+																	<input type="checkbox"
+                                                                           value="Opportunity.{!picklistField.Id}"
+                                                                           id="product-field-map-{!index}"
+                                                                           name="product-field-map-group"
+                                                                            class="optChk2"/>
+																</apex:outputPanel>
+																<label class="slds-checkbox__label"
+                                                                       for="product-field-map-{!index}">
+																	<span class="slds-checkbox_faux"></span>
+																</label>
+															</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <apex:variable var="index" value="{!index + 1}"/>
+                                        </apex:repeat>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <div style = "display: none;">
+                                    <apex:pageBlock id="testBlock" >
+                                        <!--{!productPicklistFieldsSelected}-->
+
+                                    </apex:pageBlock>
+                                </div>
+
+                                <div class="slds-m-top--small slds-text-align--center" style="display: none">
+                                    <input type="button" id="updateProductMapFieldObjectButton"
+                                           class="slds-button slds-button--neutral" value="Update"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--MapProducts-->
+                        <div id="tab-panel-MapProducts" class="slds-tabs_default__content slds-hide slds-m-top--medium"
+                             role="tabpanel" aria-labelledby="tab-anchor-MapProducts">
+                            <h1 class="slds-text-heading_medium">Map Your Products/Products Families to Truvoice
+                                Products</h1>
+                            <hr/>
+                            Map the values to the field(s) selected in the "Products" tab to the product families
+                            defined in TruVoice. This step allows us to automate the product submission process when a
+                            sales rep submits an opportunity and requests feedback.
+                            <div class="slds-m-vertical--medium slds-grid">
+                                <div class="slds-form-element slds-col slds-size--1-of-3 slds-no-flex">
+                                    <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                                        <svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default"
+                                             aria-hidden="true">
+                                            <use xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#search')}"></use>
+                                        </svg>
+                                        <input type="text" id="inputMapProducts" placeholder="Search fields ..."
+                                               class="slds-input" onkeyup="searchMapProducts()"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-m-top--small">
+                                <apex:outputPanel layout="block" id="productMapTable" styleClass="slds-m-top--small">
+                                    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-border--left slds-border--right"
+                                           id="opportunity-amount-fields-table">
+                                        <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <th scope="col" class="slds-truncate">SF Product</th>
+                                            <th scope="col" class="slds-truncate">TruVoice Product</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <apex:repeat value="{!productMapItems}" var="productMapItem">
+                                            <tr class="slds-hint-parent" id="mapProductsRows">
+                                                <td>{!productMapItem.Picklist_Value__c}</td>
+                                                <td class="TruVoiceProductSelect">
+                                                    <apex:selectList value="{!productMapItem.TruVoice_Product_Id__c}"
+                                                                     size="1" styleClass="slds-select">
+                                                        <apex:selectOptions value="{!truVoiceProducts}"/>
+                                                    </apex:selectList>
+                                                </td>
+                                            </tr>
+                                        </apex:repeat>
+                                        </tbody>
+                                    </table>
+                                    <div id="spinnerMapProducts" style="height:6rem; display: none">
+                                        <div class="slds-spinner_container">
+                                            <div role="status"
+                                                 class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                                                <span class="slds-assistive-text">Loading</span>
+                                                <div class="slds-spinner__dot-a"></div>
+                                                <div class="slds-spinner__dot-b"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-card__footer slds-m-top--medium slds-align--absolute-center">
+                    <apex:commandButton action="{!Save}" onClick="showBar(),saveSalesStages()" value="Save" styleClass="slds-button slds-button--brand"
+                                        rerender="msg, actionPollerStatusBar,statusBarSaveDiv,statusBarSave,stagesTestRerender"/>
+
+                </footer>
+            </article>
+        </div>
+
+        <script>
+            (()=>{
+
+                let profileInp = Array.from(document.querySelectorAll('.profileCheckBox')).filter(checkbox=>{
+                    return checkbox.dataset.isSelected == 'true';
+                });
+
+
+                profileInp.forEach(element=>{
+                   element.checked = true;
+                });
+
+
+            })();
+
+
+            (()=>{
+                let roleInp = Array.from(document.querySelectorAll('.roleCheckBox')).filter(checkbox=>{
+
+                    return checkbox.dataset.isSelected == 'true';
+                });
+
+
+
+                roleInp.forEach(element=>{
+                    element.checked = true;
+                });
+
+
+            })();
+
+            showAllCheckboxOnProductTrigger();
+
+        </script>
+
+
+        <apex:outputPanel id="scripts">
+            <script>
+
+                ChangeUserTabView();
+
+                let idTimeOut;
+                (() => {
+                    let selecId = document.getElementById('{!$Component.integrationSelectList}');
+                    let presentationItems = Array.from(document.querySelectorAll(`li[role="presentation"]`));
+                    let tabAnchors = Array.from(document.querySelectorAll(`.slds-tabs_default__link`));
+                    let tabPanels = Array.from(document.querySelectorAll(`.slds-tabs_default__content`));
+                    let CollectorBlock = document.getElementById('CollectorBlock');
+
+                    selecId.value === 'true' ? CollectorBlock.style.display = 'block' : CollectorBlock.style.display = 'none';
+
+                    let currentTabAnchor = tabAnchors.find(i => {
+                        return i.tabIndex == 0;
+                    });
+                    let currentPresentation = presentationItems.find(i => {
+                        return i.classList.contains('slds-active');
+                    });
+
+                    let currentTabPanel = tabPanels.find(i => {
+                        return i.classList.contains('slds-show');
+                    });
+
+                    tabAnchors.forEach(element => {
+
+                        element.addEventListener('click', event => {
+                            if (element.tabIndex === 0) {
+                                return;
+                            }
+
+                            currentPresentation.classList.remove('slds-active');
+                            currentTabPanel.classList.remove('slds-show');
+                            currentTabPanel.classList.add('slds-hide');
+                            currentTabAnchor.setAttribute('tabindex', -1);
+                            currentTabAnchor.setAttribute('aria-selected', false);
+
+                            element.parentElement.classList.add('slds-active');
+                            element.setAttribute('tabindex', 0);
+                            element.setAttribute('aria-selected', true);
+                            let result = tabPanels.find(i => {
+                                return i.getAttribute('id') == element.getAttribute('aria-controls');
+                            });
+                            result.classList.add('slds-show');
+                            result.classList.remove('slds-hide');
+
+                            currentTabPanel = result;
+                            currentTabAnchor = element;
+                            currentPresentation = element.parentElement;
+
+
+                            UpdateBlockForProductTrigger();
+
+                        })
+                    });
+                })();
+
+                function updateFieldValuesInCustomSetting(Id, fieldName, isChecked) {
+
+                    showAllCheckboxOnProductTrigger();
+
+                    if(Id.split('.')[0] ==='Product2')
+                    {
+                        updateProductTriggerFieldValuesWithProduct(fieldName,isChecked);
+                    }
+                    else if(Id.split('.')[0] ==='Opportunity')
+                    {
+                        updateProductTriggerFieldValuesWithOpportunity(fieldName,isChecked);
+
+                    }
+
+
+
+                }
+
+
+
+
+
+                function changeProductsVisible() {
+
+
+                    let productsSelect = document.getElementById('{!$Component.productsSelect}');
+                    let productsRow = Array.from(document.querySelectorAll('#productsRow'));
+                    let opportunityRow = Array.from(document.querySelectorAll('#opportunityRow'));
+                    let allProductSelectCb = document.getElementById('AllProductCheckBox');
+                    let allOppSelectCb = document.getElementById('AllOppCheckBox');
+
+
+                    if (productsSelect.value === 'Opportunity') {
+                        productsRow.forEach(element => {
+                            element.style.display = 'none';
+                        });
+                        opportunityRow.forEach(element => {
+                            element.style.display = '';
+                        });
+                        allOppSelectCb.style.display = 'block';
+                        allProductSelectCb.style.display = 'none';
+
+                    } else {
+                        productsRow.forEach(element => {
+                            element.style.display = '';
+                        });
+                        opportunityRow.forEach(element => {
+                            element.style.display = 'none';
+                        });
+                        allOppSelectCb.style.display = 'none';
+                        allProductSelectCb.style.display = 'block';
+                    }
+                }
+
+
+
+                changeProductsVisible();
+
+
+
+
+                function selectedAllProfilesFieldValues() {
+
+                    console.log('selectedAllProfilesFieldValues');
+
+
+                    let allSelectedCheckBox = document.getElementById('all-profiles-field-map');
+
+                    if(allSelectedCheckBox.checked)
+                    {
+                        Array.from(document.querySelectorAll('.profileCheckBox')).forEach(checkbox=>{
+                            checkbox.checked = true;
+                        });
+                    }else {
+                        Array.from(document.querySelectorAll('.profileCheckBox')).forEach(checkbox=>{
+                            checkbox.checked = false;
+                        });
+                    }
+
+                    updateProfileFieldValuesInCustomSetting();
+
+                }
+
+
+
+
+                function selectedAllUsersFieldValues() {
+
+                    console.log('selectedAllUsersFieldValues');
+
+
+                    let allSelectedCheckBox = document.getElementById('all-users-field-map');
+
+
+                    if(allSelectedCheckBox.checked)
+                    {
+                        Array.from(document.querySelectorAll('.userFieldMap')).forEach(checkbox=>{
+
+                            checkbox.checked = true;
+                            checkbox.value = 'true';
+
+                        });
+                    }else {
+                        Array.from(document.querySelectorAll('.userFieldMap')).forEach(checkbox=>{
+                            checkbox.checked = false;
+                            checkbox.value = 'false';
+                        });
+                    }
+
+                }
+
+
+
+
+
+
+
+                function selectedAllRolesFieldValues() {
+
+                    console.log('selectedAllRolesFieldValues');
+
+
+                    let allSelectedCheckBox = document.getElementById('all-roles-field-map');
+
+                    if(allSelectedCheckBox.checked)
+                    {
+                       Array.from(document.querySelectorAll('.roleCheckBox')).forEach(checkbox=>{
+                            checkbox.checked = true;
+                        });
+                    }else {
+                        Array.from(document.querySelectorAll('.roleCheckBox')).forEach(checkbox=>{
+                            checkbox.checked = false;
+                        });
+                    }
+
+                    updateRolesFieldValuesInCustomSetting();
+
+                }
+
+
+                function changeTabVisible() {
+                    let selecId = document.getElementById('{!$Component.integrationSelectList}');
+
+
+                    let presentationItems = Array.from(document.querySelectorAll(`li[role="presentation"]`));
+                    presentationItems.forEach(tab => {
+                        let tittle = tab.getAttribute('title');
+                        tab.style.display = 'block';
+
+                        if (selecId.value === 'false')
+                        {
+                            if (tittle !== 'Integration' && tittle !== 'Users' && tittle !== 'Triggers' && tittle!=="ProductTriggers" && tittle !== 'ProductDefinition')  // && tittle !=='Email'
+                            {
+                                tab.style.display = 'none';
+                            }
+                        } else {
+                            tab.style.display = 'block';
+                            if(tittle ==="ProductTriggers")
+                            {
+                                tab.style.display = 'none';
+                            }
+                        }
+                    });
+
+                    let CollectorBlock = document.getElementById('CollectorBlock');
+                    selecId.value === 'true' ? CollectorBlock.style.display = 'block' : CollectorBlock.style.display = 'none';
+
+
+                    let productFamilyHelpTruSales = document.getElementById('product-family-help--truSales');
+                    let productFamilyHelpTruVoice = document.getElementById('product-family-help--truVoice');
+
+                    if(selecId.value === 'false')
+                    {
+
+                        productFamilyHelpTruSales.style.display = 'block';
+                        productFamilyHelpTruVoice.style.display = 'none';
+
+                    }
+                    else
+                    {
+
+                        productFamilyHelpTruSales.style.display = 'none';
+                        productFamilyHelpTruVoice.style.display = 'block';
+
+                    }
+
+                    clearProductFields();
+                    clearOpportunityFields();
+
+                }
+
+                function SelectUsersView() {
+                    let UsersTabDisplay = document.getElementById('UsersTabSelectUsers').style.display;
+                    if (UsersTabDisplay === 'block') {
+                        document.getElementById('UsersTabSelectUsers').style.display = 'none';
+                    } else {
+                        document.getElementById('UsersTabSelectUsers').style.display = 'block';
+                    }
+
+
+                    ChangeUserTabView();
+                }
+
+
+
+                //issue 43
+                function ChangeUserTabView() {
+                    console.log('ChangeUserTabView');
+
+                    let selectValue = document.getElementById('{!$Component.UserFilterSelect}');
+                    let userTable = document.getElementById('userTable');
+                    let profilesTable = document.getElementById('userProfilesTable');
+                    let roleTable = document.getElementById('userRoleTable');
+
+                    let searchInputUser = document.getElementById('inputSearchUsers');
+                    let searchInputProfiles = document.getElementById('inputSearchUserProfiles');
+                    let searchInputRole = document.getElementById('inputSearchUserRoles');
+
+                    if(selectValue.value ==='Users')
+                    {
+                        userTable.style.display = 'block';
+                        profilesTable.style.display = 'none';
+                        roleTable.style.display = 'none';
+
+                        searchInputUser.style.display = 'block';
+                        searchInputProfiles.style.display = 'none';
+                        searchInputRole.style.display = 'none';
+                    }
+                    else if (selectValue.value === 'Profiles')
+                    {
+                        profilesTable.style.display = 'block';
+                        userTable.style.display = 'none';
+                        roleTable.style.display = 'none';
+
+
+                        searchInputProfiles.style.display = 'block';
+                        searchInputUser.style.display = 'none';
+                        searchInputRole.style.display = 'none';
+
+                    }
+                    else if(selectValue.value ==='Roles')
+                    {
+                        roleTable.style.display = 'block';
+                        profilesTable.style.display = 'none';
+                        userTable.style.display = 'none';
+
+                        searchInputRole.style.display = 'block';
+                        searchInputUser.style.display = 'none';
+                        searchInputProfiles.style.display = 'none';
+
+                    }
+
+
+
+                    let selectByValueInpHidden = document.getElementById('{!$Component.selectByValueInpHidden}');
+                    selectByValueInpHidden.value = selectValue.value;
+
+                }
+                
+                
+                
+                function SelectProductFieldsView() {
+
+                    let UsersTabDisplay = document.getElementById('ProductTriggersTabSelectProduct').style.display;
+                    if (UsersTabDisplay === 'block') {
+                        document.getElementById('ProductTriggersTabSelectProduct').style.display = 'none';
+                    } else {
+                        document.getElementById('ProductTriggersTabSelectProduct').style.display = 'block';
+                    }
+                    showAllCheckboxOnProductTrigger();
+                }
+
+
+
+
+                //ISSUE 45
+                function selectedAllProductValues() {
+
+                    console.log('selectedAllProductAndOppValues');
+
+
+
+
+                    let allSelectedCheckBox = document.getElementById('all-product-field-map');
+
+                        if(allSelectedCheckBox.checked)
+                        {
+
+                            Array.from(document.querySelectorAll('.productChk2')).forEach(checkbox=>{
+                                checkbox.checked = true;
+                            });
+                            Array.from(document.querySelectorAll('.productChk1')).forEach(checkbox=>{
+                                checkbox.checked = true;
+                            });
+
+                        }
+                        else
+                        {
+                            Array.from(document.querySelectorAll('.productChk2')).forEach(checkbox=>{
+                                checkbox.checked = false;
+                            });
+                            Array.from(document.querySelectorAll('.productChk1')).forEach(checkbox=>{
+                                checkbox.checked = false;
+                            });
+
+                        }
+                        updateProductMap();
+
+                }
+
+
+
+
+                function selectedAllOppValues() {
+
+                    console.log('selectedAllOppValues');
+
+
+
+                    let allSelectedCheckBox = document.getElementById('all-opp-field-map');
+
+                    if(allSelectedCheckBox.checked)
+                    {
+                        Array.from(document.querySelectorAll('.optChk1')).forEach(checkbox=>{
+                            checkbox.checked = true;
+                        });
+
+                        Array.from(document.querySelectorAll('.optChk2')).forEach(checkbox=>{
+                            checkbox.checked = true;
+                        });
+
+                    }
+                    else
+                    {
+                        Array.from(document.querySelectorAll('.optChk1')).forEach(checkbox=>{
+                            checkbox.checked = false;
+                        });
+                        Array.from(document.querySelectorAll('.optChk2')).forEach(checkbox=>{
+                            checkbox.checked = false;
+                        });
+                    }
+                    updateProductMap();
+
+                }
+
+
+                function SelectAllProductTriggerValue() {
+                    //alert('SelectAllProductTriggerValue');
+                    console.log('SelectAllProductTriggerValue');
+
+                    let allProductTriggerCheckboxesFirst = Array.from(document.querySelectorAll('.productTriggerFirst'));
+                    let allProductTriggerCheckboxesSecond = Array.from(document.querySelectorAll('.productTriggerSecond'));
+                    allProductTriggerCheckboxesFirst.push(...allProductTriggerCheckboxesSecond);
+
+                    let selectedAllProductFields = [];
+                    let selectedAllOppFields = [];
+
+
+
+
+                    let allSelectedCheckbox = document.getElementById('all-productTrigger-field-map');
+
+
+                    let allSelectedCheckBox = document.getElementById('all-productTrigger-field-map');
+
+                    if(allSelectedCheckBox.checked)
+                    {
+                        allProductTriggerCheckboxesFirst.forEach(checkbox=>{
+                            checkbox.checked = true;
+
+                            if(checkbox.value.indexOf('Product2') !== -1)
+                            {
+                                let field = checkbox.value.split('.')[1];
+                                selectedAllProductFields.push(field);
+                            }
+                            if(checkbox.value.indexOf('Opportunity') !== -1)
+                            {
+                                let fieldOpp = checkbox.value.split('.')[1];
+                                selectedAllOppFields.push(fieldOpp);
+                            }
+
+                        });
+                    }
+                    else
+                    {
+                        allProductTriggerCheckboxesFirst.forEach(checkbox=>{
+                            checkbox.checked = false;
+                            if(checkbox.value.indexOf('Product2') !== -1)
+                            {
+                                let field = checkbox.value.split('.')[1];
+
+                            }
+                            if(checkbox.value.indexOf('Opportunity') !== -1)
+                            {
+                                let fieldOpp = checkbox.value.split('.')[1];
+                            }
+                        });
+                    }
+
+                    updatedAllSelectedProduct(selectedAllProductFields.join(';'));
+
+                    updatedAllSelectedOpportunity(selectedAllOppFields.join(';'));
+
+
+                }
+
+
+
+
+                function searchAmount() {
+                    let amountRows = Array.from(document.querySelectorAll('#amountRows'));
+                    let inputSearchAmount = document.querySelector('#inputSearchAmount');
+                    let filter = inputSearchAmount.value.toUpperCase();
+
+                    let td = '';
+                    let textValue = '';
+
+                    for (let i = 0; i < amountRows.length; i++) {
+                        td = amountRows[i].getElementsByTagName("td")[0];
+                        if (td) {
+                            textValue = td.textContent || td.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                amountRows[i].style.display = "";
+                            } else {
+                                amountRows[i].style.display = "none";
+                            }
+                        }
+                    }
+                }
+
+                function searchUsers() {
+                    let UsersFields = Array.from(document.querySelectorAll('#UsersFields'));
+
+                    let inputSearchUsers = document.querySelector('#inputSearchUsers');
+                    let filter = inputSearchUsers.value.toUpperCase();
+                    let td = '', textValue = '';
+
+                    for (let i = 0; i < UsersFields.length; i++) {
+                        td = UsersFields[i].getElementsByTagName("td")[0];
+                        if (td) {
+                            textValue = td.textContent || td.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                UsersFields[i].style.display = "";
+                            } else {
+                                UsersFields[i].style.display = "none";
+                            }
+                        }
+                    }
+
+                }
+
+
+                function searchProfiles() {
+                    let UsersFields = Array.from(document.querySelectorAll('#ProfilesFields'));
+
+                    let inputSearchUsers = document.querySelector('#inputSearchUserProfiles');
+                    let filter = inputSearchUsers.value.toUpperCase();
+                    let td = '', textValue = '';
+
+                    for (let i = 0; i < UsersFields.length; i++) {
+                        td = UsersFields[i].getElementsByTagName("td")[0];
+                        if (td) {
+                            textValue = td.textContent || td.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                UsersFields[i].style.display = "";
+                            } else {
+                                UsersFields[i].style.display = "none";
+                            }
+                        }
+                    }
+
+                }
+
+
+
+
+
+                function searchRoles() {
+                    let UsersFields = Array.from(document.querySelectorAll('#RolesFields'));
+
+                    let inputSearchUsers = document.querySelector('#inputSearchUserRoles');
+                    let filter = inputSearchUsers.value.toUpperCase();
+                    let td = '', textValue = '';
+
+                    for (let i = 0; i < UsersFields.length; i++) {
+                        td = UsersFields[i].getElementsByTagName("td")[0];
+                        if (td) {
+                            textValue = td.textContent || td.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                UsersFields[i].style.display = "";
+                            } else {
+                                UsersFields[i].style.display = "none";
+                            }
+                        }
+                    }
+
+                }
+
+
+
+
+
+                function searchMapProducts() {
+                    let mapProductsRows = Array.from(document.querySelectorAll('#mapProductsRows'));
+                    let inputMapProducts = document.querySelector('#inputMapProducts');
+                    let filter = inputMapProducts.value.toUpperCase();
+                    let td = '', textValue = '';
+
+                    for (let i = 0; i < mapProductsRows.length; i++) {
+                        td = mapProductsRows[i].getElementsByTagName("td")[0];
+                        if (td) {
+                            textValue = td.textContent || td.innerText;
+                            if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                mapProductsRows[i].style.display = "";
+                            } else {
+                                mapProductsRows[i].style.display = "none";
+                            }
+                        }
+                    }
+                }
+
+                function updateProductMap() {
+
+                    console.log('updateProductMap');
+                    clearTimeout(idTimeOut);
+                    idTimeOut = setTimeout(() => {
+                        updateProductMapFieldObjectButton.click();
+                        idTimeOut = 0;
+                    }, 1000);
+                }
+
+                function clickMapProducts() {
+                    if (idTimeOut) {
+                        clearTimeout(idTimeOut);
+                        idTimeOut = 0;
+                        updateProductMapFieldObjectButton.click();
+                    }
+                }
+
+
+
+                function searchProducts() {
+                    let productsSelect = document.getElementById('{!$Component.productsSelect}');
+                    let productsRow = Array.from(document.querySelectorAll('#productsRow'));
+                    let opportunityRow = Array.from(document.querySelectorAll('#opportunityRow'));
+
+                    let inputSearchProducts = document.querySelector('#inputSearchProducts');
+                    let filter = inputSearchProducts.value.toUpperCase();
+                    let td = '';
+                    let textValue = '';
+
+                    if (productsSelect.value === 'Opportunity') {
+                        for (let i = 0; i < opportunityRow.length; i++) {
+                            td = opportunityRow[i].getElementsByTagName("td")[0];
+                            if (td) {
+                                textValue = td.textContent || td.innerText;
+                                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                    opportunityRow[i].style.display = "";
+                                } else {
+                                    opportunityRow[i].style.display = "none";
+                                }
+                            }
+                        }
+                    } else {
+                        for (let i = 0; i < productsRow.length; i++) {
+                            td = productsRow[i].getElementsByTagName("td")[0];
+                            if (td) {
+                                textValue = td.textContent || td.innerText;
+                                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                    productsRow[i].style.display = "";
+                                } else {
+                                    productsRow[i].style.display = "none";
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+
+                function searchProductsFields() {
+                    let productsRow = Array.from(document.querySelectorAll('#productsTriggerRow'));
+
+                    let inputSearchProducts = document.querySelector('#inputSearchProductTriggers');
+                    let filter = inputSearchProducts.value.toUpperCase();
+                    let td = '';
+                    let textValue = '';
+
+
+                        for (let i = 0; i < productsRow.length; i++) {
+                            td = productsRow[i].getElementsByTagName("td")[0];
+                            if (td) {
+                                textValue = td.textContent || td.innerText;
+                                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                                    productsRow[i].style.display = "";
+                                } else {
+                                    productsRow[i].style.display = "none";
+                                }
+                            }
+                        }
+
+
+                }
+
+            </script>
+            <script>
+                (() => {
+                    // Check and set if needed disabled attribute on certain inputs
+                    let opportunityAmountFieldSelector = document.getElementById('{!$Component.opportunityAmountField}');
+                    let opportunityAmountValue = document.getElementById('{!$Component.opportunityAmountValue}');
+                    let opportunityTypeFieldSelector = document.getElementById('{!$Component.opportunityTypeField}');
+
+                    document.getElementById('{!$Component.enableOpportunityAmount}').addEventListener('change', checkOpportunityAmountFieldEnabled);
+                    document.getElementById('{!$Component.enableOpportunityTypes}').addEventListener('change', checkOpportunityTypeFieldEnabled);
+                    document.getElementById('{!$Component.enableRecordTypes}').addEventListener('change', checkRecordTypesEnabled);
+
+                    function checkOpportunityAmountFieldEnabled() {
+                        let opportunityAmountFields = document.getElementById('opportunityAmountFields');
+                        if (document.getElementById('{!$Component.enableOpportunityAmount}').checked) {
+                            opportunityAmountFields.classList.remove('slds-hide');
+                        } else {
+                            opportunityAmountFields.classList.add('slds-hide');
+                        }
+                    }
+
+                    checkOpportunityAmountFieldEnabled();
+
+                    function checkOpportunityTypeFieldEnabled() {
+                        let opportunityTypeSelect = document.getElementById('opportunityTypeSelect');
+                        let opportunityTypeButtons = document.getElementById('opportunityTypeButtons');
+                        if (document.getElementById('{!$Component.enableOpportunityTypes}').checked) {
+                            opportunityTypeSelect.classList.remove('slds-hide');
+                            opportunityTypeButtons.classList.remove('slds-hide');
+                        } else {
+                            opportunityTypeSelect.classList.add('slds-hide');
+                            opportunityTypeButtons.classList.add('slds-hide');
+                        }
+                    }
+
+                    checkOpportunityTypeFieldEnabled();
+
+                    function checkRecordTypesEnabled() {
+                        let opportunityRecordTypesButtons = document.getElementById('opportunityRecordTypesButtons');
+                        if (document.getElementById('{!$Component.enableRecordTypes}').checked) {
+                            opportunityRecordTypesButtons.classList.remove('slds-hide');
+                        } else {
+                            opportunityRecordTypesButtons.classList.add('slds-hide');
+                        }
+                    }
+
+                    checkRecordTypesEnabled();
+
+                    // Event to correctly set Open In setting
+                    Array.from(document.querySelectorAll('input[name="openIn"]')).map(input => {
+                        input.addEventListener('change', event => {
+                            document.getElementById('{!$Component.openInHidden}').value = event.target.value;
+                        });
+                    });
+
+                    // Set current checked Open In setting
+                    <!--if ('{!openIn}' === 'NewWindow') {-->
+                    <!--    document.getElementById('openInNewWindow').setAttribute('checked', 'true');-->
+                    <!--} else {-->
+                    <!--    document.getElementById('openInDialogWindow').setAttribute('checked', 'true');-->
+                    <!--}-->
+
+                    attachStatefulButtonsClickEvent();
+
+                    updateStatefulButtonsCounter('enabledOpportunityStagesHidden');
+                    updateStatefulButtonsCounter('enabledRecordTypesHidden');
+                    updateStatefulButtonsCounter('enabledOpportunityTypesHidden');
+                })();
+
+                // Fill in map tables
+                (() => {
+                    const addIdsToNode = (node) => {
+                        const groupId = Math.trunc(Math.random() * 9999999999999).toString(36);
+                        Array.from(node.querySelectorAll('input')).map(input => {
+                            const id = Math.trunc(Math.random() * 9999999999999).toString(36);
+
+                            input.setAttribute('id', id);
+                            input.setAttribute('name', groupId);
+                            input.nextElementSibling.setAttribute('for', id);
+                        });
+
+                        return node;
+                    };
+
+                    // Fill outcome types map
+                    (() => {
+                        const recalculate = () => {
+                            Array.from(document.querySelectorAll('.stateful-buttons-container.opportunity-closed-stages button[aria-pressed="true"]')).map(button => {
+                                if (!initialStages[button.getAttribute('data-id')]) {
+                                    initialStages[button.getAttribute('data-id')] = -1;
+                                }
+                            });
+
+                            Array.from(document.querySelectorAll('.stateful-buttons-container.opportunity-closed-stages button[aria-pressed="false"]')).map(button => {
+                                if (initialStages[button.getAttribute('data-id')]) {
+                                    delete initialStages[button.getAttribute('data-id')];
+                                }
+                            });
+                        };
+
+                        let initialStages;
+                        try {
+                            initialStages = JSON.parse('{!JSENCODE(outcomeTypesMap)}');
+                        } catch (e) {
+                            initialStages = {};
+                            recalculate();
+                        }
+                        const table = document.querySelector('#outcome-types-map-table');
+                        const template = table.querySelector('tr.template');
+
+                        const fill = () => {
+                            Array.from(table.querySelectorAll('tbody tr:not(.template)')).map(row => {
+                                row.remove();
+                            });
+
+                            Object.keys(initialStages).map(key => {
+                                const value = initialStages[key];
+
+                                const tableNode = addIdsToNode(template.cloneNode(true));
+                                tableNode.classList.remove('template');
+
+                                tableNode.querySelector('*[data-value="name"]').innerHTML = key;
+                                tableNode.querySelector(`*[data-value="${value}"] input`).checked = true;
+
+                                Array.from(tableNode.querySelectorAll('input')).map(input => {
+                                    input.addEventListener('change', () => {
+                                        const result = {};
+
+                                        Array.from(table.querySelectorAll('tbody tr:not(.template)')).map(row => {
+                                            result[row.querySelector('*[data-value="name"]').innerHTML] = row.querySelector('input:checked').getAttribute('value');
+                                        });
+
+                                        document.getElementById('{!$Component.outcomeTypesMapHidden}').value = JSON.stringify(result);
+                                        initialStages = result;
+                                    });
+                                });
+
+                                table.querySelector('tbody').appendChild(tableNode);
+                            });
+
+                            document.getElementById('{!$Component.outcomeTypesMapHidden}').value = JSON.stringify(initialStages);
+                        };
+
+                        fill();
+
+                        Array.from(document.querySelectorAll('.stateful-buttons-container.opportunity-closed-stages')).map(container => {
+                            container.addEventListener('click', () => {
+                                recalculate();
+
+                                fill();
+                            })
+                        });
+                    })();
+
+                    // Fill opportunity types map
+                    (() => {
+                        let initialTypes;
+                        try {
+                            initialTypes = JSON.parse('{!JSENCODE(opportunityTypesMap)}')
+                        } catch (e) {
+                            initialTypes = {};
+                        }
+                        let types = JSON.parse('{!JSENCODE(opportunityTypesSyncValuesJSON)}');
+                        const table = document.querySelector('#opportunity-types-map-table');
+                        const template = table.querySelector('tr.template');
+
+                        const fill = () => {
+                            Array.from(table.querySelectorAll('tbody tr:not(.template)')).map(row => {
+                                row.remove();
+                            });
+
+                            Object.keys(initialTypes).map(key => {
+                                if (!types.includes(key)) {
+                                    delete initialTypes[key];
+                                }
+                            });
+
+                            types.map(type => {
+                                if (!initialTypes[type]) {
+                                    initialTypes[type] = -1;
+                                }
+                            });
+
+                            Object.keys(initialTypes).map(key => {
+                                const value = initialTypes[key];
+
+                                const tableNode = addIdsToNode(template.cloneNode(true));
+                                tableNode.classList.remove('template');
+
+                                tableNode.querySelector('*[data-value="name"]').innerHTML = key;
+                                tableNode.querySelector(`*[data-value="${value}"] input`).checked = true;
+
+                                Array.from(tableNode.querySelectorAll('input')).map(input => {
+                                    input.addEventListener('change', () => {
+                                        const result = {};
+
+                                        Array.from(table.querySelectorAll('tbody tr:not(.template)')).map(row => {
+                                            result[row.querySelector('*[data-value="name"]').innerHTML] = row.querySelector('input:checked').getAttribute('value');
+                                        });
+
+                                        document.getElementById('{!$Component.opportunityTypesMapHidden}').value = JSON.stringify(result);
+                                        initialTypes = result;
+                                    });
+                                });
+
+                                table.querySelector('tbody').appendChild(tableNode);
+                            });
+
+                            document.getElementById('{!$Component.opportunityTypesMapHidden}').value = JSON.stringify(initialTypes);
+                        };
+
+                        fill();
+                    })();
+
+                    // Attach events for Amount fields map
+                    (() => {
+                        const checkboxes = document.querySelectorAll('input[name="amount-fields-group"]');
+
+                        Array.from(checkboxes).map(checkbox => {
+                            checkbox.addEventListener('change', (event) => {
+                                let result = [];
+                                Array.from(document.querySelectorAll('input[name="amount-fields-group"]:checked')).map(checkbox => result.push(checkbox.value));
+
+                                document.getElementById('{!$Component.opportunityAmountFieldsHidden}').value = result.join(';');
+                            });
+                        });
+                    })();
+
+
+
+
+                    function showSelectedChcOnOpp()
+                    {
+                        let oppSelectedCheckBox = document.getElementById('all-opp-field-map');
+                        let allOppCheckboxSecond1 = Array.from(document.querySelectorAll('.optChk1'));
+                        let allOppCheckboxSecond = Array.from(document.querySelectorAll('.optChk2'));
+                        allOppCheckboxSecond.push(...allOppCheckboxSecond1);
+                        let oppCheckboxSecond = allOppCheckboxSecond.filter(checkbox=>{
+                            return checkbox.checked === true;
+                        });
+
+
+                        if(oppCheckboxSecond.length > 0 && allOppCheckboxSecond.length != oppCheckboxSecond.length)
+                        {
+                            if (oppSelectedCheckBox.readOnly)
+                            {
+                                oppSelectedCheckBox.checked = oppSelectedCheckBox.readOnly = false;
+                            }
+                            else
+                            {
+                                oppSelectedCheckBox.readOnly = oppSelectedCheckBox.indeterminate = true;
+                            }
+
+                        }
+                        else if(oppCheckboxSecond.length == 0)
+                        {
+                            oppSelectedCheckBox.checked = false;
+                            oppSelectedCheckBox.indeterminate = false;
+                            oppSelectedCheckBox.readOnly = false;
+                        }
+                        else if(oppCheckboxSecond.length > 0 && allOppCheckboxSecond.length == oppCheckboxSecond.length)
+                        {
+
+                            oppSelectedCheckBox.checked = true;
+                            oppSelectedCheckBox.indeterminate = false;
+                            oppSelectedCheckBox.readOnly = false;
+                        }
+                    }
+
+                    function showSelectedChcOnProd()
+                    {
+                        let allProductSelectedCheckBox = document.getElementById('all-product-field-map');
+                        let allProductCheckboxSecond1 = Array.from(document.querySelectorAll('.productChk1'));
+                        let allProductCheckboxSecond = Array.from(document.querySelectorAll('.productChk2'));
+                        allProductCheckboxSecond.push(...allProductCheckboxSecond1);
+
+
+                        let productCheckboxSecond = allProductCheckboxSecond.filter(checkbox=>{
+                            return checkbox.checked === true;
+                        });
+
+
+                        if(productCheckboxSecond.length > 0 && allProductCheckboxSecond.length != productCheckboxSecond.length)
+                        {
+                            if (allProductSelectedCheckBox.readOnly)
+                            {
+                                allProductSelectedCheckBox.checked = allProductSelectedCheckBox.readOnly = false;
+                            }
+                            else
+                            {
+                                allProductSelectedCheckBox.readOnly = allProductSelectedCheckBox.indeterminate = true;
+                            }
+
+                        }
+                        else if(productCheckboxSecond.length == 0)
+                        {
+                            allProductSelectedCheckBox.checked = false;
+                            allProductSelectedCheckBox.indeterminate = false;
+                            allProductSelectedCheckBox.readOnly = false;
+                        }
+                        else if(productCheckboxSecond.length > 0 && allProductCheckboxSecond.length == productCheckboxSecond.length)
+                        {
+
+                            allProductSelectedCheckBox.checked = true;
+                            allProductSelectedCheckBox.indeterminate = false;
+                            allProductSelectedCheckBox.readOnly = false;
+                        }
+                    }
+
+
+
+
+                    function showSelectedChcOnOppAndProd() {
+
+                        let productsSelectOptions = document.getElementById('{!$Component.productsSelect}');
+
+                        if(productsSelectOptions.value == 'Opportunity')
+                        {
+                            showSelectedChcOnOpp();
+                        }
+                        else if(productsSelectOptions.value == 'Product')
+                        {
+                            showSelectedChcOnProd();
+                        }
+
+                    }
+
+                    // Attach events for Product map fields map
+                    (() => {
+
+                        showSelectedChcOnOpp();
+                        showSelectedChcOnProd();
+
+
+
+                        console.log('Attach events for Product map fields map');
+
+                        document.getElementById('updateProductMapFieldObjectButton').addEventListener('click', () => {
+                            let fields = [];
+                            let productFields = [];
+                            let oppFields = [];
+
+
+                            showSelectedChcOnOppAndProd();
+
+
+                            document.getElementById('spinnerMapProducts').style.display = 'block';
+
+
+                            Array.from(document.querySelectorAll('input[name="product-field-map-group"]:checked')).map(item => {
+                                fields.push(item.value);
+                                if(item.value.indexOf('Product2') !== -1)
+                                {
+                                    let field = item.value.split('.')[1];
+                                    productFields.push(field);
+                                }
+                                if(item.value.indexOf('Opportunity') !== -1)
+                                {
+                                    let fieldOpp = item.value.split('.')[1];
+                                    oppFields.push(fieldOpp);
+                                }
+
+                            });
+
+                            getProducFieldsView(productFields.join(','));
+                            getOpportunityFieldsView(oppFields.join(','));
+                            updateProductMapFieldObject(fields.join(';'));
+                        });
+
+
+
+                        getTruVoiceProducts();
+                        document.getElementById('spinnerMapProducts').style.display = 'none';
+                    })();
+
+                    (()=>{
+                        // Array.from(document.querySelectorAll('input[name="productTrigger-field-map-group"]:checked')).addEventListener('click',() =>{
+                        //     let selectedFieldValue = [];
+                        //     document.getElementById('spinnerMapProducts').style.display = 'block';
+                        //
+                        //     Array.from(document.querySelectorAll('input[name="productTrigger-field-map-group"]:checked')).map(item =>{
+                        //         let field = item.value.split('.')[1];
+                        //         selectedFieldValue.push(field);
+                        //     });
+                        //
+                        //     console.log('FIELDS: ');
+                        //     console.log(selectedFieldValue);
+                        //     updateProductTriggerFieldValues(selectedFieldValue.join(','));
+                        //
+                        //     console.log('selectedFieldValue');
+                        //     console.log(selectedFieldValue);
+                        //
+                        // })
+
+                    })();
+
+
+
+                })();
+
+                function usCheck(id, check) {
+                    console.log(id, check);
+                    asd();
+                }
+
+
+
+                function attachStatefulButtonsClickEvent() {
+                    // Logic for stateful buttons groups
+                    Array.from(document.querySelectorAll('.stateful-buttons-container')).map(container => {
+                        container.onclick = null;
+
+                        container.addEventListener('click', event => {
+                            const target = event.target;
+
+                            if (target.tagName !== 'BUTTON')
+                                return;
+
+                            const isRadio = (target.getAttribute('data-type') || '').toLowerCase() === 'radio';
+
+                            if (target.getAttribute('aria-pressed') === 'false') {
+                                target.setAttribute('aria-pressed', 'true');
+                                target.classList.remove('slds-button_neutral');
+                                target.classList.add('slds-button_success');
+                            } else {
+                                target.setAttribute('aria-pressed', 'false');
+                                target.classList.add('slds-button_neutral');
+                                target.classList.remove('slds-button_success');
+                            }
+
+                            if (isRadio) {
+                                target.setAttribute('restriction', 'restricted');
+                                Array.from(document.querySelectorAll(`*[aria-pressed="true"][data-name="${target.getAttribute('data-name')}"]:not([restriction])`)).map(button => {
+                                    button.setAttribute('aria-pressed', 'false');
+                                    button.classList.add('slds-button_neutral');
+                                    button.classList.remove('slds-button_success');
+                                });
+                                target.removeAttribute('restriction');
+                            }
+
+                            let total = '';
+                            Array.from(document.querySelectorAll(`*[aria-pressed="true"][data-name="${target.getAttribute('data-name')}"]`)).map(button => {
+                                total += button.getAttribute('data-id');
+                            });
+                            document.querySelector(`*[id$="${target.getAttribute('data-name')}"]`).value = total;
+
+                            updateStatefulButtonsCounter(target.getAttribute('data-name'));
+                        });
+                    });
+                }
+
+                // function changeUsersCheckbox(value, checked) {
+                // 	userListUpdateAdd(value, checked);
+                // }
+
+                function setCollectorID() {
+                    // let collectors_ids = '{!(collectors_ids)}';
+                    // let settings = '{!settings}';
+                    // console.log(collectors_ids.length);
+                    /*collectors_ids.forEach(element => {
+                        console.log(element.collector_name);
+                        if (settings.Initiative_id__c==element.initiative_id) settings.Collector_id__c = element.collector_id;
+                    });*/
+                }
+
+                function updateStatefulButtonsCounter(name) {
+                    const enabled = Array.from(document.querySelectorAll(`*[aria-pressed="true"][data-name="${name}"]`)).length;
+                    const disabled = Array.from(document.querySelectorAll(`*[aria-pressed="false"][data-name="${name}"]`)).length;
+
+                    document.querySelector(`.${name}.counter .enabled`).innerHTML = enabled.toString();
+                    document.querySelector(`.${name}.counter .disabled`).innerHTML = disabled.toString();
+                }
+				//
+                function getTruVoiceProducts() {
+                    //TODO REMOVE THIS!!!
+                    //const programId = '58af4da0b310d92314627232';
+                    const programId = '{!settings.Initiative_id__c}';
+                    const xhr = new XMLHttpRequest();
+                    xhr.open('GET', '{!settings.API_EndPoint__c}/sfa/clients/{!settings.TruVoice_Client_ID__c}/initiatives/' + programId + '/products', true);
+                    console.log('{!settings.API_EndPoint__c}/sfa/clients/{!settings.TruVoice_Client_ID__c}/initiatives/' + programId + '/products');
+                    xhr.setRequestHeader('apikey', '{!settings.TruVoice_API_Key__c}');
+                    xhr.setRequestHeader('x-truvoice-client', '{!settings.TruVoice_Client_ID__c}');
+
+                    xhr.onreadystatechange = () => {
+                        if (xhr.readyState === 4) {
+                            const products = JSON.parse(xhr.responseText);
+                            console.log(xhr.responseText);
+
+                            const productsSelectOptions = [];
+                            productsSelectOptions.push({name: 'Exclude', label: 'Exclude'});
+
+                            products.map(product => {
+                                productsSelectOptions.push({
+                                    name: product.id,
+                                    label: product.name
+                                });
+                            });
+                            setTruVoiceProducts(JSON.stringify(productsSelectOptions));
+                        }
+                    };
+                    xhr.send();
+                }
+
+
+            </script>
+
+
+
+        </apex:outputPanel>
+
+        <apex:outputPanel id="stagesTestRerender">
+
+            <!-- Test Sales Stages Script           -->
+            <script>
+                //*** add onchange event for enableSalesStages checkbox
+                <!--document.getElementById('{!$Component.enableSalesStages}').addEventListener('change', checkSalesStagesEnabled);-->
+
+                function checkSalesStagesEnabled() {
+                    passSalesStagesFilter(String(document.getElementById('{!$Component.enableSalesStages}').checked));
+
+                    let salesStagesBtnSection = document.getElementById('salesStagesBtnSection');
+                    if (document.getElementById('{!$Component.enableSalesStages}').checked) {
+                        salesStagesBtnSection.classList.remove('slds-hide');
+                    } else {
+                        salesStagesBtnSection.classList.add('slds-hide');
+                    }
+
+
+                }
+                checkSalesStagesEnabled();
+
+                function handleSalesStageClick(event) {
+                    console.log('handleSalesStageClick');
+
+                    let curentPressedBtn = event.target;
+
+                    let isSelected = event.target.getAttribute('aria-pressed');
+
+                    // let salesStagesId = event.currentTarget.dataset.id;
+                    // console.log(event.currentTarget.dataset.id);
+
+
+                    if (curentPressedBtn.classList.contains('slds-button_success')){
+                        curentPressedBtn.classList.remove('slds-button_success');
+                        curentPressedBtn.classList.add('slds-button_neutral');
+                        isSelected = false;
+                        curentPressedBtn.setAttribute('aria-pressed',String(isSelected));
+
+                    }else{
+                        curentPressedBtn.classList.remove('slds-button_neutral');
+                        curentPressedBtn.classList.add('slds-button_success');
+                        isSelected = true;
+                        curentPressedBtn.setAttribute('aria-pressed',String(isSelected));
+                    }
+
+                    let pressedButtons = Array.from(document.querySelectorAll('.salesStageBtns')).filter(btn => {
+                        return btn.getAttribute('aria-pressed') === 'true';
+                    });
+
+                    let responseToApex = '';
+                    pressedButtons.forEach(btn =>{
+                        responseToApex += btn.dataset.id + ';';
+                    });
+
+                    passSalesStages(responseToApex);
+                }
+
+            </script>
+        </apex:outputPanel>
+
+        <script>
+            function showBar() {
+
+                let statusBarSaveDiv = document.getElementById('statusBarSaveDiv');
+                statusBarSaveDiv.style.display = "block";
+
+
+            }
+
+            function saveSalesStages() {
+                console.log('saveSalesStages');
+                let pressedButtons = Array.from(document.querySelectorAll('.salesStageBtns')).filter(btn => {
+                    return btn.getAttribute('aria-pressed') === 'true';
+                });
+
+                let responseToApex = '';
+                pressedButtons.forEach(btn =>{
+                    responseToApex += btn.dataset.id + ';';
+                });
+                console.log(responseToApex);
+                passSalesStages(responseToApex);
+            }
+        </script>
+
+
+
+    </apex:form>
+    <style>
+        hr {
+            margin-top: .5rem !important;
+            margin-bottom: .5rem !important;
+        }
+
+        .slds-checkbox_faux_container {
+            display: flex;
+            align-items: center;
+        }
+
+        .slds-checkbox_faux {
+            margin-right: .25rem;
+        }
+
+        label .slds-checkbox_toggle {
+            display: inline-block;
+        }
+
+        .slds-button {
+            position: static !important;
+        }
+
+        .slds-button_outline-brand {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            text-align: center;
+            vertical-align: middle;
+            transition: border .15s linear !important;
+            background-color: rgb(255, 255, 255) !important;
+            border-color: rgb(0, 112, 210) !important;
+        }
+
+        .width-full {
+            width: 100%;
+        }
+
+        table .slds-radio_faux {
+            margin-right: 0 !important;
+        }
+
+        .template {
+            display: none;
+        }
+
+        .table-max-height-500 {
+            max-height: 500px;
+            overflow: auto;
+        }
+
+        .messageTable td:first-child {
+            min-width: 25px !important;
+        }
+    </style>
+
+</apex:page>

@@ -1,0 +1,89 @@
+<apex:page standardController="Opportunity" tabStyle="Opportunity" extensions="OpportunityAttachmentController" id="pageId">
+
+<style type="text/css">
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+
+    </style>
+    
+    <script>
+    function showError(){
+        var attachmentReminder = ['MOU', 'Contract', 'Proposal', 'Proforma at Contract Signature'];
+        
+        var selectedIndex = document.getElementById("pageId:form_Upload:pageBlock:pageSection:sectionId:typeList").selectedIndex;
+        var selectedOption = document.getElementById("pageId:form_Upload:pageBlock:pageSection:sectionId:typeList").options[selectedIndex].value
+        console.log('selectedIndex: ' + selectedIndex);
+        console.log('selectedOption: ' + selectedOption);
+        var attachedFile = document.getElementById('pageId:form_Upload:pageBlock:pageSection:j_id31:file_File').value;
+        if(attachmentReminder.indexOf(selectedOption) != -1 && attachedFile != ''){
+            return confirm('You are about to upload an attachment.  Please check the following fields\:\n 1. Subsidy \n 2. Patient Collections \n 3. Total Revenue \n 4. Total Margin \n\n Click "OK" to Attach');
+        }
+        return true;
+    }
+    </script>
+    
+
+  <apex:sectionHeader title="{!Opportunity.Name}" subtitle="Attach File"/>
+    <apex:form id="form_Upload">
+
+        
+
+        <apex:pageBlock id="pageBlock" >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!back}" value="Back to {!Opportunity.Name}"/>
+                <apex:commandButton action="{!back}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageMessages />
+
+            <apex:pageBlockSection id="pageSection" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="File" for="file_File"/>
+                    <apex:inputFile id="file_File" value="{!fileBody}" filename="{!fileName}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Final" for="final"/>
+                    <apex:inputCheckbox id="Final" value="{!finalVersion}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="sectionId">
+                    <apex:outputLabel value="Document Type" for="selectedType"/>
+                    <apex:selectList id="typeList" value="{!selectedType}" size="1">
+                        <apex:selectOptions value="{!documentTypeList}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Description" for="description"/>
+                    <apex:inputTextarea id="description" value="{!description}" rows="4" cols="50"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="" for="uploadBtn"/>
+                    <apex:commandButton id="uploadBtn" value="Attach File" action="{!showPopup}" onclick="return showError()"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

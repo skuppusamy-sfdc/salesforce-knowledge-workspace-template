@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Type__c</fullName>
+    <label>Time Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Employment_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+            <value>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+                <label>Full Time</label>
+            </value>
+            <value>
+                <fullName>Part Time</fullName>
+                <default>false</default>
+                <label>Part Time</label>
+            </value>
+            <value>
+                <fullName>PRN</fullName>
+                <default>false</default>
+                <label>PRN</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Employee</controllingFieldValue>
+            <controllingFieldValue>Independent Contractor</controllingFieldValue>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Full Time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employee</controllingFieldValue>
+            <controllingFieldValue>Independent Contractor</controllingFieldValue>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>Part Time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Independent Contractor</controllingFieldValue>
+            <controllingFieldValue>Partner</controllingFieldValue>
+            <valueName>PRN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Leased</controllingFieldValue>
+            <controllingFieldValue>Locum</controllingFieldValue>
+            <controllingFieldValue>Managed</controllingFieldValue>
+            <valueName>Not applicable</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

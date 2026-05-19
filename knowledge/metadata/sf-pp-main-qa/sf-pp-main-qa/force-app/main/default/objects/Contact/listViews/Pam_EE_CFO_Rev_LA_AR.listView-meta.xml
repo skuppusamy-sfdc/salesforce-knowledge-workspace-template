@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pam_EE_CFO_Rev_LA_AR</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>Account.Staffed_Beds__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>Account.Staffed_Beds__c</field>
+        <operation>greaterThan</operation>
+        <value>50</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Chief Financial Officer,CFO,Revenue</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AR,LA</value>
+    </filters>
+    <label>Pam-EE -CFO,Rev - LA, AR</label>
+</ListView>

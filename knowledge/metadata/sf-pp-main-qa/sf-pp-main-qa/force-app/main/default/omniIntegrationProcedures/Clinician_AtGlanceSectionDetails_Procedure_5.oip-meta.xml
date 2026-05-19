@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;AccountId&quot;: &quot;0017x0000170atPAAQ&quot;,
+    &quot;ProfileName&quot;: &quot;System Admin&quot;,
+    &quot;UserId&quot;: &quot;0057x00000WljFNAAZ&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>Clinician_AtGlanceSectionDetails</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RA_SectionDetails</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;ShowFacilityOnboarding&quot; : &quot;=%Record:FacilityOnboardingCasesClosedCount% == 0 &amp;&amp; %Record:FacilityOnboardingCasesNotClosedCount% &gt; 0&quot;,
+    &quot;ShowSCPOnboarding&quot; : &quot;=%Record:SCPOnboardingCasesClosedCount% == 0 &amp;&amp; %Record:SCPOnboardingCasesNotClosedCount% &gt; 0&quot;,
+    &quot;ShowActiveFacility&quot; : &quot;=%Record:ActiveHPFCount% &gt; 0&quot;,
+    &quot;ShowApplicant&quot; : &quot;=(%Record:ActiveApplicant% &gt; 0 || %Record:JobBoardApplicationCount% &gt; 0)&quot;,
+    &quot;IsExternalUser&quot; : &quot;=ISNOTBLANK(%ProfileName%) &amp;&amp; (%ProfileName%==\&quot;Core HC Customer Community Login User\&quot; || %ProfileName%==\&quot;Core HC Customer Community Plus User\&quot;)&quot;,
+    &quot;ShowInactive&quot; : &quot;=(ISNOTBLANK(%Record:AllHPFCount%) &amp;&amp; %Record:AllHPFCount% &gt; 0) &amp;&amp; ( ISBLANK(%Record:InactiveHPFCount%) || %Record:InactiveHPFCount% == 0)&quot;,
+    &quot;ShowProspect&quot; : &quot;=%Record:ProspectContact% &gt; 0&quot;,
+    &quot;ShowSCPOffboarding&quot; : &quot;=%Record:SCPOffboardingCasesCount% &gt; 0&quot;,
+    &quot;AccountName&quot; : &quot;=%DR_FetchAccountDetails:Account:Salutation% + \&quot; \&quot; +%DR_FetchAccountDetails:Account:FirstName% +\&quot; \&quot;+ %DR_FetchAccountDetails:Account:LastName%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DR_FetchAccountDetails</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContextId&quot; : &quot;%AccountId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMEGetAccountContactId&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTurboAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>DataRaptor Turbo Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>SV_ExternalUserAccountId</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%ProfileName%==\&quot;Core HC Customer Community Login User\&quot; || %ProfileName%==\&quot;Core HC Customer Community Plus User\&quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;QueryId&quot; : &quot;=QUERY(\&quot;Select AccountId from User where Id = &apos;{0}&apos;\&quot;,%UserId%)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;QueryId&quot;,
+  &quot;responseJSONNode&quot; : &quot;AccountId&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues5&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>SV_RecordsCount</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;FacilityOnboardingCasesNotClosedCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM Case WHERE Contact.AccountId = &apos;{0}&apos; AND Type = &apos;{1}&apos; AND ParentId = &apos;{2}&apos; AND (Status = &apos;{3}&apos; OR Status = &apos;{4}&apos;) AND RecordTypeName__c =&apos;{5}&apos; \&quot; , %AccountId%, \&quot;Facility\&quot;,\&quot;\&quot;, \&quot;Not Started\&quot;,\&quot;In Progress\&quot;,\&quot;Clinician_Onboarding\&quot;)&quot;,
+    &quot;FacilityOnboardingCasesClosedCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM Case WHERE Contact.AccountId = &apos;{0}&apos; AND Type = &apos;{1}&apos; AND ParentId = &apos;{2}&apos; AND (Status = &apos;{3}&apos;) AND RecordTypeName__c =&apos;{5}&apos; \&quot; , %AccountId%, \&quot;Facility\&quot;,\&quot;\&quot;, \&quot;Closed\&quot;,\&quot;Clinician_Onboarding\&quot;)&quot;,
+    &quot;SCPOnboardingCasesNotClosedCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM Case WHERE Contact.AccountId = &apos;{0}&apos; AND Type = &apos;{1}&apos; AND ParentId = &apos;{2}&apos; AND (Status = &apos;{3}&apos; OR Status = &apos;{4}&apos;) AND RecordTypeName__c =&apos;{5}&apos; \&quot; , %AccountId%, \&quot;SCP\&quot;,\&quot;\&quot;, \&quot;Not Started\&quot;,\&quot;In Progress\&quot;,\&quot;Clinician_Onboarding\&quot;)&quot;,
+    &quot;SCPOnboardingCasesClosedCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM Case WHERE Contact.AccountId = &apos;{0}&apos; AND Type = &apos;{1}&apos; AND ParentId = &apos;{2}&apos; AND (Status = &apos;{3}&apos;) AND RecordTypeName__c =&apos;{5}&apos; \&quot; , %AccountId%, \&quot;SCP\&quot;,\&quot;\&quot;, \&quot;Closed\&quot;,\&quot;Clinician_Onboarding\&quot;)&quot;,
+    &quot;ActiveHPFCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM HealthcarePractitionerFacility WHERE Practitioner.AccountId = &apos;{0}&apos; AND Status__c = &apos;{1}&apos; \&quot; , %AccountId%,\&quot;Active\&quot;)&quot;,
+    &quot;JobBoardApplicationCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM bpats__Job_Board_Application__c where bpats__Status__c = &apos;{0}&apos; AND bpats__Contact__r.AccountId =&apos;{1}&apos; \&quot; ,\&quot;New\&quot; ,%AccountId%)&quot;,
+    &quot;ExpiredContractCount&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() FROM Contract WHERE AccountId = &apos;{0}&apos; AND Status = &apos;{1}&apos;  AND RecordType.DeveloperName =&apos;{3}&apos; \&quot; , %AccountId%, \&quot;Expired\&quot;,\&quot;Clinician\&quot;)&quot;,
+    &quot;ActiveApplicant&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() from bpats__ATS_Applicant__c where bpats__Applicant_Status__c = &apos;{0}&apos; AND bpats__ATS_Applicant__r.AccountId = &apos;{1}&apos;\&quot; ,\&quot;Active\&quot;,%AccountId%)&quot;,
+    &quot;DeclineApplicant&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() FROM bpats__ATS_Applicant__c where (bpats__Applicant_Status__c = &apos;{0}&apos; OR bpats__Stage__r.Name = &apos;{1}&apos;)  AND bpats__ATS_Applicant__r.AccountId = &apos;{2}&apos;\&quot; ,\&quot;Rejected\&quot;,\&quot;Placement\&quot;,%AccountId%)&quot;,
+    &quot;InactiveHPFCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM HealthcarePractitionerFacility WHERE Practitioner.AccountId = &apos;{0}&apos; AND Status__c != &apos;{1}&apos; \&quot; , %AccountId%,\&quot;Inactive\&quot;)&quot;,
+    &quot;ExecuetedContractCount&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() FROM Contract WHERE AccountId = &apos;{0}&apos; AND Status = &apos;{1}&apos;  AND RecordType.DeveloperName =&apos;{3}&apos; \&quot; , %AccountId%, \&quot;Executed\&quot;,\&quot;Clinician\&quot;)&quot;,
+    &quot;ProspectContact&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() FROM Contact WHERE AccountId = &apos;{0}&apos; AND Status__c = &apos;{1}&apos;\&quot; , %AccountId%, \&quot;Prospect\&quot;)&quot;,
+    &quot;AllHPFCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM HealthcarePractitionerFacility WHERE Practitioner.AccountId = &apos;{0}&apos;\&quot; , %AccountId%)&quot;,
+    &quot;SCPOffboardingCasesCount&quot; : &quot;=COUNTQUERY ( \&quot;SELECT COUNT() FROM Case WHERE Contact.AccountId = &apos;{0}&apos; AND ParentId = &apos;{1}&apos; AND RecordTypeName__c =&apos;{2}&apos; \&quot; , %AccountId%,\&quot;\&quot;,\&quot;Clinician_Offboarding\&quot;)\n&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;Record&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logError&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_AtGlanceSectionDetails</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>AtGlanceSectionDetails</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_AtGlanceSectionDetails_Procedure_5</uniqueName>
+    <versionNumber>5.0</versionNumber>
+    <webComponentKey>6df1f282-ae75-966d-d0c4-bdd83e1b3625</webComponentKey>
+</OmniIntegrationProcedure>

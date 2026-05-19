@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Facility_Profile__c.ADT_START_DATE__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Facility_Profile__c.Post_DOS_Days__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$Facility_Profile__c.ADT_Feeds_Active__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Facility_Profile__c.ADT_START_DATE__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>8/23/2023</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Service_Line__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Live ADT by Go Live - EM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList@Account.Facility_Profile__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_$Facility_Profile__c.Clinical_Data_Feed_Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

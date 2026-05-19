@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_MOU_Attached_Marked_Final</fullName>
+    <active>false</active>
+    <description>Manages (along with Custom Roll Up) presence of attachment marked MOU</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL( StageName ,&apos;MOU Signed&apos;),
+  MOU_Signed__c  &lt; 1
+)</errorConditionFormula>
+    <errorMessage>MOU Must Be Attached, Marked Final, &amp; Signed</errorMessage>
+</ValidationRule>

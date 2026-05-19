@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingFilterCondition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <colName>OPPORTUNITY.RECORDTYPE</colName>
+    <fieldName>RecordType.Name</fieldName>
+    <forecastingFilter>FF_All_Opportunity_Record_Types0hl1S000000TN1UQAW258939722465968</forecastingFilter>
+    <forecastingSourceDefinition>7sy1S000000TN1K</forecastingSourceDefinition>
+    <isProtected>false</isProtected>
+    <masterLabel>FFC_All_Opportunity_Record_Types0r01S000000000BQAQ300709314016684</masterLabel>
+    <operation>notEqual</operation>
+    <sortOrder>1</sortOrder>
+    <value>0121S000000XxJ5QAK,01237000000Ti26AAC</value>
+</ForecastingFilterCondition>

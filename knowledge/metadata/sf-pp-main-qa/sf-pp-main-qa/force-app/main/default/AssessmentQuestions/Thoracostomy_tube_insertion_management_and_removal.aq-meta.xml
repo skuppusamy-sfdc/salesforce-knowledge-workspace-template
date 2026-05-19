@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Thoracostomy tube insertion, management and removal</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Thoracostomy tube insertion, management and removal</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Thoracostomy_tube_insertion_management_and_removal</developerName>
+    <name>Thoracostomy tube insertion, management and removal</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

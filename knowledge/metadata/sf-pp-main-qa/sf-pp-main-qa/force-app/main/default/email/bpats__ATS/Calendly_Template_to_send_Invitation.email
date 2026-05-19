@@ -1,0 +1,11 @@
+<div style="font-family: 'Salesforce Sans', Arial, sans-serif; font-size: 14px; color: #181818;">
+    Dear {!bpats__ATS_Applicant__c.bpats__Applicant_Name__c},<br>
+    <br>
+    Please Schedule a 30 minute interview slot by following this Calendly Link: 
+    <a href="{!bpats__ATS_Applicant__c.Recruiter_Calendly_Link__c}" style="color: #005fb2;">
+        {!bpats__ATS_Applicant__c.Recruiter_Calendly_Link__c}
+    </a><br>
+    <br>
+    Job: {!bpats__ATS_Applicant__c.bpats__Job__c}<br>
+    Job Title: {!bpats__ATS_Applicant__c.Job_Title__c}
+</div>

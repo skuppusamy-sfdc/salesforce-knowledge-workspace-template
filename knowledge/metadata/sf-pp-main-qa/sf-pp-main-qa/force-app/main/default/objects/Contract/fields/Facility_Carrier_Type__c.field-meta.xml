@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Carrier_Type__c</fullName>
+    <label>Facility Carrier Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACO</fullName>
+                <default>false</default>
+                <label>ACO</label>
+            </value>
+            <value>
+                <fullName>After Hours Charge</fullName>
+                <default>false</default>
+                <label>After Hours Charge</label>
+            </value>
+            <value>
+                <fullName>All COMM Products</fullName>
+                <default>false</default>
+                <label>All COMM Products</label>
+            </value>
+            <value>
+                <fullName>All Products</fullName>
+                <default>false</default>
+                <label>All Products</label>
+            </value>
+            <value>
+                <fullName>ASO</fullName>
+                <default>false</default>
+                <label>ASO</label>
+            </value>
+            <value>
+                <fullName>CIN-Clinically Integrated Network</fullName>
+                <default>false</default>
+                <label>CIN-Clinically Integrated Network</label>
+            </value>
+            <value>
+                <fullName>Clinical Integration</fullName>
+                <default>false</default>
+                <label>Clinical Integration</label>
+            </value>
+            <value>
+                <fullName>CPT Suppression</fullName>
+                <default>false</default>
+                <label>CPT Suppression</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>EHP</fullName>
+                <default>false</default>
+                <label>EHP</label>
+            </value>
+            <value>
+                <fullName>EKG Suppression</fullName>
+                <default>false</default>
+                <label>EKG Suppression</label>
+            </value>
+            <value>
+                <fullName>EPO</fullName>
+                <default>false</default>
+                <label>EPO</label>
+            </value>
+            <value>
+                <fullName>Exchange</fullName>
+                <default>false</default>
+                <label>Exchange</label>
+            </value>
+            <value>
+                <fullName>Flat Rate</fullName>
+                <default>false</default>
+                <label>Flat Rate</label>
+            </value>
+            <value>
+                <fullName>HMO</fullName>
+                <default>false</default>
+                <label>HMO</label>
+            </value>
+            <value>
+                <fullName>Hospice</fullName>
+                <default>false</default>
+                <label>Hospice</label>
+            </value>
+            <value>
+                <fullName>Hospital Employee</fullName>
+                <default>false</default>
+                <label>Hospital Employee</label>
+            </value>
+            <value>
+                <fullName>Hospital Employee Work Comp</fullName>
+                <default>false</default>
+                <label>Hospital Employee Work Comp</label>
+            </value>
+            <value>
+                <fullName>Hospital Specific Information</fullName>
+                <default>false</default>
+                <label>Hospital Specific Information</label>
+            </value>
+            <value>
+                <fullName>Hospital System Affiliation</fullName>
+                <default>false</default>
+                <label>Hospital System Affiliation</label>
+            </value>
+            <value>
+                <fullName>Indemnity</fullName>
+                <default>false</default>
+                <label>Indemnity</label>
+            </value>
+            <value>
+                <fullName>Indigent</fullName>
+                <default>false</default>
+                <label>Indigent</label>
+            </value>
+            <value>
+                <fullName>Inmate/Prison</fullName>
+                <default>false</default>
+                <label>Inmate/Prison</label>
+            </value>
+            <value>
+                <fullName>Ins Pmt &amp; Bill Co-ins Only</fullName>
+                <default>false</default>
+                <label>Ins Pmt &amp; Bill Co-ins Only</label>
+            </value>
+            <value>
+                <fullName>Ins Pmt &amp; Bill Co-pay Only</fullName>
+                <default>false</default>
+                <label>Ins Pmt &amp; Bill Co-pay Only</label>
+            </value>
+            <value>
+                <fullName>Ins Pmt &amp; Bill Ded Only</fullName>
+                <default>false</default>
+                <label>Ins Pmt &amp; Bill Ded Only</label>
+            </value>
+            <value>
+                <fullName>Insurance Only</fullName>
+                <default>false</default>
+                <label>Insurance Only</label>
+            </value>
+            <value>
+                <fullName>LOA</fullName>
+                <default>false</default>
+                <label>LOA</label>
+            </value>
+            <value>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+                <label>Medicaid</label>
+            </value>
+            <value>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+                <label>Medicare</label>
+            </value>
+            <value>
+                <fullName>MSE</fullName>
+                <default>false</default>
+                <label>MSE</label>
+            </value>
+            <value>
+                <fullName>PAR</fullName>
+                <default>false</default>
+                <label>PAR</label>
+            </value>
+            <value>
+                <fullName>PHO</fullName>
+                <default>false</default>
+                <label>PHO</label>
+            </value>
+            <value>
+                <fullName>POS</fullName>
+                <default>false</default>
+                <label>POS</label>
+            </value>
+            <value>
+                <fullName>PPO</fullName>
+                <default>false</default>
+                <label>PPO</label>
+            </value>
+            <value>
+                <fullName>PPP</fullName>
+                <default>false</default>
+                <label>PPP</label>
+            </value>
+            <value>
+                <fullName>Special Arrangement</fullName>
+                <default>false</default>
+                <label>Special Arrangement</label>
+            </value>
+            <value>
+                <fullName>Suture Removal Suppression</fullName>
+                <default>false</default>
+                <label>Suture Removal Suppression</label>
+            </value>
+            <value>
+                <fullName>Traditional</fullName>
+                <default>false</default>
+                <label>Traditional</label>
+            </value>
+            <value>
+                <fullName>UCR</fullName>
+                <default>false</default>
+                <label>UCR</label>
+            </value>
+            <value>
+                <fullName>UCR 3 Balance Bill</fullName>
+                <default>false</default>
+                <label>UCR 3 Balance Bill</label>
+            </value>
+            <value>
+                <fullName>Uninsured discount</fullName>
+                <default>false</default>
+                <label>Uninsured discount</label>
+            </value>
+            <value>
+                <fullName>Worker&apos;s Comp</fullName>
+                <default>false</default>
+                <label>Worker&apos;s Comp</label>
+            </value>
+            <value>
+                <fullName>Repricer</fullName>
+                <default>false</default>
+                <label>Repricer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Provider_Rate_Market_Analysis__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Created as part of PR1050558-2143</description>
+    <inlineHelpText>Service Provider Rate Market Analysis has been loaded</inlineHelpText>
+    <label>Service Provider Rate Market Analysis</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

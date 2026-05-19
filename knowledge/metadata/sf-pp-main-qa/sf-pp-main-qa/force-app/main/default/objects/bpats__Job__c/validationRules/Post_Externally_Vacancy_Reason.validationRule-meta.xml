@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Externally_Vacancy_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (bpats__Post_Externally__c = True, ISBLANK (  Text (Vacancy_Reason__c )))</errorConditionFormula>
+    <errorDisplayField>Vacancy_Reason__c</errorDisplayField>
+    <errorMessage>For an external job, fill in: Vacancy Reason</errorMessage>
+</ValidationRule>

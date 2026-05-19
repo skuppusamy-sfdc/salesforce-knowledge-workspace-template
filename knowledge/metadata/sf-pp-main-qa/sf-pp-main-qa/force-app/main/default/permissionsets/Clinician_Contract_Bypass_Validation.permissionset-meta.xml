@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Clinician_Contracting_Specialist_Bypass_Validation</name>
+    </customPermissions>
+    <description>To assign custom permission</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Clinician Contract Bypass Validation</label>
+</PermissionSet>

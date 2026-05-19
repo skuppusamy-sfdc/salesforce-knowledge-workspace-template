@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTransFormPracticingHPCSpecialty</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem5</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPracticingHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>PractionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem4</globalKey>
+        <inputFieldName>PracticingClinicianSpecialty:isPrimaryOrSub</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPracticingHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isSubSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPracticingHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isPrimary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem2</globalKey>
+        <inputFieldName>PracticingClinicianSpecialty:RecordId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPracticingHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CareSpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem1</globalKey>
+        <inputFieldName>PracticingClinicianSpecialty:TA_PracticingSpecialty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPracticingHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CareSpecialtyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTransFormPracticingHPCSpecialtyCustom0jI7x0000001pi1EAAItem0</globalKey>
+        <inputFieldName>PracticingClinicianSpecialty:PracSpecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTransFormPracticingHPCSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCPSpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;PracticingClinicianSpecialty&quot; : [ {
+    &quot;RecordId&quot; : &quot;0bc7x0000000DzlAAE&quot;,
+    &quot;PracSpecId&quot; : null,
+    &quot;TA_PracticingSpecialty&quot; : &quot;Nephrology&quot;,
+    &quot;isPrimaryOrSub&quot; : &quot;true&quot;
+  }, {
+    &quot;Name&quot; : &quot;Cardiology&quot;,
+    &quot;PracSpecId&quot; : &quot;0bO7x0000000XwsEAE&quot;,
+    &quot;TA_PracticingSpecialty&quot; : &quot;Cardiology&quot;
+  } ],
+  &quot;ClinicianContactId&quot; : &quot;0037x000012S0m0AAC&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTransFormPracticingHPCSpecialty_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

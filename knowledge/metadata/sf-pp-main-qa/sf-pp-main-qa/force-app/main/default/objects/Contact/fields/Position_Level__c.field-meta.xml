@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_Level__c</fullName>
+    <label>Position Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Board of Directors</fullName>
+                <default>false</default>
+                <label>Board of Directors</label>
+            </value>
+            <value>
+                <fullName>C-Level</fullName>
+                <default>false</default>
+                <label>C-Level</label>
+            </value>
+            <value>
+                <fullName>Manager/Director</fullName>
+                <default>false</default>
+                <label>Manager/Director</label>
+            </value>
+            <value>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+                <label>Vice President</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

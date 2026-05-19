@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FTPChannelProtection__c</fullName>
+    <label>FTPChannelProtection</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>clear</fullName>
+                <default>false</default>
+                <label>clear</label>
+            </value>
+            <value>
+                <fullName>confidential</fullName>
+                <default>false</default>
+                <label>confidential</label>
+            </value>
+            <value>
+                <fullName>integrity</fullName>
+                <default>false</default>
+                <label>integrity</label>
+            </value>
+            <value>
+                <fullName>private</fullName>
+                <default>false</default>
+                <label>private</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

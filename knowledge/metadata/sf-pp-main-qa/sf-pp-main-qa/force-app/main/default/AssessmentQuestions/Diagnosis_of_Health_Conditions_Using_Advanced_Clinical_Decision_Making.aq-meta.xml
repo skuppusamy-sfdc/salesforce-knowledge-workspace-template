@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Diagnosis of Health Conditions Using Advanced Clinical Decision Making</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Diagnose health and medical conditions by reviewing all available health information, and applying advanced clinical decision making processes.</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Diagnosis_of_Health_Conditions_Using_Advanced_Clinical_Decision_Making</developerName>
+    <name>Diagnosis of Health Conditions Using Advanced Clinical Decision Making</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

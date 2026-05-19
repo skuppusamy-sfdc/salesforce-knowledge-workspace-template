@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to open chat call when the user confirms</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <fieldName>buttonLabel</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexCallConfirmation</masterLabel>
+</LightningMessageChannel>

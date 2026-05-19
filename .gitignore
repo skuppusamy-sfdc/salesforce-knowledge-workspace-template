@@ -1,0 +1,48 @@
+# Cursor Project - Git Ignore
+# For Salesforce Agile Knowledge Management Workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Temporary Files
+*.tmp
+*.bak
+tmp/
+temp/
+
+# IDE Files (if using other IDEs alongside Cursor)
+.vscode/
+.idea/
+
+# Don't ignore Cursor settings - we want those tracked
+!.cursor/
+
+# Large binary files
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z
+*.exe
+*.dll
+
+# Document backups
+~$*.docx
+~$*.xlsx
+
+# Logs
+*.log
+
+# Don't accidentally commit Salesforce code at workspace root
+# This is a knowledge workspace, not a code repo
+/src/
+/force-app/
+
+# But DO index the QA metadata repo (used for analysis)
+!knowledge/metadata/
+
+# Keep all knowledge, artifacts, templates, guidelines
+# These are the core of this workspace

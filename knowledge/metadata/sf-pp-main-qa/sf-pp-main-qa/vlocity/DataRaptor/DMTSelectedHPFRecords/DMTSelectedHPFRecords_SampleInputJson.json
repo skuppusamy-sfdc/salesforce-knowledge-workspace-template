@@ -1,0 +1,20 @@
+{
+    "SelectedlstRecords": [
+        {
+            "accountName": "test facility",
+            "checked": true,
+            "contractingStatus": null,
+            "effectiveDate": "2025-07-27",
+            "facilityTitle": "External Locums",
+            "hpfStatus": "Prospect"
+        },
+        {
+            "accountName": "test facility",
+            "checked": true,
+            "contractingStatus": null,
+            "effectiveDate": null,
+            "facilityTitle": "Leased Employee",
+            "hpfStatus": "Prospect"
+        }
+    ]
+}

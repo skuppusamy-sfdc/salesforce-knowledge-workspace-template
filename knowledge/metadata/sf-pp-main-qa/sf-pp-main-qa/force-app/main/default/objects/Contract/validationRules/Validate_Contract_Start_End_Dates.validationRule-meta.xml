@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Contract_Start_End_Dates</fullName>
+    <active>true</active>
+    <description>Last updated for user story PR1050558-4433: Added this validation to prevent saving when Start Date is after End Date.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(StartDate)),
+    NOT(ISBLANK(EndDate)),
+    StartDate&gt; EndDate
+)</errorConditionFormula>
+    <errorDisplayField>StartDate</errorDisplayField>
+    <errorMessage>The &apos;Contract Start Date&apos; must be before the &apos;Contract End Date&apos;. Please ensure that the start date is earlier than the end date.</errorMessage>
+</ValidationRule>

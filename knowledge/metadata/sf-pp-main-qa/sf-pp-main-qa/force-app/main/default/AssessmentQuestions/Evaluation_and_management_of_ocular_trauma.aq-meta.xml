@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Evaluation and management of ocular trauma</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Evaluation and management of ocular trauma</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Evaluation_and_management_of_ocular_trauma</developerName>
+    <name>Evaluation and management of ocular trauma</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Method Of Enrollment --></label>
+    <name>Method_Of_Enrollment__c</name>
+    <picklistValues>
+        <masterLabel>Corporate Contract - MC</masterLabel>
+        <translation><!-- Corporate Contract - MC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linked Form - Corporate Signature - Hold</masterLabel>
+        <translation><!-- Linked Form - Corporate Signature - Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linked Form - Corporate Signature - No Hold</masterLabel>
+        <translation><!-- Linked Form - Corporate Signature - No Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linked Form - Corporate Signature - PE</masterLabel>
+        <translation><!-- Linked Form - Corporate Signature - PE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linked Form - Provider (Individual) Signature - PE</masterLabel>
+        <translation><!-- Linked Form - Provider (Individual) Signature - PE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linked Form - Provider Signature - Hold</masterLabel>
+        <translation><!-- Linked Form - Provider Signature - Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linked Form - Provider Signature - No Hold</masterLabel>
+        <translation><!-- Linked Form - Provider Signature - No Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Enrollment - Hold</masterLabel>
+        <translation><!-- Online Enrollment - Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Enrollment - No Hold</masterLabel>
+        <translation><!-- Online Enrollment - No Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online enrollment - PE</masterLabel>
+        <translation><!-- Online enrollment - PE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physician Listing - MC</masterLabel>
+        <translation><!-- Physician Listing - MC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spreadsheet - Hold</masterLabel>
+        <translation><!-- Spreadsheet - Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spreadsheet - No Hold</masterLabel>
+        <translation><!-- Spreadsheet - No Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spreadsheet - PE</masterLabel>
+        <translation><!-- Spreadsheet - PE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

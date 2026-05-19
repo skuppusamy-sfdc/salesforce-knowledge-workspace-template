@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Qualify_And_Discover_Needs</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StageName, &quot;Qualify and Discover Needs&quot;) &amp;&amp; Count_of_All_Services__c = 0</errorConditionFormula>
+    <errorMessage>You must add at least one service to this opportunity before saving. If you do not know the service line add a Core or Non-Core Place holder service</errorMessage>
+</ValidationRule>

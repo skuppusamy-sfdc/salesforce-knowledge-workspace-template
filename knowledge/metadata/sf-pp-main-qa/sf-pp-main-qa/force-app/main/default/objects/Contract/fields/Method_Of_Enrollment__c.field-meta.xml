@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Method_Of_Enrollment__c</fullName>
+    <label>Method Of Enrollment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Physician Listing - MC</fullName>
+                <default>false</default>
+                <label>Physician Listing - MC</label>
+            </value>
+            <value>
+                <fullName>Corporate Contract - MC</fullName>
+                <default>false</default>
+                <label>Corporate Contract - MC</label>
+            </value>
+            <value>
+                <fullName>Spreadsheet - PE</fullName>
+                <default>false</default>
+                <label>Spreadsheet - PE</label>
+            </value>
+            <value>
+                <fullName>Online enrollment - PE</fullName>
+                <default>false</default>
+                <label>Online enrollment - PE</label>
+            </value>
+            <value>
+                <fullName>Linked Form - Provider (Individual) Signature - PE</fullName>
+                <default>false</default>
+                <label>Linked Form - Provider (Individual) Signature - PE</label>
+            </value>
+            <value>
+                <fullName>Linked Form - Corporate Signature - PE</fullName>
+                <default>false</default>
+                <label>Linked Form - Corporate Signature - PE</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Spreadsheet - Hold</fullName>
+                <default>false</default>
+                <label>Spreadsheet - Hold</label>
+            </value>
+            <value>
+                <fullName>Spreadsheet - No Hold</fullName>
+                <default>false</default>
+                <label>Spreadsheet - No Hold</label>
+            </value>
+            <value>
+                <fullName>Online Enrollment - Hold</fullName>
+                <default>false</default>
+                <label>Online Enrollment - Hold</label>
+            </value>
+            <value>
+                <fullName>Online Enrollment - No Hold</fullName>
+                <default>false</default>
+                <label>Online Enrollment - No Hold</label>
+            </value>
+            <value>
+                <fullName>Linked Form - Provider Signature - Hold</fullName>
+                <default>false</default>
+                <label>Linked Form - Provider Signature - Hold</label>
+            </value>
+            <value>
+                <fullName>Linked Form - Provider Signature - No Hold</fullName>
+                <default>false</default>
+                <label>Linked Form - Provider Signature - No Hold</label>
+            </value>
+            <value>
+                <fullName>Linked Form - Corporate Signature - Hold</fullName>
+                <default>false</default>
+                <label>Linked Form - Corporate Signature - Hold</label>
+            </value>
+            <value>
+                <fullName>Linked Form - Corporate Signature - No Hold</fullName>
+                <default>false</default>
+                <label>Linked Form - Corporate Signature - No Hold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

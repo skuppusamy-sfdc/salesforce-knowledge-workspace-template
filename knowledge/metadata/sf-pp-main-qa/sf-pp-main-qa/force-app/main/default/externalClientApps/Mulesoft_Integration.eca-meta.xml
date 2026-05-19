@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalClientApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>james_brou@scphealth.com</contactEmail>
+    <description>Mulesoft Connected App</description>
+    <distributionState>Local</distributionState>
+    <isProtected>false</isProtected>
+    <label>Mulesoft Integration</label>
+    <orgScopedExternalApp>00DgP0000001nmf:Mulesoft_Integration</orgScopedExternalApp>
+</ExternalClientApplication>

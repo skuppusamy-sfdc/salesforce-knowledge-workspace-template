@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bid_Process__c</fullName>
+    <label>RFP Process</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sole-Sourced</fullName>
+                <default>false</default>
+                <label>Sole-Sourced</label>
+            </value>
+            <value>
+                <fullName>Open Bid + BAFO</fullName>
+                <default>false</default>
+                <label>Open Bid + BAFO</label>
+            </value>
+            <value>
+                <fullName>Open Bid + Negot Terms</fullName>
+                <default>false</default>
+                <label>Open Bid + Negot Terms</label>
+            </value>
+            <value>
+                <fullName>By Invitation + BAFO</fullName>
+                <default>false</default>
+                <label>By Invitation + BAFO</label>
+            </value>
+            <value>
+                <fullName>By Invitation + Negot Terms</fullName>
+                <default>false</default>
+                <label>By Invitation + Negot Terms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

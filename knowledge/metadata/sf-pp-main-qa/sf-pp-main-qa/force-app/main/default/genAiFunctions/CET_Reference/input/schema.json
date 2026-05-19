@@ -1,0 +1,28 @@
+{
+  "required" : [ "Question", "Topic", "referenceName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Question" : {
+      "title" : "Question",
+      "description" : "Stores the question provided by the customer",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Topic" : {
+      "title" : "Topic",
+      "description" : "Stores the topic name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "referenceName" : {
+      "title" : "referenceName",
+      "description" : "Stores the referenceName",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

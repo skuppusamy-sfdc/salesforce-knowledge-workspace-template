@@ -1,0 +1,51 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DEFetchPayerNetworksCustom8992",
+        "InputFieldName": "PayerId",
+        "InputObjectName": "HealthcarePayerNetwork",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DEFetchPayerNetworks",
+        "OmniDataTransformationId": {
+            "Name": "DEFetchPayerNetworks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DEFetchPayerNetworks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "payerNetworkList",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "IN",
+        "FilterValue": "corporateEntityIdList",
+        "GlobalKey": "DEFetchPayerNetworksCustom4256",
+        "InputFieldName": "PayerId",
+        "InputObjectName": "HealthcarePayerNetwork",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DEFetchPayerNetworks",
+        "OmniDataTransformationId": {
+            "Name": "DEFetchPayerNetworks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DEFetchPayerNetworks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "payerNetworkList",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

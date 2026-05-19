@@ -1,0 +1,1965 @@
+{
+  "generated": "2026-05-11T16:37:59.989872",
+  "volume": {
+    "total_conversations": 20,
+    "total_subagents": 7,
+    "total_user_queries": 155,
+    "parent_user_queries": 148,
+    "avg_queries_per_conversation": 7.4,
+    "query_word_count": {
+      "avg": 47.8,
+      "median": 19,
+      "max": 693,
+      "min": 1
+    },
+    "response_chars": {
+      "avg": 26426,
+      "median": 8488
+    },
+    "date_range": {
+      "first": "Friday, May 1, 2026, 10:34 AM (UTC-4)",
+      "last": "Wednesday, May 6, 2026, 9:44 AM (UTC-4)"
+    }
+  },
+  "intents": {
+    "distribution": [
+      {
+        "intent": "general",
+        "count": 87,
+        "pct": 58.8,
+        "examples": [
+          "I what to publich this idea to the team can you give me a summary of what this agent is about and how to use it \nnot mor",
+          "The code base that is avaiable Knowledge/metadata in QA not Dev data update all the places that we are using QA code",
+          "Implement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the "
+        ]
+      },
+      {
+        "intent": "workspace_tooling",
+        "count": 42,
+        "pct": 28.4,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "I have uplaod the stroies as part of each sprint into the knolwedge/sprints fodler \nthese are .html files \nEach row is a",
+          "Can you build a RAG for the stopries so that it can be optimized and make the credit consumption less"
+        ]
+      },
+      {
+        "intent": "conflict_detection",
+        "count": 15,
+        "pct": 10.1,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "you are emphysising the html too much this is not about html this is what the team does \nToday (without the agent)\nSprin",
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n\u251c\u2500\u2500 /docs\n\u2502   \u251c\u2500\u2500 /s"
+        ]
+      },
+      {
+        "intent": "knowledge_query",
+        "count": 12,
+        "pct": 8.1,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "I have uplaod the stroies as part of each sprint into the knolwedge/sprints fodler \nthese are .html files \nEach row is a",
+          "Clarify QA Environment for Metadata Documentation\n\nImplement the plan as specified, it is attached for your reference. D"
+        ]
+      },
+      {
+        "intent": "solution_design",
+        "count": 9,
+        "pct": 6.1,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "can you write some content inf this format for this project I want to other to use it\n\nRecipe Name\tA short, searchable t",
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n\u251c\u2500\u2500 /docs\n\u2502   \u251c\u2500\u2500 /s"
+        ]
+      },
+      {
+        "intent": "story_lookup",
+        "count": 6,
+        "pct": 4.1,
+        "examples": [
+          "AC5: Trigger (\u201cAdd HPF\u201d) \nGiven I am a Recruiter within the Corporate Support apps\nWhen I am on a draft Clinician Contra",
+          "get me the stories for HPFReportEmailUtil.cls",
+          "asa ta solution this \nAC1: Set incorrect Time Type rates to 'Is Deleted' = Checked/True when cloning the contract\nGiven "
+        ]
+      },
+      {
+        "intent": "impact_analysis",
+        "count": 4,
+        "pct": 2.7,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "you are emphysising the html too much this is not about html this is what the team does \nToday (without the agent)\nSprin",
+          "Write Solution for AC - high level only incldue impact component\nGiven I am a Recruiter within the Corporate Support app"
+        ]
+      },
+      {
+        "intent": "component_search",
+        "count": 3,
+        "pct": 2.0,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "find out the approval flow for clinician contract When the Contract multiple approval is pening and one reject , Can you",
+          "I am going to create a Cursor proejct structure to manage a \"Salesforce\" project built called its a agile based project "
+        ]
+      },
+      {
+        "intent": "test_planning",
+        "count": 3,
+        "pct": 2.0,
+        "examples": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to ",
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n\u251c\u2500\u2500 /docs\n\u2502   \u251c\u2500\u2500 /s",
+          "I am going to create a Cursor proejct structure to manage a \"Salesforce\" project built called its a agile based project "
+        ]
+      }
+    ],
+    "total_classified": 148
+  },
+  "stories": {
+    "unique_stories_queried": 4,
+    "queries_mentioning_stories": 4,
+    "pct_with_story_id": 2.6,
+    "top_stories": [
+      {
+        "story_id": "PR1050558-6750",
+        "mentions": 1,
+        "sample_queries": [
+          "AC5: Trigger (\u201cAdd HPF\u201d) \nGiven I am a Recruiter within the Corporate Support apps\nWhen I am on a dr"
+        ]
+      },
+      {
+        "story_id": "PR1050558-6803",
+        "mentions": 1,
+        "sample_queries": [
+          "asa ta solution this \nAC1: Set incorrect Time Type rates to 'Is Deleted' = Checked/True when cloning"
+        ]
+      },
+      {
+        "story_id": "PR1050558-3351",
+        "mentions": 1,
+        "sample_queries": [
+          "find the components realted to PR1050558-3351"
+        ]
+      },
+      {
+        "story_id": "PR1050558-3021",
+        "mentions": 1,
+        "sample_queries": [
+          "find out the trigering point for this story\nAC1: Updates story PR1050558-3021\nGiven I am a Legal - C"
+        ]
+      }
+    ]
+  },
+  "components": {
+    "unique_components_queried": 20,
+    "top_components": [
+      {
+        "component": "Clinician",
+        "mentions": 8,
+        "sample_queries": [
+          "Give me users storyes for platform event for Clinician Onboarding with component summary",
+          "Give me users storyes for platform event for Clinician Onboarding"
+        ]
+      },
+      {
+        "component": "Account",
+        "mentions": 7,
+        "sample_queries": [
+          "write solution as TA \nAC1: System shall save changes to deleted values without the user updating tex",
+          "write a query for ACR \u2018Party Role Relationship\u2019 = \u2018Services Contracting Entity-Service Account-AAR',"
+        ]
+      },
+      {
+        "component": "Facility",
+        "mentions": 5,
+        "sample_queries": [
+          "Write Solution for AC - high level only incldue impact component\nGiven I am a Recruiter within the C",
+          "you are checking against HPF.Facility Title .Code set"
+        ]
+      },
+      {
+        "component": "Client",
+        "mentions": 4,
+        "sample_queries": [
+          "write solution as TA \nAC1: System shall save changes to deleted values without the user updating tex",
+          "find out the trigering point for this story\nAC1: Updates story PR1050558-3021\nGiven I am a Legal - C"
+        ]
+      },
+      {
+        "component": "Leadership",
+        "mentions": 3,
+        "sample_queries": [
+          "Can you give a systmesys of itsm that need to be built\nCurelty users use a button in ATS Applicant__",
+          "as a TA I what to write Technical Solution for below AC\n\nAC1: PO Contract, ensure when a user \u201cSpeci"
+        ]
+      },
+      {
+        "component": "LWC",
+        "mentions": 2,
+        "sample_queries": [
+          "you are emphysising the html too much this is not about html this is what the team does \nToday (with",
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n"
+        ]
+      },
+      {
+        "component": "Flows",
+        "mentions": 2,
+        "sample_queries": [
+          "you are emphysising the html too much this is not about html this is what the team does \nToday (with",
+          "Context\nHi Norman, GM ... @Sakthi Kumar Kuppusamy can help with your DH request. Could you please fi"
+        ]
+      },
+      {
+        "component": "Flow",
+        "mentions": 2,
+        "sample_queries": [
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n",
+          "Context\nHi Norman, GM ... @Sakthi Kumar Kuppusamy can help with your DH request. Could you please fi"
+        ]
+      },
+      {
+        "component": "Trigger",
+        "mentions": 2,
+        "sample_queries": [
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n",
+          "AC5: Trigger (\u201cAdd HPF\u201d) \nGiven I am a Recruiter within the Corporate Support apps\nWhen I am on a dr"
+        ]
+      },
+      {
+        "component": "Task",
+        "mentions": 2,
+        "sample_queries": [
+          "AC1: Add Clinician Contract Start Date to Job Start Date(s) check upon Contract creation\nGiven I am ",
+          "Write Solution for AC - high level only incldue impact component\nGiven I am a Recruiter within the C"
+        ]
+      },
+      {
+        "component": "Agreement",
+        "mentions": 2,
+        "sample_queries": [
+          "asa ta solution this \nAC1: Set incorrect Time Type rates to 'Is Deleted' = Checked/True when cloning",
+          "find out the trigering point for this story\nAC1: Updates story PR1050558-3021\nGiven I am a Legal - C"
+        ]
+      },
+      {
+        "component": "Case",
+        "mentions": 2,
+        "sample_queries": [
+          "find out the trigering point for this story\nAC1: Updates story PR1050558-3021\nGiven I am a Legal - C",
+          "Context\nHi Norman, GM ... @Sakthi Kumar Kuppusamy can help with your DH request. Could you please fi"
+        ]
+      },
+      {
+        "component": "Lead",
+        "mentions": 1,
+        "sample_queries": [
+          "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n"
+        ]
+      },
+      {
+        "component": "Contact",
+        "mentions": 1,
+        "sample_queries": [
+          "Can you give a systmesys of itsm that need to be built\nCurelty users use a button in ATS Applicant__"
+        ]
+      },
+      {
+        "component": "HealthcareProviderSpecialty",
+        "mentions": 1,
+        "sample_queries": [
+          "Can you give a systmesys of itsm that need to be built\nCurelty users use a button in ATS Applicant__"
+        ]
+      },
+      {
+        "component": "Clinician_Type__c",
+        "mentions": 1,
+        "sample_queries": [
+          "CodeSet.Clinician_Type__c where we are using this field"
+        ]
+      },
+      {
+        "component": "Provider",
+        "mentions": 1,
+        "sample_queries": [
+          "find out the trigering point for this story\nAC1: Updates story PR1050558-3021\nGiven I am a Legal - C"
+        ]
+      },
+      {
+        "component": "AccountId",
+        "mentions": 1,
+        "sample_queries": [
+          "SELECT Id, AccountId, RelatedAccountId, StartDate, EndDate, PartyRoleRelation.Name\nFROM AccountAccou"
+        ]
+      },
+      {
+        "component": "AccountAccountRelation",
+        "mentions": 1,
+        "sample_queries": [
+          "SELECT Id, AccountId, RelatedAccountId, StartDate, EndDate, PartyRoleRelation.Name\nFROM AccountAccou"
+        ]
+      },
+      {
+        "component": "Cases",
+        "mentions": 1,
+        "sample_queries": [
+          "Context\nHi Norman, GM ... @Sakthi Kumar Kuppusamy can help with your DH request. Could you please fi"
+        ]
+      }
+    ]
+  },
+  "tools": {
+    "tool_usage": [
+      [
+        "Grep",
+        426
+      ],
+      [
+        "Read",
+        425
+      ],
+      [
+        "Shell",
+        318
+      ],
+      [
+        "Glob",
+        169
+      ],
+      [
+        "Write",
+        154
+      ],
+      [
+        "StrReplace",
+        152
+      ],
+      [
+        "TodoWrite",
+        48
+      ],
+      [
+        "AskQuestion",
+        29
+      ],
+      [
+        "updateCurrentStep",
+        22
+      ],
+      [
+        "rg",
+        19
+      ],
+      [
+        "ReadFile",
+        16
+      ],
+      [
+        "ApplyPatch",
+        16
+      ],
+      [
+        "SemanticSearch",
+        14
+      ],
+      [
+        "CreatePlan",
+        13
+      ],
+      [
+        "Task",
+        6
+      ],
+      [
+        "Delete",
+        4
+      ],
+      [
+        "SwitchMode",
+        3
+      ],
+      [
+        "AwaitShell",
+        2
+      ],
+      [
+        "WebSearch",
+        2
+      ],
+      [
+        "WebFetch",
+        1
+      ]
+    ],
+    "total_tool_calls": 1839,
+    "top_read_targets": [
+      [
+        "knowledge/sprints/MASTER-STORY-INDEX.md",
+        21
+      ],
+      [
+        "knowledge/sprints/Sprint 14/SCP HC Sprint 14.html",
+        14
+      ],
+      [
+        "knowledge/sprints/Sprint 10/SCP Sprint 10.html",
+        9
+      ],
+      [
+        "/Users/skuppusamy/.cursor/projects/Users-skuppusamy-Library-CloudStorage-GoogleDrive-skuppusamy-salesforce-com-Shared-drives-SCPHealthCnC/canvases/sf-knowledge-agent-showcase.canvas.tsx",
+        7
+      ],
+      [
+        "knowledge/sprints/Sprint 7/SCP Sprint 7.html",
+        7
+      ],
+      [
+        "scripts/parse-sprint-html.py",
+        7
+      ],
+      [
+        "/Users/skuppusamy/Library/CloudStorage/GoogleDrive-skuppusamy@salesforce.com/Shared drives/SCPHealthCnC/README.md",
+        5
+      ],
+      [
+        "/Users/skuppusamy/Library/CloudStorage/GoogleDrive-skuppusamy@salesforce.com/Shared drives/SCPHealthCnC/guidelines/technical-architect.md",
+        5
+      ],
+      [
+        "knowledge/metadata/COMPONENT-CATALOG.md",
+        5
+      ],
+      [
+        "scripts/_config.py",
+        5
+      ],
+      [
+        "scripts/analyze-corpus.py",
+        5
+      ],
+      [
+        "/Users/skuppusamy/Library/CloudStorage/GoogleDrive-skuppusamy@salesforce.com/Shared drives/SCPHealthCnC/templates/technical-solution-template.md",
+        5
+      ],
+      [
+        "knowledge/sprints/Sprint 12.1/SCP Sprint 12.1.html",
+        5
+      ],
+      [
+        "knowledge/metadata/sf-pp-main-qa/sf-pp-main-qa/force-app/main/default/omniScripts/Client_AddContractConfiguration_English_8.os-meta.xml",
+        5
+      ],
+      [
+        "/Users/skuppusamy/Library/CloudStorage/GoogleDrive-skuppusamy@salesforce.com/Shared drives/SCPHealthCnC/.cursor/AGENTS.md",
+        4
+      ],
+      [
+        "/Users/skuppusamy/Library/CloudStorage/GoogleDrive-skuppusamy@salesforce.com/Shared drives/SCPHealthCnC/PROJECT-OVERVIEW.md",
+        4
+      ],
+      [
+        "/Users/skuppusamy/.cursor/skills-cursor/canvas/SKILL.md",
+        4
+      ],
+      [
+        "knowledge/COMPONENT-TO-STORY-MAP.md",
+        4
+      ],
+      [
+        "/Users/skuppusamy/Library/CloudStorage/GoogleDrive-skuppusamy@salesforce.com/Shared drives/SCPHealthCnC/.cursor/skills/dev-story-prep/SKILL.md",
+        4
+      ],
+      [
+        "/Users/skuppusamy/Downloads/team-usage-events-13075649-2026-05-09.csv",
+        4
+      ]
+    ],
+    "top_grep_patterns": [
+      [
+        "SalesforceDQ",
+        12
+      ],
+      [
+        "Clinician_Type__c",
+        10
+      ],
+      [
+        "Clinician_Offboarding_Request__e",
+        7
+      ],
+      [
+        "Services Contracting Entity-Service Account-AAR",
+        6
+      ],
+      [
+        "PR1050558-6001",
+        5
+      ],
+      [
+        "class=\"issuerow\"",
+        4
+      ],
+      [
+        "DREGetCodeSets",
+        4
+      ],
+      [
+        "Corporation_and_Tax_Information__c",
+        4
+      ],
+      [
+        "SCP|PR1050558|sf-pp-main|bpats|HealthcarePractitioner|Schumacher",
+        4
+      ],
+      [
+        "Time Type",
+        4
+      ],
+      [
+        "CPARelationshipRecordsGeneratorQueuable",
+        4
+      ],
+      [
+        "PR1050558-3351",
+        4
+      ],
+      [
+        "offboard.*clinician",
+        3
+      ],
+      [
+        "clinician.*offboard",
+        3
+      ],
+      [
+        "HPFReportEmailUtil",
+        3
+      ]
+    ]
+  },
+  "gaps": {
+    "short_abandoned_conversations": [
+      {
+        "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+        "intents": [
+          "general"
+        ],
+        "conversation_id": "6051a34a-ed7c-4c97-b515-a11cd4b49fce"
+      },
+      {
+        "query": "Context\nHi Norman, GM ... @Sakthi Kumar Kuppusamy can help with your DH request. Could you please find time for us ? I'm out on a workshop all week ne",
+        "intents": [
+          "solution_design",
+          "knowledge_query",
+          "workspace_tooling"
+        ],
+        "conversation_id": "d851fc67-04a3-4bac-b664-c4e2fe54b1f3"
+      }
+    ],
+    "recurring_topic_bigrams": [
+      [
+        "clinician contract",
+        29
+      ],
+      [
+        "start date",
+        26
+      ],
+      [
+        "support apps",
+        15
+      ],
+      [
+        "apps when",
+        15
+      ],
+      [
+        "within corporate",
+        14
+      ],
+      [
+        "corporate support",
+        14
+      ],
+      [
+        "system shall",
+        14
+      ],
+      [
+        "users skuppusamy",
+        13
+      ],
+      [
+        "facility title",
+        12
+      ],
+      [
+        "checkbox default",
+        10
+      ],
+      [
+        "default unchecked",
+        10
+      ],
+      [
+        "given recruiter",
+        10
+      ],
+      [
+        "recruiter within",
+        10
+      ],
+      [
+        "guided experience",
+        10
+      ],
+      [
+        "contract start",
+        9
+      ],
+      [
+        "time type",
+        9
+      ],
+      [
+        "html files",
+        8
+      ],
+      [
+        "skuppusamy library",
+        8
+      ],
+      [
+        "library cloudstorage",
+        8
+      ],
+      [
+        "cloudstorage googledrive",
+        8
+      ],
+      [
+        "googledrive skuppusamy",
+        8
+      ],
+      [
+        "skuppusamy salesforce",
+        8
+      ],
+      [
+        "salesforce shared",
+        8
+      ],
+      [
+        "shared drives",
+        8
+      ],
+      [
+        "drives scphealthcnc",
+        8
+      ],
+      [
+        "first lines",
+        8
+      ],
+      [
+        "professional title",
+        8
+      ],
+      [
+        "type rate",
+        8
+      ],
+      [
+        "service account",
+        8
+      ],
+      [
+        "stories salesfroce",
+        7
+      ]
+    ],
+    "multi_attempt_conversations": [
+      {
+        "conversation_id": "86a98990-8eb0-4aaf-ba2a-5c8c6cc4bb41",
+        "query_count": 38,
+        "first_queries": [
+          "Can you give a systmesys of itsm that need to be built\nCurelty users use a butto",
+          "can you help me with examples of \nIs there any existing Apex class in your org t",
+          "The correct Salesforce Apex method to call a Flex Prompt Template has been narro",
+          "AC1: Add Clinician Contract Start Date to Job Start Date(s) check upon Contract ",
+          "can you make it like ta writing it.. not this details... ignore omni version jus"
+        ]
+      },
+      {
+        "conversation_id": "866402b3-eb50-4026-8617-5a2cc4b22f0d",
+        "query_count": 26,
+        "first_queries": [
+          "/Users/skuppusamy/Downloads/team-usage-events-13075649-2026-05-09.csv I have pro",
+          "how can I split the knowledge based into each stories its a html can you write a",
+          "The above subagent result is already visible to the user. DO NOT reiterate or su",
+          "The above subagent result is already visible to the user. DO NOT reiterate or su",
+          "The above subagent result is already visible to the user. DO NOT reiterate or su"
+        ]
+      },
+      {
+        "conversation_id": "afe667ec-1787-44c3-ad6a-22b5e21b1453",
+        "query_count": 20,
+        "first_queries": [
+          "asa ta solution this \nAC1: Set incorrect Time Type rates to 'Is Deleted' = Check",
+          "why are you writing a document?",
+          "write solution as TA \nAC1: System shall save changes to deleted values without t",
+          "as a TA I what to know which story AC covered into logoc for CPARelationshipReco",
+          "now go little bit details and look the requirmetns for \n\t\t\t\t// If a change in HP"
+        ]
+      },
+      {
+        "conversation_id": "0ed38ce1-1ce1-47c1-8ea9-b23e70fe43b9",
+        "query_count": 17,
+        "first_queries": [
+          "Scope: Large Language Model (LLM) project specific context retrieval\nI am going ",
+          "I have uplaod the stroies as part of each sprint into the knolwedge/sprints fodl",
+          "Can you build a RAG for the stopries so that it can be optimized and make the cr",
+          "I what to publich this idea to the team can you give me a summary of what this a",
+          "The code base that is avaiable Knowledge/metadata in QA not Dev data update all "
+        ]
+      },
+      {
+        "conversation_id": "ce742bc8-70d2-4b8a-a8fa-dae7bb4262db",
+        "query_count": 14,
+        "first_queries": [
+          "I want to creaed rules this is a plan and ask mode only and I what what any one ",
+          "can you updae the tempalte as well?",
+          "refine Technical Architect Guidelines (Plan & Design Only) most often the techni",
+          "can we rewrite this as skill? record me pros and cons",
+          "create skills for all"
+        ]
+      },
+      {
+        "conversation_id": "405c6f1e-63f7-4a31-a3d7-98b480c0c20a",
+        "query_count": 8,
+        "first_queries": [
+          "I what to provide a deck to present managment with the idea about this agent, se",
+          "The canvas at `/Users/skuppusamy/.cursor/projects/Users-skuppusamy-Library-Cloud",
+          "write a step by step process and prompt usage to build this agent",
+          "can you create a new version of Salesforce Agile Knowledge Agent  to show case t",
+          "can you create a new version of Salesforce Agile Knowledge Agent  to show case t"
+        ]
+      },
+      {
+        "conversation_id": "11962619-424b-4583-a763-9dcf82e1ecce",
+        "query_count": 4,
+        "first_queries": [
+          "Give me users storyes for platform event for Clinician Onboarding with component",
+          "Give me users storyes for platform event for Clinician Onboarding",
+          "Give me users storyes taht was built for platform event for Clinician Onboarding",
+          "Can you gime me the question that is asked for bpats__ATS_Applicant__c Screen Ca"
+        ]
+      },
+      {
+        "conversation_id": "e2846573-3826-4b8b-b8a0-f0e870f9f23f",
+        "query_count": 4,
+        "first_queries": [
+          "Find the stories and salesfroce componet thats involved in offboardling clinicia",
+          "find out the approval flow for clinician contract When the Contract multiple app",
+          "okay now switching topics.. can you tell how effecient the rag that we genrated?",
+          "where us ths RAG file show me"
+        ]
+      },
+      {
+        "conversation_id": "6638f245-0ac1-46d9-8ed6-64e59a7acf19",
+        "query_count": 3,
+        "first_queries": [
+          "I wnat to build a POC that can help SA, TA, Devs and QA to self sufficeint and s",
+          "I what to buld this in cursor",
+          "I mean i what to make the agent capability of custsor"
+        ]
+      }
+    ]
+  },
+  "queries": [
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Scope: Large Language Model (LLM) project specific context retrieval\nI am going to create a Cursor proejct structure to manage a \"Salesforce\" project built called its a agile based project \nthe Cursor",
+      "intents": "component_search, conflict_detection, test_planning, solution_design, impact_analysis, knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 178
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "I have uplaod the stroies as part of each sprint into the knolwedge/sprints fodler \nthese are .html files \nEach row is a story with JIRA story number\nFocus on Acceptance Criteria and Solution part of ",
+      "intents": "knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 64
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Can you build a RAG for the stopries so that it can be optimized and make the credit consumption less",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 19
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "I what to publich this idea to the team can you give me a summary of what this agent is about and how to use it \nnot more them 1 page",
+      "intents": "general",
+      "stories": "",
+      "word_count": 28
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "The code base that is avaiable Knowledge/metadata in QA not Dev data update all the places that we are using QA code",
+      "intents": "general",
+      "stories": "",
+      "word_count": 23
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Clarify QA Environment for Metadata Documentation\n\nImplement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the plan have already been create",
+      "intents": "knowledge_query",
+      "stories": "",
+      "word_count": 59
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Implement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the plan have already been created. Do not create them again. Mark them as in_progre",
+      "intents": "general",
+      "stories": "",
+      "word_count": 53
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Coede and Tracablity has been udpated the the folders... do you think any kind of rag maetadata will help you process these user request faster and accurately with less cost?",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 30
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Yes go ahead ab buildthe rag all phases",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 8
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "0ed38ce1",
+      "query": "Yes go ahead ab buildthe rag all phases",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 8
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:06 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "can you write some content inf this format for this project I want to other to use it\n\nRecipe Name\tA short, searchable title \u2014 e.g. \"Generate System Landscape Diagram from Description\"\nPhase\tWhich pha",
+      "intents": "solution_design, knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 199
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:11 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "i want this to be generic not SCP health specific",
+      "intents": "general",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:15 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "you are emphysising the html too much this is not about html this is what the team does \nToday (without the agent)\nSprint stories live in JIRA.\nSalesforce metadata (1000+ Apex, Flows, Objects, LWC) li",
+      "intents": "conflict_detection, impact_analysis, workspace_tooling",
+      "stories": "",
+      "word_count": 80
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:23 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "can you build the The Prompt(s) section with memoy of what users has asked make it crisp",
+      "intents": "general",
+      "stories": "",
+      "word_count": 17
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:25 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "for Tips & Gotchas you are giving inrelated snapshort.. I what more in terms of users when using it",
+      "intents": "general",
+      "stories": "",
+      "word_count": 17
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:27 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "first read and understand waht was build as of tdaoy this is readonly repostiry",
+      "intents": "knowledge_query",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Monday, May 4, 2026, 8:29 PM (UTC-4)",
+      "conversation_id": "0ed38ce1",
+      "query": "Example Input and Example Output should be something users asks and answer given",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "11962619",
+      "query": "Give me users storyes for platform event for Clinician Onboarding with component summary",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "11962619",
+      "query": "Give me users storyes for platform event for Clinician Onboarding",
+      "intents": "general",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "11962619",
+      "query": "Give me users storyes taht was built for platform event for Clinician Onboarding with component summary",
+      "intents": "general",
+      "stories": "",
+      "word_count": 16
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "11962619",
+      "query": "Can you gime me the question that is asked for bpats__ATS_Applicant__c Screen Call omni script",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 11:47 AM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "I what to provide a deck to present managment with the idea about this agent, setup steps, pros and cons, archiecture, why not use mcp and how this is best suited for different personas",
+      "intents": "general",
+      "stories": "",
+      "word_count": 32
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 11:56 AM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "The canvas at `/Users/skuppusamy/.cursor/projects/Users-skuppusamy-Library-CloudStorage-GoogleDrive-skuppusamy-salesforce-com-Shared-drives-SCPHealthCnC/canvases/scp-knowledge-agent-deck.canvas.tsx` h",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 66
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 12:03 PM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "write a step by step process and prompt usage to build this agent",
+      "intents": "general",
+      "stories": "",
+      "word_count": 12
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 12:11 PM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "can you create a new version of Salesforce Agile Knowledge Agent  to show case to other similar salesfroce proejct so they can gain value?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 23
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 12:12 PM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "can you create a new version of Salesforce Agile Knowledge Agent  to show case to other similar salesfroce proejct so they can gain value? only create a deck for canvas",
+      "intents": "general",
+      "stories": "",
+      "word_count": 28
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 12:15 PM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "where os the new canvas",
+      "intents": "general",
+      "stories": "",
+      "word_count": 5
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 2:50 PM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "how did you get the tocken estiamte?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 2:51 PM (UTC-4)",
+      "conversation_id": "405c6f1e",
+      "query": "hard fix",
+      "intents": "general",
+      "stories": "",
+      "word_count": 2
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:21 PM (UTC-4)",
+      "conversation_id": "41825851",
+      "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "445bef91",
+      "query": "/PROJECT-ROOT\n\u2502\n\u251c\u2500\u2500 .cursorrules             # Global AI instructions for Salesforce/Apex standards\n\u251c\u2500\u2500 /docs\n\u2502   \u251c\u2500\u2500 /sprints             # Organized by Sprint 1, 2, 3...\n\u2502   \u2502   \u2514\u2500\u2500 /Sprint-N\n\u2502   \u2502 ",
+      "intents": "conflict_detection, test_planning, solution_design, workspace_tooling",
+      "stories": "",
+      "word_count": 92
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:23 PM (UTC-4)",
+      "conversation_id": "6051a34a",
+      "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "6638f245",
+      "query": "I wnat to build a POC that can help SA, TA, Devs and QA to self sufficeint and self surfice with existing project knowledge and what is alreay built \nIn order to do this I can provide you with  \nSales",
+      "intents": "conflict_detection, knowledge_query",
+      "stories": "",
+      "word_count": 67
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "6638f245",
+      "query": "I what to buld this in cursor",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 6
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "6638f245",
+      "query": "I mean i what to make the agent capability of custsor",
+      "intents": "general",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:25 PM (UTC-4)",
+      "conversation_id": "787d0a69",
+      "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Wednesday, May 6, 2026, 9:44 AM (UTC-4)",
+      "conversation_id": "85c6e363",
+      "query": "give me the criteria and background for CPA review cases for creation of CPA records when clinician contract goes executed",
+      "intents": "general",
+      "stories": "",
+      "word_count": 20
+    },
+    {
+      "timestamp": "Saturday, May 9, 2026, 2:18 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "/Users/skuppusamy/Downloads/team-usage-events-13075649-2026-05-09.csv I have provided you with 7 days of taken usage... I think the RAG is not effective review this file and let me know your analysis",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 30
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 12:48 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "how can I split the knowledge based into each stories its a html can you write a program to do it anytomatically when sprin is ingested?",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 23
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 12:49 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi-task result synthesis is required. Otherwise end your response with a bri",
+      "intents": "general",
+      "stories": "",
+      "word_count": 48
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 12:50 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi-task result synthesis is required. Otherwise end your response with a bri",
+      "intents": "general",
+      "stories": "",
+      "word_count": 48
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 12:50 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi-task result synthesis is required. Otherwise end your response with a bri",
+      "intents": "general",
+      "stories": "",
+      "word_count": 48
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 12:57 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "what is the plan? are you still working?",
+      "intents": "knowledge_query",
+      "stories": "",
+      "word_count": 8
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 12:58 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "yes run this and also update all places to refelct this change",
+      "intents": "general",
+      "stories": "",
+      "word_count": 12
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 1:24 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "summarise this findings in some kind of ways  so that we can continuously improve the model",
+      "intents": "general",
+      "stories": "",
+      "word_count": 16
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 1:29 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "now update the tempalte as well to reflect this change",
+      "intents": "general",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 1:29 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "now update the tempalte as well to reflect this change",
+      "intents": "general",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 1:34 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi-task result synthesis is required. Otherwise end your response with a bri",
+      "intents": "general",
+      "stories": "",
+      "word_count": 48
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 2:30 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "we need to build the scemantic rag capability analysis the data in jira and also the past quey history from \"all\" users to get this details",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 26
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 2:35 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi-task result synthesis is required. Otherwise end your response with a bri",
+      "intents": "general",
+      "stories": "",
+      "word_count": 48
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 2:36 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "before you proceed give me tailed plan of Phase 1a: Create analyze-corpus.py \u2014 profile the knowledge base (story coverage, content density, component frequency, topic clustering)",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 25
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:25 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "Phase 1a: analyze-corpus.py \u2014 Detailed Plan\n\nImplement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the plan have already been created. Do ",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 59
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:42 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "<timestamp>Monday, May 11, 2026, 1:34 PM (UTC-4)</timestamp>\n\n<user_query>The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi",
+      "intents": "general",
+      "stories": "",
+      "word_count": 54
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:42 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "<timestamp>Monday, May 11, 2026, 2:35 PM (UTC-4)</timestamp>\n\n<user_query>The above subagent result is already visible to the user. DO NOT reiterate or summarize its contents unless asked, or if multi",
+      "intents": "general",
+      "stories": "",
+      "word_count": 54
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:42 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "Implement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the plan have already been created. Do not create them again. Mark them as in_progre",
+      "intents": "general",
+      "stories": "",
+      "word_count": 53
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:42 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "this is good but you can also use the JIRA Components, Labels to get some ideas as well",
+      "intents": "general",
+      "stories": "",
+      "word_count": 18
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:44 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "now use this to build another RAG",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:45 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "proceed tonext step",
+      "intents": "general",
+      "stories": "",
+      "word_count": 3
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 3:45 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "proceed tonext step",
+      "intents": "general",
+      "stories": "",
+      "word_count": 3
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 4:11 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "what is ChromaDB",
+      "intents": "knowledge_query",
+      "stories": "",
+      "word_count": 3
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 4:12 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "I dont what to use ChromaDB what alternative is there?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 4:28 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "now tell me where this small install need to be placed and who managed",
+      "intents": "general",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Monday, May 11, 2026, 4:30 PM (UTC-4)",
+      "conversation_id": "866402b3",
+      "query": "yes",
+      "intents": "general",
+      "stories": "",
+      "word_count": 1
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "86a98990",
+      "query": "Can you give a systmesys of itsm that need to be built\nCurelty users use a button in ATS Applicant__c object to lauch a omni script to fill this details in this document \n\nI what to build an agent wit",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 397
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "86a98990",
+      "query": "can you help me with examples of \nIs there any existing Apex class in your org that already calls a Prompt Template? (Check Setup \u2192 Apex Classes for anything with generateMessages or PromptTemplate)",
+      "intents": "conflict_detection, workspace_tooling",
+      "stories": "",
+      "word_count": 31
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "86a98990",
+      "query": "The correct Salesforce Apex method to call a Flex Prompt Template has been narrowed down to a 3-argument version returning ConnectApi.EinsteinPromptTemplateGenerationsRepresentation \u2014 that much compil",
+      "intents": "conflict_detection, workspace_tooling",
+      "stories": "",
+      "word_count": 118
+    },
+    {
+      "timestamp": "Monday, Apr 27, 2026, 10:13 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "AC1: Add Clinician Contract Start Date to Job Start Date(s) check upon Contract creation\nGiven I am a Recruiter within the Corporate Support Apps\nWhen I select \u2018Contract Request\u2019 from a Clinician reco",
+      "intents": "conflict_detection",
+      "stories": "",
+      "word_count": 503
+    },
+    {
+      "timestamp": "Monday, Apr 27, 2026, 10:22 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "can you make it like ta writing it.. not this details... ignore omni version just provide the name of omni.. bring it up 10000 feet up",
+      "intents": "general",
+      "stories": "",
+      "word_count": 25
+    },
+    {
+      "timestamp": "Monday, Apr 27, 2026, 10:44 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "find me the logic for cloning the clinician contract when one exits contract it should be part of omni script",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 20
+    },
+    {
+      "timestamp": "Monday, Apr 27, 2026, 3:59 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "CodeSet.Clinician_Type__c where we are using this field",
+      "intents": "general",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "Tuesday, Apr 28, 2026, 9:49 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "terminiation platform event Corporation_and_Tax_Information__c",
+      "intents": "general",
+      "stories": "",
+      "word_count": 3
+    },
+    {
+      "timestamp": "Tuesday, Apr 28, 2026, 9:51 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "give me the query that was used to pull Corporation_and_Tax_Information__c",
+      "intents": "general",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Tuesday, Apr 28, 2026, 10:24 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "Write Solution for AC - high level only incldue impact component\nGiven I am a Recruiter within the Corporate Support apps\nWhen I select \u2018Contract Request\u2019 from a Clinician record\nAnd the following do ",
+      "intents": "impact_analysis",
+      "stories": "",
+      "word_count": 209
+    },
+    {
+      "timestamp": "Tuesday, Apr 28, 2026, 10:28 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "you are checking against HPF.Facility Title .Code set",
+      "intents": "general",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Tuesday, Apr 28, 2026, 10:36 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "AC5: Trigger (\u201cAdd HPF\u201d) \nGiven I am a Recruiter within the Corporate Support apps\nWhen I am on a draft Clinician Contract\nAnd I select \u201cAdd HPF\u201d where the following do NOT match:\n\nClinician record \u201cP",
+      "intents": "story_lookup",
+      "stories": "PR1050558-6750",
+      "word_count": 147
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 9:28 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "can you get the logic for SendHPFReportScheduler",
+      "intents": "general",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 9:31 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "find all code that uses  DL.SalesforceDQ@SCPHealth.com",
+      "intents": "general",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 9:34 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "get me the stories for HPFReportEmailUtil.cls",
+      "intents": "story_lookup",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 9:40 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "can you check if SendHPFReportScheduler featue is replicanted else where ?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 9:45 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "give me logic for processHPFupdatesBactchClass",
+      "intents": "general",
+      "stories": "",
+      "word_count": 5
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 2:55 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "can you summarize todays question and how you helped and give me an estiamte of how much time it would have taken if not using this tool",
+      "intents": "general",
+      "stories": "",
+      "word_count": 27
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 3:58 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "now I have create a shared foler https://drive.google.com/drive/folders/0AE4OS7D6-VO8Uk9PVA I what to ideate the tempalte without any project knowledge from SCP to be move to this folder \"Importatn: t",
+      "intents": "general",
+      "stories": "",
+      "word_count": 38
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 3:58 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "now I have create a shared foler https://drive.google.com/drive/folders/0AE4OS7D6-VO8Uk9PVA I what to ideate the tempalte without any project knowledge from SCP to be move to this folder \"Importatn: t",
+      "intents": "general",
+      "stories": "",
+      "word_count": 38
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:16 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "tell me about Then any consumer can: copy \u2192 rename \u2192 mv _cursor .cursor \u2192 cp workspace.config.example.yaml workspace.config.yaml \u2192 start dropping sprint exports.",
+      "intents": "knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 23
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:19 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "i thought we created a quick start guide did you update that with this info?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:21 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "is this written inside salesforce-knowledge-workspace-template?",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 8
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:24 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "update the Salesforce Agile Knowledge Agent with simple version how it works like an archiecture e.g. data resides in a read only google drive maintainer role keeps the recent story and metadata.. eve",
+      "intents": "general",
+      "stories": "",
+      "word_count": 57
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:28 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "the RAG index are genrate in the drive itself that is the idea right... so 2 people one mostly one SA will add recent story TA will bring in recent code and also create rag all others will be consumer",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 68
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:33 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "go with  Option A",
+      "intents": "general",
+      "stories": "",
+      "word_count": 3
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 4:57 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "I am going to publich a deck with ledership write few sentenses abou this tool catchy so that it produces intrest not more then 3 sentenses",
+      "intents": "general",
+      "stories": "",
+      "word_count": 23
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 5:04 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "rephrase Minutes vs. hours \u2014 eliminates manual JIRA/HTML spelunking across 20+ sprints remove html as we are not looking into html",
+      "intents": "general",
+      "stories": "",
+      "word_count": 20
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 7:58 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "elobrate Later (Phase 3) Cross-program pattern library\n\nShared ADR catalog across programs\n\nVlocity / Industries extension pack\n\nAdoption metrics dashboard",
+      "intents": "general",
+      "stories": "",
+      "word_count": 19
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:00 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "for phase 3 i wnat to imagine that developers can use this to build new code automonus code that is history aware that is the highlite elobrate into a plan",
+      "intents": "general",
+      "stories": "",
+      "word_count": 27
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:05 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "jsut update the Salesforce Agile Knowledge Agent canvas",
+      "intents": "general",
+      "stories": "",
+      "word_count": 8
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:07 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "find for Salesforce Agile Knowledge Agent\nA Cursor-native AI agent any Salesforce program can adopt to turn sprint stories, org metadata, and traceability data into instant, cited answers \u2014 for Soluti",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 36
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:11 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "are you stuck",
+      "intents": "general",
+      "stories": "",
+      "word_count": 3
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:11 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "go ahead",
+      "intents": "general",
+      "stories": "",
+      "word_count": 2
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:17 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "i read someting about semantic something can you tell me what is is about?",
+      "intents": "knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Wednesday, Apr 29, 2026, 8:20 PM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "i what the Semantic Layer feature to be part of Phase 2",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 11:32 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "Create a apex class that pull the right PO contract based on Clinicina Contract Start Date. THe input is Hpd.account id(s) use the similar logic used to pull the PO contract when configuring Clinician",
+      "intents": "general",
+      "stories": "",
+      "word_count": 35
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 11:39 AM (UTC-4)",
+      "conversation_id": "86a98990",
+      "query": "yes wsitch but no writing any file print the Apex in this chat",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Friday, May 1, 2026, 10:34 AM (UTC-4)",
+      "conversation_id": "9b2f685e",
+      "query": "when clinician contract goes executed is the CTI (Corporate Tax Infoamtion) status gets udpated?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Wednesday, May 6, 2026, 10:12 AM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "asa ta solution this \nAC1: Set incorrect Time Type rates to 'Is Deleted' = Checked/True when cloning the contract\nGiven I am a Recruiter within the Corporate Support apps\nWhen I am on a Clinician that",
+      "intents": "story_lookup, conflict_detection",
+      "stories": "PR1050558-6803",
+      "word_count": 328
+    },
+    {
+      "timestamp": "Wednesday, May 6, 2026, 10:18 AM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "why are you writing a document?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 5
+    },
+    {
+      "timestamp": "Wednesday, May 6, 2026, 4:57 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "write solution as TA \nAC1: System shall save changes to deleted values without the user updating text fields. \nGiven I am a Legal - Client Contracting user within the Corporate Support apps\nWhen I am ",
+      "intents": "conflict_detection",
+      "stories": "",
+      "word_count": 104
+    },
+    {
+      "timestamp": "Thursday, May 7, 2026, 9:22 AM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "as a TA I what to know which story AC covered into logoc for CPARelationshipRecordsGeneratorQueuable.updateCPAs",
+      "intents": "general",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Thursday, May 7, 2026, 3:32 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "now go little bit details and look the requirmetns for \n\t\t\t\t// If a change in HPF is detected, prepare the record for update.\n                    if(newHPFIdFromPNC != currentHPFIdInCPA){\n            ",
+      "intents": "general",
+      "stories": "",
+      "word_count": 45
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 10:03 AM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "what changes the HPF Status to Active look for hpf flows (hint: HPF updated with First Clinical Shift)",
+      "intents": "general",
+      "stories": "",
+      "word_count": 18
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 12:10 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find the omni script for PO Contract Summary screne",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 12:10 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find the omni script for PO Contract Summary screne",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 9
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 12:48 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "write a query for ACR \u2018Party Role Relationship\u2019 = \u2018Services Contracting Entity-Service Account-AAR', \n\n\u2018End Date\u2019 is Null \n\n'Start Date\u2019 < TODAY()",
+      "intents": "general",
+      "stories": "",
+      "word_count": 20
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 1:56 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find the components realted to PR1050558-3351",
+      "intents": "story_lookup",
+      "stories": "PR1050558-3351",
+      "word_count": 5
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 3:03 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find out the trigering point for this story\nAC1: Updates story PR1050558-3021\nGiven I am a Legal - Contracting Specialist within the Corporate Support Apps\nWhen I am on a Case (record type = Client Ag",
+      "intents": "story_lookup, conflict_detection",
+      "stories": "PR1050558-3021",
+      "word_count": 196
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 3:17 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find out which code popualte Healthcare Payer Network\u2019- Healthcare Payer Network Name = \u201cCorporate Entity TBD\u201c",
+      "intents": "general",
+      "stories": "",
+      "word_count": 15
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 3:38 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find the configuration for where to add this change\niven I am a Legal - Client Contracting user within the Corporate Support apps\nWhen I am on a Client Contract \n\nStatus = any\n\nContract Type = Master\n",
+      "intents": "conflict_detection",
+      "stories": "",
+      "word_count": 58
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 3:38 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "find the configuration for where to add this change\niven I am a Legal - Client Contracting user within the Corporate Support apps\nWhen I am on a Client Contract \n\nStatus = any\n\nContract Type = Master\n",
+      "intents": "conflict_detection",
+      "stories": "",
+      "word_count": 58
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 3:48 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "write a query for AAR \u2018Party Role Relationship\u2019 = \u2018Services Contracting Entity-Service Account-AAR', \n\n\u2018End Date\u2019 is Null \n\n'Start Date\u2019 < TODAY()",
+      "intents": "general",
+      "stories": "",
+      "word_count": 20
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 4:25 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "SELECT Id, AccountId, RelatedAccountId, StartDate, EndDate, PartyRoleRelation.Name\nFROM AccountAccountRelation\nWHERE PartyRoleRelation.Name = 'Services Contracting Entity-Service Account-AAR'\n  AND En",
+      "intents": "general",
+      "stories": "",
+      "word_count": 47
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 5:35 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "did you learn the rules and things baout this agent?",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 5:36 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "give the process of button Intake Form from the Person Account and what happens",
+      "intents": "general",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 5:41 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "looks like the case is creatd as closed why that may be",
+      "intents": "general",
+      "stories": "",
+      "word_count": 12
+    },
+    {
+      "timestamp": "Friday, May 8, 2026, 5:42 PM (UTC-4)",
+      "conversation_id": "afe667ec",
+      "query": "looks like the case is  closed immediately after it was created why that might be",
+      "intents": "general",
+      "stories": "",
+      "word_count": 15
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:10 PM (UTC-4)",
+      "conversation_id": "b95511d1",
+      "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 11:56 AM (UTC-4)",
+      "conversation_id": "c07e7cbb",
+      "query": "as a TA I what to write Technical Solution for below AC\n\nAC1: PO Contract, ensure when a user \u201cSpecify Rates\u201d we are using the same logic to determine a match to update an existing record or add a new",
+      "intents": "conflict_detection, solution_design",
+      "stories": "",
+      "word_count": 186
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:05 PM (UTC-4)",
+      "conversation_id": "c07e7cbb",
+      "query": "this is a plan and ask mode only and I what what any one to conver that as of now(may be in future I can think about it). I dont want the ai to even ask questuin to build anything this is plan and des",
+      "intents": "solution_design",
+      "stories": "",
+      "word_count": 43
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:06 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "I want to creaed rules this is a plan and ask mode only and I what what any one to conver that as of now(may be in future I can think about it). I dont want the ai to even ask questuin to build anythi",
+      "intents": "solution_design, workspace_tooling",
+      "stories": "",
+      "word_count": 47
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:07 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "can you updae the tempalte as well?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:25 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "refine Technical Architect Guidelines (Plan & Design Only) most often the technical desing is part of the jira story in solution docuemtn that as well remember you are a bot that helps with historic c",
+      "intents": "story_lookup, conflict_detection, solution_design",
+      "stories": "",
+      "word_count": 43
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:27 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "can we rewrite this as skill? record me pros and cons",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 11
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:42 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "create skills for all",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 4
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 12:49 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "also can you update a rule if code a exists thne that is the source of truth not the AC or JIRA Story.",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 21
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 1:12 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "I want to share this as a reusable artifact so that I can provide this to other proejct to use.. read the folder salesforce-knowledge-workspace-template and create a new ersion similar to that with th",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 47
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 1:38 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "check again anyting related to SCP is left over in v2",
+      "intents": "general",
+      "stories": "",
+      "word_count": 10
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 1:42 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "do you have release notes in v2?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 6
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 1:46 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "recomed to export in html as there are strike through and rich text that should not be considerd..  update both in v2 as well as my current SCPProejct repostiry",
+      "intents": "general",
+      "stories": "",
+      "word_count": 28
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 1:46 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "recomed to export in html as there are strike through and rich text that should not be considerd..  update both in v2 as well as my current SCPProejct repostiry",
+      "intents": "general",
+      "stories": "",
+      "word_count": 28
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 3:42 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "build me one deck for v1 to v2",
+      "intents": "general",
+      "stories": "",
+      "word_count": 6
+    },
+    {
+      "timestamp": "Tuesday, May 5, 2026, 3:43 PM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "build me one deck for v1 to v2",
+      "intents": "general",
+      "stories": "",
+      "word_count": 6
+    },
+    {
+      "timestamp": "Wednesday, May 6, 2026, 10:51 AM (UTC-4)",
+      "conversation_id": "ce742bc8",
+      "query": "the new rules is trying to write solution into solution folder is that something can I allow? assess",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 17
+    },
+    {
+      "timestamp": "Thursday, May 7, 2026, 11:44 AM (UTC-4)",
+      "conversation_id": "d851fc67",
+      "query": "Context\nHi Norman, GM ... @Sakthi Kumar Kuppusamy can help with your DH request. Could you please find time for us ? I'm out on a workshop all week next week, but please lemme know if you have any que",
+      "intents": "solution_design, knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 693
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:27 PM (UTC-4)",
+      "conversation_id": "e2846573",
+      "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 8:29 PM (UTC-4)",
+      "conversation_id": "e2846573",
+      "query": "find out the approval flow for clinician contract When the Contract multiple approval is pening and one reject , Can you  check if we are rejecting all pending approval when one of the Approvers Rejec",
+      "intents": "component_search",
+      "stories": "",
+      "word_count": 34
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 8:43 PM (UTC-4)",
+      "conversation_id": "e2846573",
+      "query": "okay now switching topics.. can you tell how effecient the rag that we genrated?",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 14
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 8:48 PM (UTC-4)",
+      "conversation_id": "e2846573",
+      "query": "where us ths RAG file show me",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 7
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "f35afb29",
+      "query": "I am going to create a Cursor proejct structure to manage a \"Salesforce\" project built called its a agile based project \n\nthe Cursor project will serve all these user case and roles scenario\n\n1. Solut",
+      "intents": "component_search, conflict_detection, test_planning, solution_design, impact_analysis, knowledge_query, workspace_tooling",
+      "stories": "",
+      "word_count": 107
+    },
+    {
+      "timestamp": "",
+      "conversation_id": "f35afb29",
+      "query": "Salesforce Cursor project scaffold\n\nImplement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the plan have already been created. Do not creat",
+      "intents": "workspace_tooling",
+      "stories": "",
+      "word_count": 57
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:06 PM (UTC-4)",
+      "conversation_id": "ffcd8ec5",
+      "query": "Find the stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 13
+    },
+    {
+      "timestamp": "Thursday, Apr 30, 2026, 12:09 PM (UTC-4)",
+      "conversation_id": "ffcd8ec5",
+      "query": "Find the jira stories and salesfroce componet thats involved in offboardling clinician patform event?",
+      "intents": "general",
+      "stories": "",
+      "word_count": 14
+    }
+  ]
+}

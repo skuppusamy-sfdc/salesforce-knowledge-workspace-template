@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Advertising</fullName>
+        <default>true</default>
+        <label>Advertising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conference</fullName>
+        <default>false</default>
+        <label>Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Current Client</fullName>
+        <default>false</default>
+        <label>Current Client</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Custom Email</fullName>
+        <default>false</default>
+        <label>Custom Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>eBook</fullName>
+        <default>false</default>
+        <label>eBook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nurture Email</fullName>
+        <default>false</default>
+        <label>Nurture Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Podcast</fullName>
+        <default>false</default>
+        <label>Podcast</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral Program</fullName>
+        <default>false</default>
+        <label>Referral Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Resource</fullName>
+        <default>false</default>
+        <label>Resource</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social</fullName>
+        <default>false</default>
+        <label>Social</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VBC</fullName>
+        <default>false</default>
+        <label>VBC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Whitepaper</fullName>
+        <default>false</default>
+        <label>Whitepaper</label>
+    </standardValue>
+</StandardValueSet>

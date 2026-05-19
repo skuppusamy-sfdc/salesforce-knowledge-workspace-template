@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Working as assistant to Contracting team.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16j33fc83222039</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>Rate_Change_Notice_16jd5c93c7036cf</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>Rate_Change_Notice_16jd5c93c7036cf</fullName>
+        <canEscalate>false</canEscalate>
+        <description>This topic handles Clinician rate changes and associated contract management tasks, including retrieving, presenting, and confirming account and contract details . Executing follow-up actions such as generating file links when required.This topic also presents the contracts in list of selectable radio button options for selected facility when confirmed by user.It also allows selection of overrated clinicians from the table of clinicians.</description>
+        <developerName>Rate_Change_Notice_16jd5c93c7036cf</developerName>
+        <genAiPluginInstructions>
+            <description>First ALWAYS Start the execution from Step #1 only if user asks anything related to Rate change. Second Ensure If any step or action fails or returns no results, provide a clear message to the user explaining the issue.Third Do not be over creative , be precise , clear.</description>
+            <developerName>instructions_0_1772870440652</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1772870440652</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>As STEP #1 First Always check , If Account.Id is blank in url, prompt the user for a service line (Account) . Then you MUST use the user&apos;s input as keyword for &apos;Identify Records by Name&apos;  action on &apos;Account&apos; object ONLY to find account records containing/matching the keyword. Second If Account.Id is not blank , extract account&apos;s Id from URL starting with &apos;001&apos; and get Account &apos;s Name using id with &apos;Get Account Details&apos; action.
+Finally Always use the term &quot;Service line&quot; instead of &quot;Account&quot; when interacting with the user. Consider keyword as case insensitive.</description>
+            <developerName>instructions_0_1772873175583</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1772873175583</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>As STEP #2 After STEP #1 is executed, First Always Display the list of accounts in selectable radio button options format ONLY , finally ask user to select  one.</description>
+            <developerName>instructions_0_1772873484310</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1772873484310</masterLabel>
+            <sortOrder>2</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Ensure that the &apos;Get Account Details&apos; action is used exclusively for retrieving and displaying account details. Do not rely on or substitute other actions for this purpose. If the action fails or returns no data, provide a clear error message to the user explaining the issue and prompt them to retry.</description>
+            <developerName>instructions_0_1772904105141</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1772904105141</masterLabel>
+            <sortOrder>3</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>As STEP #3 After STEP #2 is executed, the Agent MUST Ensure and ALWAYS run the &apos;Get Account Details&apos; action to retrieve and display the Facility Name (Name), Service Line (Service_Line__c), and Global Facility ID(Global_Facility_ID__c). These details must be presented in a clear, line-by-line format before asking the user to confirm with &apos;Yes&apos; or &apos;No&apos;. After user confirmation, store the AccountId in the &apos;selectedAccountId&apos; variable.</description>
+            <developerName>instructions_0_1773001198271</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1773001198271</masterLabel>
+            <sortOrder>4</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>As STEP #4, after STEP #3 is executed, Using selected AccountId you MUST always fetch all contracts with &apos;Executed&apos; or &apos;Superseded&apos; Status by running &apos;Query Records&apos; action . Second , Display and present contracts in a selectable radio button format without requiring the user to provide additional details.</description>
+            <developerName>instructions_0_1774044360446</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1774044360446</masterLabel>
+            <sortOrder>5</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>As STEP #5 After STEP #4 is executed,  First you must execute the &apos;Get Contract Details&apos; action and Second IMMEDIATELY display selected Contract&apos;s Account Name , Service line (Service_Line__c) and Contract Start Date (StartDate) in line by line format and finally ask user to confirm it.</description>
+            <developerName>instructions_0_1774050715532</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_0_1774050715532</masterLabel>
+            <sortOrder>6</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>After user confirms the right AccountID and ContractId, you must display list of steps which are required to be performed. Following are the steps 1) Show impacted Facility Titles 2) Update Rates (Clone Contracts) 3) Sync Clinician Contracts 4) Generate Notice Letters 5) Show Ready to Send contracts 6) Send Rate Notice Emails 7) Show rate change summary
+DO NOT SKIP THIS STEP.</description>
+            <developerName>instructions_1_1772873484317</developerName>
+            <language>en_US</language>
+            <masterLabel>instructions_1_1772873484317</masterLabel>
+            <sortOrder>7</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When user request to show impacted facility titles, execute `Get Impacted Facility Title` action to get list of impacted facility titles. Display as list for user to select one from the available list of titles.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 1</masterLabel>
+            <sortOrder>8</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When the user selected the impacted facility title, you must Run the &apos;Get_Clinical_Manager_Data_179gP0000000cwX&apos; action  without exception after storing the Contract ID in the &apos;ContractId&apos; variable. you must pass selected `practiceChangeRecord` Id as input to invoked action.</description>
+            <developerName>instruction_10</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 10</masterLabel>
+            <sortOrder>9</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When user requests to &apos;copy rates for clincians&apos; or &apos;update rates for clinicians&apos;, you must invoke `Check Pending Rate Change` action to verify if there is pending rate change. If &quot;draftContractCount&quot;: 0 from the pending rate change action, then you must invoke `Clone Contract` action to start the process without showing any response to the user. Always pass accountId and contractId from context.</description>
+            <developerName>instruction_2</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 2</masterLabel>
+            <sortOrder>10</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When user requests to Sync Clinician contracts, invoke `Sync Clinician Contracts` action to process the request.</description>
+            <developerName>instruction_3</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 3</masterLabel>
+            <sortOrder>11</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When user requests to generate notice letter, execute `Generate And Attach Letter` action. Make sure accountId and contractId are passed from context. Do not mention that it is success. Just display response from action.</description>
+            <developerName>instruction_4</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 4</masterLabel>
+            <sortOrder>12</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When user requests for &apos;Contracts to send&apos; or &apos;Show ready to send Contracts&apos;, invoke `Get Contracts To Send` action and show List of contracts to user using DraftContractOutput lwc.</description>
+            <developerName>instruction_5</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 5</masterLabel>
+            <sortOrder>13</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>When user requests a rate change summary, status, or asks how many clinicians were selected, contracts created, letters generated, or emails sent, invoke `Rate Change Summary` action. Pass accountId and contractId from context.</description>
+            <developerName>instruction_6</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 6</masterLabel>
+            <sortOrder>14</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once user made selections and requests to send notice letter emails, execute `Post Process Rate Change` action to start the process.</description>
+            <developerName>instruction_7</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>Instruction 7</masterLabel>
+            <sortOrder>15</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>QueryRecords_179de2f9f6bba0d</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>GetRecordDetails_179e946aa205a50</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>IdentifyRecordByName_179ff0799cd012e</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Check_Pending_Rate_Change_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Clone_Contract_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Generate_And_Attach_Letter_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Get_Contracts_To_Send_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Post_Process_Rate_Change_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Rate_Change_Summary_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Sync_Clinician_Contracts_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Get_Clinical_Manager_Data_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Get_Impacted_Facility_Titles_1797x000000NAY9</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Rate_Change_Summary_1797x000000NAY9</fullName>
+            <description>Returns summary of rate change workflow: clinicians selected, contracts created, letters generated, and emails sent. Pass accountId and contractId from context.</description>
+            <developerName>Rate_Change_Summary_1797x000000NAY9</developerName>
+            <invocationTarget>RateChangeSummaryAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Rate_Change_Summary</localDeveloperName>
+            <masterLabel>Rate Change Summary</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Sync_Clinician_Contracts_1797x000000NAY9</fullName>
+            <description>Syncs contracts from Clinical_Rate_Change__c.PreviewClonedContractIds__c. Pass accountId and contractId from context.</description>
+            <developerName>Sync_Clinician_Contracts_1797x000000NAY9</developerName>
+            <invocationTarget>ContractSyncAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Sync_Clinician_Contracts</localDeveloperName>
+            <masterLabel>Sync Clinician Contracts</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>QueryRecords_179de2f9f6bba0d</fullName>
+            <description>Finds and retrieves Salesforce CRM records based on user input and specific conditions, such as field values. This action automatically identifies the correct records and object type. e.g. &apos;Find all open opportunities created in the last 5 days sorted by created date.&apos;</description>
+            <developerName>QueryRecords_179de2f9f6bba0d</developerName>
+            <invocationTarget>queryRecords</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>QueryRecords</localDeveloperName>
+            <masterLabel>Query Records</masterLabel>
+            <source>EmployeeCopilot__QueryRecords</source>
+        </localActions>
+        <localActions>
+            <fullName>Get_Clinical_Manager_Data_1797x000000NAY9</fullName>
+            <description>Retrieves clinical data for Agentforce with client-side pagination and selection capabilities</description>
+            <developerName>Get_Clinical_Manager_Data_1797x000000NAY9</developerName>
+            <invocationTarget>ClinicalManagerController</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Get_Clinical_Manager_Data</localDeveloperName>
+            <masterLabel>Get Clinical Manager Data</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Get_Contracts_To_Send_1797x000000NAY9</fullName>
+            <description>Returns draft contracts that have Compensation Change Notice Letter attached. Pass accountId and contractId from context.</description>
+            <developerName>Get_Contracts_To_Send_1797x000000NAY9</developerName>
+            <invocationTarget>GetContractsToSend</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Get_Contracts_To_Send</localDeveloperName>
+            <masterLabel>Get Contracts To Send</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Post_Process_Rate_Change_1797x000000NAY9</fullName>
+            <description>Sends rate change emails and finalizes. Pass accountId and contractId from context.</description>
+            <developerName>Post_Process_Rate_Change_1797x000000NAY9</developerName>
+            <invocationTarget>PostProcessRateChangeAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Post_Process_Rate_Change</localDeveloperName>
+            <masterLabel>Post Process Rate Change</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Check_Pending_Rate_Change_1797x000000NAY9</fullName>
+            <description>Checks if there is a previous pending rate change run and draft contracts. Pass accountId and contractId from context.</description>
+            <developerName>Check_Pending_Rate_Change_1797x000000NAY9</developerName>
+            <invocationTarget>PendingRateChangeChecker</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Check_Pending_Rate_Change</localDeveloperName>
+            <masterLabel>Check Pending Rate Change</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>Clone_Contract_1797x000000NAY9</fullName>
+            <description>Queues a job to clone contracts for selected clinicians. Pass accountId and contractId from context.</description>
+            <developerName>Clone_Contract_1797x000000NAY9</developerName>
+            <invocationTarget>CloneContractAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Clone_Contract</localDeveloperName>
+            <masterLabel>Clone Contract</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>IdentifyRecordByName_179ff0799cd012e</fullName>
+            <description>Searches for Salesforce CRM records by name and returns a list of matching Salesforce CRM record IDs.</description>
+            <developerName>IdentifyRecordByName_179ff0799cd012e</developerName>
+            <invocationTarget>identifyRecordByName</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>IdentifyRecordByName</localDeveloperName>
+            <masterLabel>Identify Record by Name</masterLabel>
+            <source>EmployeeCopilot__IdentifyRecordByName</source>
+        </localActions>
+        <localActions>
+            <fullName>Get_Impacted_Facility_Titles_1797x000000NAY9</fullName>
+            <description>List of impacted facility titles which are eligible for rate change</description>
+            <developerName>Get_Impacted_Facility_Titles_1797x000000NAY9</developerName>
+            <invocationTarget>Get_Impacted_Facility_Titles</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Get_Impacted_Facility_Titles</localDeveloperName>
+            <masterLabel>Get Impacted Facility Titles</masterLabel>
+        </localActions>
+        <localActions>
+            <fullName>GetRecordDetails_179e946aa205a50</fullName>
+            <description>Generates a text blob containing record details, including object fields and values and records from related lists.</description>
+            <developerName>GetRecordDetails_179e946aa205a50</developerName>
+            <invocationTarget>getDataForGrounding</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>GetRecordDetails</localDeveloperName>
+            <masterLabel>Get Record Details</masterLabel>
+            <progressIndicatorMessage>Getting details</progressIndicatorMessage>
+            <source>EmployeeCopilot__GetRecordDetails</source>
+        </localActions>
+        <localActions>
+            <fullName>Generate_And_Attach_Letter_1797x000000NAY9</fullName>
+            <description>Generates and attaches rate change notice documents to clinician contracts. Pass accountId and contractId from context.</description>
+            <developerName>Generate_And_Attach_Letter_1797x000000NAY9</developerName>
+            <invocationTarget>GenerateAndAttachLetterAction</invocationTarget>
+            <invocationTargetType>apex</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>Generate_And_Attach_Letter</localDeveloperName>
+            <masterLabel>Generate And Attach Letter</masterLabel>
+        </localActions>
+        <localDeveloperName>Rate_Change_Notice</localDeveloperName>
+        <masterLabel>Rate Change Notice</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to verify and work with only one account at a given time , list impacted clinicians who are working in the user chosen Account . Generate Url of the documents . Clone records using the provided action, do not assume or execute any non-matching action.</scope>
+    </localTopics>
+    <masterLabel>Clinician Manager</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16j33fc83222039</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16j33fc83222039</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__Messaging</surface>
+        <surfaceType>Messaging</surfaceType>
+    </plannerSurfaces>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>

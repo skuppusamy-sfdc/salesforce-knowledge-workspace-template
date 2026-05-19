@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Managing_Entity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Managing Entity</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Corporate Entity - Directors and Officer</relationshipLabel>
+    <relationshipName>Corporate_Entity_Directors_and_Officer</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

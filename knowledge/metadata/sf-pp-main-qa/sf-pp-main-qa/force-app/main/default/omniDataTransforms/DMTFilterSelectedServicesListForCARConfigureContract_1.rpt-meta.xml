@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DMTFilterSelectedServicesListForCARConfigureContract&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SelectedServices:SelectedServicesList LIST</formulaConverted>
+        <formulaExpression>LIST(SelectedServices:SelectedServicesList)</formulaExpression>
+        <formulaResultPath>FormattedInputList</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DMTFilterSelectedServicesListForCARConfigureContractCustom6596</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ServiceAccounts:ServiceAccountsToInclude LIST &apos;Selected/\/\/==/\/\/true&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(%ServiceAccounts:ServiceAccountsToInclude%), &apos;Selected == true&apos;)</formulaExpression>
+        <formulaResultPath>SelectedServices:SelectedServicesList</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DMTFilterSelectedServicesListForCARConfigureContractCustom8643</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTFilterSelectedServicesListForCARConfigureContractCustom8103</globalKey>
+        <inputFieldName>SelectedServices:SelectedServicesList:Account__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ServicesList:Account__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTFilterSelectedServicesListForCARConfigureContractCustom9802</globalKey>
+        <inputFieldName>SelectedServices:SelectedServicesList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ServicesList:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTFilterSelectedServicesListForCARConfigureContractCustom9332</globalKey>
+        <inputFieldName>SelectedServices:SelectedServicesList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ServicesList:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTFilterSelectedServicesListForCARConfigureContractCustom4587</globalKey>
+        <inputFieldName>FormattedInputList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTFilterSelectedServicesListForCARConfigureContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FormattedInputList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ClientContractRecordTypeId&quot; : &quot;0127x00000IhlPVAAZ&quot;,
+  &quot;options&quot; : {
+    &quot;forceQueueable&quot; : false,
+    &quot;mockHttpResponse&quot; : null,
+    &quot;vlcApexResponse&quot; : true,
+    &quot;useFuture&quot; : false,
+    &quot;isTestProcedure&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;integrationProcedureKey&quot; : null,
+    &quot;vlcIPData&quot; : null,
+    &quot;OmniAnalyticsTrackingDebug&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;shouldCommit&quot; : false,
+    &quot;vlcTestSuiteUniqueKey&quot; : null,
+    &quot;vlcTestUniqueKey&quot; : null,
+    &quot;vlcCacheKey&quot; : null,
+    &quot;continuationStepResult&quot; : null,
+    &quot;vlcFilesMap&quot; : null,
+    &quot;ParentInteractionToken&quot; : null,
+    &quot;useQueueable&quot; : false,
+    &quot;disableMetadataCache&quot; : false,
+    &quot;isDebug&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;useContinuation&quot; : false,
+    &quot;chainable&quot; : false,
+    &quot;ignoreMetadataPermissions&quot; : false,
+    &quot;useHttpCalloutMock&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  },
+  &quot;OpportunityOwnerId&quot; : &quot;0057x00000RUSgrAAH&quot;,
+  &quot;OpportunityId&quot; : &quot;0067x00000VL9T3AAL&quot;,
+  &quot;OpportunityAccountId&quot; : &quot;0017x00001KRaG1AAL&quot;,
+  &quot;ServiceAccounts&quot; : {
+    &quot;ServiceAccountsToInclude&quot; : [ {
+      &quot;Name&quot; : &quot;Services-1306&quot;,
+      &quot;Status__c&quot; : &quot;Active&quot;,
+      &quot;Selected&quot; : true,
+      &quot;Id&quot; : &quot;a2H7x0000019zzlEAA&quot;,
+      &quot;Type__c&quot; : &quot;EM&quot;
+    }, {
+      &quot;Name&quot; : &quot;Services-1307&quot;,
+      &quot;Status__c&quot; : &quot;Active&quot;,
+      &quot;Id&quot; : &quot;a2H7x000001A01NEAS&quot;,
+      &quot;Selected&quot; : true,
+      &quot;Type__c&quot; : &quot;EM&quot;
+    }, {
+      &quot;Name&quot; : &quot;Services-1308&quot;,
+      &quot;Status__c&quot; : &quot;Active&quot;,
+      &quot;Id&quot; : &quot;a2H7x000001Abc1EAC&quot;,
+      &quot;Selected&quot; : true
+    }, {
+      &quot;Name&quot; : &quot;Services-1310&quot;,
+      &quot;Status__c&quot; : &quot;Active&quot;,
+      &quot;Id&quot; : &quot;a2H7x000001Bmf3EAC&quot;,
+      &quot;Selected&quot; : true,
+      &quot;Type__c&quot; : &quot;EM&quot;
+    } ]
+  },
+  &quot;elementName&quot; : &quot;IP_CreateRelatedRecordsForConfigureContract&quot;,
+  &quot;ContractName&quot; : &quot;testting4567&quot;,
+  &quot;ProformaModelId&quot; : &quot;a4N7x000000prALEAY&quot;,
+  &quot;HealthcarePayerNetworkId&quot; : &quot;0bf7x0000000BWXAA2&quot;,
+  &quot;AgreementCategory&quot; : &quot;BAA - Facility&quot;,
+  &quot;omniScriptId&quot; : &quot;0jN7x0000004mPREAY&quot;,
+  &quot;ContractEndDate&quot; : &quot;2025-11-04&quot;,
+  &quot;caseCreatedDate&quot; : &quot;2025-10-28T11:31:09.000Z&quot;,
+  &quot;ContractStartDate&quot; : &quot;2025-11-04&quot;,
+  &quot;&quot; : &quot;&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DMTFilterSelectedServicesListForCARConfigureContract_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

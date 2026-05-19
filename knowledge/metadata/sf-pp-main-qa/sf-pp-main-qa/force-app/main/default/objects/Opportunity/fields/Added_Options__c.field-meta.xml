@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Added_Options__c</fullName>
+    <label>Added Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EM</fullName>
+                <default>false</default>
+                <label>EM</label>
+            </value>
+            <value>
+                <fullName>HM</fullName>
+                <default>false</default>
+                <label>HM</label>
+            </value>
+            <value>
+                <fullName>ICP</fullName>
+                <default>false</default>
+                <label>ICP</label>
+            </value>
+            <value>
+                <fullName>ICU</fullName>
+                <default>false</default>
+                <label>ICU</label>
+            </value>
+            <value>
+                <fullName>MyPoint</fullName>
+                <default>false</default>
+                <label>MyPoint</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>OA (Operational Assessment)</fullName>
+                <default>false</default>
+                <label>OA (Operational Assessment)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>POS Collections</fullName>
+                <default>false</default>
+                <label>POS Collections</label>
+            </value>
+            <value>
+                <fullName>Post-Acute</fullName>
+                <default>false</default>
+                <label>Post-Acute</label>
+            </value>
+            <value>
+                <fullName>Scribes</fullName>
+                <default>false</default>
+                <label>Scribes</label>
+            </value>
+            <value>
+                <fullName>Telemedicine</fullName>
+                <default>false</default>
+                <label>Telemedicine</label>
+            </value>
+            <value>
+                <fullName>UC</fullName>
+                <default>false</default>
+                <label>UC</label>
+            </value>
+            <value>
+                <fullName>WW</fullName>
+                <default>false</default>
+                <label>WW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

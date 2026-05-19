@@ -1,0 +1,48 @@
+{
+    "ClinicianContactId": "003gP0000092pu5QAA",
+    "ClinicianId": "001gP000006GQJFQA4",
+    "ClinicianTaxonomy": {
+        "Description": "Allopathic & Osteopathic Physicians/General Practice",
+        "RecordId": "0bKgP000000011zUAA",
+        "TA_Taxonomy": "Allopathic & Osteopathic Physicians/General Practice",
+        "primaryTaxonomy": "true"
+    },
+    "LastName": "",
+    "STP_ClinicianInfo": {
+        "BLK_ClinicianInformation": {
+            "FullName": "Rahul Adwani",
+            "MUL_MedicalLicenseState": null,
+            "RAD_BoardCeritified": "Certified",
+            "SL_PracticingPreference": "HM",
+            "SL_ProfessionalTitle": "NP",
+            "TA_PracticingSpecialty-Block": {
+                "CareSpecialtyId": "0bcgP000000020RQAQ",
+                "PracSpecId": "0bOgP0000000vuMUAQ",
+                "TA_PracticingSpecialty": "Hospitalist"
+            },
+            "TA_PrimarySpecialty-Block": {
+                "CareSpecialtyId": "0bcgP000000020EQAQ",
+                "PrimarySpecId": "0bOgP0000000vuLUAQ",
+                "TA_PrimarySpecialty": "Anesthesiology"
+            },
+            "TA_Taxonomy-Block": {
+                "Description": "Allopathic & Osteopathic Physicians/General Practice",
+                "RecordId": "0bKgP000000011zUAA",
+                "TA_Taxonomy": "Allopathic & Osteopathic Physicians/General Practice",
+                "primaryTaxonomy": "true"
+            }
+        },
+        "BLK_Notes": {
+            "TXA_Comments": "this is np"
+        },
+        "BLK_ProfessionalStatus": {
+            "DT_EndDate": null,
+            "SL_ProfessionalStatus": "Practicing",
+            "TXT_Program": null
+        },
+        "BLK_SponsorshipDetail": {
+            "RAD_SponsorshipNeed": "No",
+            "SEL_VisaType": null
+        }
+    }
+}

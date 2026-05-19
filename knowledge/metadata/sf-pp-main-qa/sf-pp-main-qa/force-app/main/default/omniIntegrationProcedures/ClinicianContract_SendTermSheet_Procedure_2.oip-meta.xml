@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;Documents&quot;: [
+        {
+            &quot;Selected&quot;: true,
+            &quot;Id&quot;: &quot;0687x00000E3iPRAAZ&quot;,
+            &quot;Title&quot;: &quot;Marcia Galbraith-AF Hospitals-TM Hospitals-2025-09-21-Termsheet&quot;,
+            &quot;FileExtension&quot;: &quot;pdf&quot;,
+            &quot;LastModifiedDate&quot;: &quot;2025-09-21T08:03:55.000Z&quot;
+        },
+        {
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0687x00000E3iE9AAJ&quot;,
+            &quot;Title&quot;: &quot;Marcia Galbraith-AF Hospitals-TM Hospitals-2025-09-21-Termsheet&quot;,
+            &quot;FileExtension&quot;: &quot;pdf&quot;,
+            &quot;LastModifiedDate&quot;: &quot;2025-09-21T08:00:16.000Z&quot;
+        }
+    ],
+    &quot;Name&quot;: &quot;Marcia Galbraith&quot;,
+    &quot;Email&quot;: &quot;iwaraich@salesforce.com&quot;,
+    &quot;ContractId&quot;: &quot;8007x00000fBIejAAG&quot;,
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004byfEAA&quot;,
+    &quot;elementName&quot;: &quot;SendTermSheet&quot;,
+    &quot;UserId&quot;: &quot;005Ps000006JRqjIAG&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>SendTermSheet</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>FilterSelectedDocument</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;Documents&quot; ],
+  &quot;filterListFormula&quot; : &quot;Selected == true&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>List Merge Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>GetEmailTemplate</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;TemplateName&quot; : &quot;Termsheet_Esignature&quot;,
+    &quot;UserId&quot; : &quot;%UserId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;EmailTemplateInformation&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>PrepareRequestBody</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;Documents&quot; : &quot;%FilterSelectedDocument%&quot;,
+    &quot;Name&quot; : &quot;%Name%&quot;,
+    &quot;Email&quot; : &quot;%Email%&quot;,
+    &quot;emailSettings&quot; : &quot;%GetEmailTemplate:EmailTemplate%&quot;,
+    &quot;SenderName&quot; : &quot;%GetEmailTemplate:SenderName%&quot;,
+    &quot;SenderEmail&quot; : &quot;%GetEmailTemplate:SenderEmail%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;RequestBodyForSignature&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RA_Result</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;SendForSign&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SendForSign</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;PrepareRequestBody&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;%endpoint%&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;restPath&quot; : &quot;/connect/e-sign/signature-requests/%ContractId%/envelope/send&quot;,
+  &quot;restMethod&quot; : &quot;POST&quot;,
+  &quot;retryCount&quot; : 0,
+  &quot;restOptions&quot; : {
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;
+    },
+    &quot;params&quot; : { },
+    &quot;timeout&quot; : 0,
+    &quot;sendBody&quot; : true,
+    &quot;xmlEscapeResponse&quot; : false,
+    &quot;clientCertificateName&quot; : &quot;&quot;,
+    &quot;isCompressed&quot; : false
+  },
+  &quot;namedCredential&quot; : &quot;ConnectApi&quot;,
+  &quot;type&quot; : &quot;Integration&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;HTTPAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Rest Action</type>
+    </omniProcessElements>
+    <omniProcessKey>ClinicianContract_SendTermSheet</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>SendTermSheet</subType>
+    <type>ClinicianContract</type>
+    <uniqueName>ClinicianContract_SendTermSheet_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>44e79b31-8558-44dc-6eb0-a4eb417aad8c</webComponentKey>
+</OmniIntegrationProcedure>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Texas</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Account_Status__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>DHC_Ownership_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>equals</operation>
+        <value>,Chief Executive Officer,CEO,President,Chief Operating Officer,Chief Nursing Officer</value>
+    </filters>
+    <filters>
+        <field>CONTACT.ADDRESS2_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>TX</value>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>6/1/2019</value>
+    </filters>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>Target,Prospect</value>
+    </filters>
+    <filters>
+        <field>FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>,retired,gone,ceo</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notContain</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <label>Texas</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>HIPAA Compliance Awareness: Electronic Communication and Social Media</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Knowledge and awareness of high-tech HIPAA compliance policies (electronic transmission by phone or text of X-ray and EKGs/Facebook and social media).</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>HIPAA_Compliance_Awareness_Electronic_Communication_and_Social_Media</developerName>
+    <name>HIPAA Compliance Awareness: Electronic Communication and Social Media</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

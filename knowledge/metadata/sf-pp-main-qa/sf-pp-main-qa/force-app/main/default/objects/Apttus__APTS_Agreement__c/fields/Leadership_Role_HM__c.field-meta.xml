@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leadership_Role_HM__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  AND(
+    Service_Line__c = &quot;HM&quot;,
+    OR(
+      Stipend_Tier__c = &quot;Tier 1&quot;,
+      Stipend_Tier__c = &quot;Tier 2&quot;,
+      Stipend_Tier__c = &quot;Tier 3&quot;,
+      Stipend_Tier__c = &quot;Tier 4&quot;,
+      Stipend_Tier__c = &quot;Legacy&quot;
+    )
+  ),
+  &quot;MEDICAL DIRECTOR&quot;,
+  &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Leadership Role HM</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,93 @@
+[
+    {
+        "FilterGroup": 0,
+        "FormulaExpression": "'$Vlocity.NULL'",
+        "FormulaResultPath": "corporateEntity",
+        "FormulaSequence": 1,
+        "GlobalKey": "DMUpdateClinicianContractCustom4032",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMUpdateClinicianContract",
+        "OmniDataTransformationId": {
+            "Name": "DMUpdateClinicianContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMUpdateClinicianContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMUpdateClinicianContractCustom5798",
+        "InputFieldName": "corporateEntity",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMUpdateClinicianContract",
+        "OmniDataTransformationId": {
+            "Name": "DMUpdateClinicianContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMUpdateClinicianContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Contracting_Corporate_Entity__c",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMUpdateClinicianContractCustom2237",
+        "InputFieldName": "contractId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "LinkedObjectSequence": 0,
+        "Name": "DMUpdateClinicianContract",
+        "OmniDataTransformationId": {
+            "Name": "DMUpdateClinicianContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMUpdateClinicianContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "DMUpdateClinicianContractCustom8688",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DMUpdateClinicianContract",
+        "OmniDataTransformationId": {
+            "Name": "DMUpdateClinicianContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMUpdateClinicianContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

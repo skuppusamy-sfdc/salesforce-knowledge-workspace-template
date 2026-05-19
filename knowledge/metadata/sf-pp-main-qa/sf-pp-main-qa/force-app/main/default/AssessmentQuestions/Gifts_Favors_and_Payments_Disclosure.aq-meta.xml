@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Gifts, Favors, and Payments Disclosure</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Have you accepted any gift(s), favors, entertainment, or payments from any person(s) or business organization that either does or seeks to do business with the Company, is a competitor of the Company, or may receive or refer patients from/to the Company?
+
+SCP policy (CCP 017 Anti-Bribery, Anti-Corruption &amp; Gifts) allows for meals, gifts of small value (pens, cups, etc.) and other items with certain stipulations. For clinicians, this includes those gifts that are reportable under the ACA Open Payments program.
+
+Open Payments is a federal program that collects information about payments drug and device companies make to physicians and teaching hospitals for things like travel, research, gifts, speaking fees, and meals.</questionText>
+        <responseValues>No
+Yes</responseValues>
+        <status>Active</status>
+        <versionNumber>3</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Gifts_Favors_and_Payments_Disclosure</developerName>
+    <name>Gifts, Favors, and Payments Disclosure</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>pqcrush__Account_Plan__c</defaultLandingTab>
+    <description>Drive results with strategic account planning and execution</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>PROLIFIQ CRUSH</label>
+    <logo>pqcrush__Images/pqcrush__PROLIFIQ_LOGO_HRZ.png</logo>
+    <tabs>pqcrush__Account_Plan__c</tabs>
+    <tabs>pqcrush__Account_Plan_Tasks</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>pqcrush__Org_Settings</tabs>
+    <tabs>pqcrush__My_Settings</tabs>
+    <tabs>pqcrush__White_Space_Template__c</tabs>
+    <tabs>pqcrush__White_Space_Amount_Type__c</tabs>
+    <tabs>Seismic</tabs>
+</CustomApplication>

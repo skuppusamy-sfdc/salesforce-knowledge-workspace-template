@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Title_Before_Offer</fullName>
+    <active>true</active>
+    <description>Before an Applicant can enter the Offer stage, the Facility Title field on the Job record must be populated.</description>
+    <errorConditionFormula>AND(
+    bpats__Stage__r.bpats__Sequence__c = 6,
+    ISBLANK( bpats__Job__r.Facility_Title_Lookup__c )
+    )</errorConditionFormula>
+    <errorMessage>Before moving to the Offer stage, the field Facility Title must be filled out on the Job record.</errorMessage>
+</ValidationRule>

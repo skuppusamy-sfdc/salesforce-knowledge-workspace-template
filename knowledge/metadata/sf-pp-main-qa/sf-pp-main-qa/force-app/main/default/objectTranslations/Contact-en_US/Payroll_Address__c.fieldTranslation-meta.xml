@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payroll Address --></label>
+    <name>Payroll_Address__c</name>
+    <picklistValues>
+        <masterLabel>Corporate</masterLabel>
+        <translation><!-- Corporate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home</masterLabel>
+        <translation><!-- Home --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mailing</masterLabel>
+        <translation><!-- Mailing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work</masterLabel>
+        <translation><!-- Work --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

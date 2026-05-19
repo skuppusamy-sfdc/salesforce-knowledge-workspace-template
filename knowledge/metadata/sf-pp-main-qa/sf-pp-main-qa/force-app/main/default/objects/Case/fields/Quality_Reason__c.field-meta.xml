@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quality_Reason__c</fullName>
+    <label>Quality Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clinical Care</fullName>
+                <default>false</default>
+                <label>Clinical Care</label>
+            </value>
+            <value>
+                <fullName>Provider Skillset</fullName>
+                <default>false</default>
+                <label>Provider Skillset</label>
+            </value>
+            <value>
+                <fullName>Patient Volume</fullName>
+                <default>false</default>
+                <label>Patient Volume</label>
+            </value>
+            <value>
+                <fullName>Provider&apos;s Efficiencies</fullName>
+                <default>false</default>
+                <label>Provider&apos;s Efficiencies</label>
+            </value>
+            <value>
+                <fullName>Patient Acuity</fullName>
+                <default>false</default>
+                <label>Patient Acuity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

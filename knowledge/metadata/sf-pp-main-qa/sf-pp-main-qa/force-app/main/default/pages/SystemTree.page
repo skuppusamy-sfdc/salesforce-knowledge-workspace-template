@@ -1,0 +1,123 @@
+<apex:page standardController="Lead" extensions="SystemTreeExtension">  
+  
+  
+  <style>
+     tr.dataRow {
+       background-color:white;
+     }
+     tr.dataRow:hover {
+       background-color: #e3f3ff;
+     };
+     
+ </style>
+ <script src="/soap/ajax/15.0/connection.js" type="text/javascript"></script>
+ <script src="/soap/ajax/15.0/apex.js" type="text/javascript"></script>
+ <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+ 
+ <script type="text/javascript">
+   
+   var $j = jQuery.noConflict();
+   
+   $j(document).ready(function(){
+      session = sforce.connection.session = "{!$Api.Session_ID}";
+      sforce.connection.init(session, '../../services/Soap/u/29.0');
+   });
+      
+   // Create a lead discovery   
+   function createRecord(lead, account) {
+         
+       //if (account == 'inLD') alert ('This record already exists in Lead Discovery');  
+         
+       
+       if (account != '' || account != null)       
+       // execute apex class
+       var result = sforce.apex.execute(
+           "SystemTreeExtension",
+             "createLeadDiscoveryRecord", {
+                leadId: lead,      
+                accId: account
+       });
+       
+       // Result
+       if (result == 'Done') {
+           alert("Lead Discovery record was created successfully!");
+           window.top.location = '/'+lead;
+       } else {
+         alert(result);
+       } 
+   }
+     
+ </script>
+
+<apex:form >
+ <apex:pageBlock >
+  <table align="center" class="list " border="0" cellpadding="0" cellspacing="0">
+   <tr>
+     <td>Action</td>
+     <td>Name</td>
+     <td>Account Type</td>
+   </tr>
+  <apex:repeat value="{!systems}" var="s">
+     <tr>
+        <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[s]}')" style="text-decoration: none;" value="{!IF(link[s]=='hide','---','Create Lead Discovery')}" title="{!IF(link[s]=='inLD',msg,'')}" /></td>
+        <td>{!systems[s].Name}</td>
+        <td>{!systems[s].Account_Type__c}</td>
+     </tr>
+     
+    <apex:repeat value="{!facility[s]}" var="f">
+         <tr>
+            <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[f]}')" style="text-decoration: none;" value="{!IF(link[f]=='hide','---','Create Lead Discovery')}" title="{!IF(link[f]=='inLD',msg,'')}"/></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{!facility[s][f].Name}</td>
+            <td>{!facility[s][f].Account_Type__c}</td>
+         </tr>     
+    </apex:repeat>
+     
+     <apex:repeat value="{!subsystem[s]}" var="sb">
+        <tr>
+         <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[sb]}')" style="text-decoration: none;" value="{!IF(link[sb]=='hide','---','Create Lead Discovery')}" title="{!IF(link[sb]=='inLD',msg,'')}"/></td>
+         <td>&nbsp;&nbsp;{!subsystem[s][sb].Name}</td>
+         <td>{!subsystem[s][sb].Account_Type__c}</td>    
+       </tr>
+       
+      <apex:repeat value="{!facility[sb]}" var="f">
+         <tr>
+            <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[f]}')" style="text-decoration: none;" value="{!IF(link[f]=='hide','---','Create Lead Discovery')}" title="{!IF(link[f]=='inLD',msg,'')}"/></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{!facility[sb][f].Name}</td>
+            <td>{!facility[sb][f].Account_Type__c}</td>
+         </tr>
+          
+        </apex:repeat>
+       
+       <apex:repeat value="{!subsubsystem[sb]}" var="sbsb">
+        <tr>
+         <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[sbsb]}')" style="text-decoration: none;" value="{!IF(link[sbsb]=='hide','---','Create Lead Discovery')}" title="{!IF(link[sbsb]=='inLD',msg,'')}"/></td>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;{!subsubsystem[sb][sbsb].Name}</td>
+         <td>{!subsubsystem[sb][sbsb].Account_Type__c}</td>    
+        </tr>
+        
+       <apex:repeat value="{!facility[sbsb]}" var="sbf">
+         <tr>
+            <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[sbf]}')" style="text-decoration: none;" value="{!IF(link[sbf]=='hide','---','Create Lead Discovery')}" title="{!IF(link[sbf]=='inLD',msg,'')}"/></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{!facility[sbsb][sbf].Name}</td>
+            <td>{!facility[sbsb][sbf].Account_Type__c}</td>
+         </tr>
+          
+        </apex:repeat>
+       </apex:repeat>
+      
+      </apex:repeat>
+    </apex:repeat>
+    
+    <apex:repeat value="{!noType}" var="nt">
+      <tr>
+        <td><apex:commandLink onclick="createRecord('{!Lead.Id}','{!link[nt]}')" style="text-decoration: none;" value="{!IF(link[nt]=='hide','---','Create Lead Discovery')}" title="{!IF(link[nt]=='inLD',msg,'')}" /></td>
+        <td>{!noType[nt].Name}</td>
+        <td></td>
+      </tr>
+    </apex:repeat>
+    
+  
+   </table> 
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>

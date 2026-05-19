@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Maps Calendly Links to User accounts based on email address</description>
+    <environments>Default</environments>
+    <interviewLabel>MapUserCalendlyLink {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MapUserCalendlyLink</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Updates all users with the email from the triggering CalendlyLink to have the same Calendly URL</description>
+        <name>Update_Records_2</name>
+        <label>Update User Records</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Email</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Calendly__Email__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Calendly__CalendlyLink__c</field>
+            <value>
+                <elementReference>$Record.Calendly__Url__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <sourceTemplate>Calendly__MapUserCalendlyLinkTemplate</sourceTemplate>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Records_2</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Calendly__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>profile</stringValue>
+            </value>
+        </filters>
+        <object>Calendly__CalendlyLink__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

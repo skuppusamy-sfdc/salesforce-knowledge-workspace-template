@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Include_in_Win_Loss_Calculation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check the box if the opportunity should be included in the win/loss calculation.  Determined by sales leadership.</inlineHelpText>
+    <label>Include in Win/Loss Calculation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

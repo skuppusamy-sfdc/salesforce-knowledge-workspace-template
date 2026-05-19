@@ -1,0 +1,14 @@
+{
+    "hpfRecords": {
+        "Id": "Text",
+        "accountName": "Text",
+        "checked": true,
+        "contractingStatus": "Text",
+        "facilityTitle": "Text",
+        "hpfStatus": "Text",
+        "recordId": "Text"
+    },
+    "pncRecords": {
+        "hpfId": "Text"
+    }
+}

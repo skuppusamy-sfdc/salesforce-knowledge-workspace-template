@@ -1,0 +1,14 @@
+{
+  "required" : [ "GlobalFacilityID" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "GlobalFacilityID" : {
+      "title" : "GlobalFacilityID",
+      "description" : "Stores the GlobalFacilityID provided by the customer to be used to find the pay days for that facility.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

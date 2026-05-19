@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Task_Call_Clinician</name>
+        <label>Task Call Clinician</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <actionName>bpats__NewTask</actionName>
+        <actionType>quickAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>Subject</name>
+            <value>
+                <elementReference>txt_Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ActivityDate</name>
+            <value>
+                <elementReference>f_AddOneBusDay</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhoId</name>
+            <value>
+                <elementReference>Get_one_record.bpats__ATS_Applicant__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>WhatId</name>
+            <value>
+                <elementReference>Get_one_record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>OwnerId</name>
+            <value>
+                <elementReference>Get_one_record.bpats__Job__r.Recruiter__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>bpats__NewTask</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Custom notification actions will only accept collection variables of type text, where the text is User Ids.  More recipient users can be added to this assignment as needed, or the one recipient can be changed from owner to another job field.</description>
+        <name>Add_to_collection</name>
+        <label>Add to collection</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>NotificationRecipients</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_one_record.bpats__Job__r.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Task_Call_Clinician</targetReference>
+        </connector>
+    </assignments>
+    <description>Creates a Task for the Recruiter to call the Clinician, make a Verbal Offer, and create the Term Sheet</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Adds a single business day to the day the flow is run, to be the new due date.</description>
+        <name>f_AddOneBusDay</name>
+        <dataType>Date</dataType>
+        <expression>CASE(
+    MOD( {!$Flow.CurrentDate} - DATE(1985,6,24), 7),
+    5, {!$Flow.CurrentDate} + 3, /* Friday → +3 (next Monday) */
+    6, {!$Flow.CurrentDate} + 2, /* Saturday → +2 (next Monday) */
+    {!$Flow.CurrentDate} + 1     /* All other days → +1 */
+)</expression>
+    </formulas>
+    <interviewLabel>Call Physician to Make Verbal Offer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task Call Clinician Make Verbal Offer</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>In order to pull fields from the job, we need to separate a single record from the input collection variable.  It can be any record, since they share the same job.</description>
+        <name>Get_one_record</name>
+        <label>Get Applicant record</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_to_collection</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>bpats__ATS_Applicant__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithSharing</runInMode>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_one_record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Job: {!Get_one_record.bpats__Job__r.Name}
+
+Click here to view</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Title</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>You have new candidates to review</text>
+    </textTemplates>
+    <textTemplates>
+        <name>txt_Subject</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Make Verbal Offer and Term Sheet&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>NotificationRecipients</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

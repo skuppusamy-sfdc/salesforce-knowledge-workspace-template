@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Outstanding_Approvals</fullName>
+    <columns>Name</columns>
+    <columns>RelatedRecord</columns>
+    <columns>RelatedRecordObjectName</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>AS</value>
+    </filters>
+    <label>My Outstanding Approvals</label>
+</ListView>

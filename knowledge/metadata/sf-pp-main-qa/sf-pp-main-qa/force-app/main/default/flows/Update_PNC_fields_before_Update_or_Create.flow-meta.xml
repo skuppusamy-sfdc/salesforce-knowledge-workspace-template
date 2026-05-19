@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_HealthCare_Payer_Network_on_PNC</name>
+        <label>Assign HealthCare Payer Network on PNC</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.HealthcarePayerNetworkId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Fetch_Health_Care_Payer_Network.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_HealthCare_Payer_Network_on_PNC_Record</name>
+        <label>Assign HealthCare Payer Network on PNC Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.HealthcarePayerNetworkId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Fetch_Health_Care_Payer_Network_Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>C</name>
+        <label>Check If PNC record is created or updated</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_SCP_Corporate_Entity_Is_Updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PNC_Record_is_Created</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_New</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_SCP_Corporate_Entity_Is_Not_Blank</targetReference>
+            </connector>
+            <label>PNC Record is Created</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_SCP_Corporate_Entity_Is_Not_Blank</name>
+        <label>Check SCP Corporate Entity Is Not Blank</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SCP_Corporate_Entity_Is_Not_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SCP_Corporate_Entity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Health_Care_Payer_Network_Record</targetReference>
+            </connector>
+            <label>SCP Corporate Entity Is Not Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_SCP_Corporate_Entity_Is_Updated</name>
+        <label>Check SCP Corporate Entity Is Updated</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SCP_Corporate_Entity_Is_Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SCP_Corporate_Entity__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SCP_Corporate_Entity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Health_Care_Payer_Network</targetReference>
+            </connector>
+            <label>SCP Corporate Entity Is Updated</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Is_New</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Update PNC fields before Update or Create {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update PNC fields before Update or Create</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Fetch_Health_Care_Payer_Network</name>
+        <label>Fetch Health Care Payer Network</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_HealthCare_Payer_Network_on_PNC</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PayerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SCP_Corporate_Entity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>HealthcarePayerNetwork</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Fetch_Health_Care_Payer_Network_Record</name>
+        <label>Fetch Health Care Payer Network Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_HealthCare_Payer_Network_on_PNC_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PayerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SCP_Corporate_Entity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>HealthcarePayerNetwork</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>C</targetReference>
+        </connector>
+        <object>ProviderNetworkContract</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

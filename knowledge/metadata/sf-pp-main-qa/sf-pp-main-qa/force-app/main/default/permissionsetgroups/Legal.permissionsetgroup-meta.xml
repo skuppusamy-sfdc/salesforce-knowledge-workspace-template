@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access needed to perform Legal activities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Legal</label>
+    <permissionSets>ASYMBL_ASM_User</permissionSets>
+    <permissionSets>Activate_Contract</permissionSets>
+    <permissionSets>Create_Reports_and_Dashboards</permissionSets>
+    <permissionSets>Manage_Client_Contracts</permissionSets>
+    <permissionSets>Manage_Clinician_Contracts</permissionSets>
+    <permissionSets>Manage_Clinician_Onboarding</permissionSets>
+    <permissionSets>Manage_Clinician_Rates</permissionSets>
+    <permissionSets>Manage_Clinician_Recruiting</permissionSets>
+    <permissionSets>Manage_Clinicians</permissionSets>
+    <permissionSets>Manage_Corporate_Entities</permissionSets>
+    <permissionSets>Manage_Facilities_Service_Lines_and_Client_Contacts</permissionSets>
+    <permissionSets>View_Client_BD</permissionSets>
+    <permissionSets>View_Corporate_Entities</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

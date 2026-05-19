@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRHPFDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&quot;&quot;</filterValue>
+        <globalKey>DRHPFDetails12158940676627661</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRHPFDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>hpfRecord</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRHPFDetails8847076774894811</globalKey>
+        <inputFieldName>Facility_Title__r.Code_Set_Sub_Type__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRHPFDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>hpfRecord</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&quot;Inactive&quot;</filterValue>
+        <globalKey>DRHPFDetails35422113162765123</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRHPFDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>hpfRecord</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRHPFDetails47146641543647816</globalKey>
+        <inputFieldName>Practitioner.Professional_Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRHPFDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>hpfRecord</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>IN</filterOperator>
+        <filterValue>AccountId</filterValue>
+        <globalKey>DRHPFDetails6064884131002293</globalKey>
+        <inputFieldName>Practitioner.AccountId</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRHPFDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>hpfRecord</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AccountId&quot; : &quot;001gP000005E0YOQA0&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>DRHPFDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

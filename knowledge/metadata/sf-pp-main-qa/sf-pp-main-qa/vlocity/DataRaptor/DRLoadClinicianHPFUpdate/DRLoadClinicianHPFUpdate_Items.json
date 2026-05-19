@@ -1,0 +1,91 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRLoadClinicianHPFUpdateCustom8382",
+        "InputFieldName": "Data:SelectedeffectiveDate",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRLoadClinicianHPFUpdate",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianHPFUpdate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianHPFUpdate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EffectiveFrom",
+        "OutputObjectName": "HealthcarePractitionerFacility",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRLoadClinicianHPFUpdateCustom4802",
+        "InputFieldName": "Data:SelectedId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRLoadClinicianHPFUpdate",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianHPFUpdate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianHPFUpdate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "HealthcarePractitionerFacility",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "DRLoadClinicianHPFUpdateCustom3051",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRLoadClinicianHPFUpdate",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianHPFUpdate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianHPFUpdate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "HealthcarePractitionerFacility",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRLoadClinicianHPFUpdateCustom6425",
+        "InputFieldName": "Data:SelectedNoOfhours",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRLoadClinicianHPFUpdate",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianHPFUpdate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianHPFUpdate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "No_of_Hours_Anticipated_to_Work__c",
+        "OutputObjectName": "HealthcarePractitionerFacility",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

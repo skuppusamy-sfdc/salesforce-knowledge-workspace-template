@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team__c</fullName>
+    <description>This is the Team</description>
+    <inlineHelpText>This is the type of team</inlineHelpText>
+    <label>Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Core EM</fullName>
+                <default>false</default>
+                <label>Core EM</label>
+            </value>
+            <value>
+                <fullName>Core HM</fullName>
+                <default>false</default>
+                <label>Core HM</label>
+            </value>
+            <value>
+                <fullName>CSP</fullName>
+                <default>false</default>
+                <label>CSP</label>
+            </value>
+            <value>
+                <fullName>Travel Team</fullName>
+                <default>false</default>
+                <label>Travel Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,92 @@
+<aura:component description="TruSalesApp" implements="flexipage:availableForRecordHome,force:hasRecordId" controller="TruSalesAppController">
+
+<!--    <aura:attribute name="settings"             type="TruSales_App_Settings__c" access="private" />-->
+
+    <aura:attribute name="settings"             type="Discovery_Bots_Settings__c" access="private" />
+
+
+    <aura:attribute name ='orgId'               type="String"                   access="private" />
+    <aura:attribute name="feedbackURL"          type="String"                   access="private" />
+    <aura:attribute name="showModal"            type="Boolean" default="false"  access="private" />
+    <aura:attribute name="showModalNew"         type="Boolean" default="false"  access="private" />
+    <aura:attribute name="showModalReqFeedback" type="Boolean" default="false"  access="private" />
+    <aura:attribute name="showModalSpinner"     type="Boolean" default="true"   access="private" />
+    <aura:attribute name="isSuitable"           type="Boolean" default="false"  access="private" />
+    <aura:attribute name="delegated"            type="Boolean" default="false"  access="private" />
+    <aura:attribute name="opportunityName"      type="String"                   access="private" />
+    <aura:attribute name="ownerId"              type="String"                   access="private" />
+    <aura:attribute name="opportunityId"        type="String" />
+    <aura:attribute name="lastSync"             type="List" />
+    <aura:attribute name="opportunityStatus"    type="String" />
+
+    <aura:handler name="init" value="{!this}"        action="{!c.doInit}" />
+    <aura:handler event="force:refreshView"          action="{!c.forceRefreshViewHandler}" />
+    <aura:handler event="c:OpenRequestFeedbackEvent" action="{!c.openRequestFeedbackHandler}" />
+    <aura:handler event="c:CloseRequestFeedbackFor"  action="{!c.hideModalNew}" name="handleCloseReqFeedback"/>
+    <aura:registerEvent name="OpenRequestFeedbackEvent" type="c:OpenRequestFeedbackEvent"/>
+    <aura:if isTrue="{!v.showModal}">
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container slds-is-relative" style="width: 1000px; max-width: unset;">
+                    <div class="slds-modal__content slds-p-around_medium slds-is-relative" id="modal-content-id-1"
+                        style="padding: 0; height: 607px; overflow: hidden;">
+                        <aura:if isTrue="{!v.showModalSpinner}">
+                            <lightning:spinner variant="brand" alternativeText="Loading" />
+                        </aura:if>
+                        <iframe src="{!v.feedbackURL}" onload="{!c.iframeLoadHandler}"></iframe>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="{!c.hideModal}">Close</button>   
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.showModalNew}">
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container slds-is-relative" style="width: 1000px; max-width: unset;">
+                    <header class="slds-modal__header">
+                       <lightning:buttonIcon iconName="utility:close" onclick="{!c.hideModalNew}"
+                            alternativeText="close" variant="bare-inverse" class="slds-modal__close" />
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight: bold;">Authorizing Primary Intelligence to Send Emails on Your Behalf</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium slds-is-relative" id="modal-content-id-1" style="font-size: larger">
+                        <p>Before you can begin submitting feedback requests to your buyers, we need you to authorize Primary Intelligence to send emails on your behalf.</p>
+                        <p>You will receive an email from Postmark, the email service that Primary Intelligence uses, that will look like the following:</p><br/>
+                        <img src="{!$Resource.ConfirmationEmailExample}"/>
+                        <p>Click the "Activate this Signature" button in the email from Postmark to authorize Primary Intelligence to send emails on your behalf.</p><br/>
+                        <p>Once you have completed this step, you can begin requesting feedback from your buyers and all email communication to them will come from you. This also means you will get any email replies.</p>
+                        <p>You can use the "Request Feedback" button for any of your past closed opportunities to select contacts for feedback requests. When you close future opportunities, you will automatically be presented with a list of contacts for that opportunity and be able to request feedback from the appropriate contacts for that opportunity.</p><br/>
+                        <p>Email Primary Intelligence support with any questions: support@primary-intel.com</p><br/>
+                        <p>Sincerely, Your Primary Intelligence Team</p>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+
+    <aura:if isTrue="{!v.showModalReqFeedback}">
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container slds-is-relative" style="width: 1000px; max-width: unset;">
+                    <header class="slds-modal__header">
+                         <lightning:buttonIcon iconName="utility:close" onclick="{!c.hideModalNew}"
+                            alternativeText="close" variant="bare-inverse" class="slds-modal__close" /> 
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight: bold;">Requesting Feedback for "{!v.opportunityName}"</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium slds-is-relative" id="modal-content-id-1" >
+                        <c:RequestFeedbackFor oppId="{!v.opportunityId}" opportunityName="{!v.opportunityName}"/>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+
+</aura:component>

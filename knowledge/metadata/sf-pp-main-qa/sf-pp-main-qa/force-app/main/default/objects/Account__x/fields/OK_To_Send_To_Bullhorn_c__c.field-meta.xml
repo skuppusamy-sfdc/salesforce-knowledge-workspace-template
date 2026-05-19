@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OK_To_Send_To_Bullhorn_c__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalDeveloperName>OK_To_Send_To_Bullhorn__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>OK to send to Bullhorn</label>
+    <type>Checkbox</type>
+</CustomField>

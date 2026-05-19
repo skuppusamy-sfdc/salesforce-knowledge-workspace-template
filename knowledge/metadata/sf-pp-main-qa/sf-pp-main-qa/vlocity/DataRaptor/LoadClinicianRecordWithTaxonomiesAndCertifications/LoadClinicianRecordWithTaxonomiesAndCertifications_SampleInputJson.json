@@ -1,0 +1,23 @@
+{
+    "ContextId": "0017x000017LYlMAAW",
+    "NPPESBasic": {
+        "certification_date": "2021-05-07",
+        "current_npi_number": "1245319599",
+        "enumeration_date": "2014-04-03",
+        "first_name": "MIKE",
+        "last_name": "VARANO",
+        "last_updated": "2021-07-14",
+        "middle_name": "BROCK",
+        "sex": "M",
+        "sole_proprietor": "NO",
+        "status": "A"
+    },
+    "NPPESTaxanomies": {
+        "code": "207RC0000X",
+        "desc": "Internal Medicine, Cardiovascular Disease",
+        "license": "MD460676",
+        "primary": true,
+        "state": "PA",
+        "taxonomy_group": ""
+    }
+}

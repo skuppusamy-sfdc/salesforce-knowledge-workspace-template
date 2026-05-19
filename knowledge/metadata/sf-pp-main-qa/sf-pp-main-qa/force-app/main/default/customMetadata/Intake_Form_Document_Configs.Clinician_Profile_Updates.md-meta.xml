@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Clinician_Profile_Updates</label>
+    <protected>false</protected>
+    <values>
+        <field>Document_Label__c</field>
+        <value xsi:type="xsd:string">Clinician Profile Updates</value>
+    </values>
+    <values>
+        <field>Omniscript_Developer_Name__c</field>
+        <value xsi:type="xsd:string">Competency_ClinicianProfileUpdates_English_7</value>
+    </values>
+</CustomMetadata>

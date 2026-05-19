@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRGetHPFandClinicianDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetHPFandClinicianDetailsCustom2249</globalKey>
+        <inputFieldName>Account.Professional_Title__pc</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetHPFandClinicianDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recHPF</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetHPFandClinicianDetailsCustom4766</globalKey>
+        <inputFieldName>Practitioner.Id</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetHPFandClinicianDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recHPF</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetHPFandClinicianDetailsCustom3153</globalKey>
+        <inputFieldName>PractitionerId</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetHPFandClinicianDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recHPF</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetHPFandClinicianDetailsCustom239</globalKey>
+        <inputFieldName>Practitioner.Professional_Title__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetHPFandClinicianDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recHPF</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>ID</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>facilityId</filterValue>
+        <globalKey>DRGetHPFandClinicianDetailsCustom4528</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetHPFandClinicianDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>recHPF</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetHPFandClinicianDetailsCustom9423</globalKey>
+        <inputFieldName>Employment_Type__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetHPFandClinicianDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recHPF</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Err_RunningContext&quot; : &quot;Clinician_ConfigureRates&quot;,
+  &quot;Err_CtxId&quot; : &quot;&quot;,
+  &quot;Err_ProcessType&quot; : &quot;IP&quot;,
+  &quot;type&quot; : &quot;Bonus&quot;,
+  &quot;facilityId&quot; : &quot;&quot;,
+  &quot;ContextId&quot; : &quot;&quot;,
+  &quot;omniScriptId&quot; : &quot;0jNbf0000004iSREAY&quot;,
+  &quot;elementName&quot; : &quot;IP_FetchShiftFacilityRecords&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>DRGetHPFandClinicianDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

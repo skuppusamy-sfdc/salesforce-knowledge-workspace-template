@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Lead_Source__c</fullName>
+    <inlineHelpText>If this Lead was created from within by someone reaching out to an Account, select the method used.</inlineHelpText>
+    <label>Outbound Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>not applicable</fullName>
+                <default>true</default>
+                <label>not applicable</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>eMail</fullName>
+                <default>false</default>
+                <label>eMail</label>
+            </value>
+            <value>
+                <fullName>In-person</fullName>
+                <default>false</default>
+                <label>In-person</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+{
+    "FinalList": [
+        {
+            "Id": "0bc7x0000000EcTAAU",
+            "IsPrimary": true,
+            "Name": "Cardiology",
+            "RecordId": "0bc7x0000000EcTAAU",
+            "SpecId": null,
+            "TA_PrimarySpecialty": "Cardiology",
+            "isPrimaryOrSub": "true"
+        },
+        {
+            "Id": "0bc7x0000000EarAAE",
+            "IsPrimary": false,
+            "Name": "Radiology",
+            "SpecId": "0bO7x0000000c3hEAA"
+        },
+        {
+            "Id": "0bc7x0000000EarAAE",
+            "IsPrimary": null,
+            "Name": "Radiology",
+            "RecordId": "0bc7x0000000EarAAE",
+            "SpecId": null,
+            "TA_PracticingSpecialty": "Radiology",
+            "isPrimaryOrSub": "true",
+            "isSubSpecialty": true
+        },
+        {
+            "Id": "0bc7x0000000DzlAAE",
+            "Name": "Nephrology",
+            "SpecId": "0bO7x0000000c5JEAQ",
+            "isSubSpecialty": false
+        }
+    ]
+}

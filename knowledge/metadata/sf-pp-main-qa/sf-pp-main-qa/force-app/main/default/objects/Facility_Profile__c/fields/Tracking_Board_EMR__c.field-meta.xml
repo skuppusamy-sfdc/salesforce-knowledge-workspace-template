@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tracking_Board_EMR__c</fullName>
+    <label>Tracking Board EMR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Electronic: Allscripts</fullName>
+                <default>false</default>
+                <label>Electronic: Allscripts</label>
+            </value>
+            <value>
+                <fullName>Electronic: Cerner</fullName>
+                <default>false</default>
+                <label>Electronic: Cerner</label>
+            </value>
+            <value>
+                <fullName>Electronic: CMR</fullName>
+                <default>false</default>
+                <label>Electronic: CMR</label>
+            </value>
+            <value>
+                <fullName>Electronic: CPSI</fullName>
+                <default>false</default>
+                <label>Electronic: CPSI</label>
+            </value>
+            <value>
+                <fullName>Electronic: Empower</fullName>
+                <default>false</default>
+                <label>Electronic: Empower</label>
+            </value>
+            <value>
+                <fullName>Electronic: EPIC</fullName>
+                <default>false</default>
+                <label>Electronic: EPIC</label>
+            </value>
+            <value>
+                <fullName>Electronic: McKesson</fullName>
+                <default>false</default>
+                <label>Electronic: McKesson</label>
+            </value>
+            <value>
+                <fullName>Electronic: Medhost</fullName>
+                <default>false</default>
+                <label>Electronic: Medhost</label>
+            </value>
+            <value>
+                <fullName>Electronic: Meditech</fullName>
+                <default>false</default>
+                <label>Electronic: Meditech</label>
+            </value>
+            <value>
+                <fullName>Electronic: Other</fullName>
+                <default>false</default>
+                <label>Electronic: Other</label>
+            </value>
+            <value>
+                <fullName>Electronic: Paragon</fullName>
+                <default>false</default>
+                <label>Electronic: Paragon</label>
+            </value>
+            <value>
+                <fullName>Electronic: Promed Blue</fullName>
+                <default>false</default>
+                <label>Electronic: Promed Blue</label>
+            </value>
+            <value>
+                <fullName>Electronic: Siemens</fullName>
+                <default>false</default>
+                <label>Electronic: Siemens</label>
+            </value>
+            <value>
+                <fullName>Electronic: Soarian</fullName>
+                <default>false</default>
+                <label>Electronic: Soarian</label>
+            </value>
+            <value>
+                <fullName>Electronic: T-system EV</fullName>
+                <default>false</default>
+                <label>Electronic: T-system EV</label>
+            </value>
+            <value>
+                <fullName>Hybrid</fullName>
+                <default>false</default>
+                <label>Hybrid</label>
+            </value>
+            <value>
+                <fullName>Paper: Empower</fullName>
+                <default>false</default>
+                <label>Paper: Empower</label>
+            </value>
+            <value>
+                <fullName>Paper: LYNX</fullName>
+                <default>false</default>
+                <label>Paper: LYNX</label>
+            </value>
+            <value>
+                <fullName>Paper: Other</fullName>
+                <default>false</default>
+                <label>Paper: Other</label>
+            </value>
+            <value>
+                <fullName>Paper: T-system</fullName>
+                <default>false</default>
+                <label>Paper: T-system</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,26 @@
+{
+    "taxonomyCare": [
+        {
+            "code": "207R00000X",
+            "desc": "Internal Medicine",
+            "license": "MD443150",
+            "primary": true,
+            "state": "PA",
+            "taxonomyCare:Id": null,
+            "taxonomyCare:Name": null,
+            "taxonomyCare:TaxonomyCode": null,
+            "taxonomy_group": ""
+        },
+        {
+            "code": "208M00000X",
+            "desc": "Hospitalist",
+            "license": "MD443150",
+            "primary": false,
+            "state": "PA",
+            "taxonomyCare:Id": null,
+            "taxonomyCare:Name": null,
+            "taxonomyCare:TaxonomyCode": null,
+            "taxonomy_group": ""
+        }
+    ]
+}

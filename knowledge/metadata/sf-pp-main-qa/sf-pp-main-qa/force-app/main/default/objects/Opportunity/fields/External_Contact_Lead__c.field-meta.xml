@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Contact_Lead__c</fullName>
+    <description>Other External Contact who provided Lead (if applicable)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Other External Contact who provided Lead (if applicable)</inlineHelpText>
+    <label>Other External Contact who provided Lead</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

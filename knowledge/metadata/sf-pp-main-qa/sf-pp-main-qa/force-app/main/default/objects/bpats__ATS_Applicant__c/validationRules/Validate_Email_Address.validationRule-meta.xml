@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Email_Address</fullName>
+    <active>true</active>
+    <description>This validates that email address is populated prior to changing status to “Awaiting Intake”</description>
+    <errorConditionFormula>AND( ISCHANGED( bpats__Stage__c ) ,  bpats__Stage__r.bpats__Sequence__c = 3, ISBLANK(bpats__Applicant_Email__c) )</errorConditionFormula>
+    <errorMessage>Please provide a valid email address before moving the candidate to “Awaiting Intake”.</errorMessage>
+</ValidationRule>

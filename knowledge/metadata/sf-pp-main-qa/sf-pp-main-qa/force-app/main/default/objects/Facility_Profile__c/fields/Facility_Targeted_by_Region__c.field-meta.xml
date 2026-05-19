@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Targeted_by_Region__c</fullName>
+    <label>Facility Targeted by Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GL</fullName>
+                <default>false</default>
+                <label>GL</label>
+            </value>
+            <value>
+                <fullName>MW</fullName>
+                <default>false</default>
+                <label>MW</label>
+            </value>
+            <value>
+                <fullName>SC I</fullName>
+                <default>false</default>
+                <label>SC I</label>
+            </value>
+            <value>
+                <fullName>SC II</fullName>
+                <default>false</default>
+                <label>SC II</label>
+            </value>
+            <value>
+                <fullName>SC III</fullName>
+                <default>false</default>
+                <label>SC III</label>
+            </value>
+            <value>
+                <fullName>SE</fullName>
+                <default>false</default>
+                <label>SE</label>
+            </value>
+            <value>
+                <fullName>SE II</fullName>
+                <default>false</default>
+                <label>SE II</label>
+            </value>
+            <value>
+                <fullName>SW I</fullName>
+                <default>false</default>
+                <label>SW I</label>
+            </value>
+            <value>
+                <fullName>SW II</fullName>
+                <default>false</default>
+                <label>SW II</label>
+            </value>
+            <value>
+                <fullName>SW III</fullName>
+                <default>false</default>
+                <label>SW III</label>
+            </value>
+            <value>
+                <fullName>SW IV</fullName>
+                <default>false</default>
+                <label>SW IV</label>
+            </value>
+            <value>
+                <fullName>All Facilities</fullName>
+                <default>false</default>
+                <label>All Facilities</label>
+            </value>
+            <value>
+                <fullName>SW</fullName>
+                <default>false</default>
+                <label>SW</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

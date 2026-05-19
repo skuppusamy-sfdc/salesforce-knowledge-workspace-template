@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EM Physician WOUND MANAGEMENT</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;WOUND MANAGEMENT – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Repair of lacerations&lt;/li&gt;
+&lt;li&gt;Foreign body removal from superficial site or readily   
+accessible body cavities&lt;/li&gt;
+&lt;li&gt;Emergency management of burn victims &lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>EM_Physician_WOUND_MANAGEMENT</developerName>
+    <name>EM Physician WOUND MANAGEMENT</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

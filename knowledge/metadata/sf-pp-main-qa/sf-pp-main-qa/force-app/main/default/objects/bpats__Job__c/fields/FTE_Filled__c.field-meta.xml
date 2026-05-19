@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FTE_Filled__c</fullName>
+    <externalId>false</externalId>
+    <formula>( Hours_Filled__c )/(
+IF(
+CONTAINS(Facility_Name__r.Service_Line__r.API_Name__c, &quot;EM&quot;),
+CASE(
+Job_Title_Picklist__c,
+&quot;Medical Director&quot;, 144,
+&quot;Assistant Medical Director&quot;, 144,
+&quot;Physician&quot;, 144,
+&quot;Nurse Practitioner&quot;, 120,
+&quot;Physician Assistant&quot;, 120,
+&quot;Lead Advanced Practice Provider&quot;, 120,
+NULL
+),
+
+IF(
+CONTAINS(Facility_Name__r.Service_Line__r.API_Name__c, &quot;CC&quot;),
+
+/* ======================
+CC – Critical Care
+====================== */
+CASE(
+Job_Title_Picklist__c,
+&quot;Medical Director&quot;, 168,
+&quot;Assistant Medical Director&quot;, 168,
+&quot;Physician&quot;, 180,
+&quot;Nurse Practitioner&quot;, 168,
+&quot;Physician Assistant&quot;, 168,
+&quot;Lead Advanced Practice Provider&quot;, NULL,
+NULL
+),
+
+IF(
+CONTAINS(Facility_Name__r.Service_Line__r.API_Name__c, &quot;HM&quot;),
+
+/* ======================
+HM – Hospital Medicine
+====================== */
+CASE(
+Job_Title_Picklist__c,
+&quot;Medical Director&quot;, 180,
+&quot;Assistant Medical Director&quot;, 180,
+&quot;Physician&quot;, 180,
+&quot;Nurse Practitioner&quot;, 120,
+&quot;Physician Assistant&quot;, 120,
+&quot;Lead Advanced Practice Provider&quot;, NULL,
+NULL
+),
+
+NULL
+)
+)
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>FTE Filled</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

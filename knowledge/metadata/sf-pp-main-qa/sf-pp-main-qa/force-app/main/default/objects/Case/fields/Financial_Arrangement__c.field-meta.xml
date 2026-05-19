@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Arrangement__c</fullName>
+    <label>Financial Arrangement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fee for Service with No Subsidy</fullName>
+                <default>false</default>
+                <label>Fee for Service with No Subsidy</label>
+            </value>
+            <value>
+                <fullName>Fee for Service &amp; Flat Subsidy</fullName>
+                <default>false</default>
+                <label>Fee for Service &amp; Flat Subsidy</label>
+            </value>
+            <value>
+                <fullName>Margin Guarantee</fullName>
+                <default>false</default>
+                <label>Margin Guarantee</label>
+            </value>
+            <value>
+                <fullName>Fixed Management Fee</fullName>
+                <default>false</default>
+                <label>Fixed Management Fee</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

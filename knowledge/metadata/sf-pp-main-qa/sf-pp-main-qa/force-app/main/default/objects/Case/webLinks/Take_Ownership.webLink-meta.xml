@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Take_Ownership</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Take Ownership</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>HYPERLINK(
+    &quot;/500/o?save=1&amp;retURL=/&quot; &amp; Id &amp; &quot;&amp;casownerid=&quot; &amp; $User.Id,
+    &quot;Take Ownership&quot;,
+    &quot;_blank&quot;
+)</url>
+</WebLink>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to remove items from local storage when are no longer needed</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <fieldName>buttonLabel</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexCallLogCanceled</masterLabel>
+</LightningMessageChannel>

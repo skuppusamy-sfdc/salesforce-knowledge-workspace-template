@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Begin_Facility_Termination</fullName>
+    <availability>online</availability>
+    <description>This button launches the Client Termination guided experience.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Begin Facility Termination</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/page/omnistudio/omniscript?omniscript__type=Client&amp;omniscript__subType=ContractTermination&amp;omniscript__language=English&amp;omniscript__theme=lightning&amp;omniscript__tabIcon=custom:custom18&amp;omniscript__tabLabel=Client_ContractTermination&amp;c__ContextId={!CASESAFEID(Contract.Id)}</url>
+</WebLink>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Pre-Arrival Expectations</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>The information I received before my first shift accurately set expectations for what I would experience.</questionText>
+        <responseValues>1
+2
+3
+4
+5</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Pre_Arrival_Expectations</developerName>
+    <name>Pre-Arrival Expectations</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

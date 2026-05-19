@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Error_Hard_Delete_Prevented_Soft_Delete_Performed</name>
+        <label>Error: Hard Delete Prevented (Soft Delete Performed)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <customErrorMessages>
+            <errorMessage>The system does not allow the deletion of cloned records. For traceability, the selected record need to be marked as “Is Deleted”. Update the “Is Deleted” checkbox to mark the Shift records as deleted.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Error_Status_Not_Draft</name>
+        <label>Error: Status Not Draft</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <customErrorMessages>
+            <errorMessage>Shift deletion requires the associated Contract Status to be &apos;Draft&apos;.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Are_there_PCA_records_to_be_deleted</name>
+        <label>Are there PCA records to be deleted</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_PCAs_for_Hard_Delete</leftValueReference>
+                <operator>IsEmpty</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Hard_Delete_Related_PCAs</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Contract_Status</name>
+        <label>Check Contract Status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Error_Status_Not_Draft</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Status is not Draft</defaultConnectorLabel>
+        <rules>
+            <name>Status_is_Draft</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Contract__r.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Determine_Action_Hard_vs_Soft_Delete</targetReference>
+            </connector>
+            <label>Status is Draft</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Determine_Action_Hard_vs_Soft_Delete</name>
+        <label>Determine Action (Hard vs Soft Delete)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Prevent Action</defaultConnectorLabel>
+        <rules>
+            <name>Hard_Delete_Allowed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Cloned_From__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Is_Deleted__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_PCAs_for_Hard_Delete</targetReference>
+            </connector>
+            <label>Hard Delete Allowed</label>
+        </rules>
+        <rules>
+            <name>Soft_Delete_Required</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Cloned_From__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Hard_Delete_Prevented_Soft_Delete_Performed</targetReference>
+            </connector>
+            <label>Soft Delete Required</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Shift Before Delete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Shift Before Delete</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Hard_Delete_Related_PCAs</name>
+        <label>Hard Delete Related PCAs</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>Get_Related_PCAs_for_Hard_Delete</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_Related_PCAs_for_Hard_Delete</name>
+        <label>Get Related PCAs (for Hard Delete)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Are_there_PCA_records_to_be_deleted</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Shift__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>PreventiveCareAgreement</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Contract_Status</targetReference>
+        </connector>
+        <object>Shift__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores Ids of PCAs found for soft deletion to query RPCs.</description>
+        <name>coll_PCAIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>coll_RPCsToSoftDelete</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

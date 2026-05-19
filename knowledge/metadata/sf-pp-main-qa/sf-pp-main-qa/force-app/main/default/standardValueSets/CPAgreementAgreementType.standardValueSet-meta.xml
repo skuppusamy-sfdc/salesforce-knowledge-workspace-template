@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Standard Care Fee Agreement</fullName>
+        <default>false</default>
+        <label>Standard Care Fee Agreement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Shared Saving Payment Agreement</fullName>
+        <default>false</default>
+        <label>Shared Saving Payment Agreement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Capitation Care Fee Agreement</fullName>
+        <default>false</default>
+        <label>Capitation Care Fee Agreement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Categorized Care Fee Agreement</fullName>
+        <default>false</default>
+        <label>Categorized Care Fee Agreement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Percentile Based Care Fee Agreement</fullName>
+        <default>false</default>
+        <label>Percentile Based Care Fee Agreement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bundled Care Fee Agreement</fullName>
+        <default>false</default>
+        <label>Bundled Care Fee Agreement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Preventive Care Agreement</fullName>
+        <default>false</default>
+        <label>Preventive Care Agreement</label>
+    </standardValue>
+</StandardValueSet>

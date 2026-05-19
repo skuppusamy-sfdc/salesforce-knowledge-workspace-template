@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Type</fullName>
+    <active>true</active>
+    <description>All SCP jobs need to be associated with a Service Line account.</description>
+    <errorConditionFormula>Facility_Name__r.RecordTypeName__c  &lt;&gt; &quot;Service_Account&quot;</errorConditionFormula>
+    <errorMessage>Facility must be of record type &quot;Service Account&quot;.</errorMessage>
+</ValidationRule>

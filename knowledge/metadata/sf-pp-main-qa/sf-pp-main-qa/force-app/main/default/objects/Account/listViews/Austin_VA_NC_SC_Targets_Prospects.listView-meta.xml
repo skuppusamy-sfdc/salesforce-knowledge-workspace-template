@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Austin_VA_NC_SC_Targets_Prospects</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Account_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>NC,SC,VA</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>No Interest,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>psychiatric,behavioral,closed,select,rehabilitation,post acute,healthsouth</value>
+    </filters>
+    <filters>
+        <field>ED_Volume__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>8000</value>
+    </filters>
+    <filters>
+        <field>Account_Type__c</field>
+        <operation>equals</operation>
+        <value>System,Sub-system,Hospital,Free-standing ED,Urgent Care</value>
+    </filters>
+    <label>Austin - VA, NC, SC Targets &amp; Prospects</label>
+</ListView>

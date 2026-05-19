@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;OffboardingCases&quot; : [ {
+    &quot;HpfName&quot; : &quot;Test Hospital&quot;,
+    &quot;HpfId&quot; : &quot;0bS7x00000039oLEAQ&quot;,
+    &quot;HpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;HfName&quot; : &quot;Test Hospital&quot;,
+    &quot;isVoluntaryTermination&quot; : true,
+    &quot;terminationReason&quot; : null,
+    &quot;IsExitInterviewRequired&quot; : true,
+    &quot;IsBonusRepayment&quot; : true,
+    &quot;lastDay&quot; : &quot;2025-07-29&quot;,
+    &quot;dateTerminationReceived&quot; : &quot;2025-08-05&quot;,
+    &quot;terminationRequestDate&quot; : &quot;2025-08-05&quot;
+  }, {
+    &quot;HfName&quot; : &quot;Test Hospital Facility case&quot;,
+    &quot;isVoluntaryTermination&quot; : true,
+    &quot;terminationReason&quot; : null,
+    &quot;IsExitInterviewRequired&quot; : true,
+    &quot;IsBonusRepayment&quot; : true,
+    &quot;HpfName&quot; : &quot;Test Hospital Facility case&quot;,
+    &quot;HpfId&quot; : &quot;0bS7x00000039pxEAA&quot;,
+    &quot;HpfStatus&quot; : &quot;Candidate&quot;,
+    &quot;lastDay&quot; : &quot;2025-08-12&quot;,
+    &quot;dateTerminationReceived&quot; : &quot;2025-08-04&quot;,
+    &quot;terminationRequestDate&quot; : &quot;2025-08-20&quot;
+  }, {
+    &quot;HfName&quot; : &quot;test Practitioner Facility Cred&quot;,
+    &quot;isVoluntaryTermination&quot; : true,
+    &quot;terminationReason&quot; : null,
+    &quot;IsExitInterviewRequired&quot; : true,
+    &quot;IsBonusRepayment&quot; : true,
+    &quot;HpfName&quot; : &quot;test Practitioner Facility Cred&quot;,
+    &quot;HpfId&quot; : &quot;0bS7x0000003ACXEA2&quot;,
+    &quot;HpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;lastDay&quot; : &quot;2025-08-29&quot;,
+    &quot;dateTerminationReceived&quot; : &quot;2025-08-19&quot;,
+    &quot;terminationRequestDate&quot; : &quot;2025-08-11&quot;
+  } ],
+  &quot;operation&quot; : &quot;load&quot;,
+  &quot;ContactId&quot; : &quot;0037x000012kPoAAAU&quot;,
+  &quot;AccountId&quot; : &quot;0017x00001EJ4ztAAD&quot;,
+  &quot;omniScriptId&quot; : &quot;0jN7x0000004KjJEAU&quot;,
+  &quot;elementName&quot; : &quot;Create_OffboardingCases&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRPCreateOffboardingCases</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom3839</globalKey>
+        <inputFieldName>OffboardingCases:terminationReason</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Reason_for_Termination__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom7504</globalKey>
+        <inputFieldName>OffboardingCases:IndependentContractorTerminationReason</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Reason_for_Termination__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom3149</globalKey>
+        <inputFieldName>OffboardingCases:IsBackfillRecommended</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Backfill_Recommended__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom7774</globalKey>
+        <inputFieldName>OffboardingCases:HpfName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom4582</globalKey>
+        <inputFieldName>OffboardingCases:lastDay</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Last_Day__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom1397</globalKey>
+        <inputFieldName>OffboardingCases:IsExitInterviewRequired</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Exit_Interview_Requirement__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRPCreateOffboardingCasesCustom2240</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom7935</globalKey>
+        <inputFieldName>OffboardingCases:terminationRequestDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Termination_Request_Date__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom9533</globalKey>
+        <inputFieldName>OffboardingCases:isVoluntaryTermination</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Voluntary_Termination__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Facility/\/\/Offboarding-&quot; var:OffboardingCases:HpfName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Facility Offboarding-&quot;,OffboardingCases:HpfName)</formulaExpression>
+        <formulaResultPath>OffboardingCases:HpfName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRPCreateOffboardingCasesCustom3035</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom7914</globalKey>
+        <inputFieldName>ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRPCreateOffboardingCasesCustom6291</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom665</globalKey>
+        <inputFieldName>OffboardingCases:HPFAccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom6273</globalKey>
+        <inputFieldName>OffboardingCases:voluntaryTerminationReason</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Reason_for_Termination__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom8437</globalKey>
+        <inputFieldName>OffboardingCases:nonVoluntaryTerminationReason</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Reason_for_Termination__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom1270</globalKey>
+        <inputFieldName>recordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom4045</globalKey>
+        <inputFieldName>OffboardingCases:serviceNowTicketNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Service_Now__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom6176</globalKey>
+        <inputFieldName>OffboardingCases:IsBonusRepayment</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Bonus_Repayment__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom3445</globalKey>
+        <inputFieldName>OffboardingCases:UserId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom1104</globalKey>
+        <inputFieldName>OffboardingCases:dateTerminationReceived</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Date_Termination_Received__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom6135</globalKey>
+        <inputFieldName>OffboardingCases:HpfId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Healthcare_Practitioner_Facility__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom53</globalKey>
+        <inputFieldName>OffboardingCases:CaseFiles:data</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ContentDocumentId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom8627</globalKey>
+        <inputFieldName>caseStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRPCreateOffboardingCasesCustom921</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>LinkedEntityId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRPCreateOffboardingCasesCustom9501</globalKey>
+        <inputFieldName>caseType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRPCreateOffboardingCases</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;OffboardingCases&quot; : [ {
+    &quot;HpfName&quot; : &quot;Test Hospital&quot;,
+    &quot;HpfId&quot; : &quot;0bS7x00000039oLEAQ&quot;,
+    &quot;HpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;HfName&quot; : &quot;Test Hospital&quot;,
+    &quot;isVoluntaryTermination&quot; : true,
+    &quot;terminationReason&quot; : null,
+    &quot;IsExitInterviewRequired&quot; : true,
+    &quot;IsBonusRepayment&quot; : true,
+    &quot;lastDay&quot; : &quot;2025-07-29&quot;,
+    &quot;dateTerminationReceived&quot; : &quot;2025-08-05&quot;,
+    &quot;terminationRequestDate&quot; : &quot;2025-08-05&quot;
+  }, {
+    &quot;HfName&quot; : &quot;Test Hospital Facility case&quot;,
+    &quot;isVoluntaryTermination&quot; : true,
+    &quot;terminationReason&quot; : null,
+    &quot;IsExitInterviewRequired&quot; : true,
+    &quot;IsBonusRepayment&quot; : true,
+    &quot;HpfName&quot; : &quot;Test Hospital Facility case&quot;,
+    &quot;HpfId&quot; : &quot;0bS7x00000039pxEAA&quot;,
+    &quot;HpfStatus&quot; : &quot;Candidate&quot;,
+    &quot;lastDay&quot; : &quot;2025-08-12&quot;,
+    &quot;dateTerminationReceived&quot; : &quot;2025-08-04&quot;,
+    &quot;terminationRequestDate&quot; : &quot;2025-08-20&quot;
+  }, {
+    &quot;HfName&quot; : &quot;test Practitioner Facility Cred&quot;,
+    &quot;isVoluntaryTermination&quot; : true,
+    &quot;terminationReason&quot; : null,
+    &quot;IsExitInterviewRequired&quot; : true,
+    &quot;IsBonusRepayment&quot; : true,
+    &quot;HpfName&quot; : &quot;test Practitioner Facility Cred&quot;,
+    &quot;HpfId&quot; : &quot;0bS7x0000003ACXEA2&quot;,
+    &quot;HpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;lastDay&quot; : &quot;2025-08-29&quot;,
+    &quot;dateTerminationReceived&quot; : &quot;2025-08-19&quot;,
+    &quot;terminationRequestDate&quot; : &quot;2025-08-11&quot;
+  } ],
+  &quot;operation&quot; : &quot;load&quot;,
+  &quot;ContactId&quot; : &quot;0037x000012kPoAAAU&quot;,
+  &quot;AccountId&quot; : &quot;0017x00001EJ4ztAAD&quot;,
+  &quot;omniScriptId&quot; : &quot;0jN7x0000004KjJEAU&quot;,
+  &quot;elementName&quot; : &quot;Create_OffboardingCases&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRPCreateOffboardingCases_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

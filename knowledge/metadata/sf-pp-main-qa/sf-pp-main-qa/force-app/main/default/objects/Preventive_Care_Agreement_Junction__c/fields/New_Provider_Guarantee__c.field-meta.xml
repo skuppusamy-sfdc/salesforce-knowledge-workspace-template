@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Provider_Guarantee__c</fullName>
+    <formula>AND( Contract_Payment_Agreement_Type__c == &apos;Target&apos;,OR(
+ISNULL( Preventive_Care_Agreement__r.ContractPaymentAgreement.Provider_Network_Contract__r.Healthcare_Practitioner_Facility__r.First_Clinical_Shift__c),
+(IF(
+( Agreement__r.Contract__r.StartDate  - Preventive_Care_Agreement__r.ContractPaymentAgreement.Provider_Network_Contract__r.Healthcare_Practitioner_Facility__r.First_Clinical_Shift__c) / 365 * 12 &lt; 1,
+1,
+(Agreement__r.Contract__r.StartDate - Preventive_Care_Agreement__r.ContractPaymentAgreement.Provider_Network_Contract__r.Healthcare_Practitioner_Facility__r.First_Clinical_Shift__c) / 365 * 12
+)
+- 1 &lt;  Preventive_Care_Agreement__r.Months_Provider_Guarantee__c 
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New Provider Guarantee</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

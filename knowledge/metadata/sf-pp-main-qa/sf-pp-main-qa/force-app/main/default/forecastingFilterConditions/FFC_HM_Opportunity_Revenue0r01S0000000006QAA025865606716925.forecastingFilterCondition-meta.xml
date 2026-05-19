@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingFilterCondition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <colName>OPPORTUNITY.RECORDTYPE</colName>
+    <fieldName>RecordType.Name</fieldName>
+    <forecastingFilter>FF_HM_Opportunity_Revenue0hl1S000000TN1PQAW130067939451272</forecastingFilter>
+    <forecastingSourceDefinition>7sy1S000000TN1K</forecastingSourceDefinition>
+    <isProtected>false</isProtected>
+    <masterLabel>FFC_HM_Opportunity_Revenue0r01S0000000006QAA025865606716925</masterLabel>
+    <operation>equals</operation>
+    <sortOrder>1</sortOrder>
+    <value>012370000001Q9iAAE</value>
+</ForecastingFilterCondition>

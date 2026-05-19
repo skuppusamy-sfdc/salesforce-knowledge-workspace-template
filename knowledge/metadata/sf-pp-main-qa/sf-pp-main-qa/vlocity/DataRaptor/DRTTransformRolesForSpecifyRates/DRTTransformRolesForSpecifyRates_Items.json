@@ -1,0 +1,48 @@
+[
+    {
+        "FilterGroup": 0,
+        "FormulaExpression": "LISTMERGE(\"role\", LIST(%listOfData%))",
+        "FormulaResultPath": "func",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTTransformRolesForSpecifyRates264432929575218",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformRolesForSpecifyRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformRolesForSpecifyRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformRolesForSpecifyRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformRolesForSpecifyRates8675404198385421",
+        "InputFieldName": "func:role",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformRolesForSpecifyRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformRolesForSpecifyRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformRolesForSpecifyRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "roles:role",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

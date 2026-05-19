@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted to Proposals</fullName>
+                <default>true</default>
+                <label>Submitted to Proposals</label>
+            </value>
+            <value>
+                <fullName>In Process - Proposals</fullName>
+                <default>false</default>
+                <label>In Process - Proposals</label>
+            </value>
+            <value>
+                <fullName>BD Action</fullName>
+                <default>false</default>
+                <label>BD Action</label>
+            </value>
+            <value>
+                <fullName>SVP Growth Action</fullName>
+                <default>false</default>
+                <label>SVP Growth Action</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Incomplete - Abandoned</fullName>
+                <default>false</default>
+                <label>Incomplete - Abandoned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>This flow will take any contact that is created without an account, and assign them to a Candidate Pool account.  As a result, your users do not need to fill in the account field for candidates.  You can remove it from the page entirely if you would like.</description>
+    <environments>Default</environments>
+    <interviewLabel>Set Account to &quot;Candidate Pool&quot; For Candidate Records {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Account to &quot;Candidate Pool&quot; For Candidate Records</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This gets the most recently created Candidate Pool.  By getting the most recent record, it will avoid adding all contacts into Candidate Pool 1.  Note that if you have renamed your candidate pool accounts on the Asymbl Admin Tab, you can update the name on this element as well to ensure the flow continues to work.</description>
+        <name>Get_Candidate_Pool_Account</name>
+        <label>Get Candidate Pool Account</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Contact</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Candidate Pool</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets the account field for the contact.</description>
+        <name>Update_Contact</name>
+        <label>Update Contact</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>Get_Candidate_Pool_Account.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Candidate_Pool_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

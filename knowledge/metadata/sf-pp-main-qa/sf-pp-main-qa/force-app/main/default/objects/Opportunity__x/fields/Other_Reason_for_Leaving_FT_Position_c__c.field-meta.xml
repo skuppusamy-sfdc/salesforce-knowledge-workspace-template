@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Reason_for_Leaving_FT_Position_c__c</fullName>
+    <externalDeveloperName>Other_Reason_for_Leaving_FT_Position__c</externalDeveloperName>
+    <isFilteringDisabled>true</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>true</isSortingDisabled>
+    <label>Other Reason for Leaving FT Position</label>
+    <length>5000</length>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

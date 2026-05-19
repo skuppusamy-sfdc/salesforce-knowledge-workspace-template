@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Start Admin Work Ahead of Clinical Work --></label>
+    <name>Start_Admin_Work_Ahead_of_Clinical_Work__c</name>
+</CustomFieldTranslation>

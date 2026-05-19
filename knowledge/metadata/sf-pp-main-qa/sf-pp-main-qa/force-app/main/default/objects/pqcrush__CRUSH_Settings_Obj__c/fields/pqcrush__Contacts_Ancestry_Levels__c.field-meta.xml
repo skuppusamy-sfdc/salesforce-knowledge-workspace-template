@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__Contacts_Ancestry_Levels__c</fullName>
+    <defaultValue>2</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The number of levels to query when displaying the Hierarchy Chart of Contacts</description>
+    <externalId>false</externalId>
+    <label>Contacts Ancestry Levels</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

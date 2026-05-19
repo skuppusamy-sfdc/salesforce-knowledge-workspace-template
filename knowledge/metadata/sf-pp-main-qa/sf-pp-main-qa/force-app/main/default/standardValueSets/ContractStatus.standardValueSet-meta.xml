@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groupingStringEnum>ContractStatusCode</groupingStringEnum>
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Draft</fullName>
+        <default>false</default>
+        <label>Draft</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted_Old</fullName>
+        <default>false</default>
+        <label>Submitted_Old</label>
+        <groupingString>InApproval</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracting - In Progress</fullName>
+        <default>false</default>
+        <label>Contracting - In Progress</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Executed</fullName>
+        <default>false</default>
+        <label>Executed</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+        <groupingString>Cancelled</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <groupingString>InApproval</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracting - In Progress _Old</fullName>
+        <default>false</default>
+        <label>Contracting - In Progress_Old</label>
+        <groupingString>Signed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandoned</fullName>
+        <default>false</default>
+        <label>Abandoned</label>
+        <groupingString>Cancelled</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>In Approval Process</fullName>
+        <default>false</default>
+        <label>In Approval Process</label>
+        <groupingString>InApproval</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Activated</fullName>
+        <default>false</default>
+        <label>Activated</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <groupingString>Rejected</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiating</fullName>
+        <default>false</default>
+        <label>Negotiating</label>
+        <groupingString>Negotiating</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Awaiting Signature</fullName>
+        <default>false</default>
+        <label>Awaiting Signature</label>
+        <groupingString>AwaitingSignature</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Signature Declined</fullName>
+        <default>false</default>
+        <label>Signature Declined</label>
+        <groupingString>SignatureDeclined</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed</fullName>
+        <default>false</default>
+        <label>Signed</label>
+        <groupingString>Signed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Expired</fullName>
+        <default>false</default>
+        <label>Contract Expired</label>
+        <groupingString>Expired2</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Terminated</fullName>
+        <default>false</default>
+        <label>Contract Terminated</label>
+        <groupingString>Terminated2</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Expired</fullName>
+        <default>false</default>
+        <label>Expired</label>
+        <groupingString>Expired2</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminated</fullName>
+        <default>false</default>
+        <label>Terminated</label>
+        <groupingString>Terminated2</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Superseded</fullName>
+        <default>false</default>
+        <label>Superseded</label>
+        <groupingString>Cancelled</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>Complete</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Effective</fullName>
+        <default>false</default>
+        <label>Effective</label>
+        <groupingString>InApproval</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Incomplete</fullName>
+        <default>false</default>
+        <label>Incomplete</label>
+        <groupingString>Rejected</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Review Req Not Met</fullName>
+        <default>false</default>
+        <label>Review Req Not Met</label>
+        <groupingString>Rejected</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved_Old</fullName>
+        <default>false</default>
+        <label>Approved_Old</label>
+        <groupingString>Signed</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplemental</fullName>
+        <default>false</default>
+        <label>Supplemental</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Collaboration with Physicians, Patients, Families, and Healthcare Providers</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Collaborate with Attending Physician(s), patients and families, and other health care provider</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Collaboration_with_Physicians_Patients_Families_and_Healthcare_Providers</developerName>
+    <name>Collaboration with Physicians, Patients, Families, and Healthcare Providers</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

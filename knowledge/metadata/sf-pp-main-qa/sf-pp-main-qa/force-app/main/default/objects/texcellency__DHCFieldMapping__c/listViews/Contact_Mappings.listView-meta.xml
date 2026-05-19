@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Mappings</fullName>
+    <columns>NAME</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>SETUP_TYPE</columns>
+    <columns>SETUP_OWNER_NAME</columns>
+    <columns>texcellency__Destination__c</columns>
+    <columns>texcellency__Enabled__c</columns>
+    <columns>texcellency__Mask__c</columns>
+    <columns>texcellency__Source__c</columns>
+    <columns>texcellency__StdObjType__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>texcellency__StdObjType__c</field>
+        <operation>equals</operation>
+        <value>c</value>
+    </filters>
+    <label>Contact Mappings</label>
+</ListView>

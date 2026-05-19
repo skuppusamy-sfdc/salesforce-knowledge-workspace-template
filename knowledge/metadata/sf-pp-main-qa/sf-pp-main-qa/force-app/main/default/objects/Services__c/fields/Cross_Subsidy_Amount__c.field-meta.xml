@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cross_Subsidy_Amount__c</fullName>
+    <inlineHelpText>If the service is subsidizing existing business, place the value of the cross-subsidy here.  The &apos;Margin&apos; will subtract the &apos;Cross-Subsidy Amount&apos; to calculate the &apos;Incremental Margin&apos;.</inlineHelpText>
+    <label>Cross-Subsidy Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

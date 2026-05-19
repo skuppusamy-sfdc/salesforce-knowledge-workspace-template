@@ -1,0 +1,60 @@
+{
+    "preventiveCareAgreement": [
+        {
+            "BonusMeasureType": "NA",
+            "BonusPayout": 0,
+            "ContractPaymentAgreement": {
+                "AgreementType": "Preventive Care Agreement",
+                "Contract": {
+                    "Id": "8007x00000cVk2HAAS",
+                    "RecordType": {
+                        "Id": "0127x00000GcMEPAA3",
+                        "Name": "Clinician"
+                    },
+                    "RecordTypeId": "0127x00000GcMEPAA3"
+                },
+                "ContractId": "8007x00000cVk2HAAS",
+                "ContractPaymentAgreementKey": "015BD9A2121F77C6BFE9EEC9A2717C0D-200503908",
+                "Id": "0rR7x00000008vFEAQ",
+                "Name": "Nawal Unit Test-Shift",
+                "Provider_Network_Contract__c": "0mw7x0000000sjZAAQ",
+                "Provider_Network_Contract__r": {
+                    "Healthcare_Practitioner_Facility__c": "0bS7x0000003DDdEAM",
+                    "Healthcare_Practitioner_Facility__r": {
+                        "Account": {
+                            "Id": "0017x000017KgM0AAK",
+                            "Name": "Test Service Account 0012",
+                            "RecordTypeId": "0127x00000Ga8ttAAB"
+                        },
+                        "AccountId": "0017x000017KgM0AAK",
+                        "Id": "0bS7x0000003DDdEAM"
+                    },
+                    "Id": "0mw7x0000000sjZAAQ"
+                },
+                "Status": "DRAFT",
+                "Type__c": "Shift"
+            },
+            "ContractPaymentAgreementId": "0rR7x00000008vFEAQ",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "FacilityTitle__r": {
+                "Id": "0hs7x0000007K8aAAE",
+                "Name": "Ambassador NP/PA"
+            },
+            "Id": "0s47x0000000CqnAAE",
+            "Name": "PCA-1412",
+            "Override_Prohibited__c": false,
+            "Rate__c": 1,
+            "Shift__c": "a4Q7x000000DW0TEAW",
+            "Shift__r": {
+                "Id": "a4Q7x000000DW0TEAW",
+                "Shift_Name__c": "0hs7x0000007y2fAAA",
+                "Shift_Name__r": {
+                    "Id": "0hs7x0000007y2fAAA",
+                    "Name": "ShiftNew"
+                }
+            },
+            "TargetMeasurePercent": 0,
+            "Unit_of_Measure__c": "per Hour"
+        }
+    ]
+}

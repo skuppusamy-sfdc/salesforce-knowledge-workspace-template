@@ -1,0 +1,115 @@
+{
+    "ApplicantDetails": {
+        "BLK_Applicant": {
+            "BoardCertified": "Ineligible",
+            "EndDate": null,
+            "NPType": null,
+            "ProfessionalStatus": "Resident",
+            "ProfessionalTitle": "DO",
+            "Program": "dceswk",
+            "SponsershipNeed": "Yes",
+            "TA_AdditionalSpecialties-Block": {
+                "Id": "0bc7x0000000EarAAE",
+                "Name": "Radiology",
+                "RecordId": "0bc7x0000000EarAAE",
+                "TA_AdditionalSpecialties": "Radiology",
+                "isPrimaryOrSub": "true"
+            },
+            "TA_PracticingSpecialty-Block": {
+                "CareSpecialtyId": "0bc7x0000000EcTAAU",
+                "Id": "0bO7x0000000c0UEAQ",
+                "IsPrimary": false,
+                "Name": "Cardiology",
+                "TA_PracticingSpecialty": "Cardiology"
+            },
+            "TA_PrimarySpecialty-Block": {
+                "CareSpecialtyId": "0bc7x0000000EarAAE",
+                "Id": "0bO7x0000000c0TEAQ",
+                "IsPrimary": true,
+                "Name": "Radiology",
+                "TA_PrimarySpecialty": "Radiology"
+            },
+            "VisaType": "H-1B"
+        }
+    },
+    "InterestDetails": {
+        "BLK_Interest": {
+            "BestTimeToContact": "decw",
+            "PersonalInterests": "decxwes",
+            "RequestedHours": 12,
+            "RequestedStartDate": "2024-12-23",
+            "ShiftPreference": "jshbxd",
+            "TiesToLocation": "edews"
+        }
+    },
+    "OriginalApplicantInfo": {
+        "Applicant": {
+            "BLK_Applicant": {
+                "BoardCertified": "Ineligible",
+                "ProfessionalTitle": "DO",
+                "SponsershipNeed": "No",
+                "TA_PracticingSpecialty": "Cardiology",
+                "TA_PracticingSpecialty-Block": {
+                    "CareSpecialtyId": "0bc7x0000000EcTAAU",
+                    "Id": "0bO7x0000000c0UEAQ",
+                    "IsPrimary": false,
+                    "Name": "Cardiology"
+                },
+                "TA_PrimarySpecialty": "Radiology",
+                "TA_PrimarySpecialty-Block": {
+                    "CareSpecialtyId": "0bc7x0000000EarAAE",
+                    "Id": "0bO7x0000000c0TEAQ",
+                    "IsPrimary": true,
+                    "Name": "Radiology"
+                }
+            }
+        },
+        "Interest": {
+            "BLK_Interest": {
+                "RequestedHours": 12,
+                "RequestedStartDate": "2024-12-23"
+            }
+        },
+        "Qualification": {
+            "BLK_Qualification": {
+                "ACLSCertified": false,
+                "ATLSCertified": false,
+                "BLSCertified": false,
+                "DEACertified": false,
+                "IMLCCertified": false,
+                "MUL_MedicalLicenseState": "AZ;CA;CO;CT;DC;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;AL;AK;AR",
+                "NALSCerified": false,
+                "NRPCertified": false,
+                "PALSCertified": false,
+                "WillingToDoProcedures": false,
+                "WillingToDoVentMngmt": false
+            }
+        }
+    },
+    "QualificationDetails": {
+        "BLK_Qualification": {
+            "ACLSCertified": true,
+            "ATLSCertified": true,
+            "BLSCertified": true,
+            "Comments": "edsxw",
+            "CredentiallingAddDetails": "edfce",
+            "CredentiallingDelay": "Yes",
+            "CurrentCV": "Yes",
+            "DEACertified": true,
+            "Electronic Health Record System Proficiencies": "edfc",
+            "IMLCCertified": true,
+            "MDDOAgrees": "Yes",
+            "MUL_MedicalLicenseState": "AK;AL;AR;AZ;CA;CO;CT;DC;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;MO",
+            "NALSCerified": true,
+            "NRPCertified": true,
+            "PALSCertified": true,
+            "PreScreenAdditionalDetails": "edwxs",
+            "PreScreenQueriesClear": "Yes",
+            "WillingToDoProcedures": true,
+            "WillingToDoVentMngmt": true,
+            "YearsOfExp": 2,
+            "YearsOfLeadExp": 3
+        }
+    },
+    "block": "SaveApplicantData"
+}

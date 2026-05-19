@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADT_Management_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field is used to denote which facility manages the ADT field. The trigger using this field is ADT_Notification</description>
+    <inlineHelpText>This field is used to denote which facility (Hospital System) manages the ADT field.</inlineHelpText>
+    <label>ADT Management Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Facility Profiles (ADT Management Account)</relationshipLabel>
+    <relationshipName>ADT_Facility_Profiles</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

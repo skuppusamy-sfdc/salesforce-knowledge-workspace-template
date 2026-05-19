@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assignment_Platform_Event</name>
+        <label>Assignment Platform Event</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>cloneRecordPlatformEvent.Id_of_Record_To_Clone__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_bpats_Job.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>cloneRecordPlatformEvent.sObject_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>bpats__Job__c</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>cloneRecordPlatformEvent.Attribute_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Attribute1</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Platform_Event</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Job_Applicant_and_Job</name>
+        <label>Job Applicant and Job</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Job_Applicant_and_Job_Available</name>
+            <conditionLogic>(1 AND 2 AND (3 OR 4))</conditionLogic>
+            <conditions>
+                <leftValueReference>caseObj.Healthcare_Practitioner_Facility__r.Job_Applicant__r.bpats__Job__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>caseObj.Backfill_Recommended__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>caseObj.Healthcare_Practitioner_Facility__r.Time_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Full Time</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>caseObj.Healthcare_Practitioner_Facility__r.Time_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part Time</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>get_bpats_Job</targetReference>
+            </connector>
+            <label>Job Applicant and Job Available</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Attribute1</name>
+        <dataType>String</dataType>
+        <expression>If({!caseObj.Voluntary_Termination__c} == true,&quot;Attrition - Resignation&quot;, &quot;Attrition - Termination&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>now</name>
+        <dataType>DateTime</dataType>
+        <expression>now()</expression>
+    </formulas>
+    <formulas>
+        <name>recordLink</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_260}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_260})) &amp; {!jobObj_var.Id}</expression>
+    </formulas>
+    <formulas>
+        <description>Vacancy Reason</description>
+        <name>Vacancy_Reason</name>
+        <dataType>String</dataType>
+        <expression>IF({!caseObj.Voluntary_Termination__c} = TRUE, &quot;Attrition - Resignation&quot;, &quot;Attrition - Termination&quot;)</expression>
+    </formulas>
+    <interviewLabel>Clone bpats Job {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Subflow to Clone bpats Job</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Platform_Event</name>
+        <label>Create Platform Event</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>cloneRecordPlatformEvent</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Get bpats__Job__c</description>
+        <name>get_bpats_Job</name>
+        <label>get bpats Job</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assignment_Platform_Event</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>caseObj.Healthcare_Practitioner_Facility__r.Job_Applicant__r.bpats__Job__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>bpats__Job__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Job_Applicant_and_Job</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmaiBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;A clinician has been terminated and a draft job record has been created. Please review and update the newly created job record for recruiters to begin the recruiting process. {!recordLink}&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>caseObj</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>cloneRecordPlatformEvent</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Clone_Record__e</objectType>
+    </variables>
+    <variables>
+        <name>jobList_var</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>bpats__Job__c</objectType>
+    </variables>
+    <variables>
+        <name>jobObj_var</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>bpats__Job__c</objectType>
+    </variables>
+    <variables>
+        <name>REmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>nbedmutha@salesforce.com</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>Subject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Clinician Termination - Review Draft Job</stringValue>
+        </value>
+    </variables>
+</Flow>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Public Statements &amp; Social Media Conflict of Interest Inquiry</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Have you made public statements or social media posts that could create the perception of any conflicts of interest with your work at the Company?</questionText>
+        <responseValues>No
+Yes</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Public_Statements_Social_Media_Conflict_of_Interest_Inquiry</developerName>
+    <name>Public Statements &amp; Social Media Conflict of Interest Inquiry</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

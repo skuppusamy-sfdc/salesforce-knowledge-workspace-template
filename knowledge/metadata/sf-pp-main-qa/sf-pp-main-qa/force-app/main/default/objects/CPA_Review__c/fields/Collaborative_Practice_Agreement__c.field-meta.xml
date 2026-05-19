@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collaborative_Practice_Agreement__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Collaborative Practice Agreement</label>
+    <referenceTo>Collaborative_Practice_Agreement__c</referenceTo>
+    <relationshipLabel>CPA Reviews</relationshipLabel>
+    <relationshipName>CPA_Reviews</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

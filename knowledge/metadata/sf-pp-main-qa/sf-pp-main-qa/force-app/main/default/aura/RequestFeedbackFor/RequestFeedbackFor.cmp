@@ -1,0 +1,337 @@
+<aura:component controller="RequestFeedbackForController">
+
+    <aura:attribute name="editVisible"           type="Boolean" default="false" />
+<!--    <aura:attribute name="settings"              type="TruSales_App_Settings__c" access="private" />-->
+
+    <aura:attribute name="settings"              type="Discovery_Bots_Settings__c" access="private" />
+
+    <aura:attribute name="newContact"            type="Boolean" default="false" />
+    <aura:attribute name="userId"                type="String"  access="private" default="" />
+    <aura:attribute name="selectedContacts"      type="List"    access="private" />
+    <aura:attribute name="editableContact"       type="Contact" access="private" />
+    <aura:attribute name="messageVisible"        type="Boolean" default="true" />
+    <aura:attribute name="submitDisabled"        type="Boolean" default="false" />
+    <aura:attribute name="role"                  type="OpportunityContactRole" access="private" />
+    <aura:attribute name="addContactDisabled"    type="Boolean" default="true" />
+    <aura:attribute name="notLoading"            type="Boolean" access="private" default="true" />
+    <aura:attribute name="opportunityOwner"      type="String" access="private" />
+    <aura:attribute name="oppId"                 type="String" access="public" />
+    <aura:attribute name="opportunityOwnerEmail" type="String" access="private" />
+    <aura:attribute name="users"                 type="List"   default="[]" access="private" />
+    <aura:attribute name="usersOptions"          type="List"   default="[]" access="private" />
+    <aura:attribute name="selectedUser"          type="User"   access="private" />
+    <aura:attribute name="roles"                 type="List"   access="private" />
+    <aura:attribute name="oppLabelValue"         type="String" access="private" />
+    <aura:attribute name="accLabelValue"         type="String" access="private" />
+    <aura:attribute name="rle"                   type="String" access="private" />
+    <aura:attribute name="Rl"                    type="String" access="private" />
+    <aura:attribute name="opportunityName"       type="String" />
+    <aura:attribute name="successView"           type="Boolean" access="private" default="false" />
+    <aura:attribute name="failureView"           type="Boolean" access="private" default="false" />
+    <aura:attribute name="bothTypeView"          type="Boolean" access="private" default="false"/>
+    <aura:attribute name="succSubContacts"       type="List"    default="[]" access="private"/>
+    <aura:attribute name="faileSubContacts"      type="List"    default="[]" access="private"/>
+    <aura:attribute name="inputEmailWrite"       type="String"  />
+    <aura:attribute name="countSubmitContacts"   type="String" default="0" access="private"></aura:attribute>
+    <aura:attribute name="countFaileContacts"    type="String" default="0" access="private"></aura:attribute>
+    <aura:registerEvent name="handleCloseReqFeedback" type="c:CloseRequestFeedbackFor"></aura:registerEvent>
+
+    <aura:attribute name="listContactForCompare" type="List" default="[]" access="private"/>
+    <aura:attribute name="radioOptions" type="List" default="[
+    {'label': 'No', 'value': 'no'},
+    {'label': 'Yes', 'value': 'yes'}
+    ]" />
+    <aura:attribute name="radioValue" type="String" default="no" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+<!--    <aura:handler name="CheckBoxChanged" event="c:CheckBoxChanged" action="{!c.handleEvent}" />-->
+    <aura:handler event="c:OpenRequestFeedbackEvent" action="{!c.openEvent}" />
+    <aura:handler name="NewContactAdd" event="c:NewContactAdd" action="{!c.handleNewContactEvent}" />
+    <aura:handler name="EditContact"   event="c:EditContact" action="{!c.handleEditContactEvent}" />
+
+    <aura:attribute name="componentNotReady" type="Boolean" default="true"/>
+
+    <aura:if isTrue="{!v.componentNotReady}">
+        <lightning:spinner alternativeText="Loading..." size="large" variant="brand"/>
+    </aura:if>
+    <aura:if isTrue="{!v.bothTypeView}">
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container slds-is-relative" style="width: 1000px; max-width: unset; min-height: 30vh;">
+                    <header class="slds-modal__header">
+                        <div class="slds-is-absolute" style="left: 95%;">
+                            <lightning:buttonIcon iconName="utility:close" onclick="{!c.hideModalBothView}" alternativeText="close" size="large" variant="bare"/>
+                        </div>
+                        <h2 class="slds-modal__title slds-hyphenate slds-p-top--medium slds-text-align--left" style="font-weight: bold;" >Request Feedback for {!v.opportunityName}</h2>
+                    </header>
+                    <div class="slds-modal__content">
+                        <div class="succSection slds-p-around--medium slds-m-around_small" style="background: #5BAF4D; color:#FFFFFF;">
+                            <p class="slds-text-heading--small" style="font-weight: bold">{!v.countSubmitContacts} contacts have been added!</p>
+                            <ul style="list-style-type: disc" class="slds-p-left--large">
+                                <aura:iteration items="{!v.succSubContacts}" var="item">
+                                    <li><p><span class="customTextResponce">{!item}</span> has been added to the feedback for <span class="customTextResponce">{!v.opportunityName}</span></p></li>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                        <div class="failSection slds-p-around--medium slds-m-around_small" style="background: #DD151F; color:#FFFFFF;" >
+                            <p class="slds-text-heading--small" style="font-weight: bold;">Found {!v.countFaileContacts} error</p>
+                            <ul style="list-style-type:disc" class="slds-p-left--large">
+                                <aura:iteration items="{!v.faileSubContacts}" var="item">
+                                    <li><p><span class="customTextResponce">{!item}</span> has already been asked to provide feedback for <span class="customTextResponce">{!v.opportunityName}</span></p></li>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                    </div>
+                    <footer class="slds-modal__footer slds-modal__footer_directional">
+                        <div class="slds-grid slds-grid_align-spread">
+                            <lightning:button onclick="{!c.failBothViewClick}" label="&lt; FIX ERRORS" class="slds-button slds-button_destructive slds-col slds-no-flex bothViewBtnFix"></lightning:button>
+                            <lightning:button  onclick="{!c.doneBothViewClick}" label="DONE" class="slds-button slds-button--brand slds-col slds-no-flex"></lightning:button>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.successView}">
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container slds-is-relative" style="width: 1000px; max-width: unset;">
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close" onclick="{!c.hideModalSuccessView}"
+                            alternativeText="close" variant="bare-inverse" class="slds-modal__close" />
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight: bold;">
+                            Feedback Request Process Initiated</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium slds-is-relative" id="modal-content-id-1"
+                        style="font-size: larger">
+                        <p>The following contacts have been successfully submitted for {!v.opportunityName} :</p>
+                        <div class="slds-p-left_x-large">
+                            <ul style="list-style-type:disc;">
+                                <aura:iteration items="{!v.selectedContacts}" var="item">
+                                    <li>"{!item}"</li>
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                        <p>TruVoice will begin outreach will begin on these contacts shortly.</p><br />
+                        <footer class="slds-modal__footer">
+                            <lightning:button class="slds-button slds-button_brand" label="DONE"
+                                onclick="{!c.doneClicked}" />
+                        </footer>
+                    </div>
+                </div>
+            </section>
+            <!--<div class="slds-backdrop slds-backdrop_open"></div>-->
+        </div>
+    </aura:if>
+
+    <aura:if isTrue="{!v.failureView}">
+        <div>
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container slds-is-relative" style="width: 1000px; max-width: unset;">
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close" onclick="{!c.hideModalFailureView}"
+                            alternativeText="close" variant="bare-inverse" class="slds-modal__close" />
+                        <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight: bold;">Unable to Request Feedback</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium slds-is-relative" id="modal-content-id-1" style="font-size: larger">
+                        <p><lightning:formattedText class="slds-p-left_xx-large" linkify="true"
+                                value="Uh, oh! It looks like something went wrong and we were not able to submit the contacts to TruVoice.
+                                Please check to see if you have previously submitted the selected contacts for the same opportunity." /></p><br />
+                        <p><lightning:formattedText class="slds-p-left_xx-large" linkify="true"
+                                value="If the contacts have not been previously submitted for the opportunity, please notify support at: support@primary-intel.com.
+                                Include the Opportunity name and the contact name(s) you were trying to request feedback from. We will make sure we get this resolved for you ASAP." /></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!not(v.successView||v.failureView||v.componentNotReady||v.bothTypeView)}">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_12-of-12">
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="12" padding="around-small">
+                        <div class="slds-box" style="font-size: larger; background-color : rgb(240,240,240) ">
+                            <p>Select the contacts that can provide feedback on their experience with us and our
+                                solutions. Include all contacts that were involved in the decision.</p>
+                            <p>Contacts you select will receive an email from you asking them to complete a short survey
+                                where they can share their experience, including feedback on the key factors that
+                                influenced their decision.</p>
+                            <p>You will be notified as soon as they provide feedback and will be able to see their
+                                feedback in your personal dashboard.</p>
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4" padding="around-small">
+                        <c:SelectContacts opportunityId="{!v.oppId}" aura:id="selCont" />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="8" padding="around-small">
+                        <aura:if isTrue="{!v.messageVisible}">
+                            <ui:message title="Please, select a contact" severity="confirm" closable="false"></ui:message>
+                        </aura:if>
+                        <aura:if isTrue="{! v.notLoading }">
+
+                            <aura:if isTrue="{!v.editVisible}">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="firstname" label="FIRST NAME" name="firstName" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:input aura:id="lastname" label="LAST NAME" name="lastName" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="title" label="TITLE NAME" name="titleName" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:select name="Roles" label="ROLE" value="{!v.Rl}">
+                                            <aura:iteration items="{!v.roles}" var="role">
+                                                <option text="{!role}" value="{!role}" selected="{!role==rle}"></option>
+                                            </aura:iteration>
+                                        </lightning:select>
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="email" type="email" label="EMAIL" name="email" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:input aura:id="mobile" label="MOBILE" name="mobile" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="phone" type="tel" label="PHONE" name="phone" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:input aura:id="extension" label="EXTENSION" name="extension" />
+                                    </div>
+                                    <div class="slds-col slds-size_12-of-12">
+                                        <lightning:textarea aura:id="note" label="NOTE" name="lastName" />
+                                    </div>
+                                    <div class="slds-col slds-size_8-of-12">
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-12 slds-p-top_large">
+                                        <lightning:button label="CANCEL" variant="bare" onclick="{!c.cancelEditOrNew}" />
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-12 slds-p-top_large">
+                                        <lightning:button label="SAVE" variant="brand" onclick="{!c.saveContact}" />
+                                    </div>
+                                </div>
+                            </aura:if>
+
+                            <aura:if isTrue="{!v.newContact}">
+                                <ui:message title="This process will add contact to Salesforce." severity="confirm"
+                                    closable="false" class="slds-p-top_small">
+                                </ui:message>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-box slds-size_12-of-12 gray-Background">
+                                        <div class="slds-col slds-size_12-of-12">
+                                            Opportunity:
+                                        </div>
+                                        <div class="slds-col slds-size_12-of-12">
+                                            <lightning:formattedText aura:id="oppLabel"
+                                                value="{!v.oppLabelValue}" />
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-box slds-size_12-of-12  gray-Background">
+                                        <div class="slds-col slds-size_12-of-12">
+                                            Account:
+                                        </div>
+                                        <div class="slds-col slds-size_12-of-12">
+                                            <lightning:formattedText aura:id="accLabel"
+                                                value="{!v.accLabelValue}" />
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="firstname" required="true" label="FIRST NAME"
+                                            name="firstName" value="" onchange="{!c.onRequiredFieldsChange}" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:input aura:id="lastname" required="true" label="LAST NAME"
+                                            name="lastName" value="" onchange="{!c.onRequiredFieldsChange}" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="title" label="TITLE NAME" name="titleName" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:select name="Roles" label="ROLE" value="{!v.Rl}">
+                                            <aura:iteration items="{!v.roles}" var="role">
+                                                <option text="{!role}" value="{!role}" selected="{!role==rle}"></option>
+                                            </aura:iteration>
+                                        </lightning:select>
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="email" required="true" type="email" label="EMAIL"
+                                            name="email" value="" onchange="{!c.onRequiredFieldsChange}" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning:input aura:id="mobile" label="MOBILE" name="mobile" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                        <lightning:input aura:id="phone" type="tel" label="PHONE" name="phone" />
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12 slds-p-top_x-small">
+                                        <lightning:radioGroup name="radioButtonGroup"
+                                            label="Is Opportinity primary contact" options="{! v.radioOptions }"
+                                            value="{! v.radioValue }" type="button" />
+                                    </div>
+                                    <div class="slds-col slds-size_12-of-12">
+                                        <lightning:textarea aura:id="note" label="NOTE" name="lastName" />
+                                    </div>
+                                    <div class="slds-col slds-size_5-of-12">
+                                    </div>
+                                    <div class="slds-col slds-size_2-of-12 slds-p-top_large">
+                                        <lightning:button label="CANCEL" variant="bare"
+                                            onclick="{!c.cancelEditOrNew}" />
+                                    </div>
+                                    <div class="slds-col slds-size_5-of-12 slds-p-top_large">
+                                        <lightning:button label="ADD OPPORTUNITY CONTACT" variant="brand"
+                                            disabled="{!v.addContactDisabled}" onclick="{!c.saveNewContact}" />
+                                    </div>
+                                </div>
+                            </aura:if>
+                            <aura:set attribute="else">
+                                <lightning:spinner alternativeText="Loading..." size= "large" variant="brand" />
+                            </aura:set>
+                        </aura:if>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+            <aura:if isTrue="{!not(v.newContact)}">
+                <div class="slds-col  slds-size_12-of-12">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_10-of-12 ">
+                            <lightning:layout>
+                                <lightning:layoutItem size="4" alignmentBump="top">
+                                    <lightning:formattedText value="{!$Label.c.Email_label}" class="textSizeLarger" />
+                                    <lightning:formattedText class="slds-p-left_small nameText" value="{!v.opportunityOwner}" />
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="6" alignmentBump="top">
+                                    <div class="slds-dropdown-trigger slds-m-left--large " style="width: 400px" >
+                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right">
+                                            <input aura:id="emailCombobox" type="text" value="{!v.inputEmailWrite}" onclick="{!c.inputEmailClick}" class="slds-input slds-combobox__input" id="combobox-id-11" aria-autocomplete="list" aria-controls="listbox-id-9" autoComplete="off" role="textbox" placeholder="Search..." />
+                                            <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+                                              <lightning:icon iconName="utility:up" size="x-small"/>
+                                            </span>
+                                        </div>
+                                        <div id="combobox" class="slds-dropdown slds-dropdown_large slds-dropdown_bottom" style="visibility: hidden" onmouseleave="{!c.ondragleave}">
+                                            <ul class="slds-dropdown__list" role="menu" aria-label="Show More" >
+                                                <aura:iteration items="{!v.usersOptions}" var="listEmailsVar">
+                                                    <li class="slds-dropdown__item " >
+                                                        <p class="dropHeader">{!listEmailsVar.title}</p>
+                                                    </li>
+                                                    <li class="slds-dropdown__item" onclick="{!c.userChanged}" >
+                                                        <a id="{!listEmailsVar.label}" name="{!listEmailsVar.name}" >{!listEmailsVar.name}<span id="{!listEmailsVar.label}" name="{!listEmailsVar.name}"  class="emailSpan slds-m-left--x-small">&nbsp; {!listEmailsVar.label} &nbsp;</span></a>
+                                                    </li>
+                                                </aura:iteration>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 slds-align-bottom">
+                            <lightning:button variant="brand" label="SUBMIT" disabled="{!v.submitDisabled}" onclick="{!c.submitContacts}" />
+                        </div>
+                    </div>
+                </div>
+            </aura:if>
+        </div>
+    </aura:if>
+</aura:component>

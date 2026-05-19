@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICP_Encounters__c</fullName>
+    <label>ICP Encounters</label>
+    <summarizedField>Services__c.Annual_Encounters__c</summarizedField>
+    <summaryFilterItems>
+        <field>Services__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Integrated Care Physician (ICP)</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Services__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

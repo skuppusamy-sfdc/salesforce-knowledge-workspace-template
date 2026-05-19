@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Debridement, Closure, and Anesthetic Administration</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Simple superficial debridement; wound closure; and general care for wounds including performance of topical or field infiltration of anesthetic solutions</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Debridement_Closure_and_Anesthetic_Administration</developerName>
+    <name>Debridement, Closure, and Anesthetic Administration</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

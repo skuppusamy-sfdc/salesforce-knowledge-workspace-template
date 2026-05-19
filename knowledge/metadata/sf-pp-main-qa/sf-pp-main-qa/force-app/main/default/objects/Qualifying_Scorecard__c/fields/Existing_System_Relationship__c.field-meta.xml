@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_System_Relationship__c</fullName>
+    <description>Existing System Relationship</description>
+    <externalId>false</externalId>
+    <inlineHelpText>+ 1 or - 1 point</inlineHelpText>
+    <label>Existing System Relationship</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

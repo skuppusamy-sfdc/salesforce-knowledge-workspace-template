@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>texcellency__StdObjType__c</fullName>
+    <defaultValue>&quot;A&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Indicates the standard object type to which this mapping applies to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the standard object type to which this mapping applies to.
+A - Account
+C - Contact
+L - Lead
+O - Opportunity.</inlineHelpText>
+    <label>Standard Object Type</label>
+    <length>1</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

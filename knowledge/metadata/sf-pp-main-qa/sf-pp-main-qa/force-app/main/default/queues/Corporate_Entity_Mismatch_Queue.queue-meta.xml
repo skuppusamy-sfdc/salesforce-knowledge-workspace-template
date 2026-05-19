@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Corporate Entity Mismatch Queue</name>
+    <queueMembers>
+        <users>
+            <user>harshgupta@corehc</user>
+            <user>myrtle_will@sg.bd</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>ApprovalSubmission</sobjectType>
+    </queueSobject>
+</Queue>

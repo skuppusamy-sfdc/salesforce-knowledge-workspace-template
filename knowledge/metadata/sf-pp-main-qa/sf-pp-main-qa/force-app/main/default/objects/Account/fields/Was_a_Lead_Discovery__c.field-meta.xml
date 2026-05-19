@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Was_a_Lead_Discovery__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is set to true when the account is created from a Lead Discovery</description>
+    <label>Was a Lead Discovery</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

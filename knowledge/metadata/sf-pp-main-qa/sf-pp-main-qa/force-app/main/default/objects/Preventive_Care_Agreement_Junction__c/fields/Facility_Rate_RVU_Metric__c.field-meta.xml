@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Rate_RVU_Metric__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Preventive_Care_Agreement__r.Facility_Rate__r.RVU_Metric_Type__c)</formula>
+    <label>Facility Rate RVU Metric</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

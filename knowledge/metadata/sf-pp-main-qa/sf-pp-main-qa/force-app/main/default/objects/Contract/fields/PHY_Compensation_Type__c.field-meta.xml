@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PHY_Compensation_Type__c</fullName>
+    <label>(PHY) Compensation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RVU</fullName>
+                <default>false</default>
+                <label>RVU</label>
+            </value>
+            <value>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+                <label>Hourly</label>
+            </value>
+            <value>
+                <fullName>Hourly with SRP</fullName>
+                <default>false</default>
+                <label>Hourly with SRP</label>
+            </value>
+            <value>
+                <fullName>Hourly with Incentive</fullName>
+                <default>false</default>
+                <label>Hourly with Incentive</label>
+            </value>
+            <value>
+                <fullName>Hourly with SRP/Incentive</fullName>
+                <default>false</default>
+                <label>Hourly with SRP/Incentive</label>
+            </value>
+            <value>
+                <fullName>Per patient encounter</fullName>
+                <default>false</default>
+                <label>Per patient encounter</label>
+            </value>
+            <value>
+                <fullName>Per minute per eMAC encounter</fullName>
+                <default>false</default>
+                <label>Per minute per eMAC encounter</label>
+            </value>
+            <value>
+                <fullName>Stipend</fullName>
+                <default>false</default>
+                <label>Stipend</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

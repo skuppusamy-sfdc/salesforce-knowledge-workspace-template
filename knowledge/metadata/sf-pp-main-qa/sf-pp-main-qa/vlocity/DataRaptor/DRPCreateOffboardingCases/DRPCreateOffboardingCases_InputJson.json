@@ -1,0 +1,48 @@
+{
+    "AccountId": "0017x00001EJ4ztAAD",
+    "ContactId": "0037x000012kPoAAAU",
+    "OffboardingCases": [
+        {
+            "HfName": "Test Hospital",
+            "HpfId": "0bS7x00000039oLEAQ",
+            "HpfName": "Test Hospital",
+            "HpfStatus": "Prospect",
+            "IsBonusRepayment": true,
+            "IsExitInterviewRequired": true,
+            "dateTerminationReceived": "2025-08-05",
+            "isVoluntaryTermination": true,
+            "lastDay": "2025-07-29",
+            "terminationReason": null,
+            "terminationRequestDate": "2025-08-05"
+        },
+        {
+            "HfName": "Test Hospital Facility case",
+            "HpfId": "0bS7x00000039pxEAA",
+            "HpfName": "Test Hospital Facility case",
+            "HpfStatus": "Candidate",
+            "IsBonusRepayment": true,
+            "IsExitInterviewRequired": true,
+            "dateTerminationReceived": "2025-08-04",
+            "isVoluntaryTermination": true,
+            "lastDay": "2025-08-12",
+            "terminationReason": null,
+            "terminationRequestDate": "2025-08-20"
+        },
+        {
+            "HfName": "test Practitioner Facility Cred",
+            "HpfId": "0bS7x0000003ACXEA2",
+            "HpfName": "test Practitioner Facility Cred",
+            "HpfStatus": "Prospect",
+            "IsBonusRepayment": true,
+            "IsExitInterviewRequired": true,
+            "dateTerminationReceived": "2025-08-19",
+            "isVoluntaryTermination": true,
+            "lastDay": "2025-08-29",
+            "terminationReason": null,
+            "terminationRequestDate": "2025-08-11"
+        }
+    ],
+    "elementName": "Create_OffboardingCases",
+    "omniScriptId": "0jN7x0000004KjJEAU",
+    "operation": "load"
+}

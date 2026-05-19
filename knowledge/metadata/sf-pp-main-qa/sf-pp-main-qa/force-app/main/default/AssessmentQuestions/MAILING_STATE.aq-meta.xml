@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>MAILING STATE</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Mailing State</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>MAILING_STATE</developerName>
+    <name>MAILING STATE</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

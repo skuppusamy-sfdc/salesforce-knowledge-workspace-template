@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What / For whom - This permission set is for the restricted user, do not give any extra access, refer the Salesforce licensing.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Health Cloud - PNM</label>
+    <license>HealthCloudPNMPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageHcProviderNtwkMgmt</name>
+    </userPermissions>
+</PermissionSet>

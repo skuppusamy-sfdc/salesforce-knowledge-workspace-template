@@ -1,0 +1,28 @@
+{
+  "required" : [ "Input:chunks", "Input:query" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:chunks" : {
+      "title" : "chunks",
+      "description" : "use this as an input ",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:query" : {
+      "title" : "query",
+      "description" : "use globalId or name to get context",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

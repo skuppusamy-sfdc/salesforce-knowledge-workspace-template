@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>[ {
+  &quot;LoopBlockIterationIndex&quot; : 1,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : [ {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EB7AAM&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director At Risk Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;EE Asst Hospital Med Program Director&quot;
+    }, {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBFAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director At Risk Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;Medical Director&quot;
+    } ],
+    &quot;Measure&quot; : &quot;Director At Risk Stipend&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;LoopBlockIterationIndex&quot; : 2,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBCAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director Quarterly Upside Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;EE Hospital Medicine Program Director&quot;
+    },
+    &quot;Measure&quot; : &quot;Director Quarterly Upside Stipend&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;LoopBlockIterationIndex&quot; : 3,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBHAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director Annual Retention Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;Medical Director&quot;
+    },
+    &quot;Measure&quot; : &quot;Director Annual Retention Stipend&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;LoopBlockIterationIndex&quot; : 4,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBIAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director Incentive&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;Medical Director&quot;
+    },
+    &quot;Measure&quot; : &quot;Director Incentive&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+} ]</expectedInputJson>
+    <expectedOutputJson>[ {
+  &quot;Measure&quot; : &quot;Text&quot;,
+  &quot;Records&quot; : [ {
+    &quot;Name&quot; : &quot;Text&quot;
+  } ]
+} ]</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>TransformRateResultSet</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformRateResultSetCustom6829</globalKey>
+        <inputFieldName>ResultSet:Records</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformRateResultSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Records</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformRateResultSetCustom6845</globalKey>
+        <inputFieldName>ResultSet:Measure</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformRateResultSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Measure</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>[ {
+  &quot;LoopBlockIterationIndex&quot; : 1,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : [ {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EB7AAM&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director At Risk Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;EE Asst Hospital Med Program Director&quot;
+    }, {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBFAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director At Risk Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;Medical Director&quot;
+    } ],
+    &quot;Measure&quot; : &quot;Director At Risk Stipend&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;LoopBlockIterationIndex&quot; : 2,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBCAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director Quarterly Upside Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;EE Hospital Medicine Program Director&quot;
+    },
+    &quot;Measure&quot; : &quot;Director Quarterly Upside Stipend&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;LoopBlockIterationIndex&quot; : 3,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBHAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director Annual Retention Stipend&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;Medical Director&quot;
+    },
+    &quot;Measure&quot; : &quot;Director Annual Retention Stipend&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+}, {
+  &quot;LoopBlockIterationIndex&quot; : 4,
+  &quot;GroupedByMeasureStatus&quot; : true,
+  &quot;ResultSet&quot; : {
+    &quot;Records&quot; : {
+      &quot;RateType&quot; : &quot;Stipend&quot;,
+      &quot;Id&quot; : &quot;0s4am0000000EBIAA2&quot;,
+      &quot;MeasureType&quot; : &quot;per Month&quot;,
+      &quot;Measure&quot; : &quot;Director Incentive&quot;,
+      &quot;Rate&quot; : 100,
+      &quot;RoleName&quot; : &quot;Medical Director&quot;
+    },
+    &quot;Measure&quot; : &quot;Director Incentive&quot;
+  },
+  &quot;LoopBlockIterationStatus&quot; : true
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TransformRateResultSet_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

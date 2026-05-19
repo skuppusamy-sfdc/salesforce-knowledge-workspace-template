@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WW_Accounts</fullName>
+    <columns>PARENT_NAME</columns>
+    <columns>texcellency__DefHC_Network_Name__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <columns>Independent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer - EM/HM/WW,Customer - EM/WW,Customer - ICP/WW,Customer - WW</value>
+    </filters>
+    <label>WW Accounts</label>
+</ListView>

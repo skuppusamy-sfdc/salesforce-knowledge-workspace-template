@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Line_Parent__c</fullName>
+    <description>For use on the Asymbl Job Board to enable filtering by a picklist</description>
+    <inlineHelpText>Picklist with the Service Line Parent so it can be filtered on the Job Board</inlineHelpText>
+    <label>Service Line</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CCARE</fullName>
+                <default>false</default>
+                <label>Critical Care</label>
+            </value>
+            <value>
+                <fullName>EM</fullName>
+                <default>false</default>
+                <label>Emergency Medicine</label>
+            </value>
+            <value>
+                <fullName>HM</fullName>
+                <default>false</default>
+                <label>Hospital Medicine</label>
+            </value>
+            <value>
+                <fullName>UC</fullName>
+                <default>false</default>
+                <label>Urgent Care</label>
+            </value>
+            <value>
+                <fullName>VH</fullName>
+                <default>false</default>
+                <label>Virtual Health</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Core</label>
+            </value>
+            <value>
+                <fullName>Non Core</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non Core</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

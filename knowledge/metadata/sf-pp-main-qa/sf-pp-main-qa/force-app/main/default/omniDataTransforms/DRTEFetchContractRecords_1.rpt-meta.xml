@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Used in  Story - 3017</description>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTEFetchContractRecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>ORDER BY</filterOperator>
+        <filterValue>StartDate DESC</filterValue>
+        <globalKey>DRTEFetchContractRecordsCustom1848</globalKey>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordTypeId</filterValue>
+        <globalKey>DRTEFetchContractRecordsCustom6363</globalKey>
+        <inputFieldName>RecordTypeId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>accountId</filterValue>
+        <globalKey>DRTEFetchContractRecordsCustom1468</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom5190</globalKey>
+        <inputFieldName>RecordTypeId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom7966</globalKey>
+        <inputFieldName>StartDate</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom6717</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom4191</globalKey>
+        <inputFieldName>Type_of_Change__c</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom8664</globalKey>
+        <inputFieldName>Shift_Coverage_Change__c</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom2042</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTEFetchContractRecordsCustom8226</globalKey>
+        <inputFieldName>ContractNumber</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTEFetchContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contracts</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;recordTypeId&quot; : &quot;0127x00000GcMG1AAN&quot;,
+  &quot;accountId&quot; : &quot;0017x00001Bn7slAAB&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>DRTEFetchContractRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

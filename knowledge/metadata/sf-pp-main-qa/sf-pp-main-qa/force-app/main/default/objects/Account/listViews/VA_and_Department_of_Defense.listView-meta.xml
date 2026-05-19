@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VA_and_Department_of_Defense</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>Academic_Facility_chk__c</columns>
+    <columns>Medical_School_Affiliation__c</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>texcellency__DefHC_Hospital_Type__c</columns>
+    <columns>texcellency__DefHC_Network_Name__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_EM_Incumbent_Group_Type__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent_Group_Type__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>No Interest,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>recovery,addiction,closed,rehab,rehabilitation,psychiatric,mental,adcare,select,kindred,acuity,promise,diagnostics,surgical,bariatric</value>
+    </filters>
+    <filters>
+        <field>texcellency__DefHC_Hospital_Type__c</field>
+        <operation>equals</operation>
+        <value>VA Hospital,Department of Defense Hospital</value>
+    </filters>
+    <label>VA and Department of Defense</label>
+</ListView>

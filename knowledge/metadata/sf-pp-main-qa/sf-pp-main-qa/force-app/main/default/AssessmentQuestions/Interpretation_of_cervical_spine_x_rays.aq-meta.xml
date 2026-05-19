@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Interpretation of cervical spine x-rays</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Interpretation of cervical spine x-rays</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Interpretation_of_cervical_spine_x_rays</developerName>
+    <name>Interpretation of cervical spine x-rays</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

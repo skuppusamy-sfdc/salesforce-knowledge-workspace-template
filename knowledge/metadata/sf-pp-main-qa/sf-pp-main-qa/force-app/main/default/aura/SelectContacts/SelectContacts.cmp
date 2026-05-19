@@ -1,0 +1,61 @@
+<aura:component controller="SelectContactsController">
+    <aura:attribute name="oppotrunity" type="Opportunity" access="public" />
+    <aura:attribute name="OppContactsValue" type="List" access="public" />
+    <aura:attribute name="AccContactsValue" type="List" access="public" />
+    <aura:attribute name="opportunityId" type="String" access="public"/>
+    <aura:attribute name="filterValue" type="String" default="" access="private" />
+    <aura:attribute name="editDisabled" type="Boolean" default="true" access="private" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:registerEvent name="CheckBoxChanged" type="c:CheckBoxChanged" />
+    <aura:registerEvent name="NewContactAdd" type="c:NewContactAdd" />
+    <aura:registerEvent name="EditContact" type="c:EditContact" />
+    <aura:method name="reload" action="{!c.filterContacts}"/>
+    <aura:attribute name="oppContacts" type="List" access="public"/>
+    <aura:attribute name="accContacts" type="List" access="public"/>
+    <aura:attribute name="activeSections" type="List" default="['opp','acc']" />
+
+    <div class="slds-box slds-scrollable" style="height:30rem">
+        <lightning:layout>
+            <lightning:layoutItem size="8">
+                <ui:inputText class="my-input" aura:id="idblp" value="{!v.filterValue}" keyup="{!c.filterContacts}"
+                    updateOn="keyup" />
+            </lightning:layoutItem>
+            <lightning:layoutItem size="2" alignmentBump="top">
+                <lightning:buttonIcon size="large" class="slds-p-left_small" variant="bare" iconName="utility:add"
+                    alternativeText="New Contact " onclick="{!c.addContact}" />
+
+            </lightning:layoutItem>
+            <lightning:layoutItem size="2" alignmentBump="top">
+                <lightning:buttonIcon size="large" class="slds-p-left_small" variant="bare" iconName="utility:edit_form"
+                    alternativeText="Edit Contact" onclick="{!c.editContact}"
+                    disabled="{!v.editDisabled}" />
+
+            </lightning:layoutItem>
+
+
+        </lightning:layout>
+        <lightning:accordion aura:id="accordion" allowMultipleSectionsOpen="true" activeSectionName="{!v.activeSections}">
+            <lightning:accordionSection name="opp" label="Opportunity Contacts" class="slds-is_open">
+                <aura:set attribute="body">
+                    <div>
+                        <lightning:checkboxGroup name="OppContactsCheckBox" options="{!v.oppContacts}"
+                            value="{!v.OppContactsValue}" onchange="{!c.fireEvent}" />
+                    </div>
+
+                </aura:set>
+            </lightning:accordionSection>
+            <lightning:accordionSection name="acc" label="Account Contacts" class="slds-is_open">
+                <aura:set attribute="body">
+                    <div>
+                        <lightning:checkboxGroup name="OppContactsCheckBox" options="{!v.accContacts}"
+                            value="{!v.AccContactsValue}" onchange="{!c.fireEvent}" />
+                    </div>
+
+                </aura:set>
+            </lightning:accordionSection>
+
+
+        </lightning:accordion>
+    </div>
+
+</aura:component>

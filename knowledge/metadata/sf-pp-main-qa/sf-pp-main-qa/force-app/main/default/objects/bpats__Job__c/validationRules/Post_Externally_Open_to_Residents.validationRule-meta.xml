@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Externally_Open_to_Residents</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (bpats__Post_Externally__c = True, ISBLANK (  Text (Open_to_Residents__c  )))</errorConditionFormula>
+    <errorDisplayField>Open_to_Residents__c</errorDisplayField>
+    <errorMessage>For an external job, fill in: Open to Residents</errorMessage>
+</ValidationRule>

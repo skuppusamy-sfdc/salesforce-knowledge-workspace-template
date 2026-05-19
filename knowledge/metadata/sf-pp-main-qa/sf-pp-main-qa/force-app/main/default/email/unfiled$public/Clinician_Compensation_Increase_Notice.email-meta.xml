@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Clinician Compensation Increase Notice</name>
+    <style>none</style>
+    <subject>{!Contact.Name} - Compensation Increase Notice</subject>
+    <textOnly>Dear {!Contact.Name},  
+
+We’re pleased to share that your compensation will be increasing as outlined in the attached notice. If you have any questions, feel free to contact your Recruiter.  
+
+Thank you for your continued commitment and the high-quality care you provide.  
+
+Warm regards, 
+SCP Health</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,46 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "DisplayProviderNtwrkContract/Salesforce/1.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "recordId",
+                    "val": "0017x00001LCOLOAA5"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "DREHPFCPAfromPractitionerId",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "ClinicianId": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "DisplayCollaborativePracticeAgreements",
+    "Namespace": "",
+    "OmniUiCardKey": "DisplayCollaborativePracticeAgreements/Salesforce/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "DisplayCollaborativePracticeAgreements.json",
+    "SampleDataSourceResponse": "[{\"CPA\":[{\"Name\":\"CPA-00000\",\"Credentialing Status\":\"Pending\",\"Id\":\"a3S7x000001NkO9EAK\",\"First Scheduled Date\":\"2025-09-24\",\"Supervision/Collaboration Status\":\"Compliant\",\"Physician Name\":\"Mr.JoeannaLAasen\",\"NP/PA Professional Title\":\"LPN\",\"NP/PA Name\":\"Mr.JoeannaLAasen\",\"Relationship Status\":\"Alternate Supervising Physician\"},{\"Name\":\"CPA-00107\",\"Credentialing Status\":\"Billing Only\",\"Id\":\"a3S7x000001jmEPEAY\",\"First Scheduled Date\":\"2025-10-02\",\"Supervision/Collaboration Status\":\"Active Superv Phys/INA@ this account\",\"Physician Name\":\"Mr.JoeannaLAasen\",\"NP/PA Professional Title\":\"LPN\",\"NP/PA Name\":\"Mr.JoeannaLAasen\",\"Relationship Status\":\"Alternate Collaborating Physician\"}],\"total\":2}]",
+    "StylingConfiguration": "",
+    "UniqueName": "DisplayCollaborativePracticeAgreements_Salesforce_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/DisplayCollaborativePracticeAgreements"
+}

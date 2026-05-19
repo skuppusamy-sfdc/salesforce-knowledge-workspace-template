@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PULMONARY</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;PULMONARY- INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Evaluation and management of Asthma/COPD&lt;/li&gt;
+&lt;li&gt;Evaluation and management of URI/Bronchitis&lt;/li&gt;
+&lt;li&gt;Evaluation and management of Dyspnea&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>PULMONARY</developerName>
+    <name>PULMONARY</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

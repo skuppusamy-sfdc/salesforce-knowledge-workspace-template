@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Financial_Terms__c</fullName>
+    <label>Proposed Financial Terms</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Flat Subsidy</fullName>
+                <default>false</default>
+                <label>Flat Subsidy</label>
+            </value>
+            <value>
+                <fullName>Management Fee</fullName>
+                <default>false</default>
+                <label>Management Fee</label>
+            </value>
+            <value>
+                <fullName>Optimization Partnership/Flat Subsidy</fullName>
+                <default>false</default>
+                <label>Optimization Partnership/Flat Subsidy</label>
+            </value>
+            <value>
+                <fullName>Performance Partnership</fullName>
+                <default>false</default>
+                <label>Performance Partnership</label>
+            </value>
+            <value>
+                <fullName>Governance</fullName>
+                <default>false</default>
+                <label>Governance</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

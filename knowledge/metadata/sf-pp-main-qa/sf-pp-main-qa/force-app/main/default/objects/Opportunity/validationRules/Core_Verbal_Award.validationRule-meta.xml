@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Verbal_Award</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is Verbal Award for Core services.</description>
+    <errorConditionFormula>NOT( 
+ OR(RecordType.Name = &quot;Optum Sales Opportunity&quot;, 
+    RecordType.Name = &quot;Consulting Services Sales&quot;,
+    RecordType.Name = &quot;Primary Care Opportunity&quot;, 
+    RecordType.Name = &quot;Patient Engagement Opportunity&quot;,
+    RecordType.Name = &quot;SNF - Skilled Nursing Facility&quot;,
+    RecordType.Name = &quot;AL - Assisted Living Facility&quot;,    
+    RecordType.Name = &quot;eMAC Sales Opportunity&quot;)) &amp;&amp; 
+ ISPICKVAL(StageName, &quot;Verbal Award&quot;) &amp;&amp; 
+(ISNULL(Verbal_Award_Date__c) ||
+ ISNULL(Expected_Sign_Date__c) ||
+ ISNULL(Target_Contract_Start_Date__c))</errorConditionFormula>
+    <errorMessage>Required Fields: Verbal Award Date, Expected Sign Date and Target Contract Start Date.</errorMessage>
+</ValidationRule>

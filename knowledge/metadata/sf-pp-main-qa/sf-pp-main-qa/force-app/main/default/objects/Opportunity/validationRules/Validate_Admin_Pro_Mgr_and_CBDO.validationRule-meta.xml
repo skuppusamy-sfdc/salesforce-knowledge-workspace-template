@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Admin_Pro_Mgr_and_CBDO</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( 
+OR( 
+$Profile.Name = &quot;Sales Admin Process Manager&quot;,
+$Profile.Name = &quot;CBDO&quot;
+), 
+
+NOT( OR( ISPICKVAL(StageName,&quot;Sales Accepted Lead&quot;), 
+ISPICKVAL(StageName,&quot;Sales Qualified Opportunity&quot;), 
+ISPICKVAL(StageName,&quot;Proposal Request&quot;),
+ISPICKVAL(StageName,&quot;Proposal Development&quot;),
+ISPICKVAL(StageName,&quot;Proposal Presented&quot;),
+ISPICKVAL(StageName,&quot;Down Select&quot;),
+ISPICKVAL(StageName,&quot;Contract Request&quot;),
+ISPICKVAL(StageName,&quot;Marketing Qualified Lead&quot;),
+ISPICKVAL(StageName,&quot;Closed-No Bid&quot;),
+ISPICKVAL(StageName,&quot;Closed-Lost&quot;) 
+) 
+), 
+ISCHANGED(StageName) 
+)</errorConditionFormula>
+    <errorMessage>Progression not allowed, progression to this stage is managed by the Contracting Process.</errorMessage>
+</ValidationRule>

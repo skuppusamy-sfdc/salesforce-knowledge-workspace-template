@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PR1050558-852 : Recall Action Button to Call Recall_Intake_Form_Case_Screen_Flow</description>
+    <flowDefinition>Recall_Intake_Form_Case_Screen_Flow</flowDefinition>
+    <label>Recall</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

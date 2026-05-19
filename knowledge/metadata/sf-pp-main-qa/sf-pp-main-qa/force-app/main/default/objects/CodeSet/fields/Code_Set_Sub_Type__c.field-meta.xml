@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Code_Set_Sub_Type__c</fullName>
+    <label>Code Set Sub Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CodeSetType</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Independent Contractor</fullName>
+                <default>false</default>
+                <label>Independent Contractor</label>
+            </value>
+            <value>
+                <fullName>Leased</fullName>
+                <default>false</default>
+                <label>Leased</label>
+            </value>
+            <value>
+                <fullName>Locum</fullName>
+                <default>false</default>
+                <label>Locum</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Managed</fullName>
+                <default>false</default>
+                <label>Managed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Facility Title</controllingFieldValue>
+            <controllingFieldValue>Bonus</controllingFieldValue>
+            <valueName>Employee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility Title</controllingFieldValue>
+            <controllingFieldValue>Bonus</controllingFieldValue>
+            <valueName>Independent Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility Title</controllingFieldValue>
+            <valueName>Leased</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility Title</controllingFieldValue>
+            <valueName>Locum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility Title</controllingFieldValue>
+            <valueName>Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility Title</controllingFieldValue>
+            <valueName>Managed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

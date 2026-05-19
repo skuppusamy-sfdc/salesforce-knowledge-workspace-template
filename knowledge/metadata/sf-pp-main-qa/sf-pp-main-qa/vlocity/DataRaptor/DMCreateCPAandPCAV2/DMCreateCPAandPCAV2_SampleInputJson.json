@@ -1,0 +1,46 @@
+{
+    "Rates": {
+        "CPAAgreementType": "Preventive Care Agreement",
+        "CPAFacilityRate": "0rR7x0000000Gb3EAE",
+        "CPAName": "00003235-123444-Shift",
+        "CPA_Id": "",
+        "LA_MergeList": [
+            {
+                "AccountName": "EM - Children Hospital",
+                "BonusMeasureType": "NA",
+                "BonusPayout": 0,
+                "CPAAccount__c": "0017x00001IJtijAAD",
+                "CPAAgreementType": "Preventive Care Agreement",
+                "CPAContractId": "8007x00000doIPuAAM",
+                "CPAId": "0rR7x0000000Gb3EAE",
+                "CPAKey": "03B5FE9EF6C4FBFBFCBE995A8EDB09F4683024006",
+                "CPAName": "00003180-EM - Children Hospital-Shift",
+                "CPAStatus": "DRAFT",
+                "CPAType__c": "Shift",
+                "ContractPaymentAgreementId": "0rR7x0000000Gb3EAE",
+                "FacilityTitleName": "EE Nurse Practitioner",
+                "FacilityTitle__c": "0hs7x0000007K8iAAE",
+                "Name": "PCA-9753",
+                "OverrideProhibited": false,
+                "PCAFacilityRate": "0s47x0000000LMDAA2",
+                "PCAId": "0s47x0000000LMDAA2",
+                "PCA_Id": null,
+                "Rate__c": 70,
+                "RecordtypeName": "Client",
+                "ShiftName": "Day",
+                "Shift__c": "a4Q7x000000FJS9EAO",
+                "TargetMeasurePercent": 0,
+                "Time_Type__c": "Full Time",
+                "Unit_of_Measure__c": "per Hour",
+                "selectRate": true
+            }
+        ],
+        "PCAFacilityRate": "0s47x0000000LMDAA2",
+        "PNCId": "0mw7x00000010M9AAI",
+        "StartDate": "2025-09-04",
+        "Status": "Draft",
+        "accountId": "0017x00001F8BqvAAF",
+        "contractId": "8007x00000dwOmfAAE",
+        "typeOfRate": "Shift"
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PACS_Sales_Qualified_Opportunity</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is Sales Qualified Opportunity for PACS service line.</description>
+    <errorConditionFormula>RecordType.Name = &quot;Post Acute Care Services Opportunity&quot; &amp;&amp;
+  ISPICKVAL(StageName, &quot;Sales Qualified Opportunity&quot;) &amp;&amp;
+ (TEXT(Type) = &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Required Fields: Type</errorMessage>
+</ValidationRule>

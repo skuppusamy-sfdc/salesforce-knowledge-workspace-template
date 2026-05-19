@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proof_of_Value__c</fullName>
+    <description>Proof of Value - Case Studies, Hard-Hitting Metrics</description>
+    <inlineHelpText>Proof of Value - Case Studies, Hard-Hitting Metrics</inlineHelpText>
+    <label>Proof of Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

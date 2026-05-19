@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supervision_Collaboration_Status__c</fullName>
+    <label>Supervision/Collaboration Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active Superv Phys/INA@ this account</fullName>
+                <default>false</default>
+                <label>Active Superv Phys/INA@ this account</label>
+            </value>
+            <value>
+                <fullName>Clinician is Unresponsive</fullName>
+                <default>false</default>
+                <label>Clinician is Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Compliant</fullName>
+                <default>false</default>
+                <label>Compliant</label>
+            </value>
+            <value>
+                <fullName>Compliant, Supervisor Threshold Met</fullName>
+                <default>false</default>
+                <label>Compliant, Supervisor Threshold Met</label>
+            </value>
+            <value>
+                <fullName>Compliant – Not Working</fullName>
+                <default>false</default>
+                <label>Compliant – Not Working</label>
+            </value>
+            <value>
+                <fullName>Compliant – Upcoming Account Termination</fullName>
+                <default>false</default>
+                <label>Compliant – Upcoming Account Termination</label>
+            </value>
+            <value>
+                <fullName>Compliant – Upcoming Physician Termination</fullName>
+                <default>false</default>
+                <label>Compliant – Upcoming Physician Termination</label>
+            </value>
+            <value>
+                <fullName>Inactivation (delink) Pending</fullName>
+                <default>false</default>
+                <label>Inactivation (delink) Pending</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Not Compliant</fullName>
+                <default>false</default>
+                <label>Not Compliant</label>
+            </value>
+            <value>
+                <fullName>Not Compliant – Not Working</fullName>
+                <default>false</default>
+                <label>Not Compliant – Not Working</label>
+            </value>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+            <value>
+                <fullName>Not Required Immediately</fullName>
+                <default>false</default>
+                <label>Not Required Immediately</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Pending Supervising Phys #</fullName>
+                <default>false</default>
+                <label>Pending Supervising Phys #</label>
+            </value>
+            <value>
+                <fullName>Pending with Alternate/Backup Physician</fullName>
+                <default>false</default>
+                <label>Pending with Alternate/Backup Physician</label>
+            </value>
+            <value>
+                <fullName>Pending with Medical Board</fullName>
+                <default>false</default>
+                <label>Pending with Medical Board</label>
+            </value>
+            <value>
+                <fullName>Pending with Notary Public</fullName>
+                <default>false</default>
+                <label>Pending with Notary Public</label>
+            </value>
+            <value>
+                <fullName>Pending with NP/PA</fullName>
+                <default>false</default>
+                <label>Pending with NP/PA</label>
+            </value>
+            <value>
+                <fullName>Pending with Nursing Board</fullName>
+                <default>false</default>
+                <label>Pending with Nursing Board</label>
+            </value>
+            <value>
+                <fullName>Pending with SG for board submission</fullName>
+                <default>false</default>
+                <label>Pending with SG for board submission</label>
+            </value>
+            <value>
+                <fullName>Pending with Superv/Collab Physician</fullName>
+                <default>false</default>
+                <label>Pending with Superv/Collab Physician</label>
+            </value>
+            <value>
+                <fullName>Physician as Midlevel-Not supervising</fullName>
+                <default>false</default>
+                <label>Physician as Midlevel-Not supervising</label>
+            </value>
+            <value>
+                <fullName>Physician Not Eligible to Supervise</fullName>
+                <default>false</default>
+                <label>Physician Not Eligible to Supervise</label>
+            </value>
+            <value>
+                <fullName>Refuses to Supervise/Collaborate</fullName>
+                <default>false</default>
+                <label>Refuses to Supervise/Collaborate</label>
+            </value>
+            <value>
+                <fullName>Temporarily Inactive</fullName>
+                <default>false</default>
+                <label>Temporarily Inactive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

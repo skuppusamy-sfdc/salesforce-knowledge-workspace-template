@@ -1,0 +1,88 @@
+{
+    "BoardCertified": "Ineligible",
+    "ClinicianContactId": "0037x000012S0m0AAC",
+    "ClinicianId": "0017x00001DwGhAAAV",
+    "LastName": "Miki",
+    "MedicalLicense": [
+        {
+            "State": "AZ"
+        },
+        {
+            "State": "CA"
+        },
+        {
+            "State": "CO"
+        },
+        {
+            "State": "CT"
+        },
+        {
+            "State": "DC"
+        },
+        {
+            "State": "DE"
+        },
+        {
+            "State": "FL"
+        },
+        {
+            "State": "GA"
+        },
+        {
+            "State": "HI"
+        },
+        {
+            "State": "IA"
+        },
+        {
+            "State": "ID"
+        },
+        {
+            "State": "IL"
+        },
+        {
+            "State": "IN"
+        },
+        {
+            "State": "KS"
+        },
+        {
+            "State": "KY"
+        },
+        {
+            "State": "LA"
+        },
+        {
+            "State": "MA"
+        },
+        {
+            "State": "MD"
+        },
+        {
+            "State": "AL"
+        },
+        {
+            "State": "AK"
+        },
+        {
+            "State": "AR"
+        }
+    ],
+    "Name": "Roberto Augusto Miki Jr.",
+    "PracticingPreference": "HM",
+    "PracticingSpecialty": {
+        "Id": "0bO7x0000000WmIEAU",
+        "IsPrimary": false,
+        "Name": "Cardiology"
+    },
+    "PrimarySpecialty": {
+        "Id": "0bO7x0000000WmIEAU",
+        "IsPrimary": false,
+        "Name": "Cardiology"
+    },
+    "ProfessionalTitle": "DO",
+    "Taxonomy": {
+        "Id": "0bP7x0000000L1FEAU",
+        "Name": "Nurse Practitioner"
+    }
+}

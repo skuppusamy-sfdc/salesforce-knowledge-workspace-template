@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termination_Justification_Required</fullName>
+    <active>false</active>
+    <description>Deactivated as part of the following stories: PR1050558-3520 and PR1050558-3474.</description>
+    <errorConditionFormula>AND( ISPICKVAL(Termination_Reason__c, &apos;Other&apos;) , Termination_Justification__c=&apos;&apos; )</errorConditionFormula>
+    <errorMessage>Termination Justification can&apos;t be blank.</errorMessage>
+</ValidationRule>

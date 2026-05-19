@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Win_loss_date_required_if_not_open</fullName>
+    <active>false</active>
+    <errorConditionFormula>(ispickval(Status__c,&quot;Won&quot;) || ispickval(Status__c,&quot;Lost&quot;))&amp;&amp; isnull(Win_Loss_Date__c)</errorConditionFormula>
+    <errorDisplayField>Win_Loss_Date__c</errorDisplayField>
+    <errorMessage>Win/Lost Date is required for this status.</errorMessage>
+</ValidationRule>

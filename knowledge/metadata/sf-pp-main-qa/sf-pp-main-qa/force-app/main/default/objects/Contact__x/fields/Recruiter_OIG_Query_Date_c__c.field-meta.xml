@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recruiter_OIG_Query_Date_c__c</fullName>
+    <externalDeveloperName>Recruiter_OIG_Query_Date__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Recruiter OIG Query Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PE_Qualify_and_Discover_Needs</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Qualify and Discover Needs for PE service line.</description>
+    <errorConditionFormula>RecordType.Name = &quot;Patient Engagement Opportunity&quot; &amp;&amp;
+ISPICKVAL(StageName, &quot;Qualify and Discover Needs&quot;) &amp;&amp;
+(ISPICKVAL(Product_Line__c,&quot;&quot;) ||
+ISPICKVAL(Service__c,&quot;&quot;) ||
+ISPICKVAL(Type,&quot;&quot;))</errorConditionFormula>
+    <errorMessage>Required Fields: Product Line, Service and Type.</errorMessage>
+</ValidationRule>

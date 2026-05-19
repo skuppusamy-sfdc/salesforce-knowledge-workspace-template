@@ -1,0 +1,15 @@
+{
+  "required" : [ "GlobalFacilityId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "GlobalFacilityId" : {
+      "title" : "GlobalFacilityId",
+      "description" : "Stores the GlobalFacilityID provided by the customer to be used to find the EMR system.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Type__c</fullName>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Needs Assessment</fullName>
+                <default>false</default>
+                <label>Client Needs Assessment</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Deal Profile</fullName>
+                <default>false</default>
+                <label>Deal Profile</label>
+            </value>
+            <value>
+                <fullName>Fee for Service Proposed # Per Patient</fullName>
+                <default>false</default>
+                <label>Fee for Service Proposed # Per Patient</label>
+            </value>
+            <value>
+                <fullName>Fee Schedule Analysis</fullName>
+                <default>false</default>
+                <label>Fee Schedule Analysis</label>
+            </value>
+            <value>
+                <fullName>MOU</fullName>
+                <default>false</default>
+                <label>MOU</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Payer Reimbursement Analysis</fullName>
+                <default>false</default>
+                <label>Payer Reimbursement Analysis</label>
+            </value>
+            <value>
+                <fullName>Pro Forma</fullName>
+                <default>false</default>
+                <label>Pro Forma</label>
+            </value>
+            <value>
+                <fullName>Proforma at Contract Signature</fullName>
+                <default>false</default>
+                <label>Proforma at Contract Signature</label>
+            </value>
+            <value>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+                <label>Proposal</label>
+            </value>
+            <value>
+                <fullName>Provider Coverage Worksheet</fullName>
+                <default>false</default>
+                <label>Provider Coverage Worksheet</label>
+            </value>
+            <value>
+                <fullName>Provider Pay Rate / Market Analysis</fullName>
+                <default>false</default>
+                <label>Provider Pay Rate / Market Analysis</label>
+            </value>
+            <value>
+                <fullName>Risk Venue (Facility &amp; County) Analysis</fullName>
+                <default>false</default>
+                <label>Risk Venue (Facility &amp; County) Analysis</label>
+            </value>
+            <value>
+                <fullName>Volume Analysis Worksheet</fullName>
+                <default>false</default>
+                <label>Volume Analysis Worksheet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

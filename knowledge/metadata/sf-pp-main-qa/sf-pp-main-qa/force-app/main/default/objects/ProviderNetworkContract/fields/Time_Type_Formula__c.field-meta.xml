@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Type_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Healthcare_Practitioner_Facility__r.Time_Type__c)</formula>
+    <label>Time Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

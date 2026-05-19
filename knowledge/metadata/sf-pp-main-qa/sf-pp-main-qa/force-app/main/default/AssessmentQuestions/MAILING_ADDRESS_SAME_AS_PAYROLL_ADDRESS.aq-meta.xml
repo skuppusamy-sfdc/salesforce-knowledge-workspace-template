@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>MAILING ADDRESS SAME AS PAYROLL ADDRESS</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Mailing Address same as Payroll Address</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>MAILING_ADDRESS_SAME_AS_PAYROLL_ADDRESS</developerName>
+    <name>MAILING ADDRESS SAME AS PAYROLL ADDRESS</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

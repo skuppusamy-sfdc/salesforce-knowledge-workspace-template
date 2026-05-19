@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;TryCatchBlock&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;TryCatchBlock&quot; : {
+    &quot;CB_OnboardingTypeFacility&quot; : { },
+    &quot;CB_OnboardingTypeSCP&quot; : { }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DREGetAccountTeamMembers</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>ORDER BY</filterOperator>
+        <filterValue>CreatedDate</filterValue>
+        <globalKey>DREGetAccountTeamMembers49844397178988986</globalKey>
+        <inputObjectName>AccountTeamMember</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetAccountTeamMembers</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>teamMemberList</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetAccountTeamMembers6997351420325398</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>AccountTeamMember</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetAccountTeamMembers</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>teamMemberList</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetAccountTeamMembers5499694818686188</globalKey>
+        <inputFieldName>UserId</inputFieldName>
+        <inputObjectName>AccountTeamMember</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetAccountTeamMembers</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>teamMemberList</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>IN</filterOperator>
+        <filterValue>accountId</filterValue>
+        <globalKey>DREGetAccountTeamMembers15061348603567837</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>AccountTeamMember</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetAccountTeamMembers</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>teamMemberList</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>teamRole</filterValue>
+        <globalKey>DREGetAccountTeamMembers9657445245446138</globalKey>
+        <inputFieldName>TeamMemberRole</inputFieldName>
+        <inputObjectName>AccountTeamMember</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetAccountTeamMembers</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>teamMemberList</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetAccountTeamMembers9881260188543627</globalKey>
+        <inputFieldName>TeamMemberRole</inputFieldName>
+        <inputObjectName>AccountTeamMember</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetAccountTeamMembers</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>teamMemberList</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;0&quot; : {
+    &quot;AccountName&quot; : &quot;Jupiter Hospital&quot;,
+    &quot;TerminationTime&quot; : &quot;01:30:00.000Z&quot;,
+    &quot;pncId&quot; : &quot;0mw7x0000001HV3AAM&quot;,
+    &quot;PncTerminationDate&quot; : &quot;2025-10-13&quot;,
+    &quot;TerminatedBy&quot; : &quot;Facility Closure&quot;,
+    &quot;ServiceLineName&quot; : &quot;PT&quot;,
+    &quot;accountName&quot; : &quot;Jupiter Hospital&quot;,
+    &quot;TerminationTimeZone&quot; : &quot;Mountain&quot;,
+    &quot;serviceline&quot; : &quot;PT&quot;,
+    &quot;accountId&quot; : &quot;0017x00001IF7JFAA1&quot;
+  },
+  &quot;1&quot; : {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;TerminationTime&quot; : &quot;01:00:00.000Z&quot;,
+    &quot;pncId&quot; : &quot;0mw7x0000001HWfAAM&quot;,
+    &quot;PncTerminationDate&quot; : &quot;2025-10-21&quot;,
+    &quot;TerminatedBy&quot; : &quot;Facility&quot;,
+    &quot;ServiceLineName&quot; : &quot;EM&quot;,
+    &quot;accountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;TerminationTimeZone&quot; : &quot;Pacific&quot;,
+    &quot;serviceline&quot; : &quot;EM&quot;,
+    &quot;accountId&quot; : &quot;0017x000019oDCUAA2&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>DREGetAccountTeamMembers_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

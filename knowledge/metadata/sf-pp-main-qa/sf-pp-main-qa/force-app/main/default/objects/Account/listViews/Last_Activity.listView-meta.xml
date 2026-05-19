@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Activity</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>texcellency__DefHC_OwnershipStatus__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>9/1/2017</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>contains</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>Targeting_Total_Score__c</field>
+        <operation>greaterThan</operation>
+        <value>50</value>
+    </filters>
+    <label>Last Activity</label>
+</ListView>

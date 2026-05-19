@@ -1,0 +1,28 @@
+{
+    "Clinician": {
+        "ClinicianId": "Text",
+        "ProfessionalTitle": "Text"
+    },
+    "ClinicianMedicalLicense": {
+        "clinicianId": "Text",
+        "jurisdictionType": "Text",
+        "licenseName": "Text",
+        "medicalLicenseList": "Text",
+        "status": "Text",
+        "type": "Text"
+    },
+    "ClinicianSpecialty": [
+        {
+            "PractitionerId": "Text",
+            "PrimaryBoardSpecialty": "Text",
+            "SpecialtyId": "Text",
+            "SpecialtyName": "Text",
+            "SubSpecialty": "Text"
+        }
+    ],
+    "ClinicianTaxonomy": {
+        "PractitionerId": "Text",
+        "TaxonomyId": "",
+        "TaxonomyName": ""
+    }
+}

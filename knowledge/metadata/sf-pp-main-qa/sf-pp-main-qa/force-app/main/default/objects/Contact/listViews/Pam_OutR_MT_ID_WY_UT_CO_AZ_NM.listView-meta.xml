@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pam_OutR_MT_ID_WY_UT_CO_AZ_NM</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Strategy,Business Development,Marketing</value>
+    </filters>
+    <filters>
+        <field>CONTACT.ADDRESS2_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AZ,CO,ID,MT,NM,UT,WY</value>
+    </filters>
+    <label>Pam - OutR - MT, ID, WY, UT, CO, AZ, NM</label>
+</ListView>

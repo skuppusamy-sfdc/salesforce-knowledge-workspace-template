@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Prospects_for_Pardot_Campaign</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Account_Status__c</columns>
+    <columns>DHC_Ownership_Status__c</columns>
+    <columns>Account_State__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Account.Planned_Targeted_Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>Target,Prospect</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Chief Medical Officer,CMO</value>
+    </filters>
+    <filters>
+        <field>DHC_Ownership_Status__c</field>
+        <operation>contains</operation>
+        <value>Voluntary Nonprofit</value>
+    </filters>
+    <label>Target/Prospects for Pardot Campaign</label>
+</ListView>

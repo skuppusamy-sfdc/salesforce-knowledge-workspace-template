@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HealthcarePractitionerFacility$First_Scheduled_Date__c</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility$Account.PersonContact.Professional_Title__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>HealthcarePractitionerFacility$Provider_Hours_Last_3_Months__c</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r$Supervision_Collaboration_Status__c</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r$Comments__c</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>HealthcarePractitionerFacility$Account.Physical_State__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r$Relationship_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Collaborating Phys &amp; Resource Person,Collaborating Physician,Delegating Physician,Primary Supervising Physician</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HealthcarePractitionerFacility$Credentialling_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Active,Temporarily Inactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r$Supervision_Collaboration_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Inactivation (delink) Pending,Inactive,Not Required,Not Required Immediately</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HealthcarePractitionerFacility$Account.Facility_Profile__c.Facility_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r$Relationship_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>FL Physician PA Threshold Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Healthcare_Practitioner_Facilities_with_CPA_and_Contract__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>HealthcarePractitionerFacility.Collaborative_Practice_Agreements1__r.Contracts__r$Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

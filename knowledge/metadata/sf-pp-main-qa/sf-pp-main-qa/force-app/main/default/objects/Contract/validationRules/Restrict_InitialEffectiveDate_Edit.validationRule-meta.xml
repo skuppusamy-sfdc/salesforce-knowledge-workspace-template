@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_InitialEffectiveDate_Edit</fullName>
+    <active>true</active>
+    <description>Created as part of US:PR1050558-2593</description>
+    <errorConditionFormula>AND(
+    ISCHANGED(Initial_Effective_Date__c),
+    NOT(ISBLANK(PRIORVALUE(Initial_Effective_Date__c))),
+    $RecordType.DeveloperName = &quot;Clinician&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Initial_Effective_Date__c</errorDisplayField>
+    <errorMessage>The &apos;Initial Effective Date&apos; field cannot be edited. Please contact your administrator for further assistance.</errorMessage>
+</ValidationRule>

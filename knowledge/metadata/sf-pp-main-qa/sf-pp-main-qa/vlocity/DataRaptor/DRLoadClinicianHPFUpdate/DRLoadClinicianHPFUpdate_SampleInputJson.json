@@ -1,0 +1,18 @@
+[
+    {
+        "SelectedId": "0bS7x0000003ACXEA2",
+        "SelectedaccountName": "test facility",
+        "Selectedchecked": true,
+        "SelectedeffectiveDate": "2025-07-25",
+        "SelectedfacilityTitle": "External Locums",
+        "SelectedhpfStatus": "Prospect"
+    },
+    {
+        "SelectedId": "0bS7x0000003AE9EAM",
+        "SelectedaccountName": "test facility",
+        "Selectedchecked": true,
+        "SelectedeffectiveDate": "2025-07-25",
+        "SelectedfacilityTitle": "Leased Employee",
+        "SelectedhpfStatus": "Prospect"
+    }
+]

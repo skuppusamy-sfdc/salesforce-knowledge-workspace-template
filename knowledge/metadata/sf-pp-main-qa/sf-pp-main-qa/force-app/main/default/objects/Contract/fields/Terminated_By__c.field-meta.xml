@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terminated_By__c</fullName>
+    <label>Terminated By</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Company</fullName>
+                <default>false</default>
+                <label>Company</label>
+            </value>
+            <value>
+                <fullName>Facility</fullName>
+                <default>false</default>
+                <label>Facility</label>
+            </value>
+            <value>
+                <fullName>Facility Closure</fullName>
+                <default>false</default>
+                <label>Facility Closure</label>
+            </value>
+            <value>
+                <fullName>Mutual</fullName>
+                <default>false</default>
+                <label>Mutual</label>
+            </value>
+            <value>
+                <fullName>Not Identified</fullName>
+                <default>false</default>
+                <label>Not Identified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

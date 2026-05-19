@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Prioritization__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(Client_Segment__c, &apos;Local/Rural&apos;, 1, &apos;Regional&apos;, 2, &apos;Strategic&apos;, 3, 0)+
+
+CASE(Leadership_Position__c, &apos;No&apos;, 0, &apos;Yes&apos;, 3, 0)+
+
+CASE(Start_Up_Designation__c, &apos;No&apos;, 0, &apos;Yes&apos;, 3, 0)+
+
+Age_of_Requisition_Prioritization__c +  APAY_Prioritization__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Job Prioritization</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

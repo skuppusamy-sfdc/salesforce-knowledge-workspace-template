@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancel_Reason__c</fullName>
+    <description>If a job is cancelled, a Cancel Reason must be entered.</description>
+    <inlineHelpText>If a job is cancelled, a Cancel Reason must be entered.</inlineHelpText>
+    <label>Cancel Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coverage Model Change</fullName>
+                <default>false</default>
+                <label>Coverage Model Change</label>
+            </value>
+            <value>
+                <fullName>Retained Clinician</fullName>
+                <default>false</default>
+                <label>Retained Clinician</label>
+            </value>
+            <value>
+                <fullName>Position on Hold</fullName>
+                <default>false</default>
+                <label>Position on Hold</label>
+            </value>
+            <value>
+                <fullName>Facility Termination</fullName>
+                <default>false</default>
+                <label>Facility Termination</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

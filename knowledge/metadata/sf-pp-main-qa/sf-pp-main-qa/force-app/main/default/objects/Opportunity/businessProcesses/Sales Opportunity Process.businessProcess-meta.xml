@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales Opportunity Process</fullName>
+    <isActive>true</isActive>
+    <!-- <values>
+        <fullName>Build Sales Strategy</fullName>
+        <default>false</default>
+    </values> -->
+    <values>
+        <fullName>Build Sales Strategy and Develop Sponsorship</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Build Sales Strategy and Develop Sponsorship</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Client Abandoned Proposal</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - No Change</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - No Change%2FLost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - SCP Declined</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed-No Bid</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Confirm Customer Satisfaction</fullName>
+        <default>false</default>
+    </values>
+    <!-- <values>
+        <fullName>Develop Sponsorship</fullName>
+        <default>false</default>
+    </values> -->
+    <values>
+        <fullName>Implement</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiate Contract %26 Close</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualify and Discover Needs</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Validate Solution</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

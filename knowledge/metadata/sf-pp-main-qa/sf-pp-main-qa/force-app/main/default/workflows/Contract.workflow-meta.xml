@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Agreement_Request_Email_Alert</fullName>
+        <description>New Agreement Request Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Client_Contracting</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>VP_Sales_Operations</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Agreement_Request_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>SendEmployementChangeNotification</fullName>
+        <ccEmails>akondreddy@salesforce.com</ccEmails>
+        <ccEmails>ybattula@salesforce.com</ccEmails>
+        <ccEmails>kkoide@salesforce.com</ccEmails>
+        <description>Send Employement Change Notification</description>
+        <protected>false</protected>
+        <senderAddress>soomjeet.sahoo+qa.noreply.email@salesforce.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Notification_for_Employment_Type_Changes</template>
+    </alerts>
+</Workflow>

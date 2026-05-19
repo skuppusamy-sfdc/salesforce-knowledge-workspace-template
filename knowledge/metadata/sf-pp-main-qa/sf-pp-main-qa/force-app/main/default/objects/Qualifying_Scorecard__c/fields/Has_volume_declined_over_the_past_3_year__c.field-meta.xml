@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_volume_declined_over_the_past_3_year__c</fullName>
+    <description>Has volume declined over the past 3 years?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>(Yes = -2 points, No = +2 points)</inlineHelpText>
+    <label>Has volume declined over the past 3 year</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

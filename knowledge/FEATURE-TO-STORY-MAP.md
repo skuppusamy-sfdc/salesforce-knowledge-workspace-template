@@ -1,0 +1,3389 @@
+# Feature-to-Story Map
+
+**Purpose**: View stories organized by Epic/Feature for feature-level planning and tracking.
+
+**Last Updated**: April 22, 2026  
+**Total Stories**: 1804  
+**Total Epics/Themes**: 0  
+**Total Parent Stories**: 16  
+**Status**: Complete ✅
+
+---
+
+## Quick Search Guide
+
+- **Find by Epic**: Ctrl+F for epic/theme name
+- **Find by Parent**: Ctrl+F for parent story
+- **Find story**: Search for "PR1050558-XXX"
+
+---
+
+## Epics/Themes Overview
+
+| Epic/Theme | Stories | Sprints | Status Summary |
+|------------|---------|---------|----------------|
+
+---
+
+## Stories by Epic/Theme
+
+
+### Stories Without Epic (1804)
+
+- **PR1050558-228** (Sprint 1) - Closed: Related lists on the clinician record are not displaying correctly.
+- **PR1050558-220** (Sprint 1) - Closed: Issues on Related Clinician Records
+- **PR1050558-216** (Sprint 1) - Closed: Contract & Related objects Page layouts mismatch.
+- **PR1050558-212** (Sprint 1) - Closed: Added extra tab on right-most column where record-type= Competitor
+- **PR1050558-211** (Sprint 1) - Closed: Issues on Account record page layout
+- **PR1050558-205** (Sprint 1) - Closed: Configure Service Line Object
+- **PR1050558-203** (Sprint 1) - Closed: View & Edit Access is Missing for BDA, Legal, And Recruiter users.
+- **PR1050558-201** (Sprint 1) - Closed: Corporate Support Permission Set Updates
+- **PR1050558-168** (Sprint 1) - Closed: Account Edit Access
+- **PR1050558-166** (Sprint 1) - Closed: Permission Set Groups
+- **PR1050558-165** (Sprint 1) - Closed: Permission Sets
+- **PR1050558-164** (Sprint 1) - Closed: Project Management Tool Installation
+- **PR1050558-107** (Sprint 1) - Closed: Duplicate Clinician Records
+- **PR1050558-88** (Sprint 1) - Closed: Create Service Records
+- **PR1050558-87** (Sprint 1) - Closed: Related Clinician Records
+- **PR1050558-86** (Sprint 1) - Closed: Initial National, Facility, and Service Line Account Records
+- **PR1050558-81** (Sprint 1) - Closed: Initial Clinician Record
+- **PR1050558-80** (Sprint 1) - Closed: Facility Contract and Rate Records
+- **PR1050558-79** (Sprint 1) - Closed: Create Facility Records
+- **PR1050558-78** (Sprint 1) - Closed: Corporate Support App
+- **PR1050558-77** (Sprint 1) - Closed: Corporate Support Profile
+- **PR1050558-30** (Sprint 1) - Closed: Organization Wide Defaults
+- **PR1050558-23** (Sprint 1) - Closed: Create Clinician Person Accounts
+- **PR1050558-20** (Sprint 1) - Closed: OmniStudio Installation
+- **PR1050558-19** (Sprint 1) - Closed: Test Users
+- **PR1050558-4190** (Sprint 10) - Open: Observation Bug - In Create HPF Flow, if user do not select any HPF, then also i
+- **PR1050558-3475** (Sprint 10) - Closed: Regression Bug - Upon navigating back and forth on Rate Details screen on the Sp
+- **PR1050558-3456** (Sprint 10) - Open: Observation Bug: Duplicates records are being displayed on Cloned PO contracts d
+- **PR1050558-3454** (Sprint 10) - Closed: RPC record with blank Pay code getting created when a PO contract is cloned
+- **PR1050558-3452** (Sprint 10) - Closed: When adding new shift with old shift records having same facility title and rate
+- **PR1050558-3450** (Sprint 10) - Closed: Duplicates records are getting created because of Cloned Shift records PCA.
+- **PR1050558-3446** (Sprint 10) - Closed: Regression bug _Rate Pay Code not populated on first PCA record via flow after C
+- **PR1050558-3442** (Sprint 10) - Closed: Issues in Addendum related fields
+- **PR1050558-3441** (Sprint 10) - Closed: Observation - User able to delete the facility rate from the 'Facility Rates as 
+- **PR1050558-3440** (Sprint 10) - Closed: Regression: Story PR1050558-892 Clinician Contract Request: Leased or Locums
+- **PR1050558-3436** (Sprint 10) - Closed: Duplicate rates are being created after configure rate flow.
+- **PR1050558-3434** (Sprint 10) - Closed: The Clinician Contract record is not getting created after submission of Contrac
+- **PR1050558-3394** (Sprint 10) - Closed: Rates are not visible in summary tab of Clinician & Practice Operation contract.
+- **PR1050558-3393** (Sprint 10) - Closed: The end date is not getting updated when the new contract start date arrives
+- **PR1050558-3385** (Sprint 10) - Closed: Anticipated Clinical Hours field not visible on Clinician Contract record UI
+- **PR1050558-3374** (Sprint 10) - Closed: Clinician Portal User License
+- **PR1050558-3337** (Sprint 10) - Closed: Issues in clinician contract approval process
+- **PR1050558-3334** (Sprint 10) - Open: [Observation Bug]: Contract is created with record type clinician instead of Pra
+- **PR1050558-3330** (Sprint 10) - Open: [Observation Bug] : Contract is cloned when there is existing contract with stat
+- **PR1050558-3329** (Sprint 10) - Closed: Anticipated Clinical Hours not populating after contract creation (maps to *_No_
+- **PR1050558-3328** (Sprint 10) - Closed: 'Anticipated Clinical Hours' field on Contract not populated even after user ent
+- **PR1050558-3325** (Sprint 10) - Closed: Clinician contract not submitted to the correct VPO user for approval
+- **PR1050558-3323** (Sprint 10) - Closed: EE NP/PA Full Time Weekly Blended field missing in UI
+- **PR1050558-3319** (Sprint 10) - Closed: Data Quality and Clinician Exp Specialist Persona are not able to access Clinica
+- **PR1050558-3318** (Sprint 10) - Open: Observation Bug: A loop is going on for the Initiate Clinical Termination Reques
+- **PR1050558-3234** (Sprint 10) - Closed: Bonus Rate not calculating for PCA Rate Plans (EE_NPPA Hourly Blended & Overage 
+- **PR1050558-3233** (Sprint 10) - Closed: Permission for Integration User - Rate Pay Code, Contract Point Phone
+- **PR1050558-3230** (Sprint 10) - Closed: Tech - Update External Sharing Settings - 2 of 2
+- **PR1050558-3212** (Sprint 10) - Closed: View Practice Operations rate on Configure Rates
+- **PR1050558-3211** (Sprint 10) - Closed: Comparison View - Clinician Contract
+- **PR1050558-3208** (Sprint 10) - Ready for Implementation: Fix test classes
+- **PR1050558-3206** (Sprint 10) - Closed: [Regression Bug] - There should be only one Primary taxonomy record.
+- **PR1050558-3197** (Sprint 10) - Closed: Regression Bug - Upon clicking the Save for Later button and confirming it, an e
+- **PR1050558-3196** (Sprint 10) - Closed: Term sheet is not generated correctly for contract with multiple HPF
+- **PR1050558-3187** (Sprint 10) - Closed: Facility Change Request: Coverage Change - Only Pay Code Change - Auto Update Ex
+- **PR1050558-3171** (Sprint 10) - Closed: Location details displayed for HPF records not in 'Active' status
+- **PR1050558-3017** (Sprint 10) - Closed: Facility Change Request: Practice Operation Contract - Rules
+- **PR1050558-3012** (Sprint 10) - Closed: Bonus option not removed for Practice Operations contract
+- **PR1050558-3005** (Sprint 10) - Closed: Tech - Update External Sharing Settings 1 of 2
+- **PR1050558-3004** (Sprint 10) - Closed: Unable to update first clinical shift field on HPF as system admin user.
+- **PR1050558-2987** (Sprint 10) - Open: Event is being triggered for Leased/locums.
+- **PR1050558-2986** (Sprint 10) - Closed: Issues on Add Additional Fields
+- **PR1050558-2964** (Sprint 10) - Closed: [Regression bug] - Open shift APAY forms Validation.
+- **PR1050558-2955** (Sprint 10) - Closed: Clinician Contract Request: SCP to book Travel
+- **PR1050558-2951** (Sprint 10) - Open: [Observation Bug]:  Open Shift Apay request Form.
+- **PR1050558-2950** (Sprint 10) - Closed: Offboarding Tasks - Facility Specific - Update Task
+- **PR1050558-2947** (Sprint 10) - Closed: Clinician Contract Request: Contract Roll up of "Anticipated Clinical Hours"
+- **PR1050558-2928** (Sprint 10) - Closed: Clinician Contract Date Alignment - No Employment Type Change
+- **PR1050558-2924** (Sprint 10) - Closed: Add Additional Fields
+- **PR1050558-2916** (Sprint 10) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-2906** (Sprint 10) - Closed: Facility Change Request: Rates & Coverage 2 of 2
+- **PR1050558-2876** (Sprint 10) - Open: The URL for the CCPA Privacy Policy on the Core Connect portal displays a grey h
+- **PR1050558-2832** (Sprint 10) - Closed: Term Sheet Generation - Trigger Contract Generation
+- **PR1050558-2830** (Sprint 10) - Closed: Integration Platform Event: Re-Trigger Integration
+- **PR1050558-2828** (Sprint 10) - Closed: HPF Updates & Platform Event: Contract becomes Active
+- **PR1050558-2827** (Sprint 10) - Closed: HPF Updates & Platform Event: First Clinical Shift and Active (Integration)
+- **PR1050558-2826** (Sprint 10) - Closed: Update Rates in Qgenda
+- **PR1050558-2822** (Sprint 10) - Closed: Clinician Contract Request: Copy rates from Old HPF to New
+- **PR1050558-2819** (Sprint 10) - Closed: Clinical Support Case - Multiple issues.
+- **PR1050558-2815** (Sprint 10) - Closed: Notification for Employment Type Changes
+- **PR1050558-2811** (Sprint 10) - Closed: Generate Term Sheet - Term Sheet Generation
+- **PR1050558-2785** (Sprint 10) - Closed: NP/PA Tier Management: Clinician 2 of 2
+- **PR1050558-2679** (Sprint 10) - Closed: Intake Form Case - Set required fields within assessments
+- **PR1050558-2678** (Sprint 10) - Closed: Facility Term: Date of Client Termination Triggers Auto Clinician Offboarding Pr
+- **PR1050558-2677** (Sprint 10) - Closed: Clinician Offboarding - Termination Details Updates for Partner
+- **PR1050558-2676** (Sprint 10) - Closed: Clinician Offboarding - Termination Details Updates for Locums, Leased, Managed
+- **PR1050558-2675** (Sprint 10) - Closed: Case (RT: Clinician Change) & “Data Quality” queue
+- **PR1050558-2673** (Sprint 10) - Closed: Military Status Change Requests
+- **PR1050558-2672** (Sprint 10) - Closed: Business Entity Change Requests
+- **PR1050558-2670** (Sprint 10) - Closed: Clinician Name Change Requests
+- **PR1050558-2668** (Sprint 10) - Closed: Add Additional Fields for Integration
+- **PR1050558-2659** (Sprint 10) - Closed: Clinicians Contract Request: Fields Needed to Determine Addendum
+- **PR1050558-2640** (Sprint 10) - Closed: [Regression Bug]: All Persona user dont have access to Corporate Support console
+- **PR1050558-2639** (Sprint 10) - Closed: Facility Term: Initiate Clinician Termination - SCP and/or Facility
+- **PR1050558-2636** (Sprint 10) - Closed: Deal Team/Account Team Role Updates
+- **PR1050558-2635** (Sprint 10) - Closed: Account (Service Account) - Add Case Related List
+- **PR1050558-2634** (Sprint 10) - Closed: Contract (Client Contract) - Add Case Related List
+- **PR1050558-2633** (Sprint 10) - Closed: Clinician "At a Glance" UI - Updates
+- **PR1050558-2630** (Sprint 10) - Closed: Contracts Page Update - Add Path
+- **PR1050558-2616** (Sprint 10) - Closed: Update Case Related Lists on Clinician Record
+- **PR1050558-2558** (Sprint 10) - Closed: Clinician Contract Date Alignment
+- **PR1050558-2554** (Sprint 10) - Closed: Locums Rate Management
+- **PR1050558-2552** (Sprint 10) - Closed: Update Permissions for List Views
+- **PR1050558-2551** (Sprint 10) - Closed: Conditional Requirements for Clinician NPI
+- **PR1050558-2537** (Sprint 10) - Closed: Facility Rate Creation - Allow different rates based on Time Type
+- **PR1050558-2474** (Sprint 10) - Closed: Clinician Offboarding: Connect Termination and Clinical Match Processes
+- **PR1050558-2473** (Sprint 10) - Closed: Clinician Offboarding: Termination Updates
+- **PR1050558-2471** (Sprint 10) - Closed: Clinician Offboarding - Termination Details Update
+- **PR1050558-2469** (Sprint 10) - Closed: Open Shift APAY Request: Approval
+- **PR1050558-2468** (Sprint 10) - Closed: Collaborative Practice Agreement Review UI: Name Fields
+- **PR1050558-2467** (Sprint 10) - Closed: Clinician Contract: Leased and Locums Update to Executed Status
+- **PR1050558-2462** (Sprint 10) - Closed: Enable Integration to Workday for SCP Offboarding - 2 of 2
+- **PR1050558-2431** (Sprint 10) - Closed: Update Clinician Visa Data Model
+- **PR1050558-2422** (Sprint 10) - Closed: Service Account Attributes
+- **PR1050558-2421** (Sprint 10) - Closed: Automated Case Record Closure: Offboarding
+- **PR1050558-2418** (Sprint 10) - Closed: Insurance Provided By Validation Rule
+- **PR1050558-2239** (Sprint 10) - Closed: Clinician Contracting - Job Requisition Handoff to Asymbl
+- **PR1050558-2238** (Sprint 10) - Closed: Clinician Contract Update: Rate Pay Code
+- **PR1050558-2237** (Sprint 10) - Closed: Clinician Onboarding Case & Task Updates
+- **PR1050558-2227** (Sprint 10) - Closed: Client Rate Configuration - Cloning and Editing - "Re-Add"
+- **PR1050558-2224** (Sprint 10) - Closed: Open Shift APAY Request - Security Matrix updates
+- **PR1050558-2188** (Sprint 10) - Closed: Client Contract List Views
+- **PR1050558-2114** (Sprint 10) - Closed: Review Credentialling Fields
+- **PR1050558-2023** (Sprint 10) - Closed: Approval Work Item - Replace Approval Trace component
+- **PR1050558-1809** (Sprint 10) - Closed: Clinician Contract List Views - Update All Clinician Contracts - Approved
+- **PR1050558-1794** (Sprint 10) - Closed: Add Additional Fields
+- **PR1050558-1750** (Sprint 10) - Closed: Clinician Agreement Approval Process: VPO
+- **PR1050558-1739** (Sprint 10) - Closed: Facility Change Request: Rates & Coverage 1 of 2
+- **PR1050558-1726** (Sprint 10) - Closed: Inactivation Alert Automated Email
+- **PR1050558-1725** (Sprint 10) - Closed: Clinician Support Case
+- **PR1050558-1677** (Sprint 10) - Closed: Automatically Update the Opportunity Status
+- **PR1050558-1667** (Sprint 10) - Closed: Add Account Contact Relationship
+- **PR1050558-1584** (Sprint 10) - Closed: Clinician Contract Auto Populate Client Rate
+- **PR1050558-1028** (Sprint 10) - Closed: Intake Form Automation - Send Reminder after 3 days
+- **PR1050558-842** (Sprint 10) - Closed: IT Support Ticket
+- **PR1050558-472** (Sprint 10) - Closed: Client Agreement Request
+- **PR1050558-319** (Sprint 10) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-230** (Sprint 10) - Closed: Coordinate Contracting Data Model with Conga Build
+- **PR1050558-199** (Sprint 10) - Closed: Guided Screening Call Field Updates
+- **PR1050558-3913** (Sprint 11) - Closed: UAT Bug: C&CUAT68 E2E | UAT | "HPF" option was not available in the user interfa
+- **PR1050558-3901** (Sprint 11) - Closed: UAT Bug: C&CUAT58 Was not able to submit rate change once selected site and subm
+- **PR1050558-3900** (Sprint 11) - Closed: SIT Bug: C&CSIT09 SF HC_ Unable to execute contract for employee type "Independe
+- **PR1050558-3848** (Sprint 11) - Closed: Regression Bug - Issues on clincian contract
+- **PR1050558-3847** (Sprint 11) - Closed: Issues with POC and CCM record creation
+- **PR1050558-3800** (Sprint 11) - Closed: Regression bug : Configure rate - PCA records are being created with Type as Fac
+- **PR1050558-3797** (Sprint 11) - Closed: UAT Bug: C&CUAT52 Lisha Falk - Corporate Entity Mismatch approver - Cannot see C
+- **PR1050558-3792** (Sprint 11) - Closed: UAT Bug: C&CUAT45 Asked scripted question 'schedule for the month' and did not g
+- **PR1050558-3790** (Sprint 11) - Closed: Offboarding cases created for clinicians having Professional title other than NP
+- **PR1050558-3789** (Sprint 11) - Closed: UAT Bug: C&CUAT44 Facility Rate Change Notice - Full Cohort (NPPA Only)
+- **PR1050558-3788** (Sprint 11) - Closed: UAT Bug: C&CUAT43 Facility Rate Change Notice (Mixed)
+- **PR1050558-3787** (Sprint 11) - Closed: UAT Bug: C&CUAT42 CET EMR retrieval
+- **PR1050558-3786** (Sprint 11) - Closed: UAT Bug: C&CUAT41 CET Benefits Enrollment
+- **PR1050558-3785** (Sprint 11) - Closed: UAT Bug: C&CUAT40 CET Pay & Compensation Agentforce Fail
+- **PR1050558-3783** (Sprint 11) - Closed: UAT Bug: C&CUAT37 Term Sheet missing data that should be pulled from Contract Re
+- **PR1050558-3781** (Sprint 11) - Closed: Email is not being triggered to Clinician after contract status changed to Execu
+- **PR1050558-3780** (Sprint 11) - Closed: Higher facility rates to be synced from PO contract based on contract start date
+- **PR1050558-3773** (Sprint 11) - Closed: Regression_Bug: Closed Case related list on clinician record showing all case re
+- **PR1050558-3772** (Sprint 11) - Closed: Error when offboarding cases are closed without required details
+- **PR1050558-3770** (Sprint 11) - Closed: UAT Bug: C&CUAT33  Applying as clinician to job on external job board - not seei
+- **PR1050558-3769** (Sprint 11) - Closed: UAT Bug: C&CUAT32 Error received when trying to Generate Term Sheet from Approve
+- **PR1050558-3767** (Sprint 11) - Closed: UAT Bug: C&CUAT31 Document sent via DocuSign and Contract Record status/dates no
+- **PR1050558-3765** (Sprint 11) - Closed: UAT Bug: C&CUAT30 Clinician Contract Specialists need ability to see Related lis
+- **PR1050558-3764** (Sprint 11) - Closed: UAT Bug: C&CUAT29 Cannot view bonus details that were configured
+- **PR1050558-3760** (Sprint 11) - Closed: Regression Bug - Unable to update NPI or created HPF for clinician
+- **PR1050558-3757** (Sprint 11) - Closed: Issues in Pro Forma Model Approval, Rejection and Email.
+- **PR1050558-3740** (Sprint 11) - Closed: Client Offboarding Parent Case not closed when child cases are closed
+- **PR1050558-3703** (Sprint 11) - Closed: UAT Bug: C&CUAT28 HPF created when Candidate was moved from Interview to Offer i
+- **PR1050558-3674** (Sprint 11) - Closed: UAT Bug: C&CUAT27 EE NPPA Salary Calculation Incorrect/Needs Review
+- **PR1050558-3673** (Sprint 11) - Closed: UAT Bug: C&CUAT26 VPO not assigned to approve on Contract Record
+- **PR1050558-3672** (Sprint 11) - Closed: UAT Bug: C&CUAT25 Component Error when Scheduling Interview
+- **PR1050558-3670** (Sprint 11) - Closed: UAT Bug: C&CUAT HPF Not found error
+- **PR1050558-3669** (Sprint 11) - Closed: UAT Bug: C&CUAT24 PCA and PNC records not updated when I Continued with Draft Re
+- **PR1050558-3668** (Sprint 11) - Closed: Child case not closed even though there is no task related to it
+- **PR1050558-3663** (Sprint 11) - Closed: UAT Bug: C&CUAT21 Error received when DocuSign for Contracting selected from Con
+- **PR1050558-3624** (Sprint 11) - Closed: UAT Bug: C&CUAT20 Error received when selecting "Create Conga Agreement" from Co
+- **PR1050558-3623** (Sprint 11) - Closed: UAT Bug: C&CUAT19 EE NPPA rate fields are populated on a Contract Record for an 
+- **PR1050558-3622** (Sprint 11) - Closed: UAT Bug: C&CUAT18 Contract Request for Locums Clinician submitted and not update
+- **PR1050558-3621** (Sprint 11) - Closed: UAT Bug: C&CUAT17 Submit Contract Request button from Summary tab on Contract Re
+- **PR1050558-3620** (Sprint 11) - Closed: UAT Bug: C&CUAT16 Contract Request Bonus Configuration not saving to record and 
+- **PR1050558-3615** (Sprint 11) - Closed: UAT Enhancement: C&CUAT Error Handling
+- **PR1050558-3609** (Sprint 11) - Closed: UAT Bug: C&CUAT10.2 Unable to view Corporate Support app
+- **PR1050558-3608** (Sprint 11) - Closed: UAT Bug: C&CUAT08 Blank screen after screen flows when selecting Contract Reques
+- **PR1050558-3606** (Sprint 11) - Closed: UAT Bug: C&CUAT07 Agentforce error - "Something went wrong" / Unable to describe
+- **PR1050558-3605** (Sprint 11) - Closed: UAT Bug: C&CUAT06 Agentforce icon not visible in CET profile
+- **PR1050558-3600** (Sprint 11) - Closed: UAT Bug: C&CUAT01 Lacie Massingill getting error in UAT2 when trying to create c
+- **PR1050558-3596** (Sprint 11) - Closed: Previous active contract not getting updated when a contract starting today is m
+- **PR1050558-3595** (Sprint 11) - Closed: Intermettiently While completing the specify rates flow upon finish, getting a e
+- **PR1050558-3594** (Sprint 11) - Closed: Change management fields are not getting checked.
+- **PR1050558-3581** (Sprint 11) - Closed: The Column Type is missing and under List Views Filter the Task Record Type = De
+- **PR1050558-3580** (Sprint 11) - Closed: Issue in PMT Project layout
+- **PR1050558-3576** (Sprint 11) - Closed: Incorrect configuration for offboarding email report.
+- **PR1050558-3572** (Sprint 11) - Closed: Update HPF Temporary Inactive Reason data type
+- **PR1050558-3570** (Sprint 11) - Closed: SIT: C&CSIT05 Post risk review_ Close Out Genda_No Event is being sent from SF H
+- **PR1050558-3569** (Sprint 11) - Closed: SIT: C&CSIT04 SCP Termination event is received for IC but with insufficient dat
+- **PR1050558-3566** (Sprint 11) - Closed: SIT: C&CSIT03 Provider Contracting | Unable to Create EE Clinician Contract in S
+- **PR1050558-3565** (Sprint 11) - Closed: Practice Operation Change Object
+- **PR1050558-3564** (Sprint 11) - Closed: As Sales VP, unable to receive mails
+- **PR1050558-3546** (Sprint 11) - Closed: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3545** (Sprint 11) - Closed: Tech - SSO Flow - Send Clinician Info to Okta
+- **PR1050558-3522** (Sprint 11) - Closed: Experience Cloud related task/work
+- **PR1050558-3518** (Sprint 11) - Closed: Client Contract Request - Create new fields
+- **PR1050558-3459** (Sprint 11) - Closed: Client Onboarding - Configure Action Plan Template
+- **PR1050558-3449** (Sprint 11) - Closed: Facility Change Request: Reset flags when cloning a Practice Operations or Clini
+- **PR1050558-3445** (Sprint 11) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-3444** (Sprint 11) - Closed: Clinicians Contract Request: Mixed Bag Shift Rates?
+- **PR1050558-3392** (Sprint 11) - Closed: Facility Rate Creation - Clean Up - Remove "Shift" from Contract (RT: Clinician)
+- **PR1050558-3391** (Sprint 11) - Closed: Client Change Management Object
+- **PR1050558-3389** (Sprint 11) - Closed: Client Change Management - Update the Batch job to use Process Type = "Automatio
+- **PR1050558-3384** (Sprint 11) - Closed: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3383** (Sprint 11) - Closed: Add Additional Fields
+- **PR1050558-3374** (Sprint 11) - Closed: Clinician Portal User License
+- **PR1050558-3240** (Sprint 11) - Closed: Client Onboarding - Set PMT Task “Task Completion %” field
+- **PR1050558-3233** (Sprint 11) - Closed: Permission for Integration User - Rate Pay Code, Contract Point Phone
+- **PR1050558-3212** (Sprint 11) - Closed: View Practice Operations rate on Configure Rates
+- **PR1050558-3211** (Sprint 11) - Closed: Comparison View - Clinician Contract
+- **PR1050558-3207** (Sprint 11) - Closed: Facility Change Request: Practice Operation Contract - Auto End Date
+- **PR1050558-3205** (Sprint 11) - Closed: Queues to Support Onboarding/SUN process - List Views
+- **PR1050558-3204** (Sprint 11) - Closed: Queues to Support Onboarding/SUN process - Queue Creation
+- **PR1050558-3190** (Sprint 11) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-3187** (Sprint 11) - Closed: Facility Change Request: Coverage Change - Only Pay Code Change - Auto Update Ex
+- **PR1050558-3027** (Sprint 11) - Closed: Client Onboarding - PMT Project, PMT Phase, & PMT Task
+- **PR1050558-3026** (Sprint 11) - Closed: Client Onboarding - Implementation Queue
+- **PR1050558-3024** (Sprint 11) - Closed: Facility Change Request: Sync Practice Operations Contract rates to a Clinician 
+- **PR1050558-3018** (Sprint 11) - Closed: Facility Change Request: Practice Operation Contract - Send notification when fu
+- **PR1050558-3017** (Sprint 11) - Closed: Facility Change Request: Practice Operation Contract - Rules
+- **PR1050558-2988** (Sprint 11) - Closed: Facility Change Request: No Hard Deletes & Exclude "Is Deleted" Rates [Part 1 of
+- **PR1050558-2928** (Sprint 11) - Closed: Clinician Contract Date Alignment - No Employment Type Change
+- **PR1050558-2924** (Sprint 11) - Closed: Add Additional Fields
+- **PR1050558-2916** (Sprint 11) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-2906** (Sprint 11) - Closed: Facility Change Request: Rates & Coverage 2 of 2
+- **PR1050558-2815** (Sprint 11) - Closed: Notification for Employment Type Changes
+- **PR1050558-2811** (Sprint 11) - Closed: Generate Term Sheet - Term Sheet Generation
+- **PR1050558-2678** (Sprint 11) - Closed: Facility Term: Date of Client Termination Triggers Auto Clinician Offboarding Pr
+- **PR1050558-2659** (Sprint 11) - Closed: Clinicians Contract Request: Fields Needed to Determine Addendum
+- **PR1050558-2638** (Sprint 11) - Closed: Facility Term: Offboarding Email
+- **PR1050558-2637** (Sprint 11) - Closed: Facility Term: Auto Close Cases
+- **PR1050558-2474** (Sprint 11) - Closed: Clinician Offboarding: Connect Termination and Clinical Match Processes
+- **PR1050558-2151** (Sprint 11) - Closed: Auto Create Client Contract (Practice Operations) - Task Creation
+- **PR1050558-2139** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation - LOI Executed
+- **PR1050558-2088** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation - Manually Confirm Onboarding Start
+- **PR1050558-2087** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation -  “Green Light for Client Outreach”
+- **PR1050558-1802** (Sprint 11) - Closed: Client Onboarding - Task Activities within HC
+- **PR1050558-1800** (Sprint 11) - Closed: Facility Term: Review Clinician Roster
+- **PR1050558-1794** (Sprint 11) - Closed: Add Additional Fields
+- **PR1050558-1723** (Sprint 11) - Closed: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-1684** (Sprint 11) - Closed: Facility Term: Auto Create Tasks
+- **PR1050558-1683** (Sprint 11) - Closed: Facility Term: Auto Create Cases
+- **PR1050558-1682** (Sprint 11) - Closed: Facility Change Request: Clinician Side Manual  Change Management tasks
+- **PR1050558-1679** (Sprint 11) - Closed: Client Onboarding - Trigger Auto task creation
+- **PR1050558-1678** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation - Contract Status = Executed
+- **PR1050558-1073** (Sprint 11) - Closed: Update Agreement Request - Email Alert
+- **PR1050558-905** (Sprint 11) - Closed: SUN Orchestration - Trigger Case Creation
+- **PR1050558-319** (Sprint 11) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-317** (Sprint 11) - Closed: Facility Term
+- **PR1050558-314** (Sprint 11) - Closed: Client Onboarding - Action Plan Template
+- **PR1050558-313** (Sprint 11) - Closed: Client Onboarding - Update PMT Layout
+- **PR1050558-4378** (Sprint 12) - Closed: UAT Bug: C&CUAT154 - A-2 addendum on Base contract is not loading correctly for 
+- **PR1050558-4351** (Sprint 12) - Closed: UAT Bug: C&CUAT153 IC PRN NPPA Template Failure
+- **PR1050558-4315** (Sprint 12) - Closed: Regression bug_Time format mismatch between PNC record and FINAL SUN email
+- **PR1050558-4300** (Sprint 12) - Closed: UAT Bug: C&CUAT150 Termination Details checkboxes have been removed
+- **PR1050558-4297** (Sprint 12) - Closed: UAT Bug: C&CUAT149 Rate Change Notice for EE NPPA
+- **PR1050558-4293** (Sprint 12) - Closed: UAT Bug: C&CUAT148 Leadership Change Error
+- **PR1050558-4292** (Sprint 12) - Closed: UAT Bug: C&CUAT147 OFF_02- Process Voluntary Offboarding (Facility Only) - no CP
+- **PR1050558-4291** (Sprint 12) - Closed: UAT Bug: C&CUAT146 OFF-001 _Initiate Voluntary Offboarding (Facility Only)_Job r
+- **PR1050558-4289** (Sprint 12) - Closed: REGRESSION BUG: HPF Field = Temporary Inactive Reason - Remove Restricted pickli
+- **PR1050558-4285** (Sprint 12) - Closed: Hire Date not updated on the Contract record
+- **PR1050558-4265** (Sprint 12) - Closed: Regression bug _Withdrawing one job removes all active applications instead of o
+- **PR1050558-4250** (Sprint 12) - Closed: Regression bug _Extra Facility section displayed in portal onboarding screen whe
+- **PR1050558-4245** (Sprint 12) - Closed: UAT Bug: C&CUAT145 Matt Hebert is not performing Transition Specialist tasks but
+- **PR1050558-4243** (Sprint 12) - Closed: UI Bug: Offboarding Details section name on case layout is incorrect
+- **PR1050558-4242** (Sprint 12) - Closed: [Regression]Upon Deleting the PCA from Configure Rates button, Salary is not get
+- **PR1050558-4223** (Sprint 12) - Closed: UI Enhancement - Issues on Person Account LRP Enhancements
+- **PR1050558-4221** (Sprint 12) - Closed: User redirected to login page instead of reset password when user is reactivated
+- **PR1050558-4218** (Sprint 12) - Closed: UAT Bug: C&CUAT142 OFF010-Full SCP Offboarding - Clinical Match Approval_ Legal 
+- **PR1050558-4211** (Sprint 12) - Closed: UAT Bug : C&CUAT139 Unable to Approve APAY Shift request
+- **PR1050558-4204** (Sprint 12) - Closed: UAT Bug: On Contract record, the field labels should be  Contract  Start Date an
+- **PR1050558-4198** (Sprint 12) - Closed: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4192** (Sprint 12) - Closed: Duplicate CCM records created when Clinician contract is Executed
+- **PR1050558-4191** (Sprint 12) - Closed: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4189** (Sprint 12) - Closed: UAT Bug: C&CUAT138 SCP Offboarding details is not auto-populating
+- **PR1050558-4188** (Sprint 12) - Closed: UAT Bug: C&CUAT137 Offboarding - Employee Review Task created in error
+- **PR1050558-4187** (Sprint 12) - Closed: UAT Bug: C&CUAT136 Type of Rates mislabeled in Summary tab of Contract Record
+- **PR1050558-4186** (Sprint 12) - Closed: UAT Bug: C&CUAT135 Recruiters unable to see tasks details on tasks not assigned 
+- **PR1050558-4185** (Sprint 12) - Closed: UAT Bug: C&CUAT134 Heading glitch
+- **PR1050558-4172** (Sprint 12) - Closed: UAT Enhancement: "Credentialing" Updates
+- **PR1050558-4168** (Sprint 12) - Closed: LOI Contract – Fields Editable in Executed Status (Not Expected)
+- **PR1050558-4167** (Sprint 12) - Closed: UAT Bug: C&CUAT129 Clinician Name Change / Status Change
+- **PR1050558-4166** (Sprint 12) - Closed: UAT Bug: C&CUAT133 -  OM-010 Clinician Name Change Fail
+- **PR1050558-4163** (Sprint 12) - Closed: UAT Bug: C&CUAT127 - Case not populated on Clinician case logs
+- **PR1050558-4161** (Sprint 12) - Closed: UAT Bug: C&CUAT131 -  OM-011 Unable to complete test due to feature not being av
+- **PR1050558-4160** (Sprint 12) - Closed: UAT Bug: C&CUAT125 Credentialing is spelled incorrectly on fields
+- **PR1050558-4159** (Sprint 12) - Closed: UAT Bug: C&CUAT130 -  OM-009 Open CET Inquiry Cases list view option is not show
+- **PR1050558-4158** (Sprint 12) - Closed: Field Ops/SFO Case Access
+- **PR1050558-4154** (Sprint 12) - Closed: UAT Bug: C&CUAT124 Job Req for Backfill not created when Voluntary Offboarding i
+- **PR1050558-4153** (Sprint 12) - Closed: UAT Bug: C&CUAT123 Offboarding Case is Not getting created
+- **PR1050558-4146** (Sprint 12) - Closed: UAT Bug: C&CUAT122 Executed Term Sheet Not Displaying in Contract List View
+- **PR1050558-4145** (Sprint 12) - Closed: Field configuration issues.
+- **PR1050558-4143** (Sprint 12) - Closed: Regression bug: Clinician Facility Offboarding case is not getting created for M
+- **PR1050558-4141** (Sprint 12) - Closed: UAT Bug: C&CUAT120 - Clinician Change Request' option is not available in down a
+- **PR1050558-4140** (Sprint 12) - Closed: UAT Bug: C&CUAT119 - "IT Support" option is not available in Global Support Acti
+- **PR1050558-4138** (Sprint 12) - Closed: Temporary Inactive Reason API name fix
+- **PR1050558-4137** (Sprint 12) - Closed: Regression Bug - Type of Rate screen blank on PO Contract for Coverage Change = 
+- **PR1050558-4136** (Sprint 12) - Closed: Upon completion of Amend Contract the new LOI Contract should be displayed and p
+- **PR1050558-4135** (Sprint 12) - Closed: UAT Bug: C&CUAT117 -  Case didn't auto close once task was completed
+- **PR1050558-4134** (Sprint 12) - Closed: UAT Bug: C&CUAT116 -  CONT-018 Unable to Update Contract status to ""Contracting
+- **PR1050558-4133** (Sprint 12) - Closed: UAT Bug: C&CUAT115 -  OM_001 & OM-002 _Leadership Change
+- **PR1050558-4131** (Sprint 12) - Closed: Guided experience is not closed when using Cancel button
+- **PR1050558-4130** (Sprint 12) - Closed: Sun Notification Emails (Preliminary, Final & Revision) Missing Key Data Fields
+- **PR1050558-4129** (Sprint 12) - Closed: Add Configuration Issues
+- **PR1050558-4128** (Sprint 12) - Closed: UAT Bug: C&CUAT114 No Exit Interview task created for SCP Offboarding case
+- **PR1050558-4127** (Sprint 12) - Closed: UAT Bug: C&CUAT113 User does not have access to Offboarding cases
+- **PR1050558-4126** (Sprint 12) - Closed: UAT Bug: C&CUAT112 Delayed Email Receipt
+- **PR1050558-4125** (Sprint 12) - Closed: UAT Enhancement: C&CUAT111 In the info bubble – this was previously known as Fir
+- **PR1050558-4124** (Sprint 12) - Closed: 'Cloned From' field not populated on cloned RPC records
+- **PR1050558-4123** (Sprint 12) - Closed: UAT Enhancement: Collaborative Practice Agreement Review UI Update
+- **PR1050558-4120** (Sprint 12) - Closed: UAT Bug: C&CUAT110 Field label was misspelled, please correct
+- **PR1050558-4118** (Sprint 12) - Closed: The system does text to text compare and deletes the task records that does not 
+- **PR1050558-4110** (Sprint 12) - Closed: UAT Bug: C&CUAT108 Collaborative Practice Agreements not created for EE NP with 
+- **PR1050558-4109** (Sprint 12) - Closed: Client Contract -  Update 'child' contract page (Contract Type ≠ Master) & Actio
+- **PR1050558-4107** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Update Design for Displaying relate
+- **PR1050558-4103** (Sprint 12) - Closed: UAT Bug: C&CUAT107 CONT 0017__Generate, Send & Execute Term Sheet
+- **PR1050558-4102** (Sprint 12) - Closed: Error when linking multiple accounts to client contract using 'Add PNC' button
+- **PR1050558-4101** (Sprint 12) - Closed: Error when creating client contract without end date
+- **PR1050558-4094** (Sprint 12) - Closed: Submit Pro Forma Model for Approval - Send Rejection Email to VP Sales Ops DL
+- **PR1050558-4091** (Sprint 12) - Open: Observation bug: NPPA Tier field is not copied over from PO contract when we cre
+- **PR1050558-4089** (Sprint 12) - Closed: Regression Bug - Sent PEP tasks is not closing when PEP sent date field updates 
+- **PR1050558-4088** (Sprint 12) - Closed: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-4085** (Sprint 12) - Closed: Welcome email not triggered when new Clinician user is created in Scenario envir
+- **PR1050558-4084** (Sprint 12) - Open: Observation Bug: Unable to Specify Locums rates at Practice Operation contract.
+- **PR1050558-4081** (Sprint 12) - Closed: Regression Bug - Configure Rates UI is not aligned correctly
+- **PR1050558-4078** (Sprint 12) - Closed: UAT Enhancement: Update Clinician Contracting Permission Set
+- **PR1050558-4074** (Sprint 12) - Closed: UAT Bug: C&CUAT99 Contract Specialist needs to be able to view CTI record and in
+- **PR1050558-4073** (Sprint 12) - Closed: Observation Bug - User is able to add blank rates on clinician contract
+- **PR1050558-4071** (Sprint 12) - Closed: Legal Team Member is not able to proceed ahead after clicking on Save button on 
+- **PR1050558-4068** (Sprint 12) - Closed: UAT Bug: C&CUAT96 Approval Work Item Not Generated After Contract Submission for
+- **PR1050558-4067** (Sprint 12) - Closed: UAT Bug: C&CUAT97 ONB-004 Process Manual onboarding Facility only
+- **PR1050558-4066** (Sprint 12) - Closed: Regression bug: Delete icon for HPF appears misaligned and displayed outside the
+- **PR1050558-4065** (Sprint 12) - Closed: Client Contract Request - Configurations tab - Layout
+- **PR1050558-4062** (Sprint 12) - Closed: UAT Bug: C&CUAT95 Error Received when trying to generate term sheet
+- **PR1050558-4060** (Sprint 12) - Closed: UAT Bug: C&CUAT92 Jira 2907 - Clinician - Approved & Term Sheet Executed filters
+- **PR1050558-4057** (Sprint 12) - Closed: UAT Bug: C&CUAT89 $0 Rates causing error
+- **PR1050558-4051** (Sprint 12) - Closed: Client Contract - Updates to support allowing multiple Masters with the same Ser
+- **PR1050558-4036** (Sprint 12) - Closed: Conditional field sections (“Termination,” “Compensation,” “Protection,” “Insura
+- **PR1050558-4035** (Sprint 12) - Closed: Compensation details of HPF are displayed individually instead of a single table
+- **PR1050558-4029** (Sprint 12) - Closed: Tech Bug: Flow failure email
+- **PR1050558-4010** (Sprint 12) - Closed: UI Enhancement: Contract Summary UI Enhancements
+- **PR1050558-4009** (Sprint 12) - Closed: UI Enhancement: Person Account LRP Enhancements
+- **PR1050558-4008** (Sprint 12) - Closed: UI Enhancement: Task Related List Columns
+- **PR1050558-4007** (Sprint 12) - Closed: UI Enhancement: HPF Name Automation Update
+- **PR1050558-4005** (Sprint 12) - Closed: UAT Enhancement: Allow $0 Rates on Clinician Contracts
+- **PR1050558-4003** (Sprint 12) - Closed: UAT Bug: C&CUAT83 Relocation Bonus amount/terms not appearing in term sheet
+- **PR1050558-4001** (Sprint 12) - Closed: UAT Enhancement: Clinician Contract - Bonus Approval Updates
+- **PR1050558-3998** (Sprint 12) - Closed: Clinician Onboarding Event is being triggered on HPF record updates rather than 
+- **PR1050558-3993** (Sprint 12) - Closed: Client Onboarding - Trigger Task Creation - Ensure Task Record Type = Default
+- **PR1050558-3992** (Sprint 12) - Closed: UAT Bug: C&CUAT80 Applicant moved through Kanban to offer - HPF created in Inact
+- **PR1050558-3991** (Sprint 12) - Closed: UAT Bug: C&CUAT79 Contract bonus approval issue
+- **PR1050558-3990** (Sprint 12) - Closed: UAT Bug: C&CUAT78 Compensation not populating on term sheet
+- **PR1050558-3988** (Sprint 12) - Closed: UAT Bug: C&CUAT76 Global ID (Service Account and Person Account) has comma in it
+- **PR1050558-3960** (Sprint 12) - Closed: UAT Bug: C&CUAT75 When trying to request a term sheet, I'm getting an error that
+- **PR1050558-3950** (Sprint 12) - Closed: Remove 'Term Sheet Executed' field and Related Components
+- **PR1050558-3939** (Sprint 12) - Closed: UI Enhancement: HC Clinician Portal UI Enhancements
+- **PR1050558-3931** (Sprint 12) - Closed: TECH - Clinician Contract Request: Summary Screen - Add HPF - Refine Logic for s
+- **PR1050558-3930** (Sprint 12) - Closed: UAT Bug: C&CUAT72 NO EMR System Detected
+- **PR1050558-3924** (Sprint 12) - Closed: Client Contract Request - Configurations tab - Edit
+- **PR1050558-3921** (Sprint 12) - Closed: Regression Bug: When PCA is deleted from Summary tab & Configure the same rate a
+- **PR1050558-3912** (Sprint 12) - Closed: Contract object: Add 'RecordType DeveloperName'
+- **PR1050558-3901** (Sprint 12) - Closed: UAT Bug: C&CUAT58 Was not able to submit rate change once selected site and subm
+- **PR1050558-3848** (Sprint 12) - Closed: Regression Bug - Issues on clincian contract
+- **PR1050558-3803** (Sprint 12) - Closed: Facility Term: Add Case related list to Client Offboarding Case
+- **PR1050558-3797** (Sprint 12) - Closed: UAT Bug: C&CUAT52 Lisha Falk - Corporate Entity Mismatch approver - Cannot see C
+- **PR1050558-3783** (Sprint 12) - Closed: UAT Bug: C&CUAT37 Term Sheet missing data that should be pulled from Contract Re
+- **PR1050558-3779** (Sprint 12) - Closed: UAT Enhancement: EE NPPA Salary Calculation Update
+- **PR1050558-3777** (Sprint 12) - Closed: Facility Change Request: No Hard Deletes & Exclude "Is Deleted" Rates [Part 2 of
+- **PR1050558-3768** (Sprint 12) - Closed: Contract Provider Network Relation Object
+- **PR1050558-3767** (Sprint 12) - Closed: UAT Bug: C&CUAT31 Document sent via DocuSign and Contract Record status/dates no
+- **PR1050558-3766** (Sprint 12) - Closed: Change mapping
+- **PR1050558-3757** (Sprint 12) - Closed: Issues in Pro Forma Model Approval, Rejection and Email.
+- **PR1050558-3619** (Sprint 12) - Closed: Client Contract Request - Add New Provider Network Contracts
+- **PR1050558-3614** (Sprint 12) - Closed: Tech - SSO Flow - Send Clinician Info to Okta - UPDATE - change criteria and sen
+- **PR1050558-3585** (Sprint 12) - Closed: Update permissions to Opportunity records
+- **PR1050558-3583** (Sprint 12) - Closed: Create/Update Code Set (Facility Title) Records
+- **PR1050558-3574** (Sprint 12) - Closed: Client Change Management - Clinician Contract Executed between PO Contracts
+- **PR1050558-3573** (Sprint 12) - Closed: Tech - SSO Flow - Reactivate User & Update Platform Event
+- **PR1050558-3572** (Sprint 12) - Closed: Update HPF Temporary Inactive Reason data type
+- **PR1050558-3546** (Sprint 12) - Closed: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3545** (Sprint 12) - Closed: Tech - SSO Flow - Send Clinician Info to Okta
+- **PR1050558-3521** (Sprint 12) - Closed: Add Additional Fields
+- **PR1050558-3520** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Terminate Contract
+- **PR1050558-3519** (Sprint 12) - Closed: Client Contract Request - Configurations tab - View & Delete Configuration
+- **PR1050558-3518** (Sprint 12) - Closed: Client Contract Request - Create new fields
+- **PR1050558-3517** (Sprint 12) - Closed: SUN Orchestration - Trigger Task Creation
+- **PR1050558-3474** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Terminate Contract
+- **PR1050558-3469** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Email Alert
+- **PR1050558-3468** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Activate Contract
+- **PR1050558-3467** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Expire Contract
+- **PR1050558-3466** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Amend Contract
+- **PR1050558-3465** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Cancel Contract
+- **PR1050558-3464** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - View & Edit
+- **PR1050558-3463** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Update LOI guided experience
+- **PR1050558-3459** (Sprint 12) - Closed: Client Onboarding - Configure Action Plan Template
+- **PR1050558-3451** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation for Onboarding Task related to PMT Phase
+- **PR1050558-3445** (Sprint 12) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-3444** (Sprint 12) - Closed: Clinicians Contract Request: Mixed Bag Shift Rates?
+- **PR1050558-3388** (Sprint 12) - Closed: Client Change Management - Create Records
+- **PR1050558-3384** (Sprint 12) - Closed: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3375** (Sprint 12) - Closed: Tech - HC Portal Configuration - Update Sender and Portal Admin
+- **PR1050558-3351** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Activate Contract
+- **PR1050558-3347** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Expire Contract
+- **PR1050558-3343** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Amend Contract
+- **PR1050558-3339** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Cancel Contract
+- **PR1050558-3338** (Sprint 12) - Closed: Client Onboarding - Create Task based on Service Line
+- **PR1050558-3240** (Sprint 12) - Closed: Client Onboarding - Set PMT Task “Task Completion %” field
+- **PR1050558-3205** (Sprint 12) - Closed: Queues to Support Onboarding/SUN process - List Views
+- **PR1050558-3204** (Sprint 12) - Closed: Queues to Support Onboarding/SUN process - Queue Creation
+- **PR1050558-3201** (Sprint 12) - Closed: Generate Term Sheet - Term Sheet Generation - Add Other Type of Rates
+- **PR1050558-3190** (Sprint 12) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-3027** (Sprint 12) - Closed: Client Onboarding - PMT Project, PMT Phase, & PMT Task
+- **PR1050558-3026** (Sprint 12) - Closed: Client Onboarding - Implementation Queue
+- **PR1050558-3024** (Sprint 12) - Closed: Facility Change Request: Sync Practice Operations Contract rates to a Clinician 
+- **PR1050558-3023** (Sprint 12) - Closed: Client Contract Request - Edit Client Contract (Add Configuration)
+- **PR1050558-3022** (Sprint 12) - Closed: Client Contract Request - View Client Contract
+- **PR1050558-3021** (Sprint 12) - Closed: Client Contract Request - New Client Contract
+- **PR1050558-3020** (Sprint 12) - Closed: Client Contract Request - Expanded View
+- **PR1050558-3019** (Sprint 12) - Closed: Client Contract Request - View related Client Contracts on Accounts
+- **PR1050558-3013** (Sprint 12) - Closed: Tech - SSO Flow - Experience Cloud Welcome Email
+- **PR1050558-2965** (Sprint 12) - Closed: Clinician Contract - Update Cloning to include Rate Pay Codes
+- **PR1050558-2907** (Sprint 12) - Closed: Term Sheet Generation - “Send Term Sheet for Signature” & List View
+- **PR1050558-2807** (Sprint 12) - Closed: Client Contract Request - Client Contract - Status & Key Date Updates
+- **PR1050558-2638** (Sprint 12) - Closed: Facility Term: Offboarding Email
+- **PR1050558-2637** (Sprint 12) - Closed: Facility Term: Auto Close Cases
+- **PR1050558-2472** (Sprint 12) - Closed: Clinician Offboarding: Backfill Needed
+- **PR1050558-2442** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Status & Key Date Updates
+- **PR1050558-2441** (Sprint 12) - Closed: Client Contract Request - Client Agreement Request Case Layout & List View
+- **PR1050558-2151** (Sprint 12) - Closed: Auto Create Client Contract (Practice Operations) - Task Creation
+- **PR1050558-2139** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation - LOI Executed
+- **PR1050558-2120** (Sprint 12) - Closed: Workday Hire Date Change
+- **PR1050558-2088** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation - Manually Confirm Onboarding Start
+- **PR1050558-2087** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation -  “Green Light for Client Outreach”
+- **PR1050558-1800** (Sprint 12) - Closed: Facility Term: Review Clinician Roster
+- **PR1050558-1736** (Sprint 12) - Closed: Client Contract Request View for Legal
+- **PR1050558-1723** (Sprint 12) - Closed: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-1684** (Sprint 12) - Closed: Facility Term: Auto Create Tasks
+- **PR1050558-1683** (Sprint 12) - Closed: Facility Term: Auto Create Cases
+- **PR1050558-1682** (Sprint 12) - Closed: Facility Change Request: Clinician Side Manual  Change Management tasks
+- **PR1050558-1679** (Sprint 12) - Closed: Client Onboarding - Trigger Auto task creation
+- **PR1050558-1678** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation - Contract Status = Executed
+- **PR1050558-1073** (Sprint 12) - Closed: Update Agreement Request - Email Alert
+- **PR1050558-905** (Sprint 12) - Closed: SUN Orchestration - Trigger Case Creation
+- **PR1050558-887** (Sprint 12) - Closed: SUN Orchestration - Email Alert
+- **PR1050558-886** (Sprint 12) - Closed: SUN Task Template Setup
+- **PR1050558-479** (Sprint 12) - Closed: Submit Pro Forma Model for Approval
+- **PR1050558-319** (Sprint 12) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-317** (Sprint 12) - Closed: Facility Term
+- **PR1050558-314** (Sprint 12) - Closed: Client Onboarding - Action Plan Template
+- **PR1050558-313** (Sprint 12) - Closed: Client Onboarding - Update PMT Layout
+- **PR1050558-5223** (Sprint 12.1) - Closed: UAT Bug: C&CUAT395 Agentforce not using hourly blend for EE PT NPPAs
+- **PR1050558-5221** (Sprint 12.1) - Closed: UAT Bug: C&CUAT393 Incorrect Effective From Date Populating on Rehire HPF
+- **PR1050558-5208** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT390 From the Service Account Missing Client Contract Link
+- **PR1050558-5207** (Sprint 12.1) - In Test: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5202** (Sprint 12.1) - Closed: UAT Enhancement: HPF Effective Dates UPDATE
+- **PR1050558-5199** (Sprint 12.1) - Closed: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5198** (Sprint 12.1) - Closed: UAT Bug: C&CUAT386 Fully Executed Contract Not Moving From Approved Status
+- **PR1050558-5184** (Sprint 12.1) - Closed: UAT Bug: C&CUAT384 Unable to create contract correctly. HPF error
+- **PR1050558-5183** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5182** (Sprint 12.1) - Closed: UAT Bug: C&CUAT382 HPFs switching to inactive before all Facility Off Boarding t
+- **PR1050558-5180** (Sprint 12.1) - Closed: UAT Bug: C&CUAT380 Agentforce: rate change notice process completed, but system 
+- **PR1050558-5179** (Sprint 12.1) - Closed: UAT Bug: C&CUAT379 Shift rate was removed on new PO and rate change done via Age
+- **PR1050558-5174** (Sprint 12.1) - Closed: UAT Bug: C&CUAT376 Cannot see the Facility Global ID
+- **PR1050558-5173** (Sprint 12.1) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5172** (Sprint 12.1) - Closed: E2E Bug: C&CUAT375 Provider rates did not end date in QGenda when the provider w
+- **PR1050558-5169** (Sprint 12.1) - On Hold: UAT Enhancement: C&CUAT372 Rate Change (Increase) being created by Request Contr
+- **PR1050558-5168** (Sprint 12.1) - Closed: UAT Bug: C&CUAT371 CTI has to have an expiration date for the termination to fir
+- **PR1050558-5167** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT263 Permissions to run reports
+- **PR1050558-5158** (Sprint 12.1) - Closed: Issues in new HPFs created from Job
+- **PR1050558-5155** (Sprint 12.1) - Closed: UAT Bug: C&CUAT369 Agentforce - Null rate displayed on new clinician contract fr
+- **PR1050558-5154** (Sprint 12.1) - Closed: UAT Bug: C&CUAT370 Agentforce - Clinician displayed in list but doesn't have an 
+- **PR1050558-5152** (Sprint 12.1) - Closed: UAT Enhancement: Activate Services Object Record Types
+- **PR1050558-5151** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Facility Title Change - Auto Create Facili
+- **PR1050558-5150** (Sprint 12.1) - Closed: HPF Selection ignores "Effective From" Date Validation when HPF is added using A
+- **PR1050558-5147** (Sprint 12.1) - Closed: UAT Bug: C&CUAT366 Coverage Change only Practice Ops Executed - Downstream proce
+- **PR1050558-5145** (Sprint 12.1) - Open: Regression bug _HPF Details Not Displaying for Existing Active/Prospect HPFs in 
+- **PR1050558-5140** (Sprint 12.1) - Closed: Regression bug : Incorrect Rate Data in Configure Rate Flow on Subsequent Loads
+- **PR1050558-5121** (Sprint 12.1) - Closed: UAT Enhancement: Update Clinician Onboarding Task Assignment
+- **PR1050558-5120** (Sprint 12.1) - Closed: UAT Enhancement : Grant Payroll Access for Pay Codes
+- **PR1050558-5118** (Sprint 12.1) - Closed: UAT Bug: C&CUAT364 Warning Message in Error - Experience Cloud
+- **PR1050558-5117** (Sprint 12.1) - Closed: UAT Enhancement: Prevent Clinician Contract with Same Start Date
+- **PR1050558-5116** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT363 Add Facility Global ID to Facility page
+- **PR1050558-5115** (Sprint 12.1) - Closed: UAT Bug: C&CUAT362 IC PRN NPPA - Base Rates missing on Addendum A
+- **PR1050558-5107** (Sprint 12.1) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5104** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5098** (Sprint 12.1) - Closed: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095** (Sprint 12.1) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5094** (Sprint 12.1) - Closed: UAT Bug: C&CUAT351 Data input by Applicant on Intake Form not displayed in SF on
+- **PR1050558-5093** (Sprint 12.1) - Closed: UAT Enhancement: Add Time Type to Pay Codes Layout
+- **PR1050558-5092** (Sprint 12.1) - Closed: UAT Bug: C&CUAT350 Job Record for IC PRN NPPA and IC PRN Physician requiring use
+- **PR1050558-5091** (Sprint 12.1) - Closed: UAT Enhancement - Adjust Manual Create HPF Experience and HPF View/Edit
+- **PR1050558-5090** (Sprint 12.1) - Closed: UAT Enhancement - Date Validation for Automated Create HPF from Job
+- **PR1050558-5083** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-5082** (Sprint 12.1) - Closed: UAT Bug: C&CUAT347 EE PT Contract updated to executed error
+- **PR1050558-5081** (Sprint 12.1) - Closed: E2E Bug: C&CUAT346 Clinician Offboarding Dates
+- **PR1050558-5080** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT345 Terming provider in salesforce shows a closed case if
+- **PR1050558-5079** (Sprint 12.1) - Blocked: UAT Enhancement: C&CUAT344 Need the ability to terminate a provider (facility an
+- **PR1050558-5075** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT341 Rate Active Date - Net New Field
+- **PR1050558-5070** (Sprint 12.1) - Closed: UAT Bug: C&CUAT338 Misspelled word in picklist on Interview Feedback form
+- **PR1050558-5068** (Sprint 12.1) - Closed: UAT Enhancement: Include Active HPFs in Clinician Contract
+- **PR1050558-5065** (Sprint 12.1) - Closed: UAT Bug: C&CUAT336 Recruiter cannot see assessment
+- **PR1050558-5064** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT335 Populate Intake Form Answers to Clinician Person Acco
+- **PR1050558-5051** (Sprint 12.1) - Closed: UAT Enhancement: Require Recruiters to Populate 'Requested Start Date' on ATS Ap
+- **PR1050558-5011** (Sprint 12.1) - Closed: Duplicate task is created when Applicant is moved to "Awaiting intake form" usin
+- **PR1050558-5010** (Sprint 12.1) - Closed: Task is not created for clinician with blank email ID.
+- **PR1050558-5003** (Sprint 12.1) - Closed: E2E Bug: C&CUAT330 Duplicate Positions and Hires
+- **PR1050558-5001** (Sprint 12.1) - On Hold: UAT Enhancement: C&CUAT328 Experience Cloud - Change Your Password
+- **PR1050558-5000** (Sprint 12.1) - Closed: UAT Bug: C&CUAT327 Submitted Applicant Name Changed on Applicant Card
+- **PR1050558-4998** (Sprint 12.1) - Closed: UAT Enhancement: Add Blended Rates ("EE NP/PA Hourly Blended") to Preventive Car
+- **PR1050558-4997** (Sprint 12.1) - Closed: UAT Enahancement: C&CUAT326 Contract & HPF Effective Dates
+- **PR1050558-4989** (Sprint 12.1) - Closed: UAT Bug: C&CUAT325 EE FT RN Agreement generated incorrectly
+- **PR1050558-4986** (Sprint 12.1) - Closed: UAT Bug: C&CUAT321 Testing Existing NPPA with Compensation Changes
+- **PR1050558-4985** (Sprint 12.1) - Closed: UAT Bug: C&CUAT320 Contract Signed Date - Candidate - is wrong
+- **PR1050558-4983** (Sprint 12.1) - Closed: E2E Bug: C&CUAT318 Hire Date in past
+- **PR1050558-4981** (Sprint 12.1) - Closed: Observation bug: Activate button is displayed when it should not be available
+- **PR1050558-4980** (Sprint 12.1) - Closed: UAT Enhancement - Date Validation for Manual Create HPF
+- **PR1050558-4979** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT315 Suffix should not be required on Intake Form
+- **PR1050558-4977** (Sprint 12.1) - Closed: Observed Bug: Contact Email Validation for Intake Form
+- **PR1050558-4973** (Sprint 12.1) - Closed: Intake Form Criteria Update: Update Logic from HPF to Job
+- **PR1050558-4970** (Sprint 12.1) - Closed: UAT Enhancement: Risk Review - Add visibility to the Assessment on the Risk Revi
+- **PR1050558-4969** (Sprint 12.1) - Closed: UAT Bug: Ok to Send Rates field is not present on HPF record.
+- **PR1050558-4961** (Sprint 12.1) - Closed: Issue in Omni flows
+- **PR1050558-4958** (Sprint 12.1) - Closed: UAT Enhancement: User unable to complete the assessment in HC Portal
+- **PR1050558-4954** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Facility Title Change - HPF Updates to OLD
+- **PR1050558-4953** (Sprint 12.1) - Closed: Observation Bug - 'Contract Active' field on Service Account not being updated a
+- **PR1050558-4952** (Sprint 12.1) - Closed: Agentforce is updating part time rates in Full time PCA.
+- **PR1050558-4951** (Sprint 12.1) - Closed: Regression Bug: Contracts are not being Cancelled after inactivation of HPF.
+- **PR1050558-4948** (Sprint 12.1) - Closed: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+- **PR1050558-4947** (Sprint 12.1) - Open: Observation bug _Variable Rate Display Issue in Cloned HPF
+- **PR1050558-4945** (Sprint 12.1) - Closed: UAT Bug: C&CUAT311 Clinician Contract Record configured for IC Physician - dupli
+- **PR1050558-4944** (Sprint 12.1) - Closed: UAT Bug: C&CUAT310 Clone a contract - failed to refresh client rates thus result
+- **PR1050558-4942** (Sprint 12.1) - Closed: UAT Enhancement: Refresh Client Rate button: Deleting Rates when Facility Rate f
+- **PR1050558-4940** (Sprint 12.1) - Closed: UAT Bug: C&CUAT307 Global Provider ID not visible for Recruiter Persona
+- **PR1050558-4935** (Sprint 12.1) - Closed: Platform Event Update - 'HPFUpdate' - trigger based on Credentialing Status
+- **PR1050558-4934** (Sprint 12.1) - Closed: UAT Bug: C&CUAT306 Cloned contract has PCA records and data on PCA records are c
+- **PR1050558-4933** (Sprint 12.1) - Closed: UAT Bug: C&CUAT305 Missing UI elements on Experience Cloud
+- **PR1050558-4928** (Sprint 12.1) - In Progress: TECH Story - Omnistudio Security Enhancements in Spring ‘26
+- **PR1050558-4927** (Sprint 12.1) - Closed: UAT Bug: Clinician Offboarding: Termination Updates
+- **PR1050558-4926** (Sprint 12.1) - Closed: UAT Bug: C&CUAT304 Applicant/Prospect User License/Profile Setup Incorrect
+- **PR1050558-4925** (Sprint 12.1) - Closed: UAT Bug: C&CUAT303 Intake form not present
+- **PR1050558-4923** (Sprint 12.1) - Closed: UAT Bug: C&CUAT302 Facility Offboarding is occurring at the wrong time
+- **PR1050558-4922** (Sprint 12.1) - Closed: Update related to PR1050558-4889 Change Locums value to Locum
+- **PR1050558-4918** (Sprint 12.1) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier & Contract Start Date 
+- **PR1050558-4917** (Sprint 12.1) - Closed: UAT Enhancement :Update HPF Contracting Status When Contract is Executed
+- **PR1050558-4911** (Sprint 12.1) - Closed: UAT Enhancement C&CUAT297 Account Name on Facility Offboarding case is invalid
+- **PR1050558-4908** (Sprint 12.1) - Closed: UAT Bug: C&CUAT295 Night Shift Bonus did not pull into contract for EE NPPA
+- **PR1050558-4907** (Sprint 12.1) - Closed: UAT Enhancement: Prevent Duplicate Email addresses for Active Clinician Portal U
+- **PR1050558-4902** (Sprint 12.1) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier, Contract Start Date &
+- **PR1050558-4897** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT294 Data Quality, MSL, and PE Team Personas need to be ab
+- **PR1050558-4895** (Sprint 12.1) - Closed: UAT Bug: C&CUAT292 Permission set missing on  auto creation of user
+- **PR1050558-4894** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT291 Experience Cloud log in requesting username in error
+- **PR1050558-4893** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4892** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4891** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4869** (Sprint 12.1) - Closed: UAT Bug: C&CUAT288 Roster misspelled on Clinician Review case
+- **PR1050558-4867** (Sprint 12.1) - Closed: UAT Bug: C&CUAT287 Hire date not populating when selecting "Start Admin Work Ahe
+- **PR1050558-4864** (Sprint 12.1) - Closed: UAT Bug: C&CUAT286 Intake Form Email not sent
+- **PR1050558-4863** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4862** (Sprint 12.1) - Closed: UAT Enhancement: Convert Data Type for ID Fields
+- **PR1050558-4861** (Sprint 12.1) - Closed: UAT Enhancement: Update CDC Channel - add fields and update triggers
+- **PR1050558-4859** (Sprint 12.1) - Closed: UAT Bug: C&CUAT284 EE Physician Base Agreement missing Add A
+- **PR1050558-4858** (Sprint 12.1) - Closed: UAT Bug: C&CUAT283 EE NPPA Addendum B generating in error
+- **PR1050558-4856** (Sprint 12.1) - Closed: UAT Enhancement : Clinician Contract Approvals
+- **PR1050558-4855** (Sprint 12.1) - Closed: Regression Bug: Rates are not filtered based on facility title on Facility as Re
+- **PR1050558-4854** (Sprint 12.1) - Closed: UAT Bug: C&CUAT282 Blue screen when creating a contract
+- **PR1050558-4853** (Sprint 12.1) - Closed: UAT Bug: C&CUAT281 When there is a mismatch NPPA it needs to be routed to the mi
+- **PR1050558-4846** (Sprint 12.1) - Closed: Regression Bug: NPPA tier mismatch confirmation is not working when HPF is added
+- **PR1050558-4844** (Sprint 12.1) - Closed: UAT Enhancement: NP/PA Tier Process - Add HPF
+- **PR1050558-4840** (Sprint 12.1) - Closed: UAT Enhancement: HPF Inactive Date Trigger to Qgenda - Update when each HPF is i
+- **PR1050558-4839** (Sprint 12.1) - Closed: Platform Event Update - Case Creation After Flow
+- **PR1050558-4838** (Sprint 12.1) - Closed: UAT Enhancement: Send Admin Work Flag via Integration
+- **PR1050558-4835** (Sprint 12.1) - Closed: Last Day field not visible in UI for SCP Offboarding case
+- **PR1050558-4832** (Sprint 12.1) - Closed: Regression Bug : NPPA tier is being updated on Non EE Full/Part Time contract fr
+- **PR1050558-4828** (Sprint 12.1) - Closed: Regression Bug: EE NPPA Monthly/Weekly/ Overage fields should not be calculated 
+- **PR1050558-4819** (Sprint 12.1) - Closed: Rates are not cloned fully and CPA Start date is not populated on the cloned rat
+- **PR1050558-4810** (Sprint 12.1) - Closed: HPFs with same corporate entity but different Code Set Sub Type gets added on cl
+- **PR1050558-4806** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Automatically reload the page when you "Re
+- **PR1050558-4805** (Sprint 12.1) - Closed: UAT Bug: C&CUAT274 HPF isn't loading on new Contract
+- **PR1050558-4797** (Sprint 12.1) - Closed: On Practice Operations Contract as SFO User all fields are not displayed under C
+- **PR1050558-4794** (Sprint 12.1) - Closed: Bug: Clinician Contract - "Refresh Client Rate" is deleting the cloned rates fro
+- **PR1050558-4793** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Do not display duplicate rates on Summary 
+- **PR1050558-4792** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - 'Add HPF' display cloned rates on Summary 
+- **PR1050558-4791** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Add Time to "Last Synched Date" field
+- **PR1050558-4784** (Sprint 12.1) - Closed: UAT Bug: C&CUAT271 Hour Commitment entered onto HPF through Contract Request scr
+- **PR1050558-4781** (Sprint 12.1) - Closed: UAT Bug: Practice Operations Contract - 'Rate' field in Specify Rate only hold w
+- **PR1050558-4767** (Sprint 12.1) - Closed: UAT Bug: C&CUAT265 Emails not sending
+- **PR1050558-4765** (Sprint 12.1) - Closed: UAT Bug: Clinician Contract Cloning should use Start Date not Create Date
+- **PR1050558-4764** (Sprint 12.1) - Closed: UAT Bug: Clinician Contract - Rates pulling in from irrelevant HPF
+- **PR1050558-4763** (Sprint 12.1) - Closed: Observation bug: During Clinician contract request - Active Contracts should be 
+- **PR1050558-4758** (Sprint 12.1) - Closed: Regression Bug: Unable to Add Account team roles in Service Account LRP due to p
+- **PR1050558-4752** (Sprint 12.1) - Closed: Regression Bug: NPPA tier mismatch confirmation does not occur when HPF is added
+- **PR1050558-4750** (Sprint 12.1) - Closed: UAT Enhancement: NP/PA Tier Process
+- **PR1050558-4749** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT263 Legal - Client Contracting - Legal needs permissions 
+- **PR1050558-4748** (Sprint 12.1) - Closed: Clinician Hire Date
+- **PR1050558-4747** (Sprint 12.1) - Closed: UAT Bug: C&CUAT262 Facility Offboarding only terminated one HPF, not all connect
+- **PR1050558-4746** (Sprint 12.1) - Closed: UAT Bug: C&CUAT261 Cloned contract pulling in incorrect contract during duplicat
+- **PR1050558-4742** (Sprint 12.1) - Closed: UAT Bug: C&CUAT259 Clinician had Inactive HPF and Recruiter added new HPF for sa
+- **PR1050558-4739** (Sprint 12.1) - Closed: UAT Enhancement :Task to Clear QGenda for Reactivating a Clincian
+- **PR1050558-4734** (Sprint 12.1) - Closed: Regression Bug: NPPA calculation  issue - Contract Request flow.
+- **PR1050558-4732** (Sprint 12.1) - Closed: Regression Bug - Status picklist values incorrect for LOI and client contract
+- **PR1050558-4728** (Sprint 12.1) - Closed: UAT Bug: C&CUAT256 Candidate tied to job passed Recruiter Screen and put in Awai
+- **PR1050558-4727** (Sprint 12.1) - Closed: E2E Bug: CDC Channel Update
+- **PR1050558-4726** (Sprint 12.1) - Closed: UAT Bug: C&CUAT254 Recruiter unable to edit # of anticipated to work monthly on 
+- **PR1050558-4722** (Sprint 12.1) - Closed: UAT Bug: C&CUAT252 Wrongly Label Payroll Field
+- **PR1050558-4721** (Sprint 12.1) - Closed: UAT Bug: C&CUAT249 NPPA Tier getting populated on HPF for Physician
+- **PR1050558-4720** (Sprint 12.1) - Closed: UAT Bug: C&CUAT250 Agreement Record tied to Executed Contract Record not updated
+- **PR1050558-4718** (Sprint 12.1) - Closed: UAT Bug: An error occurred with your "Create SUN - Revision PMT Case" flow
+- **PR1050558-4716** (Sprint 12.1) - Closed: UAT Bug: An Error Occurred with Your "Create PMT Cases" Flow
+- **PR1050558-4711** (Sprint 12.1) - Closed: UAT Bug: An error occurred with your "Welcome Clinician Onboarding Email Flow" f
+- **PR1050558-4710** (Sprint 12.1) - Closed: UAT Bug: An error occurred with your "DocuSign Update Signed Date on Contract an
+- **PR1050558-4708** (Sprint 12.1) - Closed: UAT Bug: C&CUAT247 Rob Reilly and Kenneth Cerney do not have access to Related R
+- **PR1050558-4707** (Sprint 12.1) - Closed: NPPA Tier Defaulted for Part-Time Contracts Causing Incorrect NP/PA Calculations
+- **PR1050558-4706** (Sprint 12.1) - Closed: E2E Enhancement: Populate Last Day for SCP Offboarding Case
+- **PR1050558-4705** (Sprint 12.1) - Closed: UAT Enhancement: Update Integration to Workday for SCP Offboarding - EE add Glob
+- **PR1050558-4698** (Sprint 12.1) - Closed: Observation Bug: Facility selection screen on the contract request flow does not
+- **PR1050558-4697** (Sprint 12.1) - Open: Observation Bug - Part/Full time Rates are being showing for Fulltime/Part Time 
+- **PR1050558-4685** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT245 SCP Contracting entities
+- **PR1050558-4683** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT243 Update Practice Operations fields
+- **PR1050558-4674** (Sprint 12.1) - Closed: Hire Date when Employment Type is Changing
+- **PR1050558-4673** (Sprint 12.1) - Closed: Regression Bug:  PCA records are not updated as Is deleted when the related shif
+- **PR1050558-4672** (Sprint 12.1) - Closed: 'Reason for Termination' field not populated on SCP Offboarding case
+- **PR1050558-4667** (Sprint 12.1) - Closed: UAT Enhancement: EE NPPA Salary Calculation Update part 2
+- **PR1050558-4662** (Sprint 12.1) - Closed: Regression Issue:At A Glance Portal View shows blank
+- **PR1050558-4656** (Sprint 12.1) - Closed: UAT Enhancement: Exclude Legacy Id from Client and Clinician Contract & PCA Clon
+- **PR1050558-4648** (Sprint 12.1) - Closed: Regression Bug: Clinician onboarding welcome email is received despite the email
+- **PR1050558-4640** (Sprint 12.1) - Closed: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-4638** (Sprint 12.1) - Closed: Some personas don't have access to view Time Type of HPF related list on service
+- **PR1050558-4634** (Sprint 12.1) - Closed: E2E Bug: C&CUAT234 WorkDay_Part time EE Nurse Practitioners and EE Physician Ass
+- **PR1050558-4630** (Sprint 12.1) - Closed: UAT Enhancement: Update matching logic for "Refresh Client Rates"
+- **PR1050558-4629** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT233 Practice Operations Contract not End Dated and causin
+- **PR1050558-4628** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT232 Client Contract Term & Renewal Contract End Date Not 
+- **PR1050558-4627** (Sprint 12.1) - Closed: UAT Bug: C&CUAT231 PNC creation and related SCP Corporate Entity
+- **PR1050558-4621** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT229 Missing Validation between Contract Active + Begin Fa
+- **PR1050558-4620** (Sprint 12.1) - Closed: UAT Bug: C&CUAT228 Opportunity Status = Closed
+- **PR1050558-4614** (Sprint 12.1) - Closed: UAT Bug: C&CUAT223 Client Termination email not received
+- **PR1050558-4613** (Sprint 12.1) - Closed: E2E Bug: C&CUAT222 QGenda_ Hire IC_ Received Contact Phone Number error
+- **PR1050558-4612** (Sprint 12.1) - Closed: E2E Bug: C&CUAT221 Invalid Compensation_Plan_ID value ('') sent from Salesforce 
+- **PR1050558-4611** (Sprint 12.1) - Closed: E2E Bug: C&CUAT220 Workday Integration Contracting Corporate value mismatch betw
+- **PR1050558-4597** (Sprint 12.1) - Closed: UAT Bug: C&CUAT219 Offboarding Parent case didn't create
+- **PR1050558-4596** (Sprint 12.1) - Closed: UAT Bug: C&CUAT218 Unable to edit Service Account
+- **PR1050558-4595** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT217 Upload attachments to Service Account and/or PNC
+- **PR1050558-4594** (Sprint 12.1) - Closed: Update Role Hierarchy
+- **PR1050558-4593** (Sprint 12.1) - Closed: NP/PA Onboarding Comments field on HPF
+- **PR1050558-4592** (Sprint 12.1) - Closed: E2E Bug: C&CUAT216 Mulesoft : incorrect Company name is appearing
+- **PR1050558-4591** (Sprint 12.1) - Closed: UAT Bug: C&CUAT215 Clinician has Active Business Entity CTI on Person Account bu
+- **PR1050558-4590** (Sprint 12.1) - Closed: E2E Bug: C&CUAT214 MuleSoft: Duplicate hires for the same clinician
+- **PR1050558-4589** (Sprint 12.1) - Closed: UAT Bug: C&CUAT213 Other Bonus requested but A-2 not generated
+- **PR1050558-4586** (Sprint 12.1) - Closed: E2E Bug: C&CUAT210 Pay code is not available in SF
+- **PR1050558-4583** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT207 Letter of Intent Request - Letter of Intent - Status 
+- **PR1050558-4580** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT204 View of Contracts from Opportunity
+- **PR1050558-4578** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT202 Edit functionality needed for all statuses
+- **PR1050558-4576** (Sprint 12.1) - Closed: Regression Bug - Clinician contract status picklist fields and path are incorrec
+- **PR1050558-4569** (Sprint 12.1) - Closed: HPF Field History Tracking
+- **PR1050558-4568** (Sprint 12.1) - Closed: User able to recall the Approved Clinician contract
+- **PR1050558-4564** (Sprint 12.1) - Closed: UAT Bug: C&CUAT198 EE PT Hourly Blend not calculated
+- **PR1050558-4563** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT197 Add new values to Agreement Category
+- **PR1050558-4561** (Sprint 12.1) - Closed: UAT Bug: C&CUAT195 "Refresh Client Rates" didn't work after removal of rates
+- **PR1050558-4558** (Sprint 12.1) - Closed: Recall comments not getting updated on the approval entry
+- **PR1050558-4556** (Sprint 12.1) - Closed: Failed to update Healthcare Practitioner Facility History
+- **PR1050558-4555** (Sprint 12.1) - Closed: UAT Bug: Opportunity's 'Initiate Contracting Request' - Incorrect version for Le
+- **PR1050558-4553** (Sprint 12.1) - Closed: Clinician NP/PA Tier Updates
+- **PR1050558-4548** (Sprint 12.1) - Closed: On Client Contract upon entering start and end date in Past, an error message is
+- **PR1050558-4540** (Sprint 12.1) - Closed: UAT Bug: C&CUAT189 Addendum A Issues
+- **PR1050558-4539** (Sprint 12.1) - Closed: UAT Bug: C&CUAT188 Workday Mapping or Data Issue
+- **PR1050558-4538** (Sprint 12.1) - Closed: UAT Bug: C&CUAT187 Finance Unable to edit fields
+- **PR1050558-4537** (Sprint 12.1) - Closed: UAT Bug: C&CUAT186 Cannot add Pay Codes
+- **PR1050558-4536** (Sprint 12.1) - Closed: UAT Bug: Update Welcome Clinician Onboarding Email Flow to handle 'Null'
+- **PR1050558-4532** (Sprint 12.1) - Closed: Unable to Log In to Specific Users
+- **PR1050558-4531** (Sprint 12.1) - Closed: UAT Bug: C&CUAT185 Workday Integration Logs not Generated
+- **PR1050558-4527** (Sprint 12.1) - Closed: UAT Bug: CICUAT184 Contract Change Details not Present
+- **PR1050558-4521** (Sprint 12.1) - Closed: UAT Bug: C&CUAT183 Error message when viewing all tasks for client account
+- **PR1050558-4520** (Sprint 12.1) - Closed: UAT Bug: C&CUAT182 Sales VP unable to update Account Team
+- **PR1050558-4518** (Sprint 12.1) - Closed: Regression bug - Issues in Screening call guided flow
+- **PR1050558-4513** (Sprint 12.1) - Closed: SFO Persona is unable to update the Contract End Date field.
+- **PR1050558-4512** (Sprint 12.1) - Closed: While working on LOI and Client Contract with status Draft - When user updates t
+- **PR1050558-4511** (Sprint 12.1) - Closed: Unable to Change Status from Contracting – In Progress to Executed
+- **PR1050558-4506** (Sprint 12.1) - Closed: UAT Bug: C&CUAT181 Begin Facility Termination error
+- **PR1050558-4505** (Sprint 12.1) - Closed: UAT Bug: C&CUAT180 Service Account Name not populating
+- **PR1050558-4499** (Sprint 12.1) - Closed: UAT Bug: Client Onboarding Action Plan Templates Missing
+- **PR1050558-4493** (Sprint 12.1) - Closed: UAT Bug: C&CUAT179 Contracts not create
+- **PR1050558-4492** (Sprint 12.1) - Closed: Regression Bug: NPPA Tier management/Calculation issues.
+- **PR1050558-4490** (Sprint 12.1) - Closed: Regression Bug - On Configure Contract flow, Agreement Category field consist in
+- **PR1050558-4489** (Sprint 12.1) - Closed: UAT Bug: C&CUAT178 UAT2_SIT_E2E testing_Access Issue for Integration Log
+- **PR1050558-4488** (Sprint 12.1) - Closed: UAT Bug: C&CUAT177 Final Approval email not Received
+- **PR1050558-4476** (Sprint 12.1) - Closed: UAT Bug: C&CUAT176 Can't select "Send Term Sheet for Signatures"
+- **PR1050558-4475** (Sprint 12.1) - Closed: UAT Bug: C&CUAT174 Client Testing - Configure Contract
+- **PR1050558-4474** (Sprint 12.1) - Closed: UAT Bug: C&CUAT175 DocuSign Automation not updating Contract Record status to Ex
+- **PR1050558-4460** (Sprint 12.1) - Closed: Migrate Manage AgentForce Agents PS from QA to UAT
+- **PR1050558-4448** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT166 Email Approval Requests - Client Pro Forma
+- **PR1050558-4447** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT165 DAM Approval and Rejection emails
+- **PR1050558-4446** (Sprint 12.1) - Closed: UAT Bug: C&CUAT168 Robin Magee in Legal error when exectuing Client Contract scr
+- **PR1050558-4439** (Sprint 12.1) - Closed: Regression Bug - Issues with CoC Form in HC portal
+- **PR1050558-4433** (Sprint 12.1) - Closed: UAT Enhancement: Contract - Add validation that Start can NOT be after End Date
+- **PR1050558-4432** (Sprint 12.1) - Closed: UAT Enhancement: Automated Onboarding Task Record Closure - I9 Update
+- **PR1050558-4417** (Sprint 12.1) - Closed: Regression Bug - Issue on CoC Questionnaire in HC portal
+- **PR1050558-4412** (Sprint 12.1) - Closed: UAT Bug: C&CUAT164 Data Migration Team Validation Fix - Internal Renewal Start D
+- **PR1050558-4409** (Sprint 12.1) - Closed: UAT Enhancement: Generate Term Sheet - Term Sheet Generation - Add back Clinicia
+- **PR1050558-4405** (Sprint 12.1) - Closed: Additional Enhancement: New Clinician Athena Notification - Update mapping from 
+- **PR1050558-4404** (Sprint 12.1) - Closed: UAT Bug: C&CUAT163 Clinician has eligible HPFs for a Contract Request, but not a
+- **PR1050558-4402** (Sprint 12.1) - Closed: UAT Bug: C&CUAT160 CDM003_Sales VP is not able to access Opportunity
+- **PR1050558-4401** (Sprint 12.1) - Closed: UAT Bug: C&CUAT161 CDM008_CDM_0013_Need COO CFO SVP Growth persona
+- **PR1050558-4398** (Sprint 12.1) - Closed: UAT Bug: C&CUAT159 CDM_006_Sales VP is able to edit the proforma model after sub
+- **PR1050558-4397** (Sprint 12.1) - Closed: UAT Bug: C&CUAT158 CDM_002_Unable to add Deal team when logged in as persona "BD
+- **PR1050558-4395** (Sprint 12.1) - Closed: Flow Errors
+- **PR1050558-4394** (Sprint 12.1) - Closed: Observation Bug - Clinician's Professional Status is populated under Professiona
+- **PR1050558-4391** (Sprint 12.1) - Closed: UAT Bug: C&CUAT157 Cannot add Contact Role to Opportunity
+- **PR1050558-4390** (Sprint 12.1) - Closed: UAT Bug: C&CUAT156 Can't Add Candidate to Job
+- **PR1050558-4389** (Sprint 12.1) - Closed: UAT Bug: C&CUAT155 Clinician Name not pulling into templates when no CTI record 
+- **PR1050558-4383** (Sprint 12.1) - Closed: Observation Bug: When logged in as a HealthcloudRestrictedUser, the Initiate Ear
+- **PR1050558-4378** (Sprint 12.1) - Closed: UAT Bug: C&CUAT154 - A-2 addendum on Base contract is not loading correctly for 
+- **PR1050558-4376** (Sprint 12.1) - Closed: Update PMT Phase field = "Client Start Up Time" to a picklist and update flow
+- **PR1050558-4375** (Sprint 12.1) - Closed: Regression Bug - I9 Update tasks is not closing when I9 Status field updates on 
+- **PR1050558-4367** (Sprint 12.1) - Closed: UAT Enhancement: Update PNC fields = "Client Termination Time" & "Client Start U
+- **PR1050558-4366** (Sprint 12.1) - Closed: UAT Enhancement: Update HPF field = "Received Current Completed References" to a
+- **PR1050558-4362** (Sprint 12.1) - Closed: UAT Enhancement: Add Additional Fields
+- **PR1050558-4350** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT152 Signature Block on all templates should reference Cli
+- **PR1050558-4347** (Sprint 12.1) - Closed: UAT Enhancement: Remove Primary Reason Field & Populate Reason for Termination
+- **PR1050558-4345** (Sprint 12.1) - Closed: Client Contract - Action = Amend Contract: not cloning child Contract Types
+- **PR1050558-4339** (Sprint 12.1) - Closed: Update HPF 'Temporary Inactive Reason' - Remove dependency on Credentialing Stat
+- **PR1050558-4337** (Sprint 12.1) - Closed: UAT Enhancement: Leadership Change HPF Date Filter Update
+- **PR1050558-4327** (Sprint 12.1) - Closed: Regression Bug - Agreement Request Email Alert
+- **PR1050558-4323** (Sprint 12.1) - Closed: Client Contract - "Configure Contract" guided experience not closing
+- **PR1050558-4320** (Sprint 12.1) - Closed: 'Letter Of Intent' & 'Practice Operations' Contracts - Highlight panel should NO
+- **PR1050558-4309** (Sprint 12.1) - Closed: Training Enhancement: Update Related Lists on Clinician and Case Record
+- **PR1050558-4308** (Sprint 12.1) - Closed: Training Enhancement: Contract Field Visibility and Edit Access
+- **PR1050558-4287** (Sprint 12.1) - Closed: UAT Enhancement: SCP Offboarding - Employee Review Task
+- **PR1050558-4243** (Sprint 12.1) - Closed: UI Bug: Offboarding Details section name on case layout is incorrect
+- **PR1050558-4203** (Sprint 12.1) - Closed: UAT Enhancement: View Clinicians from Service Account Record
+- **PR1050558-4201** (Sprint 12.1) - Closed: SCP Offboarding Case Updates
+- **PR1050558-4200** (Sprint 12.1) - Closed: Customer Community License Updates
+- **PR1050558-4198** (Sprint 12.1) - Closed: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4191** (Sprint 12.1) - Closed: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4175** (Sprint 12.1) - Closed: RUL - Security
+- **PR1050558-4158** (Sprint 12.1) - Closed: Field Ops/SFO Case Access
+- **PR1050558-4157** (Sprint 12.1) - Closed: UAT Enhancement: Contract Summary UI Adjustment
+- **PR1050558-4138** (Sprint 12.1) - Closed: Temporary Inactive Reason API name fix
+- **PR1050558-4126** (Sprint 12.1) - Closed: UAT Bug: C&CUAT112 Delayed Email Receipt
+- **PR1050558-4123** (Sprint 12.1) - Closed: UAT Enhancement: Collaborative Practice Agreement Review UI Update
+- **PR1050558-4107** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Update Design for Displaying relate
+- **PR1050558-4094** (Sprint 12.1) - Closed: Submit Pro Forma Model for Approval - Send Rejection Email to VP Sales Ops DL
+- **PR1050558-4089** (Sprint 12.1) - Closed: Regression Bug - Sent PEP tasks is not closing when PEP sent date field updates 
+- **PR1050558-4088** (Sprint 12.1) - Closed: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-4078** (Sprint 12.1) - Closed: UAT Enhancement: Update Clinician Contracting Permission Set
+- **PR1050558-4065** (Sprint 12.1) - Closed: Client Contract Request - Configurations tab - Layout
+- **PR1050558-4051** (Sprint 12.1) - Closed: Client Contract - Updates to support allowing multiple Masters with the same Ser
+- **PR1050558-4029** (Sprint 12.1) - Closed: Tech Bug: Flow failure email
+- **PR1050558-4014** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT88 Recruiters need the ability to withdraw a Contract req
+- **PR1050558-4012** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT86 HPF and Agreement history sections
+- **PR1050558-4010** (Sprint 12.1) - Closed: UI Enhancement: Contract Summary UI Enhancements
+- **PR1050558-4009** (Sprint 12.1) - Closed: UI Enhancement: Person Account LRP Enhancements
+- **PR1050558-4008** (Sprint 12.1) - Closed: UI Enhancement: Task Related List Columns
+- **PR1050558-4007** (Sprint 12.1) - Closed: UI Enhancement: HPF Name Automation Update
+- **PR1050558-4005** (Sprint 12.1) - Closed: UAT Enhancement: Allow $0 Rates on Clinician Contracts
+- **PR1050558-3950** (Sprint 12.1) - Closed: Remove 'Term Sheet Executed' field and Related Components
+- **PR1050558-3939** (Sprint 12.1) - Closed: UI Enhancement: HC Clinician Portal UI Enhancements
+- **PR1050558-3924** (Sprint 12.1) - Closed: Client Contract Request - Configurations tab - Edit
+- **PR1050558-3779** (Sprint 12.1) - Closed: UAT Enhancement: EE NPPA Salary Calculation Update
+- **PR1050558-3619** (Sprint 12.1) - Closed: Client Contract Request - Add New Provider Network Contracts
+- **PR1050558-3616** (Sprint 12.1) - Closed: UAT Enhancement: Corporation and Tax Information Updates
+- **PR1050558-3614** (Sprint 12.1) - Closed: Tech - SSO Flow - Send Clinician Info to Okta - UPDATE - change criteria and sen
+- **PR1050558-3585** (Sprint 12.1) - Closed: Update permissions to Opportunity records
+- **PR1050558-3583** (Sprint 12.1) - Closed: Create/Update Code Set (Facility Title) Records
+- **PR1050558-3573** (Sprint 12.1) - Closed: Tech - SSO Flow - Reactivate User & Update Platform Event
+- **PR1050558-3546** (Sprint 12.1) - Closed: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3521** (Sprint 12.1) - Closed: Add Additional Fields
+- **PR1050558-3520** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Terminate Contract
+- **PR1050558-3519** (Sprint 12.1) - Closed: Client Contract Request - Configurations tab - View & Delete Configuration
+- **PR1050558-3517** (Sprint 12.1) - Closed: SUN Orchestration - Trigger Task Creation
+- **PR1050558-3474** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Terminate Contract
+- **PR1050558-3469** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Email Alert
+- **PR1050558-3468** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Activate Contract
+- **PR1050558-3467** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Expire Contract
+- **PR1050558-3466** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Amend Contract
+- **PR1050558-3465** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Cancel Contract
+- **PR1050558-3464** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - View & Edit
+- **PR1050558-3463** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Update LOI guided experience
+- **PR1050558-3451** (Sprint 12.1) - Closed: Client Onboarding - Auto Task Creation for Onboarding Task related to PMT Phase
+- **PR1050558-3445** (Sprint 12.1) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-3441** (Sprint 12.1) - Closed: Observation - User able to delete the facility rate from the 'Facility Rates as 
+- **PR1050558-3384** (Sprint 12.1) - Closed: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3375** (Sprint 12.1) - Closed: Tech - HC Portal Configuration - Update Sender and Portal Admin
+- **PR1050558-3351** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Activate Contract
+- **PR1050558-3347** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Expire Contract
+- **PR1050558-3343** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Amend Contract
+- **PR1050558-3339** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Cancel Contract
+- **PR1050558-3338** (Sprint 12.1) - Closed: Client Onboarding - Create Task based on Service Line
+- **PR1050558-3201** (Sprint 12.1) - Closed: Generate Term Sheet - Term Sheet Generation - Add Other Type of Rates
+- **PR1050558-3023** (Sprint 12.1) - Closed: Client Contract Request - Edit Client Contract (Add Configuration)
+- **PR1050558-3022** (Sprint 12.1) - Closed: Client Contract Request - View Client Contract
+- **PR1050558-3021** (Sprint 12.1) - Closed: Client Contract Request - New Client Contract
+- **PR1050558-3020** (Sprint 12.1) - Closed: Client Contract Request - Expanded View
+- **PR1050558-3013** (Sprint 12.1) - Closed: Tech - SSO Flow - Experience Cloud Welcome Email
+- **PR1050558-2908** (Sprint 12.1) - Closed: UAT Enhancement: Enable Integration to Workday for SCP Offboarding - IC Delay 12
+- **PR1050558-2907** (Sprint 12.1) - Closed: Term Sheet Generation - “Send Term Sheet for Signature” & List View
+- **PR1050558-2813** (Sprint 12.1) - Closed: New Clinician Athena Notification
+- **PR1050558-2807** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Status & Key Date Updates
+- **PR1050558-2472** (Sprint 12.1) - Closed: Clinician Offboarding: Backfill Needed
+- **PR1050558-2442** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Status & Key Date Updates
+- **PR1050558-2441** (Sprint 12.1) - Closed: Client Contract Request - Client Agreement Request Case Layout & List View
+- **PR1050558-2184** (Sprint 12.1) - Closed: Unable to change ATS applicant stage to "Recruiter Screen" - Process failed erro
+- **PR1050558-2120** (Sprint 12.1) - Closed: Workday Hire Date Change
+- **PR1050558-1736** (Sprint 12.1) - Closed: Client Contract Request View for Legal
+- **PR1050558-1723** (Sprint 12.1) - Closed: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-887** (Sprint 12.1) - Closed: SUN Orchestration - Email Alert
+- **PR1050558-886** (Sprint 12.1) - Closed: SUN Task Template Setup
+- **PR1050558-479** (Sprint 12.1) - Closed: Submit Pro Forma Model for Approval
+- **PR1050558-5424** (Sprint 12.2) - Closed: PROD Bug: C&CUAT464 - PROD - Should not be able to edit the Provider Contract
+- **PR1050558-5423** (Sprint 12.2) - Closed: PROD Bug: C&CUAT463 - PROD - Able to edit and save changes to fields on HPF
+- **PR1050558-5422** (Sprint 12.2) - Closed: PROD Bug: C&CUAT462 - PROD- Service Acct- Missing edit permissions or record set
+- **PR1050558-5421** (Sprint 12.2) - Closed: PROD Bug: C&CUAT461 - PROD - Not able to edit Clinician Payroll fields on Servic
+- **PR1050558-5419** (Sprint 12.2) - Closed: PROD Bug: C&CUAT460 - PROD - Missing variable attributes on PCA
+- **PR1050558-5418** (Sprint 12.2) - Closed: UAT Bug: C&CUAT459 - UAT1 - Facility Offboarding didn't happen for Fort Duncan
+- **PR1050558-5417** (Sprint 12.2) - Closed: PROD Bug: C&CUAT458 - PROD - Should not be able edit the Corporate Entity Accoun
+- **PR1050558-5415** (Sprint 12.2) - Closed: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5414** (Sprint 12.2) - Closed: PROD Bug: C&CUAT455 - PROD - no global ID
+- **PR1050558-5412** (Sprint 12.2) - Closed: PROD Bug: C&CUAT454 PROD - Facility Global ID Missing under System Information
+- **PR1050558-5410** (Sprint 12.2) - Closed: Observation Bug - IC NPPA Termination - Cases are created with blank Subject & N
+- **PR1050558-5405** (Sprint 12.2) - Closed: UAT Bug: C&CUAT452 UAT 1 - System allowing me to add multiple rates to one shift
+- **PR1050558-5401** (Sprint 12.2) - Closed: UAT Bug: C&CUAT450 Integration Log does not show up in Salesforce Reporting
+- **PR1050558-5396** (Sprint 12.2) - Closed: E2E Bug: C&CUAT448 UAT1 Per Zach R - Assign to Amit - Pay Code Missing Test
+- **PR1050558-5394** (Sprint 12.2) - Closed: UAT Bug: C&CUAT447 UAT1 - Agentforce - Rate Change Notice letter table view
+- **PR1050558-5392** (Sprint 12.2) - Closed: UAT Bug: C&CUAT445 UAT1 - Unable to specify rates on PO for Coverage Change only
+- **PR1050558-5391** (Sprint 12.2) - Closed: TECH Only Flow Optimization
+- **PR1050558-5389** (Sprint 12.2) - Closed: UAT Bug: C&CUAT443 UAT1 - contract pulling inactive sites
+- **PR1050558-5385** (Sprint 12.2) - Closed: UAT Bug: C&CUAT439 - UAT1 - Experience Cloud Tracker Statuses not updating prope
+- **PR1050558-5384** (Sprint 12.2) - Closed: UAT Bug: C&CUAT438 - UAT1 - Emails not received by intended recipients
+- **PR1050558-5383** (Sprint 12.2) - Closed: UAT Bug: C&C437 - UAT1 - Start from Previous Active on Clinician Contract - New 
+- **PR1050558-5382** (Sprint 12.2) - Closed: UAT Bug: C&CUAT436 - UAT1 - Pay Codes on PO are not getting pulled forward to ne
+- **PR1050558-5377** (Sprint 12.2) - Closed: E2E Bug: C&CUAT434 UAT1- Leased Provider Location (hospital) Failed to push to Q
+- **PR1050558-5374** (Sprint 12.2) - Closed: UAT Bug: C&CUAT431 JobPosting_UAT 1_Unable to post jobs to job boards_There is i
+- **PR1050558-5373** (Sprint 12.2) - Closed: UAT Bug: C&CUAT430 UAT 1 - Term sheet error
+- **PR1050558-5371** (Sprint 12.2) - Closed: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-5369** (Sprint 12.2) - Closed: UAT Bug: C&CUAT428 - UAT1 - IC to EE Contract Error
+- **PR1050558-5368** (Sprint 12.2) - Closed: UAT Bug: C&CUAT427 - UAT1 - Not able to add members to deal team
+- **PR1050558-5367** (Sprint 12.2) - Closed: UAT Bug: C&CUAT426 - UAT1 - Experience Cloud Tracker is invalid
+- **PR1050558-5366** (Sprint 12.2) - Closed: UAT Bug: C&CUAT425 - UAT1 - Data Migration - CTI Expiration Date
+- **PR1050558-5346** (Sprint 12.2) - Closed: UAT Bug: Prevent Clinician Contract with Same Start Date - Cancel
+- **PR1050558-5326** (Sprint 12.2) - Closed: UAT Bug: C&CUAT424 - UAT1 - Termination Reason Codes from UAT2 to UAT1 not mappe
+- **PR1050558-5325** (Sprint 12.2) - Closed: UAT Bug: C&CUAT423 - UAT1 - Mulesoft Integration did not trigger for IC Provider
+- **PR1050558-5324** (Sprint 12.2) - Closed: UAT Bug: C&CUAT422 - UAT1 - Unable to End Date Clinician Contract
+- **PR1050558-5323** (Sprint 12.2) - Closed: UAT Bug: C&CUAT421 - UAT1 - Pay Code Testing
+- **PR1050558-5322** (Sprint 12.2) - Closed: UAT Bug: C&CUAT420 - UAT1 - Lack of Conga access
+- **PR1050558-5321** (Sprint 12.2) - Closed: UAT Bug: C&CUAT419 - UAT1 - Interview Template
+- **PR1050558-5320** (Sprint 12.2) - Closed: UAT Bug: C&CUAT418 - UAT1 - Incorrect layout
+- **PR1050558-5318** (Sprint 12.2) - Closed: UAT Bug - C&CUAT416 - UAT1 - Unable to generate term sheet
+- **PR1050558-5317** (Sprint 12.2) - Closed: UAT Bug: C&CUAT415 - UAT1 - Interview request page layout error
+- **PR1050558-5316** (Sprint 12.2) - Closed: UAT Bug - C&CUAT414 - UAT1 - Scheduling an interview error
+- **PR1050558-5315** (Sprint 12.2) - Closed: UAT Bug - C&CUAT413 - UAT1 - Add HPF
+- **PR1050558-5312** (Sprint 12.2) - Closed: UAT Bug: C&CUAT412 UAT1 - Experience Cloud - Intake Form not present
+- **PR1050558-5311** (Sprint 12.2) - Closed: UAT Bug: C&CUAT411 UAT1 - Experience Cloud Candidate Tracker missing
+- **PR1050558-5292** (Sprint 12.2) - Closed: UAT Bug: C&CUAT409 Kanban fields displayed are incorrect
+- **PR1050558-5288** (Sprint 12.2) - Closed: UAT Bug: C&CUAT405 When ClinicianCoverageUpdateBatch ran it did not update the p
+- **PR1050558-5287** (Sprint 12.2) - Closed: UAT Bug: C&CUAT404 Pay Codes not loaded in drop down box
+- **PR1050558-5286** (Sprint 12.2) - Closed: UAT Bug: New Clinician Athena Notification - Correct 'Global Provider ID' mappin
+- **PR1050558-5284** (Sprint 12.2) - Closed: UAT Bug: C&CUAT403 Error in UAT- in the contracting screens- cannot proceed with
+- **PR1050558-5218** (Sprint 12.2) - Closed: PFA Proxy - Clinician Updates
+- **PR1050558-5202** (Sprint 12.2) - Closed: UAT Enhancement: HPF Effective Dates UPDATE
+- **PR1050558-5199** (Sprint 12.2) - Closed: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5198** (Sprint 12.2) - Closed: UAT Bug: C&CUAT386 Fully Executed Contract Not Moving From Approved Status
+- **PR1050558-5121** (Sprint 12.2) - Closed: UAT Enhancement: Update Clinician Onboarding Task Assignment
+- **PR1050558-5118** (Sprint 12.2) - Closed: UAT Bug: C&CUAT364 Warning Message in Error - Experience Cloud
+- **PR1050558-5117** (Sprint 12.2) - Closed: UAT Enhancement: Prevent Clinician Contract with Same Start Date
+- **PR1050558-5107** (Sprint 12.2) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5098** (Sprint 12.2) - Closed: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095** (Sprint 12.2) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5093** (Sprint 12.2) - Closed: UAT Enhancement: Add Time Type to Pay Codes Layout
+- **PR1050558-5083** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-5080** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT345 Terming provider in salesforce shows a closed case if
+- **PR1050558-4977** (Sprint 12.2) - Closed: Observed Bug: Contact Email Validation for Intake Form
+- **PR1050558-4973** (Sprint 12.2) - Closed: Intake Form Criteria Update: Update Logic from HPF to Job
+- **PR1050558-4970** (Sprint 12.2) - Closed: UAT Enhancement: Risk Review - Add visibility to the Assessment on the Risk Revi
+- **PR1050558-4954** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Facility Title Change - HPF Updates to OLD
+- **PR1050558-4948** (Sprint 12.2) - Closed: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+- **PR1050558-4944** (Sprint 12.2) - Closed: UAT Bug: C&CUAT310 Clone a contract - failed to refresh client rates thus result
+- **PR1050558-4918** (Sprint 12.2) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier & Contract Start Date 
+- **PR1050558-4917** (Sprint 12.2) - Closed: UAT Enhancement :Update HPF Contracting Status When Contract is Executed
+- **PR1050558-4907** (Sprint 12.2) - Closed: UAT Enhancement: Prevent Duplicate Email addresses for Active Clinician Portal U
+- **PR1050558-4902** (Sprint 12.2) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier, Contract Start Date &
+- **PR1050558-4897** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT294 Data Quality, MSL, and PE Team Personas need to be ab
+- **PR1050558-4893** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4892** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4891** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4863** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4856** (Sprint 12.2) - Closed: UAT Enhancement : Clinician Contract Approvals
+- **PR1050558-4840** (Sprint 12.2) - Closed: UAT Enhancement: HPF Inactive Date Trigger to Qgenda - Update when each HPF is i
+- **PR1050558-4839** (Sprint 12.2) - Closed: Platform Event Update - Case Creation After Flow
+- **PR1050558-4838** (Sprint 12.2) - Closed: UAT Enhancement: Send Admin Work Flag via Integration
+- **PR1050558-4705** (Sprint 12.2) - Closed: UAT Enhancement: Update Integration to Workday for SCP Offboarding - EE add Glob
+- **PR1050558-4674** (Sprint 12.2) - Closed: Hire Date when Employment Type is Changing
+- **PR1050558-4640** (Sprint 12.2) - Closed: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-4630** (Sprint 12.2) - Closed: UAT Enhancement: Update matching logic for "Refresh Client Rates"
+- **PR1050558-4628** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT232 Client Contract Term & Renewal Contract End Date Not 
+- **PR1050558-4594** (Sprint 12.2) - Closed: Update Role Hierarchy
+- **PR1050558-4593** (Sprint 12.2) - Closed: NP/PA Onboarding Comments field on HPF
+- **PR1050558-4553** (Sprint 12.2) - Closed: Clinician NP/PA Tier Updates
+- **PR1050558-4395** (Sprint 12.2) - Closed: Flow Errors
+- **PR1050558-4200** (Sprint 12.2) - Closed: Customer Community License Updates
+- **PR1050558-4198** (Sprint 12.2) - Closed: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4191** (Sprint 12.2) - Closed: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4158** (Sprint 12.2) - Closed: Field Ops/SFO Case Access
+- **PR1050558-4088** (Sprint 12.2) - Closed: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-3445** (Sprint 12.2) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-5829** (Sprint 12.3) - On Hold: PROD Enhancement: UPHypercare133 - Add validation on SCP Case field = Offboardin
+- **PR1050558-5828** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5721** (Sprint 12.3) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5653** (Sprint 12.3) - Closed: PROD Bug: UPHypercare199 - Clinician reporting not receiving the link to set up 
+- **PR1050558-5649** (Sprint 12.3) - Closed: PROD Bug: UPHypercare194 - Contract specialist not able to create conga agreemen
+- **PR1050558-5647** (Sprint 12.3) - Closed: PROD Bug: UPHypercare192 - Still getting the frozen blue screen when trying to r
+- **PR1050558-5644** (Sprint 12.3) - Closed: PROD Bug: UPHypercare191 - Christus Health Emergency Center-Mount Pleasant - EM 
+- **PR1050558-5642** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5634** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare186 - Receiving error when generating term sheet
+- **PR1050558-5625** (Sprint 12.3) - Closed: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5624** (Sprint 12.3) - Closed: PROD Bug: UPHypercare173 - 20 Facility re-names failed due to an existing team w
+- **PR1050558-5617** (Sprint 12.3) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records
+- **PR1050558-5609** (Sprint 12.3) - Closed: PROD Bug: UPHypercare165 - scp-provider-recruiting getting value too large 255
+- **PR1050558-5594** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare147 - Risk Review Process not pulling correct HPFs
+- **PR1050558-5591** (Sprint 12.3) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5589** (Sprint 12.3) - Closed: PROD Bug: UPHypercare140 - Facility Profile is not available in the UI
+- **PR1050558-5588** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare139 - First Clinical Shift integration is encounter
+- **PR1050558-5587** (Sprint 12.3) - Closed: PROD Bug: UPHypercare136 - Corporate Entity Missing- Creating issues with Reques
+- **PR1050558-5580** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5578** (Sprint 12.3) - Closed: PROD Bug: UPHypercare132 - Coverage only batch update
+- **PR1050558-5568** (Sprint 12.3) - Closed: PROD Bug: UPHypercare123 - PROD Bug: Healthcare Practitioner Facility - history 
+- **PR1050558-5554** (Sprint 12.3) - Closed: PROD Bug: UPHypercare112 - HPF Status - Data Migration Issue
+- **PR1050558-5547** (Sprint 12.3) - Closed: PROD Bug: UPHypercare102 - Issues with Clinicians No longer in Care App
+- **PR1050558-5545** (Sprint 12.3) - Closed: PROD Bug: UPHypercare100 - Per the data migration spreadsheet, the legacy PFA.Ag
+- **PR1050558-5533** (Sprint 12.3) - Closed: PROD Bug: UPHypercare84 - Intake Form button on the clinician record generates i
+- **PR1050558-5530** (Sprint 12.3) - Closed: PROD Bug: UPHypercare82 - NPPA Form Type Creation Error
+- **PR1050558-5524** (Sprint 12.3) - Closed: PROD Bug: UPHypercare72 - Apay request submission on HPF is not reaching the VPO
+- **PR1050558-5519** (Sprint 12.3) - Closed: PROD Bug: UPHypercare66 - Duplicate HPFs being created
+- **PR1050558-5518** (Sprint 12.3) - Closed: PROD Bug: UPHypercare65 - The Kanban board in Asymbl looked odd for Kathleen Seg
+- **PR1050558-5515** (Sprint 12.3) - Closed: PROD Bug: Flow error for 'Update Previous HPF on contract Activation Scheduled F
+- **PR1050558-5514** (Sprint 12.3) - Closed: PROD Bug: UPHypercare61 - Clinician not receiving Intake Form email
+- **PR1050558-5513** (Sprint 12.3) - Closed: PROD Bug: UPHypercare60 - Research/Resolve - Multiple Practice Ops Agreement Act
+- **PR1050558-5512** (Sprint 12.3) - Closed: PROD Bug: UPHypercare59 - Clinicians not populating when searching to tie to job
+- **PR1050558-5509** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare45 - Recruiters should not be able to create Conga 
+- **PR1050558-5507** (Sprint 12.3) - Closed: PROD Bug: UPHypercare43 - NPPA Blended Rates not calculating on Details tab
+- **PR1050558-5505** (Sprint 12.3) - Closed: PROD Bug: Clinician Offboarding Automation Fix
+- **PR1050558-5504** (Sprint 12.3) - Closed: PROD Bug: Incorrect PMT Project Lighting Record Page  assignment
+- **PR1050558-5501** (Sprint 12.3) - Closed: PROD Bug: UPHypercare40 - Error on attempting to activate Contract
+- **PR1050558-5493** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare37 - Data Quality Needs Access to Create, Edit and 
+- **PR1050558-5489** (Sprint 12.3) - Closed: Facility tile (code set) is using standard Active field rather than custom IsAct
+- **PR1050558-5486** (Sprint 12.3) - Closed: PROD Bug: UPHypercare33 - Coverage only overrate duplication
+- **PR1050558-5474** (Sprint 12.3) - Closed: PROD Bug: Integration User needs ability to update/create Training record
+- **PR1050558-5470** (Sprint 12.3) - Closed: PROD Bug: Training object - Integration user needs access to Assigned Date field
+- **PR1050558-5456** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare26 Update task Subject = 'Populate the Shift Map & 
+- **PR1050558-5452** (Sprint 12.3) - Closed: PROD Bug: UPHypercare24 Can't see bonus details
+- **PR1050558-5451** (Sprint 12.3) - Closed: PROD Bug: UPHypercare23 - Anticipated Clinical Hours not Populating on Contract 
+- **PR1050558-5450** (Sprint 12.3) - Closed: PROD Bug: UPHypercare22 - Contract Compensation Calculation Error - Clinician/NP
+- **PR1050558-5449** (Sprint 12.3) - Closed: PROD Bug: UPHypercare21 - Portal User not Created (PROD)
+- **PR1050558-5448** (Sprint 12.3) - Closed: PROD Bug: UPHypercare20 - Effective date not populating on HPF
+- **PR1050558-5441** (Sprint 12.3) - Closed: PROD Enhancement: C&CUAT466 Payroll Report Building Access
+- **PR1050558-5424** (Sprint 12.3) - Closed: PROD Bug: C&CUAT464 - PROD - Should not be able to edit the Provider Contract
+- **PR1050558-5423** (Sprint 12.3) - Closed: PROD Bug: C&CUAT463 - PROD - Able to edit and save changes to fields on HPF
+- **PR1050558-5418** (Sprint 12.3) - Closed: UAT Bug: C&CUAT459 - UAT1 - Facility Offboarding didn't happen for Fort Duncan
+- **PR1050558-5417** (Sprint 12.3) - Closed: PROD Bug: C&CUAT458 - PROD - Should not be able edit the Corporate Entity Accoun
+- **PR1050558-5416** (Sprint 12.3) - Closed: PROD Bug: C&CUAT457 - PROD - Person Account, Related Tab DocuSign sections
+- **PR1050558-5415** (Sprint 12.3) - Closed: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5399** (Sprint 12.3) - Closed: TECH Only Flow Optimization - Part 2
+- **PR1050558-5391** (Sprint 12.3) - Closed: TECH Only Flow Optimization
+- **PR1050558-5385** (Sprint 12.3) - Closed: UAT Bug: C&CUAT439 - UAT1 - Experience Cloud Tracker Statuses not updating prope
+- **PR1050558-5371** (Sprint 12.3) - Closed: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-5227** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT398 Contract Request - Time Type Visibility on Rate Confi
+- **PR1050558-5225** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT397 Leased Provider Contract
+- **PR1050558-5221** (Sprint 12.3) - Closed: UAT Bug: C&CUAT393 Incorrect Effective From Date Populating on Rehire HPF
+- **PR1050558-5220** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT392 Edits needed to: Review Overlapping HPF effective dat
+- **PR1050558-5208** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT390 From the Service Account Missing Client Contract Link
+- **PR1050558-5206** (Sprint 12.3) - Closed: UAT Enhancement: Update Intake Form State Input
+- **PR1050558-5199** (Sprint 12.3) - Closed: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5183** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5173** (Sprint 12.3) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5153** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT368 Add Time Type to Summary Tab on Practice Ops record
+- **PR1050558-5107** (Sprint 12.3) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5104** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5098** (Sprint 12.3) - Closed: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095** (Sprint 12.3) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5811** (Sprint 12.4) - Closed: PROD Bug: UPHypercare277 - Sent contract but status not updating
+- **PR1050558-5807** (Sprint 12.4) - Closed: PROD Bug: UPHypercare275 - No contract agreements showing on the related tab of 
+- **PR1050558-5806** (Sprint 12.4) - Closed: PROD Bug: UPHypercare274 - Risk Review Bug: Error with RMO trying to approve
+- **PR1050558-5805** (Sprint 12.4) - Closed: PROD Bug: UPHypercare273 - Status is not changing after the DocuSign has been se
+- **PR1050558-5793** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5792** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5791** (Sprint 12.4) - Closed: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5788** (Sprint 12.4) - Closed: PROD Permissions: UPHypercare264 - Operation Finance financial impact field
+- **PR1050558-5781** (Sprint 12.4) - Closed: PROD Bug: UPHypercare263 - Hire Date Populating on Clinician Contract with No Fi
+- **PR1050558-5775** (Sprint 12.4) - Closed: PROD Bug: UPHypercare260 - The addendum A is not generating
+- **PR1050558-5772** (Sprint 12.4) - Closed: PROD Bug: UPHypercare258 - Missing CustomerSignedDate for locums
+- **PR1050558-5765** (Sprint 12.4) - Closed: PROD Bug: C&CUAT252 - Special terms on request but didn't route to Tactical
+- **PR1050558-5763** (Sprint 12.4) - Closed: PROD Bug: UPHypercare253 - Clinician has an inactive HPF with effective date 2/1
+- **PR1050558-5734** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare251 - Need 2 decimal places on certain fields (PCA)
+- **PR1050558-5730** (Sprint 12.4) - Closed: PROD Bug: UPHypercare248 - Case assigned to Corporate Entity Mismatch Queue but 
+- **PR1050558-5729** (Sprint 12.4) - Closed: PROD Bug: UPHypercare244 - There is currently no reporting for clinical recruiti
+- **PR1050558-5726** (Sprint 12.4) - Closed: Preventive Care Agreement - Add Field History
+- **PR1050558-5721** (Sprint 12.4) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5716** (Sprint 12.4) - Closed: PROD Bug: UPHypercare241 - NPPA Blended Rate not pulling for clinician
+- **PR1050558-5715** (Sprint 12.4) - Closed: PROD Bug: UPHypercare239 - Moved clinician Brian Brown (282612) to Offer in kanb
+- **PR1050558-5714** (Sprint 12.4) - Closed: PROD Bug: UPHypercare238 - Provider System Status field is not working as expect
+- **PR1050558-5710** (Sprint 12.4) - Closed: PROD Bug: UPHypercare235 - Sent contract but status not updating
+- **PR1050558-5704** (Sprint 12.4) - Closed: PROD Bug: UPHypercare229 - OnBase Facility List Issues
+- **PR1050558-5703** (Sprint 12.4) - Closed: PROD Bug: UPHypercare228 - Missing service lines used for financial reporting
+- **PR1050558-5690** (Sprint 12.4) - Blocked: PROD Bug: UPHypercare220 - Clinicians still not receiving Intake Form when movin
+- **PR1050558-5678** (Sprint 12.4) - In Progress: PROD Bug: UPHypercare215 - Client Termination Notification Email
+- **PR1050558-5677** (Sprint 12.4) - Closed: PROD Bug: UPHypercare214 - Only 1 contract Agreement record created for an IC wi
+- **PR1050558-5669** (Sprint 12.4) - Closed: PROD Bug: UPHypercare207 - Clinician Encore error
+- **PR1050558-5668** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare206 - Multiple Tactical AWIs on Clinician Contract
+- **PR1050558-5653** (Sprint 12.4) - Closed: PROD Bug: UPHypercare199 - Clinician reporting not receiving the link to set up 
+- **PR1050558-5647** (Sprint 12.4) - Closed: PROD Bug: UPHypercare192 - Still getting the frozen blue screen when trying to r
+- **PR1050558-5644** (Sprint 12.4) - Closed: PROD Bug: UPHypercare191 - Christus Health Emergency Center-Mount Pleasant - EM 
+- **PR1050558-5625** (Sprint 12.4) - Closed: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5617** (Sprint 12.4) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records
+- **PR1050558-5609** (Sprint 12.4) - Closed: PROD Bug: UPHypercare165 - scp-provider-recruiting getting value too large 255
+- **PR1050558-5591** (Sprint 12.4) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5589** (Sprint 12.4) - Closed: PROD Bug: UPHypercare140 - Facility Profile is not available in the UI
+- **PR1050558-5588** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare139 - First Clinical Shift integration is encounter
+- **PR1050558-5545** (Sprint 12.4) - Closed: PROD Bug: UPHypercare100 - Per the data migration spreadsheet, the legacy PFA.Ag
+- **PR1050558-5530** (Sprint 12.4) - Closed: PROD Bug: UPHypercare82 - NPPA Form Type Creation Error
+- **PR1050558-5456** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare26 Update task Subject = 'Populate the Shift Map & 
+- **PR1050558-5206** (Sprint 12.4) - Closed: UAT Enhancement: Update Intake Form State Input
+- **PR1050558-5183** (Sprint 12.4) - Closed: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5173** (Sprint 12.4) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5107** (Sprint 12.4) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5104** (Sprint 12.4) - Closed: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5095** (Sprint 12.4) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5083** (Sprint 12.4) - Closed: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-4911** (Sprint 12.4) - Closed: UAT Enhancement C&CUAT297 Account Name on Facility Offboarding case is invalid
+- **PR1050558-4744** (Sprint 12.4) - Closed: Contract Payment Agreement Related List Columns
+- **PR1050558-6314** (Sprint 12.5) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 3
+- **PR1050558-6307** (Sprint 12.5) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 2
+- **PR1050558-6260** (Sprint 12.5) - Ready for Test: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6237** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5962** (Sprint 12.5) - Closed: PROD Permissions: UPHypercare353 - New hire Victoria Allen not appearing in Sale
+- **PR1050558-5951** (Sprint 12.5) - Closed: PROD Bug: UPHypercare343 - Clinicians with previous active agreements in the old
+- **PR1050558-5947** (Sprint 12.5) - Closed: PROD Bug: UPHypercare340 - QGenda Scheduling Event Firing Too Early
+- **PR1050558-5924** (Sprint 12.5) - In Test: PROD Enhancement: UPHypercare338 - Update how Rates are displayed in the Summary
+- **PR1050558-5923** (Sprint 12.5) - In Progress: PROD Bug: UPHypercare337 - Hospital Contact Information
+- **PR1050558-5919** (Sprint 12.5) - Closed: PROD Bug: UPHypercare334 - Have to select NPPA Tier mismatch for a physician HPF
+- **PR1050558-5918** (Sprint 12.5) - On Hold: PROD Bug: UPHypercare332 - Multiple HPFs with the same EffFrom or EffTo Date
+- **PR1050558-5915** (Sprint 12.5) - On Hold: PROD Bug: UPHypercare331 - HRSC email notification triggering for all clinician 
+- **PR1050558-5914** (Sprint 12.5) - Closed: PROD Enhancement: HPF - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5903** (Sprint 12.5) - Closed: Regression Bug - When SCP case is closed as No longer existing  (i.e.Closed & Ca
+- **PR1050558-5893** (Sprint 12.5) - Closed: PROD Bug: UPHypercare318 - Contract Record not updating properly.
+- **PR1050558-5874** (Sprint 12.5) - Closed: PROD Enhancement: Platform Event = HPFUpdate, Type = Rate for HPF - Add Locum
+- **PR1050558-5873** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5872** (Sprint 12.5) - Closed: PROD Bug: UPHypercare310 - Unable to see past Conflict of Interest forms
+- **PR1050558-5871** (Sprint 12.5) - Closed: PROD Bug: Flow Error - Clinician Contract Review Approval Flow
+- **PR1050558-5869** (Sprint 12.5) - Closed: PROD Bug: UPHypercare307 - Missing Clinician Data for Okta set up
+- **PR1050558-5866** (Sprint 12.5) - Closed: Facility rates are updated on clinician contract for CCM of type = Manual.
+- **PR1050558-5862** (Sprint 12.5) - Closed: PROD Bug: UPHypercare306 - Commencement bonus isn't populating onto the agreemen
+- **PR1050558-5860** (Sprint 12.5) - Closed: PROD Bug: UPHypercare304 - Another provider is not receiving the intake form hin
+- **PR1050558-5859** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5858** (Sprint 12.5) - Closed: PROD Bug: UPHypercare302 - Incumbent clinicians receiving Intake Portal email, b
+- **PR1050558-5857** (Sprint 12.5) - Closed: PROD Bug: UPHypercare301 - Rate tables are not loading for a particular provider
+- **PR1050558-5852** (Sprint 12.5) - Closed: PROD Permissions: UPHypercare297: Access to edit monthly shifts requested on HPF
+- **PR1050558-5848** (Sprint 12.5) - Ready for Demo: PROD Enhancement: UPHypercare295 - Update SCP Onboarding Tasks
+- **PR1050558-5844** (Sprint 12.5) - Closed: PROD Bug: UPHypercare293 - GPID no longer showing at top of screen on Person Acc
+- **PR1050558-5841** (Sprint 12.5) - Open: PROD Enhancement: UPHypercare291 - Correcting Status and Category for a Client C
+- **PR1050558-5831** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5828** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5827** (Sprint 12.5) - Open: PROD Bug: UPHypercare285 - Salesforce Bonus Approval Concern
+- **PR1050558-5824** (Sprint 12.5) - Closed: Two Reporting Permission Sets
+- **PR1050558-5823** (Sprint 12.5) - Closed: PROD Enhancement: HPF - Add Section = 'Insurance Information'
+- **PR1050558-5822** (Sprint 12.5) - Closed: PROD Enhancement: 'Risk Management' Account Team Role
+- **PR1050558-5811** (Sprint 12.5) - Closed: PROD Bug: UPHypercare277 - Sent contract but status not updating
+- **PR1050558-5807** (Sprint 12.5) - Closed: PROD Bug: UPHypercare275 - No contract agreements showing on the related tab of 
+- **PR1050558-5806** (Sprint 12.5) - Closed: PROD Bug: UPHypercare274 - Risk Review Bug: Error with RMO trying to approve
+- **PR1050558-5805** (Sprint 12.5) - Closed: PROD Bug: UPHypercare273 - Status is not changing after the DocuSign has been se
+- **PR1050558-5793** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5792** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5791** (Sprint 12.5) - Closed: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5788** (Sprint 12.5) - Closed: PROD Permissions: UPHypercare264 - Operation Finance financial impact field
+- **PR1050558-5781** (Sprint 12.5) - Closed: PROD Bug: UPHypercare263 - Hire Date Populating on Clinician Contract with No Fi
+- **PR1050558-5763** (Sprint 12.5) - Closed: PROD Bug: UPHypercare253 - Clinician has an inactive HPF with effective date 2/1
+- **PR1050558-5733** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare250 - NPPA 'Call' shift with per shift unit of meas
+- **PR1050558-5728** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5721** (Sprint 12.5) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5704** (Sprint 12.5) - Closed: PROD Bug: UPHypercare229 - OnBase Facility List Issues
+- **PR1050558-5693** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare223 - PO Contract Overview not populating
+- **PR1050558-5692** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5690** (Sprint 12.5) - Blocked: PROD Bug: UPHypercare220 - Clinicians still not receiving Intake Form when movin
+- **PR1050558-5678** (Sprint 12.5) - In Progress: PROD Bug: UPHypercare215 - Client Termination Notification Email
+- **PR1050558-5669** (Sprint 12.5) - Closed: PROD Bug: UPHypercare207 - Clinician Encore error
+- **PR1050558-5668** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare206 - Multiple Tactical AWIs on Clinician Contract
+- **PR1050558-5653** (Sprint 12.5) - Closed: PROD Bug: UPHypercare199 - Clinician reporting not receiving the link to set up 
+- **PR1050558-5642** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5641** (Sprint 12.5) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 1
+- **PR1050558-5625** (Sprint 12.5) - Closed: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5621** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare118 - Missing data to process task- Create Team Ass
+- **PR1050558-5614** (Sprint 12.5) - Closed: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5597** (Sprint 12.5) - Closed: PROD Permissions: UPhypercare151: Access to Leadership Change
+- **PR1050558-5591** (Sprint 12.5) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5580** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5525** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare73 - Need a solution for recruiters to request a ne
+- **PR1050558-5521** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare68 - Update logic on Contract Status - Contracts wi
+- **PR1050558-5495** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare48 Ability to verify Staffing Operations Agreement 
+- **PR1050558-5457** (Sprint 12.5) - Closed: UAT Enhancement: Intake Form: Clinician Profile Assessment CTI section missing f
+- **PR1050558-5415** (Sprint 12.5) - Closed: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5319** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT417 - UAT1 - Unable to populate Hour Commitment on Agreem
+- **PR1050558-5232** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT402 Validation Rule Needed: Any Parent Case should not be
+- **PR1050558-5231** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT401 Validation Rule Needed: SCP Offboarding Case Should n
+- **PR1050558-5222** (Sprint 12.5) - On Hold: UAT Enhancement: C&CUAT394 GAP Scenario
+- **PR1050558-5173** (Sprint 12.5) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5169** (Sprint 12.5) - On Hold: UAT Enhancement: C&CUAT372 Rate Change (Increase) being created by Request Contr
+- **PR1050558-5168** (Sprint 12.5) - Closed: UAT Bug: C&CUAT371 CTI has to have an expiration date for the termination to fir
+- **PR1050558-5107** (Sprint 12.5) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-4921** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT301 On the CPA screen in Clinician Onboarding enhance the
+- **PR1050558-5965** (Sprint 12.6) - Closed: PROD Bug: UPHypercare357 - Clinician Contracts Tab under Service Line is blank
+- **PR1050558-5951** (Sprint 12.6) - Closed: PROD Bug: UPHypercare343 - Clinicians with previous active agreements in the old
+- **PR1050558-5950** (Sprint 12.6) - Closed: PROD Enhancement: Facility Change Request - Coverage Change - Add additional che
+- **PR1050558-5917** (Sprint 12.6) - Closed: PROD Enhancement: PCA - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5914** (Sprint 12.6) - Closed: PROD Enhancement: HPF - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5871** (Sprint 12.6) - Closed: PROD Bug: Flow Error - Clinician Contract Review Approval Flow
+- **PR1050558-5870** (Sprint 12.6) - Closed: UAT Enhancement - Facility Change Request: Update Task Verbiage for Mixed Rates
+- **PR1050558-5862** (Sprint 12.6) - Closed: PROD Bug: UPHypercare306 - Commencement bonus isn't populating onto the agreemen
+- **PR1050558-5858** (Sprint 12.6) - Closed: PROD Bug: UPHypercare302 - Incumbent clinicians receiving Intake Portal email, b
+- **PR1050558-5853** (Sprint 12.6) - Closed: PROD Permissions: UPHypercare298: Unable to edit bootcamp date fields
+- **PR1050558-5844** (Sprint 12.6) - Closed: PROD Bug: UPHypercare293 - GPID no longer showing at top of screen on Person Acc
+- **PR1050558-5806** (Sprint 12.6) - Closed: PROD Bug: UPHypercare274 - Risk Review Bug: Error with RMO trying to approve
+- **PR1050558-5788** (Sprint 12.6) - Closed: PROD Permissions: UPHypercare264 - Operation Finance financial impact field
+- **PR1050558-5733** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare250 - NPPA 'Call' shift with per shift unit of meas
+- **PR1050558-5707** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare232 - Adjust logic when cloning a Clinician Contrac
+- **PR1050558-5703** (Sprint 12.6) - Closed: PROD Bug: UPHypercare228 - Missing service lines used for financial reporting
+- **PR1050558-5693** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare223 - PO Contract Overview not populating
+- **PR1050558-5668** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare206 - Multiple Tactical AWIs on Clinician Contract
+- **PR1050558-5642** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5625** (Sprint 12.6) - Closed: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5591** (Sprint 12.6) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5521** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare68 - Update logic on Contract Status - Contracts wi
+- **PR1050558-2984** (Sprint 12.6) - Closed: [Observation Bug] :Client contract rates allows per-shift records to be created 
+- **PR1050558-6268** (Sprint 13) - Closed: Assessments created even if there are existing ones within the threshold period
+- **PR1050558-6252** (Sprint 13) - Closed: HPF Validation Rule Update
+- **PR1050558-6229** (Sprint 13) - Closed: PO contract approval process issues
+- **PR1050558-6222** (Sprint 13) - Closed: Case History related list not available for certain case record types
+- **PR1050558-6215** (Sprint 13) - Closed: Recruiter is not able to see EmailMessageRecord.
+- **PR1050558-6206** (Sprint 13) - Closed: Intake Form tasks for Name or NPI change not getting created immeditately after 
+- **PR1050558-6170** (Sprint 13) - Closed: Guided Flow fails to clone contracts when source PO Contract status is "Supersed
+- **PR1050558-6169** (Sprint 13) - Closed: Unable to Add Shifts to PO Contracts created via Guided Experience with Shift co
+- **PR1050558-6146** (Sprint 13) - Closed: Cloned Clinician Contract - Term Sheet Status field not getting set to Not Appli
+- **PR1050558-6142** (Sprint 13) - Closed: Bug: Reset Password issues.
+- **PR1050558-6141** (Sprint 13) - Closed: PROD Enhancement: UPHypercare380 - Clinician Updates to QGenda Credentialing - H
+- **PR1050558-6124** (Sprint 13) - Closed: Prod Bug: Clinician Contract field 'Contracting Corporate Entity' should be read
+- **PR1050558-6098** (Sprint 13) - Closed: PROD Enhancement: Clinician Onboarding tasks - Populate 'Name' (WhoID)
+- **PR1050558-6096** (Sprint 13) - Closed: PROD Enhancement: UPHypercare380 - Service Account Address Updates to QGenda Cre
+- **PR1050558-6062** (Sprint 13) - Closed: PROD Enhancement: UPHypercare267 - Review CPA Relationship not populating with p
+- **PR1050558-6058** (Sprint 13) - Closed: PROD Bug: UPHypercare398 - Offboarding Facility Termination
+- **PR1050558-6015** (Sprint 13) - Closed: Compliance Rule Assignments - Needs Mapping
+- **PR1050558-6002** (Sprint 13) - Closed: PROD Enhancement: PERMISSIONS – Assessment Object Visibility for Compliance & Da
+- **PR1050558-6001** (Sprint 13) - Closed: UAT Enhancement: Single Intake Completion (No Repeat Intake on Stage/Opportunity
+- **PR1050558-6000** (Sprint 13) - Closed: PROD Enhancement: Intake Status Auto-Update on Assessment Completion
+- **PR1050558-5999** (Sprint 13) - Closed: PROD Enhancement: Recruiter Self-Service: Password Reset Link / Username Visibil
+- **PR1050558-5998** (Sprint 13) - Closed: UAT Enhancement: Registration URL Exposure (Recruiter Backup Access Path)
+- **PR1050558-5984** (Sprint 13) - Closed: PROD Enhancement: UPHypercare369 - HPF Termination Date not correct
+- **PR1050558-5974** (Sprint 13) - Closed: PROD Enhancement: UPHypercare364 - Add 3 fields to Integration_Log__c object in 
+- **PR1050558-5966** (Sprint 13) - Closed: PROD Enhancement: UPHypercare360 - VPO not being notified of APay requests
+- **PR1050558-5863** (Sprint 13) - Closed: PROD Enhancement: Send individual HPF Inactivation Email
+- **PR1050558-5859** (Sprint 13) - Closed: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5840** (Sprint 13) - Closed: PROD Enhancement: UPHypercare289 - Risk Team - Needs Access to Edit Fields
+- **PR1050558-5831** (Sprint 13) - Closed: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5828** (Sprint 13) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5793** (Sprint 13) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5791** (Sprint 13) - Closed: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5728** (Sprint 13) - Closed: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5709** (Sprint 13) - Closed: PROD Enhancement: UPHypercare234 - Need the system to check if candidate has an 
+- **PR1050558-5692** (Sprint 13) - Closed: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5614** (Sprint 13) - Closed: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5580** (Sprint 13) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5140** (Sprint 13) - Closed: Regression bug : Incorrect Rate Data in Configure Rate Flow on Subsequent Loads
+- **PR1050558-6425** (Sprint 14) - Closed: Bug: Re-contract Email Failure & all data showing in Report email.
+- **PR1050558-6417** (Sprint 14) - Closed: Issues with updates related to HPFs inactive over 365 days
+- **PR1050558-6416** (Sprint 14) - Closed: Bug: Inactivation Report Failing to Process 'Provider Next Scheduled Date'
+- **PR1050558-6387** (Sprint 14) - Closed: Bug: AWI Triggered on IC to EE Conversion Despite Matching CCEs
+- **PR1050558-6386** (Sprint 14) - Closed: Bug: Incorrect AWI Generation for Matching CCEs
+- **PR1050558-6382** (Sprint 14) - Closed: Email Message activity record and task created even though email is not sent
+- **PR1050558-6359** (Sprint 14) - Closed: Issues for Billing only Indicator.
+- **PR1050558-6354** (Sprint 14) - Closed: Observation: Old HPF is not marked as 'Superseded' if delinked from clinician co
+- **PR1050558-6350** (Sprint 14) - Closed: HPF Status Update Failure for Related HPFs (superseded) when active HPF turns In
+- **PR1050558-6349** (Sprint 14) - Closed: Observation: User is able to add 'Superseded' HPF to clinician contract
+- **PR1050558-6348** (Sprint 14) - Closed: Observation: Facility offboarding Guided flow is showing  HPF with status = supe
+- **PR1050558-6322** (Sprint 14) - Closed: PROD Bug: TeamRole - Off Boarding Tasks Flow missing Metadata during deployment
+- **PR1050558-6314** (Sprint 14) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 3
+- **PR1050558-6307** (Sprint 14) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 2
+- **PR1050558-6264** (Sprint 14) - Closed: Create two fields on Integration_Log__c - Error_Code__c and Retry_Count__c
+- **PR1050558-6260** (Sprint 14) - Ready for Test: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6237** (Sprint 14) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6235** (Sprint 14) - Ready for Test: PROD Enhancement: Update HPF Status from "Superseded" to "Inactive"
+- **PR1050558-6233** (Sprint 14) - Closed: Clinician Experience Site Login Redirecting to QA
+- **PR1050558-6208** (Sprint 14) - Closed: PROD Enhancement: Remove ability for Recruiters to create Account Record Type = 
+- **PR1050558-6163** (Sprint 14) - Closed: Client Change Management: Update Permission Set = Manage Clinician Contract
+- **PR1050558-6148** (Sprint 14) - Ready for Test: Client Change Management: Update Canceled Status criteria for Process Type = Age
+- **PR1050558-6141** (Sprint 14) - Closed: PROD Enhancement: UPHypercare380 - Clinician Updates to QGenda Credentialing - H
+- **PR1050558-6098** (Sprint 14) - Closed: PROD Enhancement: Clinician Onboarding tasks - Populate 'Name' (WhoID)
+- **PR1050558-6097** (Sprint 14) - Closed: PROD Enhancement: UPHypercare410 - Unable to check the Nocturnist box on HPFs
+- **PR1050558-6096** (Sprint 14) - Closed: PROD Enhancement: UPHypercare380 - Service Account Address Updates to QGenda Cre
+- **PR1050558-6082** (Sprint 14) - Closed: PROD Enhancement: UPHypercare403 - Copy CES to on the Welcome to Clinician
+- **PR1050558-6037** (Sprint 14) - In Test: PROD Bug: UPHypercare392 - Agentforce did not create the notice letters
+- **PR1050558-6015** (Sprint 14) - Closed: Compliance Rule Assignments - Needs Mapping
+- **PR1050558-6002** (Sprint 14) - Closed: PROD Enhancement: PERMISSIONS – Assessment Object Visibility for Compliance & Da
+- **PR1050558-6001** (Sprint 14) - Closed: UAT Enhancement: Single Intake Completion (No Repeat Intake on Stage/Opportunity
+- **PR1050558-6000** (Sprint 14) - Closed: PROD Enhancement: Intake Status Auto-Update on Assessment Completion
+- **PR1050558-5999** (Sprint 14) - Closed: PROD Enhancement: Recruiter Self-Service: Password Reset Link / Username Visibil
+- **PR1050558-5998** (Sprint 14) - Closed: UAT Enhancement: Registration URL Exposure (Recruiter Backup Access Path)
+- **PR1050558-5984** (Sprint 14) - Closed: PROD Enhancement: UPHypercare369 - HPF Termination Date not correct
+- **PR1050558-5921** (Sprint 14) - Closed: PROD Enhancement: Service Account, HPF and Clinician Contract - Add Billing Only
+- **PR1050558-5873** (Sprint 14) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5863** (Sprint 14) - Closed: PROD Enhancement: Send individual HPF Inactivation Email
+- **PR1050558-5859** (Sprint 14) - Closed: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5840** (Sprint 14) - Closed: PROD Enhancement: UPHypercare289 - Risk Team - Needs Access to Edit Fields
+- **PR1050558-5831** (Sprint 14) - Closed: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5828** (Sprint 14) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5793** (Sprint 14) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5792** (Sprint 14) - Closed: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5728** (Sprint 14) - Closed: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5709** (Sprint 14) - Closed: PROD Enhancement: UPHypercare234 - Need the system to check if candidate has an 
+- **PR1050558-5708** (Sprint 14) - Closed: PROD Enhancement: UPHypercare233 - Adjust cloning logic related to entity, when 
+- **PR1050558-5692** (Sprint 14) - Closed: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5648** (Sprint 14) - Ready for Test: PROD Enhancement: HPF Inactive Date Trigger to Qgenda - Update when an HPF inact
+- **PR1050558-5641** (Sprint 14) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 1
+- **PR1050558-5614** (Sprint 14) - Closed: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5580** (Sprint 14) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5207** (Sprint 14) - In Test: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5170** (Sprint 14) - In Test: UAT Enhancement: C&CUAT373 Update criteria for how Agentforce displays list of i
+- **PR1050558-4780** (Sprint 14) - Closed: UAT Enhancement: Optimize Clinician Contract Views
+- **PR1050558-3478** (Sprint 14) - In Test: Agentforce Clinician Rate Change Notices Use Case - Enhancement
+- **PR1050558-369** (Sprint 2) - Closed: Issues on Guided Create HPF: Clinician Info
+- **PR1050558-350** (Sprint 2) - Closed: Not able to view the list of tasks when log In as System Admin user
+- **PR1050558-349** (Sprint 2) - Closed: Contract (Clinician) status field has extra picklist value.
+- **PR1050558-331** (Sprint 2) - Closed: Contract related list is not configured correctly.
+- **PR1050558-324** (Sprint 2) - Closed: Not able to view Core Connect and SCP Health banner when login prospect portal
+- **PR1050558-321** (Sprint 2) - Closed: Not able to edit the fields by clicking on Pencil Icon in Clinician Creation
+- **PR1050558-296** (Sprint 2) - Closed: Duplicate records being created for Taxonomy & Board certification upon NPI upda
+- **PR1050558-289** (Sprint 2) - Closed: Remove "Next" Navigation When Facing Error
+- **PR1050558-284** (Sprint 2) - Closed: NPI Field on clinician record is editable.
+- **PR1050558-283** (Sprint 2) - Closed: Not able to land on the Contacts page.
+- **PR1050558-282** (Sprint 2) - Closed: Next button should be disabled or rename when selecting existing record and New 
+- **PR1050558-281** (Sprint 2) - Closed: Added extra Save for later link when creating clinician record.
+- **PR1050558-250** (Sprint 2) - Closed: Record not get created when clicking on Next button in Create Clinician
+- **PR1050558-244** (Sprint 2) - Closed: Add Additional Fields
+- **PR1050558-243** (Sprint 2) - Closed: External Client Apps APP for Mulesoft
+- **PR1050558-242** (Sprint 2) - Closed: Update Standard Care Fee Agreement to Preventive Care Agreement
+- **PR1050558-218** (Sprint 2) - Closed: Missing Account Plans related list for all record types
+- **PR1050558-217** (Sprint 2) - Closed: Add LRP and Page Layouts to System Administrator
+- **PR1050558-209** (Sprint 2) - Closed: Guided Create HPF: Facility Selection
+- **PR1050558-196** (Sprint 2) - Closed: Clinician Visa Information
+- **PR1050558-195** (Sprint 2) - Closed: Guided Clinician Creation
+- **PR1050558-192** (Sprint 2) - Closed: NPI Management
+- **PR1050558-147** (Sprint 2) - Closed: CPA Relationship and Contract Records
+- **PR1050558-144** (Sprint 2) - Closed: Prospect Portal Login & Home
+- **PR1050558-123** (Sprint 2) - Closed: Guided Create HPF: Clinician Info
+- **PR1050558-83** (Sprint 2) - Closed: Clinician Contract Records
+- **PR1050558-618** (Sprint 3) - Closed: Failed to mention mandatory fields - Facility Title and Rate in Facility Rate Cr
+- **PR1050558-590** (Sprint 3) - Closed: [Regression Bug] Taxonomy record showing record ID in name field.
+- **PR1050558-588** (Sprint 3) - Closed: [Regression Bug] "Update NPI" omni flow is not working for Recruiter.
+- **PR1050558-564** (Sprint 3) - Closed: [Regression_Bug] Service line field is missing on Service Account record page.
+- **PR1050558-485** (Sprint 3) - Closed: Integration Log Object
+- **PR1050558-474** (Sprint 3) - Closed: Page layout fields are missing in Services and Case (Clinical Onboarding) object
+- **PR1050558-465** (Sprint 3) - Closed: Active field is not updating based on end date criteria.
+- **PR1050558-462** (Sprint 3) - Closed: Activity related list's Columns are not matching as per AC.
+- **PR1050558-434** (Sprint 3) - Closed: Delete Deprecated Picklist Fields
+- **PR1050558-421** (Sprint 3) - Closed: Clinician Risk Review - Record Type & Layout
+- **PR1050558-382** (Sprint 3) - Closed: Facility Rate Creation - Summary Screen
+- **PR1050558-378** (Sprint 3) - Closed: Business Licences are created but those are Indistinguishable.
+- **PR1050558-374** (Sprint 3) - Closed: Code Set Object
+- **PR1050558-370** (Sprint 3) - Closed: Generic Error Logger for Application Errors
+- **PR1050558-358** (Sprint 3) - Closed: Assessment & Assessment Question Response Object
+- **PR1050558-340** (Sprint 3) - Closed: Update the Account Account Relationship
+- **PR1050558-337** (Sprint 3) - Closed: Standardize Facility Title Values
+- **PR1050558-332** (Sprint 3) - Closed: Automatically Assign the "Portal User" Permission Set
+- **PR1050558-298** (Sprint 3) - Closed: Facility Rate Creation - Type of Rate = Shift
+- **PR1050558-290** (Sprint 3) - Closed: Add Additional Fields
+- **PR1050558-248** (Sprint 3) - Closed: OmniStudio Permission Set
+- **PR1050558-245** (Sprint 3) - Closed: Update Related Lists on Clinician Record
+- **PR1050558-235** (Sprint 3) - Closed: CDC Channel
+- **PR1050558-234** (Sprint 3) - Closed: Standardize State Picklist Values
+- **PR1050558-232** (Sprint 3) - Closed: Integration Profile and Permission Set
+- **PR1050558-219** (Sprint 3) - Closed: Clinician Risk Review
+- **PR1050558-902** (Sprint 4) - Closed: Delete Icons are showing when there is no data available
+- **PR1050558-879** (Sprint 4) - Closed: Permission sets don't have access to 'Birthdate' field on Contact object
+- **PR1050558-878** (Sprint 4) - Closed: On Task record page header line and buttons are not visible.
+- **PR1050558-877** (Sprint 4) - Closed: Provider Network Contract related list missing from Contract (Clinician)
+- **PR1050558-867** (Sprint 4) - Closed: Dependency incorrect for 'Temporary Inactive Reason' field
+- **PR1050558-866** (Sprint 4) - Closed: Child cases are created with Priority = medium even specifying on onboarding flo
+- **PR1050558-865** (Sprint 4) - Closed: Facility Onboarding Child cases are creating for HPF Credential status = Active,
+- **PR1050558-849** (Sprint 4) - Closed: Healthcare Practitioner Facility column missing in Open Onboarding, Open Risk Re
+- **PR1050558-832** (Sprint 4) - Closed: Type field value not defaulted to Night Shift Bonus value
+- **PR1050558-831** (Sprint 4) - Closed: Correct field values not displayed in Account Hierarchy columns
+- **PR1050558-827** (Sprint 4) - Closed: Configure Case Page - Intake Form
+- **PR1050558-818** (Sprint 4) - Closed: Type field is missing on Rate Details screen.
+- **PR1050558-817** (Sprint 4) - Closed: Fields are missing in Preventive Care Agreement record
+- **PR1050558-815** (Sprint 4) - Closed: User is able to see 'New' Action button on Accounts Related list
+- **PR1050558-814** (Sprint 4) - Closed: Field (I9 Completed)  is not visible for HR persona on Clinician record.
+- **PR1050558-776** (Sprint 4) - Closed: SPIKE - Pro Forma Outputs - POC for Option 1
+- **PR1050558-716** (Sprint 4) - Closed: Update Guided Clinician Creation
+- **PR1050558-715** (Sprint 4) - Closed: Facility Rate Creation - Summary tab
+- **PR1050558-703** (Sprint 4) - Closed: Facility Rate Creation - Button and Record Creation
+- **PR1050558-622** (Sprint 4) - Closed: Clinician Onboarding Record Automation - SCP Onboarding - Child Cases (Manually 
+- **PR1050558-621** (Sprint 4) - Closed: Clinician Onboarding Record Automation - Facility Onboarding - Child Cases (Manu
+- **PR1050558-610** (Sprint 4) - Closed: Clinician Onboarding Record Automation - Facility Onboarding - Parent (Manually 
+- **PR1050558-608** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Bonus
+- **PR1050558-607** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Target
+- **PR1050558-606** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Variable
+- **PR1050558-605** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Stipend
+- **PR1050558-592** (Sprint 4) - Closed: Create Default Task Record Type and Page Layout - Portal
+- **PR1050558-573** (Sprint 4) - Closed: Initial Role Hierarchy
+- **PR1050558-572** (Sprint 4) - Closed: Agreement Request - Email Alert
+- **PR1050558-566** (Sprint 4) - Closed: MSL-CC Queue
+- **PR1050558-563** (Sprint 4) - Closed: Enrollment Specialist Queue
+- **PR1050558-562** (Sprint 4) - Closed: Clinician Onboarding Record Automation - SCP Onboarding - Parent (Manually Trigg
+- **PR1050558-561** (Sprint 4) - Closed: Clinician Onboarding Case & Task Templates
+- **PR1050558-560** (Sprint 4) - Closed: View Preventive Care Agreement on Contract Payment Agreement
+- **PR1050558-473** (Sprint 4) - Closed: Automatically Create Healthcare Provider & Healthcare Payer Network Records
+- **PR1050558-470** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Leadership Incentives
+- **PR1050558-469** (Sprint 4) - Closed: Add Additional Fields
+- **PR1050558-467** (Sprint 4) - Closed: Intake Form Case
+- **PR1050558-430** (Sprint 4) - Closed: Clinician Attributes in Salesforce to Send to Workday
+- **PR1050558-429** (Sprint 4) - Closed: Credentialing & Scheduling Attributes from QGenda
+- **PR1050558-386** (Sprint 4) - Closed: Update NPI Management
+- **PR1050558-385** (Sprint 4) - Closed: Update Guided Clinician Creation - Geographic Preference
+- **PR1050558-379** (Sprint 4) - Closed: Client Division (Operational Structure)
+- **PR1050558-359** (Sprint 4) - Closed: Create Default Task Record Type and Page Layout
+- **PR1050558-236** (Sprint 4) - Closed: Portal Login
+- **PR1050558-227** (Sprint 4) - Closed: Account Hierarchy Columns
+- **PR1050558-226** (Sprint 4) - Closed: Salesforce App Cleanup
+- **PR1050558-208** (Sprint 4) - Closed: View Provider Network Contract on Contract Record
+- **PR1050558-204** (Sprint 4) - Closed: Prospect Portal Home Page & Record Detail
+- **PR1050558-145** (Sprint 4) - Closed: Manual Onboarding Case Creation
+- **PR1050558-1407** (Sprint 5) - Closed: Random rates are being displayed when user selects shifts
+- **PR1050558-1391** (Sprint 5) - Open: Missing options in the taxonomy field as specified in the Health Cloud Records s
+- **PR1050558-1386** (Sprint 5) - Closed: Blank and duplicate row displayed in HPF list in Contract Request flow
+- **PR1050558-1379** (Sprint 5) - Closed: The 'Shift' word needs to be Append on Type field for the Specify Rate flow.
+- **PR1050558-1365** (Sprint 5) - Closed: Error message not displayed when there is an existing open Facility
+- **PR1050558-1361** (Sprint 5) - Closed: The records are not getting created for the Specify Rate flow.
+- **PR1050558-1358** (Sprint 5) - Closed: MSL/Recruiter User is not able to see  LinkedIn Sales Navigator component
+- **PR1050558-1316** (Sprint 5) - Closed: Multiple issues on Pro Forma Model and Pro Forma Facility Detail record pages.
+- **PR1050558-1309** (Sprint 5) - Closed: BDA/Recruiter/MSL unable to add team members on service account
+- **PR1050558-1289** (Sprint 5) - Closed: Duplicate Record is Displayed on the Summary records and for any Type of Rate Re
+- **PR1050558-1237** (Sprint 5) - Closed: Regression Bug:The Account field is missing on the Parent Case of Record Type - 
+- **PR1050558-1165** (Sprint 5) - Closed: Access Issue - Fields are not visible to Clinician Contracting Specialist person
+- **PR1050558-1164** (Sprint 5) - Closed: Access Issue - Fields are not visible to Clinician Contracting Specialist person
+- **PR1050558-1153** (Sprint 5) - Closed: As Data Quality user - Contract Request button is missing on Clinician record.
+- **PR1050558-1151** (Sprint 5) - Closed: Regression Bug - Issues in Specify Rates flow launched from Corporate Support Co
+- **PR1050558-1139** (Sprint 5) - Closed: Unable to create HPF record
+- **PR1050558-1102** (Sprint 5) - Closed: Risk Review Approvals - Update Case Account field
+- **PR1050558-1098** (Sprint 5) - Closed: The New button does not appear correctly on the Shift related list.
+- **PR1050558-1091** (Sprint 5) - Closed: Clinician Contract Request: HPF Selection (Functionality for Facility Selection 
+- **PR1050558-1090** (Sprint 5) - Closed: The fields and header does not appear correctly on the PCA and Shift records.
+- **PR1050558-1076** (Sprint 5) - Closed: 'Comments' field missing on Clinician Onboarding case page layout for Recruiter
+- **PR1050558-1057** (Sprint 5) - Closed: Upon submission of Specify Rate flow the records are not getting created under t
+- **PR1050558-1056** (Sprint 5) - Closed: Facility Rate Creation - Update Summary Tab Record Visibility
+- **PR1050558-908** (Sprint 5) - Closed: Attach/Upload file option is visible when user select No on risk review confirma
+- **PR1050558-903** (Sprint 5) - Closed: Risk Review Approvals - Decision & Views
+- **PR1050558-893** (Sprint 5) - Closed: Clinician Contract Request: HPF Selection
+- **PR1050558-892** (Sprint 5) - Closed: Clinician Contract Request: Leased or Locums
+- **PR1050558-882** (Sprint 5) - Closed: Facility Rate Creation - Summary tab - Shift updates
+- **PR1050558-857** (Sprint 5) - Closed: Enrollment Specialist Queue - Support Cases
+- **PR1050558-852** (Sprint 5) - Closed: Intake Form Automation - Closed
+- **PR1050558-840** (Sprint 5) - Closed: Clinician Experience Specialist Test User
+- **PR1050558-839** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = All: Add Override Prohibited
+- **PR1050558-838** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = Variable, Stipend & Leadership Incentive
+- **PR1050558-836** (Sprint 5) - Closed: Update Employment Type on Healthcare Practitioner Facility
+- **PR1050558-835** (Sprint 5) - Closed: Update Initiate Early Onboarding - SCP Error Message
+- **PR1050558-833** (Sprint 5) - Closed: Update Code Set Object and Facility Title Records
+- **PR1050558-822** (Sprint 5) - Closed: Enforce Contract to Manually Initiate Onboarding
+- **PR1050558-811** (Sprint 5) - Closed: Automatically Provision HC Portal Access
+- **PR1050558-809** (Sprint 5) - Closed: Configure Case Page - Onboarding
+- **PR1050558-796** (Sprint 5) - Closed: Integration User - View Encrypted Data
+- **PR1050558-777** (Sprint 5) - Closed: Facility Rate Creation - Rate Rules/Validations
+- **PR1050558-774** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = Variable: Modify Type
+- **PR1050558-755** (Sprint 5) - Closed: Updating Portal Links
+- **PR1050558-712** (Sprint 5) - Closed: Create Permission Set for AffectLayer Apps
+- **PR1050558-707** (Sprint 5) - Closed: Attach Files During Risk Review
+- **PR1050558-702** (Sprint 5) - Closed: Clinician Contract Executed Automation (Field Creation)
+- **PR1050558-700** (Sprint 5) - Closed: Specify Corporate Entity Type
+- **PR1050558-697** (Sprint 5) - Closed: Shift Custom Object & PCA Cleanup
+- **PR1050558-666** (Sprint 5) - Closed: Update Guided Create HPF - Board Cert & Medical License
+- **PR1050558-617** (Sprint 5) - Closed: Standardize Care Taxonomy Records
+- **PR1050558-616** (Sprint 5) - Closed: Standardize Care Specialty Records
+- **PR1050558-615** (Sprint 5) - Closed: Intake Form Automation - Send
+- **PR1050558-614** (Sprint 5) - Closed: Create Account Team Roles
+- **PR1050558-589** (Sprint 5) - Closed: [Regression Bug] Create HPF & Job Association Flow is not working for Recruiter.
+- **PR1050558-486** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = Shift: Add Shift Type
+- **PR1050558-471** (Sprint 5) - Closed: Pro Forma Outputs
+- **PR1050558-326** (Sprint 5) - Closed: Manage Primary Taxonomy and Specialty
+- **PR1050558-291** (Sprint 5) - Closed: Create HPF: Facility Selection & Specify Facility Title
+- **PR1050558-246** (Sprint 5) - Closed: Risk Review Approvals - Submit
+- **PR1050558-210** (Sprint 5) - Closed: Clinician Contract Request: Shift Rates
+- **PR1050558-2086** (Sprint 6) - Closed: Clinician Contract Request: Bonus - Enforce additional bonus on 1 Facility/HPF
+- **PR1050558-1813** (Sprint 6) - Closed: Value for fields in 'Review CPA Relationship' table not displayed
+- **PR1050558-1812** (Sprint 6) - Closed: Issues related to Configure Rate screen from Clinician Contract
+- **PR1050558-1808** (Sprint 6) - Closed: Start date is not populated on the cloned Contract's CPA records
+- **PR1050558-1807** (Sprint 6) - Closed: Not able to see CPA and PCA records created for multiple records
+- **PR1050558-1783** (Sprint 6) - Closed: The existing Clinician Contract Records are not getting displayed under the Agre
+- **PR1050558-1771** (Sprint 6) - Open: Observation Bug: The NP/PA section should not be displayed as per DD. As it is n
+- **PR1050558-1770** (Sprint 6) - Closed: On the Details tab, the Previous Contract field should be displayed. But as of n
+- **PR1050558-1767** (Sprint 6) - Closed: Issues in the Additional Fields added on objects
+- **PR1050558-1747** (Sprint 6) - Closed: Integration User - Add New Provider Network Contract fields
+- **PR1050558-1715** (Sprint 6) - Closed: Not able to Configure Rate for Clinician Contracts
+- **PR1050558-1714** (Sprint 6) - Closed: Contract record is being created without HPF.
+- **PR1050558-1710** (Sprint 6) - Closed: Integration User - Edit HPF
+- **PR1050558-1709** (Sprint 6) - Closed: Role Hierarchy - Add VP DB Finance & SVP Growth
+- **PR1050558-1650** (Sprint 6) - Closed: User should not be able to remove the Pay code once it is created
+- **PR1050558-1649** (Sprint 6) - Closed: Tech Story to Remove Fields
+- **PR1050558-1635** (Sprint 6) - Closed: Clinician Application Visibility - Update Permissions
+- **PR1050558-1617** (Sprint 6) - Closed: Regression Bug: Risk review cases are not getting closed post approval.
+- **PR1050558-1616** (Sprint 6) - Closed: Manage Clinician Onboarding Permission Set is missing from the "Legal" Permissio
+- **PR1050558-1589** (Sprint 6) - Closed: Platform Event - First Scheduled Date
+- **PR1050558-1585** (Sprint 6) - Closed: User is seeing the Error message even after the shift is added to the Client Con
+- **PR1050558-1579** (Sprint 6) - Closed: Clinician Contract Request: Add Recruiter Permissions
+- **PR1050558-1577** (Sprint 6) - Closed: Healthcare Provider Specialty record not getting creatd when creating HPF
+- **PR1050558-1568** (Sprint 6) - Closed: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1435** (Sprint 6) - Closed: Auto Create Relationship Records for CPA - CPA Review Object
+- **PR1050558-1407** (Sprint 6) - Closed: Random rates are being displayed when user selects shifts
+- **PR1050558-1391** (Sprint 6) - Open: Missing options in the taxonomy field as specified in the Health Cloud Records s
+- **PR1050558-1389** (Sprint 6) - Closed: Clinician Contract Request: Summary Screen - Add HPF
+- **PR1050558-1387** (Sprint 6) - Closed: Integration User Access
+- **PR1050558-1368** (Sprint 6) - Closed: Add Banner to HC Portal
+- **PR1050558-1367** (Sprint 6) - Closed: Pay Code Data Load
+- **PR1050558-1366** (Sprint 6) - Closed: Facility Rate Creation - Add Error Message if no available Shifts
+- **PR1050558-1364** (Sprint 6) - Closed: Clinician Onboarding Record Automation - SCP Onboarding - Update Case Owner for 
+- **PR1050558-1362** (Sprint 6) - Closed: Case owner for the SCP Onboarding (per Clinician) is not Account Team's "Clinici
+- **PR1050558-1332** (Sprint 6) - Closed: Clinician Contract Request: Select Employment Type
+- **PR1050558-1317** (Sprint 6) - Closed: Clinician Contract - Prevent Active EE/IC at the same time
+- **PR1050558-1305** (Sprint 6) - Closed: Add Additional Fields
+- **PR1050558-1257** (Sprint 6) - Closed: Update Test Users - Add Public Groups
+- **PR1050558-1256** (Sprint 6) - Closed: Contract Selection During Manually Initiated Onboarding
+- **PR1050558-1243** (Sprint 6) - Closed: Client Contract Update - Pay Code Association
+- **PR1050558-1240** (Sprint 6) - Closed: Clinician Contract Summary UI - Connect Clinician Rate to Facility Rate
+- **PR1050558-1173** (Sprint 6) - Closed: Pay Code Association to Client/Clinician
+- **PR1050558-1172** (Sprint 6) - Closed: Enrollment Specialist - Update Test User
+- **PR1050558-1138** (Sprint 6) - Closed: Clinician Contract Request: Leased or Locums - Create/update records
+- **PR1050558-1113** (Sprint 6) - Closed: Risk Review - Populate AccountId with Service Account
+- **PR1050558-1112** (Sprint 6) - Closed: Update Case layout - Clinician Intake Form & Risk Review
+- **PR1050558-1111** (Sprint 6) - Closed: Standardize Service Line Records
+- **PR1050558-1110** (Sprint 6) - Closed: Clinician Contract Request: Leadership Incentives
+- **PR1050558-1109** (Sprint 6) - Closed: Clinician Contract Request: Stipend Rates
+- **PR1050558-1108** (Sprint 6) - Closed: Clinician Contract Request: Variable Rates
+- **PR1050558-1103** (Sprint 6) - Closed: Clinician Contract Request: Target Rates
+- **PR1050558-1091** (Sprint 6) - Closed: Clinician Contract Request: HPF Selection (Functionality for Facility Selection 
+- **PR1050558-1074** (Sprint 6) - Closed: Add Files on Contract
+- **PR1050558-1072** (Sprint 6) - Closed: Collaborative Practice Agreement Legal Requirements - Load Data
+- **PR1050558-1070** (Sprint 6) - Closed: Clinician Contract Request: Contract Changes
+- **PR1050558-894** (Sprint 6) - Closed: Clinician Contract Request: Summary Screen
+- **PR1050558-893** (Sprint 6) - Closed: Clinician Contract Request: HPF Selection
+- **PR1050558-892** (Sprint 6) - Closed: Clinician Contract Request: Leased or Locums
+- **PR1050558-891** (Sprint 6) - Closed: Clinician Application Withdrawal - HC Portal
+- **PR1050558-890** (Sprint 6) - Closed: Clinician Application Visibility - HC Portal
+- **PR1050558-841** (Sprint 6) - Closed: Code Set List Views
+- **PR1050558-823** (Sprint 6) - Closed: Create HPF from Job
+- **PR1050558-822** (Sprint 6) - Closed: Enforce Contract to Manually Initiate Onboarding
+- **PR1050558-821** (Sprint 6) - Closed: Risk Review Approvals - Notification to Payroll
+- **PR1050558-702** (Sprint 6) - Closed: Clinician Contract Executed Automation (Field Creation)
+- **PR1050558-614** (Sprint 6) - Closed: Create Account Team Roles
+- **PR1050558-471** (Sprint 6) - Closed: Pro Forma Outputs
+- **PR1050558-468** (Sprint 6) - Closed: App Home Page
+- **PR1050558-326** (Sprint 6) - Closed: Manage Primary Taxonomy and Specialty
+- **PR1050558-302** (Sprint 6) - Closed: Collaborative Practice Agreement Review UI
+- **PR1050558-299** (Sprint 6) - Closed: Clinician Contract Summary UI - Cloned Indicator
+- **PR1050558-249** (Sprint 6) - Closed: Pay Code Management
+- **PR1050558-210** (Sprint 6) - Closed: Clinician Contract Request: Shift Rates
+- **PR1050558-194** (Sprint 6) - Closed: Clinician Contract Request: Bonus
+- **PR1050558-167** (Sprint 6) - Closed: Collaborative Practice Agreement Legal Requirements
+- **PR1050558-2436** (Sprint 7) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2426** (Sprint 7) - Closed: Not all cases and tasks on the clinician account are closed when the HPF is made
+- **PR1050558-2223** (Sprint 7) - Closed: HPF status is not updated to Inactive status when LWD is more than 12 months for
+- **PR1050558-2218** (Sprint 7) - Closed: All HPFs of sister sites are being validated for LDW without considering status
+- **PR1050558-2213** (Sprint 7) - Closed: Observation Bug: CPA not created for one of the scenario
+- **PR1050558-2212** (Sprint 7) - Closed: Observation Bug:While creating a Shift record as an SFO, getting insufficient ac
+- **PR1050558-2206** (Sprint 7) - Closed: When clicked on Open Shift APAY button from Clinician Experience Specialist or S
+- **PR1050558-2205** (Sprint 7) - Closed: HR persona does not have access to Facility/SCP onboarding Cases & related task.
+- **PR1050558-2203** (Sprint 7) - Open: Observation Bug:  At a Glance tab
+- **PR1050558-2202** (Sprint 7) - Closed: If on HPF record status is Prospect and without updating the Contracting Status,
+- **PR1050558-2201** (Sprint 7) - Closed: Shift rates not getting updated on cloned contract
+- **PR1050558-2191** (Sprint 7) - Closed: User is able to see few fields present in page layout which has to be removed in
+- **PR1050558-2190** (Sprint 7) - Closed: SFO user unable to add rates for Target type on the cloned contract
+- **PR1050558-2184** (Sprint 7) - Closed: Unable to change ATS applicant stage to "Recruiter Screen" - Process failed erro
+- **PR1050558-2183** (Sprint 7) - Closed: Credentialling Status and Temporary Inactive Reason Fields Are Not Read-Only in 
+- **PR1050558-2180** (Sprint 7) - Closed: SFO user unable to add, update or remove rates on the cloned client contract
+- **PR1050558-2175** (Sprint 7) - Closed: The MSL persona cannot view the Payer Enrollment child case of Parent Facility O
+- **PR1050558-2171** (Sprint 7) - Closed: Existing sharing setting giving access of Clinical Match case records who are no
+- **PR1050558-2164** (Sprint 7) - Closed: Regression Bug - Unable to configure rate on clinician record even though CPA Cl
+- **PR1050558-2163** (Sprint 7) - Closed: When navigating through stages it is throwing error and not allowing to move for
+- **PR1050558-2156** (Sprint 7) - Closed: On both the list views the Column -All Clinician Contracts - Approved and My Cli
+- **PR1050558-2154** (Sprint 7) - Closed: Task Detail page is not visible for MSL User.
+- **PR1050558-2153** (Sprint 7) - Closed: Initiate Clinician Match process flow is not working
+- **PR1050558-2149** (Sprint 7) - Closed: Regression bug - Issues on 'Summary' tab of client contract
+- **PR1050558-2146** (Sprint 7) - Closed: CPA and Rates not getting added on clinician contract when multiple HPFs have sa
+- **PR1050558-2144** (Sprint 7) - Closed: Issues related to Bonus
+- **PR1050558-2135** (Sprint 7) - Closed: User is able to see the Approval Work item assigned to individual's in Assigned 
+- **PR1050558-2134** (Sprint 7) - Closed: Duplicate records being created for Taxonomy & Speciality
+- **PR1050558-2130** (Sprint 7) - Closed: Incorrect field values when ATS Applicant stage is updated as 'Offer'
+- **PR1050558-2115** (Sprint 7) - Closed: On the Header, the Approval Name should be displayed. As of now another Name fie
+- **PR1050558-2089** (Sprint 7) - Closed: Clinician Contract Request: Update Naming Convention for Contract Payment Agreem
+- **PR1050558-2086** (Sprint 7) - Closed: Clinician Contract Request: Bonus - Enforce additional bonus on 1 Facility/HPF
+- **PR1050558-2080** (Sprint 7) - Closed: Additional Bonuses should be available to one Facility
+- **PR1050558-2078** (Sprint 7) - Closed: CPA and Rates not getting created on clinician contract when multiple HPFs have 
+- **PR1050558-2016** (Sprint 7) - Closed: Update Facility Title Record for Ambassador NP/PA
+- **PR1050558-2013** (Sprint 7) - Closed: Update Role Name to VP BD Finance
+- **PR1050558-2011** (Sprint 7) - Closed: Automated Onboarding Task Record Closure: Facility Onboarding
+- **PR1050558-1941** (Sprint 7) - Closed: Failed to update Clinician Application Withdrawal - HC Portal
+- **PR1050558-1808** (Sprint 7) - Closed: Start date is not populated on the cloned Contract's CPA records
+- **PR1050558-1789** (Sprint 7) - Closed: Automatically Provision HC Portal Access: Update ATS Stage
+- **PR1050558-1787** (Sprint 7) - Closed: Add Account Contact Relationship to Service Account
+- **PR1050558-1775** (Sprint 7) - Closed: Offboarding Case Record Type Setup
+- **PR1050558-1772** (Sprint 7) - Closed: CDC Channel: Update ContractTrigger
+- **PR1050558-1749** (Sprint 7) - Closed: Integration User - Remove old Provider Network Contract fields
+- **PR1050558-1747** (Sprint 7) - Closed: Integration User - Add New Provider Network Contract fields
+- **PR1050558-1719** (Sprint 7) - Closed: Healthcare Practitioner Facility Status Automation
+- **PR1050558-1718** (Sprint 7) - Closed: Clinician Contract Management
+- **PR1050558-1716** (Sprint 7) - Closed: HPF Updates & Platform Event: First Clinical Shift and Active
+- **PR1050558-1712** (Sprint 7) - Closed: Update Sharing Settings
+- **PR1050558-1710** (Sprint 7) - Closed: Integration User - Edit HPF
+- **PR1050558-1709** (Sprint 7) - Closed: Role Hierarchy - Add VP DB Finance & SVP Growth
+- **PR1050558-1708** (Sprint 7) - Closed: Manage Sister Relationships
+- **PR1050558-1707** (Sprint 7) - Closed: Clinical Match Approval
+- **PR1050558-1704** (Sprint 7) - Closed: View HPFs from Clinician Contract
+- **PR1050558-1703** (Sprint 7) - Closed: Corporate Entity Mismatch Queue
+- **PR1050558-1666** (Sprint 7) - Closed: Clinician Contract: Other Bonus Details
+- **PR1050558-1660** (Sprint 7) - Closed: Initiate Clinical Match Process
+- **PR1050558-1659** (Sprint 7) - Closed: Clinician Contract Special Terms
+- **PR1050558-1655** (Sprint 7) - Closed: Auto Create Relationship Records for CPA - Physician
+- **PR1050558-1651** (Sprint 7) - Closed: Add Additional Fields
+- **PR1050558-1628** (Sprint 7) - Closed: Approval Work Items
+- **PR1050558-1589** (Sprint 7) - Closed: Platform Event - First Scheduled Date
+- **PR1050558-1583** (Sprint 7) - Closed: Add SCP Logo to Prospect Portal
+- **PR1050558-1582** (Sprint 7) - Closed: Tactical Team Queue
+- **PR1050558-1580** (Sprint 7) - Closed: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-1579** (Sprint 7) - Closed: Clinician Contract Request: Add Recruiter Permissions
+- **PR1050558-1568** (Sprint 7) - Closed: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1419** (Sprint 7) - Closed: Client Rate Configuration - Cloning and Editing
+- **PR1050558-1415** (Sprint 7) - Closed: Creating Shifts - Physician or NP/PA
+- **PR1050558-1392** (Sprint 7) - Closed: Update Clinician Taxonomy Selection
+- **PR1050558-1387** (Sprint 7) - Closed: Integration User Access
+- **PR1050558-1369** (Sprint 7) - Closed: Automatic Corporate Entity Association at HPF Create
+- **PR1050558-1368** (Sprint 7) - Closed: Add Banner to HC Portal
+- **PR1050558-1334** (Sprint 7) - Closed: Clinician "At a Glance" Status Calculation
+- **PR1050558-1317** (Sprint 7) - Closed: Clinician Contract - Prevent Active EE/IC at the same time
+- **PR1050558-1257** (Sprint 7) - Closed: Update Test Users - Add Public Groups
+- **PR1050558-1256** (Sprint 7) - Closed: Contract Selection During Manually Initiated Onboarding
+- **PR1050558-1172** (Sprint 7) - Closed: Enrollment Specialist - Update Test User
+- **PR1050558-1168** (Sprint 7) - Closed: Risk Review - Auto Inactivate HPFs when denied
+- **PR1050558-1138** (Sprint 7) - Closed: Clinician Contract Request: Leased or Locums - Create/update records
+- **PR1050558-1112** (Sprint 7) - Closed: Update Case layout - Clinician Intake Form & Risk Review
+- **PR1050558-1110** (Sprint 7) - Closed: Clinician Contract Request: Leadership Incentives
+- **PR1050558-1109** (Sprint 7) - Closed: Clinician Contract Request: Stipend Rates
+- **PR1050558-1108** (Sprint 7) - Closed: Clinician Contract Request: Variable Rates
+- **PR1050558-1103** (Sprint 7) - Closed: Clinician Contract Request: Target Rates
+- **PR1050558-1074** (Sprint 7) - Closed: Add Files on Contract
+- **PR1050558-891** (Sprint 7) - Closed: Clinician Application Withdrawal - HC Portal
+- **PR1050558-889** (Sprint 7) - Closed: Clinician "At a Glance" UI
+- **PR1050558-888** (Sprint 7) - Closed: Clinician “At a Glance” Display Responsive based on Audience
+- **PR1050558-823** (Sprint 7) - Closed: Create HPF from Job
+- **PR1050558-810** (Sprint 7) - Closed: Automatically Create Healthcare Provider Records - Client
+- **PR1050558-701** (Sprint 7) - Closed: Clinician Offboarding - Facility Selection
+- **PR1050558-620** (Sprint 7) - Closed: Automated Onboarding Case Record Closure
+- **PR1050558-619** (Sprint 7) - Closed: Automated Onboarding Record Creation (When Contract is Executed)
+- **PR1050558-559** (Sprint 7) - Closed: Automated Onboarding Task Creation - SCP Onboarding
+- **PR1050558-468** (Sprint 7) - Closed: App Home Page
+- **PR1050558-425** (Sprint 7) - Closed: Clinician Contract List Views
+- **PR1050558-326** (Sprint 7) - Closed: Manage Primary Taxonomy and Specialty
+- **PR1050558-309** (Sprint 7) - Closed: Open Shift APAY Request
+- **PR1050558-306** (Sprint 7) - Closed: Clinician Offboarding - Termination Details
+- **PR1050558-302** (Sprint 7) - Closed: Collaborative Practice Agreement Review UI
+- **PR1050558-301** (Sprint 7) - Closed: Clinician Agreement Approval Process: Mismatch & Tactical
+- **PR1050558-247** (Sprint 7) - Closed: Automated Onboarding Task Creation - Facility Onboarding
+- **PR1050558-194** (Sprint 7) - Closed: Clinician Contract Request: Bonus
+- **PR1050558-193** (Sprint 7) - Closed: Clinical Match Group Indicator
+- **PR1050558-146** (Sprint 7) - Closed: Auto Create Relationship Records for CPA - Nurse Practitioner or Physician Assis
+- **PR1050558-2658** (Sprint 8) - Closed: Regression_Bug - End Date of Executed contract updated when a new Draft contract
+- **PR1050558-2657** (Sprint 8) - Closed: End Date not updated for an IC contract created from previous active contract
+- **PR1050558-2656** (Sprint 8) - Closed: If we naviagte back and forth on Specify Rate flow, then Shift type details gets
+- **PR1050558-2654** (Sprint 8) - Closed: Not able to see Files related list where Record type as Client Contract & Letter
+- **PR1050558-2650** (Sprint 8) - Closed: Unable to mark LOI Contract as Executed – Permission Error
+- **PR1050558-2649** (Sprint 8) - Closed: CPA records are not getting created when creating a clinician contract previous 
+- **PR1050558-2646** (Sprint 8) - Closed: Initiate Contracting Request button visible even when Pro Forma Status is blank
+- **PR1050558-2645** (Sprint 8) - Closed: Start and End Date not pre-populated correctly when user changes Employee Type
+- **PR1050558-2643** (Sprint 8) - Closed: Facility task - Review Contract for Termination should be assigned to HR Queue.
+- **PR1050558-2642** (Sprint 8) - Closed: SCP Offboarding task's are not getting created.
+- **PR1050558-2641** (Sprint 8) - Closed: Regression_Bug: User unable to view 'Preventive Care Agreement' related list on 
+- **PR1050558-2640** (Sprint 8) - Closed: [Regression Bug]: All Persona user dont have access to Corporate Support console
+- **PR1050558-2629** (Sprint 8) - Closed: User allowed to enter more than the required digits in the new Bonus fields
+- **PR1050558-2628** (Sprint 8) - Closed: User is asked to enter values for new Bonus fields even when they don't select a
+- **PR1050558-2627** (Sprint 8) - Closed: The Shifts records are not being displayed under the Specify Rates flow on Pract
+- **PR1050558-2625** (Sprint 8) - Closed: The SFO user currently does not have access to the Services object.
+- **PR1050558-2624** (Sprint 8) - Closed: Sales VP Persona don't have access to Edit the Green Light for Client Outreach f
+- **PR1050558-2621** (Sprint 8) - Closed: On Event Details, payload the Administrative Details is not coming.
+- **PR1050558-2620** (Sprint 8) - Closed: Incorrect picklist values in Status field using Contract Record (Record Type = C
+- **PR1050558-2619** (Sprint 8) - Closed: Add Additional Fields
+- **PR1050558-2618** (Sprint 8) - Closed: Info Due Tasks at Services level are created for Inactive Services as well
+- **PR1050558-2611** (Sprint 8) - Closed: Additional Related tab present on Trainings Related list.
+- **PR1050558-2594** (Sprint 8) - Closed: Division Medical Officer is not able to create Exit Interview Case
+- **PR1050558-2576** (Sprint 8) - Closed: On the Service Record page only on the Related list the Service History and Acti
+- **PR1050558-2556** (Sprint 8) - Closed: Business Development Associate is not able to Add Opportunity Team Members
+- **PR1050558-2477** (Sprint 8) - Closed: Opportunity Layout – Missing Deal Workstreams Tab in Right Region
+- **PR1050558-2465** (Sprint 8) - Closed: Failed to update members of the Data Quality Role are included in the Data Quali
+- **PR1050558-2461** (Sprint 8) - Closed: The field should allow limit upto (131,072). But as of now only taking 255 chara
+- **PR1050558-2450** (Sprint 8) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2447** (Sprint 8) - Closed: Set up Discovery framework - Configuration
+- **PR1050558-2444** (Sprint 8) - Closed: Data Quality persona is unable to update contract status to Executed.
+- **PR1050558-2443** (Sprint 8) - Closed: The Links should be visible on basis of Visibility Condition
+- **PR1050558-2436** (Sprint 8) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2429** (Sprint 8) - Closed: Regression_Bug: Clinician Record Page - Cases/Contracts Not filtering Correctly
+- **PR1050558-2427** (Sprint 8) - Closed: Help text for Last Day field is not as per AC
+- **PR1050558-2426** (Sprint 8) - Closed: Not all cases and tasks on the clinician account are closed when the HPF is made
+- **PR1050558-2424** (Sprint 8) - Closed: UI Related changes on Termination Details screen
+- **PR1050558-2423** (Sprint 8) - Closed: Clinician Contract: Set Start Date for Cloned Contract
+- **PR1050558-2228** (Sprint 8) - Closed: Improve Provider Network Contract related list component look & feel
+- **PR1050558-2223** (Sprint 8) - Closed: HPF status is not updated to Inactive status when LWD is more than 12 months for
+- **PR1050558-2220** (Sprint 8) - Closed: Intake Form: Automated Task Creation to Review NPI
+- **PR1050558-2219** (Sprint 8) - Closed: Intake Form: Automated Task Creation to Review Name Change
+- **PR1050558-2218** (Sprint 8) - Closed: All HPFs of sister sites are being validated for LDW without considering status
+- **PR1050558-2208** (Sprint 8) - Closed: HPF Inactive Date Trigger to Qgenda
+- **PR1050558-2188** (Sprint 8) - Closed: Client Contract List Views
+- **PR1050558-2186** (Sprint 8) - Closed: Clinical Match Case Record Type - Update Sharing Rule
+- **PR1050558-2182** (Sprint 8) - Closed: Enable Integration to Workday for SCP Offboarding - 1 of 2
+- **PR1050558-2166** (Sprint 8) - Closed: Opportunity (Growth Oppty) Object - Add Contracts Related List
+- **PR1050558-2164** (Sprint 8) - Closed: Regression Bug - Unable to configure rate on clinician record even though CPA Cl
+- **PR1050558-2162** (Sprint 8) - Closed: Clinician Attributes from Workday to Salesforce
+- **PR1050558-2152** (Sprint 8) - Closed: Services Object - Set History Tracking & Layout Updates
+- **PR1050558-2150** (Sprint 8) - Closed: Update Corporation and Tax Information
+- **PR1050558-2143** (Sprint 8) - Closed: Opportunity & Services Objects Info Due Updates
+- **PR1050558-2142** (Sprint 8) - Closed: Contract Object Record Type Setup
+- **PR1050558-2137** (Sprint 8) - Closed: Auto Create Client Contract (Practice Operations)
+- **PR1050558-2123** (Sprint 8) - Closed: Clinician Contract Request: Bonus Details
+- **PR1050558-2119** (Sprint 8) - Closed: New HPF for Already Active Clinicians
+- **PR1050558-2118** (Sprint 8) - Closed: Clinician Contract: Auto Populate Contracting Corporate Entity
+- **PR1050558-2113** (Sprint 8) - Closed: Review Bootcamp and Proctor Fields
+- **PR1050558-2112** (Sprint 8) - Closed: Review User Profile Key Field
+- **PR1050558-2108** (Sprint 8) - Closed: Error Log: Workday Duplicate Tax ID
+- **PR1050558-2081** (Sprint 8) - Closed: Opportunity Team (Deal Team)
+- **PR1050558-2021** (Sprint 8) - Closed: Clinician Offboarding: EE Involuntary Termination
+- **PR1050558-2015** (Sprint 8) - Closed: Clinician Offboarding - Termination Details for Locums
+- **PR1050558-1799** (Sprint 8) - Closed: Client Contracting - Early Start Confirmed
+- **PR1050558-1798** (Sprint 8) - Closed: Client Needs Questionnaire - Auto Task Creation for Internal Info Due Process
+- **PR1050558-1792** (Sprint 8) - Closed: Approval Work Items - List View Updates
+- **PR1050558-1787** (Sprint 8) - Closed: Add Account Contact Relationship to Service Account
+- **PR1050558-1775** (Sprint 8) - Closed: Offboarding Case Record Type Setup
+- **PR1050558-1773** (Sprint 8) - Closed: Client Shift Rate Configuration
+- **PR1050558-1772** (Sprint 8) - Closed: CDC Channel: Update ContractTrigger
+- **PR1050558-1733** (Sprint 8) - Closed: Offboarding Tasks - SCP
+- **PR1050558-1728** (Sprint 8) - Closed: Offboarding Tasks - Facility Specific
+- **PR1050558-1727** (Sprint 8) - Closed: Offboarding Cases
+- **PR1050558-1722** (Sprint 8) - Closed: Executed Contract: Automate Task Creation for Locums
+- **PR1050558-1721** (Sprint 8) - Closed: Clinician Contract Request: Start Admin Work Ahead of Clinical
+- **PR1050558-1720** (Sprint 8) - Closed: Intake Form: Automated Task Creation to Review Corporation and Tax Info
+- **PR1050558-1717** (Sprint 8) - Closed: Healthcare Practitioner Facility Management
+- **PR1050558-1716** (Sprint 8) - Closed: HPF Updates & Platform Event: First Clinical Shift and Active
+- **PR1050558-1704** (Sprint 8) - Closed: View HPFs from Clinician Contract
+- **PR1050558-1703** (Sprint 8) - Closed: Corporate Entity Mismatch Queue
+- **PR1050558-1696** (Sprint 8) - Closed: Clinician Contract: Set Start Date
+- **PR1050558-1676** (Sprint 8) - Closed: Client Contracting - “LOI Request”
+- **PR1050558-1675** (Sprint 8) - Closed: Client Needs Questionnaire - Data Collection
+- **PR1050558-1653** (Sprint 8) - Closed: Clinician "At a Glance" - Offboarding
+- **PR1050558-1651** (Sprint 8) - Closed: Add Additional Fields
+- **PR1050558-1628** (Sprint 8) - Closed: Approval Work Items
+- **PR1050558-1589** (Sprint 8) - Closed: Platform Event - First Scheduled Date
+- **PR1050558-1583** (Sprint 8) - Closed: Add SCP Logo to Prospect Portal
+- **PR1050558-1580** (Sprint 8) - Closed: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-1568** (Sprint 8) - Closed: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1392** (Sprint 8) - Closed: Update Clinician Taxonomy Selection
+- **PR1050558-1369** (Sprint 8) - Closed: Automatic Corporate Entity Association at HPF Create
+- **PR1050558-1097** (Sprint 8) - Closed: Intake Form Case - Load Assessment Questions & Capture Question Responses
+- **PR1050558-1095** (Sprint 8) - Closed: Intake Form Case - Conflict of Interest Form
+- **PR1050558-1094** (Sprint 8) - Closed: Intake Form Case - Certification of Competency Questions
+- **PR1050558-884** (Sprint 8) - Closed: Exit Interview Feedback Capture
+- **PR1050558-883** (Sprint 8) - Closed: Exit Interview Feedback Security
+- **PR1050558-810** (Sprint 8) - Closed: Automatically Create Healthcare Provider Records - Client
+- **PR1050558-775** (Sprint 8) - Closed: Corporate Compliance Status
+- **PR1050558-488** (Sprint 8) - Closed: Record Type Cleanup
+- **PR1050558-487** (Sprint 8) - Closed: CDC Channel Update - Clinician Contract Executed/Start Admin Work
+- **PR1050558-384** (Sprint 8) - Closed: HC Portal Helpful Links Visibility
+- **PR1050558-319** (Sprint 8) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-310** (Sprint 8) - Closed: Opportunity (Growth Oppty) Object
+- **PR1050558-309** (Sprint 8) - Closed: Open Shift APAY Request
+- **PR1050558-231** (Sprint 8) - Closed: Intake Form - Clinician Profile Updates
+- **PR1050558-3004** (Sprint 9) - Closed: Unable to update first clinical shift field on HPF as system admin user.
+- **PR1050558-3001** (Sprint 9) - Closed: Name field is not added in Platform event & Permissions are missing for platform
+- **PR1050558-2998** (Sprint 9) - Closed: Child task are not updating to Cancelled when Offboarding decision = No longer e
+- **PR1050558-2987** (Sprint 9) - Open: Event is being triggered for Leased/locums.
+- **PR1050558-2986** (Sprint 9) - Closed: Issues on Add Additional Fields
+- **PR1050558-2985** (Sprint 9) - Closed: Issues in Screening Call guided flow
+- **PR1050558-2983** (Sprint 9) - Closed: Integration log object status picklist value not updated.
+- **PR1050558-2981** (Sprint 9) - Closed: After Update NPI Screen getting Error.
+- **PR1050558-2969** (Sprint 9) - Closed: Practice Operations contract not submitted to correct user when there are multip
+- **PR1050558-2964** (Sprint 9) - Closed: [Regression bug] - Open shift APAY forms Validation.
+- **PR1050558-2962** (Sprint 9) - Closed: Practice Operations contract not submitted to Division Operating Officer approva
+- **PR1050558-2957** (Sprint 9) - Closed: Case record not getting created when complete the Client Agreement Request flow
+- **PR1050558-2951** (Sprint 9) - Open: [Observation Bug]:  Open Shift Apay request Form.
+- **PR1050558-2949** (Sprint 9) - Closed: New Custom button “Create Clinician Change” - Screen flow, to capture the fields
+- **PR1050558-2946** (Sprint 9) - Closed: Field allows more than 50 characters, exceeding the expected character limit
+- **PR1050558-2941** (Sprint 9) - Closed: Issue with Bonus type rate configuration on clinician contract
+- **PR1050558-2921** (Sprint 9) - Closed: The Filter is not present on Facility and alongwith it when doing the mass updat
+- **PR1050558-2915** (Sprint 9) - Closed: Validation Rule is also throwing error for offboarding case of Type = Facility.
+- **PR1050558-2914** (Sprint 9) - Closed: Only some personas have access to the IT Support Cases.
+- **PR1050558-2896** (Sprint 9) - Closed: [Regression Issue ]-Initiate Termination Request - Select at least one HPF valid
+- **PR1050558-2892** (Sprint 9) - Closed: Initiate Leadership Change - Create Case RT: Leadership Change
+- **PR1050558-2876** (Sprint 9) - Open: The URL for the CCPA Privacy Policy on the Core Connect portal displays a grey h
+- **PR1050558-2830** (Sprint 9) - Closed: Integration Platform Event: Re-Trigger Integration
+- **PR1050558-2819** (Sprint 9) - Closed: Clinical Support Case - Multiple issues.
+- **PR1050558-2810** (Sprint 9) - Closed: Update HPF Field = Temporary Inactive Reason
+- **PR1050558-2797** (Sprint 9) - Closed: Unable to see the Files and Tasks related lists in the Related tab of the Offboa
+- **PR1050558-2793** (Sprint 9) - Closed: Facility Change Request: Approvals 2 of 2
+- **PR1050558-2791** (Sprint 9) - Closed: Clinician Contract Request: Capture "Anticipated Clinical Hours"
+- **PR1050558-2790** (Sprint 9) - Closed: Facility Rate Creation - Type of Rate = Stipend - Add "Stipend Tier" & "Admin Ho
+- **PR1050558-2783** (Sprint 9) - Closed: Corporate Support users cannot view required fields/filters in Inactive HPF Repo
+- **PR1050558-2677** (Sprint 9) - Closed: Clinician Offboarding - Termination Details Updates for Partner
+- **PR1050558-2676** (Sprint 9) - Closed: Clinician Offboarding - Termination Details Updates for Locums, Leased, Managed
+- **PR1050558-2675** (Sprint 9) - Closed: Case (RT: Clinician Change) & “Data Quality” queue
+- **PR1050558-2673** (Sprint 9) - Closed: Military Status Change Requests
+- **PR1050558-2672** (Sprint 9) - Closed: Business Entity Change Requests
+- **PR1050558-2670** (Sprint 9) - Closed: Clinician Name Change Requests
+- **PR1050558-2668** (Sprint 9) - Closed: Add Additional Fields for Integration
+- **PR1050558-2640** (Sprint 9) - Closed: [Regression Bug]: All Persona user dont have access to Corporate Support console
+- **PR1050558-2636** (Sprint 9) - Closed: Deal Team/Account Team Role Updates
+- **PR1050558-2623** (Sprint 9) - Closed: Notification to Workday for First Clinical Shift Change
+- **PR1050558-2619** (Sprint 9) - Closed: Add Additional Fields
+- **PR1050558-2616** (Sprint 9) - Closed: Update Case Related Lists on Clinician Record
+- **PR1050558-2593** (Sprint 9) - Closed: Clinician Contract Request: Contract Changes - Cloning updates (Bonus Rates & In
+- **PR1050558-2592** (Sprint 9) - Closed: Clinician Contract Request: Bonus Details - Update Payments
+- **PR1050558-2559** (Sprint 9) - Closed: Clinician Contract Update: Add Time Type
+- **PR1050558-2558** (Sprint 9) - Closed: Clinician Contract Date Alignment
+- **PR1050558-2557** (Sprint 9) - Closed: Initiate Leadership Change from Service Account
+- **PR1050558-2554** (Sprint 9) - Closed: Locums Rate Management
+- **PR1050558-2552** (Sprint 9) - Closed: Update Permissions for List Views
+- **PR1050558-2551** (Sprint 9) - Closed: Conditional Requirements for Clinician NPI
+- **PR1050558-2537** (Sprint 9) - Closed: Facility Rate Creation - Allow different rates based on Time Type
+- **PR1050558-2528** (Sprint 9) - Closed: Clinician Contract Request: Shift Rate Details - Populate Type field
+- **PR1050558-2527** (Sprint 9) - Closed: Clinician Contract - Update Related Lists (Approval Work Items & Clinician Contr
+- **PR1050558-2526** (Sprint 9) - Closed: Clinician Contract Request: Add hide/show logic for "Submit Contract Request" bu
+- **PR1050558-2473** (Sprint 9) - Closed: Clinician Offboarding: Termination Updates
+- **PR1050558-2471** (Sprint 9) - Closed: Clinician Offboarding - Termination Details Update
+- **PR1050558-2469** (Sprint 9) - Closed: Open Shift APAY Request: Approval
+- **PR1050558-2468** (Sprint 9) - Closed: Collaborative Practice Agreement Review UI: Name Fields
+- **PR1050558-2467** (Sprint 9) - Closed: Clinician Contract: Leased and Locums Update to Executed Status
+- **PR1050558-2462** (Sprint 9) - Closed: Enable Integration to Workday for SCP Offboarding - 2 of 2
+- **PR1050558-2450** (Sprint 9) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2447** (Sprint 9) - Closed: Set up Discovery framework - Configuration
+- **PR1050558-2431** (Sprint 9) - Closed: Update Clinician Visa Data Model
+- **PR1050558-2430** (Sprint 9) - Closed: Update Bonus Configuration for Client and Clinician
+- **PR1050558-2422** (Sprint 9) - Closed: Service Account Attributes
+- **PR1050558-2421** (Sprint 9) - Closed: Automated Case Record Closure: Offboarding
+- **PR1050558-2418** (Sprint 9) - Closed: Insurance Provided By Validation Rule
+- **PR1050558-2238** (Sprint 9) - Closed: Clinician Contract Update: Rate Pay Code
+- **PR1050558-2237** (Sprint 9) - Closed: Clinician Onboarding Case & Task Updates
+- **PR1050558-2235** (Sprint 9) - Closed: NP/PA Tier Management: Clinician 1 of 2
+- **PR1050558-2225** (Sprint 9) - Closed: Related Clinician Records - Add Collaborative Practice Agreement
+- **PR1050558-2224** (Sprint 9) - Closed: Open Shift APAY Request - Security Matrix updates
+- **PR1050558-2220** (Sprint 9) - Closed: Intake Form: Automated Task Creation to Review NPI
+- **PR1050558-2219** (Sprint 9) - Closed: Intake Form: Automated Task Creation to Review Name Change
+- **PR1050558-2210** (Sprint 9) - Closed: Clinician Contract Request: Update CPA naming
+- **PR1050558-2188** (Sprint 9) - Closed: Client Contract List Views
+- **PR1050558-2186** (Sprint 9) - Closed: Clinical Match Case Record Type - Update Sharing Rule
+- **PR1050558-2182** (Sprint 9) - Closed: Enable Integration to Workday for SCP Offboarding - 1 of 2
+- **PR1050558-2166** (Sprint 9) - Closed: Opportunity (Growth Oppty) Object - Add Contracts Related List
+- **PR1050558-2162** (Sprint 9) - Closed: Clinician Attributes from Workday to Salesforce
+- **PR1050558-2152** (Sprint 9) - Closed: Services Object - Set History Tracking & Layout Updates
+- **PR1050558-2150** (Sprint 9) - Closed: Update Corporation and Tax Information
+- **PR1050558-2143** (Sprint 9) - Closed: Opportunity & Services Objects Info Due Updates
+- **PR1050558-2142** (Sprint 9) - Closed: Contract Object Record Type Setup
+- **PR1050558-2137** (Sprint 9) - Closed: Auto Create Client Contract (Practice Operations)
+- **PR1050558-2126** (Sprint 9) - Closed: HC Portal Flip from Login to SSO
+- **PR1050558-2119** (Sprint 9) - Closed: New HPF for Already Active Clinicians
+- **PR1050558-2118** (Sprint 9) - Closed: Clinician Contract: Auto Populate Contracting Corporate Entity
+- **PR1050558-2114** (Sprint 9) - Closed: Review Credentialling Fields
+- **PR1050558-2113** (Sprint 9) - Closed: Review Bootcamp and Proctor Fields
+- **PR1050558-2112** (Sprint 9) - Closed: Review User Profile Key Field
+- **PR1050558-2111** (Sprint 9) - Closed: Review Pay Plan Fields
+- **PR1050558-2081** (Sprint 9) - Closed: Opportunity Team (Deal Team)
+- **PR1050558-2021** (Sprint 9) - Closed: Clinician Offboarding: EE Involuntary Termination
+- **PR1050558-2018** (Sprint 9) - Closed: NP/PA Tier Management: Client
+- **PR1050558-2015** (Sprint 9) - Closed: Clinician Offboarding - Termination Details for Locums
+- **PR1050558-1799** (Sprint 9) - Closed: Client Contracting - Early Start Confirmed
+- **PR1050558-1798** (Sprint 9) - Closed: Client Needs Questionnaire - Auto Task Creation for Internal Info Due Process
+- **PR1050558-1792** (Sprint 9) - Closed: Approval Work Items - List View Updates
+- **PR1050558-1740** (Sprint 9) - Closed: Facility Change Request: Approvals
+- **PR1050558-1733** (Sprint 9) - Closed: Offboarding Tasks - SCP
+- **PR1050558-1728** (Sprint 9) - Closed: Offboarding Tasks - Facility Specific
+- **PR1050558-1727** (Sprint 9) - Closed: Offboarding Cases
+- **PR1050558-1726** (Sprint 9) - Closed: Inactivation Alert Automated Email
+- **PR1050558-1725** (Sprint 9) - Closed: Clinician Support Case
+- **PR1050558-1722** (Sprint 9) - Closed: Executed Contract: Automate Task Creation for Locums
+- **PR1050558-1721** (Sprint 9) - Closed: Clinician Contract Request: Start Admin Work Ahead of Clinical
+- **PR1050558-1720** (Sprint 9) - Closed: Intake Form: Automated Task Creation to Review Corporation and Tax Info
+- **PR1050558-1677** (Sprint 9) - Closed: Automatically Update the Opportunity Status
+- **PR1050558-1676** (Sprint 9) - Closed: Client Contracting - “LOI Request”
+- **PR1050558-1675** (Sprint 9) - Closed: Client Needs Questionnaire - Data Collection
+- **PR1050558-1667** (Sprint 9) - Closed: Add Account Contact Relationship
+- **PR1050558-1580** (Sprint 9) - Closed: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-1096** (Sprint 9) - Closed: Intake Form Case - CCPA Notice
+- **PR1050558-842** (Sprint 9) - Closed: IT Support Ticket
+- **PR1050558-775** (Sprint 9) - Closed: Corporate Compliance Status
+- **PR1050558-488** (Sprint 9) - Closed: Record Type Cleanup
+- **PR1050558-487** (Sprint 9) - Closed: CDC Channel Update - Clinician Contract Executed/Start Admin Work
+- **PR1050558-472** (Sprint 9) - Closed: Client Agreement Request
+- **PR1050558-319** (Sprint 9) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-310** (Sprint 9) - Closed: Opportunity (Growth Oppty) Object
+- **PR1050558-199** (Sprint 9) - Closed: Guided Screening Call Field Updates
+
+---
+
+## Parent Story Hierarchy
+
+### Agentforce
+
+**Child Stories**: 22
+
+- **PR1050558-3901** (Sprint 11) - Closed: UAT Bug: C&CUAT58 Was not able to submit rate change once selected site and subm
+- **PR1050558-3792** (Sprint 11) - Closed: UAT Bug: C&CUAT45 Asked scripted question 'schedule for the month' and did not g
+- **PR1050558-3789** (Sprint 11) - Closed: UAT Bug: C&CUAT44 Facility Rate Change Notice - Full Cohort (NPPA Only)
+- **PR1050558-3788** (Sprint 11) - Closed: UAT Bug: C&CUAT43 Facility Rate Change Notice (Mixed)
+- **PR1050558-3787** (Sprint 11) - Closed: UAT Bug: C&CUAT42 CET EMR retrieval
+- **PR1050558-3786** (Sprint 11) - Closed: UAT Bug: C&CUAT41 CET Benefits Enrollment
+- **PR1050558-3785** (Sprint 11) - Closed: UAT Bug: C&CUAT40 CET Pay & Compensation Agentforce Fail
+- **PR1050558-3606** (Sprint 11) - Closed: UAT Bug: C&CUAT07 Agentforce error - "Something went wrong" / Unable to describe
+- **PR1050558-3605** (Sprint 11) - Closed: UAT Bug: C&CUAT06 Agentforce icon not visible in CET profile
+- **PR1050558-4297** (Sprint 12) - Closed: UAT Bug: C&CUAT149 Rate Change Notice for EE NPPA
+- **PR1050558-3930** (Sprint 12) - Closed: UAT Bug: C&CUAT72 NO EMR System Detected
+- **PR1050558-3901** (Sprint 12) - Closed: UAT Bug: C&CUAT58 Was not able to submit rate change once selected site and subm
+- **PR1050558-5223** (Sprint 12.1) - Closed: UAT Bug: C&CUAT395 Agentforce not using hourly blend for EE PT NPPAs
+- **PR1050558-5207** (Sprint 12.1) - In Test: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5180** (Sprint 12.1) - Closed: UAT Bug: C&CUAT380 Agentforce: rate change notice process completed, but system 
+- **PR1050558-4460** (Sprint 12.1) - Closed: Migrate Manage AgentForce Agents PS from QA to UAT
+- **PR1050558-5371** (Sprint 12.2) - Closed: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-5371** (Sprint 12.3) - Closed: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-6037** (Sprint 14) - In Test: PROD Bug: UPHypercare392 - Agentforce did not create the notice letters
+- **PR1050558-5207** (Sprint 14) - In Test: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5170** (Sprint 14) - In Test: UAT Enhancement: C&CUAT373 Update criteria for how Agentforce displays list of i
+- **PR1050558-3478** (Sprint 14) - In Test: Agentforce Clinician Rate Change Notices Use Case - Enhancement
+
+### Client 360
+
+**Child Stories**: 334
+
+- **PR1050558-216** (Sprint 1) - Closed: Contract & Related objects Page layouts mismatch.
+- **PR1050558-205** (Sprint 1) - Closed: Configure Service Line Object
+- **PR1050558-203** (Sprint 1) - Closed: View & Edit Access is Missing for BDA, Legal, And Recruiter users.
+- **PR1050558-168** (Sprint 1) - Closed: Account Edit Access
+- **PR1050558-88** (Sprint 1) - Closed: Create Service Records
+- **PR1050558-86** (Sprint 1) - Closed: Initial National, Facility, and Service Line Account Records
+- **PR1050558-80** (Sprint 1) - Closed: Facility Contract and Rate Records
+- **PR1050558-79** (Sprint 1) - Closed: Create Facility Records
+- **PR1050558-4190** (Sprint 10) - Open: Observation Bug - In Create HPF Flow, if user do not select any HPF, then also i
+- **PR1050558-3475** (Sprint 10) - Closed: Regression Bug - Upon navigating back and forth on Rate Details screen on the Sp
+- **PR1050558-3456** (Sprint 10) - Open: Observation Bug: Duplicates records are being displayed on Cloned PO contracts d
+- **PR1050558-3452** (Sprint 10) - Closed: When adding new shift with old shift records having same facility title and rate
+- **PR1050558-3450** (Sprint 10) - Closed: Duplicates records are getting created because of Cloned Shift records PCA.
+- **PR1050558-3436** (Sprint 10) - Closed: Duplicate rates are being created after configure rate flow.
+- **PR1050558-3334** (Sprint 10) - Open: [Observation Bug]: Contract is created with record type clinician instead of Pra
+- **PR1050558-3330** (Sprint 10) - Open: [Observation Bug] : Contract is cloned when there is existing contract with stat
+- **PR1050558-3212** (Sprint 10) - Closed: View Practice Operations rate on Configure Rates
+- **PR1050558-3211** (Sprint 10) - Closed: Comparison View - Clinician Contract
+- **PR1050558-3208** (Sprint 10) - Ready for Implementation: Fix test classes
+- **PR1050558-3197** (Sprint 10) - Closed: Regression Bug - Upon clicking the Save for Later button and confirming it, an e
+- **PR1050558-3187** (Sprint 10) - Closed: Facility Change Request: Coverage Change - Only Pay Code Change - Auto Update Ex
+- **PR1050558-3017** (Sprint 10) - Closed: Facility Change Request: Practice Operation Contract - Rules
+- **PR1050558-2924** (Sprint 10) - Closed: Add Additional Fields
+- **PR1050558-2916** (Sprint 10) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-2906** (Sprint 10) - Closed: Facility Change Request: Rates & Coverage 2 of 2
+- **PR1050558-2639** (Sprint 10) - Closed: Facility Term: Initiate Clinician Termination - SCP and/or Facility
+- **PR1050558-2636** (Sprint 10) - Closed: Deal Team/Account Team Role Updates
+- **PR1050558-2635** (Sprint 10) - Closed: Account (Service Account) - Add Case Related List
+- **PR1050558-2634** (Sprint 10) - Closed: Contract (Client Contract) - Add Case Related List
+- **PR1050558-2630** (Sprint 10) - Closed: Contracts Page Update - Add Path
+- **PR1050558-2537** (Sprint 10) - Closed: Facility Rate Creation - Allow different rates based on Time Type
+- **PR1050558-2422** (Sprint 10) - Closed: Service Account Attributes
+- **PR1050558-2239** (Sprint 10) - Closed: Clinician Contracting - Job Requisition Handoff to Asymbl
+- **PR1050558-2188** (Sprint 10) - Closed: Client Contract List Views
+- **PR1050558-1739** (Sprint 10) - Closed: Facility Change Request: Rates & Coverage 1 of 2
+- **PR1050558-1677** (Sprint 10) - Closed: Automatically Update the Opportunity Status
+- **PR1050558-1667** (Sprint 10) - Closed: Add Account Contact Relationship
+- **PR1050558-472** (Sprint 10) - Closed: Client Agreement Request
+- **PR1050558-3780** (Sprint 11) - Closed: Higher facility rates to be synced from PO contract based on contract start date
+- **PR1050558-3757** (Sprint 11) - Closed: Issues in Pro Forma Model Approval, Rejection and Email.
+- **PR1050558-3595** (Sprint 11) - Closed: Intermettiently While completing the specify rates flow upon finish, getting a e
+- **PR1050558-3594** (Sprint 11) - Closed: Change management fields are not getting checked.
+- **PR1050558-3576** (Sprint 11) - Closed: Incorrect configuration for offboarding email report.
+- **PR1050558-3565** (Sprint 11) - Closed: Practice Operation Change Object
+- **PR1050558-3564** (Sprint 11) - Closed: As Sales VP, unable to receive mails
+- **PR1050558-3518** (Sprint 11) - Closed: Client Contract Request - Create new fields
+- **PR1050558-3449** (Sprint 11) - Closed: Facility Change Request: Reset flags when cloning a Practice Operations or Clini
+- **PR1050558-3392** (Sprint 11) - Closed: Facility Rate Creation - Clean Up - Remove "Shift" from Contract (RT: Clinician)
+- **PR1050558-3391** (Sprint 11) - Closed: Client Change Management Object
+- **PR1050558-3389** (Sprint 11) - Closed: Client Change Management - Update the Batch job to use Process Type = "Automatio
+- **PR1050558-3383** (Sprint 11) - Closed: Add Additional Fields
+- **PR1050558-3212** (Sprint 11) - Closed: View Practice Operations rate on Configure Rates
+- **PR1050558-3211** (Sprint 11) - Closed: Comparison View - Clinician Contract
+- **PR1050558-3207** (Sprint 11) - Closed: Facility Change Request: Practice Operation Contract - Auto End Date
+- **PR1050558-3190** (Sprint 11) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-3187** (Sprint 11) - Closed: Facility Change Request: Coverage Change - Only Pay Code Change - Auto Update Ex
+- **PR1050558-3024** (Sprint 11) - Closed: Facility Change Request: Sync Practice Operations Contract rates to a Clinician 
+- **PR1050558-3018** (Sprint 11) - Closed: Facility Change Request: Practice Operation Contract - Send notification when fu
+- **PR1050558-3017** (Sprint 11) - Closed: Facility Change Request: Practice Operation Contract - Rules
+- **PR1050558-2988** (Sprint 11) - Closed: Facility Change Request: No Hard Deletes & Exclude "Is Deleted" Rates [Part 1 of
+- **PR1050558-2924** (Sprint 11) - Closed: Add Additional Fields
+- **PR1050558-2916** (Sprint 11) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-2906** (Sprint 11) - Closed: Facility Change Request: Rates & Coverage 2 of 2
+- **PR1050558-2638** (Sprint 11) - Closed: Facility Term: Offboarding Email
+- **PR1050558-2637** (Sprint 11) - Closed: Facility Term: Auto Close Cases
+- **PR1050558-2151** (Sprint 11) - Closed: Auto Create Client Contract (Practice Operations) - Task Creation
+- **PR1050558-1800** (Sprint 11) - Closed: Facility Term: Review Clinician Roster
+- **PR1050558-1684** (Sprint 11) - Closed: Facility Term: Auto Create Tasks
+- **PR1050558-1683** (Sprint 11) - Closed: Facility Term: Auto Create Cases
+- **PR1050558-1682** (Sprint 11) - Closed: Facility Change Request: Clinician Side Manual  Change Management tasks
+- **PR1050558-1073** (Sprint 11) - Closed: Update Agreement Request - Email Alert
+- **PR1050558-317** (Sprint 11) - Closed: Facility Term
+- **PR1050558-4198** (Sprint 12) - Closed: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4145** (Sprint 12) - Closed: Field configuration issues.
+- **PR1050558-4143** (Sprint 12) - Closed: Regression bug: Clinician Facility Offboarding case is not getting created for M
+- **PR1050558-4137** (Sprint 12) - Closed: Regression Bug - Type of Rate screen blank on PO Contract for Coverage Change = 
+- **PR1050558-4136** (Sprint 12) - Closed: Upon completion of Amend Contract the new LOI Contract should be displayed and p
+- **PR1050558-4129** (Sprint 12) - Closed: Add Configuration Issues
+- **PR1050558-4109** (Sprint 12) - Closed: Client Contract -  Update 'child' contract page (Contract Type ≠ Master) & Actio
+- **PR1050558-4107** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Update Design for Displaying relate
+- **PR1050558-4094** (Sprint 12) - Closed: Submit Pro Forma Model for Approval - Send Rejection Email to VP Sales Ops DL
+- **PR1050558-4071** (Sprint 12) - Closed: Legal Team Member is not able to proceed ahead after clicking on Save button on 
+- **PR1050558-4065** (Sprint 12) - Closed: Client Contract Request - Configurations tab - Layout
+- **PR1050558-4051** (Sprint 12) - Closed: Client Contract - Updates to support allowing multiple Masters with the same Ser
+- **PR1050558-3993** (Sprint 12) - Closed: Client Onboarding - Trigger Task Creation - Ensure Task Record Type = Default
+- **PR1050558-3950** (Sprint 12) - Closed: Remove 'Term Sheet Executed' field and Related Components
+- **PR1050558-3924** (Sprint 12) - Closed: Client Contract Request - Configurations tab - Edit
+- **PR1050558-3803** (Sprint 12) - Closed: Facility Term: Add Case related list to Client Offboarding Case
+- **PR1050558-3777** (Sprint 12) - Closed: Facility Change Request: No Hard Deletes & Exclude "Is Deleted" Rates [Part 2 of
+- **PR1050558-3768** (Sprint 12) - Closed: Contract Provider Network Relation Object
+- **PR1050558-3757** (Sprint 12) - Closed: Issues in Pro Forma Model Approval, Rejection and Email.
+- **PR1050558-3619** (Sprint 12) - Closed: Client Contract Request - Add New Provider Network Contracts
+- **PR1050558-3574** (Sprint 12) - Closed: Client Change Management - Clinician Contract Executed between PO Contracts
+- **PR1050558-3521** (Sprint 12) - Closed: Add Additional Fields
+- **PR1050558-3520** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Terminate Contract
+- **PR1050558-3519** (Sprint 12) - Closed: Client Contract Request - Configurations tab - View & Delete Configuration
+- **PR1050558-3518** (Sprint 12) - Closed: Client Contract Request - Create new fields
+- **PR1050558-3474** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Terminate Contract
+- **PR1050558-3469** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Email Alert
+- **PR1050558-3468** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Activate Contract
+- **PR1050558-3467** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Expire Contract
+- **PR1050558-3466** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Amend Contract
+- **PR1050558-3465** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Action = Cancel Contract
+- **PR1050558-3464** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - View & Edit
+- **PR1050558-3463** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Update LOI guided experience
+- **PR1050558-3388** (Sprint 12) - Closed: Client Change Management - Create Records
+- **PR1050558-3351** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Activate Contract
+- **PR1050558-3347** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Expire Contract
+- **PR1050558-3343** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Amend Contract
+- **PR1050558-3339** (Sprint 12) - Closed: Client Contract Request - Client Contract - Action = Cancel Contract
+- **PR1050558-3190** (Sprint 12) - Closed: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-3024** (Sprint 12) - Closed: Facility Change Request: Sync Practice Operations Contract rates to a Clinician 
+- **PR1050558-3023** (Sprint 12) - Closed: Client Contract Request - Edit Client Contract (Add Configuration)
+- **PR1050558-3022** (Sprint 12) - Closed: Client Contract Request - View Client Contract
+- **PR1050558-3021** (Sprint 12) - Closed: Client Contract Request - New Client Contract
+- **PR1050558-3020** (Sprint 12) - Closed: Client Contract Request - Expanded View
+- **PR1050558-3019** (Sprint 12) - Closed: Client Contract Request - View related Client Contracts on Accounts
+- **PR1050558-2965** (Sprint 12) - Closed: Clinician Contract - Update Cloning to include Rate Pay Codes
+- **PR1050558-2807** (Sprint 12) - Closed: Client Contract Request - Client Contract - Status & Key Date Updates
+- **PR1050558-2638** (Sprint 12) - Closed: Facility Term: Offboarding Email
+- **PR1050558-2637** (Sprint 12) - Closed: Facility Term: Auto Close Cases
+- **PR1050558-2442** (Sprint 12) - Closed: Client Contract Request - Letter of Intent - Status & Key Date Updates
+- **PR1050558-2441** (Sprint 12) - Closed: Client Contract Request - Client Agreement Request Case Layout & List View
+- **PR1050558-2151** (Sprint 12) - Closed: Auto Create Client Contract (Practice Operations) - Task Creation
+- **PR1050558-1800** (Sprint 12) - Closed: Facility Term: Review Clinician Roster
+- **PR1050558-1736** (Sprint 12) - Closed: Client Contract Request View for Legal
+- **PR1050558-1684** (Sprint 12) - Closed: Facility Term: Auto Create Tasks
+- **PR1050558-1683** (Sprint 12) - Closed: Facility Term: Auto Create Cases
+- **PR1050558-1682** (Sprint 12) - Closed: Facility Change Request: Clinician Side Manual  Change Management tasks
+- **PR1050558-1073** (Sprint 12) - Closed: Update Agreement Request - Email Alert
+- **PR1050558-479** (Sprint 12) - Closed: Submit Pro Forma Model for Approval
+- **PR1050558-317** (Sprint 12) - Closed: Facility Term
+- **PR1050558-5208** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT390 From the Service Account Missing Client Contract Link
+- **PR1050558-5173** (Sprint 12.1) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5152** (Sprint 12.1) - Closed: UAT Enhancement: Activate Services Object Record Types
+- **PR1050558-5120** (Sprint 12.1) - Closed: UAT Enhancement : Grant Payroll Access for Pay Codes
+- **PR1050558-4918** (Sprint 12.1) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier & Contract Start Date 
+- **PR1050558-4902** (Sprint 12.1) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier, Contract Start Date &
+- **PR1050558-4781** (Sprint 12.1) - Closed: UAT Bug: Practice Operations Contract - 'Rate' field in Specify Rate only hold w
+- **PR1050558-4749** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT263 Legal - Client Contracting - Legal needs permissions 
+- **PR1050558-4747** (Sprint 12.1) - Closed: UAT Bug: C&CUAT262 Facility Offboarding only terminated one HPF, not all connect
+- **PR1050558-4708** (Sprint 12.1) - Closed: UAT Bug: C&CUAT247 Rob Reilly and Kenneth Cerney do not have access to Related R
+- **PR1050558-4683** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT243 Update Practice Operations fields
+- **PR1050558-4630** (Sprint 12.1) - Closed: UAT Enhancement: Update matching logic for "Refresh Client Rates"
+- **PR1050558-4629** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT233 Practice Operations Contract not End Dated and causin
+- **PR1050558-4628** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT232 Client Contract Term & Renewal Contract End Date Not 
+- **PR1050558-4621** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT229 Missing Validation between Contract Active + Begin Fa
+- **PR1050558-4620** (Sprint 12.1) - Closed: UAT Bug: C&CUAT228 Opportunity Status = Closed
+- **PR1050558-4614** (Sprint 12.1) - Closed: UAT Bug: C&CUAT223 Client Termination email not received
+- **PR1050558-4597** (Sprint 12.1) - Closed: UAT Bug: C&CUAT219 Offboarding Parent case didn't create
+- **PR1050558-4596** (Sprint 12.1) - Closed: UAT Bug: C&CUAT218 Unable to edit Service Account
+- **PR1050558-4595** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT217 Upload attachments to Service Account and/or PNC
+- **PR1050558-4583** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT207 Letter of Intent Request - Letter of Intent - Status 
+- **PR1050558-4580** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT204 View of Contracts from Opportunity
+- **PR1050558-4578** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT202 Edit functionality needed for all statuses
+- **PR1050558-4563** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT197 Add new values to Agreement Category
+- **PR1050558-4555** (Sprint 12.1) - Closed: UAT Bug: Opportunity's 'Initiate Contracting Request' - Incorrect version for Le
+- **PR1050558-4538** (Sprint 12.1) - Closed: UAT Bug: C&CUAT187 Finance Unable to edit fields
+- **PR1050558-4521** (Sprint 12.1) - Closed: UAT Bug: C&CUAT183 Error message when viewing all tasks for client account
+- **PR1050558-4520** (Sprint 12.1) - Closed: UAT Bug: C&CUAT182 Sales VP unable to update Account Team
+- **PR1050558-4506** (Sprint 12.1) - Closed: UAT Bug: C&CUAT181 Begin Facility Termination error
+- **PR1050558-4505** (Sprint 12.1) - Closed: UAT Bug: C&CUAT180 Service Account Name not populating
+- **PR1050558-4499** (Sprint 12.1) - Closed: UAT Bug: Client Onboarding Action Plan Templates Missing
+- **PR1050558-4493** (Sprint 12.1) - Closed: UAT Bug: C&CUAT179 Contracts not create
+- **PR1050558-4488** (Sprint 12.1) - Closed: UAT Bug: C&CUAT177 Final Approval email not Received
+- **PR1050558-4475** (Sprint 12.1) - Closed: UAT Bug: C&CUAT174 Client Testing - Configure Contract
+- **PR1050558-4448** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT166 Email Approval Requests - Client Pro Forma
+- **PR1050558-4447** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT165 DAM Approval and Rejection emails
+- **PR1050558-4402** (Sprint 12.1) - Closed: UAT Bug: C&CUAT160 CDM003_Sales VP is not able to access Opportunity
+- **PR1050558-4401** (Sprint 12.1) - Closed: UAT Bug: C&CUAT161 CDM008_CDM_0013_Need COO CFO SVP Growth persona
+- **PR1050558-4398** (Sprint 12.1) - Closed: UAT Bug: C&CUAT159 CDM_006_Sales VP is able to edit the proforma model after sub
+- **PR1050558-4397** (Sprint 12.1) - Closed: UAT Bug: C&CUAT158 CDM_002_Unable to add Deal team when logged in as persona "BD
+- **PR1050558-4362** (Sprint 12.1) - Closed: UAT Enhancement: Add Additional Fields
+- **PR1050558-4345** (Sprint 12.1) - Closed: Client Contract - Action = Amend Contract: not cloning child Contract Types
+- **PR1050558-4323** (Sprint 12.1) - Closed: Client Contract - "Configure Contract" guided experience not closing
+- **PR1050558-4320** (Sprint 12.1) - Closed: 'Letter Of Intent' & 'Practice Operations' Contracts - Highlight panel should NO
+- **PR1050558-4198** (Sprint 12.1) - Closed: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4107** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Update Design for Displaying relate
+- **PR1050558-4094** (Sprint 12.1) - Closed: Submit Pro Forma Model for Approval - Send Rejection Email to VP Sales Ops DL
+- **PR1050558-4065** (Sprint 12.1) - Closed: Client Contract Request - Configurations tab - Layout
+- **PR1050558-4051** (Sprint 12.1) - Closed: Client Contract - Updates to support allowing multiple Masters with the same Ser
+- **PR1050558-3950** (Sprint 12.1) - Closed: Remove 'Term Sheet Executed' field and Related Components
+- **PR1050558-3924** (Sprint 12.1) - Closed: Client Contract Request - Configurations tab - Edit
+- **PR1050558-3619** (Sprint 12.1) - Closed: Client Contract Request - Add New Provider Network Contracts
+- **PR1050558-3521** (Sprint 12.1) - Closed: Add Additional Fields
+- **PR1050558-3520** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Terminate Contract
+- **PR1050558-3519** (Sprint 12.1) - Closed: Client Contract Request - Configurations tab - View & Delete Configuration
+- **PR1050558-3474** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Terminate Contract
+- **PR1050558-3469** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Email Alert
+- **PR1050558-3468** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Activate Contract
+- **PR1050558-3467** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Expire Contract
+- **PR1050558-3466** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Amend Contract
+- **PR1050558-3465** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Action = Cancel Contract
+- **PR1050558-3464** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - View & Edit
+- **PR1050558-3463** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Update LOI guided experience
+- **PR1050558-3351** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Activate Contract
+- **PR1050558-3347** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Expire Contract
+- **PR1050558-3343** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Amend Contract
+- **PR1050558-3339** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Action = Cancel Contract
+- **PR1050558-3023** (Sprint 12.1) - Closed: Client Contract Request - Edit Client Contract (Add Configuration)
+- **PR1050558-3022** (Sprint 12.1) - Closed: Client Contract Request - View Client Contract
+- **PR1050558-3021** (Sprint 12.1) - Closed: Client Contract Request - New Client Contract
+- **PR1050558-3020** (Sprint 12.1) - Closed: Client Contract Request - Expanded View
+- **PR1050558-2807** (Sprint 12.1) - Closed: Client Contract Request - Client Contract - Status & Key Date Updates
+- **PR1050558-2442** (Sprint 12.1) - Closed: Client Contract Request - Letter of Intent - Status & Key Date Updates
+- **PR1050558-2441** (Sprint 12.1) - Closed: Client Contract Request - Client Agreement Request Case Layout & List View
+- **PR1050558-1736** (Sprint 12.1) - Closed: Client Contract Request View for Legal
+- **PR1050558-479** (Sprint 12.1) - Closed: Submit Pro Forma Model for Approval
+- **PR1050558-5422** (Sprint 12.2) - Closed: PROD Bug: C&CUAT462 - PROD- Service Acct- Missing edit permissions or record set
+- **PR1050558-5418** (Sprint 12.2) - Closed: UAT Bug: C&CUAT459 - UAT1 - Facility Offboarding didn't happen for Fort Duncan
+- **PR1050558-5368** (Sprint 12.2) - Closed: UAT Bug: C&CUAT427 - UAT1 - Not able to add members to deal team
+- **PR1050558-4918** (Sprint 12.2) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier & Contract Start Date 
+- **PR1050558-4902** (Sprint 12.2) - Closed: UAT Enhancement: Practice Operations Contract - NPPA Tier, Contract Start Date &
+- **PR1050558-4630** (Sprint 12.2) - Closed: UAT Enhancement: Update matching logic for "Refresh Client Rates"
+- **PR1050558-4628** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT232 Client Contract Term & Renewal Contract End Date Not 
+- **PR1050558-4198** (Sprint 12.2) - Closed: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-5504** (Sprint 12.3) - Closed: PROD Bug: Incorrect PMT Project Lighting Record Page  assignment
+- **PR1050558-5456** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare26 Update task Subject = 'Populate the Shift Map & 
+- **PR1050558-5418** (Sprint 12.3) - Closed: UAT Bug: C&CUAT459 - UAT1 - Facility Offboarding didn't happen for Fort Duncan
+- **PR1050558-5225** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT397 Leased Provider Contract
+- **PR1050558-5208** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT390 From the Service Account Missing Client Contract Link
+- **PR1050558-5173** (Sprint 12.3) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5153** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT368 Add Time Type to Summary Tab on Practice Ops record
+- **PR1050558-5456** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare26 Update task Subject = 'Populate the Shift Map & 
+- **PR1050558-5173** (Sprint 12.4) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5831** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5693** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare223 - PO Contract Overview not populating
+- **PR1050558-5692** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5173** (Sprint 12.5) - Closed: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5950** (Sprint 12.6) - Closed: PROD Enhancement: Facility Change Request - Coverage Change - Add additional che
+- **PR1050558-5870** (Sprint 12.6) - Closed: UAT Enhancement - Facility Change Request: Update Task Verbiage for Mixed Rates
+- **PR1050558-5693** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare223 - PO Contract Overview not populating
+- **PR1050558-6170** (Sprint 13) - Closed: Guided Flow fails to clone contracts when source PO Contract status is "Supersed
+- **PR1050558-6169** (Sprint 13) - Closed: Unable to Add Shifts to PO Contracts created via Guided Experience with Shift co
+- **PR1050558-6096** (Sprint 13) - Closed: PROD Enhancement: UPHypercare380 - Service Account Address Updates to QGenda Cre
+- **PR1050558-6058** (Sprint 13) - Closed: PROD Bug: UPHypercare398 - Offboarding Facility Termination
+- **PR1050558-5831** (Sprint 13) - Closed: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5692** (Sprint 13) - Closed: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-6163** (Sprint 14) - Closed: Client Change Management: Update Permission Set = Manage Clinician Contract
+- **PR1050558-6148** (Sprint 14) - Ready for Test: Client Change Management: Update Canceled Status criteria for Process Type = Age
+- **PR1050558-6096** (Sprint 14) - Closed: PROD Enhancement: UPHypercare380 - Service Account Address Updates to QGenda Cre
+- **PR1050558-5831** (Sprint 14) - Closed: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5692** (Sprint 14) - Closed: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5648** (Sprint 14) - Ready for Test: PROD Enhancement: HPF Inactive Date Trigger to Qgenda - Update when an HPF inact
+- **PR1050558-244** (Sprint 2) - Closed: Add Additional Fields
+- **PR1050558-564** (Sprint 3) - Closed: [Regression_Bug] Service line field is missing on Service Account record page.
+- **PR1050558-465** (Sprint 3) - Closed: Active field is not updating based on end date criteria.
+- **PR1050558-382** (Sprint 3) - Closed: Facility Rate Creation - Summary Screen
+- **PR1050558-374** (Sprint 3) - Closed: Code Set Object
+- **PR1050558-340** (Sprint 3) - Closed: Update the Account Account Relationship
+- **PR1050558-298** (Sprint 3) - Closed: Facility Rate Creation - Type of Rate = Shift
+- **PR1050558-776** (Sprint 4) - Closed: SPIKE - Pro Forma Outputs - POC for Option 1
+- **PR1050558-715** (Sprint 4) - Closed: Facility Rate Creation - Summary tab
+- **PR1050558-703** (Sprint 4) - Closed: Facility Rate Creation - Button and Record Creation
+- **PR1050558-608** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Bonus
+- **PR1050558-607** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Target
+- **PR1050558-606** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Variable
+- **PR1050558-605** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Stipend
+- **PR1050558-572** (Sprint 4) - Closed: Agreement Request - Email Alert
+- **PR1050558-473** (Sprint 4) - Closed: Automatically Create Healthcare Provider & Healthcare Payer Network Records
+- **PR1050558-470** (Sprint 4) - Closed: Facility Rate Creation - Type of Rate = Leadership Incentives
+- **PR1050558-379** (Sprint 4) - Closed: Client Division (Operational Structure)
+- **PR1050558-227** (Sprint 4) - Closed: Account Hierarchy Columns
+- **PR1050558-1379** (Sprint 5) - Closed: The 'Shift' word needs to be Append on Type field for the Specify Rate flow.
+- **PR1050558-1361** (Sprint 5) - Closed: The records are not getting created for the Specify Rate flow.
+- **PR1050558-1316** (Sprint 5) - Closed: Multiple issues on Pro Forma Model and Pro Forma Facility Detail record pages.
+- **PR1050558-1289** (Sprint 5) - Closed: Duplicate Record is Displayed on the Summary records and for any Type of Rate Re
+- **PR1050558-1098** (Sprint 5) - Closed: The New button does not appear correctly on the Shift related list.
+- **PR1050558-1090** (Sprint 5) - Closed: The fields and header does not appear correctly on the PCA and Shift records.
+- **PR1050558-1057** (Sprint 5) - Closed: Upon submission of Specify Rate flow the records are not getting created under t
+- **PR1050558-1056** (Sprint 5) - Closed: Facility Rate Creation - Update Summary Tab Record Visibility
+- **PR1050558-882** (Sprint 5) - Closed: Facility Rate Creation - Summary tab - Shift updates
+- **PR1050558-839** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = All: Add Override Prohibited
+- **PR1050558-838** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = Variable, Stipend & Leadership Incentive
+- **PR1050558-777** (Sprint 5) - Closed: Facility Rate Creation - Rate Rules/Validations
+- **PR1050558-774** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = Variable: Modify Type
+- **PR1050558-712** (Sprint 5) - Closed: Create Permission Set for AffectLayer Apps
+- **PR1050558-700** (Sprint 5) - Closed: Specify Corporate Entity Type
+- **PR1050558-697** (Sprint 5) - Closed: Shift Custom Object & PCA Cleanup
+- **PR1050558-614** (Sprint 5) - Closed: Create Account Team Roles
+- **PR1050558-486** (Sprint 5) - Closed: Facility Rate Creation - Type of Rate = Shift: Add Shift Type
+- **PR1050558-471** (Sprint 5) - Closed: Pro Forma Outputs
+- **PR1050558-1568** (Sprint 6) - Closed: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1366** (Sprint 6) - Closed: Facility Rate Creation - Add Error Message if no available Shifts
+- **PR1050558-1111** (Sprint 6) - Closed: Standardize Service Line Records
+- **PR1050558-614** (Sprint 6) - Closed: Create Account Team Roles
+- **PR1050558-471** (Sprint 6) - Closed: Pro Forma Outputs
+- **PR1050558-1787** (Sprint 7) - Closed: Add Account Contact Relationship to Service Account
+- **PR1050558-1708** (Sprint 7) - Closed: Manage Sister Relationships
+- **PR1050558-1568** (Sprint 7) - Closed: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-810** (Sprint 7) - Closed: Automatically Create Healthcare Provider Records - Client
+- **PR1050558-2656** (Sprint 8) - Closed: If we naviagte back and forth on Specify Rate flow, then Shift type details gets
+- **PR1050558-2627** (Sprint 8) - Closed: The Shifts records are not being displayed under the Specify Rates flow on Pract
+- **PR1050558-2625** (Sprint 8) - Closed: The SFO user currently does not have access to the Services object.
+- **PR1050558-2624** (Sprint 8) - Closed: Sales VP Persona don't have access to Edit the Green Light for Client Outreach f
+- **PR1050558-2576** (Sprint 8) - Closed: On the Service Record page only on the Related list the Service History and Acti
+- **PR1050558-2461** (Sprint 8) - Closed: The field should allow limit upto (131,072). But as of now only taking 255 chara
+- **PR1050558-2188** (Sprint 8) - Closed: Client Contract List Views
+- **PR1050558-2166** (Sprint 8) - Closed: Opportunity (Growth Oppty) Object - Add Contracts Related List
+- **PR1050558-2152** (Sprint 8) - Closed: Services Object - Set History Tracking & Layout Updates
+- **PR1050558-2143** (Sprint 8) - Closed: Opportunity & Services Objects Info Due Updates
+- **PR1050558-2142** (Sprint 8) - Closed: Contract Object Record Type Setup
+- **PR1050558-2137** (Sprint 8) - Closed: Auto Create Client Contract (Practice Operations)
+- **PR1050558-2081** (Sprint 8) - Closed: Opportunity Team (Deal Team)
+- **PR1050558-1799** (Sprint 8) - Closed: Client Contracting - Early Start Confirmed
+- **PR1050558-1798** (Sprint 8) - Closed: Client Needs Questionnaire - Auto Task Creation for Internal Info Due Process
+- **PR1050558-1787** (Sprint 8) - Closed: Add Account Contact Relationship to Service Account
+- **PR1050558-1773** (Sprint 8) - Closed: Client Shift Rate Configuration
+- **PR1050558-1676** (Sprint 8) - Closed: Client Contracting - “LOI Request”
+- **PR1050558-1675** (Sprint 8) - Closed: Client Needs Questionnaire - Data Collection
+- **PR1050558-1568** (Sprint 8) - Closed: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-810** (Sprint 8) - Closed: Automatically Create Healthcare Provider Records - Client
+- **PR1050558-310** (Sprint 8) - Closed: Opportunity (Growth Oppty) Object
+- **PR1050558-2793** (Sprint 9) - Closed: Facility Change Request: Approvals 2 of 2
+- **PR1050558-2790** (Sprint 9) - Closed: Facility Rate Creation - Type of Rate = Stipend - Add "Stipend Tier" & "Admin Ho
+- **PR1050558-2636** (Sprint 9) - Closed: Deal Team/Account Team Role Updates
+- **PR1050558-2537** (Sprint 9) - Closed: Facility Rate Creation - Allow different rates based on Time Type
+- **PR1050558-2422** (Sprint 9) - Closed: Service Account Attributes
+- **PR1050558-2188** (Sprint 9) - Closed: Client Contract List Views
+- **PR1050558-2166** (Sprint 9) - Closed: Opportunity (Growth Oppty) Object - Add Contracts Related List
+- **PR1050558-2152** (Sprint 9) - Closed: Services Object - Set History Tracking & Layout Updates
+- **PR1050558-2143** (Sprint 9) - Closed: Opportunity & Services Objects Info Due Updates
+- **PR1050558-2142** (Sprint 9) - Closed: Contract Object Record Type Setup
+- **PR1050558-2137** (Sprint 9) - Closed: Auto Create Client Contract (Practice Operations)
+- **PR1050558-2081** (Sprint 9) - Closed: Opportunity Team (Deal Team)
+- **PR1050558-1799** (Sprint 9) - Closed: Client Contracting - Early Start Confirmed
+- **PR1050558-1798** (Sprint 9) - Closed: Client Needs Questionnaire - Auto Task Creation for Internal Info Due Process
+- **PR1050558-1740** (Sprint 9) - Closed: Facility Change Request: Approvals
+- **PR1050558-1677** (Sprint 9) - Closed: Automatically Update the Opportunity Status
+- **PR1050558-1676** (Sprint 9) - Closed: Client Contracting - “LOI Request”
+- **PR1050558-1675** (Sprint 9) - Closed: Client Needs Questionnaire - Data Collection
+- **PR1050558-1667** (Sprint 9) - Closed: Add Account Contact Relationship
+- **PR1050558-472** (Sprint 9) - Closed: Client Agreement Request
+- **PR1050558-310** (Sprint 9) - Closed: Opportunity (Growth Oppty) Object
+
+### Client Onboarding
+
+**Child Stories**: 43
+
+- **PR1050558-3581** (Sprint 11) - Closed: The Column Type is missing and under List Views Filter the Task Record Type = De
+- **PR1050558-3459** (Sprint 11) - Closed: Client Onboarding - Configure Action Plan Template
+- **PR1050558-3240** (Sprint 11) - Closed: Client Onboarding - Set PMT Task “Task Completion %” field
+- **PR1050558-3205** (Sprint 11) - Closed: Queues to Support Onboarding/SUN process - List Views
+- **PR1050558-3204** (Sprint 11) - Closed: Queues to Support Onboarding/SUN process - Queue Creation
+- **PR1050558-3027** (Sprint 11) - Closed: Client Onboarding - PMT Project, PMT Phase, & PMT Task
+- **PR1050558-3026** (Sprint 11) - Closed: Client Onboarding - Implementation Queue
+- **PR1050558-2139** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation - LOI Executed
+- **PR1050558-2088** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation - Manually Confirm Onboarding Start
+- **PR1050558-2087** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation -  “Green Light for Client Outreach”
+- **PR1050558-1802** (Sprint 11) - Closed: Client Onboarding - Task Activities within HC
+- **PR1050558-1679** (Sprint 11) - Closed: Client Onboarding - Trigger Auto task creation
+- **PR1050558-1678** (Sprint 11) - Closed: Client Onboarding - Auto Task Creation - Contract Status = Executed
+- **PR1050558-905** (Sprint 11) - Closed: SUN Orchestration - Trigger Case Creation
+- **PR1050558-314** (Sprint 11) - Closed: Client Onboarding - Action Plan Template
+- **PR1050558-313** (Sprint 11) - Closed: Client Onboarding - Update PMT Layout
+- **PR1050558-4118** (Sprint 12) - Closed: The system does text to text compare and deletes the task records that does not 
+- **PR1050558-3585** (Sprint 12) - Closed: Update permissions to Opportunity records
+- **PR1050558-3517** (Sprint 12) - Closed: SUN Orchestration - Trigger Task Creation
+- **PR1050558-3459** (Sprint 12) - Closed: Client Onboarding - Configure Action Plan Template
+- **PR1050558-3451** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation for Onboarding Task related to PMT Phase
+- **PR1050558-3338** (Sprint 12) - Closed: Client Onboarding - Create Task based on Service Line
+- **PR1050558-3240** (Sprint 12) - Closed: Client Onboarding - Set PMT Task “Task Completion %” field
+- **PR1050558-3205** (Sprint 12) - Closed: Queues to Support Onboarding/SUN process - List Views
+- **PR1050558-3204** (Sprint 12) - Closed: Queues to Support Onboarding/SUN process - Queue Creation
+- **PR1050558-3027** (Sprint 12) - Closed: Client Onboarding - PMT Project, PMT Phase, & PMT Task
+- **PR1050558-3026** (Sprint 12) - Closed: Client Onboarding - Implementation Queue
+- **PR1050558-2139** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation - LOI Executed
+- **PR1050558-2088** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation - Manually Confirm Onboarding Start
+- **PR1050558-2087** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation -  “Green Light for Client Outreach”
+- **PR1050558-1679** (Sprint 12) - Closed: Client Onboarding - Trigger Auto task creation
+- **PR1050558-1678** (Sprint 12) - Closed: Client Onboarding - Auto Task Creation - Contract Status = Executed
+- **PR1050558-905** (Sprint 12) - Closed: SUN Orchestration - Trigger Case Creation
+- **PR1050558-887** (Sprint 12) - Closed: SUN Orchestration - Email Alert
+- **PR1050558-886** (Sprint 12) - Closed: SUN Task Template Setup
+- **PR1050558-314** (Sprint 12) - Closed: Client Onboarding - Action Plan Template
+- **PR1050558-313** (Sprint 12) - Closed: Client Onboarding - Update PMT Layout
+- **PR1050558-3585** (Sprint 12.1) - Closed: Update permissions to Opportunity records
+- **PR1050558-3517** (Sprint 12.1) - Closed: SUN Orchestration - Trigger Task Creation
+- **PR1050558-3451** (Sprint 12.1) - Closed: Client Onboarding - Auto Task Creation for Onboarding Task related to PMT Phase
+- **PR1050558-3338** (Sprint 12.1) - Closed: Client Onboarding - Create Task based on Service Line
+- **PR1050558-887** (Sprint 12.1) - Closed: SUN Orchestration - Email Alert
+- **PR1050558-886** (Sprint 12.1) - Closed: SUN Task Template Setup
+
+### Phase 1 Cancelled
+
+**Child Stories**: 11
+
+- **PR1050558-3988** (Sprint 12) - Closed: UAT Bug: C&CUAT76 Global ID (Service Account and Person Account) has comma in it
+- **PR1050558-5174** (Sprint 12.1) - Closed: UAT Bug: C&CUAT376 Cannot see the Facility Global ID
+- **PR1050558-5094** (Sprint 12.1) - Closed: UAT Bug: C&CUAT351 Data input by Applicant on Intake Form not displayed in SF on
+- **PR1050558-4945** (Sprint 12.1) - Closed: UAT Bug: C&CUAT311 Clinician Contract Record configured for IC Physician - dupli
+- **PR1050558-4934** (Sprint 12.1) - Closed: UAT Bug: C&CUAT306 Cloned contract has PCA records and data on PCA records are c
+- **PR1050558-4794** (Sprint 12.1) - Closed: Bug: Clinician Contract - "Refresh Client Rate" is deleting the cloned rates fro
+- **PR1050558-4765** (Sprint 12.1) - Closed: UAT Bug: Clinician Contract Cloning should use Start Date not Create Date
+- **PR1050558-4611** (Sprint 12.1) - Closed: E2E Bug: C&CUAT220 Workday Integration Contracting Corporate value mismatch betw
+- **PR1050558-4446** (Sprint 12.1) - Closed: UAT Bug: C&CUAT168 Robin Magee in Legal error when exectuing Client Contract scr
+- **PR1050558-5326** (Sprint 12.2) - Closed: UAT Bug: C&CUAT424 - UAT1 - Termination Reason Codes from UAT2 to UAT1 not mappe
+- **PR1050558-5321** (Sprint 12.2) - Closed: UAT Bug: C&CUAT419 - UAT1 - Interview Template
+
+### Platform Readiness
+
+**Child Stories**: 123
+
+- **PR1050558-201** (Sprint 1) - Closed: Corporate Support Permission Set Updates
+- **PR1050558-166** (Sprint 1) - Closed: Permission Set Groups
+- **PR1050558-165** (Sprint 1) - Closed: Permission Sets
+- **PR1050558-164** (Sprint 1) - Closed: Project Management Tool Installation
+- **PR1050558-78** (Sprint 1) - Closed: Corporate Support App
+- **PR1050558-77** (Sprint 1) - Closed: Corporate Support Profile
+- **PR1050558-30** (Sprint 1) - Closed: Organization Wide Defaults
+- **PR1050558-23** (Sprint 1) - Closed: Create Clinician Person Accounts
+- **PR1050558-20** (Sprint 1) - Closed: OmniStudio Installation
+- **PR1050558-19** (Sprint 1) - Closed: Test Users
+- **PR1050558-3233** (Sprint 10) - Closed: Permission for Integration User - Rate Pay Code, Contract Point Phone
+- **PR1050558-3230** (Sprint 10) - Closed: Tech - Update External Sharing Settings - 2 of 2
+- **PR1050558-3005** (Sprint 10) - Closed: Tech - Update External Sharing Settings 1 of 2
+- **PR1050558-2986** (Sprint 10) - Closed: Issues on Add Additional Fields
+- **PR1050558-2815** (Sprint 10) - Closed: Notification for Employment Type Changes
+- **PR1050558-2668** (Sprint 10) - Closed: Add Additional Fields for Integration
+- **PR1050558-2552** (Sprint 10) - Closed: Update Permissions for List Views
+- **PR1050558-2023** (Sprint 10) - Closed: Approval Work Item - Replace Approval Trace component
+- **PR1050558-1794** (Sprint 10) - Closed: Add Additional Fields
+- **PR1050558-842** (Sprint 10) - Closed: IT Support Ticket
+- **PR1050558-3546** (Sprint 11) - Closed: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3545** (Sprint 11) - Closed: Tech - SSO Flow - Send Clinician Info to Okta
+- **PR1050558-3445** (Sprint 11) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-3233** (Sprint 11) - Closed: Permission for Integration User - Rate Pay Code, Contract Point Phone
+- **PR1050558-2815** (Sprint 11) - Closed: Notification for Employment Type Changes
+- **PR1050558-1794** (Sprint 11) - Closed: Add Additional Fields
+- **PR1050558-4191** (Sprint 12) - Closed: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4172** (Sprint 12) - Closed: UAT Enhancement: "Credentialing" Updates
+- **PR1050558-4158** (Sprint 12) - Closed: Field Ops/SFO Case Access
+- **PR1050558-3998** (Sprint 12) - Closed: Clinician Onboarding Event is being triggered on HPF record updates rather than 
+- **PR1050558-3912** (Sprint 12) - Closed: Contract object: Add 'RecordType DeveloperName'
+- **PR1050558-3614** (Sprint 12) - Closed: Tech - SSO Flow - Send Clinician Info to Okta - UPDATE - change criteria and sen
+- **PR1050558-3583** (Sprint 12) - Closed: Create/Update Code Set (Facility Title) Records
+- **PR1050558-3573** (Sprint 12) - Closed: Tech - SSO Flow - Reactivate User & Update Platform Event
+- **PR1050558-3546** (Sprint 12) - Closed: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3545** (Sprint 12) - Closed: Tech - SSO Flow - Send Clinician Info to Okta
+- **PR1050558-3445** (Sprint 12) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-3013** (Sprint 12) - Closed: Tech - SSO Flow - Experience Cloud Welcome Email
+- **PR1050558-4862** (Sprint 12.1) - Closed: UAT Enhancement: Convert Data Type for ID Fields
+- **PR1050558-4839** (Sprint 12.1) - Closed: Platform Event Update - Case Creation After Flow
+- **PR1050558-4656** (Sprint 12.1) - Closed: UAT Enhancement: Exclude Legacy Id from Client and Clinician Contract & PCA Clon
+- **PR1050558-4594** (Sprint 12.1) - Closed: Update Role Hierarchy
+- **PR1050558-4489** (Sprint 12.1) - Closed: UAT Bug: C&CUAT178 UAT2_SIT_E2E testing_Access Issue for Integration Log
+- **PR1050558-4383** (Sprint 12.1) - Closed: Observation Bug: When logged in as a HealthcloudRestrictedUser, the Initiate Ear
+- **PR1050558-4376** (Sprint 12.1) - Closed: Update PMT Phase field = "Client Start Up Time" to a picklist and update flow
+- **PR1050558-4367** (Sprint 12.1) - Closed: UAT Enhancement: Update PNC fields = "Client Termination Time" & "Client Start U
+- **PR1050558-4366** (Sprint 12.1) - Closed: UAT Enhancement: Update HPF field = "Received Current Completed References" to a
+- **PR1050558-4191** (Sprint 12.1) - Closed: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4175** (Sprint 12.1) - Closed: RUL - Security
+- **PR1050558-4158** (Sprint 12.1) - Closed: Field Ops/SFO Case Access
+- **PR1050558-3614** (Sprint 12.1) - Closed: Tech - SSO Flow - Send Clinician Info to Okta - UPDATE - change criteria and sen
+- **PR1050558-3583** (Sprint 12.1) - Closed: Create/Update Code Set (Facility Title) Records
+- **PR1050558-3573** (Sprint 12.1) - Closed: Tech - SSO Flow - Reactivate User & Update Platform Event
+- **PR1050558-3546** (Sprint 12.1) - Closed: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3445** (Sprint 12.1) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-3013** (Sprint 12.1) - Closed: Tech - SSO Flow - Experience Cloud Welcome Email
+- **PR1050558-5401** (Sprint 12.2) - Closed: UAT Bug: C&CUAT450 Integration Log does not show up in Salesforce Reporting
+- **PR1050558-5391** (Sprint 12.2) - Closed: TECH Only Flow Optimization
+- **PR1050558-5384** (Sprint 12.2) - Closed: UAT Bug: C&CUAT438 - UAT1 - Emails not received by intended recipients
+- **PR1050558-5218** (Sprint 12.2) - Closed: PFA Proxy - Clinician Updates
+- **PR1050558-4839** (Sprint 12.2) - Closed: Platform Event Update - Case Creation After Flow
+- **PR1050558-4594** (Sprint 12.2) - Closed: Update Role Hierarchy
+- **PR1050558-4191** (Sprint 12.2) - Closed: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4158** (Sprint 12.2) - Closed: Field Ops/SFO Case Access
+- **PR1050558-3445** (Sprint 12.2) - Closed: Access to Medical Staff Office Fax field
+- **PR1050558-5828** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5399** (Sprint 12.3) - Closed: TECH Only Flow Optimization - Part 2
+- **PR1050558-5391** (Sprint 12.3) - Closed: TECH Only Flow Optimization
+- **PR1050558-5726** (Sprint 12.4) - Closed: Preventive Care Agreement - Add Field History
+- **PR1050558-5914** (Sprint 12.5) - Closed: PROD Enhancement: HPF - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5828** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5822** (Sprint 12.5) - Closed: PROD Enhancement: 'Risk Management' Account Team Role
+- **PR1050558-5917** (Sprint 12.6) - Closed: PROD Enhancement: PCA - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5914** (Sprint 12.6) - Closed: PROD Enhancement: HPF - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5828** (Sprint 13) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5828** (Sprint 14) - Closed: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-243** (Sprint 2) - Closed: External Client Apps APP for Mulesoft
+- **PR1050558-217** (Sprint 2) - Closed: Add LRP and Page Layouts to System Administrator
+- **PR1050558-485** (Sprint 3) - Closed: Integration Log Object
+- **PR1050558-434** (Sprint 3) - Closed: Delete Deprecated Picklist Fields
+- **PR1050558-370** (Sprint 3) - Closed: Generic Error Logger for Application Errors
+- **PR1050558-248** (Sprint 3) - Closed: OmniStudio Permission Set
+- **PR1050558-234** (Sprint 3) - Closed: Standardize State Picklist Values
+- **PR1050558-232** (Sprint 3) - Closed: Integration Profile and Permission Set
+- **PR1050558-815** (Sprint 4) - Closed: User is able to see 'New' Action button on Accounts Related list
+- **PR1050558-573** (Sprint 4) - Closed: Initial Role Hierarchy
+- **PR1050558-560** (Sprint 4) - Closed: View Preventive Care Agreement on Contract Payment Agreement
+- **PR1050558-359** (Sprint 4) - Closed: Create Default Task Record Type and Page Layout
+- **PR1050558-226** (Sprint 4) - Closed: Salesforce App Cleanup
+- **PR1050558-796** (Sprint 5) - Closed: Integration User - View Encrypted Data
+- **PR1050558-1747** (Sprint 6) - Closed: Integration User - Add New Provider Network Contract fields
+- **PR1050558-1710** (Sprint 6) - Closed: Integration User - Edit HPF
+- **PR1050558-1709** (Sprint 6) - Closed: Role Hierarchy - Add VP DB Finance & SVP Growth
+- **PR1050558-1387** (Sprint 6) - Closed: Integration User Access
+- **PR1050558-841** (Sprint 6) - Closed: Code Set List Views
+- **PR1050558-468** (Sprint 6) - Closed: App Home Page
+- **PR1050558-2191** (Sprint 7) - Closed: User is able to see few fields present in page layout which has to be removed in
+- **PR1050558-2115** (Sprint 7) - Closed: On the Header, the Approval Name should be displayed. As of now another Name fie
+- **PR1050558-2016** (Sprint 7) - Closed: Update Facility Title Record for Ambassador NP/PA
+- **PR1050558-2013** (Sprint 7) - Closed: Update Role Name to VP BD Finance
+- **PR1050558-1749** (Sprint 7) - Closed: Integration User - Remove old Provider Network Contract fields
+- **PR1050558-1747** (Sprint 7) - Closed: Integration User - Add New Provider Network Contract fields
+- **PR1050558-1712** (Sprint 7) - Closed: Update Sharing Settings
+- **PR1050558-1710** (Sprint 7) - Closed: Integration User - Edit HPF
+- **PR1050558-1709** (Sprint 7) - Closed: Role Hierarchy - Add VP DB Finance & SVP Growth
+- **PR1050558-1651** (Sprint 7) - Closed: Add Additional Fields
+- **PR1050558-1628** (Sprint 7) - Closed: Approval Work Items
+- **PR1050558-1387** (Sprint 7) - Closed: Integration User Access
+- **PR1050558-468** (Sprint 7) - Closed: App Home Page
+- **PR1050558-2619** (Sprint 8) - Closed: Add Additional Fields
+- **PR1050558-1792** (Sprint 8) - Closed: Approval Work Items - List View Updates
+- **PR1050558-1651** (Sprint 8) - Closed: Add Additional Fields
+- **PR1050558-1628** (Sprint 8) - Closed: Approval Work Items
+- **PR1050558-488** (Sprint 8) - Closed: Record Type Cleanup
+- **PR1050558-2986** (Sprint 9) - Closed: Issues on Add Additional Fields
+- **PR1050558-2914** (Sprint 9) - Closed: Only some personas have access to the IT Support Cases.
+- **PR1050558-2810** (Sprint 9) - Closed: Update HPF Field = Temporary Inactive Reason
+- **PR1050558-2668** (Sprint 9) - Closed: Add Additional Fields for Integration
+- **PR1050558-2619** (Sprint 9) - Closed: Add Additional Fields
+- **PR1050558-2552** (Sprint 9) - Closed: Update Permissions for List Views
+- **PR1050558-1792** (Sprint 9) - Closed: Approval Work Items - List View Updates
+- **PR1050558-842** (Sprint 9) - Closed: IT Support Ticket
+- **PR1050558-488** (Sprint 9) - Closed: Record Type Cleanup
+
+### Provider 360
+
+**Child Stories**: 88
+
+- **PR1050558-107** (Sprint 1) - Closed: Duplicate Clinician Records
+- **PR1050558-87** (Sprint 1) - Closed: Related Clinician Records
+- **PR1050558-81** (Sprint 1) - Closed: Initial Clinician Record
+- **PR1050558-2633** (Sprint 10) - Closed: Clinician "At a Glance" UI - Updates
+- **PR1050558-2616** (Sprint 10) - Closed: Update Case Related Lists on Clinician Record
+- **PR1050558-2551** (Sprint 10) - Closed: Conditional Requirements for Clinician NPI
+- **PR1050558-2431** (Sprint 10) - Closed: Update Clinician Visa Data Model
+- **PR1050558-2418** (Sprint 10) - Closed: Insurance Provided By Validation Rule
+- **PR1050558-3572** (Sprint 11) - Closed: Update HPF Temporary Inactive Reason data type
+- **PR1050558-4009** (Sprint 12) - Closed: UI Enhancement: Person Account LRP Enhancements
+- **PR1050558-4008** (Sprint 12) - Closed: UI Enhancement: Task Related List Columns
+- **PR1050558-4007** (Sprint 12) - Closed: UI Enhancement: HPF Name Automation Update
+- **PR1050558-3572** (Sprint 12) - Closed: Update HPF Temporary Inactive Reason data type
+- **PR1050558-5167** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT263 Permissions to run reports
+- **PR1050558-4973** (Sprint 12.1) - Closed: Intake Form Criteria Update: Update Logic from HPF to Job
+- **PR1050558-4395** (Sprint 12.1) - Closed: Flow Errors
+- **PR1050558-4309** (Sprint 12.1) - Closed: Training Enhancement: Update Related Lists on Clinician and Case Record
+- **PR1050558-4203** (Sprint 12.1) - Closed: UAT Enhancement: View Clinicians from Service Account Record
+- **PR1050558-4009** (Sprint 12.1) - Closed: UI Enhancement: Person Account LRP Enhancements
+- **PR1050558-4008** (Sprint 12.1) - Closed: UI Enhancement: Task Related List Columns
+- **PR1050558-4007** (Sprint 12.1) - Closed: UI Enhancement: HPF Name Automation Update
+- **PR1050558-2813** (Sprint 12.1) - Closed: New Clinician Athena Notification
+- **PR1050558-2184** (Sprint 12.1) - Closed: Unable to change ATS applicant stage to "Recruiter Screen" - Process failed erro
+- **PR1050558-5286** (Sprint 12.2) - Closed: UAT Bug: New Clinician Athena Notification - Correct 'Global Provider ID' mappin
+- **PR1050558-4973** (Sprint 12.2) - Closed: Intake Form Criteria Update: Update Logic from HPF to Job
+- **PR1050558-4395** (Sprint 12.2) - Closed: Flow Errors
+- **PR1050558-5474** (Sprint 12.3) - Closed: PROD Bug: Integration User needs ability to update/create Training record
+- **PR1050558-5470** (Sprint 12.3) - Closed: PROD Bug: Training object - Integration user needs access to Assigned Date field
+- **PR1050558-5823** (Sprint 12.5) - Closed: PROD Enhancement: HPF - Add Section = 'Insurance Information'
+- **PR1050558-6208** (Sprint 14) - Closed: PROD Enhancement: Remove ability for Recruiters to create Account Record Type = 
+- **PR1050558-289** (Sprint 2) - Closed: Remove "Next" Navigation When Facing Error
+- **PR1050558-284** (Sprint 2) - Closed: NPI Field on clinician record is editable.
+- **PR1050558-209** (Sprint 2) - Closed: Guided Create HPF: Facility Selection
+- **PR1050558-196** (Sprint 2) - Closed: Clinician Visa Information
+- **PR1050558-195** (Sprint 2) - Closed: Guided Clinician Creation
+- **PR1050558-192** (Sprint 2) - Closed: NPI Management
+- **PR1050558-123** (Sprint 2) - Closed: Guided Create HPF: Clinician Info
+- **PR1050558-590** (Sprint 3) - Closed: [Regression Bug] Taxonomy record showing record ID in name field.
+- **PR1050558-462** (Sprint 3) - Closed: Activity related list's Columns are not matching as per AC.
+- **PR1050558-337** (Sprint 3) - Closed: Standardize Facility Title Values
+- **PR1050558-290** (Sprint 3) - Closed: Add Additional Fields
+- **PR1050558-245** (Sprint 3) - Closed: Update Related Lists on Clinician Record
+- **PR1050558-716** (Sprint 4) - Closed: Update Guided Clinician Creation
+- **PR1050558-469** (Sprint 4) - Closed: Add Additional Fields
+- **PR1050558-386** (Sprint 4) - Closed: Update NPI Management
+- **PR1050558-385** (Sprint 4) - Closed: Update Guided Clinician Creation - Geographic Preference
+- **PR1050558-836** (Sprint 5) - Closed: Update Employment Type on Healthcare Practitioner Facility
+- **PR1050558-833** (Sprint 5) - Closed: Update Code Set Object and Facility Title Records
+- **PR1050558-666** (Sprint 5) - Closed: Update Guided Create HPF - Board Cert & Medical License
+- **PR1050558-1649** (Sprint 6) - Closed: Tech Story to Remove Fields
+- **PR1050558-1305** (Sprint 6) - Closed: Add Additional Fields
+- **PR1050558-1074** (Sprint 6) - Closed: Add Files on Contract
+- **PR1050558-2203** (Sprint 7) - Open: Observation Bug:  At a Glance tab
+- **PR1050558-2202** (Sprint 7) - Closed: If on HPF record status is Prospect and without updating the Contracting Status,
+- **PR1050558-2184** (Sprint 7) - Closed: Unable to change ATS applicant stage to "Recruiter Screen" - Process failed erro
+- **PR1050558-2163** (Sprint 7) - Closed: When navigating through stages it is throwing error and not allowing to move for
+- **PR1050558-2154** (Sprint 7) - Closed: Task Detail page is not visible for MSL User.
+- **PR1050558-1719** (Sprint 7) - Closed: Healthcare Practitioner Facility Status Automation
+- **PR1050558-1718** (Sprint 7) - Closed: Clinician Contract Management
+- **PR1050558-1392** (Sprint 7) - Closed: Update Clinician Taxonomy Selection
+- **PR1050558-1369** (Sprint 7) - Closed: Automatic Corporate Entity Association at HPF Create
+- **PR1050558-1334** (Sprint 7) - Closed: Clinician "At a Glance" Status Calculation
+- **PR1050558-1168** (Sprint 7) - Closed: Risk Review - Auto Inactivate HPFs when denied
+- **PR1050558-1074** (Sprint 7) - Closed: Add Files on Contract
+- **PR1050558-889** (Sprint 7) - Closed: Clinician "At a Glance" UI
+- **PR1050558-888** (Sprint 7) - Closed: Clinician “At a Glance” Display Responsive based on Audience
+- **PR1050558-2220** (Sprint 8) - Closed: Intake Form: Automated Task Creation to Review NPI
+- **PR1050558-2219** (Sprint 8) - Closed: Intake Form: Automated Task Creation to Review Name Change
+- **PR1050558-2162** (Sprint 8) - Closed: Clinician Attributes from Workday to Salesforce
+- **PR1050558-2150** (Sprint 8) - Closed: Update Corporation and Tax Information
+- **PR1050558-2112** (Sprint 8) - Closed: Review User Profile Key Field
+- **PR1050558-1720** (Sprint 8) - Closed: Intake Form: Automated Task Creation to Review Corporation and Tax Info
+- **PR1050558-1717** (Sprint 8) - Closed: Healthcare Practitioner Facility Management
+- **PR1050558-1653** (Sprint 8) - Closed: Clinician "At a Glance" - Offboarding
+- **PR1050558-1392** (Sprint 8) - Closed: Update Clinician Taxonomy Selection
+- **PR1050558-1369** (Sprint 8) - Closed: Automatic Corporate Entity Association at HPF Create
+- **PR1050558-2981** (Sprint 9) - Closed: After Update NPI Screen getting Error.
+- **PR1050558-2616** (Sprint 9) - Closed: Update Case Related Lists on Clinician Record
+- **PR1050558-2551** (Sprint 9) - Closed: Conditional Requirements for Clinician NPI
+- **PR1050558-2431** (Sprint 9) - Closed: Update Clinician Visa Data Model
+- **PR1050558-2418** (Sprint 9) - Closed: Insurance Provided By Validation Rule
+- **PR1050558-2225** (Sprint 9) - Closed: Related Clinician Records - Add Collaborative Practice Agreement
+- **PR1050558-2220** (Sprint 9) - Closed: Intake Form: Automated Task Creation to Review NPI
+- **PR1050558-2219** (Sprint 9) - Closed: Intake Form: Automated Task Creation to Review Name Change
+- **PR1050558-2162** (Sprint 9) - Closed: Clinician Attributes from Workday to Salesforce
+- **PR1050558-2150** (Sprint 9) - Closed: Update Corporation and Tax Information
+- **PR1050558-2112** (Sprint 9) - Closed: Review User Profile Key Field
+- **PR1050558-1720** (Sprint 9) - Closed: Intake Form: Automated Task Creation to Review Corporation and Tax Info
+
+### Provider Contracting
+
+**Child Stories**: 280
+
+- **PR1050558-3441** (Sprint 10) - Closed: Observation - User able to delete the facility rate from the 'Facility Rates as 
+- **PR1050558-3440** (Sprint 10) - Closed: Regression: Story PR1050558-892 Clinician Contract Request: Leased or Locums
+- **PR1050558-3434** (Sprint 10) - Closed: The Clinician Contract record is not getting created after submission of Contrac
+- **PR1050558-3394** (Sprint 10) - Closed: Rates are not visible in summary tab of Clinician & Practice Operation contract.
+- **PR1050558-3393** (Sprint 10) - Closed: The end date is not getting updated when the new contract start date arrives
+- **PR1050558-2955** (Sprint 10) - Closed: Clinician Contract Request: SCP to book Travel
+- **PR1050558-2928** (Sprint 10) - Closed: Clinician Contract Date Alignment - No Employment Type Change
+- **PR1050558-2832** (Sprint 10) - Closed: Term Sheet Generation - Trigger Contract Generation
+- **PR1050558-2822** (Sprint 10) - Closed: Clinician Contract Request: Copy rates from Old HPF to New
+- **PR1050558-2811** (Sprint 10) - Closed: Generate Term Sheet - Term Sheet Generation
+- **PR1050558-2785** (Sprint 10) - Closed: NP/PA Tier Management: Clinician 2 of 2
+- **PR1050558-2659** (Sprint 10) - Closed: Clinicians Contract Request: Fields Needed to Determine Addendum
+- **PR1050558-2558** (Sprint 10) - Closed: Clinician Contract Date Alignment
+- **PR1050558-2467** (Sprint 10) - Closed: Clinician Contract: Leased and Locums Update to Executed Status
+- **PR1050558-2238** (Sprint 10) - Closed: Clinician Contract Update: Rate Pay Code
+- **PR1050558-1809** (Sprint 10) - Closed: Clinician Contract List Views - Update All Clinician Contracts - Approved
+- **PR1050558-1750** (Sprint 10) - Closed: Clinician Agreement Approval Process: VPO
+- **PR1050558-1584** (Sprint 10) - Closed: Clinician Contract Auto Populate Client Rate
+- **PR1050558-230** (Sprint 10) - Closed: Coordinate Contracting Data Model with Conga Build
+- **PR1050558-3913** (Sprint 11) - Closed: UAT Bug: C&CUAT68 E2E | UAT | "HPF" option was not available in the user interfa
+- **PR1050558-3797** (Sprint 11) - Closed: UAT Bug: C&CUAT52 Lisha Falk - Corporate Entity Mismatch approver - Cannot see C
+- **PR1050558-3783** (Sprint 11) - Closed: UAT Bug: C&CUAT37 Term Sheet missing data that should be pulled from Contract Re
+- **PR1050558-3769** (Sprint 11) - Closed: UAT Bug: C&CUAT32 Error received when trying to Generate Term Sheet from Approve
+- **PR1050558-3767** (Sprint 11) - Closed: UAT Bug: C&CUAT31 Document sent via DocuSign and Contract Record status/dates no
+- **PR1050558-3765** (Sprint 11) - Closed: UAT Bug: C&CUAT30 Clinician Contract Specialists need ability to see Related lis
+- **PR1050558-3764** (Sprint 11) - Closed: UAT Bug: C&CUAT29 Cannot view bonus details that were configured
+- **PR1050558-3674** (Sprint 11) - Closed: UAT Bug: C&CUAT27 EE NPPA Salary Calculation Incorrect/Needs Review
+- **PR1050558-3673** (Sprint 11) - Closed: UAT Bug: C&CUAT26 VPO not assigned to approve on Contract Record
+- **PR1050558-3670** (Sprint 11) - Closed: UAT Bug: C&CUAT HPF Not found error
+- **PR1050558-3669** (Sprint 11) - Closed: UAT Bug: C&CUAT24 PCA and PNC records not updated when I Continued with Draft Re
+- **PR1050558-3663** (Sprint 11) - Closed: UAT Bug: C&CUAT21 Error received when DocuSign for Contracting selected from Con
+- **PR1050558-3624** (Sprint 11) - Closed: UAT Bug: C&CUAT20 Error received when selecting "Create Conga Agreement" from Co
+- **PR1050558-3623** (Sprint 11) - Closed: UAT Bug: C&CUAT19 EE NPPA rate fields are populated on a Contract Record for an 
+- **PR1050558-3622** (Sprint 11) - Closed: UAT Bug: C&CUAT18 Contract Request for Locums Clinician submitted and not update
+- **PR1050558-3621** (Sprint 11) - Closed: UAT Bug: C&CUAT17 Submit Contract Request button from Summary tab on Contract Re
+- **PR1050558-3620** (Sprint 11) - Closed: UAT Bug: C&CUAT16 Contract Request Bonus Configuration not saving to record and 
+- **PR1050558-3608** (Sprint 11) - Closed: UAT Bug: C&CUAT08 Blank screen after screen flows when selecting Contract Reques
+- **PR1050558-3566** (Sprint 11) - Closed: SIT: C&CSIT03 Provider Contracting | Unable to Create EE Clinician Contract in S
+- **PR1050558-3444** (Sprint 11) - Closed: Clinicians Contract Request: Mixed Bag Shift Rates?
+- **PR1050558-3384** (Sprint 11) - Closed: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-2928** (Sprint 11) - Closed: Clinician Contract Date Alignment - No Employment Type Change
+- **PR1050558-2811** (Sprint 11) - Closed: Generate Term Sheet - Term Sheet Generation
+- **PR1050558-2659** (Sprint 11) - Closed: Clinicians Contract Request: Fields Needed to Determine Addendum
+- **PR1050558-4378** (Sprint 12) - Closed: UAT Bug: C&CUAT154 - A-2 addendum on Base contract is not loading correctly for 
+- **PR1050558-4351** (Sprint 12) - Closed: UAT Bug: C&CUAT153 IC PRN NPPA Template Failure
+- **PR1050558-4204** (Sprint 12) - Closed: UAT Bug: On Contract record, the field labels should be  Contract  Start Date an
+- **PR1050558-4146** (Sprint 12) - Closed: UAT Bug: C&CUAT122 Executed Term Sheet Not Displaying in Contract List View
+- **PR1050558-4134** (Sprint 12) - Closed: UAT Bug: C&CUAT116 -  CONT-018 Unable to Update Contract status to ""Contracting
+- **PR1050558-4103** (Sprint 12) - Closed: UAT Bug: C&CUAT107 CONT 0017__Generate, Send & Execute Term Sheet
+- **PR1050558-4078** (Sprint 12) - Closed: UAT Enhancement: Update Clinician Contracting Permission Set
+- **PR1050558-4074** (Sprint 12) - Closed: UAT Bug: C&CUAT99 Contract Specialist needs to be able to view CTI record and in
+- **PR1050558-4068** (Sprint 12) - Closed: UAT Bug: C&CUAT96 Approval Work Item Not Generated After Contract Submission for
+- **PR1050558-4062** (Sprint 12) - Closed: UAT Bug: C&CUAT95 Error Received when trying to generate term sheet
+- **PR1050558-4060** (Sprint 12) - Closed: UAT Bug: C&CUAT92 Jira 2907 - Clinician - Approved & Term Sheet Executed filters
+- **PR1050558-4057** (Sprint 12) - Closed: UAT Bug: C&CUAT89 $0 Rates causing error
+- **PR1050558-4010** (Sprint 12) - Closed: UI Enhancement: Contract Summary UI Enhancements
+- **PR1050558-4005** (Sprint 12) - Closed: UAT Enhancement: Allow $0 Rates on Clinician Contracts
+- **PR1050558-4003** (Sprint 12) - Closed: UAT Bug: C&CUAT83 Relocation Bonus amount/terms not appearing in term sheet
+- **PR1050558-4001** (Sprint 12) - Closed: UAT Enhancement: Clinician Contract - Bonus Approval Updates
+- **PR1050558-3991** (Sprint 12) - Closed: UAT Bug: C&CUAT79 Contract bonus approval issue
+- **PR1050558-3990** (Sprint 12) - Closed: UAT Bug: C&CUAT78 Compensation not populating on term sheet
+- **PR1050558-3960** (Sprint 12) - Closed: UAT Bug: C&CUAT75 When trying to request a term sheet, I'm getting an error that
+- **PR1050558-3931** (Sprint 12) - Closed: TECH - Clinician Contract Request: Summary Screen - Add HPF - Refine Logic for s
+- **PR1050558-3797** (Sprint 12) - Closed: UAT Bug: C&CUAT52 Lisha Falk - Corporate Entity Mismatch approver - Cannot see C
+- **PR1050558-3783** (Sprint 12) - Closed: UAT Bug: C&CUAT37 Term Sheet missing data that should be pulled from Contract Re
+- **PR1050558-3767** (Sprint 12) - Closed: UAT Bug: C&CUAT31 Document sent via DocuSign and Contract Record status/dates no
+- **PR1050558-3444** (Sprint 12) - Closed: Clinicians Contract Request: Mixed Bag Shift Rates?
+- **PR1050558-3384** (Sprint 12) - Closed: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3201** (Sprint 12) - Closed: Generate Term Sheet - Term Sheet Generation - Add Other Type of Rates
+- **PR1050558-2907** (Sprint 12) - Closed: Term Sheet Generation - “Send Term Sheet for Signature” & List View
+- **PR1050558-5202** (Sprint 12.1) - Closed: UAT Enhancement: HPF Effective Dates UPDATE
+- **PR1050558-5198** (Sprint 12.1) - Closed: UAT Bug: C&CUAT386 Fully Executed Contract Not Moving From Approved Status
+- **PR1050558-5140** (Sprint 12.1) - Closed: Regression bug : Incorrect Rate Data in Configure Rate Flow on Subsequent Loads
+- **PR1050558-5117** (Sprint 12.1) - Closed: UAT Enhancement: Prevent Clinician Contract with Same Start Date
+- **PR1050558-5115** (Sprint 12.1) - Closed: UAT Bug: C&CUAT362 IC PRN NPPA - Base Rates missing on Addendum A
+- **PR1050558-5082** (Sprint 12.1) - Closed: UAT Bug: C&CUAT347 EE PT Contract updated to executed error
+- **PR1050558-5068** (Sprint 12.1) - Closed: UAT Enhancement: Include Active HPFs in Clinician Contract
+- **PR1050558-4997** (Sprint 12.1) - Closed: UAT Enahancement: C&CUAT326 Contract & HPF Effective Dates
+- **PR1050558-4989** (Sprint 12.1) - Closed: UAT Bug: C&CUAT325 EE FT RN Agreement generated incorrectly
+- **PR1050558-4985** (Sprint 12.1) - Closed: UAT Bug: C&CUAT320 Contract Signed Date - Candidate - is wrong
+- **PR1050558-4954** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Facility Title Change - HPF Updates to OLD
+- **PR1050558-4944** (Sprint 12.1) - Closed: UAT Bug: C&CUAT310 Clone a contract - failed to refresh client rates thus result
+- **PR1050558-4917** (Sprint 12.1) - Closed: UAT Enhancement :Update HPF Contracting Status When Contract is Executed
+- **PR1050558-4908** (Sprint 12.1) - Closed: UAT Bug: C&CUAT295 Night Shift Bonus did not pull into contract for EE NPPA
+- **PR1050558-4893** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4892** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4891** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4867** (Sprint 12.1) - Closed: UAT Bug: C&CUAT287 Hire date not populating when selecting "Start Admin Work Ahe
+- **PR1050558-4863** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4861** (Sprint 12.1) - Closed: UAT Enhancement: Update CDC Channel - add fields and update triggers
+- **PR1050558-4859** (Sprint 12.1) - Closed: UAT Bug: C&CUAT284 EE Physician Base Agreement missing Add A
+- **PR1050558-4858** (Sprint 12.1) - Closed: UAT Bug: C&CUAT283 EE NPPA Addendum B generating in error
+- **PR1050558-4856** (Sprint 12.1) - Closed: UAT Enhancement : Clinician Contract Approvals
+- **PR1050558-4844** (Sprint 12.1) - Closed: UAT Enhancement: NP/PA Tier Process - Add HPF
+- **PR1050558-4806** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Automatically reload the page when you "Re
+- **PR1050558-4805** (Sprint 12.1) - Closed: UAT Bug: C&CUAT274 HPF isn't loading on new Contract
+- **PR1050558-4793** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Do not display duplicate rates on Summary 
+- **PR1050558-4792** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - 'Add HPF' display cloned rates on Summary 
+- **PR1050558-4791** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Add Time to "Last Synched Date" field
+- **PR1050558-4784** (Sprint 12.1) - Closed: UAT Bug: C&CUAT271 Hour Commitment entered onto HPF through Contract Request scr
+- **PR1050558-4764** (Sprint 12.1) - Closed: UAT Bug: Clinician Contract - Rates pulling in from irrelevant HPF
+- **PR1050558-4750** (Sprint 12.1) - Closed: UAT Enhancement: NP/PA Tier Process
+- **PR1050558-4748** (Sprint 12.1) - Closed: Clinician Hire Date
+- **PR1050558-4746** (Sprint 12.1) - Closed: UAT Bug: C&CUAT261 Cloned contract pulling in incorrect contract during duplicat
+- **PR1050558-4742** (Sprint 12.1) - Closed: UAT Bug: C&CUAT259 Clinician had Inactive HPF and Recruiter added new HPF for sa
+- **PR1050558-4739** (Sprint 12.1) - Closed: UAT Enhancement :Task to Clear QGenda for Reactivating a Clincian
+- **PR1050558-4727** (Sprint 12.1) - Closed: E2E Bug: CDC Channel Update
+- **PR1050558-4721** (Sprint 12.1) - Closed: UAT Bug: C&CUAT249 NPPA Tier getting populated on HPF for Physician
+- **PR1050558-4720** (Sprint 12.1) - Closed: UAT Bug: C&CUAT250 Agreement Record tied to Executed Contract Record not updated
+- **PR1050558-4685** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT245 SCP Contracting entities
+- **PR1050558-4592** (Sprint 12.1) - Closed: E2E Bug: C&CUAT216 Mulesoft : incorrect Company name is appearing
+- **PR1050558-4591** (Sprint 12.1) - Closed: UAT Bug: C&CUAT215 Clinician has Active Business Entity CTI on Person Account bu
+- **PR1050558-4590** (Sprint 12.1) - Closed: E2E Bug: C&CUAT214 MuleSoft: Duplicate hires for the same clinician
+- **PR1050558-4589** (Sprint 12.1) - Closed: UAT Bug: C&CUAT213 Other Bonus requested but A-2 not generated
+- **PR1050558-4586** (Sprint 12.1) - Closed: E2E Bug: C&CUAT210 Pay code is not available in SF
+- **PR1050558-4569** (Sprint 12.1) - Closed: HPF Field History Tracking
+- **PR1050558-4564** (Sprint 12.1) - Closed: UAT Bug: C&CUAT198 EE PT Hourly Blend not calculated
+- **PR1050558-4561** (Sprint 12.1) - Closed: UAT Bug: C&CUAT195 "Refresh Client Rates" didn't work after removal of rates
+- **PR1050558-4553** (Sprint 12.1) - Closed: Clinician NP/PA Tier Updates
+- **PR1050558-4548** (Sprint 12.1) - Closed: On Client Contract upon entering start and end date in Past, an error message is
+- **PR1050558-4540** (Sprint 12.1) - Closed: UAT Bug: C&CUAT189 Addendum A Issues
+- **PR1050558-4513** (Sprint 12.1) - Closed: SFO Persona is unable to update the Contract End Date field.
+- **PR1050558-4512** (Sprint 12.1) - Closed: While working on LOI and Client Contract with status Draft - When user updates t
+- **PR1050558-4474** (Sprint 12.1) - Closed: UAT Bug: C&CUAT175 DocuSign Automation not updating Contract Record status to Ex
+- **PR1050558-4433** (Sprint 12.1) - Closed: UAT Enhancement: Contract - Add validation that Start can NOT be after End Date
+- **PR1050558-4412** (Sprint 12.1) - Closed: UAT Bug: C&CUAT164 Data Migration Team Validation Fix - Internal Renewal Start D
+- **PR1050558-4409** (Sprint 12.1) - Closed: UAT Enhancement: Generate Term Sheet - Term Sheet Generation - Add back Clinicia
+- **PR1050558-4389** (Sprint 12.1) - Closed: UAT Bug: C&CUAT155 Clinician Name not pulling into templates when no CTI record 
+- **PR1050558-4378** (Sprint 12.1) - Closed: UAT Bug: C&CUAT154 - A-2 addendum on Base contract is not loading correctly for 
+- **PR1050558-4350** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT152 Signature Block on all templates should reference Cli
+- **PR1050558-4308** (Sprint 12.1) - Closed: Training Enhancement: Contract Field Visibility and Edit Access
+- **PR1050558-4157** (Sprint 12.1) - Closed: UAT Enhancement: Contract Summary UI Adjustment
+- **PR1050558-4078** (Sprint 12.1) - Closed: UAT Enhancement: Update Clinician Contracting Permission Set
+- **PR1050558-4012** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT86 HPF and Agreement history sections
+- **PR1050558-4010** (Sprint 12.1) - Closed: UI Enhancement: Contract Summary UI Enhancements
+- **PR1050558-4005** (Sprint 12.1) - Closed: UAT Enhancement: Allow $0 Rates on Clinician Contracts
+- **PR1050558-3441** (Sprint 12.1) - Closed: Observation - User able to delete the facility rate from the 'Facility Rates as 
+- **PR1050558-3384** (Sprint 12.1) - Closed: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3201** (Sprint 12.1) - Closed: Generate Term Sheet - Term Sheet Generation - Add Other Type of Rates
+- **PR1050558-2907** (Sprint 12.1) - Closed: Term Sheet Generation - “Send Term Sheet for Signature” & List View
+- **PR1050558-5415** (Sprint 12.2) - Closed: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5410** (Sprint 12.2) - Closed: Observation Bug - IC NPPA Termination - Cases are created with blank Subject & N
+- **PR1050558-5394** (Sprint 12.2) - Closed: UAT Bug: C&CUAT447 UAT1 - Agentforce - Rate Change Notice letter table view
+- **PR1050558-5389** (Sprint 12.2) - Closed: UAT Bug: C&CUAT443 UAT1 - contract pulling inactive sites
+- **PR1050558-5346** (Sprint 12.2) - Closed: UAT Bug: Prevent Clinician Contract with Same Start Date - Cancel
+- **PR1050558-5324** (Sprint 12.2) - Closed: UAT Bug: C&CUAT422 - UAT1 - Unable to End Date Clinician Contract
+- **PR1050558-5322** (Sprint 12.2) - Closed: UAT Bug: C&CUAT420 - UAT1 - Lack of Conga access
+- **PR1050558-5288** (Sprint 12.2) - Closed: UAT Bug: C&CUAT405 When ClinicianCoverageUpdateBatch ran it did not update the p
+- **PR1050558-5284** (Sprint 12.2) - Closed: UAT Bug: C&CUAT403 Error in UAT- in the contracting screens- cannot proceed with
+- **PR1050558-5202** (Sprint 12.2) - Closed: UAT Enhancement: HPF Effective Dates UPDATE
+- **PR1050558-5198** (Sprint 12.2) - Closed: UAT Bug: C&CUAT386 Fully Executed Contract Not Moving From Approved Status
+- **PR1050558-5117** (Sprint 12.2) - Closed: UAT Enhancement: Prevent Clinician Contract with Same Start Date
+- **PR1050558-4954** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Facility Title Change - HPF Updates to OLD
+- **PR1050558-4944** (Sprint 12.2) - Closed: UAT Bug: C&CUAT310 Clone a contract - failed to refresh client rates thus result
+- **PR1050558-4917** (Sprint 12.2) - Closed: UAT Enhancement :Update HPF Contracting Status When Contract is Executed
+- **PR1050558-4893** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4892** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4891** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4863** (Sprint 12.2) - Closed: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4856** (Sprint 12.2) - Closed: UAT Enhancement : Clinician Contract Approvals
+- **PR1050558-4553** (Sprint 12.2) - Closed: Clinician NP/PA Tier Updates
+- **PR1050558-5647** (Sprint 12.3) - Closed: PROD Bug: UPHypercare192 - Still getting the frozen blue screen when trying to r
+- **PR1050558-5642** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5634** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare186 - Receiving error when generating term sheet
+- **PR1050558-5591** (Sprint 12.3) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5452** (Sprint 12.3) - Closed: PROD Bug: UPHypercare24 Can't see bonus details
+- **PR1050558-5416** (Sprint 12.3) - Closed: PROD Bug: C&CUAT457 - PROD - Person Account, Related Tab DocuSign sections
+- **PR1050558-5415** (Sprint 12.3) - Closed: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5647** (Sprint 12.4) - Closed: PROD Bug: UPHypercare192 - Still getting the frozen blue screen when trying to r
+- **PR1050558-5591** (Sprint 12.4) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-4744** (Sprint 12.4) - Closed: Contract Payment Agreement Related List Columns
+- **PR1050558-5924** (Sprint 12.5) - In Test: PROD Enhancement: UPHypercare338 - Update how Rates are displayed in the Summary
+- **PR1050558-5874** (Sprint 12.5) - Closed: PROD Enhancement: Platform Event = HPFUpdate, Type = Rate for HPF - Add Locum
+- **PR1050558-5728** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5642** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5614** (Sprint 12.5) - Closed: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5591** (Sprint 12.5) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5525** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare73 - Need a solution for recruiters to request a ne
+- **PR1050558-5415** (Sprint 12.5) - Closed: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-4921** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT301 On the CPA screen in Clinician Onboarding enhance the
+- **PR1050558-5642** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5591** (Sprint 12.6) - Closed: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-2984** (Sprint 12.6) - Closed: [Observation Bug] :Client contract rates allows per-shift records to be created 
+- **PR1050558-6146** (Sprint 13) - Closed: Cloned Clinician Contract - Term Sheet Status field not getting set to Not Appli
+- **PR1050558-6015** (Sprint 13) - Closed: Compliance Rule Assignments - Needs Mapping
+- **PR1050558-5728** (Sprint 13) - Closed: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5614** (Sprint 13) - Closed: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5140** (Sprint 13) - Closed: Regression bug : Incorrect Rate Data in Configure Rate Flow on Subsequent Loads
+- **PR1050558-6359** (Sprint 14) - Closed: Issues for Billing only Indicator.
+- **PR1050558-6015** (Sprint 14) - Closed: Compliance Rule Assignments - Needs Mapping
+- **PR1050558-5921** (Sprint 14) - Closed: PROD Enhancement: Service Account, HPF and Clinician Contract - Add Billing Only
+- **PR1050558-5728** (Sprint 14) - Closed: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5614** (Sprint 14) - Closed: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-4780** (Sprint 14) - Closed: UAT Enhancement: Optimize Clinician Contract Views
+- **PR1050558-349** (Sprint 2) - Closed: Contract (Clinician) status field has extra picklist value.
+- **PR1050558-331** (Sprint 2) - Closed: Contract related list is not configured correctly.
+- **PR1050558-242** (Sprint 2) - Closed: Update Standard Care Fee Agreement to Preventive Care Agreement
+- **PR1050558-147** (Sprint 2) - Closed: CPA Relationship and Contract Records
+- **PR1050558-83** (Sprint 2) - Closed: Clinician Contract Records
+- **PR1050558-235** (Sprint 3) - Closed: CDC Channel
+- **PR1050558-877** (Sprint 4) - Closed: Provider Network Contract related list missing from Contract (Clinician)
+- **PR1050558-208** (Sprint 4) - Closed: View Provider Network Contract on Contract Record
+- **PR1050558-1407** (Sprint 5) - Closed: Random rates are being displayed when user selects shifts
+- **PR1050558-1153** (Sprint 5) - Closed: As Data Quality user - Contract Request button is missing on Clinician record.
+- **PR1050558-1091** (Sprint 5) - Closed: Clinician Contract Request: HPF Selection (Functionality for Facility Selection 
+- **PR1050558-893** (Sprint 5) - Closed: Clinician Contract Request: HPF Selection
+- **PR1050558-892** (Sprint 5) - Closed: Clinician Contract Request: Leased or Locums
+- **PR1050558-702** (Sprint 5) - Closed: Clinician Contract Executed Automation (Field Creation)
+- **PR1050558-210** (Sprint 5) - Closed: Clinician Contract Request: Shift Rates
+- **PR1050558-2086** (Sprint 6) - Closed: Clinician Contract Request: Bonus - Enforce additional bonus on 1 Facility/HPF
+- **PR1050558-1807** (Sprint 6) - Closed: Not able to see CPA and PCA records created for multiple records
+- **PR1050558-1783** (Sprint 6) - Closed: The existing Clinician Contract Records are not getting displayed under the Agre
+- **PR1050558-1771** (Sprint 6) - Open: Observation Bug: The NP/PA section should not be displayed as per DD. As it is n
+- **PR1050558-1770** (Sprint 6) - Closed: On the Details tab, the Previous Contract field should be displayed. But as of n
+- **PR1050558-1715** (Sprint 6) - Closed: Not able to Configure Rate for Clinician Contracts
+- **PR1050558-1714** (Sprint 6) - Closed: Contract record is being created without HPF.
+- **PR1050558-1579** (Sprint 6) - Closed: Clinician Contract Request: Add Recruiter Permissions
+- **PR1050558-1407** (Sprint 6) - Closed: Random rates are being displayed when user selects shifts
+- **PR1050558-1389** (Sprint 6) - Closed: Clinician Contract Request: Summary Screen - Add HPF
+- **PR1050558-1332** (Sprint 6) - Closed: Clinician Contract Request: Select Employment Type
+- **PR1050558-1317** (Sprint 6) - Closed: Clinician Contract - Prevent Active EE/IC at the same time
+- **PR1050558-1240** (Sprint 6) - Closed: Clinician Contract Summary UI - Connect Clinician Rate to Facility Rate
+- **PR1050558-1138** (Sprint 6) - Closed: Clinician Contract Request: Leased or Locums - Create/update records
+- **PR1050558-1110** (Sprint 6) - Closed: Clinician Contract Request: Leadership Incentives
+- **PR1050558-1109** (Sprint 6) - Closed: Clinician Contract Request: Stipend Rates
+- **PR1050558-1108** (Sprint 6) - Closed: Clinician Contract Request: Variable Rates
+- **PR1050558-1103** (Sprint 6) - Closed: Clinician Contract Request: Target Rates
+- **PR1050558-1091** (Sprint 6) - Closed: Clinician Contract Request: HPF Selection (Functionality for Facility Selection 
+- **PR1050558-1070** (Sprint 6) - Closed: Clinician Contract Request: Contract Changes
+- **PR1050558-894** (Sprint 6) - Closed: Clinician Contract Request: Summary Screen
+- **PR1050558-893** (Sprint 6) - Closed: Clinician Contract Request: HPF Selection
+- **PR1050558-892** (Sprint 6) - Closed: Clinician Contract Request: Leased or Locums
+- **PR1050558-702** (Sprint 6) - Closed: Clinician Contract Executed Automation (Field Creation)
+- **PR1050558-299** (Sprint 6) - Closed: Clinician Contract Summary UI - Cloned Indicator
+- **PR1050558-210** (Sprint 6) - Closed: Clinician Contract Request: Shift Rates
+- **PR1050558-194** (Sprint 6) - Closed: Clinician Contract Request: Bonus
+- **PR1050558-2156** (Sprint 7) - Closed: On both the list views the Column -All Clinician Contracts - Approved and My Cli
+- **PR1050558-2144** (Sprint 7) - Closed: Issues related to Bonus
+- **PR1050558-2135** (Sprint 7) - Closed: User is able to see the Approval Work item assigned to individual's in Assigned 
+- **PR1050558-2089** (Sprint 7) - Closed: Clinician Contract Request: Update Naming Convention for Contract Payment Agreem
+- **PR1050558-2086** (Sprint 7) - Closed: Clinician Contract Request: Bonus - Enforce additional bonus on 1 Facility/HPF
+- **PR1050558-1772** (Sprint 7) - Closed: CDC Channel: Update ContractTrigger
+- **PR1050558-1704** (Sprint 7) - Closed: View HPFs from Clinician Contract
+- **PR1050558-1703** (Sprint 7) - Closed: Corporate Entity Mismatch Queue
+- **PR1050558-1666** (Sprint 7) - Closed: Clinician Contract: Other Bonus Details
+- **PR1050558-1659** (Sprint 7) - Closed: Clinician Contract Special Terms
+- **PR1050558-1582** (Sprint 7) - Closed: Tactical Team Queue
+- **PR1050558-1579** (Sprint 7) - Closed: Clinician Contract Request: Add Recruiter Permissions
+- **PR1050558-1317** (Sprint 7) - Closed: Clinician Contract - Prevent Active EE/IC at the same time
+- **PR1050558-1138** (Sprint 7) - Closed: Clinician Contract Request: Leased or Locums - Create/update records
+- **PR1050558-1110** (Sprint 7) - Closed: Clinician Contract Request: Leadership Incentives
+- **PR1050558-1109** (Sprint 7) - Closed: Clinician Contract Request: Stipend Rates
+- **PR1050558-1108** (Sprint 7) - Closed: Clinician Contract Request: Variable Rates
+- **PR1050558-1103** (Sprint 7) - Closed: Clinician Contract Request: Target Rates
+- **PR1050558-425** (Sprint 7) - Closed: Clinician Contract List Views
+- **PR1050558-301** (Sprint 7) - Closed: Clinician Agreement Approval Process: Mismatch & Tactical
+- **PR1050558-194** (Sprint 7) - Closed: Clinician Contract Request: Bonus
+- **PR1050558-2621** (Sprint 8) - Closed: On Event Details, payload the Administrative Details is not coming.
+- **PR1050558-2423** (Sprint 8) - Closed: Clinician Contract: Set Start Date for Cloned Contract
+- **PR1050558-2228** (Sprint 8) - Closed: Improve Provider Network Contract related list component look & feel
+- **PR1050558-2118** (Sprint 8) - Closed: Clinician Contract: Auto Populate Contracting Corporate Entity
+- **PR1050558-1772** (Sprint 8) - Closed: CDC Channel: Update ContractTrigger
+- **PR1050558-1704** (Sprint 8) - Closed: View HPFs from Clinician Contract
+- **PR1050558-1703** (Sprint 8) - Closed: Corporate Entity Mismatch Queue
+- **PR1050558-1696** (Sprint 8) - Closed: Clinician Contract: Set Start Date
+- **PR1050558-487** (Sprint 8) - Closed: CDC Channel Update - Clinician Contract Executed/Start Admin Work
+- **PR1050558-2593** (Sprint 9) - Closed: Clinician Contract Request: Contract Changes - Cloning updates (Bonus Rates & In
+- **PR1050558-2559** (Sprint 9) - Closed: Clinician Contract Update: Add Time Type
+- **PR1050558-2558** (Sprint 9) - Closed: Clinician Contract Date Alignment
+- **PR1050558-2528** (Sprint 9) - Closed: Clinician Contract Request: Shift Rate Details - Populate Type field
+- **PR1050558-2527** (Sprint 9) - Closed: Clinician Contract - Update Related Lists (Approval Work Items & Clinician Contr
+- **PR1050558-2526** (Sprint 9) - Closed: Clinician Contract Request: Add hide/show logic for "Submit Contract Request" bu
+- **PR1050558-2467** (Sprint 9) - Closed: Clinician Contract: Leased and Locums Update to Executed Status
+- **PR1050558-2430** (Sprint 9) - Closed: Update Bonus Configuration for Client and Clinician
+- **PR1050558-2238** (Sprint 9) - Closed: Clinician Contract Update: Rate Pay Code
+- **PR1050558-2235** (Sprint 9) - Closed: NP/PA Tier Management: Clinician 1 of 2
+- **PR1050558-2210** (Sprint 9) - Closed: Clinician Contract Request: Update CPA naming
+- **PR1050558-2118** (Sprint 9) - Closed: Clinician Contract: Auto Populate Contracting Corporate Entity
+- **PR1050558-2018** (Sprint 9) - Closed: NP/PA Tier Management: Client
+- **PR1050558-487** (Sprint 9) - Closed: CDC Channel Update - Clinician Contract Executed/Start Admin Work
+
+### Provider Maintenance
+
+**Child Stories**: 60
+
+- **PR1050558-2819** (Sprint 10) - Closed: Clinical Support Case - Multiple issues.
+- **PR1050558-2675** (Sprint 10) - Closed: Case (RT: Clinician Change) & “Data Quality” queue
+- **PR1050558-2673** (Sprint 10) - Closed: Military Status Change Requests
+- **PR1050558-2672** (Sprint 10) - Closed: Business Entity Change Requests
+- **PR1050558-2670** (Sprint 10) - Closed: Clinician Name Change Requests
+- **PR1050558-1726** (Sprint 10) - Closed: Inactivation Alert Automated Email
+- **PR1050558-1725** (Sprint 10) - Closed: Clinician Support Case
+- **PR1050558-4293** (Sprint 12) - Closed: UAT Bug: C&CUAT148 Leadership Change Error
+- **PR1050558-4211** (Sprint 12) - Closed: UAT Bug : C&CUAT139 Unable to Approve APAY Shift request
+- **PR1050558-4185** (Sprint 12) - Closed: UAT Bug: C&CUAT134 Heading glitch
+- **PR1050558-4167** (Sprint 12) - Closed: UAT Bug: C&CUAT129 Clinician Name Change / Status Change
+- **PR1050558-4166** (Sprint 12) - Closed: UAT Bug: C&CUAT133 -  OM-010 Clinician Name Change Fail
+- **PR1050558-4163** (Sprint 12) - Closed: UAT Bug: C&CUAT127 - Case not populated on Clinician case logs
+- **PR1050558-4161** (Sprint 12) - Closed: UAT Bug: C&CUAT131 -  OM-011 Unable to complete test due to feature not being av
+- **PR1050558-4159** (Sprint 12) - Closed: UAT Bug: C&CUAT130 -  OM-009 Open CET Inquiry Cases list view option is not show
+- **PR1050558-4141** (Sprint 12) - Closed: UAT Bug: C&CUAT120 - Clinician Change Request' option is not available in down a
+- **PR1050558-4140** (Sprint 12) - Closed: UAT Bug: C&CUAT119 - "IT Support" option is not available in Global Support Acti
+- **PR1050558-4133** (Sprint 12) - Closed: UAT Bug: C&CUAT115 -  OM_001 & OM-002 _Leadership Change
+- **PR1050558-2120** (Sprint 12) - Closed: Workday Hire Date Change
+- **PR1050558-5169** (Sprint 12.1) - On Hold: UAT Enhancement: C&CUAT372 Rate Change (Increase) being created by Request Contr
+- **PR1050558-5147** (Sprint 12.1) - Closed: UAT Bug: C&CUAT366 Coverage Change only Practice Ops Executed - Downstream proce
+- **PR1050558-5091** (Sprint 12.1) - Closed: UAT Enhancement - Adjust Manual Create HPF Experience and HPF View/Edit
+- **PR1050558-5090** (Sprint 12.1) - Closed: UAT Enhancement - Date Validation for Automated Create HPF from Job
+- **PR1050558-4980** (Sprint 12.1) - Closed: UAT Enhancement - Date Validation for Manual Create HPF
+- **PR1050558-4942** (Sprint 12.1) - Closed: UAT Enhancement: Refresh Client Rate button: Deleting Rates when Facility Rate f
+- **PR1050558-4674** (Sprint 12.1) - Closed: Hire Date when Employment Type is Changing
+- **PR1050558-4537** (Sprint 12.1) - Closed: UAT Bug: C&CUAT186 Cannot add Pay Codes
+- **PR1050558-4337** (Sprint 12.1) - Closed: UAT Enhancement: Leadership Change HPF Date Filter Update
+- **PR1050558-2120** (Sprint 12.1) - Closed: Workday Hire Date Change
+- **PR1050558-5382** (Sprint 12.2) - Closed: UAT Bug: C&CUAT436 - UAT1 - Pay Codes on PO are not getting pulled forward to ne
+- **PR1050558-5377** (Sprint 12.2) - Closed: E2E Bug: C&CUAT434 UAT1- Leased Provider Location (hospital) Failed to push to Q
+- **PR1050558-5323** (Sprint 12.2) - Closed: UAT Bug: C&CUAT421 - UAT1 - Pay Code Testing
+- **PR1050558-5287** (Sprint 12.2) - Closed: UAT Bug: C&CUAT404 Pay Codes not loaded in drop down box
+- **PR1050558-4674** (Sprint 12.2) - Closed: Hire Date when Employment Type is Changing
+- **PR1050558-5792** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5792** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5597** (Sprint 12.5) - Closed: PROD Permissions: UPhypercare151: Access to Leadership Change
+- **PR1050558-5169** (Sprint 12.5) - On Hold: UAT Enhancement: C&CUAT372 Rate Change (Increase) being created by Request Contr
+- **PR1050558-5707** (Sprint 12.6) - Closed: PROD Enhancement: UPHypercare232 - Adjust logic when cloning a Clinician Contrac
+- **PR1050558-5840** (Sprint 13) - Closed: PROD Enhancement: UPHypercare289 - Risk Team - Needs Access to Edit Fields
+- **PR1050558-6387** (Sprint 14) - Closed: Bug: AWI Triggered on IC to EE Conversion Despite Matching CCEs
+- **PR1050558-6386** (Sprint 14) - Closed: Bug: Incorrect AWI Generation for Matching CCEs
+- **PR1050558-6354** (Sprint 14) - Closed: Observation: Old HPF is not marked as 'Superseded' if delinked from clinician co
+- **PR1050558-6349** (Sprint 14) - Closed: Observation: User is able to add 'Superseded' HPF to clinician contract
+- **PR1050558-6235** (Sprint 14) - Ready for Test: PROD Enhancement: Update HPF Status from "Superseded" to "Inactive"
+- **PR1050558-5840** (Sprint 14) - Closed: PROD Enhancement: UPHypercare289 - Risk Team - Needs Access to Edit Fields
+- **PR1050558-5792** (Sprint 14) - Closed: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5708** (Sprint 14) - Closed: PROD Enhancement: UPHypercare233 - Adjust cloning logic related to entity, when 
+- **PR1050558-2119** (Sprint 8) - Closed: New HPF for Already Active Clinicians
+- **PR1050558-2949** (Sprint 9) - Closed: New Custom button “Create Clinician Change” - Screen flow, to capture the fields
+- **PR1050558-2892** (Sprint 9) - Closed: Initiate Leadership Change - Create Case RT: Leadership Change
+- **PR1050558-2819** (Sprint 9) - Closed: Clinical Support Case - Multiple issues.
+- **PR1050558-2675** (Sprint 9) - Closed: Case (RT: Clinician Change) & “Data Quality” queue
+- **PR1050558-2673** (Sprint 9) - Closed: Military Status Change Requests
+- **PR1050558-2672** (Sprint 9) - Closed: Business Entity Change Requests
+- **PR1050558-2670** (Sprint 9) - Closed: Clinician Name Change Requests
+- **PR1050558-2557** (Sprint 9) - Closed: Initiate Leadership Change from Service Account
+- **PR1050558-2119** (Sprint 9) - Closed: New HPF for Already Active Clinicians
+- **PR1050558-1726** (Sprint 9) - Closed: Inactivation Alert Automated Email
+- **PR1050558-1725** (Sprint 9) - Closed: Clinician Support Case
+
+### Provider Offboarding
+
+**Child Stories**: 132
+
+- **PR1050558-3319** (Sprint 10) - Closed: Data Quality and Clinician Exp Specialist Persona are not able to access Clinica
+- **PR1050558-3318** (Sprint 10) - Open: Observation Bug: A loop is going on for the Initiate Clinical Termination Reques
+- **PR1050558-2950** (Sprint 10) - Closed: Offboarding Tasks - Facility Specific - Update Task
+- **PR1050558-2678** (Sprint 10) - Closed: Facility Term: Date of Client Termination Triggers Auto Clinician Offboarding Pr
+- **PR1050558-2677** (Sprint 10) - Closed: Clinician Offboarding - Termination Details Updates for Partner
+- **PR1050558-2676** (Sprint 10) - Closed: Clinician Offboarding - Termination Details Updates for Locums, Leased, Managed
+- **PR1050558-2474** (Sprint 10) - Closed: Clinician Offboarding: Connect Termination and Clinical Match Processes
+- **PR1050558-2473** (Sprint 10) - Closed: Clinician Offboarding: Termination Updates
+- **PR1050558-2471** (Sprint 10) - Closed: Clinician Offboarding - Termination Details Update
+- **PR1050558-2462** (Sprint 10) - Closed: Enable Integration to Workday for SCP Offboarding - 2 of 2
+- **PR1050558-2421** (Sprint 10) - Closed: Automated Case Record Closure: Offboarding
+- **PR1050558-3569** (Sprint 11) - Closed: SIT: C&CSIT04 SCP Termination event is received for IC but with insufficient dat
+- **PR1050558-2678** (Sprint 11) - Closed: Facility Term: Date of Client Termination Triggers Auto Clinician Offboarding Pr
+- **PR1050558-2474** (Sprint 11) - Closed: Clinician Offboarding: Connect Termination and Clinical Match Processes
+- **PR1050558-4292** (Sprint 12) - Closed: UAT Bug: C&CUAT147 OFF_02- Process Voluntary Offboarding (Facility Only) - no CP
+- **PR1050558-4291** (Sprint 12) - Closed: UAT Bug: C&CUAT146 OFF-001 _Initiate Voluntary Offboarding (Facility Only)_Job r
+- **PR1050558-4245** (Sprint 12) - Closed: UAT Bug: C&CUAT145 Matt Hebert is not performing Transition Specialist tasks but
+- **PR1050558-4218** (Sprint 12) - Closed: UAT Bug: C&CUAT142 OFF010-Full SCP Offboarding - Clinical Match Approval_ Legal 
+- **PR1050558-4189** (Sprint 12) - Closed: UAT Bug: C&CUAT138 SCP Offboarding details is not auto-populating
+- **PR1050558-4188** (Sprint 12) - Closed: UAT Bug: C&CUAT137 Offboarding - Employee Review Task created in error
+- **PR1050558-4160** (Sprint 12) - Closed: UAT Bug: C&CUAT125 Credentialing is spelled incorrectly on fields
+- **PR1050558-4154** (Sprint 12) - Closed: UAT Bug: C&CUAT124 Job Req for Backfill not created when Voluntary Offboarding i
+- **PR1050558-4153** (Sprint 12) - Closed: UAT Bug: C&CUAT123 Offboarding Case is Not getting created
+- **PR1050558-4138** (Sprint 12) - Closed: Temporary Inactive Reason API name fix
+- **PR1050558-4128** (Sprint 12) - Closed: UAT Bug: C&CUAT114 No Exit Interview task created for SCP Offboarding case
+- **PR1050558-4127** (Sprint 12) - Closed: UAT Bug: C&CUAT113 User does not have access to Offboarding cases
+- **PR1050558-2472** (Sprint 12) - Closed: Clinician Offboarding: Backfill Needed
+- **PR1050558-5183** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5172** (Sprint 12.1) - Closed: E2E Bug: C&CUAT375 Provider rates did not end date in QGenda when the provider w
+- **PR1050558-5168** (Sprint 12.1) - Closed: UAT Bug: C&CUAT371 CTI has to have an expiration date for the termination to fir
+- **PR1050558-5151** (Sprint 12.1) - Closed: UAT Enhancement: Clinician Contract - Facility Title Change - Auto Create Facili
+- **PR1050558-5081** (Sprint 12.1) - Closed: E2E Bug: C&CUAT346 Clinician Offboarding Dates
+- **PR1050558-5080** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT345 Terming provider in salesforce shows a closed case if
+- **PR1050558-5079** (Sprint 12.1) - Blocked: UAT Enhancement: C&CUAT344 Need the ability to terminate a provider (facility an
+- **PR1050558-4927** (Sprint 12.1) - Closed: UAT Bug: Clinician Offboarding: Termination Updates
+- **PR1050558-4923** (Sprint 12.1) - Closed: UAT Bug: C&CUAT302 Facility Offboarding is occurring at the wrong time
+- **PR1050558-4911** (Sprint 12.1) - Closed: UAT Enhancement C&CUAT297 Account Name on Facility Offboarding case is invalid
+- **PR1050558-4869** (Sprint 12.1) - Closed: UAT Bug: C&CUAT288 Roster misspelled on Clinician Review case
+- **PR1050558-4706** (Sprint 12.1) - Closed: E2E Enhancement: Populate Last Day for SCP Offboarding Case
+- **PR1050558-4705** (Sprint 12.1) - Closed: UAT Enhancement: Update Integration to Workday for SCP Offboarding - EE add Glob
+- **PR1050558-4640** (Sprint 12.1) - Closed: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-4405** (Sprint 12.1) - Closed: Additional Enhancement: New Clinician Athena Notification - Update mapping from 
+- **PR1050558-4347** (Sprint 12.1) - Closed: UAT Enhancement: Remove Primary Reason Field & Populate Reason for Termination
+- **PR1050558-4339** (Sprint 12.1) - Closed: Update HPF 'Temporary Inactive Reason' - Remove dependency on Credentialing Stat
+- **PR1050558-4287** (Sprint 12.1) - Closed: UAT Enhancement: SCP Offboarding - Employee Review Task
+- **PR1050558-4201** (Sprint 12.1) - Closed: SCP Offboarding Case Updates
+- **PR1050558-4138** (Sprint 12.1) - Closed: Temporary Inactive Reason API name fix
+- **PR1050558-2908** (Sprint 12.1) - Closed: UAT Enhancement: Enable Integration to Workday for SCP Offboarding - IC Delay 12
+- **PR1050558-2472** (Sprint 12.1) - Closed: Clinician Offboarding: Backfill Needed
+- **PR1050558-5373** (Sprint 12.2) - Closed: UAT Bug: C&CUAT430 UAT 1 - Term sheet error
+- **PR1050558-5325** (Sprint 12.2) - Closed: UAT Bug: C&CUAT423 - UAT1 - Mulesoft Integration did not trigger for IC Provider
+- **PR1050558-5318** (Sprint 12.2) - Closed: UAT Bug - C&CUAT416 - UAT1 - Unable to generate term sheet
+- **PR1050558-5080** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT345 Terming provider in salesforce shows a closed case if
+- **PR1050558-4705** (Sprint 12.2) - Closed: UAT Enhancement: Update Integration to Workday for SCP Offboarding - EE add Glob
+- **PR1050558-4640** (Sprint 12.2) - Closed: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-5829** (Sprint 12.3) - On Hold: PROD Enhancement: UPHypercare133 - Add validation on SCP Case field = Offboardin
+- **PR1050558-5580** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5505** (Sprint 12.3) - Closed: PROD Bug: Clinician Offboarding Automation Fix
+- **PR1050558-5183** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5793** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5183** (Sprint 12.4) - Closed: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-4911** (Sprint 12.4) - Closed: UAT Enhancement C&CUAT297 Account Name on Facility Offboarding case is invalid
+- **PR1050558-6314** (Sprint 12.5) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 3
+- **PR1050558-6307** (Sprint 12.5) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 2
+- **PR1050558-5793** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5641** (Sprint 12.5) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 1
+- **PR1050558-5580** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5232** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT402 Validation Rule Needed: Any Parent Case should not be
+- **PR1050558-5231** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT401 Validation Rule Needed: SCP Offboarding Case Should n
+- **PR1050558-5168** (Sprint 12.5) - Closed: UAT Bug: C&CUAT371 CTI has to have an expiration date for the termination to fir
+- **PR1050558-5984** (Sprint 13) - Closed: PROD Enhancement: UPHypercare369 - HPF Termination Date not correct
+- **PR1050558-5863** (Sprint 13) - Closed: PROD Enhancement: Send individual HPF Inactivation Email
+- **PR1050558-5793** (Sprint 13) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5580** (Sprint 13) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-6425** (Sprint 14) - Closed: Bug: Re-contract Email Failure & all data showing in Report email.
+- **PR1050558-6416** (Sprint 14) - Closed: Bug: Inactivation Report Failing to Process 'Provider Next Scheduled Date'
+- **PR1050558-6348** (Sprint 14) - Closed: Observation: Facility offboarding Guided flow is showing  HPF with status = supe
+- **PR1050558-6322** (Sprint 14) - Closed: PROD Bug: TeamRole - Off Boarding Tasks Flow missing Metadata during deployment
+- **PR1050558-6314** (Sprint 14) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 3
+- **PR1050558-6307** (Sprint 14) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 2
+- **PR1050558-5984** (Sprint 14) - Closed: PROD Enhancement: UPHypercare369 - HPF Termination Date not correct
+- **PR1050558-5863** (Sprint 14) - Closed: PROD Enhancement: Send individual HPF Inactivation Email
+- **PR1050558-5793** (Sprint 14) - Closed: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5641** (Sprint 14) - Ready for Test: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 1
+- **PR1050558-5580** (Sprint 14) - Closed: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-2436** (Sprint 7) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2153** (Sprint 7) - Closed: Initiate Clinician Match process flow is not working
+- **PR1050558-1775** (Sprint 7) - Closed: Offboarding Case Record Type Setup
+- **PR1050558-1707** (Sprint 7) - Closed: Clinical Match Approval
+- **PR1050558-1660** (Sprint 7) - Closed: Initiate Clinical Match Process
+- **PR1050558-1580** (Sprint 7) - Closed: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-701** (Sprint 7) - Closed: Clinician Offboarding - Facility Selection
+- **PR1050558-306** (Sprint 7) - Closed: Clinician Offboarding - Termination Details
+- **PR1050558-193** (Sprint 7) - Closed: Clinical Match Group Indicator
+- **PR1050558-2643** (Sprint 8) - Closed: Facility task - Review Contract for Termination should be assigned to HR Queue.
+- **PR1050558-2642** (Sprint 8) - Closed: SCP Offboarding task's are not getting created.
+- **PR1050558-2594** (Sprint 8) - Closed: Division Medical Officer is not able to create Exit Interview Case
+- **PR1050558-2450** (Sprint 8) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2447** (Sprint 8) - Closed: Set up Discovery framework - Configuration
+- **PR1050558-2436** (Sprint 8) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2427** (Sprint 8) - Closed: Help text for Last Day field is not as per AC
+- **PR1050558-2424** (Sprint 8) - Closed: UI Related changes on Termination Details screen
+- **PR1050558-2186** (Sprint 8) - Closed: Clinical Match Case Record Type - Update Sharing Rule
+- **PR1050558-2182** (Sprint 8) - Closed: Enable Integration to Workday for SCP Offboarding - 1 of 2
+- **PR1050558-2021** (Sprint 8) - Closed: Clinician Offboarding: EE Involuntary Termination
+- **PR1050558-2015** (Sprint 8) - Closed: Clinician Offboarding - Termination Details for Locums
+- **PR1050558-1775** (Sprint 8) - Closed: Offboarding Case Record Type Setup
+- **PR1050558-1733** (Sprint 8) - Closed: Offboarding Tasks - SCP
+- **PR1050558-1728** (Sprint 8) - Closed: Offboarding Tasks - Facility Specific
+- **PR1050558-1727** (Sprint 8) - Closed: Offboarding Cases
+- **PR1050558-1580** (Sprint 8) - Closed: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-884** (Sprint 8) - Closed: Exit Interview Feedback Capture
+- **PR1050558-883** (Sprint 8) - Closed: Exit Interview Feedback Security
+- **PR1050558-2998** (Sprint 9) - Closed: Child task are not updating to Cancelled when Offboarding decision = No longer e
+- **PR1050558-2915** (Sprint 9) - Closed: Validation Rule is also throwing error for offboarding case of Type = Facility.
+- **PR1050558-2896** (Sprint 9) - Closed: [Regression Issue ]-Initiate Termination Request - Select at least one HPF valid
+- **PR1050558-2677** (Sprint 9) - Closed: Clinician Offboarding - Termination Details Updates for Partner
+- **PR1050558-2676** (Sprint 9) - Closed: Clinician Offboarding - Termination Details Updates for Locums, Leased, Managed
+- **PR1050558-2473** (Sprint 9) - Closed: Clinician Offboarding: Termination Updates
+- **PR1050558-2471** (Sprint 9) - Closed: Clinician Offboarding - Termination Details Update
+- **PR1050558-2462** (Sprint 9) - Closed: Enable Integration to Workday for SCP Offboarding - 2 of 2
+- **PR1050558-2450** (Sprint 9) - Closed: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2447** (Sprint 9) - Closed: Set up Discovery framework - Configuration
+- **PR1050558-2421** (Sprint 9) - Closed: Automated Case Record Closure: Offboarding
+- **PR1050558-2186** (Sprint 9) - Closed: Clinical Match Case Record Type - Update Sharing Rule
+- **PR1050558-2182** (Sprint 9) - Closed: Enable Integration to Workday for SCP Offboarding - 1 of 2
+- **PR1050558-2021** (Sprint 9) - Closed: Clinician Offboarding: EE Involuntary Termination
+- **PR1050558-2015** (Sprint 9) - Closed: Clinician Offboarding - Termination Details for Locums
+- **PR1050558-1733** (Sprint 9) - Closed: Offboarding Tasks - SCP
+- **PR1050558-1728** (Sprint 9) - Closed: Offboarding Tasks - Facility Specific
+- **PR1050558-1727** (Sprint 9) - Closed: Offboarding Cases
+- **PR1050558-1580** (Sprint 9) - Closed: Enhanced Clinician Inactivation: HPF Status Updates
+
+### Provider Onboarding
+
+**Child Stories**: 152
+
+- **PR1050558-3004** (Sprint 10) - Closed: Unable to update first clinical shift field on HPF as system admin user.
+- **PR1050558-2830** (Sprint 10) - Closed: Integration Platform Event: Re-Trigger Integration
+- **PR1050558-2828** (Sprint 10) - Closed: HPF Updates & Platform Event: Contract becomes Active
+- **PR1050558-2827** (Sprint 10) - Closed: HPF Updates & Platform Event: First Clinical Shift and Active (Integration)
+- **PR1050558-2468** (Sprint 10) - Closed: Collaborative Practice Agreement Review UI: Name Fields
+- **PR1050558-2237** (Sprint 10) - Closed: Clinician Onboarding Case & Task Updates
+- **PR1050558-2114** (Sprint 10) - Closed: Review Credentialling Fields
+- **PR1050558-3800** (Sprint 11) - Closed: Regression bug : Configure rate - PCA records are being created with Type as Fac
+- **PR1050558-3781** (Sprint 11) - Closed: Email is not being triggered to Clinician after contract status changed to Execu
+- **PR1050558-3570** (Sprint 11) - Closed: SIT: C&CSIT05 Post risk review_ Close Out Genda_No Event is being sent from SF H
+- **PR1050558-1723** (Sprint 11) - Closed: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-4135** (Sprint 12) - Closed: UAT Bug: C&CUAT117 -  Case didn't auto close once task was completed
+- **PR1050558-4125** (Sprint 12) - Closed: UAT Enhancement: C&CUAT111 In the info bubble – this was previously known as Fir
+- **PR1050558-4123** (Sprint 12) - Closed: UAT Enhancement: Collaborative Practice Agreement Review UI Update
+- **PR1050558-4120** (Sprint 12) - Closed: UAT Bug: C&CUAT110 Field label was misspelled, please correct
+- **PR1050558-4110** (Sprint 12) - Closed: UAT Bug: C&CUAT108 Collaborative Practice Agreements not created for EE NP with 
+- **PR1050558-4067** (Sprint 12) - Closed: UAT Bug: C&CUAT97 ONB-004 Process Manual onboarding Facility only
+- **PR1050558-1723** (Sprint 12) - Closed: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-5221** (Sprint 12.1) - Closed: UAT Bug: C&CUAT393 Incorrect Effective From Date Populating on Rehire HPF
+- **PR1050558-5199** (Sprint 12.1) - Closed: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5121** (Sprint 12.1) - Closed: UAT Enhancement: Update Clinician Onboarding Task Assignment
+- **PR1050558-5075** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT341 Rate Active Date - Net New Field
+- **PR1050558-5003** (Sprint 12.1) - Closed: E2E Bug: C&CUAT330 Duplicate Positions and Hires
+- **PR1050558-4986** (Sprint 12.1) - Closed: UAT Bug: C&CUAT321 Testing Existing NPPA with Compensation Changes
+- **PR1050558-4983** (Sprint 12.1) - Closed: E2E Bug: C&CUAT318 Hire Date in past
+- **PR1050558-4970** (Sprint 12.1) - Closed: UAT Enhancement: Risk Review - Add visibility to the Assessment on the Risk Revi
+- **PR1050558-4935** (Sprint 12.1) - Closed: Platform Event Update - 'HPFUpdate' - trigger based on Credentialing Status
+- **PR1050558-4922** (Sprint 12.1) - Closed: Update related to PR1050558-4889 Change Locums value to Locum
+- **PR1050558-4838** (Sprint 12.1) - Closed: UAT Enhancement: Send Admin Work Flag via Integration
+- **PR1050558-4634** (Sprint 12.1) - Closed: E2E Bug: C&CUAT234 WorkDay_Part time EE Nurse Practitioners and EE Physician Ass
+- **PR1050558-4613** (Sprint 12.1) - Closed: E2E Bug: C&CUAT222 QGenda_ Hire IC_ Received Contact Phone Number error
+- **PR1050558-4593** (Sprint 12.1) - Closed: NP/PA Onboarding Comments field on HPF
+- **PR1050558-4536** (Sprint 12.1) - Closed: UAT Bug: Update Welcome Clinician Onboarding Email Flow to handle 'Null'
+- **PR1050558-4432** (Sprint 12.1) - Closed: UAT Enhancement: Automated Onboarding Task Record Closure - I9 Update
+- **PR1050558-4123** (Sprint 12.1) - Closed: UAT Enhancement: Collaborative Practice Agreement Review UI Update
+- **PR1050558-1723** (Sprint 12.1) - Closed: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-5199** (Sprint 12.2) - Closed: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5121** (Sprint 12.2) - Closed: UAT Enhancement: Update Clinician Onboarding Task Assignment
+- **PR1050558-4970** (Sprint 12.2) - Closed: UAT Enhancement: Risk Review - Add visibility to the Assessment on the Risk Revi
+- **PR1050558-4838** (Sprint 12.2) - Closed: UAT Enhancement: Send Admin Work Flag via Integration
+- **PR1050558-4593** (Sprint 12.2) - Closed: NP/PA Onboarding Comments field on HPF
+- **PR1050558-5594** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare147 - Risk Review Process not pulling correct HPFs
+- **PR1050558-5588** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare139 - First Clinical Shift integration is encounter
+- **PR1050558-5221** (Sprint 12.3) - Closed: UAT Bug: C&CUAT393 Incorrect Effective From Date Populating on Rehire HPF
+- **PR1050558-5220** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT392 Edits needed to: Review Overlapping HPF effective dat
+- **PR1050558-5199** (Sprint 12.3) - Closed: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5791** (Sprint 12.4) - Closed: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5588** (Sprint 12.4) - Closed: PROD Enhancement: UPHypercare139 - First Clinical Shift integration is encounter
+- **PR1050558-6260** (Sprint 12.5) - Ready for Test: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6237** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5873** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5859** (Sprint 12.5) - Closed: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5848** (Sprint 12.5) - Ready for Demo: PROD Enhancement: UPHypercare295 - Update SCP Onboarding Tasks
+- **PR1050558-5791** (Sprint 12.5) - Closed: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-6142** (Sprint 13) - Closed: Bug: Reset Password issues.
+- **PR1050558-6141** (Sprint 13) - Closed: PROD Enhancement: UPHypercare380 - Clinician Updates to QGenda Credentialing - H
+- **PR1050558-6098** (Sprint 13) - Closed: PROD Enhancement: Clinician Onboarding tasks - Populate 'Name' (WhoID)
+- **PR1050558-6062** (Sprint 13) - Closed: PROD Enhancement: UPHypercare267 - Review CPA Relationship not populating with p
+- **PR1050558-6002** (Sprint 13) - Closed: PROD Enhancement: PERMISSIONS – Assessment Object Visibility for Compliance & Da
+- **PR1050558-6001** (Sprint 13) - Closed: UAT Enhancement: Single Intake Completion (No Repeat Intake on Stage/Opportunity
+- **PR1050558-6000** (Sprint 13) - Closed: PROD Enhancement: Intake Status Auto-Update on Assessment Completion
+- **PR1050558-5999** (Sprint 13) - Closed: PROD Enhancement: Recruiter Self-Service: Password Reset Link / Username Visibil
+- **PR1050558-5998** (Sprint 13) - Closed: UAT Enhancement: Registration URL Exposure (Recruiter Backup Access Path)
+- **PR1050558-5859** (Sprint 13) - Closed: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5791** (Sprint 13) - Closed: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-6260** (Sprint 14) - Ready for Test: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6237** (Sprint 14) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6233** (Sprint 14) - Closed: Clinician Experience Site Login Redirecting to QA
+- **PR1050558-6141** (Sprint 14) - Closed: PROD Enhancement: UPHypercare380 - Clinician Updates to QGenda Credentialing - H
+- **PR1050558-6098** (Sprint 14) - Closed: PROD Enhancement: Clinician Onboarding tasks - Populate 'Name' (WhoID)
+- **PR1050558-6097** (Sprint 14) - Closed: PROD Enhancement: UPHypercare410 - Unable to check the Nocturnist box on HPFs
+- **PR1050558-6082** (Sprint 14) - Closed: PROD Enhancement: UPHypercare403 - Copy CES to on the Welcome to Clinician
+- **PR1050558-6002** (Sprint 14) - Closed: PROD Enhancement: PERMISSIONS – Assessment Object Visibility for Compliance & Da
+- **PR1050558-6001** (Sprint 14) - Closed: UAT Enhancement: Single Intake Completion (No Repeat Intake on Stage/Opportunity
+- **PR1050558-6000** (Sprint 14) - Closed: PROD Enhancement: Intake Status Auto-Update on Assessment Completion
+- **PR1050558-5999** (Sprint 14) - Closed: PROD Enhancement: Recruiter Self-Service: Password Reset Link / Username Visibil
+- **PR1050558-5998** (Sprint 14) - Closed: UAT Enhancement: Registration URL Exposure (Recruiter Backup Access Path)
+- **PR1050558-5873** (Sprint 14) - Closed: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5859** (Sprint 14) - Closed: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-421** (Sprint 3) - Closed: Clinician Risk Review - Record Type & Layout
+- **PR1050558-358** (Sprint 3) - Closed: Assessment & Assessment Question Response Object
+- **PR1050558-219** (Sprint 3) - Closed: Clinician Risk Review
+- **PR1050558-866** (Sprint 4) - Closed: Child cases are created with Priority = medium even specifying on onboarding flo
+- **PR1050558-865** (Sprint 4) - Closed: Facility Onboarding Child cases are creating for HPF Credential status = Active,
+- **PR1050558-622** (Sprint 4) - Closed: Clinician Onboarding Record Automation - SCP Onboarding - Child Cases (Manually 
+- **PR1050558-621** (Sprint 4) - Closed: Clinician Onboarding Record Automation - Facility Onboarding - Child Cases (Manu
+- **PR1050558-610** (Sprint 4) - Closed: Clinician Onboarding Record Automation - Facility Onboarding - Parent (Manually 
+- **PR1050558-566** (Sprint 4) - Closed: MSL-CC Queue
+- **PR1050558-563** (Sprint 4) - Closed: Enrollment Specialist Queue
+- **PR1050558-562** (Sprint 4) - Closed: Clinician Onboarding Record Automation - SCP Onboarding - Parent (Manually Trigg
+- **PR1050558-561** (Sprint 4) - Closed: Clinician Onboarding Case & Task Templates
+- **PR1050558-430** (Sprint 4) - Closed: Clinician Attributes in Salesforce to Send to Workday
+- **PR1050558-429** (Sprint 4) - Closed: Credentialing & Scheduling Attributes from QGenda
+- **PR1050558-145** (Sprint 4) - Closed: Manual Onboarding Case Creation
+- **PR1050558-1237** (Sprint 5) - Closed: Regression Bug:The Account field is missing on the Parent Case of Record Type - 
+- **PR1050558-1102** (Sprint 5) - Closed: Risk Review Approvals - Update Case Account field
+- **PR1050558-908** (Sprint 5) - Closed: Attach/Upload file option is visible when user select No on risk review confirma
+- **PR1050558-903** (Sprint 5) - Closed: Risk Review Approvals - Decision & Views
+- **PR1050558-857** (Sprint 5) - Closed: Enrollment Specialist Queue - Support Cases
+- **PR1050558-840** (Sprint 5) - Closed: Clinician Experience Specialist Test User
+- **PR1050558-835** (Sprint 5) - Closed: Update Initiate Early Onboarding - SCP Error Message
+- **PR1050558-822** (Sprint 5) - Closed: Enforce Contract to Manually Initiate Onboarding
+- **PR1050558-707** (Sprint 5) - Closed: Attach Files During Risk Review
+- **PR1050558-246** (Sprint 5) - Closed: Risk Review Approvals - Submit
+- **PR1050558-1617** (Sprint 6) - Closed: Regression Bug: Risk review cases are not getting closed post approval.
+- **PR1050558-1589** (Sprint 6) - Closed: Platform Event - First Scheduled Date
+- **PR1050558-1435** (Sprint 6) - Closed: Auto Create Relationship Records for CPA - CPA Review Object
+- **PR1050558-1364** (Sprint 6) - Closed: Clinician Onboarding Record Automation - SCP Onboarding - Update Case Owner for 
+- **PR1050558-1257** (Sprint 6) - Closed: Update Test Users - Add Public Groups
+- **PR1050558-1256** (Sprint 6) - Closed: Contract Selection During Manually Initiated Onboarding
+- **PR1050558-1172** (Sprint 6) - Closed: Enrollment Specialist - Update Test User
+- **PR1050558-1113** (Sprint 6) - Closed: Risk Review - Populate AccountId with Service Account
+- **PR1050558-1072** (Sprint 6) - Closed: Collaborative Practice Agreement Legal Requirements - Load Data
+- **PR1050558-822** (Sprint 6) - Closed: Enforce Contract to Manually Initiate Onboarding
+- **PR1050558-821** (Sprint 6) - Closed: Risk Review Approvals - Notification to Payroll
+- **PR1050558-302** (Sprint 6) - Closed: Collaborative Practice Agreement Review UI
+- **PR1050558-167** (Sprint 6) - Closed: Collaborative Practice Agreement Legal Requirements
+- **PR1050558-2213** (Sprint 7) - Closed: Observation Bug: CPA not created for one of the scenario
+- **PR1050558-2175** (Sprint 7) - Closed: The MSL persona cannot view the Payer Enrollment child case of Parent Facility O
+- **PR1050558-2011** (Sprint 7) - Closed: Automated Onboarding Task Record Closure: Facility Onboarding
+- **PR1050558-1716** (Sprint 7) - Closed: HPF Updates & Platform Event: First Clinical Shift and Active
+- **PR1050558-1655** (Sprint 7) - Closed: Auto Create Relationship Records for CPA - Physician
+- **PR1050558-1589** (Sprint 7) - Closed: Platform Event - First Scheduled Date
+- **PR1050558-1257** (Sprint 7) - Closed: Update Test Users - Add Public Groups
+- **PR1050558-1256** (Sprint 7) - Closed: Contract Selection During Manually Initiated Onboarding
+- **PR1050558-1172** (Sprint 7) - Closed: Enrollment Specialist - Update Test User
+- **PR1050558-620** (Sprint 7) - Closed: Automated Onboarding Case Record Closure
+- **PR1050558-619** (Sprint 7) - Closed: Automated Onboarding Record Creation (When Contract is Executed)
+- **PR1050558-559** (Sprint 7) - Closed: Automated Onboarding Task Creation - SCP Onboarding
+- **PR1050558-302** (Sprint 7) - Closed: Collaborative Practice Agreement Review UI
+- **PR1050558-247** (Sprint 7) - Closed: Automated Onboarding Task Creation - Facility Onboarding
+- **PR1050558-146** (Sprint 7) - Closed: Auto Create Relationship Records for CPA - Nurse Practitioner or Physician Assis
+- **PR1050558-2611** (Sprint 8) - Closed: Additional Related tab present on Trainings Related list.
+- **PR1050558-2113** (Sprint 8) - Closed: Review Bootcamp and Proctor Fields
+- **PR1050558-1722** (Sprint 8) - Closed: Executed Contract: Automate Task Creation for Locums
+- **PR1050558-1721** (Sprint 8) - Closed: Clinician Contract Request: Start Admin Work Ahead of Clinical
+- **PR1050558-1716** (Sprint 8) - Closed: HPF Updates & Platform Event: First Clinical Shift and Active
+- **PR1050558-1589** (Sprint 8) - Closed: Platform Event - First Scheduled Date
+- **PR1050558-775** (Sprint 8) - Closed: Corporate Compliance Status
+- **PR1050558-3004** (Sprint 9) - Closed: Unable to update first clinical shift field on HPF as system admin user.
+- **PR1050558-3001** (Sprint 9) - Closed: Name field is not added in Platform event & Permissions are missing for platform
+- **PR1050558-2983** (Sprint 9) - Closed: Integration log object status picklist value not updated.
+- **PR1050558-2921** (Sprint 9) - Closed: The Filter is not present on Facility and alongwith it when doing the mass updat
+- **PR1050558-2830** (Sprint 9) - Closed: Integration Platform Event: Re-Trigger Integration
+- **PR1050558-2623** (Sprint 9) - Closed: Notification to Workday for First Clinical Shift Change
+- **PR1050558-2468** (Sprint 9) - Closed: Collaborative Practice Agreement Review UI: Name Fields
+- **PR1050558-2237** (Sprint 9) - Closed: Clinician Onboarding Case & Task Updates
+- **PR1050558-2114** (Sprint 9) - Closed: Review Credentialling Fields
+- **PR1050558-2113** (Sprint 9) - Closed: Review Bootcamp and Proctor Fields
+- **PR1050558-1722** (Sprint 9) - Closed: Executed Contract: Automate Task Creation for Locums
+- **PR1050558-1721** (Sprint 9) - Closed: Clinician Contract Request: Start Admin Work Ahead of Clinical
+- **PR1050558-775** (Sprint 9) - Closed: Corporate Compliance Status
+
+### Provider Portal
+
+**Child Stories**: 57
+
+- **PR1050558-3374** (Sprint 10) - Closed: Clinician Portal User License
+- **PR1050558-2679** (Sprint 10) - Closed: Intake Form Case - Set required fields within assessments
+- **PR1050558-319** (Sprint 10) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-3522** (Sprint 11) - Closed: Experience Cloud related task/work
+- **PR1050558-3374** (Sprint 11) - Closed: Clinician Portal User License
+- **PR1050558-319** (Sprint 11) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-3939** (Sprint 12) - Closed: UI Enhancement: HC Clinician Portal UI Enhancements
+- **PR1050558-3375** (Sprint 12) - Closed: Tech - HC Portal Configuration - Update Sender and Portal Admin
+- **PR1050558-319** (Sprint 12) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-5118** (Sprint 12.1) - Closed: UAT Bug: C&CUAT364 Warning Message in Error - Experience Cloud
+- **PR1050558-5001** (Sprint 12.1) - On Hold: UAT Enhancement: C&CUAT328 Experience Cloud - Change Your Password
+- **PR1050558-4958** (Sprint 12.1) - Closed: UAT Enhancement: User unable to complete the assessment in HC Portal
+- **PR1050558-4940** (Sprint 12.1) - Closed: UAT Bug: C&CUAT307 Global Provider ID not visible for Recruiter Persona
+- **PR1050558-4933** (Sprint 12.1) - Closed: UAT Bug: C&CUAT305 Missing UI elements on Experience Cloud
+- **PR1050558-4926** (Sprint 12.1) - Closed: UAT Bug: C&CUAT304 Applicant/Prospect User License/Profile Setup Incorrect
+- **PR1050558-4907** (Sprint 12.1) - Closed: UAT Enhancement: Prevent Duplicate Email addresses for Active Clinician Portal U
+- **PR1050558-4895** (Sprint 12.1) - Closed: UAT Bug: C&CUAT292 Permission set missing on  auto creation of user
+- **PR1050558-4894** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT291 Experience Cloud log in requesting username in error
+- **PR1050558-4200** (Sprint 12.1) - Closed: Customer Community License Updates
+- **PR1050558-3939** (Sprint 12.1) - Closed: UI Enhancement: HC Clinician Portal UI Enhancements
+- **PR1050558-3375** (Sprint 12.1) - Closed: Tech - HC Portal Configuration - Update Sender and Portal Admin
+- **PR1050558-5385** (Sprint 12.2) - Closed: UAT Bug: C&CUAT439 - UAT1 - Experience Cloud Tracker Statuses not updating prope
+- **PR1050558-5367** (Sprint 12.2) - Closed: UAT Bug: C&CUAT426 - UAT1 - Experience Cloud Tracker is invalid
+- **PR1050558-5312** (Sprint 12.2) - Closed: UAT Bug: C&CUAT412 UAT1 - Experience Cloud - Intake Form not present
+- **PR1050558-5311** (Sprint 12.2) - Closed: UAT Bug: C&CUAT411 UAT1 - Experience Cloud Candidate Tracker missing
+- **PR1050558-5118** (Sprint 12.2) - Closed: UAT Bug: C&CUAT364 Warning Message in Error - Experience Cloud
+- **PR1050558-4907** (Sprint 12.2) - Closed: UAT Enhancement: Prevent Duplicate Email addresses for Active Clinician Portal U
+- **PR1050558-4200** (Sprint 12.2) - Closed: Customer Community License Updates
+- **PR1050558-5449** (Sprint 12.3) - Closed: PROD Bug: UPHypercare21 - Portal User not Created (PROD)
+- **PR1050558-5385** (Sprint 12.3) - Closed: UAT Bug: C&CUAT439 - UAT1 - Experience Cloud Tracker Statuses not updating prope
+- **PR1050558-144** (Sprint 2) - Closed: Prospect Portal Login & Home
+- **PR1050558-332** (Sprint 3) - Closed: Automatically Assign the "Portal User" Permission Set
+- **PR1050558-878** (Sprint 4) - Closed: On Task record page header line and buttons are not visible.
+- **PR1050558-592** (Sprint 4) - Closed: Create Default Task Record Type and Page Layout - Portal
+- **PR1050558-236** (Sprint 4) - Closed: Portal Login
+- **PR1050558-204** (Sprint 4) - Closed: Prospect Portal Home Page & Record Detail
+- **PR1050558-811** (Sprint 5) - Closed: Automatically Provision HC Portal Access
+- **PR1050558-755** (Sprint 5) - Closed: Updating Portal Links
+- **PR1050558-1635** (Sprint 6) - Closed: Clinician Application Visibility - Update Permissions
+- **PR1050558-1368** (Sprint 6) - Closed: Add Banner to HC Portal
+- **PR1050558-891** (Sprint 6) - Closed: Clinician Application Withdrawal - HC Portal
+- **PR1050558-890** (Sprint 6) - Closed: Clinician Application Visibility - HC Portal
+- **PR1050558-1789** (Sprint 7) - Closed: Automatically Provision HC Portal Access: Update ATS Stage
+- **PR1050558-1583** (Sprint 7) - Closed: Add SCP Logo to Prospect Portal
+- **PR1050558-1368** (Sprint 7) - Closed: Add Banner to HC Portal
+- **PR1050558-891** (Sprint 7) - Closed: Clinician Application Withdrawal - HC Portal
+- **PR1050558-2443** (Sprint 8) - Closed: The Links should be visible on basis of Visibility Condition
+- **PR1050558-1583** (Sprint 8) - Closed: Add SCP Logo to Prospect Portal
+- **PR1050558-1097** (Sprint 8) - Closed: Intake Form Case - Load Assessment Questions & Capture Question Responses
+- **PR1050558-1095** (Sprint 8) - Closed: Intake Form Case - Conflict of Interest Form
+- **PR1050558-1094** (Sprint 8) - Closed: Intake Form Case - Certification of Competency Questions
+- **PR1050558-384** (Sprint 8) - Closed: HC Portal Helpful Links Visibility
+- **PR1050558-319** (Sprint 8) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-231** (Sprint 8) - Closed: Intake Form - Clinician Profile Updates
+- **PR1050558-2126** (Sprint 9) - Closed: HC Portal Flip from Login to SSO
+- **PR1050558-1096** (Sprint 9) - Closed: Intake Form Case - CCPA Notice
+- **PR1050558-319** (Sprint 9) - Closed: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+
+### Provider Recruiting
+
+**Child Stories**: 98
+
+- **PR1050558-1028** (Sprint 10) - Closed: Intake Form Automation - Send Reminder after 3 days
+- **PR1050558-199** (Sprint 10) - Closed: Guided Screening Call Field Updates
+- **PR1050558-3770** (Sprint 11) - Closed: UAT Bug: C&CUAT33  Applying as clinician to job on external job board - not seei
+- **PR1050558-3703** (Sprint 11) - Closed: UAT Bug: C&CUAT28 HPF created when Candidate was moved from Interview to Offer i
+- **PR1050558-3672** (Sprint 11) - Closed: UAT Bug: C&CUAT25 Component Error when Scheduling Interview
+- **PR1050558-3615** (Sprint 11) - Closed: UAT Enhancement: C&CUAT Error Handling
+- **PR1050558-3609** (Sprint 11) - Closed: UAT Bug: C&CUAT10.2 Unable to view Corporate Support app
+- **PR1050558-3600** (Sprint 11) - Closed: UAT Bug: C&CUAT01 Lacie Massingill getting error in UAT2 when trying to create c
+- **PR1050558-4187** (Sprint 12) - Closed: UAT Bug: C&CUAT136 Type of Rates mislabeled in Summary tab of Contract Record
+- **PR1050558-4186** (Sprint 12) - Closed: UAT Bug: C&CUAT135 Recruiters unable to see tasks details on tasks not assigned 
+- **PR1050558-4126** (Sprint 12) - Closed: UAT Bug: C&CUAT112 Delayed Email Receipt
+- **PR1050558-3992** (Sprint 12) - Closed: UAT Bug: C&CUAT80 Applicant moved through Kanban to offer - HPF created in Inact
+- **PR1050558-5116** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT363 Add Facility Global ID to Facility page
+- **PR1050558-5107** (Sprint 12.1) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5098** (Sprint 12.1) - Closed: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095** (Sprint 12.1) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5092** (Sprint 12.1) - Closed: UAT Bug: C&CUAT350 Job Record for IC PRN NPPA and IC PRN Physician requiring use
+- **PR1050558-5083** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-5070** (Sprint 12.1) - Closed: UAT Bug: C&CUAT338 Misspelled word in picklist on Interview Feedback form
+- **PR1050558-5064** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT335 Populate Intake Form Answers to Clinician Person Acco
+- **PR1050558-5051** (Sprint 12.1) - Closed: UAT Enhancement: Require Recruiters to Populate 'Requested Start Date' on ATS Ap
+- **PR1050558-5000** (Sprint 12.1) - Closed: UAT Bug: C&CUAT327 Submitted Applicant Name Changed on Applicant Card
+- **PR1050558-4979** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT315 Suffix should not be required on Intake Form
+- **PR1050558-4977** (Sprint 12.1) - Closed: Observed Bug: Contact Email Validation for Intake Form
+- **PR1050558-4925** (Sprint 12.1) - Closed: UAT Bug: C&CUAT303 Intake form not present
+- **PR1050558-4897** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT294 Data Quality, MSL, and PE Team Personas need to be ab
+- **PR1050558-4864** (Sprint 12.1) - Closed: UAT Bug: C&CUAT286 Intake Form Email not sent
+- **PR1050558-4854** (Sprint 12.1) - Closed: UAT Bug: C&CUAT282 Blue screen when creating a contract
+- **PR1050558-4853** (Sprint 12.1) - Closed: UAT Bug: C&CUAT281 When there is a mismatch NPPA it needs to be routed to the mi
+- **PR1050558-4767** (Sprint 12.1) - Closed: UAT Bug: C&CUAT265 Emails not sending
+- **PR1050558-4728** (Sprint 12.1) - Closed: UAT Bug: C&CUAT256 Candidate tied to job passed Recruiter Screen and put in Awai
+- **PR1050558-4612** (Sprint 12.1) - Closed: E2E Bug: C&CUAT221 Invalid Compensation_Plan_ID value ('') sent from Salesforce 
+- **PR1050558-4531** (Sprint 12.1) - Closed: UAT Bug: C&CUAT185 Workday Integration Logs not Generated
+- **PR1050558-4476** (Sprint 12.1) - Closed: UAT Bug: C&CUAT176 Can't select "Send Term Sheet for Signatures"
+- **PR1050558-4390** (Sprint 12.1) - Closed: UAT Bug: C&CUAT156 Can't Add Candidate to Job
+- **PR1050558-4126** (Sprint 12.1) - Closed: UAT Bug: C&CUAT112 Delayed Email Receipt
+- **PR1050558-4014** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT88 Recruiters need the ability to withdraw a Contract req
+- **PR1050558-3616** (Sprint 12.1) - Closed: UAT Enhancement: Corporation and Tax Information Updates
+- **PR1050558-5414** (Sprint 12.2) - Closed: PROD Bug: C&CUAT455 - PROD - no global ID
+- **PR1050558-5383** (Sprint 12.2) - Closed: UAT Bug: C&C437 - UAT1 - Start from Previous Active on Clinician Contract - New 
+- **PR1050558-5374** (Sprint 12.2) - Closed: UAT Bug: C&CUAT431 JobPosting_UAT 1_Unable to post jobs to job boards_There is i
+- **PR1050558-5369** (Sprint 12.2) - Closed: UAT Bug: C&CUAT428 - UAT1 - IC to EE Contract Error
+- **PR1050558-5320** (Sprint 12.2) - Closed: UAT Bug: C&CUAT418 - UAT1 - Incorrect layout
+- **PR1050558-5317** (Sprint 12.2) - Closed: UAT Bug: C&CUAT415 - UAT1 - Interview request page layout error
+- **PR1050558-5316** (Sprint 12.2) - Closed: UAT Bug - C&CUAT414 - UAT1 - Scheduling an interview error
+- **PR1050558-5315** (Sprint 12.2) - Closed: UAT Bug - C&CUAT413 - UAT1 - Add HPF
+- **PR1050558-5292** (Sprint 12.2) - Closed: UAT Bug: C&CUAT409 Kanban fields displayed are incorrect
+- **PR1050558-5107** (Sprint 12.2) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5098** (Sprint 12.2) - Closed: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095** (Sprint 12.2) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5083** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-4977** (Sprint 12.2) - Closed: Observed Bug: Contact Email Validation for Intake Form
+- **PR1050558-4897** (Sprint 12.2) - Closed: UAT Enhancement: C&CUAT294 Data Quality, MSL, and PE Team Personas need to be ab
+- **PR1050558-5721** (Sprint 12.3) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5617** (Sprint 12.3) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records
+- **PR1050558-5509** (Sprint 12.3) - Closed: PROD Enhancement: UPHypercare45 - Recruiters should not be able to create Conga 
+- **PR1050558-5451** (Sprint 12.3) - Closed: PROD Bug: UPHypercare23 - Anticipated Clinical Hours not Populating on Contract 
+- **PR1050558-5450** (Sprint 12.3) - Closed: PROD Bug: UPHypercare22 - Contract Compensation Calculation Error - Clinician/NP
+- **PR1050558-5448** (Sprint 12.3) - Closed: PROD Bug: UPHypercare20 - Effective date not populating on HPF
+- **PR1050558-5227** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT398 Contract Request - Time Type Visibility on Rate Confi
+- **PR1050558-5206** (Sprint 12.3) - Closed: UAT Enhancement: Update Intake Form State Input
+- **PR1050558-5107** (Sprint 12.3) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5098** (Sprint 12.3) - Closed: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095** (Sprint 12.3) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5721** (Sprint 12.4) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5617** (Sprint 12.4) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records
+- **PR1050558-5206** (Sprint 12.4) - Closed: UAT Enhancement: Update Intake Form State Input
+- **PR1050558-5107** (Sprint 12.4) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5095** (Sprint 12.4) - Closed: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5083** (Sprint 12.4) - Closed: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-5721** (Sprint 12.5) - Closed: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5457** (Sprint 12.5) - Closed: UAT Enhancement: Intake Form: Clinician Profile Assessment CTI section missing f
+- **PR1050558-5319** (Sprint 12.5) - Closed: UAT Enhancement: C&CUAT417 - UAT1 - Unable to populate Hour Commitment on Agreem
+- **PR1050558-5222** (Sprint 12.5) - On Hold: UAT Enhancement: C&CUAT394 GAP Scenario
+- **PR1050558-5107** (Sprint 12.5) - Closed: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5709** (Sprint 13) - Closed: PROD Enhancement: UPHypercare234 - Need the system to check if candidate has an 
+- **PR1050558-5709** (Sprint 14) - Closed: PROD Enhancement: UPHypercare234 - Need the system to check if candidate has an 
+- **PR1050558-827** (Sprint 4) - Closed: Configure Case Page - Intake Form
+- **PR1050558-467** (Sprint 4) - Closed: Intake Form Case
+- **PR1050558-852** (Sprint 5) - Closed: Intake Form Automation - Closed
+- **PR1050558-809** (Sprint 5) - Closed: Configure Case Page - Onboarding
+- **PR1050558-617** (Sprint 5) - Closed: Standardize Care Taxonomy Records
+- **PR1050558-616** (Sprint 5) - Closed: Standardize Care Specialty Records
+- **PR1050558-615** (Sprint 5) - Closed: Intake Form Automation - Send
+- **PR1050558-326** (Sprint 5) - Closed: Manage Primary Taxonomy and Specialty
+- **PR1050558-291** (Sprint 5) - Closed: Create HPF: Facility Selection & Specify Facility Title
+- **PR1050558-1112** (Sprint 6) - Closed: Update Case layout - Clinician Intake Form & Risk Review
+- **PR1050558-823** (Sprint 6) - Closed: Create HPF from Job
+- **PR1050558-326** (Sprint 6) - Closed: Manage Primary Taxonomy and Specialty
+- **PR1050558-2164** (Sprint 7) - Closed: Regression Bug - Unable to configure rate on clinician record even though CPA Cl
+- **PR1050558-2149** (Sprint 7) - Closed: Regression bug - Issues on 'Summary' tab of client contract
+- **PR1050558-1112** (Sprint 7) - Closed: Update Case layout - Clinician Intake Form & Risk Review
+- **PR1050558-823** (Sprint 7) - Closed: Create HPF from Job
+- **PR1050558-326** (Sprint 7) - Closed: Manage Primary Taxonomy and Specialty
+- **PR1050558-2658** (Sprint 8) - Closed: Regression_Bug - End Date of Executed contract updated when a new Draft contract
+- **PR1050558-2641** (Sprint 8) - Closed: Regression_Bug: User unable to view 'Preventive Care Agreement' related list on 
+- **PR1050558-2164** (Sprint 8) - Closed: Regression Bug - Unable to configure rate on clinician record even though CPA Cl
+- **PR1050558-199** (Sprint 9) - Closed: Guided Screening Call Field Updates
+
+### SCP Health Unified Platform - E2E Testing Epic
+
+**Child Stories**: 2
+
+- **PR1050558-4948** (Sprint 12.1) - Closed: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+- **PR1050558-4948** (Sprint 12.2) - Closed: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+
+### Scheduling and Pay
+
+**Child Stories**: 53
+
+- **PR1050558-2951** (Sprint 10) - Open: [Observation Bug]:  Open Shift Apay request Form.
+- **PR1050558-2947** (Sprint 10) - Closed: Clinician Contract Request: Contract Roll up of "Anticipated Clinical Hours"
+- **PR1050558-2826** (Sprint 10) - Closed: Update Rates in Qgenda
+- **PR1050558-2554** (Sprint 10) - Closed: Locums Rate Management
+- **PR1050558-2469** (Sprint 10) - Closed: Open Shift APAY Request: Approval
+- **PR1050558-2227** (Sprint 10) - Closed: Client Rate Configuration - Cloning and Editing - "Re-Add"
+- **PR1050558-2224** (Sprint 10) - Closed: Open Shift APAY Request - Security Matrix updates
+- **PR1050558-4088** (Sprint 12) - Closed: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-3779** (Sprint 12) - Closed: UAT Enhancement: EE NPPA Salary Calculation Update
+- **PR1050558-5104** (Sprint 12.1) - Closed: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5093** (Sprint 12.1) - Closed: UAT Enhancement: Add Time Type to Pay Codes Layout
+- **PR1050558-4998** (Sprint 12.1) - Closed: UAT Enhancement: Add Blended Rates ("EE NP/PA Hourly Blended") to Preventive Car
+- **PR1050558-4840** (Sprint 12.1) - Closed: UAT Enhancement: HPF Inactive Date Trigger to Qgenda - Update when each HPF is i
+- **PR1050558-4667** (Sprint 12.1) - Closed: UAT Enhancement: EE NPPA Salary Calculation Update part 2
+- **PR1050558-4088** (Sprint 12.1) - Closed: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-3779** (Sprint 12.1) - Closed: UAT Enhancement: EE NPPA Salary Calculation Update
+- **PR1050558-5424** (Sprint 12.2) - Closed: PROD Bug: C&CUAT464 - PROD - Should not be able to edit the Provider Contract
+- **PR1050558-5423** (Sprint 12.2) - Closed: PROD Bug: C&CUAT463 - PROD - Able to edit and save changes to fields on HPF
+- **PR1050558-5421** (Sprint 12.2) - Closed: PROD Bug: C&CUAT461 - PROD - Not able to edit Clinician Payroll fields on Servic
+- **PR1050558-5419** (Sprint 12.2) - Closed: PROD Bug: C&CUAT460 - PROD - Missing variable attributes on PCA
+- **PR1050558-5417** (Sprint 12.2) - Closed: PROD Bug: C&CUAT458 - PROD - Should not be able edit the Corporate Entity Accoun
+- **PR1050558-5412** (Sprint 12.2) - Closed: PROD Bug: C&CUAT454 PROD - Facility Global ID Missing under System Information
+- **PR1050558-5366** (Sprint 12.2) - Closed: UAT Bug: C&CUAT425 - UAT1 - Data Migration - CTI Expiration Date
+- **PR1050558-5093** (Sprint 12.2) - Closed: UAT Enhancement: Add Time Type to Pay Codes Layout
+- **PR1050558-4840** (Sprint 12.2) - Closed: UAT Enhancement: HPF Inactive Date Trigger to Qgenda - Update when each HPF is i
+- **PR1050558-4088** (Sprint 12.2) - Closed: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-5441** (Sprint 12.3) - Closed: PROD Enhancement: C&CUAT466 Payroll Report Building Access
+- **PR1050558-5424** (Sprint 12.3) - Closed: PROD Bug: C&CUAT464 - PROD - Should not be able to edit the Provider Contract
+- **PR1050558-5423** (Sprint 12.3) - Closed: PROD Bug: C&CUAT463 - PROD - Able to edit and save changes to fields on HPF
+- **PR1050558-5417** (Sprint 12.3) - Closed: PROD Bug: C&CUAT458 - PROD - Should not be able edit the Corporate Entity Accoun
+- **PR1050558-5104** (Sprint 12.3) - Closed: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5104** (Sprint 12.4) - Closed: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5966** (Sprint 13) - Closed: PROD Enhancement: UPHypercare360 - VPO not being notified of APay requests
+- **PR1050558-1367** (Sprint 6) - Closed: Pay Code Data Load
+- **PR1050558-1243** (Sprint 6) - Closed: Client Contract Update - Pay Code Association
+- **PR1050558-1173** (Sprint 6) - Closed: Pay Code Association to Client/Clinician
+- **PR1050558-249** (Sprint 6) - Closed: Pay Code Management
+- **PR1050558-2212** (Sprint 7) - Closed: Observation Bug:While creating a Shift record as an SFO, getting insufficient ac
+- **PR1050558-2206** (Sprint 7) - Closed: When clicked on Open Shift APAY button from Clinician Experience Specialist or S
+- **PR1050558-1419** (Sprint 7) - Closed: Client Rate Configuration - Cloning and Editing
+- **PR1050558-1415** (Sprint 7) - Closed: Creating Shifts - Physician or NP/PA
+- **PR1050558-309** (Sprint 7) - Closed: Open Shift APAY Request
+- **PR1050558-2208** (Sprint 8) - Closed: HPF Inactive Date Trigger to Qgenda
+- **PR1050558-2123** (Sprint 8) - Closed: Clinician Contract Request: Bonus Details
+- **PR1050558-2108** (Sprint 8) - Closed: Error Log: Workday Duplicate Tax ID
+- **PR1050558-309** (Sprint 8) - Closed: Open Shift APAY Request
+- **PR1050558-2951** (Sprint 9) - Open: [Observation Bug]:  Open Shift Apay request Form.
+- **PR1050558-2791** (Sprint 9) - Closed: Clinician Contract Request: Capture "Anticipated Clinical Hours"
+- **PR1050558-2592** (Sprint 9) - Closed: Clinician Contract Request: Bonus Details - Update Payments
+- **PR1050558-2554** (Sprint 9) - Closed: Locums Rate Management
+- **PR1050558-2469** (Sprint 9) - Closed: Open Shift APAY Request: Approval
+- **PR1050558-2224** (Sprint 9) - Closed: Open Shift APAY Request - Security Matrix updates
+- **PR1050558-2111** (Sprint 9) - Closed: Review Pay Plan Fields
+
+### Tech Debt
+
+**Child Stories**: 2
+
+- **PR1050558-5974** (Sprint 13) - Closed: PROD Enhancement: UPHypercare364 - Add 3 fields to Integration_Log__c object in 
+- **PR1050558-6264** (Sprint 14) - Closed: Create two fields on Integration_Log__c - Error_Code__c and Retry_Count__c
+
+### VBC Physician Management - Physician Tracking
+
+**Child Stories**: 2
+
+- **PR1050558-1165** (Sprint 5) - Closed: Access Issue - Fields are not visible to Clinician Contracting Specialist person
+- **PR1050558-1164** (Sprint 5) - Closed: Access Issue - Fields are not visible to Clinician Contracting Specialist person
+
+
+---
+
+## Usage Notes
+
+- Use this map for feature-level planning and tracking
+- Epics help group related stories for impact analysis
+- Parent-child relationships show story dependencies
+- For story details, see `MASTER-STORY-INDEX.md`

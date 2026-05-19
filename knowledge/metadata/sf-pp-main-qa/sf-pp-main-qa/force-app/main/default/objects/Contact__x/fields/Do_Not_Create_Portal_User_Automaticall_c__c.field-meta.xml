@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Create_Portal_User_Automaticall_c__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalDeveloperName>Do_Not_Create_Portal_User_Automaticall__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Do Not Create Portal User Automaticall</label>
+    <type>Checkbox</type>
+</CustomField>

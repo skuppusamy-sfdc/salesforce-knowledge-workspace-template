@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_reflected_in_the_Proforma__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>If Volume Protector is checked, are terms reflected in the Proforma?</inlineHelpText>
+    <label>Terms reflected in the Profoma</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

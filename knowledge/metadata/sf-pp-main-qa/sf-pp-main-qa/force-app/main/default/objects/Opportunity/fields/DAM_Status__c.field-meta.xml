@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DAM_Status__c</fullName>
+    <label>DAM Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Model Confirmed</fullName>
+                <default>false</default>
+                <label>Model Confirmed (Provisional)</label>
+            </value>
+            <value>
+                <fullName>Model Approved (for contracting)</fullName>
+                <default>false</default>
+                <label>Model Approved (for contracting)</label>
+            </value>
+            <value>
+                <fullName>Additional Follow-up Needed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Additional Follow-up Needed</label>
+            </value>
+            <value>
+                <fullName>Deal Declined</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deal Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

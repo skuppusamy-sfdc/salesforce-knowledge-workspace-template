@@ -1,0 +1,16 @@
+{
+    "ClinicianContactId": "0037x000012S0m0AAC",
+    "PrimaryClinicianSpecialty": [
+        {
+            "PrimarySpecId": null,
+            "RecordId": "0bc7x0000000EcTAAU",
+            "TA_PrimarySpecialty": "Cardiology",
+            "isPrimaryOrSub": "true"
+        },
+        {
+            "Name": "Radiology",
+            "PrimarySpecId": "0bO7x0000000Y05EAE",
+            "TA_PrimarySpecialty": "Radiology"
+        }
+    ]
+}

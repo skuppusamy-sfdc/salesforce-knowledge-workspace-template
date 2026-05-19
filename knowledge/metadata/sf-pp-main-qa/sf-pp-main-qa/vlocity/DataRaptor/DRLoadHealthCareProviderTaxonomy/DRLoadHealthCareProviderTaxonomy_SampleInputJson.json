@@ -1,0 +1,13 @@
+[
+    {
+        "HCPTaxonomyId": "",
+        "PractitionerId": "0037x000012S0m0AAC",
+        "primaryTaxonomy": true
+    },
+    {
+        "HCPTaxonomyId": "0bP7x0000000LNpEAM",
+        "PractitionerId": "0037x000012S0m0AAC",
+        "TaxonomyId": "",
+        "primaryTaxonomy": false
+    }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statistical_Area_Status__c</fullName>
+    <label>Statistical Area Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Metropolitan</fullName>
+                <default>false</default>
+                <label>Metropolitan</label>
+            </value>
+            <value>
+                <fullName>Micropolitan</fullName>
+                <default>false</default>
+                <label>Micropolitan</label>
+            </value>
+            <value>
+                <fullName>Combined Statistical Area</fullName>
+                <default>false</default>
+                <label>Combined Statistical Area</label>
+            </value>
+            <value>
+                <fullName>Core Based</fullName>
+                <default>false</default>
+                <label>Core Based</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

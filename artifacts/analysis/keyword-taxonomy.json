@@ -1,0 +1,3947 @@
+{
+  "generated": "2026-05-12T09:12:41.143381",
+  "project": "SCP Health CnC",
+  "stats": {
+    "total_objects": 706,
+    "referenced_objects": 133,
+    "unreferenced_objects": 573,
+    "total_acronyms": 162,
+    "total_personas": 45,
+    "total_processes": 92,
+    "total_integrations": 6,
+    "total_bigrams": 100
+  },
+  "objects": {
+    "Contract": {
+      "label": "Contract",
+      "category": "standard_object",
+      "story_count": 711,
+      "field_count": 365
+    },
+    "pqcrush__pq_Support__c": {
+      "label": "Support",
+      "category": "managed_package",
+      "story_count": 613,
+      "field_count": 2
+    },
+    "Account": {
+      "label": "Account",
+      "category": "standard_object",
+      "story_count": 542,
+      "field_count": 564
+    },
+    "Account__x": {
+      "label": "Account / Hospital",
+      "category": "external_object",
+      "story_count": 542,
+      "field_count": 423
+    },
+    "Image": {
+      "label": "Image",
+      "category": "standard_object",
+      "story_count": 218,
+      "field_count": 10
+    },
+    "Apttus__APTS_Agreement__c": {
+      "label": "Agreement",
+      "category": "managed_package",
+      "story_count": 208,
+      "field_count": 220
+    },
+    "pqcrush__Team_Member__c": {
+      "label": "Team Member",
+      "category": "managed_package",
+      "story_count": 197,
+      "field_count": 3
+    },
+    "linkedin_si__Persona__c": {
+      "label": "LinkedIn Persona",
+      "category": "managed_package",
+      "story_count": 195,
+      "field_count": 12
+    },
+    "Shift": {
+      "label": "Shift",
+      "category": "standard_object",
+      "story_count": 177,
+      "field_count": 17
+    },
+    "Shift__c": {
+      "label": "Shift",
+      "category": "custom_object",
+      "story_count": 177,
+      "field_count": 13
+    },
+    "PersonAccount": {
+      "label": "Person Account",
+      "category": "standard_object",
+      "story_count": 149,
+      "field_count": 0
+    },
+    "HealthcarePractitionerFacility": {
+      "label": "Healthcare Practitioner Facility",
+      "category": "standard_object",
+      "story_count": 141,
+      "field_count": 91
+    },
+    "Contact": {
+      "label": "Contact",
+      "category": "standard_object",
+      "story_count": 92,
+      "field_count": 185
+    },
+    "Contact__x": {
+      "label": "Contact / Providers",
+      "category": "external_object",
+      "story_count": 92,
+      "field_count": 493
+    },
+    "Solution": {
+      "label": "Solution",
+      "category": "standard_object",
+      "story_count": 92,
+      "field_count": 5
+    },
+    "Opportunity": {
+      "label": "Opportunity",
+      "category": "standard_object",
+      "story_count": 78,
+      "field_count": 298
+    },
+    "Opportunity__x": {
+      "label": "Opportunity / Job",
+      "category": "external_object",
+      "story_count": 78,
+      "field_count": 144
+    },
+    "Prospect": {
+      "label": "Prospect",
+      "category": "standard_object",
+      "story_count": 77,
+      "field_count": 12
+    },
+    "Applicant": {
+      "label": "Applicant",
+      "category": "standard_object",
+      "story_count": 76,
+      "field_count": 22
+    },
+    "PreventiveCareAgreement": {
+      "label": "Preventive Care Agreement",
+      "category": "standard_object",
+      "story_count": 68,
+      "field_count": 58
+    },
+    "ProviderNetworkContract": {
+      "label": "Provider Network Contract",
+      "category": "standard_object",
+      "story_count": 64,
+      "field_count": 54
+    },
+    "Payment": {
+      "label": "Payment",
+      "category": "standard_object",
+      "story_count": 63,
+      "field_count": 36
+    },
+    "pqcrush__Mapping_Condition__c": {
+      "label": "Condition",
+      "category": "managed_package",
+      "story_count": 61,
+      "field_count": 4
+    },
+    "Address": {
+      "label": "Address",
+      "category": "standard_object",
+      "story_count": 60,
+      "field_count": 7
+    },
+    "ContractPaymentAgreement": {
+      "label": "Contract Payment Agreement",
+      "category": "standard_object",
+      "story_count": 58,
+      "field_count": 34
+    },
+    "Clinician_Onboarding__e": {
+      "label": "Clinician Onboarding",
+      "category": "platform_event",
+      "story_count": 58,
+      "field_count": 6
+    },
+    "Service_Line__c": {
+      "label": "Service Line",
+      "category": "custom_object",
+      "story_count": 57,
+      "field_count": 4
+    },
+    "Services__c": {
+      "label": "Services",
+      "category": "custom_object",
+      "story_count": 56,
+      "field_count": 45
+    },
+    "UnitOfMeasure": {
+      "label": "Unit Of Measure",
+      "category": "standard_object",
+      "story_count": 54,
+      "field_count": 5
+    },
+    "pqcrush__White_Space_Column__c": {
+      "label": "Column",
+      "category": "managed_package",
+      "story_count": 48,
+      "field_count": 3
+    },
+    "Pay_Codes__c": {
+      "label": "Pay Code",
+      "category": "custom_object",
+      "story_count": 46,
+      "field_count": 1
+    },
+    "Order": {
+      "label": "Order",
+      "category": "standard_object",
+      "story_count": 45,
+      "field_count": 31
+    },
+    "npe4__Relationship__c": {
+      "label": "Relationship",
+      "category": "managed_package",
+      "story_count": 42,
+      "field_count": 8
+    },
+    "Location": {
+      "label": "Location",
+      "category": "standard_object",
+      "story_count": 42,
+      "field_count": 22
+    },
+    "CodeSet": {
+      "label": "Code Set",
+      "category": "standard_object",
+      "story_count": 41,
+      "field_count": 28
+    },
+    "bpats__Interview__c": {
+      "label": "Interview",
+      "category": "managed_package",
+      "story_count": 40,
+      "field_count": 1
+    },
+    "bpats__ATS_Applicant__c": {
+      "label": "ATS Applicant",
+      "category": "managed_package",
+      "story_count": 39,
+      "field_count": 61
+    },
+    "ApprovalWorkItem": {
+      "label": "Approval Work Item",
+      "category": "standard_object",
+      "story_count": 37,
+      "field_count": 10
+    },
+    "Assessment": {
+      "label": "Assessment",
+      "category": "standard_object",
+      "story_count": 36,
+      "field_count": 2
+    },
+    "Customer": {
+      "label": "Customer",
+      "category": "standard_object",
+      "story_count": 34,
+      "field_count": 5
+    },
+    "pqcrush__Mapping__c": {
+      "label": "Mapping",
+      "category": "managed_package",
+      "story_count": 31,
+      "field_count": 5
+    },
+    "HealthcareProvider": {
+      "label": "Healthcare Provider",
+      "category": "standard_object",
+      "story_count": 30,
+      "field_count": 22
+    },
+    "Rate_Pay_Code__c": {
+      "label": "Rate Pay Code",
+      "category": "custom_object",
+      "story_count": 30,
+      "field_count": 7
+    },
+    "Collaborative_Practice_Agreement__c": {
+      "label": "Collaborative Practice Agreement",
+      "category": "custom_object",
+      "story_count": 28,
+      "field_count": 21
+    },
+    "Pro_Forma_Model__c": {
+      "label": "Pro Forma Model",
+      "category": "custom_object",
+      "story_count": 25,
+      "field_count": 71
+    },
+    "Individual": {
+      "label": "Individual",
+      "category": "standard_object",
+      "story_count": 24,
+      "field_count": 22
+    },
+    "Activity": {
+      "label": "Activity",
+      "category": "standard_object",
+      "story_count": 22,
+      "field_count": 19
+    },
+    "Training__c": {
+      "label": "Training",
+      "category": "custom_object",
+      "story_count": 22,
+      "field_count": 33
+    },
+    "inov8__PMT_Phase__c": {
+      "label": "PMT Phase",
+      "category": "managed_package",
+      "story_count": 20,
+      "field_count": 7
+    },
+    "Client_Change_Management__c": {
+      "label": "Client Change Management",
+      "category": "custom_object",
+      "story_count": 18,
+      "field_count": 7
+    },
+    "inov8__PMT_Project__c": {
+      "label": "PMT Project",
+      "category": "managed_package",
+      "story_count": 17,
+      "field_count": 2
+    },
+    "Corporation_and_Tax_Information__c": {
+      "label": "Corporation and Tax Information",
+      "category": "custom_object",
+      "story_count": 17,
+      "field_count": 12
+    },
+    "pqcrush__Key_Date__c": {
+      "label": "Key Date",
+      "category": "managed_package",
+      "story_count": 16,
+      "field_count": 4
+    },
+    "BusinessLicense": {
+      "label": "Business License",
+      "category": "standard_object",
+      "story_count": 14,
+      "field_count": 29
+    },
+    "BatchJob": {
+      "label": "Batch Job",
+      "category": "standard_object",
+      "story_count": 14,
+      "field_count": 13
+    },
+    "ActionPlan": {
+      "label": "Action Plan",
+      "category": "standard_object",
+      "story_count": 13,
+      "field_count": 13
+    },
+    "inov8__PMT_Task__c": {
+      "label": "PMT Task",
+      "category": "managed_package",
+      "story_count": 12,
+      "field_count": 3
+    },
+    "AccountTeamMember": {
+      "label": "Account Team Member",
+      "category": "standard_object",
+      "story_count": 12,
+      "field_count": 8
+    },
+    "BoardCertification": {
+      "label": "Board Certification",
+      "category": "standard_object",
+      "story_count": 11,
+      "field_count": 16
+    },
+    "bpats__Placement__c": {
+      "label": "Placement",
+      "category": "managed_package",
+      "story_count": 11,
+      "field_count": 9
+    },
+    "Integration_Log__c": {
+      "label": "Integration Log",
+      "category": "custom_object",
+      "story_count": 11,
+      "field_count": 22
+    },
+    "HealthcareProviderSpecialty": {
+      "label": "Healthcare Provider Specialty",
+      "category": "standard_object",
+      "story_count": 10,
+      "field_count": 15
+    },
+    "HPFUpdates__e": {
+      "label": "HPFUpdates",
+      "category": "platform_event",
+      "story_count": 10,
+      "field_count": 8
+    },
+    "Opportunity_Attachment__c": {
+      "label": "Attachment",
+      "category": "custom_object",
+      "story_count": 9,
+      "field_count": 7
+    },
+    "Pro_Forma_Facility_Detail__c": {
+      "label": "Pro Forma Facility Detail",
+      "category": "custom_object",
+      "story_count": 9,
+      "field_count": 73
+    },
+    "HealthcareProviderNpi": {
+      "label": "Healthcare Provider Npi",
+      "category": "standard_object",
+      "story_count": 8,
+      "field_count": 11
+    },
+    "Contract_Amendments__c": {
+      "label": "Amendment",
+      "category": "custom_object",
+      "story_count": 8,
+      "field_count": 2
+    },
+    "bpats__Interview_Feedback__c": {
+      "label": "Interview Feedback",
+      "category": "managed_package",
+      "story_count": 8,
+      "field_count": 1
+    },
+    "ApprovalSubmission": {
+      "label": "Approval Submission",
+      "category": "standard_object",
+      "story_count": 8,
+      "field_count": 8
+    },
+    "HealthcareProviderTaxonomy": {
+      "label": "Healthcare Provider Taxonomy",
+      "category": "standard_object",
+      "story_count": 7,
+      "field_count": 12
+    },
+    "HealthcarePayerNetwork": {
+      "label": "Healthcare Payer Network",
+      "category": "standard_object",
+      "story_count": 7,
+      "field_count": 13
+    },
+    "Compliance_Rule_Assignments__c": {
+      "label": "Compliance Rule Assignment",
+      "category": "custom_object",
+      "story_count": 7,
+      "field_count": 15
+    },
+    "Competitor__c": {
+      "label": "Competitor",
+      "category": "custom_object",
+      "story_count": 6,
+      "field_count": 8
+    },
+    "HealthcareFacility": {
+      "label": "Healthcare Facility",
+      "category": "standard_object",
+      "story_count": 6,
+      "field_count": 12
+    },
+    "AccountAccountRelation": {
+      "label": "Account Account Relation",
+      "category": "standard_object",
+      "story_count": 6,
+      "field_count": 4
+    },
+    "Contract_Agreement__c": {
+      "label": "Contract Agreement",
+      "category": "custom_object",
+      "story_count": 6,
+      "field_count": 3
+    },
+    "APXT_Redlining__Contract_Agreement__c": {
+      "label": "Contract Agreement",
+      "category": "managed_package",
+      "story_count": 6,
+      "field_count": 2
+    },
+    "AssessmentQuestion": {
+      "label": "Assessment Question",
+      "category": "standard_object",
+      "story_count": 6,
+      "field_count": 1
+    },
+    "pqcrush__Account_Plan__c": {
+      "label": "Account Plan",
+      "category": "managed_package",
+      "story_count": 5,
+      "field_count": 44
+    },
+    "Account_Plan__c": {
+      "label": "Account Plan",
+      "category": "custom_object",
+      "story_count": 5,
+      "field_count": 3
+    },
+    "PersonEducation": {
+      "label": "Person Education",
+      "category": "standard_object",
+      "story_count": 5,
+      "field_count": 19
+    },
+    "Clinician_Offboarding_Request__e": {
+      "label": "Clinician Offboarding Request",
+      "category": "platform_event",
+      "story_count": 5,
+      "field_count": 15
+    },
+    "LID__Error_Log__c": {
+      "label": "Error Log",
+      "category": "managed_package",
+      "story_count": 5,
+      "field_count": 3
+    },
+    "Error_Log__c": {
+      "label": "Error Log",
+      "category": "custom_object",
+      "story_count": 5,
+      "field_count": 12
+    },
+    "Practice_Operation_Change__c": {
+      "label": "Practice Operation Change",
+      "category": "custom_object",
+      "story_count": 5,
+      "field_count": 7
+    },
+    "CPA_Review__c": {
+      "label": "CPA Review",
+      "category": "custom_object",
+      "story_count": 5,
+      "field_count": 2
+    },
+    "AssessmentQuestionResponse": {
+      "label": "Assessment Question Response",
+      "category": "standard_object",
+      "story_count": 5,
+      "field_count": 1
+    },
+    "PersonEmployment": {
+      "label": "Person Employment",
+      "category": "standard_object",
+      "story_count": 4,
+      "field_count": 16
+    },
+    "AssessmentEnvelope": {
+      "label": "Assessment Envelope",
+      "category": "standard_object",
+      "story_count": 4,
+      "field_count": 3
+    },
+    "OpportunityTeamMember": {
+      "label": "Opportunity Team Member",
+      "category": "standard_object",
+      "story_count": 4,
+      "field_count": 5
+    },
+    "Quote": {
+      "label": "Quote",
+      "category": "standard_object",
+      "story_count": 4,
+      "field_count": 51
+    },
+    "EmailMessage": {
+      "label": "Email Message",
+      "category": "standard_object",
+      "story_count": 4,
+      "field_count": 22
+    },
+    "ApprovalSubmissionDetail": {
+      "label": "Approval Submission Detail",
+      "category": "standard_object",
+      "story_count": 4,
+      "field_count": 8
+    },
+    "Account_Updates__e": {
+      "label": "Account Updates",
+      "category": "platform_event",
+      "story_count": 3,
+      "field_count": 12
+    },
+    "GeneratedDocument": {
+      "label": "Generated Document",
+      "category": "standard_object",
+      "story_count": 3,
+      "field_count": 6
+    },
+    "Contract_Updates__e": {
+      "label": "Contract Updates",
+      "category": "platform_event",
+      "story_count": 3,
+      "field_count": 4
+    },
+    "Visit": {
+      "label": "Visit",
+      "category": "standard_object",
+      "story_count": 3,
+      "field_count": 20
+    },
+    "Clinician_Updates__e": {
+      "label": "Clinician Updates",
+      "category": "platform_event",
+      "story_count": 3,
+      "field_count": 4
+    },
+    "accHierarchy__Account_Hierarchy__mdt": {
+      "label": "Account Hierarchy",
+      "category": "custom_metadata",
+      "story_count": 3,
+      "field_count": 1
+    },
+    "OpportunitySplit": {
+      "label": "Opportunity Split",
+      "category": "standard_object",
+      "story_count": 3,
+      "field_count": 6
+    }
+  },
+  "acronyms": {
+    "HPF": {
+      "expansion": "Healthcare Practitioner Facility",
+      "source": "object_initials",
+      "story_count": 378,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1095",
+        "PR1050558-1096",
+        "PR1050558-1103"
+      ]
+    },
+    "UAT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 347,
+      "example_stories": [
+        "PR1050558-2908",
+        "PR1050558-3208",
+        "PR1050558-3375",
+        "PR1050558-3478",
+        "PR1050558-3546"
+      ]
+    },
+    "SCP": {
+      "expansion": "Anne Lewis",
+      "source": "inline_text_unverified",
+      "story_count": 212,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1070",
+        "PR1050558-1073",
+        "PR1050558-1091",
+        "PR1050558-1103"
+      ]
+    },
+    "PROD": {
+      "expansion": "Sales Operations Distribution List",
+      "source": "inline_text_unverified",
+      "story_count": 167,
+      "example_stories": [
+        "PR1050558-1073",
+        "PR1050558-2151",
+        "PR1050558-2813",
+        "PR1050558-3375",
+        "PR1050558-3469"
+      ]
+    },
+    "HC": {
+      "expansion": "Health Condition",
+      "source": "object_initials",
+      "story_count": 157,
+      "example_stories": [
+        "PR1050558-1057",
+        "PR1050558-1076",
+        "PR1050558-1090",
+        "PR1050558-1098",
+        "PR1050558-1139"
+      ]
+    },
+    "AC": {
+      "expansion": "Appointment Category",
+      "source": "object_initials",
+      "story_count": 144,
+      "example_stories": [
+        "PR1050558-1057",
+        "PR1050558-1073",
+        "PR1050558-1358",
+        "PR1050558-1651",
+        "PR1050558-1678"
+      ]
+    },
+    "RT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 115,
+      "example_stories": [
+        "PR1050558-1074",
+        "PR1050558-1675",
+        "PR1050558-1676",
+        "PR1050558-1677",
+        "PR1050558-1678"
+      ]
+    },
+    "SFO": {
+      "expansion": "Staffing Fulfillment Optimization",
+      "source": "inline_text",
+      "story_count": 107,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1057",
+        "PR1050558-1090",
+        "PR1050558-1098",
+        "PR1050558-1151"
+      ]
+    },
+    "NP": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 93,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1072",
+        "PR1050558-1097",
+        "PR1050558-1366",
+        "PR1050558-1369"
+      ]
+    },
+    "EE": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 92,
+      "example_stories": [
+        "PR1050558-1289",
+        "PR1050558-1317",
+        "PR1050558-1369",
+        "PR1050558-1721",
+        "PR1050558-1809"
+      ]
+    },
+    "PA": {
+      "expansion": "Prompt Action",
+      "source": "object_initials",
+      "story_count": 88,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1072",
+        "PR1050558-1097",
+        "PR1050558-1366",
+        "PR1050558-1369"
+      ]
+    },
+    "MSL": {
+      "expansion": "Medical Staff Liaison",
+      "source": "inline_text",
+      "story_count": 82,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-1113",
+        "PR1050558-1168",
+        "PR1050558-1237",
+        "PR1050558-1309"
+      ]
+    },
+    "VP": {
+      "expansion": "Visited Party",
+      "source": "object_initials",
+      "story_count": 76,
+      "example_stories": [
+        "PR1050558-1073",
+        "PR1050558-1316",
+        "PR1050558-1568",
+        "PR1050558-1667",
+        "PR1050558-1675"
+      ]
+    },
+    "NPPA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 74,
+      "example_stories": [
+        "PR1050558-1289",
+        "PR1050558-1682",
+        "PR1050558-2143",
+        "PR1050558-2235",
+        "PR1050558-2468"
+      ]
+    },
+    "CPA": {
+      "expansion": "Contact Point Address",
+      "source": "object_initials",
+      "story_count": 70,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-1435",
+        "PR1050558-146",
+        "PR1050558-147",
+        "PR1050558-1584"
+      ]
+    },
+    "PNC": {
+      "expansion": "Provider Network Contract",
+      "source": "object_initials",
+      "story_count": 68,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1138",
+        "PR1050558-1256",
+        "PR1050558-1317",
+        "PR1050558-1364"
+      ]
+    },
+    "PO": {
+      "expansion": "Practice Operations",
+      "source": "inline_text",
+      "story_count": 66,
+      "example_stories": [
+        "PR1050558-1584",
+        "PR1050558-2916",
+        "PR1050558-3187",
+        "PR1050558-3190",
+        "PR1050558-3211"
+      ]
+    },
+    "UI": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 64,
+      "example_stories": [
+        "PR1050558-1091",
+        "PR1050558-1240",
+        "PR1050558-1243",
+        "PR1050558-1316",
+        "PR1050558-1334"
+      ]
+    },
+    "IC": {
+      "expansion": "Independent Contractor",
+      "source": "inline_text",
+      "story_count": 64,
+      "example_stories": [
+        "PR1050558-1317",
+        "PR1050558-1696",
+        "PR1050558-1720",
+        "PR1050558-1809",
+        "PR1050558-194"
+      ]
+    },
+    "PCA": {
+      "expansion": "Preventive Care Agreement",
+      "source": "object_initials",
+      "story_count": 63,
+      "example_stories": [
+        "PR1050558-1057",
+        "PR1050558-1090",
+        "PR1050558-1715",
+        "PR1050558-1807",
+        "PR1050558-1808"
+      ]
+    },
+    "SF": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 57,
+      "example_stories": [
+        "PR1050558-1719",
+        "PR1050558-1740",
+        "PR1050558-2114",
+        "PR1050558-2119",
+        "PR1050558-2126"
+      ]
+    },
+    "EM": {
+      "expansion": "Email Message",
+      "source": "object_initials",
+      "story_count": 52,
+      "example_stories": [
+        "PR1050558-1097",
+        "PR1050558-1676",
+        "PR1050558-1798",
+        "PR1050558-2081",
+        "PR1050558-2113"
+      ]
+    },
+    "ATS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 46,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1369",
+        "PR1050558-1635",
+        "PR1050558-1789",
+        "PR1050558-1941"
+      ]
+    },
+    "DD": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 46,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1240",
+        "PR1050558-167",
+        "PR1050558-1675",
+        "PR1050558-1704"
+      ]
+    },
+    "CC": {
+      "expansion": "Critical Care",
+      "source": "inline_text",
+      "story_count": 42,
+      "example_stories": [
+        "PR1050558-1676",
+        "PR1050558-1941",
+        "PR1050558-211",
+        "PR1050558-212",
+        "PR1050558-218"
+      ]
+    },
+    "NPI": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 39,
+      "example_stories": [
+        "PR1050558-107",
+        "PR1050558-1139",
+        "PR1050558-123",
+        "PR1050558-1391",
+        "PR1050558-1577"
+      ]
+    },
+    "HM": {
+      "expansion": "Hospital Medicine",
+      "source": "inline_text",
+      "story_count": 39,
+      "example_stories": [
+        "PR1050558-1097",
+        "PR1050558-1676",
+        "PR1050558-1798",
+        "PR1050558-199",
+        "PR1050558-2081"
+      ]
+    },
+    "QA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 34,
+      "example_stories": [
+        "PR1050558-1305",
+        "PR1050558-1772",
+        "PR1050558-19",
+        "PR1050558-235",
+        "PR1050558-2624"
+      ]
+    },
+    "HR": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 31,
+      "example_stories": [
+        "PR1050558-1364",
+        "PR1050558-1727",
+        "PR1050558-1733",
+        "PR1050558-2120",
+        "PR1050558-2162"
+      ]
+    },
+    "PMT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 30,
+      "example_stories": [
+        "PR1050558-164",
+        "PR1050558-1678",
+        "PR1050558-1679",
+        "PR1050558-2087",
+        "PR1050558-2088"
+      ]
+    },
+    "LRP": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 30,
+      "example_stories": [
+        "PR1050558-147",
+        "PR1050558-1725",
+        "PR1050558-1747",
+        "PR1050558-205",
+        "PR1050558-217"
+      ]
+    },
+    "PM": {
+      "expansion": "Payment Method",
+      "source": "object_initials",
+      "story_count": 29,
+      "example_stories": [
+        "PR1050558-1358",
+        "PR1050558-1362",
+        "PR1050558-1391",
+        "PR1050558-1577",
+        "PR1050558-1807"
+      ]
+    },
+    "CET": {
+      "expansion": "Clinician Experience Team",
+      "source": "inline_text",
+      "story_count": 28,
+      "example_stories": [
+        "PR1050558-1364",
+        "PR1050558-1682",
+        "PR1050558-1725",
+        "PR1050558-1789",
+        "PR1050558-247"
+      ]
+    },
+    "BD": {
+      "expansion": "Business Development",
+      "source": "inline_text",
+      "story_count": 27,
+      "example_stories": [
+        "PR1050558-1305",
+        "PR1050558-1568",
+        "PR1050558-1798",
+        "PR1050558-1799",
+        "PR1050558-2013"
+      ]
+    },
+    "MD": {
+      "expansion": "Medication Dispense",
+      "source": "object_initials",
+      "story_count": 26,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1369",
+        "PR1050558-1415",
+        "PR1050558-146",
+        "PR1050558-1655"
+      ]
+    },
+    "CONT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 26,
+      "example_stories": [
+        "PR1050558-3620",
+        "PR1050558-3621",
+        "PR1050558-3622",
+        "PR1050558-3669",
+        "PR1050558-3673"
+      ]
+    },
+    "VPO": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 25,
+      "example_stories": [
+        "PR1050558-1740",
+        "PR1050558-1750",
+        "PR1050558-1800",
+        "PR1050558-2469",
+        "PR1050558-2472"
+      ]
+    },
+    "LOI": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 25,
+      "example_stories": [
+        "PR1050558-1676",
+        "PR1050558-1736",
+        "PR1050558-1799",
+        "PR1050558-2139",
+        "PR1050558-2142"
+      ]
+    },
+    "FLS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 24,
+      "example_stories": [
+        "PR1050558-1675",
+        "PR1050558-1676",
+        "PR1050558-1740",
+        "PR1050558-1799",
+        "PR1050558-2021"
+      ]
+    },
+    "RN": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 19,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1369",
+        "PR1050558-1415",
+        "PR1050558-1723",
+        "PR1050558-1733"
+      ]
+    },
+    "OS": {
+      "expansion": "Opportunity Split",
+      "source": "object_initials",
+      "story_count": 18,
+      "example_stories": [
+        "PR1050558-1094",
+        "PR1050558-1095",
+        "PR1050558-1138",
+        "PR1050558-1256",
+        "PR1050558-1696"
+      ]
+    },
+    "AF": {
+      "expansion": "Application Form",
+      "source": "object_initials",
+      "story_count": 18,
+      "example_stories": [
+        "PR1050558-3605",
+        "PR1050558-3606",
+        "PR1050558-3785",
+        "PR1050558-3786",
+        "PR1050558-3787"
+      ]
+    },
+    "LPN": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 17,
+      "example_stories": [
+        "PR1050558-1369",
+        "PR1050558-1415",
+        "PR1050558-1723",
+        "PR1050558-1733",
+        "PR1050558-1773"
+      ]
+    },
+    "SUN": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 17,
+      "example_stories": [
+        "PR1050558-2142",
+        "PR1050558-314",
+        "PR1050558-3204",
+        "PR1050558-3205",
+        "PR1050558-3338"
+      ]
+    },
+    "WHERE": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 16,
+      "example_stories": [
+        "PR1050558-199",
+        "PR1050558-2638",
+        "PR1050558-2827",
+        "PR1050558-3020",
+        "PR1050558-3021"
+      ]
+    },
+    "DL": {
+      "expansion": "DHC Log",
+      "source": "object_initials",
+      "story_count": 15,
+      "example_stories": [
+        "PR1050558-1073",
+        "PR1050558-1723",
+        "PR1050558-1726",
+        "PR1050558-193",
+        "PR1050558-2638"
+      ]
+    },
+    "SVP": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 15,
+      "example_stories": [
+        "PR1050558-1709",
+        "PR1050558-2081",
+        "PR1050558-246",
+        "PR1050558-2624",
+        "PR1050558-2636"
+      ]
+    },
+    "IP": {
+      "expansion": "Insurance Plan",
+      "source": "object_initials",
+      "story_count": 14,
+      "example_stories": [
+        "PR1050558-1364",
+        "PR1050558-1366",
+        "PR1050558-1392",
+        "PR1050558-210",
+        "PR1050558-2220"
+      ]
+    },
+    "FALSE": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-199",
+        "PR1050558-2120",
+        "PR1050558-2471",
+        "PR1050558-2472",
+        "PR1050558-2639"
+      ]
+    },
+    "FT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-2235",
+        "PR1050558-2785",
+        "PR1050558-3674",
+        "PR1050558-3779",
+        "PR1050558-4088"
+      ]
+    },
+    "PT": {
+      "expansion": "PMT Task",
+      "source": "object_initials",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-2213",
+        "PR1050558-2235",
+        "PR1050558-2785",
+        "PR1050558-3779",
+        "PR1050558-4088"
+      ]
+    },
+    "REC": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-3600",
+        "PR1050558-3672",
+        "PR1050558-3703",
+        "PR1050558-4126",
+        "PR1050558-4153"
+      ]
+    },
+    "OWD": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 12,
+      "example_stories": [
+        "PR1050558-1173",
+        "PR1050558-1369",
+        "PR1050558-248",
+        "PR1050558-249",
+        "PR1050558-30"
+      ]
+    },
+    "STORY": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 12,
+      "example_stories": [
+        "PR1050558-2807",
+        "PR1050558-3464",
+        "PR1050558-4980",
+        "PR1050558-5090",
+        "PR1050558-5091"
+      ]
+    },
+    "PFB": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 12,
+      "example_stories": [
+        "PR1050558-1616",
+        "PR1050558-2134",
+        "PR1050558-2183",
+        "PR1050558-2444",
+        "PR1050558-2465"
+      ]
+    },
+    "PEP": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-1651",
+        "PR1050558-2011",
+        "PR1050558-2182",
+        "PR1050558-2237",
+        "PR1050558-2462"
+      ]
+    },
+    "NOTES": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-2558",
+        "PR1050558-2988",
+        "PR1050558-3338",
+        "PR1050558-3777",
+        "PR1050558-5580"
+      ]
+    },
+    "BLANK": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-1683",
+        "PR1050558-2151",
+        "PR1050558-2634",
+        "PR1050558-2635",
+        "PR1050558-4536"
+      ]
+    },
+    "OFF": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-4127",
+        "PR1050558-4128",
+        "PR1050558-4153",
+        "PR1050558-4154",
+        "PR1050558-4160"
+      ]
+    },
+    "MS": {
+      "expansion": "Medication Statement",
+      "source": "object_initials",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-234",
+        "PR1050558-4640",
+        "PR1050558-4983",
+        "PR1050558-4998",
+        "PR1050558-5641"
+      ]
+    },
+    "OM": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-4133",
+        "PR1050558-4140",
+        "PR1050558-4141",
+        "PR1050558-4159",
+        "PR1050558-4161"
+      ]
+    },
+    "CDM": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-4397",
+        "PR1050558-4398",
+        "PR1050558-4401",
+        "PR1050558-4402",
+        "PR1050558-4447"
+      ]
+    },
+    "CTI": {
+      "expansion": "Tax Information",
+      "source": "inline_text_unverified",
+      "story_count": 9,
+      "example_stories": [
+        "PR1050558-165",
+        "PR1050558-3616",
+        "PR1050558-4074",
+        "PR1050558-4389",
+        "PR1050558-4591"
+      ]
+    },
+    "ED": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 9,
+      "example_stories": [
+        "PR1050558-1667",
+        "PR1050558-1787",
+        "PR1050558-2081",
+        "PR1050558-4130",
+        "PR1050558-488"
+      ]
+    },
+    "UC": {
+      "expansion": "Urgent Care",
+      "source": "inline_text",
+      "story_count": 9,
+      "example_stories": [
+        "PR1050558-1097",
+        "PR1050558-1798",
+        "PR1050558-4417",
+        "PR1050558-4614",
+        "PR1050558-4747"
+      ]
+    },
+    "APAY": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 9,
+      "example_stories": [
+        "PR1050558-2206",
+        "PR1050558-2224",
+        "PR1050558-2469",
+        "PR1050558-2964",
+        "PR1050558-309"
+      ]
+    },
+    "SA": {
+      "expansion": "Scorecard Association",
+      "source": "object_initials",
+      "story_count": 9,
+      "example_stories": [
+        "PR1050558-2120",
+        "PR1050558-2210",
+        "PR1050558-2235",
+        "PR1050558-2822",
+        "PR1050558-3023"
+      ]
+    },
+    "NA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 9,
+      "example_stories": [
+        "PR1050558-298",
+        "PR1050558-382",
+        "PR1050558-4378",
+        "PR1050558-4634",
+        "PR1050558-4640"
+      ]
+    },
+    "PFA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-2114",
+        "PR1050558-4012",
+        "PR1050558-4742",
+        "PR1050558-5218",
+        "PR1050558-5545"
+      ]
+    },
+    "CES": {
+      "expansion": "Clinician Experience Specialist",
+      "source": "inline_text",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-1723",
+        "PR1050558-4536",
+        "PR1050558-5848",
+        "PR1050558-5852",
+        "PR1050558-5873"
+      ]
+    },
+    "PE": {
+      "expansion": "Prompt Error",
+      "source": "object_initials",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-2208",
+        "PR1050558-3545",
+        "PR1050558-3570",
+        "PR1050558-4839",
+        "PR1050558-4840"
+      ]
+    },
+    "PRN": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-2559",
+        "PR1050558-429",
+        "PR1050558-4351",
+        "PR1050558-5092",
+        "PR1050558-5115"
+      ]
+    },
+    "CTERM": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-4506",
+        "PR1050558-4597",
+        "PR1050558-4614",
+        "PR1050558-4621",
+        "PR1050558-4747"
+      ]
+    },
+    "CDC": {
+      "expansion": "Salesforce Change Data Capture",
+      "source": "inline_text_unverified",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-1772",
+        "PR1050558-235",
+        "PR1050558-4727",
+        "PR1050558-4838",
+        "PR1050558-4861"
+      ]
+    },
+    "WTBS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-1091",
+        "PR1050558-1386",
+        "PR1050558-146",
+        "PR1050558-1655",
+        "PR1050558-429"
+      ]
+    },
+    "WRKG": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-1091",
+        "PR1050558-1386",
+        "PR1050558-146",
+        "PR1050558-1655",
+        "PR1050558-429"
+      ]
+    },
+    "HCP": {
+      "expansion": "Health Care Procedure",
+      "source": "object_initials",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-1102",
+        "PR1050558-1583",
+        "PR1050558-219",
+        "PR1050558-246",
+        "PR1050558-358"
+      ]
+    },
+    "TODAY": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-1718",
+        "PR1050558-2473",
+        "PR1050558-2678",
+        "PR1050558-2928",
+        "PR1050558-5692"
+      ]
+    },
+    "LDD": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-1240",
+        "PR1050558-2558",
+        "PR1050558-2827",
+        "PR1050558-2828",
+        "PR1050558-2928"
+      ]
+    },
+    "RCS": {
+      "expansion": "RM Chart Setting",
+      "source": "object_initials",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-2081",
+        "PR1050558-2673",
+        "PR1050558-314",
+        "PR1050558-3459",
+        "PR1050558-4175"
+      ]
+    },
+    "DR": {
+      "expansion": "Document Recipient",
+      "source": "object_initials",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-1392",
+        "PR1050558-2228",
+        "PR1050558-2811",
+        "PR1050558-3201",
+        "PR1050558-3211"
+      ]
+    },
+    "COI": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-2011",
+        "PR1050558-2119",
+        "PR1050558-247",
+        "PR1050558-3204",
+        "PR1050558-5121"
+      ]
+    },
+    "AWI": {
+      "expansion": "Approval Work Item",
+      "source": "object_initials",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-3757",
+        "PR1050558-4708",
+        "PR1050558-4742",
+        "PR1050558-4856",
+        "PR1050558-5668"
+      ]
+    },
+    "CCM": {
+      "expansion": "Client Change Management",
+      "source": "object_initials",
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-3478",
+        "PR1050558-3847",
+        "PR1050558-4192",
+        "PR1050558-4198",
+        "PR1050558-5866"
+      ]
+    },
+    "ICU": {
+      "expansion": "Intensive Care Unit",
+      "source": "inline_text",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-1676",
+        "PR1050558-3463",
+        "PR1050558-3464",
+        "PR1050558-488",
+        "PR1050558-5152"
+      ]
+    },
+    "DQ": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-1726",
+        "PR1050558-4389",
+        "PR1050558-4742",
+        "PR1050558-5594",
+        "PR1050558-5921"
+      ]
+    },
+    "DEA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-199",
+        "PR1050558-231",
+        "PR1050558-4012",
+        "PR1050558-4979",
+        "PR1050558-5064"
+      ]
+    },
+    "DOO": {
+      "expansion": "Division Operating Officer",
+      "source": "inline_text",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-1740",
+        "PR1050558-2469",
+        "PR1050558-2793",
+        "PR1050558-5524",
+        "PR1050558-883"
+      ]
+    },
+    "OKTA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-2126",
+        "PR1050558-2670",
+        "PR1050558-5869",
+        "PR1050558-5873",
+        "PR1050558-6237"
+      ]
+    },
+    "CCPA": {
+      "expansion": "Californian Consumer Privacy Act",
+      "source": "inline_text",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-1096",
+        "PR1050558-1097",
+        "PR1050558-2679",
+        "PR1050558-2876",
+        "PR1050558-4973"
+      ]
+    },
+    "GME": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-1676",
+        "PR1050558-3463",
+        "PR1050558-3464",
+        "PR1050558-4051",
+        "PR1050558-4563"
+      ]
+    },
+    "SSN": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-3545",
+        "PR1050558-3573",
+        "PR1050558-3614",
+        "PR1050558-5869",
+        "PR1050558-6237"
+      ]
+    },
+    "WD": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-3566",
+        "PR1050558-3569",
+        "PR1050558-3900",
+        "PR1050558-4867",
+        "PR1050558-4983"
+      ]
+    },
+    "VS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-4161",
+        "PR1050558-4166",
+        "PR1050558-4378",
+        "PR1050558-4401",
+        "PR1050558-5382"
+      ]
+    },
+    "INT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-4539",
+        "PR1050558-4586",
+        "PR1050558-4590",
+        "PR1050558-4592",
+        "PR1050558-4611"
+      ]
+    },
+    "BDA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-1309",
+        "PR1050558-203",
+        "PR1050558-2914",
+        "PR1050558-614",
+        "PR1050558-831"
+      ]
+    },
+    "HPS": {
+      "expansion": "Healthcare Provider Service",
+      "source": "object_initials",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-1667",
+        "PR1050558-1684",
+        "PR1050558-1787",
+        "PR1050558-2143",
+        "PR1050558-4175"
+      ]
+    },
+    "PAA": {
+      "expansion": "Payment Auth Adjustment",
+      "source": "object_initials",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-1813",
+        "PR1050558-2225",
+        "PR1050558-2468",
+        "PR1050558-302",
+        "PR1050558-4123"
+      ]
+    },
+    "COUNT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-2659",
+        "PR1050558-5617",
+        "PR1050558-5721",
+        "PR1050558-5772",
+        "PR1050558-5918"
+      ]
+    },
+    "RPC": {
+      "expansion": "Rate Pay Code",
+      "source": "object_initials",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-2988",
+        "PR1050558-3454",
+        "PR1050558-3594",
+        "PR1050558-3777",
+        "PR1050558-4124"
+      ]
+    },
+    "EMBCC": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-2638",
+        "PR1050558-2813",
+        "PR1050558-4394",
+        "PR1050558-4405",
+        "PR1050558-5286"
+      ]
+    },
+    "FINAL": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-314",
+        "PR1050558-4051",
+        "PR1050558-4130",
+        "PR1050558-4315",
+        "PR1050558-887"
+      ]
+    },
+    "SIT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-3566",
+        "PR1050558-3569",
+        "PR1050558-3570",
+        "PR1050558-3900",
+        "PR1050558-4531"
+      ]
+    },
+    "READ": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-3464",
+        "PR1050558-4780",
+        "PR1050558-5703",
+        "PR1050558-5998",
+        "PR1050558-6163"
+      ]
+    },
+    "ONB": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-4067",
+        "PR1050558-4110",
+        "PR1050558-4120",
+        "PR1050558-4125",
+        "PR1050558-4135"
+      ]
+    },
+    "MSS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-2011",
+        "PR1050558-2175",
+        "PR1050558-247",
+        "PR1050558-4067",
+        "PR1050558-619"
+      ]
+    },
+    "OOTB": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-1582",
+        "PR1050558-1703",
+        "PR1050558-4569",
+        "PR1050558-5118",
+        "PR1050558-5120"
+      ]
+    },
+    "SPLIT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-5641",
+        "PR1050558-5873",
+        "PR1050558-6260",
+        "PR1050558-6307",
+        "PR1050558-6314"
+      ]
+    },
+    "ICP": {
+      "expansion": "Integrated Care Physician",
+      "source": "inline_text",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-488",
+        "PR1050558-5152",
+        "PR1050558-5624",
+        "PR1050558-88"
+      ]
+    },
+    "JM": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-2119",
+        "PR1050558-2182",
+        "PR1050558-2462",
+        "PR1050558-3616"
+      ]
+    },
+    "DMO": {
+      "expansion": "Division Medical Officer",
+      "source": "inline_text",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-2473",
+        "PR1050558-2594",
+        "PR1050558-883",
+        "PR1050558-884"
+      ]
+    },
+    "RVU": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1682",
+        "PR1050558-4540",
+        "PR1050558-5726",
+        "PR1050558-774"
+      ]
+    },
+    "POST": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-314",
+        "PR1050558-3338",
+        "PR1050558-3451",
+        "PR1050558-6141"
+      ]
+    },
+    "DS": {
+      "expansion": "Demo Settings",
+      "source": "object_initials",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-3663",
+        "PR1050558-3769",
+        "PR1050558-4474",
+        "PR1050558-4720"
+      ]
+    },
+    "VH": {
+      "expansion": "Service Line",
+      "source": "inline_text_unverified",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1798",
+        "PR1050558-3668",
+        "PR1050558-488",
+        "PR1050558-5703"
+      ]
+    },
+    "POC": {
+      "expansion": "Practice Operation Change",
+      "source": "object_initials",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-3847",
+        "PR1050558-4192",
+        "PR1050558-471",
+        "PR1050558-776"
+      ]
+    },
+    "BUILD": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-2112",
+        "PR1050558-2430",
+        "PR1050558-2807",
+        "PR1050558-777"
+      ]
+    },
+    "BUILT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-2436",
+        "PR1050558-2450",
+        "PR1050558-3022",
+        "PR1050558-5692"
+      ]
+    },
+    "ANY": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-3464",
+        "PR1050558-4674",
+        "PR1050558-4748",
+        "PR1050558-6148"
+      ]
+    },
+    "TECH": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-3931",
+        "PR1050558-4928",
+        "PR1050558-5391",
+        "PR1050558-5399"
+      ]
+    },
+    "DAM": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1798",
+        "PR1050558-2143",
+        "PR1050558-4447",
+        "PR1050558-479"
+      ]
+    },
+    "PS": {
+      "expansion": "Partner Settings",
+      "source": "object_initials",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1305",
+        "PR1050558-3616",
+        "PR1050558-4460",
+        "PR1050558-6163"
+      ]
+    },
+    "GUID": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-4710",
+        "PR1050558-4711",
+        "PR1050558-4716",
+        "PR1050558-4718"
+      ]
+    },
+    "BI": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-5588",
+        "PR1050558-5704",
+        "PR1050558-6307",
+        "PR1050558-6314"
+      ]
+    },
+    "RMO": {
+      "expansion": "Regional Medical Officer",
+      "source": "inline_text",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-358",
+        "PR1050558-5806",
+        "PR1050558-883",
+        "PR1050558-884"
+      ]
+    },
+    "USERS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1653",
+        "PR1050558-610",
+        "PR1050558-621",
+        "PR1050558-888"
+      ]
+    },
+    "PIZZA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1334",
+        "PR1050558-1653",
+        "PR1050558-888",
+        "PR1050558-889"
+      ]
+    },
+    "AAR": {
+      "expansion": "Account Account Relation",
+      "source": "object_initials",
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1580",
+        "PR1050558-1708",
+        "PR1050558-2436",
+        "PR1050558-2450"
+      ]
+    },
+    "NON": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4168",
+        "PR1050558-5152",
+        "PR1050558-88"
+      ]
+    },
+    "CORE": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-474",
+        "PR1050558-5152",
+        "PR1050558-88"
+      ]
+    },
+    "MOCK": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1739",
+        "PR1050558-2811",
+        "PR1050558-5863"
+      ]
+    },
+    "TSG": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2114",
+        "PR1050558-488",
+        "PR1050558-5984"
+      ]
+    },
+    "EMR": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2422",
+        "PR1050558-3787",
+        "PR1050558-3930"
+      ]
+    },
+    "ADA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2471",
+        "PR1050558-2639",
+        "PR1050558-2677"
+      ]
+    },
+    "PCC": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2670",
+        "PR1050558-3459",
+        "PR1050558-5827"
+      ]
+    },
+    "LOOP": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2827",
+        "PR1050558-4710",
+        "PR1050558-4716"
+      ]
+    },
+    "MC": {
+      "expansion": "Condition",
+      "source": "object_initials",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2638",
+        "PR1050558-3674",
+        "PR1050558-5382"
+      ]
+    },
+    "PC": {
+      "expansion": "Pay Code",
+      "source": "object_initials",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2638",
+        "PR1050558-3023",
+        "PR1050558-337"
+      ]
+    },
+    "QG": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-3570",
+        "PR1050558-4742",
+        "PR1050558-4983"
+      ]
+    },
+    "ER": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-3673",
+        "PR1050558-4297",
+        "PR1050558-5624"
+      ]
+    },
+    "AKA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2120",
+        "PR1050558-5733",
+        "PR1050558-5984"
+      ]
+    },
+    "CLONE": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1317",
+        "PR1050558-2472",
+        "PR1050558-4143"
+      ]
+    },
+    "MG": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1676",
+        "PR1050558-3463",
+        "PR1050558-3464"
+      ]
+    },
+    "MOR": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1676",
+        "PR1050558-3463",
+        "PR1050558-3464"
+      ]
+    },
+    "BAA": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4051",
+        "PR1050558-4490",
+        "PR1050558-4563"
+      ]
+    },
+    "DUE": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1798",
+        "PR1050558-2143",
+        "PR1050558-4012"
+      ]
+    },
+    "RUL": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4175",
+        "PR1050558-5788",
+        "PR1050558-6002"
+      ]
+    },
+    "AR": {
+      "expansion": "Assigned Resource",
+      "source": "object_initials",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-167",
+        "PR1050558-234",
+        "PR1050558-4175"
+      ]
+    },
+    "EDRC": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2081",
+        "PR1050558-4175",
+        "PR1050558-614"
+      ]
+    },
+    "PAPS": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1097",
+        "PR1050558-4417",
+        "PR1050558-5859"
+      ]
+    },
+    "MO": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-234",
+        "PR1050558-4447",
+        "PR1050558-614"
+      ]
+    },
+    "MAIN": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4538",
+        "PR1050558-4561",
+        "PR1050558-5169"
+      ]
+    },
+    "NEXT": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4716",
+        "PR1050558-4718",
+        "PR1050558-5003"
+      ]
+    },
+    "CCE": {
+      "expansion": "Contracting Corporate Entity",
+      "source": "inline_text",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4908",
+        "PR1050558-6386",
+        "PR1050558-6387"
+      ]
+    },
+    "YYYY": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-219",
+        "PR1050558-5594",
+        "PR1050558-615"
+      ]
+    },
+    "MM": {
+      "expansion": "ML Model",
+      "source": "object_initials",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-219",
+        "PR1050558-5594",
+        "PR1050558-615"
+      ]
+    },
+    "HWL": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-5873",
+        "PR1050558-6237",
+        "PR1050558-6260"
+      ]
+    },
+    "DM": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1113",
+        "PR1050558-1256",
+        "PR1050558-5921"
+      ]
+    },
+    "LDW": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2218",
+        "PR1050558-6416",
+        "PR1050558-6425"
+      ]
+    },
+    "TC": {
+      "expansion": "Tracked Communication",
+      "source": "object_initials",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-123",
+        "PR1050558-144",
+        "PR1050558-83"
+      ]
+    },
+    "NPPES": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-192",
+        "PR1050558-296",
+        "PR1050558-386"
+      ]
+    },
+    "LWC": {
+      "expansion": null,
+      "source": "unknown",
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-210",
+        "PR1050558-370",
+        "PR1050558-666"
+      ]
+    }
+  },
+  "personas": {
+    "recruiter": {
+      "story_count": 91,
+      "example_stories": [
+        "PR1050558-107",
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1103",
+        "PR1050558-1108"
+      ]
+    },
+    "system administrator": {
+      "story_count": 90,
+      "example_stories": [
+        "PR1050558-1257",
+        "PR1050558-1305",
+        "PR1050558-1649",
+        "PR1050558-1651",
+        "PR1050558-1709"
+      ]
+    },
+    "legal team member": {
+      "story_count": 38,
+      "example_stories": [
+        "PR1050558-1582",
+        "PR1050558-168",
+        "PR1050558-1683",
+        "PR1050558-1684",
+        "PR1050558-1707"
+      ]
+    },
+    "integration user": {
+      "story_count": 35,
+      "example_stories": [
+        "PR1050558-1387",
+        "PR1050558-1589",
+        "PR1050558-1710",
+        "PR1050558-1716",
+        "PR1050558-1747"
+      ]
+    },
+    "medical staff liaison": {
+      "story_count": 23,
+      "example_stories": [
+        "PR1050558-1256",
+        "PR1050558-1364",
+        "PR1050558-145",
+        "PR1050558-2011",
+        "PR1050558-2015"
+      ]
+    },
+    "sales vp": {
+      "story_count": 22,
+      "example_stories": [
+        "PR1050558-1073",
+        "PR1050558-1568",
+        "PR1050558-1667",
+        "PR1050558-1675",
+        "PR1050558-1676"
+      ]
+    },
+    "clinician contracting specialist": {
+      "story_count": 22,
+      "example_stories": [
+        "PR1050558-1369",
+        "PR1050558-1704",
+        "PR1050558-1717",
+        "PR1050558-1718",
+        "PR1050558-1809"
+      ]
+    },
+    "data quality team member": {
+      "story_count": 22,
+      "example_stories": [
+        "PR1050558-1074",
+        "PR1050558-1138",
+        "PR1050558-1580",
+        "PR1050558-1720",
+        "PR1050558-1722"
+      ]
+    },
+    "corporate support user": {
+      "story_count": 22,
+      "example_stories": [
+        "PR1050558-1112",
+        "PR1050558-1628",
+        "PR1050558-1792",
+        "PR1050558-193",
+        "PR1050558-245"
+      ]
+    },
+    "sfo": {
+      "story_count": 19,
+      "example_stories": [
+        "PR1050558-1415",
+        "PR1050558-1419",
+        "PR1050558-1682",
+        "PR1050558-1739",
+        "PR1050558-1740"
+      ]
+    },
+    "msl": {
+      "story_count": 14,
+      "example_stories": [
+        "PR1050558-1660",
+        "PR1050558-1708",
+        "PR1050558-1719",
+        "PR1050558-1727",
+        "PR1050558-1728"
+      ]
+    },
+    "clinician": {
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1094",
+        "PR1050558-1095",
+        "PR1050558-1096",
+        "PR1050558-1097"
+      ]
+    },
+    "implementation specialist": {
+      "story_count": 12,
+      "example_stories": [
+        "PR1050558-1678",
+        "PR1050558-1679",
+        "PR1050558-2087",
+        "PR1050558-2139",
+        "PR1050558-313"
+      ]
+    },
+    "payroll team member": {
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-1173",
+        "PR1050558-1243",
+        "PR1050558-1367",
+        "PR1050558-2108",
+        "PR1050558-249"
+      ]
+    },
+    "business development associate": {
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-1111",
+        "PR1050558-168",
+        "PR1050558-205",
+        "PR1050558-2081",
+        "PR1050558-340"
+      ]
+    },
+    "clinician contract specialist": {
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-2018",
+        "PR1050558-2235",
+        "PR1050558-2785",
+        "PR1050558-4308",
+        "PR1050558-4553"
+      ]
+    },
+    "hr team member": {
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-1733",
+        "PR1050558-2120",
+        "PR1050558-2162",
+        "PR1050558-2623",
+        "PR1050558-2815"
+      ]
+    },
+    "medical staff liaison - hcp": {
+      "story_count": 7,
+      "example_stories": [
+        "PR1050558-1102",
+        "PR1050558-219",
+        "PR1050558-246",
+        "PR1050558-358",
+        "PR1050558-421"
+      ]
+    },
+    "applicant": {
+      "story_count": 6,
+      "example_stories": [
+        "PR1050558-144",
+        "PR1050558-1583",
+        "PR1050558-204",
+        "PR1050558-236",
+        "PR1050558-384"
+      ]
+    },
+    "it user": {
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-165",
+        "PR1050558-166",
+        "PR1050558-201",
+        "PR1050558-30",
+        "PR1050558-77"
+      ]
+    },
+    "medical staff liaison - cpa": {
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-1435",
+        "PR1050558-146",
+        "PR1050558-147",
+        "PR1050558-1655",
+        "PR1050558-2225"
+      ]
+    },
+    "scp corporate support employee": {
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-226",
+        "PR1050558-234",
+        "PR1050558-337",
+        "PR1050558-434",
+        "PR1050558-833"
+      ]
+    },
+    "enrollment specialist": {
+      "story_count": 5,
+      "example_stories": [
+        "PR1050558-1172",
+        "PR1050558-1392",
+        "PR1050558-247",
+        "PR1050558-563",
+        "PR1050558-857"
+      ]
+    },
+    "internal corporate support user": {
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-2630",
+        "PR1050558-2670",
+        "PR1050558-2672",
+        "PR1050558-2673"
+      ]
+    },
+    "active clinician": {
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-1723",
+        "PR1050558-2126",
+        "PR1050558-319",
+        "PR1050558-3546"
+      ]
+    },
+    "end date": {
+      "story_count": 4,
+      "example_stories": [
+        "PR1050558-4863",
+        "PR1050558-4891",
+        "PR1050558-4892",
+        "PR1050558-4893"
+      ]
+    },
+    "msl - cpa": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2468",
+        "PR1050558-302",
+        "PR1050558-4123"
+      ]
+    },
+    "user": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1653",
+        "PR1050558-2633",
+        "PR1050558-889"
+      ]
+    },
+    "contracting specialist": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-3024",
+        "PR1050558-3211",
+        "PR1050558-3212"
+      ]
+    },
+    "clinician experience specialist": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-4198",
+        "PR1050558-5081",
+        "PR1050558-840"
+      ]
+    },
+    "vpo": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-2557",
+        "PR1050558-2892",
+        "PR1050558-4337"
+      ]
+    },
+    "msl-cpa": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-167",
+        "PR1050558-4593"
+      ]
+    },
+    "mulesoft integration developer": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1772",
+        "PR1050558-4727",
+        "PR1050558-4861"
+      ]
+    },
+    "prospective clinician": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1635",
+        "PR1050558-890",
+        "PR1050558-891"
+      ]
+    },
+    "corporate support team member": {
+      "story_count": 3,
+      "example_stories": [
+        "PR1050558-1703",
+        "PR1050558-2016",
+        "PR1050558-2783"
+      ]
+    },
+    "developer": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-164",
+        "PR1050558-20"
+      ]
+    },
+    "scp corporate support user": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-1726",
+        "PR1050558-4203"
+      ]
+    },
+    "cloned hpf": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-2210",
+        "PR1050558-2822"
+      ]
+    },
+    "admin": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-3606",
+        "PR1050558-4175"
+      ]
+    },
+    "result": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-4835",
+        "PR1050558-4944"
+      ]
+    },
+    "applicant in the core hc portal": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-1368",
+        "PR1050558-592"
+      ]
+    },
+    "msl team member": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-1113",
+        "PR1050558-1168"
+      ]
+    },
+    "system": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-1334",
+        "PR1050558-888"
+      ]
+    },
+    "practice operations contract": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-2628",
+        "PR1050558-2629"
+      ]
+    },
+    "rmo": {
+      "story_count": 2,
+      "example_stories": [
+        "PR1050558-883",
+        "PR1050558-884"
+      ]
+    }
+  },
+  "processes": {
+    "ta design complete": {
+      "source": "label",
+      "story_count": 526,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1056",
+        "PR1050558-1070",
+        "PR1050558-1072",
+        "PR1050558-1073"
+      ]
+    },
+    "scp health cloud": {
+      "source": "label",
+      "story_count": 254,
+      "example_stories": [
+        "PR1050558-3674",
+        "PR1050558-3783",
+        "PR1050558-3797",
+        "PR1050558-3960",
+        "PR1050558-3991"
+      ]
+    },
+    "client 360": {
+      "source": "epic",
+      "story_count": 240,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1057",
+        "PR1050558-1073",
+        "PR1050558-1090",
+        "PR1050558-1098"
+      ]
+    },
+    "scpuat ticket": {
+      "source": "label",
+      "story_count": 228,
+      "example_stories": [
+        "PR1050558-3600",
+        "PR1050558-3605",
+        "PR1050558-3606",
+        "PR1050558-3608",
+        "PR1050558-3609"
+      ]
+    },
+    "provider contracting": {
+      "source": "epic",
+      "story_count": 215,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1103",
+        "PR1050558-1108",
+        "PR1050558-1109"
+      ]
+    },
+    "ready for sprint": {
+      "source": "label",
+      "story_count": 177,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-107",
+        "PR1050558-1074",
+        "PR1050558-1103",
+        "PR1050558-1108"
+      ]
+    },
+    "scpprod ticket": {
+      "source": "label",
+      "story_count": 138,
+      "example_stories": [
+        "PR1050558-5140",
+        "PR1050558-5227",
+        "PR1050558-5412",
+        "PR1050558-5414",
+        "PR1050558-5415"
+      ]
+    },
+    "scpuat enhancement": {
+      "source": "label",
+      "story_count": 131,
+      "example_stories": [
+        "PR1050558-2908",
+        "PR1050558-3441",
+        "PR1050558-3615",
+        "PR1050558-3616",
+        "PR1050558-3623"
+      ]
+    },
+    "provider onboarding": {
+      "source": "epic",
+      "story_count": 110,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-1102",
+        "PR1050558-1113",
+        "PR1050558-1172",
+        "PR1050558-1237"
+      ]
+    },
+    "provider offboarding": {
+      "source": "epic",
+      "story_count": 91,
+      "example_stories": [
+        "PR1050558-1580",
+        "PR1050558-1660",
+        "PR1050558-1707",
+        "PR1050558-1727",
+        "PR1050558-1728"
+      ]
+    },
+    "scp hypercare bug": {
+      "source": "label",
+      "story_count": 86,
+      "example_stories": [
+        "PR1050558-5448",
+        "PR1050558-5449",
+        "PR1050558-5450",
+        "PR1050558-5451",
+        "PR1050558-5486"
+      ]
+    },
+    "platform readiness": {
+      "source": "epic",
+      "story_count": 85,
+      "example_stories": [
+        "PR1050558-1387",
+        "PR1050558-1628",
+        "PR1050558-164",
+        "PR1050558-165",
+        "PR1050558-1651"
+      ]
+    },
+    "working as expected": {
+      "source": "label",
+      "story_count": 81,
+      "example_stories": [
+        "PR1050558-3608",
+        "PR1050558-3620",
+        "PR1050558-3622",
+        "PR1050558-3669",
+        "PR1050558-3673"
+      ]
+    },
+    "provider recruiting": {
+      "source": "epic",
+      "story_count": 73,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1112",
+        "PR1050558-199",
+        "PR1050558-2149",
+        "PR1050558-2164"
+      ]
+    },
+    "client contracting": {
+      "source": "label",
+      "story_count": 71,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1073",
+        "PR1050558-1366",
+        "PR1050558-1419",
+        "PR1050558-1676"
+      ]
+    },
+    "provider 360": {
+      "source": "epic",
+      "story_count": 68,
+      "example_stories": [
+        "PR1050558-107",
+        "PR1050558-1074",
+        "PR1050558-1168",
+        "PR1050558-123",
+        "PR1050558-1305"
+      ]
+    },
+    "offboarding": {
+      "source": "title_gerund",
+      "story_count": 64,
+      "example_stories": [
+        "PR1050558-1653",
+        "PR1050558-1727",
+        "PR1050558-1728",
+        "PR1050558-1733",
+        "PR1050558-1775"
+      ]
+    },
+    "onboarding": {
+      "source": "title_gerund",
+      "story_count": 58,
+      "example_stories": [
+        "PR1050558-1076",
+        "PR1050558-1237",
+        "PR1050558-1256",
+        "PR1050558-1362",
+        "PR1050558-1364"
+      ]
+    },
+    "build review complete": {
+      "source": "label",
+      "story_count": 55,
+      "example_stories": [
+        "PR1050558-1102",
+        "PR1050558-1369",
+        "PR1050558-1653",
+        "PR1050558-1675",
+        "PR1050558-1676"
+      ]
+    },
+    "provider maintenance": {
+      "source": "epic",
+      "story_count": 46,
+      "example_stories": [
+        "PR1050558-1725",
+        "PR1050558-1726",
+        "PR1050558-2119",
+        "PR1050558-2120",
+        "PR1050558-2557"
+      ]
+    },
+    "provider portal": {
+      "source": "epic",
+      "story_count": 43,
+      "example_stories": [
+        "PR1050558-1094",
+        "PR1050558-1095",
+        "PR1050558-1096",
+        "PR1050558-1097",
+        "PR1050558-1368"
+      ]
+    },
+    "scp hypercare enhancement": {
+      "source": "label",
+      "story_count": 41,
+      "example_stories": [
+        "PR1050558-5227",
+        "PR1050558-5452",
+        "PR1050558-5456",
+        "PR1050558-5457",
+        "PR1050558-5493"
+      ]
+    },
+    "practice operations": {
+      "source": "label",
+      "story_count": 38,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1366",
+        "PR1050558-1773",
+        "PR1050558-2137",
+        "PR1050558-2142"
+      ]
+    },
+    "scheduling and pay": {
+      "source": "epic",
+      "story_count": 38,
+      "example_stories": [
+        "PR1050558-1173",
+        "PR1050558-1243",
+        "PR1050558-1367",
+        "PR1050558-1415",
+        "PR1050558-1419"
+      ]
+    },
+    "client maintenance": {
+      "source": "label",
+      "story_count": 34,
+      "example_stories": [
+        "PR1050558-1682",
+        "PR1050558-1739",
+        "PR1050558-1740",
+        "PR1050558-2659",
+        "PR1050558-2793"
+      ]
+    },
+    "perficient external": {
+      "source": "label",
+      "story_count": 32,
+      "example_stories": [
+        "PR1050558-3624",
+        "PR1050558-3663",
+        "PR1050558-3767",
+        "PR1050558-4350",
+        "PR1050558-4351"
+      ]
+    },
+    "sfqa completed": {
+      "source": "label",
+      "story_count": 31,
+      "example_stories": [
+        "PR1050558-3616",
+        "PR1050558-4008",
+        "PR1050558-4009",
+        "PR1050558-4010",
+        "PR1050558-4012"
+      ]
+    },
+    "contracting": {
+      "source": "title_gerund",
+      "story_count": 29,
+      "example_stories": [
+        "PR1050558-1164",
+        "PR1050558-1165",
+        "PR1050558-1676",
+        "PR1050558-1799",
+        "PR1050558-2118"
+      ]
+    },
+    "client contract": {
+      "source": "label",
+      "story_count": 28,
+      "example_stories": [
+        "PR1050558-1073",
+        "PR1050558-1677",
+        "PR1050558-1736",
+        "PR1050558-2142",
+        "PR1050558-2441"
+      ]
+    },
+    "hyper care release eligible": {
+      "source": "label",
+      "story_count": 28,
+      "example_stories": [
+        "PR1050558-4744",
+        "PR1050558-4921",
+        "PR1050558-5001",
+        "PR1050558-5083",
+        "PR1050558-5098"
+      ]
+    },
+    "client onboarding": {
+      "source": "epic",
+      "story_count": 26,
+      "example_stories": [
+        "PR1050558-1678",
+        "PR1050558-1679",
+        "PR1050558-1802",
+        "PR1050558-2087",
+        "PR1050558-2088"
+      ]
+    },
+    "uat smoke testing": {
+      "source": "label",
+      "story_count": 25,
+      "example_stories": [
+        "PR1050558-3600",
+        "PR1050558-3605",
+        "PR1050558-3606",
+        "PR1050558-3608",
+        "PR1050558-3609"
+      ]
+    },
+    "asymbl external": {
+      "source": "label",
+      "story_count": 25,
+      "example_stories": [
+        "PR1050558-3672",
+        "PR1050558-3770",
+        "PR1050558-4126",
+        "PR1050558-4390",
+        "PR1050558-4596"
+      ]
+    },
+    "scp data migration": {
+      "source": "label",
+      "story_count": 23,
+      "example_stories": [
+        "PR1050558-5323",
+        "PR1050558-5324",
+        "PR1050558-5366",
+        "PR1050558-5519",
+        "PR1050558-5545"
+      ]
+    },
+    "clinician impact": {
+      "source": "label",
+      "story_count": 20,
+      "example_stories": [
+        "PR1050558-1682",
+        "PR1050558-2916",
+        "PR1050558-3024",
+        "PR1050558-3027",
+        "PR1050558-3187"
+      ]
+    },
+    "agentforce": {
+      "source": "epic",
+      "story_count": 19,
+      "example_stories": [
+        "PR1050558-3478",
+        "PR1050558-3605",
+        "PR1050558-3606",
+        "PR1050558-3785",
+        "PR1050558-3786"
+      ]
+    },
+    "scp mule soft": {
+      "source": "label",
+      "story_count": 15,
+      "example_stories": [
+        "PR1050558-4531",
+        "PR1050558-4590",
+        "PR1050558-4592",
+        "PR1050558-4611",
+        "PR1050558-4612"
+      ]
+    },
+    "facility term": {
+      "source": "label",
+      "story_count": 14,
+      "example_stories": [
+        "PR1050558-1683",
+        "PR1050558-1684",
+        "PR1050558-1800",
+        "PR1050558-2634",
+        "PR1050558-2635"
+      ]
+    },
+    "populating": {
+      "source": "title_gerund",
+      "story_count": 14,
+      "example_stories": [
+        "PR1050558-3329",
+        "PR1050558-3990",
+        "PR1050558-4505",
+        "PR1050558-4628",
+        "PR1050558-4867"
+      ]
+    },
+    "opportunity cycle": {
+      "source": "label",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-1111",
+        "PR1050558-1568",
+        "PR1050558-1675",
+        "PR1050558-1798",
+        "PR1050558-2081"
+      ]
+    },
+    "scp agentforce": {
+      "source": "label",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-3783",
+        "PR1050558-3785",
+        "PR1050558-3786",
+        "PR1050558-3787",
+        "PR1050558-3901"
+      ]
+    },
+    "scpe2e ticket": {
+      "source": "label",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-4590",
+        "PR1050558-4592",
+        "PR1050558-4611",
+        "PR1050558-4612",
+        "PR1050558-4613"
+      ]
+    },
+    "agreement approval process": {
+      "source": "label",
+      "story_count": 13,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1103",
+        "PR1050558-1108",
+        "PR1050558-1109"
+      ]
+    },
+    "cloning": {
+      "source": "title_gerund",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-1419",
+        "PR1050558-2227",
+        "PR1050558-2593",
+        "PR1050558-2965",
+        "PR1050558-3449"
+      ]
+    },
+    "phase 1 cancelled": {
+      "source": "epic",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-3988",
+        "PR1050558-4446",
+        "PR1050558-4611",
+        "PR1050558-4765",
+        "PR1050558-4794"
+      ]
+    },
+    "creating": {
+      "source": "title_gerund",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-1415",
+        "PR1050558-1577",
+        "PR1050558-2212",
+        "PR1050558-2649",
+        "PR1050558-281"
+      ]
+    },
+    "updating": {
+      "source": "title_gerund",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-2202",
+        "PR1050558-2998",
+        "PR1050558-4474",
+        "PR1050558-465",
+        "PR1050558-4952"
+      ]
+    },
+    "scp prod enhancement": {
+      "source": "label",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-5634",
+        "PR1050558-5641",
+        "PR1050558-5648",
+        "PR1050558-5863",
+        "PR1050558-5870"
+      ]
+    },
+    "provider data": {
+      "source": "label",
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-168",
+        "PR1050558-192",
+        "PR1050558-193",
+        "PR1050558-195",
+        "PR1050558-196"
+      ]
+    },
+    "in ta design": {
+      "source": "label",
+      "story_count": 10,
+      "example_stories": [
+        "PR1050558-2633",
+        "PR1050558-2826",
+        "PR1050558-3478",
+        "PR1050558-4172",
+        "PR1050558-5208"
+      ]
+    }
+  },
+  "integrations": {
+    "pi": {
+      "source": "namespace:pi__Category_Contact_Score__c",
+      "story_count": 389,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1056",
+        "PR1050558-107",
+        "PR1050558-1070",
+        "PR1050558-1072"
+      ]
+    },
+    "LID": {
+      "source": "namespace:LID__Log__c",
+      "story_count": 134,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-107",
+        "PR1050558-123",
+        "PR1050558-1332",
+        "PR1050558-1358"
+      ]
+    },
+    "bpats": {
+      "source": "namespace:bpats__Interview_Feedback__c",
+      "story_count": 40,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1750",
+        "PR1050558-1789",
+        "PR1050558-2130",
+        "PR1050558-2472"
+      ]
+    },
+    "MuleSoft": {
+      "source": "ecosystem_term",
+      "story_count": 14,
+      "example_stories": [
+        "PR1050558-1772",
+        "PR1050558-232",
+        "PR1050558-235",
+        "PR1050558-3573",
+        "PR1050558-3614"
+      ]
+    },
+    "Apttus": {
+      "source": "namespace:Apttus__APTS_Template__c",
+      "story_count": 11,
+      "example_stories": [
+        "PR1050558-4351",
+        "PR1050558-4412",
+        "PR1050558-4540",
+        "PR1050558-4710",
+        "PR1050558-4720"
+      ]
+    },
+    "inov8": {
+      "source": "namespace:inov8__PMT_Phase__c",
+      "story_count": 8,
+      "example_stories": [
+        "PR1050558-1679",
+        "PR1050558-3027",
+        "PR1050558-3517",
+        "PR1050558-4051",
+        "PR1050558-4716"
+      ]
+    }
+  },
+  "bigrams": [
+    {
+      "phrase": "corporate support",
+      "story_count": 597,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1056",
+        "PR1050558-1057"
+      ]
+    },
+    {
+      "phrase": "support apps",
+      "story_count": 393,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1072",
+        "PR1050558-1074"
+      ]
+    },
+    {
+      "phrase": "smart link",
+      "story_count": 312,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1070",
+        "PR1050558-1073"
+      ]
+    },
+    {
+      "phrase": "clinician contract",
+      "story_count": 260,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1103"
+      ]
+    },
+    {
+      "phrase": "lightning force",
+      "story_count": 242,
+      "example_stories": [
+        "PR1050558-1358",
+        "PR1050558-1362",
+        "PR1050558-1365"
+      ]
+    },
+    {
+      "phrase": "expected result",
+      "story_count": 239,
+      "example_stories": [
+        "PR1050558-1057",
+        "PR1050558-1090",
+        "PR1050558-1098"
+      ]
+    },
+    {
+      "phrase": "service account",
+      "story_count": 235,
+      "example_stories": [
+        "PR1050558-1102",
+        "PR1050558-1111",
+        "PR1050558-1113"
+      ]
+    },
+    {
+      "phrase": "actual result",
+      "story_count": 235,
+      "example_stories": [
+        "PR1050558-1057",
+        "PR1050558-1090",
+        "PR1050558-1098"
+      ]
+    },
+    {
+      "phrase": "uat bug",
+      "story_count": 220,
+      "example_stories": [
+        "PR1050558-3600",
+        "PR1050558-3605",
+        "PR1050558-3606"
+      ]
+    },
+    {
+      "phrase": "sandbox lightning",
+      "story_count": 183,
+      "example_stories": [
+        "PR1050558-1358",
+        "PR1050558-1362",
+        "PR1050558-1365"
+      ]
+    },
+    {
+      "phrase": "team member",
+      "story_count": 178,
+      "example_stories": [
+        "PR1050558-1074",
+        "PR1050558-1102",
+        "PR1050558-1112"
+      ]
+    },
+    {
+      "phrase": "client contract",
+      "story_count": 155,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1090",
+        "PR1050558-1098"
+      ]
+    },
+    {
+      "phrase": "reproduce login",
+      "story_count": 155,
+      "example_stories": [
+        "PR1050558-1057",
+        "PR1050558-1090",
+        "PR1050558-1098"
+      ]
+    },
+    {
+      "phrase": "person account",
+      "story_count": 145,
+      "example_stories": [
+        "PR1050558-1094",
+        "PR1050558-1256",
+        "PR1050558-1305"
+      ]
+    },
+    {
+      "phrase": "start date",
+      "story_count": 145,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-1103",
+        "PR1050558-1108"
+      ]
+    },
+    {
+      "phrase": "healthcare practitioner",
+      "story_count": 130,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1094"
+      ]
+    },
+    {
+      "phrase": "clinician contracting",
+      "story_count": 130,
+      "example_stories": [
+        "PR1050558-1164",
+        "PR1050558-1165",
+        "PR1050558-1369"
+      ]
+    },
+    {
+      "phrase": "practitioner facility",
+      "story_count": 128,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1094"
+      ]
+    },
+    {
+      "phrase": "corehc sandbox",
+      "story_count": 122,
+      "example_stories": [
+        "PR1050558-2081",
+        "PR1050558-3240",
+        "PR1050558-3546"
+      ]
+    },
+    {
+      "phrase": "contracting specialist",
+      "story_count": 121,
+      "example_stories": [
+        "PR1050558-1164",
+        "PR1050558-1165",
+        "PR1050558-1369"
+      ]
+    },
+    {
+      "phrase": "uat enhancement",
+      "story_count": 113,
+      "example_stories": [
+        "PR1050558-2908",
+        "PR1050558-3615",
+        "PR1050558-3616"
+      ]
+    },
+    {
+      "phrase": "contract status",
+      "story_count": 109,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1256",
+        "PR1050558-1317"
+      ]
+    },
+    {
+      "phrase": "lightning contract",
+      "story_count": 108,
+      "example_stories": [
+        "PR1050558-1715",
+        "PR1050558-1812",
+        "PR1050558-2144"
+      ]
+    },
+    {
+      "phrase": "permission set",
+      "story_count": 105,
+      "example_stories": [
+        "PR1050558-1138",
+        "PR1050558-1173",
+        "PR1050558-1257"
+      ]
+    },
+    {
+      "phrase": "support console",
+      "story_count": 105,
+      "example_stories": [
+        "PR1050558-1028",
+        "PR1050558-1056",
+        "PR1050558-1057"
+      ]
+    },
+    {
+      "phrase": "practice operations",
+      "story_count": 97,
+      "example_stories": [
+        "PR1050558-1584",
+        "PR1050558-1682",
+        "PR1050558-1739"
+      ]
+    },
+    {
+      "phrase": "employment type",
+      "story_count": 93,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1095",
+        "PR1050558-1317"
+      ]
+    },
+    {
+      "phrase": "status executed",
+      "story_count": 90,
+      "example_stories": [
+        "PR1050558-1056",
+        "PR1050558-1070",
+        "PR1050558-1317"
+      ]
+    },
+    {
+      "phrase": "prod bug",
+      "story_count": 90,
+      "example_stories": [
+        "PR1050558-5412",
+        "PR1050558-5414",
+        "PR1050558-5416"
+      ]
+    },
+    {
+      "phrase": "guided experience",
+      "story_count": 89,
+      "example_stories": [
+        "PR1050558-1103",
+        "PR1050558-1108",
+        "PR1050558-1109"
+      ]
+    },
+    {
+      "phrase": "contract start",
+      "story_count": 84,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1103",
+        "PR1050558-1108"
+      ]
+    },
+    {
+      "phrase": "clinician experience",
+      "story_count": 81,
+      "example_stories": [
+        "PR1050558-1362",
+        "PR1050558-1364",
+        "PR1050558-1682"
+      ]
+    },
+    {
+      "phrase": "status draft",
+      "story_count": 80,
+      "example_stories": [
+        "PR1050558-1070",
+        "PR1050558-1091",
+        "PR1050558-1256"
+      ]
+    },
+    {
+      "phrase": "role recruiter",
+      "story_count": 79,
+      "example_stories": [
+        "PR1050558-4611",
+        "PR1050558-4612",
+        "PR1050558-4629"
+      ]
+    },
+    {
+      "phrase": "end date",
+      "story_count": 76,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-123",
+        "PR1050558-1317"
+      ]
+    },
+    {
+      "phrase": "security matrix",
+      "story_count": 75,
+      "example_stories": [
+        "PR1050558-1072",
+        "PR1050558-1138",
+        "PR1050558-1172"
+      ]
+    },
+    {
+      "phrase": "open clinician",
+      "story_count": 75,
+      "example_stories": [
+        "PR1050558-1076",
+        "PR1050558-1153",
+        "PR1050558-1164"
+      ]
+    },
+    {
+      "phrase": "triggered flow",
+      "story_count": 74,
+      "example_stories": [
+        "PR1050558-1073",
+        "PR1050558-1168",
+        "PR1050558-1369"
+      ]
+    },
+    {
+      "phrase": "medical staff",
+      "story_count": 72,
+      "example_stories": [
+        "PR1050558-1102",
+        "PR1050558-1112",
+        "PR1050558-1256"
+      ]
+    },
+    {
+      "phrase": "quality team",
+      "story_count": 71,
+      "example_stories": [
+        "PR1050558-1074",
+        "PR1050558-1102",
+        "PR1050558-1112"
+      ]
+    },
+    {
+      "phrase": "clinician contracts",
+      "story_count": 69,
+      "example_stories": [
+        "PR1050558-1138",
+        "PR1050558-1240",
+        "PR1050558-1305"
+      ]
+    },
+    {
+      "phrase": "staff liaison",
+      "story_count": 68,
+      "example_stories": [
+        "PR1050558-1102",
+        "PR1050558-1112",
+        "PR1050558-1256"
+      ]
+    },
+    {
+      "phrase": "lightning account",
+      "story_count": 68,
+      "example_stories": [
+        "PR1050558-1358",
+        "PR1050558-1362",
+        "PR1050558-1365"
+      ]
+    },
+    {
+      "phrase": "experience specialist",
+      "story_count": 67,
+      "example_stories": [
+        "PR1050558-1362",
+        "PR1050558-1364",
+        "PR1050558-1682"
+      ]
+    },
+    {
+      "phrase": "legal team",
+      "story_count": 64,
+      "example_stories": [
+        "PR1050558-1582",
+        "PR1050558-1678",
+        "PR1050558-168"
+      ]
+    },
+    {
+      "phrase": "support app",
+      "story_count": 62,
+      "example_stories": [
+        "PR1050558-107",
+        "PR1050558-1076",
+        "PR1050558-1112"
+      ]
+    },
+    {
+      "phrase": "prod enhancement",
+      "story_count": 62,
+      "example_stories": [
+        "PR1050558-5415",
+        "PR1050558-5441",
+        "PR1050558-5456"
+      ]
+    },
+    {
+      "phrase": "account team",
+      "story_count": 61,
+      "example_stories": [
+        "PR1050558-1309",
+        "PR1050558-1362",
+        "PR1050558-1364"
+      ]
+    },
+    {
+      "phrase": "role clinician",
+      "story_count": 60,
+      "example_stories": [
+        "PR1050558-1364",
+        "PR1050558-1723",
+        "PR1050558-2557"
+      ]
+    },
+    {
+      "phrase": "tester maci",
+      "story_count": 59,
+      "example_stories": [
+        "PR1050558-3600",
+        "PR1050558-3605",
+        "PR1050558-3606"
+      ]
+    }
+  ]
+}

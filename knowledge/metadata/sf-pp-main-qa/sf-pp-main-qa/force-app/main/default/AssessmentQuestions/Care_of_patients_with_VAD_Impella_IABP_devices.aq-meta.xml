@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Care of patients with VAD/ Impella/IABP devices</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Care of patients with VAD/ Impella/IABP devices</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Care_of_patients_with_VAD_Impella_IABP_devices</developerName>
+    <name>Care of patients with VAD/ Impella/IABP devices</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

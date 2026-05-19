@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Implement</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Implement for Core services.</description>
+    <errorConditionFormula>NOT(RecordType.Name = &quot;Patient Engagement Opportunity&quot;) &amp;&amp;
+(ISPICKVAL(StageName, &quot;Implement&quot;)) &amp;&amp; 
+( ISBLANK(Who_Won__c))</errorConditionFormula>
+    <errorMessage>Required Fields:  Who Won.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Health Problem Management and Care Coordination in Post Acute Setting</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Manage health problems by developing an individualized plan of care, prescribing medications or treatments, obtaining consultations and referrals, and coordinating health care services in collaboration with the post acute setting.</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Health_Problem_Management_and_Care_Coordination_in_Post_Acute_Setting</developerName>
+    <name>Health Problem Management and Care Coordination in Post Acute Setting</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

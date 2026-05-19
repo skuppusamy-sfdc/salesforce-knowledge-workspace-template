@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Schedule(d) Conference Call</fullName>
+        <default>false</default>
+        <label>Schedule(d) Conference Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Schedule(d) Site Visit</fullName>
+        <default>false</default>
+        <label>Schedule(d) Site Visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Marketing Info</fullName>
+        <default>false</default>
+        <label>Send Marketing Info</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Hospital Questionnaire</fullName>
+        <default>false</default>
+        <label>Send Hospital Questionnaire</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Thank You</fullName>
+        <default>false</default>
+        <label>Send Thank You</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow up</fullName>
+        <default>false</default>
+        <label>Follow up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Info Due Process</fullName>
+        <default>false</default>
+        <label>Info Due Process</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NPI Number Missing</fullName>
+        <default>false</default>
+        <label>NPI Number Missing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Onboarding</fullName>
+        <default>false</default>
+        <label>Client Onboarding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Okta Integration Failure</fullName>
+        <default>false</default>
+        <label>Okta Integration Failure</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annual Minutes</fullName>
+        <default>false</default>
+        <label>Annual Minutes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annual Report</fullName>
+        <default>false</default>
+        <label>Annual Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Biannual Report</fullName>
+        <default>false</default>
+        <label>Biannual Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business License</fullName>
+        <default>false</default>
+        <label>Business License</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Franchise Tax</fullName>
+        <default>false</default>
+        <label>Franchise Tax</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Licensing</fullName>
+        <default>false</default>
+        <label>Licensing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partnership Renewal</fullName>
+        <default>false</default>
+        <label>Partnership Renewal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tax Return</fullName>
+        <default>false</default>
+        <label>Tax Return</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UCC Renewal</fullName>
+        <default>false</default>
+        <label>UCC Renewal</label>
+    </standardValue>
+</StandardValueSet>

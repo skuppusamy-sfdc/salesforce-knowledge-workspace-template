@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access needed to perform Clinician Onboarding activities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Clinician Onboarding</label>
+    <permissionSets>Create_Reports_and_Dashboards</permissionSets>
+    <permissionSets>Manage_Clinician_Contracts</permissionSets>
+    <permissionSets>Manage_Clinician_Identifiers_Credentials_Specialties</permissionSets>
+    <permissionSets>Manage_Clinician_Onboarding</permissionSets>
+    <permissionSets>Manage_Clinician_to_Facility_Relationships</permissionSets>
+    <permissionSets>Manage_Clinicians</permissionSets>
+    <permissionSets>Manage_Collaborative_Practice_Agreements</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

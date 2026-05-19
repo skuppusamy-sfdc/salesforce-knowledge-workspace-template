@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NO_START_WITHIN_5DAYS</fullName>
+    <active>true</active>
+    <description>checks to see if start is within 5 days of a holiday</description>
+    <errorConditionFormula>OR(
+    ABS(Target_Contract_Start_Date__c - DATE(2025, 1, 1) ) &lt;= 5,  /* New Year&apos;s Day */
+    ABS( Target_Contract_Start_Date__c - DATE(2025, 1, 20) ) &lt;= 5,  /* MLK Day */
+    ABS( Target_Contract_Start_Date__c - DATE(2025, 11, 27) ) &lt;= 5,  /* Thanksgiving Day */
+    ABS( Target_Contract_Start_Date__c - DATE(2025, 11, 28) ) &lt;= 5,  /* Day After Thanksgiving */
+    ABS( Target_Contract_Start_Date__c - DATE(2025, 12, 24) ) &lt;= 5,  /* Christmas Eve */
+    ABS( Target_Contract_Start_Date__c - DATE(2025, 12, 25) ) &lt;= 5  /* Christmas Day */
+)</errorConditionFormula>
+    <errorDisplayField>Target_Contract_Start_Date__c</errorDisplayField>
+    <errorMessage>Start Date cannot be within 5 days of a holiday.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prospect_Medical_Holdings</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>texcellency__DefHC_Network_Name__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PARENT_NAME</field>
+        <operation>contains</operation>
+        <value>Prospect Medical Holdings,Alta Los Angeles Hospitals,Crozer-Keystone Health Network,Eastern Connecticut Health Network,Prospect ChaterCare</value>
+    </filters>
+    <label>Prospect Medical Holdings</label>
+</ListView>

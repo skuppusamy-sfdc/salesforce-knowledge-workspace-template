@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;clinicianAccountDetails&quot; : [ {
+    &quot;LastName&quot; : &quot;ca4&quot;,
+    &quot;Id&quot; : &quot;0017x0000170Sr8AAE&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000wu7APAAY&quot;,
+    &quot;FirstName&quot; : &quot;test&quot;,
+    &quot;NPI__pc&quot; : 12345
+  }, {
+    &quot;LastName&quot; : &quot;Clinician&quot;,
+    &quot;Id&quot; : &quot;0017x0000170atPAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000wuHS1AAM&quot;,
+    &quot;FirstName&quot; : &quot;TEst&quot;,
+    &quot;NPI__pc&quot; : 1083940985
+  }, {
+    &quot;LastName&quot; : &quot;DevAcc&quot;,
+    &quot;Id&quot; : &quot;0017x0000171qrFAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;111222333&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000wvgtxAAA&quot;,
+    &quot;FirstName&quot; : &quot;Test&quot;
+  }, {
+    &quot;LastName&quot; : &quot;CA6&quot;,
+    &quot;Id&quot; : &quot;0017x00001790cYAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;1234567890&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000x1wxeAAA&quot;,
+    &quot;FirstName&quot; : &quot;test&quot;
+  }, {
+    &quot;LastName&quot; : &quot;CA5&quot;,
+    &quot;Id&quot; : &quot;0017x00001794ENAAY&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;1234567890&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000x1doYAAQ&quot;,
+    &quot;FirstName&quot; : &quot;test&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;abc@123.com&quot;,
+    &quot;LastName&quot; : &quot;ca8&quot;,
+    &quot;Id&quot; : &quot;0017x0000179DBFAA2&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000x1rmzAAA&quot;,
+    &quot;FirstName&quot; : &quot;test&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;abc@123.com&quot;,
+    &quot;LastName&quot; : &quot;ca7&quot;,
+    &quot;Id&quot; : &quot;0017x0000179JN5AAM&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000x1rd1AAA&quot;,
+    &quot;FirstName&quot; : &quot;test&quot;
+  }, {
+    &quot;LastName&quot; : &quot;ca9&quot;,
+    &quot;Id&quot; : &quot;0017x0000179VGBAA2&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000x21z9AAA&quot;,
+    &quot;FirstName&quot; : &quot;test&quot;,
+    &quot;NPI__pc&quot; : 23143243
+  }, {
+    &quot;LastName&quot; : &quot;Everdeen&quot;,
+    &quot;Id&quot; : &quot;0017x000017E1iuAAC&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000x5o2DAAQ&quot;,
+    &quot;FirstName&quot; : &quot;Katniss&quot;
+  }, {
+    &quot;LastName&quot; : &quot;jm&quot;,
+    &quot;Id&quot; : &quot;0017x000017LYlMAAW&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000xBVZZAA4&quot;,
+    &quot;FirstName&quot; : &quot;jm&quot;
+  }, {
+    &quot;LastName&quot; : &quot;ttestc1&quot;,
+    &quot;Id&quot; : &quot;0017x000017LhFsAAK&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000xBGcjAAG&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018gN7zAAE&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000y8kO5AAI&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;,
+    &quot;NPI__pc&quot; : 3433232333
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gkiosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018iZL8AAM&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3472238232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAleDAAS&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gtyuriosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018iexbAAA&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;30265383232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAtS5AAK&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gssm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018ihaRAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3212234232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAZ8QAAW&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018ioaIAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3212235232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAePpAAK&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@giosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018iwHhAAI&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3452234232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAkVFAA0&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@geiosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018ixC9AAI&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3472234232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAlCnAAK&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gwiosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018ixdZAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3422238232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAlzBAAS&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@griosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018iyGHAAY&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3426238232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAmnBAAS&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gtyiosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018iyPxAAI&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;34262383232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAms1AAC&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gteriosm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x000018j5CvAAI&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;34265383232&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yAsnlAAC&quot;,
+    &quot;FirstName&quot; : &quot;Harsh&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gmuukf.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x0000197lvoAAA&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;327822982942&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000ySuMTAA0&quot;,
+    &quot;FirstName&quot; : &quot;H&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gmf.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x00001983RFAAY&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3224982942&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yStAHAA0&quot;,
+    &quot;FirstName&quot; : &quot;H&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gmkf.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x00001984FFAAY&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;327824982942&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yStmzAAC&quot;,
+    &quot;FirstName&quot; : &quot;H&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;muskan.jain@salesforce.com&quot;,
+    &quot;LastName&quot; : &quot;user&quot;,
+    &quot;Id&quot; : &quot;0017x0000198aVFAAY&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yTFYzAAO&quot;,
+    &quot;FirstName&quot; : &quot;testPortalClinicain&quot;
+  }, {
+    &quot;LastName&quot; : &quot;V2&quot;,
+    &quot;Id&quot; : &quot;0017x0000198b6NAAQ&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yTFqkAAG&quot;,
+    &quot;FirstName&quot; : &quot;Test&quot;,
+    &quot;NPI__pc&quot; : 1083940985
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gjshhm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x0000199FQLAA2&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;32249243282942&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yTiW9AAK&quot;,
+    &quot;FirstName&quot; : &quot;H&quot;
+  }, {
+    &quot;PersonEmail&quot; : &quot;harsh@gddjshhm.com&quot;,
+    &quot;LastName&quot; : &quot;G&quot;,
+    &quot;Id&quot; : &quot;0017x0000199IuTAAU&quot;,
+    &quot;RecordTypeId&quot; : &quot;0127x00000GaDvBAAV&quot;,
+    &quot;PersonMobilePhone&quot; : &quot;3224933243282942&quot;,
+    &quot;PersonContactId&quot; : &quot;0037x00000yTkmTAAS&quot;,
+    &quot;FirstName&quot; : &quot;H&quot;
+  } ],
+  &quot;taxanomies&quot; : [ {
+    &quot;Name&quot; : &quot;&quot;,
+    &quot;Id&quot; : &quot;&quot;,
+    &quot;PractitionerId&quot; : &quot;&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>GETClinicianAndContractDetailsDM</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Clinician&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem6</globalKey>
+        <inputFieldName>RecordType.DeveloperName</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Draft&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem5</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem24</globalKey>
+        <inputFieldName>clinicianAccountDetails:PersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:PersonEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordId</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem4</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;New&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem8</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordId</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem7</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Clinician&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem9</globalKey>
+        <inputFieldName>RecordType.DeveloperName</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>3.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Approved&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem14</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ContractSize 0 &gt; true false IF</formulaConverted>
+        <formulaExpression>IF(ContractSize&gt;0,true,false)</formulaExpression>
+        <formulaResultPath>ContractPresent</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem17</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>2.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Clinician&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem12</globalKey>
+        <inputFieldName>RecordType.DeveloperName</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>3.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Clinician&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem15</globalKey>
+        <inputFieldName>RecordType.DeveloperName</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordId</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem23</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem25</globalKey>
+        <inputFieldName>clinicianAccountDetails:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Contract:Id ISNOTBLANK | var:Contract LISTSIZE 0 IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(Contract:Id),LISTSIZE(Contract),0)</formulaExpression>
+        <formulaResultPath>ContractSize</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem16</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Clinician&quot;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem18</globalKey>
+        <inputFieldName>RecordTypeName__c</inputFieldName>
+        <inputObjectName>Account</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem29</globalKey>
+        <inputFieldName>clinicianAccountDetails:MiddleName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:MiddleName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem35</globalKey>
+        <inputFieldName>clinicianAccountDetails:FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:FirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem43</globalKey>
+        <inputFieldName>ContractPresent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContractPresent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem42</globalKey>
+        <inputFieldName>ContractSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContractSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>2.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordId</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem10</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>3.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordId</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem13</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem34</globalKey>
+        <inputFieldName>clinicianAccountDetails:PersonMobilePhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:PersonMobilePhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>2.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Submitted&apos;</filterValue>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem11</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Contract</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem40</globalKey>
+        <inputFieldName>clinicianAccountDetails:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem37</globalKey>
+        <inputFieldName>clinicianAccountDetails:LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:LastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem38</globalKey>
+        <inputFieldName>clinicianAccountDetails:RecordTypeId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:RecordTypeId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem41</globalKey>
+        <inputFieldName>Contract:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Contract:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem36</globalKey>
+        <inputFieldName>clinicianAccountDetails:PersonContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:PersonContactId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GETClinicianAndContractDetailsDMCustom0jI7x00000026sXEAQItem39</globalKey>
+        <inputFieldName>clinicianAccountDetails:NPI__pc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GETClinicianAndContractDetailsDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>clinicianAccountDetails:NPI__pc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;recordId&quot; : &quot;0017x0000170atPAAQ&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>GETClinicianAndContractDetailsDM_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

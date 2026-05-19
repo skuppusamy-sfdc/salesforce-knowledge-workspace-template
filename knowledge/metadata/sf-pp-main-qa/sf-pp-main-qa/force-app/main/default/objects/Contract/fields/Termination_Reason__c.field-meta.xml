@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termination_Reason__c</fullName>
+    <label>Termination Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Financial Duress</fullName>
+                <default>false</default>
+                <label>Financial Duress</label>
+            </value>
+            <value>
+                <fullName>Recruitment &amp; Retention Problems</fullName>
+                <default>false</default>
+                <label>Recruitment &amp; Retention Problems</label>
+            </value>
+            <value>
+                <fullName>Provider Quality</fullName>
+                <default>false</default>
+                <label>Provider Quality</label>
+            </value>
+            <value>
+                <fullName>Change in Ownership</fullName>
+                <default>false</default>
+                <label>Change in Ownership</label>
+            </value>
+            <value>
+                <fullName>Ownership Pressure to Reduce Costs</fullName>
+                <default>false</default>
+                <label>Ownership Pressure to Reduce Costs</label>
+            </value>
+            <value>
+                <fullName>SG Subsidy Change Request</fullName>
+                <default>false</default>
+                <label>SG Subsidy Change Request</label>
+            </value>
+            <value>
+                <fullName>Integrating/Consolidating Vendors</fullName>
+                <default>false</default>
+                <label>Integrating/Consolidating Vendors</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

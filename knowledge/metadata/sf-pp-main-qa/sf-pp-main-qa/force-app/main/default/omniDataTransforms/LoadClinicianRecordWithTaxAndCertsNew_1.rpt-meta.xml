@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>true</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : &quot;&quot;,
+  &quot;PractitionerId&quot; : &quot;&quot;,
+  &quot;boardCertificationName&quot; : &quot;&quot;,
+  &quot;boardCertificationStatus&quot; : &quot;&quot;,
+  &quot;casedFirstNameFromNPPES&quot; : &quot;&quot;,
+  &quot;casedMiddleNameFromNPPES&quot; : &quot;&quot;,
+  &quot;casedLastNameFromNPPES&quot; : &quot;&quot;,
+  &quot;NPPESBasic&quot; : {
+    &quot;status&quot; : &quot;A&quot;,
+    &quot;last_updated&quot; : &quot;2021-07-14&quot;,
+    &quot;enumeration_date&quot; : &quot;2014-04-03&quot;,
+    &quot;sex&quot; : &quot;M&quot;,
+    &quot;sole_proprietor&quot; : &quot;NO&quot;,
+    &quot;middle_name&quot; : &quot;THOMAS&quot;,
+    &quot;last_name&quot; : &quot;VARANO&quot;,
+    &quot;certification_date&quot; : &quot;2021-05-07&quot;,
+    &quot;first_name&quot; : &quot;PAUL&quot;,
+    &quot;board_certification_name&quot; : &quot;Baord Certified&quot;,
+    &quot;board_certification_status&quot; : &quot;Certified&quot;,
+    &quot;current_npi_number&quot; : &quot;1245319599&quot;
+  },
+  &quot;BoardCertificationToBeCreated&quot; : {
+    &quot;Name&quot; : &quot;Board Certified&quot;,
+    &quot;CurrentCertificationDate&quot; : &quot;2017-05-01&quot;,
+    &quot;Id&quot; : &quot;0YS7x00000005VxGAI&quot;,
+    &quot;Status&quot; : &quot;Certified&quot;
+  },
+  &quot;TaxonomiesToBeUpserted&quot; : [ {
+    &quot;Name&quot; : &quot;TEST&quot;,
+    &quot;Id&quot; : &quot;0bP7x00000009uXEAQ&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x00000wuHS1AAM&quot;
+  }, {
+    &quot;desc&quot; : &quot;Internal Medicine&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;primary&quot; : false,
+    &quot;Name&quot; : &quot;Internal Medicine&quot;,
+    &quot;state&quot; : &quot;PA&quot;,
+    &quot;Id&quot; : &quot;0bP7x0000000BujEAE&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x00000wuHS1AAM&quot;,
+    &quot;code&quot; : &quot;207R00000X&quot;,
+    &quot;license&quot; : &quot;MD443150&quot;
+  }, {
+    &quot;desc&quot; : &quot;Hospitalist&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;primary&quot; : true,
+    &quot;Name&quot; : &quot;Hospitalist&quot;,
+    &quot;state&quot; : &quot;PA&quot;,
+    &quot;Id&quot; : &quot;0bP7x0000000BukEAE&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x00000wuHS1AAM&quot;,
+    &quot;code&quot; : &quot;208M00000X&quot;,
+    &quot;license&quot; : &quot;MD443150&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>&quot;&quot;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item2</globalKey>
+        <inputFieldName>casedMiddleNameFromNPPES</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MiddleName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item7</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item5</globalKey>
+        <inputFieldName>casedLastNameFromNPPES</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom8820</globalKey>
+        <inputFieldName>TaxonomiesToBeUpserted:TaxonomyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>TaxonomyId</outputFieldName>
+        <outputObjectName>HealthcareProviderTaxonomy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item4</globalKey>
+        <inputFieldName>NPINumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NPI__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item18</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>HealthcareProviderNpi</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item11</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>PersonContactId</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>PractitionerId</outputFieldName>
+        <outputObjectName>HealthcareProviderTaxonomy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item21</globalKey>
+        <inputFieldName>HealthCareNPIType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>NpiType</outputFieldName>
+        <outputObjectName>HealthcareProviderNpi</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item9</globalKey>
+        <inputFieldName>TaxonomiesToBeUpserted:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>HealthcareProviderTaxonomy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom4213</globalKey>
+        <inputFieldName>TaxonomiesToBeUpserted:HCTaxonomyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>HealthcareProviderTaxonomy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item22</globalKey>
+        <inputFieldName>HealthCareNPIName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>HealthcareProviderNpi</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>HealthcareProviderTaxonomy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item10</globalKey>
+        <inputFieldName>TaxonomiesToBeUpserted:primary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>IsPrimaryTaxonomy</outputFieldName>
+        <outputObjectName>HealthcareProviderTaxonomy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:NPPESBasic:last_name &apos;/\/\/NPI&apos; +</formulaConverted>
+        <formulaExpression>%NPPESBasic:last_name%+&apos; NPI&apos;</formulaExpression>
+        <formulaResultPath>HealthCareNPIName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item19</globalKey>
+        <inputFieldName>NPINumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Npi</outputFieldName>
+        <outputObjectName>HealthcareProviderNpi</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item20</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>PersonContactId</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>PractitionerId</outputFieldName>
+        <outputObjectName>HealthcareProviderNpi</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item6</globalKey>
+        <inputFieldName>casedFirstNameFromNPPES</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&apos;Individual&apos;</formulaConverted>
+        <formulaExpression>&apos;Individual&apos;</formulaExpression>
+        <formulaResultPath>HealthCareNPIType</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>LoadClinicianRecordWithTaxAndCertsNewCustom0jI7x0000001WCLEA2Item1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;NPINumber&quot; : 1083940985,
+  &quot;TaxonomiesToBeUpserted&quot; : [ {
+    &quot;desc&quot; : &quot;Internal Medicine&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;primary&quot; : false,
+    &quot;state&quot; : &quot;PA&quot;,
+    &quot;code&quot; : &quot;207R00000X&quot;,
+    &quot;license&quot; : &quot;MD443150&quot;
+  }, {
+    &quot;desc&quot; : &quot;Hospitalist&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;primary&quot; : true,
+    &quot;state&quot; : &quot;PA&quot;,
+    &quot;code&quot; : &quot;208M00000X&quot;,
+    &quot;license&quot; : &quot;MD443150&quot;
+  } ],
+  &quot;ContextId&quot; : &quot;0017x0000170atPAAQ&quot;,
+  &quot;casedFirstNameFromNPPES&quot; : &quot;Amanulla&quot;,
+  &quot;casedMiddleNameFromNPPES&quot; : null,
+  &quot;NPPESBasic&quot; : {
+    &quot;status&quot; : &quot;A&quot;,
+    &quot;first_name&quot; : &quot;AMANULLA&quot;,
+    &quot;sole_proprietor&quot; : &quot;NO&quot;,
+    &quot;enumeration_date&quot; : &quot;2009-10-27&quot;,
+    &quot;last_name&quot; : &quot;KHAJI&quot;,
+    &quot;sex&quot; : &quot;M&quot;,
+    &quot;name_suffix&quot; : &quot;--&quot;,
+    &quot;last_updated&quot; : &quot;2017-05-01&quot;,
+    &quot;name_prefix&quot; : &quot;--&quot;
+  },
+  &quot;casedLastNameFromNPPES&quot; : &quot;Khaji&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>LoadClinicianRecordWithTaxAndCertsNew_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

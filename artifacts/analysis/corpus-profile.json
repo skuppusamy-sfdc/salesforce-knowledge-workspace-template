@@ -1,0 +1,1604 @@
+{
+  "generated": "2026-05-11T15:29:21.899510",
+  "project": "SCP Health CnC",
+  "coverage": {
+    "total": 1804,
+    "sections": {
+      "Description": {
+        "present": 1795,
+        "pct": 99.5,
+        "avg_words": 76
+      },
+      "Acceptance Criteria": {
+        "present": 1043,
+        "pct": 57.8,
+        "avg_words": 186
+      },
+      "Solution": {
+        "present": 953,
+        "pct": 52.8,
+        "avg_words": 72
+      },
+      "Build Components": {
+        "present": 1,
+        "pct": 0.1,
+        "avg_words": 42
+      },
+      "Deployment Instructions": {
+        "present": 0,
+        "pct": 0.0,
+        "avg_words": 0
+      },
+      "Root Cause": {
+        "present": 463,
+        "pct": 25.7,
+        "avg_words": 23
+      },
+      "Linked Issues": {
+        "present": 0,
+        "pct": 0.0,
+        "avg_words": 0
+      },
+      "Sub-tasks": {
+        "present": 0,
+        "pct": 0.0,
+        "avg_words": 0
+      }
+    },
+    "metadata": {
+      "Status": {
+        "present": 1804,
+        "pct": 100.0
+      },
+      "Type": {
+        "present": 1804,
+        "pct": 100.0
+      },
+      "Priority": {
+        "present": 1804,
+        "pct": 100.0
+      },
+      "Assignee": {
+        "present": 1804,
+        "pct": 100.0
+      },
+      "Reporter": {
+        "present": 1804,
+        "pct": 100.0
+      },
+      "Components": {
+        "present": 1804,
+        "pct": 100.0
+      },
+      "Epic": {
+        "present": 1459,
+        "pct": 80.9
+      },
+      "Story Points": {
+        "present": 1371,
+        "pct": 76.0
+      }
+    },
+    "by_sprint": {
+      "Sprint 1": {
+        "stories": 25,
+        "ac_pct": 76.0,
+        "sol_pct": 72.0
+      },
+      "Sprint 10": {
+        "stories": 119,
+        "ac_pct": 68.9,
+        "sol_pct": 55.5
+      },
+      "Sprint 11": {
+        "stories": 117,
+        "ac_pct": 50.4,
+        "sol_pct": 51.3
+      },
+      "Sprint 12": {
+        "stories": 199,
+        "ac_pct": 53.8,
+        "sol_pct": 47.2
+      },
+      "Sprint 12.1": {
+        "stories": 356,
+        "ac_pct": 49.2,
+        "sol_pct": 41.0
+      },
+      "Sprint 12.2": {
+        "stories": 96,
+        "ac_pct": 40.6,
+        "sol_pct": 38.5
+      },
+      "Sprint 12.3": {
+        "stories": 74,
+        "ac_pct": 29.7,
+        "sol_pct": 31.1
+      },
+      "Sprint 12.4": {
+        "stories": 50,
+        "ac_pct": 32.0,
+        "sol_pct": 32.0
+      },
+      "Sprint 12.5": {
+        "stories": 79,
+        "ac_pct": 50.6,
+        "sol_pct": 44.3
+      },
+      "Sprint 12.6": {
+        "stories": 23,
+        "ac_pct": 60.9,
+        "sol_pct": 47.8
+      },
+      "Sprint 13": {
+        "stories": 38,
+        "ac_pct": 65.8,
+        "sol_pct": 60.5
+      },
+      "Sprint 14": {
+        "stories": 56,
+        "ac_pct": 76.8,
+        "sol_pct": 76.8
+      },
+      "Sprint 2": {
+        "stories": 26,
+        "ac_pct": 50.0,
+        "sol_pct": 38.5
+      },
+      "Sprint 3": {
+        "stories": 26,
+        "ac_pct": 69.2,
+        "sol_pct": 61.5
+      },
+      "Sprint 4": {
+        "stories": 50,
+        "ac_pct": 72.0,
+        "sol_pct": 70.0
+      },
+      "Sprint 5": {
+        "stories": 60,
+        "ac_pct": 63.3,
+        "sol_pct": 58.3
+      },
+      "Sprint 6": {
+        "stories": 75,
+        "ac_pct": 76.0,
+        "sol_pct": 72.0
+      },
+      "Sprint 7": {
+        "stories": 106,
+        "ac_pct": 68.9,
+        "sol_pct": 67.0
+      },
+      "Sprint 8": {
+        "stories": 107,
+        "ac_pct": 65.4,
+        "sol_pct": 64.5
+      },
+      "Sprint 9": {
+        "stories": 122,
+        "ac_pct": 79.5,
+        "sol_pct": 74.6
+      }
+    }
+  },
+  "density": {
+    "total_bytes": 4569069,
+    "total_mb": 4.36,
+    "total_words": 536485,
+    "total_tokens": 696604,
+    "size_pctiles": {
+      "min": 480,
+      "p10": 1114,
+      "p25": 1312,
+      "median": 1907,
+      "p75": 2701,
+      "p90": 4775,
+      "max": 15688
+    },
+    "word_pctiles": {
+      "min": 44,
+      "p10": 124,
+      "p25": 146,
+      "median": 223,
+      "p75": 321,
+      "p90": 581,
+      "max": 1733
+    },
+    "size_buckets": {
+      "sparse_under_500B": 2,
+      "light_500B_2KB": 956,
+      "medium_2KB_10KB": 824,
+      "rich_10KB_plus": 22
+    },
+    "avg_richness": 0.69,
+    "by_sprint": {
+      "Sprint 1": {
+        "stories": 25,
+        "total_bytes": 44831,
+        "avg_words": 215,
+        "avg_tokens": 280
+      },
+      "Sprint 10": {
+        "stories": 119,
+        "total_bytes": 324000,
+        "avg_words": 330,
+        "avg_tokens": 428
+      },
+      "Sprint 11": {
+        "stories": 117,
+        "total_bytes": 352064,
+        "avg_words": 361,
+        "avg_tokens": 469
+      },
+      "Sprint 12": {
+        "stories": 199,
+        "total_bytes": 589708,
+        "avg_words": 344,
+        "avg_tokens": 446
+      },
+      "Sprint 12.1": {
+        "stories": 356,
+        "total_bytes": 863669,
+        "avg_words": 280,
+        "avg_tokens": 363
+      },
+      "Sprint 12.2": {
+        "stories": 96,
+        "total_bytes": 176864,
+        "avg_words": 208,
+        "avg_tokens": 270
+      },
+      "Sprint 12.3": {
+        "stories": 74,
+        "total_bytes": 142649,
+        "avg_words": 221,
+        "avg_tokens": 287
+      },
+      "Sprint 12.4": {
+        "stories": 50,
+        "total_bytes": 103051,
+        "avg_words": 233,
+        "avg_tokens": 303
+      },
+      "Sprint 12.5": {
+        "stories": 79,
+        "total_bytes": 236361,
+        "avg_words": 350,
+        "avg_tokens": 454
+      },
+      "Sprint 12.6": {
+        "stories": 23,
+        "total_bytes": 46953,
+        "avg_words": 244,
+        "avg_tokens": 316
+      },
+      "Sprint 13": {
+        "stories": 38,
+        "total_bytes": 120666,
+        "avg_words": 377,
+        "avg_tokens": 490
+      },
+      "Sprint 14": {
+        "stories": 56,
+        "total_bytes": 216190,
+        "avg_words": 455,
+        "avg_tokens": 591
+      },
+      "Sprint 2": {
+        "stories": 26,
+        "total_bytes": 49204,
+        "avg_words": 217,
+        "avg_tokens": 281
+      },
+      "Sprint 3": {
+        "stories": 26,
+        "total_bytes": 52083,
+        "avg_words": 230,
+        "avg_tokens": 299
+      },
+      "Sprint 4": {
+        "stories": 50,
+        "total_bytes": 115149,
+        "avg_words": 269,
+        "avg_tokens": 349
+      },
+      "Sprint 5": {
+        "stories": 60,
+        "total_bytes": 149303,
+        "avg_words": 304,
+        "avg_tokens": 395
+      },
+      "Sprint 6": {
+        "stories": 75,
+        "total_bytes": 189587,
+        "avg_words": 300,
+        "avg_tokens": 389
+      },
+      "Sprint 7": {
+        "stories": 106,
+        "total_bytes": 251654,
+        "avg_words": 280,
+        "avg_tokens": 364
+      },
+      "Sprint 8": {
+        "stories": 107,
+        "total_bytes": 236435,
+        "avg_words": 261,
+        "avg_tokens": 339
+      },
+      "Sprint 9": {
+        "stories": 122,
+        "total_bytes": 308648,
+        "avg_words": 304,
+        "avg_tokens": 395
+      }
+    }
+  },
+  "components": {
+    "total_unique": 3,
+    "top": [
+      [
+        "ClinicianClientExperience",
+        1797
+      ],
+      [
+        "Agentforce",
+        17
+      ],
+      [
+        "Integration",
+        10
+      ]
+    ],
+    "orphans": [],
+    "missing_metadata_docs": [
+      "ClinicianClientExperience",
+      "Agentforce",
+      "Integration"
+    ],
+    "by_sprint": {
+      "Sprint 1": {
+        "ClinicianClientExperience": 25
+      },
+      "Sprint 10": {
+        "ClinicianClientExperience": 119
+      },
+      "Sprint 11": {
+        "ClinicianClientExperience": 111,
+        "Agentforce": 6,
+        "Integration": 1
+      },
+      "Sprint 12": {
+        "ClinicianClientExperience": 198,
+        "Agentforce": 1
+      },
+      "Sprint 12.1": {
+        "ClinicianClientExperience": 356,
+        "Integration": 8,
+        "Agentforce": 5
+      },
+      "Sprint 12.2": {
+        "ClinicianClientExperience": 96,
+        "Integration": 1,
+        "Agentforce": 2
+      },
+      "Sprint 12.3": {
+        "ClinicianClientExperience": 74,
+        "Agentforce": 1
+      },
+      "Sprint 12.4": {
+        "ClinicianClientExperience": 50
+      },
+      "Sprint 12.5": {
+        "ClinicianClientExperience": 79
+      },
+      "Sprint 12.6": {
+        "ClinicianClientExperience": 23
+      },
+      "Sprint 13": {
+        "ClinicianClientExperience": 38
+      },
+      "Sprint 14": {
+        "Agentforce": 2,
+        "ClinicianClientExperience": 56
+      },
+      "Sprint 2": {
+        "ClinicianClientExperience": 26
+      },
+      "Sprint 3": {
+        "ClinicianClientExperience": 26
+      },
+      "Sprint 4": {
+        "ClinicianClientExperience": 50
+      },
+      "Sprint 5": {
+        "ClinicianClientExperience": 60
+      },
+      "Sprint 6": {
+        "ClinicianClientExperience": 75
+      },
+      "Sprint 7": {
+        "ClinicianClientExperience": 106
+      },
+      "Sprint 8": {
+        "ClinicianClientExperience": 107
+      },
+      "Sprint 9": {
+        "ClinicianClientExperience": 122
+      }
+    }
+  },
+  "topics": {
+    "top_terms": [
+      [
+        "color",
+        6739.9,
+        232
+      ],
+      [
+        "contract",
+        5177.1,
+        953
+      ],
+      [
+        "date",
+        3738.1,
+        555
+      ],
+      [
+        "hpf",
+        2975.2,
+        509
+      ],
+      [
+        "client",
+        2796.5,
+        465
+      ],
+      [
+        "net",
+        2655.0,
+        447
+      ],
+      [
+        "atlassian",
+        2647.0,
+        439
+      ],
+      [
+        "browse",
+        2647.0,
+        439
+      ],
+      [
+        "rate",
+        2636.5,
+        317
+      ],
+      [
+        "status",
+        2599.2,
+        794
+      ],
+      [
+        "clinician",
+        2570.1,
+        1071
+      ],
+      [
+        "shift",
+        2447.8,
+        234
+      ],
+      [
+        "case",
+        2410.1,
+        627
+      ],
+      [
+        "salesforce",
+        2392.6,
+        653
+      ],
+      [
+        "account",
+        2348.0,
+        745
+      ],
+      [
+        "https",
+        2342.2,
+        829
+      ],
+      [
+        "lightning",
+        2258.0,
+        344
+      ],
+      [
+        "task",
+        2229.2,
+        228
+      ],
+      [
+        "service",
+        2197.2,
+        395
+      ],
+      [
+        "facility",
+        2174.5,
+        619
+      ],
+      [
+        "email",
+        2160.0,
+        212
+      ],
+      [
+        "rates",
+        2132.4,
+        286
+      ],
+      [
+        "termination",
+        2079.7,
+        177
+      ],
+      [
+        "change",
+        1946.0,
+        311
+      ],
+      [
+        "opportunity",
+        1939.0,
+        122
+      ],
+      [
+        "related",
+        1934.2,
+        524
+      ],
+      [
+        "pmt",
+        1885.9,
+        48
+      ],
+      [
+        "offboarding",
+        1882.4,
+        165
+      ],
+      [
+        "fields",
+        1864.7,
+        528
+      ],
+      [
+        "agreement",
+        1849.1,
+        285
+      ]
+    ],
+    "clusters": [
+      [
+        "color",
+        41,
+        [
+          "PR1050558-1739",
+          "PR1050558-2679",
+          "PR1050558-2811",
+          "PR1050558-2906",
+          "PR1050558-1682"
+        ]
+      ],
+      [
+        "shift",
+        24,
+        [
+          "PR1050558-2537",
+          "PR1050558-2916",
+          "PR1050558-2964",
+          "PR1050558-3452",
+          "PR1050558-2916"
+        ]
+      ],
+      [
+        "opportunity",
+        22,
+        [
+          "PR1050558-1677",
+          "PR1050558-1073",
+          "PR1050558-1073",
+          "PR1050558-3585",
+          "PR1050558-3585"
+        ]
+      ],
+      [
+        "intake",
+        21,
+        [
+          "PR1050558-1028",
+          "PR1050558-4864",
+          "PR1050558-4925",
+          "PR1050558-5065",
+          "PR1050558-5107"
+        ]
+      ],
+      [
+        "sheet",
+        21,
+        [
+          "PR1050558-3171",
+          "PR1050558-3769",
+          "PR1050558-3783",
+          "PR1050558-2907",
+          "PR1050558-3783"
+        ]
+      ],
+      [
+        "approval",
+        19,
+        [
+          "PR1050558-2023",
+          "PR1050558-4014",
+          "PR1050558-4856",
+          "PR1050558-4856",
+          "PR1050558-5831"
+        ]
+      ],
+      [
+        "rate",
+        18,
+        [
+          "PR1050558-1584",
+          "PR1050558-2227",
+          "PR1050558-2822",
+          "PR1050558-3212",
+          "PR1050558-3234"
+        ]
+      ],
+      [
+        "termination",
+        18,
+        [
+          "PR1050558-2471",
+          "PR1050558-2639",
+          "PR1050558-2676",
+          "PR1050558-2678",
+          "PR1050558-2678"
+        ]
+      ],
+      [
+        "pmt",
+        18,
+        [
+          "PR1050558-2924",
+          "PR1050558-1678",
+          "PR1050558-2087",
+          "PR1050558-2088",
+          "PR1050558-2139"
+        ]
+      ],
+      [
+        "image",
+        17,
+        [
+          "PR1050558-211",
+          "PR1050558-2819",
+          "PR1050558-3004",
+          "PR1050558-4492",
+          "PR1050558-5010"
+        ]
+      ],
+      [
+        "offboarding",
+        17,
+        [
+          "PR1050558-2473",
+          "PR1050558-3803",
+          "PR1050558-4189",
+          "PR1050558-4292",
+          "PR1050558-4201"
+        ]
+      ],
+      [
+        "entity",
+        17,
+        [
+          "PR1050558-2672",
+          "PR1050558-4074",
+          "PR1050558-4591",
+          "PR1050558-4627",
+          "PR1050558-4685"
+        ]
+      ],
+      [
+        "onboarding",
+        17,
+        [
+          "PR1050558-5121",
+          "PR1050558-5145",
+          "PR1050558-5121",
+          "PR1050558-145",
+          "PR1050558-562"
+        ]
+      ],
+      [
+        "email",
+        15,
+        [
+          "PR1050558-1723",
+          "PR1050558-3781",
+          "PR1050558-1723",
+          "PR1050558-1723",
+          "PR1050558-4327"
+        ]
+      ],
+      [
+        "superseded",
+        15,
+        [
+          "PR1050558-4891",
+          "PR1050558-4892",
+          "PR1050558-4893",
+          "PR1050558-4891",
+          "PR1050558-4892"
+        ]
+      ]
+    ],
+    "by_sprint": {
+      "Sprint 1": [
+        [
+          "development",
+          99.7
+        ],
+        [
+          "chatter",
+          96.9
+        ],
+        [
+          "related",
+          96.3
+        ],
+        [
+          "business",
+          94.5
+        ],
+        [
+          "tab",
+          90.1
+        ]
+      ],
+      "Sprint 10": [
+        [
+          "rate",
+          465.2
+        ],
+        [
+          "shift",
+          452.5
+        ],
+        [
+          "contract",
+          433.9
+        ],
+        [
+          "color",
+          421.6
+        ],
+        [
+          "termination",
+          370.6
+        ]
+      ],
+      "Sprint 11": [
+        [
+          "pmt",
+          659.9
+        ],
+        [
+          "color",
+          528.1
+        ],
+        [
+          "contract",
+          479.7
+        ],
+        [
+          "task",
+          404.6
+        ],
+        [
+          "shift",
+          381.1
+        ]
+      ],
+      "Sprint 12": [
+        [
+          "color",
+          1862.5
+        ],
+        [
+          "pmt",
+          901.5
+        ],
+        [
+          "contract",
+          839.7
+        ],
+        [
+          "client",
+          709.3
+        ],
+        [
+          "task",
+          526.3
+        ]
+      ],
+      "Sprint 12.1": [
+        [
+          "color",
+          1772.5
+        ],
+        [
+          "contract",
+          1265.9
+        ],
+        [
+          "date",
+          847.4
+        ],
+        [
+          "client",
+          657.8
+        ],
+        [
+          "hpf",
+          602.6
+        ]
+      ],
+      "Sprint 12.2": [
+        [
+          "lightning",
+          264.7
+        ],
+        [
+          "contract",
+          216.6
+        ],
+        [
+          "date",
+          173.0
+        ],
+        [
+          "uat",
+          168.2
+        ],
+        [
+          "start",
+          140.1
+        ]
+      ],
+      "Sprint 12.3": [
+        [
+          "lightning",
+          234.9
+        ],
+        [
+          "color",
+          155.6
+        ],
+        [
+          "team",
+          144.6
+        ],
+        [
+          "effective",
+          127.0
+        ],
+        [
+          "directory",
+          122.5
+        ]
+      ],
+      "Sprint 12.4": [
+        [
+          "lightning",
+          175.3
+        ],
+        [
+          "corehc",
+          111.1
+        ],
+        [
+          "contract",
+          98.8
+        ],
+        [
+          "force",
+          89.6
+        ],
+        [
+          "unifiedplatformdata",
+          82.4
+        ]
+      ],
+      "Sprint 12.5": [
+        [
+          "color",
+          569.0
+        ],
+        [
+          "hpf",
+          248.9
+        ],
+        [
+          "date",
+          208.3
+        ],
+        [
+          "contract",
+          204.5
+        ],
+        [
+          "lightning",
+          193.5
+        ]
+      ],
+      "Sprint 12.6": [
+        [
+          "call",
+          134.2
+        ],
+        [
+          "shift",
+          61.1
+        ],
+        [
+          "lightning",
+          57.9
+        ],
+        [
+          "contract",
+          54.8
+        ],
+        [
+          "color",
+          49.1
+        ]
+      ],
+      "Sprint 13": [
+        [
+          "color",
+          188.3
+        ],
+        [
+          "intake",
+          159.1
+        ],
+        [
+          "reset",
+          146.5
+        ],
+        [
+          "password",
+          136.3
+        ],
+        [
+          "date",
+          128.3
+        ]
+      ],
+      "Sprint 14": [
+        [
+          "color",
+          630.4
+        ],
+        [
+          "hpf",
+          398.0
+        ],
+        [
+          "entity",
+          305.4
+        ],
+        [
+          "superseded",
+          303.7
+        ],
+        [
+          "email",
+          252.1
+        ]
+      ],
+      "Sprint 2": [
+        [
+          "npi",
+          190.0
+        ],
+        [
+          "accountid",
+          106.5
+        ],
+        [
+          "specialty",
+          103.5
+        ],
+        [
+          "board",
+          96.8
+        ],
+        [
+          "certified",
+          79.9
+        ]
+      ],
+      "Sprint 3": [
+        [
+          "risk",
+          87.9
+        ],
+        [
+          "columns",
+          77.0
+        ],
+        [
+          "related",
+          65.4
+        ],
+        [
+          "rate",
+          60.7
+        ],
+        [
+          "review",
+          60.3
+        ]
+      ],
+      "Sprint 4": [
+        [
+          "atlassian",
+          235.6
+        ],
+        [
+          "browse",
+          235.6
+        ],
+        [
+          "net",
+          232.6
+        ],
+        [
+          "salesforce",
+          196.8
+        ],
+        [
+          "onboarding",
+          194.9
+        ]
+      ],
+      "Sprint 5": [
+        [
+          "shift",
+          169.2
+        ],
+        [
+          "pro",
+          167.6
+        ],
+        [
+          "rate",
+          159.7
+        ],
+        [
+          "atlassian",
+          159.4
+        ],
+        [
+          "browse",
+          159.4
+        ]
+      ],
+      "Sprint 6": [
+        [
+          "rates",
+          268.4
+        ],
+        [
+          "net",
+          239.6
+        ],
+        [
+          "atlassian",
+          234.2
+        ],
+        [
+          "browse",
+          234.2
+        ],
+        [
+          "contract",
+          231.3
+        ]
+      ],
+      "Sprint 7": [
+        [
+          "contract",
+          254.8
+        ],
+        [
+          "hpf",
+          238.8
+        ],
+        [
+          "rates",
+          231.6
+        ],
+        [
+          "date",
+          201.3
+        ],
+        [
+          "approval",
+          185.6
+        ]
+      ],
+      "Sprint 8": [
+        [
+          "opportunity",
+          410.9
+        ],
+        [
+          "date",
+          301.3
+        ],
+        [
+          "hpf",
+          187.0
+        ],
+        [
+          "contract",
+          184.8
+        ],
+        [
+          "status",
+          169.6
+        ]
+      ],
+      "Sprint 9": [
+        [
+          "opportunity",
+          349.1
+        ],
+        [
+          "date",
+          317.8
+        ],
+        [
+          "contract",
+          290.5
+        ],
+        [
+          "case",
+          276.5
+        ],
+        [
+          "termination",
+          268.7
+        ]
+      ]
+    },
+    "noise_terms_removed": 0
+  },
+  "quality": {
+    "avg": 57.4,
+    "median": 75,
+    "stdev": 28.3,
+    "distribution": {
+      "0_20": 6,
+      "21_40": 707,
+      "41_60": 187,
+      "61_80": 270,
+      "81_100": 634
+    },
+    "bottom_20": [
+      [
+        "PR1050558-216",
+        "Sprint 1",
+        10,
+        "Contract & Related objects Page layouts mismatch."
+      ],
+      [
+        "PR1050558-3394",
+        "Sprint 10",
+        10,
+        "Rates are not visible in summary tab of Clinician & Practice"
+      ],
+      [
+        "PR1050558-4138",
+        "Sprint 12",
+        10,
+        "Temporary Inactive Reason API name fix"
+      ],
+      [
+        "PR1050558-4138",
+        "Sprint 12.1",
+        10,
+        "Temporary Inactive Reason API name fix"
+      ],
+      [
+        "PR1050558-4764",
+        "Sprint 12.1",
+        10,
+        "UAT Bug: Clinician Contract - Rates pulling in from irreleva"
+      ],
+      [
+        "PR1050558-2984",
+        "Sprint 12.6",
+        10,
+        "[Observation Bug] :Client contract rates allows per-shift re"
+      ],
+      [
+        "PR1050558-203",
+        "Sprint 1",
+        25,
+        "View & Edit Access is Missing for BDA, Legal, And Recruiter "
+      ],
+      [
+        "PR1050558-211",
+        "Sprint 1",
+        25,
+        "Issues on Account record page layout"
+      ],
+      [
+        "PR1050558-212",
+        "Sprint 1",
+        25,
+        "Added extra tab on right-most column where record-type= Comp"
+      ],
+      [
+        "PR1050558-220",
+        "Sprint 1",
+        25,
+        "Issues on Related Clinician Records"
+      ],
+      [
+        "PR1050558-228",
+        "Sprint 1",
+        25,
+        "Related lists on the clinician record are not displaying cor"
+      ],
+      [
+        "PR1050558-2640",
+        "Sprint 10",
+        25,
+        "[Regression Bug]: All Persona user dont have access to Corpo"
+      ],
+      [
+        "PR1050558-2819",
+        "Sprint 10",
+        25,
+        "Clinical Support Case - Multiple issues."
+      ],
+      [
+        "PR1050558-2876",
+        "Sprint 10",
+        25,
+        "The URL for the CCPA Privacy Policy on the Core Connect port"
+      ],
+      [
+        "PR1050558-2951",
+        "Sprint 10",
+        25,
+        "[Observation Bug]:  Open Shift Apay request Form."
+      ],
+      [
+        "PR1050558-2964",
+        "Sprint 10",
+        25,
+        "[Regression bug] - Open shift APAY forms Validation."
+      ],
+      [
+        "PR1050558-2986",
+        "Sprint 10",
+        25,
+        "Issues on Add Additional Fields"
+      ],
+      [
+        "PR1050558-2987",
+        "Sprint 10",
+        25,
+        "Event is being triggered for Leased/locums."
+      ],
+      [
+        "PR1050558-3004",
+        "Sprint 10",
+        25,
+        "Unable to update first clinical shift field on HPF as system"
+      ],
+      [
+        "PR1050558-3012",
+        "Sprint 10",
+        25,
+        "Bonus option not removed for Practice Operations contract"
+      ]
+    ],
+    "top_20": [
+      [
+        "PR1050558-842",
+        "Sprint 9",
+        95,
+        "IT Support Ticket"
+      ],
+      [
+        "PR1050558-2673",
+        "Sprint 9",
+        95,
+        "Military Status Change Requests"
+      ],
+      [
+        "PR1050558-2672",
+        "Sprint 9",
+        95,
+        "Business Entity Change Requests"
+      ],
+      [
+        "PR1050558-2670",
+        "Sprint 9",
+        95,
+        "Clinician Name Change Requests"
+      ],
+      [
+        "PR1050558-2559",
+        "Sprint 9",
+        95,
+        "Clinician Contract Update: Add Time Type"
+      ],
+      [
+        "PR1050558-2558",
+        "Sprint 9",
+        95,
+        "Clinician Contract Date Alignment"
+      ],
+      [
+        "PR1050558-2557",
+        "Sprint 9",
+        95,
+        "Initiate Leadership Change from Service Account"
+      ],
+      [
+        "PR1050558-2554",
+        "Sprint 9",
+        95,
+        "Locums Rate Management"
+      ],
+      [
+        "PR1050558-2551",
+        "Sprint 9",
+        95,
+        "Conditional Requirements for Clinician NPI"
+      ],
+      [
+        "PR1050558-2473",
+        "Sprint 9",
+        95,
+        "Clinician Offboarding: Termination Updates"
+      ],
+      [
+        "PR1050558-2471",
+        "Sprint 9",
+        95,
+        "Clinician Offboarding - Termination Details Update"
+      ],
+      [
+        "PR1050558-2469",
+        "Sprint 9",
+        95,
+        "Open Shift APAY Request: Approval"
+      ],
+      [
+        "PR1050558-2462",
+        "Sprint 9",
+        95,
+        "Enable Integration to Workday for SCP Offboarding - 2 of 2"
+      ],
+      [
+        "PR1050558-2450",
+        "Sprint 9",
+        95,
+        "Enhanced Clinician Inactivation: Case and Task Closure"
+      ],
+      [
+        "PR1050558-2235",
+        "Sprint 9",
+        95,
+        "NP/PA Tier Management: Clinician 1 of 2"
+      ],
+      [
+        "PR1050558-2182",
+        "Sprint 9",
+        95,
+        "Enable Integration to Workday for SCP Offboarding - 1 of 2"
+      ],
+      [
+        "PR1050558-2119",
+        "Sprint 9",
+        95,
+        "New HPF for Already Active Clinicians"
+      ],
+      [
+        "PR1050558-2015",
+        "Sprint 9",
+        95,
+        "Clinician Offboarding - Termination Details for Locums"
+      ],
+      [
+        "PR1050558-199",
+        "Sprint 9",
+        95,
+        "Guided Screening Call Field Updates"
+      ],
+      [
+        "PR1050558-1798",
+        "Sprint 9",
+        95,
+        "Client Needs Questionnaire - Auto Task Creation for Internal"
+      ]
+    ],
+    "by_sprint": {
+      "Sprint 1": 64.6,
+      "Sprint 10": 63.2,
+      "Sprint 11": 56.0,
+      "Sprint 12": 55.5,
+      "Sprint 12.1": 51.0,
+      "Sprint 12.2": 46.8,
+      "Sprint 12.3": 41.8,
+      "Sprint 12.4": 43,
+      "Sprint 12.5": 52.8,
+      "Sprint 12.6": 54.1,
+      "Sprint 13": 60.5,
+      "Sprint 14": 69.6,
+      "Sprint 2": 51.3,
+      "Sprint 3": 62.7,
+      "Sprint 4": 67.3,
+      "Sprint 5": 62.4,
+      "Sprint 6": 68.8,
+      "Sprint 7": 63.8,
+      "Sprint 8": 62.8,
+      "Sprint 9": 70.6
+    }
+  },
+  "retrieval": {
+    "single_story": {
+      "median_bytes": 1907,
+      "median_tokens": 289,
+      "p75_tokens": 465
+    },
+    "by_sprint": {
+      "Sprint 1": {
+        "story_count": 25,
+        "total_bytes": 44831,
+        "total_tokens": 6991
+      },
+      "Sprint 10": {
+        "story_count": 119,
+        "total_bytes": 324000,
+        "total_tokens": 50957
+      },
+      "Sprint 11": {
+        "story_count": 117,
+        "total_bytes": 352064,
+        "total_tokens": 54825
+      },
+      "Sprint 12": {
+        "story_count": 199,
+        "total_bytes": 589708,
+        "total_tokens": 88813
+      },
+      "Sprint 12.1": {
+        "story_count": 356,
+        "total_bytes": 863669,
+        "total_tokens": 129303
+      },
+      "Sprint 12.2": {
+        "story_count": 96,
+        "total_bytes": 176864,
+        "total_tokens": 25955
+      },
+      "Sprint 12.3": {
+        "story_count": 74,
+        "total_bytes": 142649,
+        "total_tokens": 21226
+      },
+      "Sprint 12.4": {
+        "story_count": 50,
+        "total_bytes": 103051,
+        "total_tokens": 15137
+      },
+      "Sprint 12.5": {
+        "story_count": 79,
+        "total_bytes": 236361,
+        "total_tokens": 35883
+      },
+      "Sprint 12.6": {
+        "story_count": 23,
+        "total_bytes": 46953,
+        "total_tokens": 7277
+      },
+      "Sprint 13": {
+        "story_count": 38,
+        "total_bytes": 120666,
+        "total_tokens": 18614
+      },
+      "Sprint 14": {
+        "story_count": 56,
+        "total_bytes": 216190,
+        "total_tokens": 33089
+      },
+      "Sprint 2": {
+        "story_count": 26,
+        "total_bytes": 49204,
+        "total_tokens": 7314
+      },
+      "Sprint 3": {
+        "story_count": 26,
+        "total_bytes": 52083,
+        "total_tokens": 7769
+      },
+      "Sprint 4": {
+        "story_count": 50,
+        "total_bytes": 115149,
+        "total_tokens": 17447
+      },
+      "Sprint 5": {
+        "story_count": 60,
+        "total_bytes": 149303,
+        "total_tokens": 23718
+      },
+      "Sprint 6": {
+        "story_count": 75,
+        "total_bytes": 189587,
+        "total_tokens": 29203
+      },
+      "Sprint 7": {
+        "story_count": 106,
+        "total_bytes": 251654,
+        "total_tokens": 38567
+      },
+      "Sprint 8": {
+        "story_count": 107,
+        "total_bytes": 236435,
+        "total_tokens": 36304
+      },
+      "Sprint 9": {
+        "story_count": 122,
+        "total_bytes": 308648,
+        "total_tokens": 48212
+      }
+    },
+    "by_component": {
+      "ClinicianClientExperience": {
+        "stories": 1797,
+        "total_tokens": 693291
+      },
+      "Agentforce": {
+        "stories": 17,
+        "total_tokens": 6190
+      },
+      "Integration": {
+        "stories": 10,
+        "total_tokens": 3599
+      }
+    },
+    "html_comparison": {
+      "old_single_story_avg_tokens": 398274,
+      "new_single_story_median_tokens": 289,
+      "old_html_total_mb": 23.37,
+      "new_stories_total_mb": 4.36,
+      "reduction_pct": 99.9
+    }
+  }
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Area Medical</fullName>
+        <default>false</default>
+        <label>Area Medical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Area Medical Officer</fullName>
+        <default>false</default>
+        <label>Area Medical Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CEO</fullName>
+        <default>false</default>
+        <label>CEO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CFO</fullName>
+        <default>false</default>
+        <label>CFO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospital ED Administrator</fullName>
+        <default>false</default>
+        <label>Hospital ED Administrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interim Medical Director</fullName>
+        <default>false</default>
+        <label>Interim Medical Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LHC-Nurse</fullName>
+        <default>false</default>
+        <label>LHC-Nurse</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ascension Field Operator</fullName>
+        <default>false</default>
+        <label>Ascension Field Operator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>External User HPS</fullName>
+        <default>false</default>
+        <label>External User HPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Medical Director</fullName>
+        <default>false</default>
+        <label>System Medical Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Assistant to CEO</fullName>
+        <default>false</default>
+        <label>Executive Assistant to CEO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nurse Manager, Emergency Dept</fullName>
+        <default>false</default>
+        <label>Nurse Manager, Emergency Dept</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CNO/Director of Nursing</fullName>
+        <default>false</default>
+        <label>CNO/Director of Nursing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chief Operations Officer</fullName>
+        <default>false</default>
+        <label>Chief Operations Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chief Clinical Officer</fullName>
+        <default>false</default>
+        <label>Chief Clinical Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Patient Services</fullName>
+        <default>false</default>
+        <label>Patient Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance/Privacy/Risk</fullName>
+        <default>false</default>
+        <label>Compliance/Privacy/Risk</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Staff Credentialer/Office</fullName>
+        <default>false</default>
+        <label>Medical Staff Credentialer/Office</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Information Technology</fullName>
+        <default>false</default>
+        <label>Information Technology</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HIM/Medical Records</fullName>
+        <default>false</default>
+        <label>HIM/Medical Records</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Managed Care</fullName>
+        <default>false</default>
+        <label>Managed Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Office</fullName>
+        <default>false</default>
+        <label>Business Office</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PR &amp; Communications</fullName>
+        <default>false</default>
+        <label>PR &amp; Communications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Human Resources</fullName>
+        <default>false</default>
+        <label>Human Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Locums Company</fullName>
+        <default>false</default>
+        <label>Locums Company</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Managed Care Representative</fullName>
+        <default>false</default>
+        <label>Managed Care Representative</label>
+    </standardValue>
+</StandardValueSet>

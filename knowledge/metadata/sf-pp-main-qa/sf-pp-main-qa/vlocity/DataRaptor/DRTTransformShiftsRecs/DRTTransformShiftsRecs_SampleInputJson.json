@@ -1,0 +1,32 @@
+{
+    "Shifts": [
+        {
+            "Id": "a4Q7x000000H6c5EAC",
+            "Name": "S-00130",
+            "Shift_Day_of_the_Week__c": "Sunday;Monday;Tuesday;Wednesday",
+            "Shift_End_Time__c": "12:15:00.000Z",
+            "Shift_Full_Name__c": "Shift Bonus test",
+            "Shift_Name__c": "0hs7x0000007YrPAAU",
+            "Shift_Name__r": {
+                "Code": "Shift Bonus",
+                "Id": "0hs7x0000007YrPAAU"
+            },
+            "Shift_Start_Time__c": "00:30:00.000Z",
+            "Type__c": "NP/PA"
+        },
+        {
+            "Id": "a4Q7x000000H6dhEAC",
+            "Name": "S-00131",
+            "Shift_Day_of_the_Week__c": "Sunday;Monday;Tuesday;Wednesday",
+            "Shift_End_Time__c": "01:00:00.000Z",
+            "Shift_Full_Name__c": "EE NPPA REG tyy",
+            "Shift_Name__c": "0hs7x0000007y2fAAA",
+            "Shift_Name__r": {
+                "Code": "EE NPPA Regular",
+                "Id": "0hs7x0000007y2fAAA"
+            },
+            "Shift_Start_Time__c": "00:00:00.000Z",
+            "Type__c": "NP/PA"
+        }
+    ]
+}

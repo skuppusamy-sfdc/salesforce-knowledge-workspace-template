@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingFilter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filterLogic>1</filterLogic>
+    <forecastingType>All_Opportunity_Record_Types</forecastingType>
+    <forecastingTypeSource>FTS_All_Opportunity_Record_Types7sy1S000000TN1KQAW069469246595373</forecastingTypeSource>
+    <isProtected>false</isProtected>
+    <masterLabel>FF_All_Opportunity_Record_Types0hl1S000000TN1UQAW258939722465968</masterLabel>
+</ForecastingFilter>

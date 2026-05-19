@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;taxonomyCare&quot; : [ {
+    &quot;primary&quot; : true,
+    &quot;license&quot; : &quot;MD443150&quot;,
+    &quot;state&quot; : &quot;PA&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;code&quot; : &quot;207R00000X&quot;,
+    &quot;desc&quot; : &quot;Internal Medicine&quot;,
+    &quot;taxonomyCare:TaxonomyCode&quot; : null,
+    &quot;taxonomyCare:Id&quot; : null,
+    &quot;taxonomyCare:Name&quot; : null
+  }, {
+    &quot;primary&quot; : false,
+    &quot;license&quot; : &quot;MD443150&quot;,
+    &quot;state&quot; : &quot;PA&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;code&quot; : &quot;208M00000X&quot;,
+    &quot;desc&quot; : &quot;Hospitalist&quot;,
+    &quot;taxonomyCare:TaxonomyCode&quot; : null,
+    &quot;taxonomyCare:Id&quot; : null,
+    &quot;taxonomyCare:Name&quot; : null
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMExtractTaxonomyCode</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2999dbe2-435f-4936-b4df-e981da7e491b</globalKey>
+        <inputFieldName>HCTaxonomyList:IsPrimaryTaxonomy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList:IsPrimaryTaxonomy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>77e7aa81-7e9c-479c-838e-7ff76a5ea17c</globalKey>
+        <inputFieldName>HCTaxonomyList:TaxonomyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList:TaxonomyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c99f18ba-d829-493b-b6df-57e8b73ee317</globalKey>
+        <inputFieldName>HCTaxonomyList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList:HCTaxonomyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0025a023-ce82-40f2-96c7-6a0c80ee1997</globalKey>
+        <inputFieldName>CareTaxonomyList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>taxonomyCare:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>18538804-fc25-4fbe-8dc0-11fdfb23b23b</globalKey>
+        <inputFieldName>HCTaxonomyList:Taxonomy.TaxonomyCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList:TaxonomyCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9adf595b-3b95-4f0c-bbf1-e5c10cd98535</globalKey>
+        <inputFieldName>HCTaxonomyList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dfbee7ee-b0d1-47ab-a40b-cd2e2441e550</globalKey>
+        <inputFieldName>HCTaxonomyList:PractitionerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList:PractitionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7df9749a-9698-452c-a7af-1c529fb56b00</globalKey>
+        <inputFieldName>CareTaxonomyList:TaxonomyCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>taxonomyCare:TaxonomyCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>clinicianRecordId</filterValue>
+        <globalKey>23bccc12-ddaf-4466-be2b-980882d62477</globalKey>
+        <inputFieldName>PractitionerId</inputFieldName>
+        <inputObjectName>HealthcareProviderTaxonomy</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HCTaxonomyList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c9980b7f-67de-42c1-a707-882a5f9bdd8e</globalKey>
+        <inputFieldName>taxanomiesFromNPPES:isPrimary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>taxanomiesFromNPPES:isPrimary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>taxanomiesFromNPPES:code</filterValue>
+        <globalKey>025718be-013f-4942-9c3f-efdaa66fa913</globalKey>
+        <inputFieldName>TaxonomyCode</inputFieldName>
+        <inputObjectName>CareTaxonomy</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>CareTaxonomyList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMExtractTaxonomyCodeCustom8194</globalKey>
+        <inputFieldName>clinicianRecordId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>taxonomyCare:PractitionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e3d8ac4a-3a2c-4b7b-af5d-9bf4aad20023</globalKey>
+        <inputFieldName>CareTaxonomyList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMExtractTaxonomyCode</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>taxonomyCare:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;clinicianRecordId&quot; : &quot;003gP0000092pu5QAA&quot;,
+  &quot;taxanomiesFromNPPES&quot; : {
+    &quot;desc&quot; : &quot;Student in an Organized Health Care Education/Training Program&quot;,
+    &quot;taxonomy_group&quot; : &quot;&quot;,
+    &quot;primary&quot; : true,
+    &quot;state&quot; : null,
+    &quot;code&quot; : &quot;390200000X&quot;,
+    &quot;license&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DMExtractTaxonomyCode_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

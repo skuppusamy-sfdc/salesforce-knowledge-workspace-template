@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Q2_Margin__c</fullName>
+    <formula>if(year(Target_Contract_Start_Date__c)=year(Today()),
+  if(month(Target_Contract_Start_Date__c)&gt;3 &amp;&amp; month(Target_Contract_Start_Date__c)&lt;7, ((181-dayofyear(Target_Contract_Start_Date__c))/91)*((Incremental_Margin__c)/4), 
+    if(month(Target_Contract_Start_Date__c)&lt;4,((Incremental_Margin__c)/4),0)),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Q2 Margin</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

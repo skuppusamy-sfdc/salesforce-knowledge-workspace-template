@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Incremental_Margin__c</fullName>
+    <label>Total Incremental Margin</label>
+    <summarizedField>Services__c.Incremental_Margin__c</summarizedField>
+    <summaryFilterItems>
+        <field>Services__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Active, &quot;&quot;</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Services__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Emergency Medicine (EM), Hospital Medicine (HM), Free Standing ED (FSED), Integrated Care Physician (ICP), Intensive Care Unit (ICU), Urgent Care (UC), Behavioral Health</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Services__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>linkedin_si__Parent_CRM_ID__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Parent Customer Relationship Management (CRM) ID</description>
+    <label>Parent CRM ID</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>LinkedIn Child Company Profile</relationshipLabel>
+    <relationshipName>Child_Company_Profiles</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

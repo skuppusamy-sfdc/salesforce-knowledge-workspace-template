@@ -1,0 +1,43 @@
+{
+    "caseContactId": "0037x00000wu7APAAY",
+    "caseList": [
+        {
+            "caseAccountId": "0017x000017KgM0AAK",
+            "caseHPFId": "0bS7x0000003AxJEAU",
+            "caseOrigin": "Automatic",
+            "casePriority": "Medium",
+            "caseSubject": "Facility Onboarding - Test Service Account 001",
+            "caseType": "Facility",
+            "ownerId": "0057x00000RWwscAAD"
+        },
+        {
+            "caseAccountId": "0017x000019oDCUAA2",
+            "caseHPFId": "0bS7x0000003B0XEAU",
+            "caseOrigin": "Automatic",
+            "casePriority": "Medium",
+            "caseSubject": "Facility Onboarding - BPC Hospital",
+            "caseType": "Facility",
+            "ownerId": null
+        },
+        {
+            "caseAccountId": "0017x00001Bn7slAAB",
+            "caseHPFId": "0bS7x0000003CJBEA2",
+            "caseOrigin": "Automatic",
+            "casePriority": "Medium",
+            "caseSubject": "Facility Onboarding - Muskan Ser Acc",
+            "caseType": "Facility",
+            "ownerId": null
+        },
+        {
+            "caseAccountId": "0017x000019xCh1AAE",
+            "caseHPFId": "0bS7x0000003CKnEAM",
+            "caseOrigin": "Automatic",
+            "casePriority": "Medium",
+            "caseSubject": "Facility Onboarding - testSer1",
+            "caseType": "Facility",
+            "ownerId": "0057x00000RBoOXAA1"
+        }
+    ],
+    "caseRecordTypeId": "0127x00000GvQRBAA3",
+    "caseStatus": "Not Started"
+}

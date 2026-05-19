@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This will pull out info on benefits</description>
+    <invocationTarget>CET_Assistant_BenifitsDocs</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>CET_Assistant_Benifits</masterLabel>
+    <progressIndicatorMessage>Bringing up the latest info</progressIndicatorMessage>
+</GenAiFunction>

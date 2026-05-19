@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>NP/PA Training 1</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Familiar with the requirements for medical screening examination for patients presenting to the ED and my obligations under EMTALA (History taking, physical exam for complaint, documentation of H&amp;P, transfer and   
+admission of patients).</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>NP_PA_Training_1</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>NP/PA Training 1</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

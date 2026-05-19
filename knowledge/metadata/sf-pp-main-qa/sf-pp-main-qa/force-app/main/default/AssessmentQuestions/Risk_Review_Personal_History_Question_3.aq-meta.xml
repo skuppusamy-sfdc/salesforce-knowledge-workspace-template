@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Personal History</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Recovery history (substance abuse, psychological, anger management) - The following
+documents must be dated within six (6) months of the date the checklist is submitted. If the recovery
+history is older than 20 years, except for mental health/addiction recovery, then the review will not be
+required.</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Risk_Review_Personal_History_Question_3</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Personal History</name>
+    <questionCategory>Personal History</questionCategory>
+</AssessmentQuestion>

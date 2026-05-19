@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__Cell_Max_LMD__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The most recently modified date for all the Cells related to this Cross Sell Report</description>
+    <inlineHelpText>Used in the account plan score - If you are not using a freeform whitespace, this value is not likely to change much</inlineHelpText>
+    <label>Cell Max Modified Date</label>
+    <summarizedField>pqcrush__White_Space_Cell__c.LastModifiedDate</summarizedField>
+    <summaryForeignKey>pqcrush__White_Space_Cell__c.pqcrush__White_Space__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

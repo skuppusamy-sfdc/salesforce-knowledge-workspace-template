@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payroll_Cycle_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Payments__c,&apos;2 Payments&apos;) &amp;&amp;  ISNULL( Payroll_Cycle__c)</errorConditionFormula>
+    <errorDisplayField>Payroll_Cycle__c</errorDisplayField>
+    <errorMessage>Payroll Cycle is required when Payments is selected as 2 Payments</errorMessage>
+</ValidationRule>

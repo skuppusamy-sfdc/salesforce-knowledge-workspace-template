@@ -1,0 +1,462 @@
+{
+  "generated": "2026-05-11T16:38:04.612366",
+  "overview": {
+    "total_events": 69,
+    "unique_users": 1,
+    "users": [
+      "skuppusamy@salesforce.com"
+    ],
+    "unique_models": 7,
+    "models": [
+      "claude-4.5-sonnet",
+      "claude-4.6-opus-high-thinking",
+      "claude-opus-4-7-high",
+      "claude-opus-4-7-thinking-xhigh",
+      "gemini-3-flash",
+      "gemini-3.1-pro",
+      "gemini-3.1-pro-preview"
+    ],
+    "date_range": {
+      "first": "2026-05-04",
+      "last": "2026-05-09",
+      "days": 6
+    },
+    "totals": {
+      "tokens": 74806604,
+      "input_tokens": 5078089,
+      "cache_read_tokens": 65345258,
+      "output_tokens": 519518,
+      "cost": 74.69
+    },
+    "averages": {
+      "tokens_per_request": 1084154,
+      "cost_per_request": 1.0825,
+      "requests_per_day": 11.5
+    }
+  },
+  "per_user": {
+    "users": [
+      {
+        "user": "skuppusamy@salesforce.com",
+        "requests": 69,
+        "total_tokens": 74806604,
+        "total_cost": 74.69,
+        "avg_tokens_per_request": 1084154,
+        "avg_cost_per_request": 1.0825,
+        "cache_hit_rate": 92.8,
+        "models_used": [
+          "claude-4.5-sonnet",
+          "claude-4.6-opus-high-thinking",
+          "claude-opus-4-7-high",
+          "claude-opus-4-7-thinking-xhigh",
+          "gemini-3-flash",
+          "gemini-3.1-pro",
+          "gemini-3.1-pro-preview"
+        ]
+      }
+    ]
+  },
+  "per_model": {
+    "models": [
+      {
+        "model": "claude-opus-4-7-high",
+        "requests": 45,
+        "total_tokens": 47297522,
+        "total_cost": 53.87,
+        "avg_tokens_per_request": 1051056,
+        "avg_cost_per_request": 1.1971,
+        "cache_hit_rate": 99.0,
+        "input_output_ratio": 1.1,
+        "avg_output_tokens": 8440
+      },
+      {
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "requests": 5,
+        "total_tokens": 8708690,
+        "total_cost": 9.04,
+        "avg_tokens_per_request": 1741738,
+        "avg_cost_per_request": 1.808,
+        "cache_hit_rate": 99.6,
+        "input_output_ratio": 0.9,
+        "avg_output_tokens": 6209
+      },
+      {
+        "model": "gemini-3-flash",
+        "requests": 4,
+        "total_tokens": 12274445,
+        "total_cost": 4.46,
+        "avg_tokens_per_request": 3068611,
+        "avg_cost_per_request": 1.115,
+        "cache_hit_rate": 70.9,
+        "input_output_ratio": 59.0,
+        "avg_output_tokens": 15097
+      },
+      {
+        "model": "claude-4.6-opus-high-thinking",
+        "requests": 3,
+        "total_tokens": 3274682,
+        "total_cost": 4.33,
+        "avg_tokens_per_request": 1091561,
+        "avg_cost_per_request": 1.4433,
+        "cache_hit_rate": 93.9,
+        "input_output_ratio": 7.8,
+        "avg_output_tokens": 7533
+      },
+      {
+        "model": "gemini-3.1-pro",
+        "requests": 7,
+        "total_tokens": 2846370,
+        "total_cost": 2.41,
+        "avg_tokens_per_request": 406624,
+        "avg_cost_per_request": 0.3443,
+        "cache_hit_rate": 72.7,
+        "input_output_ratio": 45.3,
+        "avg_output_tokens": 2431
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "requests": 3,
+        "total_tokens": 332389,
+        "total_cost": 0.38,
+        "avg_tokens_per_request": 110796,
+        "avg_cost_per_request": 0.1267,
+        "cache_hit_rate": 63.9,
+        "input_output_ratio": 14.7,
+        "avg_output_tokens": 2653
+      },
+      {
+        "model": "claude-4.5-sonnet",
+        "requests": 2,
+        "total_tokens": 72506,
+        "total_cost": 0.2,
+        "avg_tokens_per_request": 36253,
+        "avg_cost_per_request": 0.1,
+        "cache_hit_rate": 100.0,
+        "input_output_ratio": 0.0,
+        "avg_output_tokens": 360
+      }
+    ]
+  },
+  "daily": {
+    "days": [
+      {
+        "date": "2026-05-04",
+        "requests": 1,
+        "active_users": 1,
+        "total_tokens": 890733,
+        "total_cost": 1.48,
+        "cache_hit_rate": 100.0
+      },
+      {
+        "date": "2026-05-05",
+        "requests": 32,
+        "active_users": 1,
+        "total_tokens": 35245467,
+        "total_cost": 37.61,
+        "cache_hit_rate": 98.6
+      },
+      {
+        "date": "2026-05-06",
+        "requests": 12,
+        "active_users": 1,
+        "total_tokens": 8046133,
+        "total_cost": 10.43,
+        "cache_hit_rate": 99.2
+      },
+      {
+        "date": "2026-05-07",
+        "requests": 6,
+        "active_users": 1,
+        "total_tokens": 4408428,
+        "total_cost": 6.8,
+        "cache_hit_rate": 98.9
+      },
+      {
+        "date": "2026-05-08",
+        "requests": 17,
+        "active_users": 1,
+        "total_tokens": 26114358,
+        "total_cost": 18.18,
+        "cache_hit_rate": 82.5
+      },
+      {
+        "date": "2026-05-09",
+        "requests": 1,
+        "active_users": 1,
+        "total_tokens": 101485,
+        "total_cost": 0.19,
+        "cache_hit_rate": 5.5
+      }
+    ]
+  },
+  "cache": {
+    "overall_cache_rate": 92.8,
+    "total_cache_read_tokens": 65345258,
+    "total_input_tokens": 5078089,
+    "total_cache_write_tokens": 3863739,
+    "tokens_saved_by_cache": 65345258,
+    "cost_saved_estimate": 65.35,
+    "high_cache_requests_pct": 85.3,
+    "no_cache_requests_pct": 2.9,
+    "avg_cache_rate": 84.9,
+    "median_cache_rate": 98.3,
+    "per_model": {
+      "claude-4.5-sonnet": {
+        "cache_rate": 100.0,
+        "requests": 2
+      },
+      "claude-4.6-opus-high-thinking": {
+        "cache_rate": 93.9,
+        "requests": 3
+      },
+      "claude-opus-4-7-high": {
+        "cache_rate": 99.0,
+        "requests": 45
+      },
+      "claude-opus-4-7-thinking-xhigh": {
+        "cache_rate": 99.6,
+        "requests": 5
+      },
+      "gemini-3-flash": {
+        "cache_rate": 70.9,
+        "requests": 4
+      },
+      "gemini-3.1-pro": {
+        "cache_rate": 72.7,
+        "requests": 7
+      },
+      "gemini-3.1-pro-preview": {
+        "cache_rate": 63.9,
+        "requests": 3
+      }
+    }
+  },
+  "outliers": {
+    "top_expensive_requests": [
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 14263821,
+        "input_tokens": 21690,
+        "cache_tokens": 13933482,
+        "output_tokens": 71612,
+        "cost": 12.17
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 3789830,
+        "input_tokens": 171129,
+        "cache_tokens": 3521789,
+        "output_tokens": 34111,
+        "cost": 3.28
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-4.6-opus-high-thinking",
+        "total_tokens": 2491354,
+        "input_tokens": 166440,
+        "cache_tokens": 2069163,
+        "output_tokens": 17916,
+        "cost": 3.04
+      },
+      {
+        "date": "2026-05-07",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2621507,
+        "input_tokens": 14119,
+        "cache_tokens": 2395025,
+        "output_tokens": 10027,
+        "cost": 2.99
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "total_tokens": 3436833,
+        "input_tokens": 16206,
+        "cache_tokens": 3376568,
+        "output_tokens": 9587,
+        "cost": 2.61
+      },
+      {
+        "date": "2026-05-06",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2346609,
+        "input_tokens": 10598,
+        "cache_tokens": 2180138,
+        "output_tokens": 14271,
+        "cost": 2.58
+      },
+      {
+        "date": "2026-05-06",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2501786,
+        "input_tokens": 35,
+        "cache_tokens": 2377454,
+        "output_tokens": 14912,
+        "cost": 2.56
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "total_tokens": 1658113,
+        "input_tokens": 12,
+        "cache_tokens": 1421864,
+        "output_tokens": 3837,
+        "cost": 2.41
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "total_tokens": 2725400,
+        "input_tokens": 16,
+        "cache_tokens": 2682844,
+        "output_tokens": 8273,
+        "cost": 2.15
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "gemini-3-flash",
+        "total_tokens": 5658487,
+        "input_tokens": 1330078,
+        "cache_tokens": 4317773,
+        "output_tokens": 10636,
+        "cost": 1.91
+      },
+      {
+        "date": "2026-05-07",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "total_tokens": 888344,
+        "input_tokens": 12365,
+        "cache_tokens": 659279,
+        "output_tokens": 9350,
+        "cost": 1.87
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2569977,
+        "input_tokens": 16222,
+        "cache_tokens": 2541426,
+        "output_tokens": 5126,
+        "cost": 1.8
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 1554782,
+        "input_tokens": 6848,
+        "cache_tokens": 1448017,
+        "output_tokens": 12706,
+        "cost": 1.74
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2133364,
+        "input_tokens": 17089,
+        "cache_tokens": 2096165,
+        "output_tokens": 9947,
+        "cost": 1.65
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 1500514,
+        "input_tokens": 4327,
+        "cache_tokens": 1440378,
+        "output_tokens": 19650,
+        "cost": 1.59
+      }
+    ],
+    "top_token_requests": [
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 14263821,
+        "cost": 12.17
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "gemini-3-flash",
+        "total_tokens": 5658487,
+        "cost": 1.91
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 3789830,
+        "cost": 3.28
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "total_tokens": 3436833,
+        "cost": 2.61
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "gemini-3-flash",
+        "total_tokens": 3185815,
+        "cost": 1.23
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-thinking-xhigh",
+        "total_tokens": 2725400,
+        "cost": 2.15
+      },
+      {
+        "date": "2026-05-07",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2621507,
+        "cost": 2.99
+      },
+      {
+        "date": "2026-05-05",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2569977,
+        "cost": 1.8
+      },
+      {
+        "date": "2026-05-06",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-opus-4-7-high",
+        "total_tokens": 2501786,
+        "cost": 2.56
+      },
+      {
+        "date": "2026-05-08",
+        "user": "skuppusamy@salesforce.com",
+        "model": "claude-4.6-opus-high-thinking",
+        "total_tokens": 2491354,
+        "cost": 3.04
+      }
+    ],
+    "requests_over_3x_avg_cost": 2,
+    "avg_cost": 1.0825
+  }
+}

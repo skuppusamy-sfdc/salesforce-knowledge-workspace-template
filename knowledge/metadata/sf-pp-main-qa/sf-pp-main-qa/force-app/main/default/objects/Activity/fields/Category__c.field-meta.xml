@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Information</fullName>
+                <default>false</default>
+                <label>Account Information</label>
+            </value>
+            <value>
+                <fullName>Account Team</fullName>
+                <default>false</default>
+                <label>Account Team</label>
+            </value>
+            <value>
+                <fullName>Approvals</fullName>
+                <default>false</default>
+                <label>Approvals</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+                <label>Business Development</label>
+            </value>
+            <value>
+                <fullName>Clinician Notification (client facing)</fullName>
+                <default>false</default>
+                <label>Clinician Notification (client facing)</label>
+            </value>
+            <value>
+                <fullName>Connected Care</fullName>
+                <default>false</default>
+                <label>Connected Care</label>
+            </value>
+            <value>
+                <fullName>Corporate Compliance</fullName>
+                <default>false</default>
+                <label>Corporate Compliance</label>
+            </value>
+            <value>
+                <fullName>Coverage Model</fullName>
+                <default>false</default>
+                <label>Coverage Model</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Enrollment</fullName>
+                <default>false</default>
+                <label>Enrollment</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Go Live</fullName>
+                <default>false</default>
+                <label>Go Live</label>
+            </value>
+            <value>
+                <fullName>HiOps</fullName>
+                <default>false</default>
+                <label>HiOps</label>
+            </value>
+            <value>
+                <fullName>Hospital Overview</fullName>
+                <default>false</default>
+                <label>Hospital Overview</label>
+            </value>
+            <value>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+                <label>Human Resources</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+            <value>
+                <fullName>Initiate Implementation</fullName>
+                <default>false</default>
+                <label>Initiate Implementation</label>
+            </value>
+            <value>
+                <fullName>Leaseback Info</fullName>
+                <default>false</default>
+                <label>Leaseback Info</label>
+            </value>
+            <value>
+                <fullName>Leased Clinicians</fullName>
+                <default>false</default>
+                <label>Leased Clinicians</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Managed Care</fullName>
+                <default>false</default>
+                <label>Managed Care</label>
+            </value>
+            <value>
+                <fullName>Managed Care/Enrollment</fullName>
+                <default>false</default>
+                <label>Managed Care/Enrollment</label>
+            </value>
+            <value>
+                <fullName>NPPA Compliance</fullName>
+                <default>false</default>
+                <label>NPPA Compliance</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Operations MSL</fullName>
+                <default>false</default>
+                <label>Operations MSL</label>
+            </value>
+            <value>
+                <fullName>Operations PCC</fullName>
+                <default>false</default>
+                <label>Operations PCC</label>
+            </value>
+            <value>
+                <fullName>Operations Recruiter</fullName>
+                <default>false</default>
+                <label>Operations Recruiter</label>
+            </value>
+            <value>
+                <fullName>Orientation/Training</fullName>
+                <default>false</default>
+                <label>Orientation/Training</label>
+            </value>
+            <value>
+                <fullName>Practice Management</fullName>
+                <default>false</default>
+                <label>Practice Management</label>
+            </value>
+            <value>
+                <fullName>Program Details</fullName>
+                <default>false</default>
+                <label>Program Details</label>
+            </value>
+            <value>
+                <fullName>RCS</fullName>
+                <default>false</default>
+                <label>RCS</label>
+            </value>
+            <value>
+                <fullName>SUN - Final</fullName>
+                <default>false</default>
+                <label>SUN - Final</label>
+            </value>
+            <value>
+                <fullName>SUN - Preliminary</fullName>
+                <default>false</default>
+                <label>SUN - Preliminary</label>
+            </value>
+            <value>
+                <fullName>SUN - Revision</fullName>
+                <default>false</default>
+                <label>SUN - Revision</label>
+            </value>
+            <value>
+                <fullName>Urgent Care</fullName>
+                <default>false</default>
+                <label>Urgent Care</label>
+            </value>
+            <value>
+                <fullName>VISA Providers</fullName>
+                <default>false</default>
+                <label>VISA Providers</label>
+            </value>
+            <value>
+                <fullName>Practice Managment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Practice Managment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

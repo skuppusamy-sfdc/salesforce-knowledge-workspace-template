@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Date_Required_on_Loss</fullName>
+    <active>false</active>
+    <errorConditionFormula>isnull( Lost_Date__c ) &amp;&amp;
+(ispickval(StageName, &quot;Closed-No Bid&quot;) ||
+ispickval(StageName, &quot;Closed - SCP Declined&quot;) ||
+ispickval(StageName, &quot;Closed - Client Abandoned Proposal&quot;))</errorConditionFormula>
+    <errorMessage>Lost date is required for closed lost stages.</errorMessage>
+</ValidationRule>

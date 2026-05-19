@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMTGetRelatedHPFRecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTGetRelatedHPFRecordsCustom819</globalKey>
+        <inputFieldName>Employment_Type__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTGetRelatedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTGetRelatedHPFRecordsCustom3738</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTGetRelatedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTGetRelatedHPFRecordsCustom724</globalKey>
+        <inputFieldName>Last_Date_Worked__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTGetRelatedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>PICKLIST</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&quot;Inactive&quot;</filterValue>
+        <globalKey>DMTGetRelatedHPFRecordsCustom8166</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTGetRelatedHPFRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>ContactId</filterValue>
+        <globalKey>DMTGetRelatedHPFRecordsCustom9572</globalKey>
+        <inputFieldName>PractitionerId</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTGetRelatedHPFRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMTGetRelatedHPFRecordsCustom7464</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacility</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMTGetRelatedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFRecords</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;0bS7x0000003EhZEAU&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Turbo Extract</type>
+    <uniqueName>DMTGetRelatedHPFRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

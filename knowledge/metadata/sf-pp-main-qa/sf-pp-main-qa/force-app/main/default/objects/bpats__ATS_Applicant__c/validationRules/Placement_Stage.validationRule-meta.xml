@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placement_Stage</fullName>
+    <active>true</active>
+    <description>The Documentation Executed checkbox must be filled out on the Applicant record before moving to Placement stage.</description>
+    <errorConditionFormula>AND(
+bpats__Stage__r.bpats__Sequence__c = 9,
+Documentation_Executed__c &lt;&gt; TRUE )</errorConditionFormula>
+    <errorMessage>The Documentation Executed checkbox must be filled out on the Applicant record before moving to Placement stage.</errorMessage>
+</ValidationRule>

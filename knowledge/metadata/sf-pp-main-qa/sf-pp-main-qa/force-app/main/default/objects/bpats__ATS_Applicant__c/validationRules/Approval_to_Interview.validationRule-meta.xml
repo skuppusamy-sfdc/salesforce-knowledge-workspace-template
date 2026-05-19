@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_to_Interview</fullName>
+    <active>true</active>
+    <description>In order to move to the Interviewing Stage, Approve to Interview  and Interview Approved By must be filled in.</description>
+    <errorConditionFormula>AND (bpats__Stage__r.bpats__Sequence__c = 5,
+  
+OR (Approved_To_Interview__c  &lt;&gt; TRUE,
+
+ISBLANK( Interview_Approved_By__c )))</errorConditionFormula>
+    <errorMessage>In order to move to the Interviewing Stage, the Approve to Interview checkbox must be checked and the Interview Approved By field must be filled in on the applicant record.</errorMessage>
+</ValidationRule>

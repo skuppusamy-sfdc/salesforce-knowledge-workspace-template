@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;TryCatchBlock&quot; : null,
+    &quot;RA_ContractRecords&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;TryCatchBlock&quot; : { }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;providerNetworkRecords&quot; : {
+    &quot;hpfId&quot; : &quot;Text&quot;,
+    &quot;checked&quot; : &quot;true&quot;
+  },
+  &quot;contractRec&quot; : {
+    &quot;Id&quot; : &quot;Text&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DEFetchProviderNetworkContractRecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;true&quot;</formulaConverted>
+        <formulaExpression>&quot;true&quot;</formulaExpression>
+        <formulaResultPath>providerNetworkRecords:checked</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom593</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>contractRec:Id</filterValue>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom7656</globalKey>
+        <inputFieldName>ContractId</inputFieldName>
+        <inputObjectName>ProviderNetworkContract</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>providerNetworkRecords</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom4746</globalKey>
+        <inputFieldName>providerNetworkRecords:checked</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>providerNetworkRecords:checked</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordTypeId</filterValue>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom7861</globalKey>
+        <inputFieldName>RecordTypeId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>contractRec</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>clinicianId</filterValue>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom8781</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>contractRec</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom2109</globalKey>
+        <inputFieldName>providerNetworkRecords:Healthcare_Practitioner_Facility__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>providerNetworkRecords:hpfId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Draft&apos;</filterValue>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom6233</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>contractRec</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom7239</globalKey>
+        <inputFieldName>contractRec:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>contractRec:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>LIMIT</filterOperator>
+        <filterValue>1</filterValue>
+        <globalKey>DEFetchProviderNetworkContractRecordsCustom718</globalKey>
+        <inputObjectName>Contract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DEFetchProviderNetworkContractRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>contractRec</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;clinicianId&quot; : &quot;0017x000019kWs2AAE&quot;,
+  &quot;recordTypeId&quot; : &quot;0127x00000GcMEPAA3&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DEFetchProviderNetworkContractRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

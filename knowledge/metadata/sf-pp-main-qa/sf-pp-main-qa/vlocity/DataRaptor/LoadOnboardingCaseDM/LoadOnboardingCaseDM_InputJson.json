@@ -1,0 +1,15 @@
+{
+    "caseContactId": "",
+    "caseList": [
+        {
+            "caseAccountId": "",
+            "caseHPFId": "",
+            "caseOrigin": "",
+            "casePriority": "",
+            "caseSubject": "",
+            "caseType": ""
+        }
+    ],
+    "caseRecordTypeId": "",
+    "caseStatus": ""
+}

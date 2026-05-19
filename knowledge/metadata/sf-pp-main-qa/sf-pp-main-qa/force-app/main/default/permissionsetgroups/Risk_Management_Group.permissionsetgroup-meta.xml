@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access needed to perform Risk Management activities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Risk Management Group</label>
+    <permissionSets>Edit_Clinical_Match_Group</permissionSets>
+    <permissionSets>Risk_Management</permissionSets>
+    <permissionSets>View_Client_Contracts</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

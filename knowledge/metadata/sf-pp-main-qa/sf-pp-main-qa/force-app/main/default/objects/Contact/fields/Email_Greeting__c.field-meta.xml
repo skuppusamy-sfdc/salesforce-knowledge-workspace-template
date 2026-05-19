@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Greeting__c</fullName>
+    <description>Checks the Professional Title to return Dr. LastName for physicians, and FirstName otherwise</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        TEXT(Professional_Title__c) = &quot;MD&quot;,
+        TEXT(Professional_Title__c) = &quot;DO&quot;
+    ),
+    &quot;Dr. &quot; &amp; LastName,
+    FirstName
+)</formula>
+    <inlineHelpText>Greeting for Emails</inlineHelpText>
+    <label>Email Greeting</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

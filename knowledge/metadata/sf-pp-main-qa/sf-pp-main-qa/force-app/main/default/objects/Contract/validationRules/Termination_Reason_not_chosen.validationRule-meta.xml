@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Termination_Reason_not_chosen</fullName>
+    <active>false</active>
+    <description>Deactivated as part of the following stories: PR1050558-3520 and PR1050558-3474.</description>
+    <errorConditionFormula>AND( ISPICKVAL(Status, &apos;Terminated&apos;), ISPICKVAL(Termination_Reason__c, &apos;&apos;) )</errorConditionFormula>
+    <errorMessage>You must choose a termination reason</errorMessage>
+</ValidationRule>

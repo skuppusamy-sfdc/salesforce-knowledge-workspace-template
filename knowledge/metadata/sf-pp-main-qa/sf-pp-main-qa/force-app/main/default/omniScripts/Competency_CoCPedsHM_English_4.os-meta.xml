@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <designerCustomizationType>Discovery Framework</designerCustomizationType>
+    <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>Competency_CoC_Peds_HM</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>IP_SaveAssessmentResponse</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;IP_SaveAssessmentResponse&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;Competency_SaveAssessmentResponse&quot;,
+  &quot;useContinuation&quot; : false,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;useFuture&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : {
+    &quot;omniProcessId&quot; : &quot;%omniProcessId%&quot;,
+    &quot;omniscriptId&quot; : &quot;%omniscriptId%&quot;,
+    &quot;Step1&quot; : &quot;%Step1%&quot;,
+    &quot;AssessmentEnvelopeItemId&quot; : &quot;%ContextId%&quot;,
+    &quot;Err_RunningContext&quot; : &quot;IP_SaveAssessmentResponse&quot;,
+    &quot;Err_CtxId&quot; : &quot;%ContextId%&quot;,
+    &quot;Err_ProcessType&quot; : &quot;IP&quot;,
+    &quot;AssessmentName&quot; : &quot;1.5 Certification of Competency (Peds HM)&quot;
+  },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;sendOnlyExtraPayload&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Integration Procedure Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>NA_HomePage</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;NA_HomePage&quot;,
+  &quot;validationRequired&quot; : &quot;Submit&quot;,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;pubsub&quot; : false,
+  &quot;message&quot; : { },
+  &quot;targetType&quot; : &quot;Web Page&quot;,
+  &quot;objectAction&quot; : &quot;home&quot;,
+  &quot;recordAction&quot; : &quot;view&quot;,
+  &quot;loginAction&quot; : &quot;login&quot;,
+  &quot;targetFilter&quot; : &quot;Recent&quot;,
+  &quot;targetId&quot; : &quot;%ContextId%&quot;,
+  &quot;variant&quot; : &quot;brand&quot;,
+  &quot;iconName&quot; : &quot;&quot;,
+  &quot;iconVariant&quot; : &quot;&quot;,
+  &quot;iconPosition&quot; : &quot;left&quot;,
+  &quot;replace&quot; : true,
+  &quot;targetLWCLayout&quot; : &quot;lightning&quot;,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;targetUrl&quot; : &quot;/s&quot;
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Navigate Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>SetValues1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;elementValueMap&quot; : {
+    &quot;attestationText&quot; : {
+      &quot;text&quot; : &quot;&lt;p&gt;&lt;b&gt;I am capable of managing medical conditions typically encountered in the practice of Pediatric Hospital Medicine* to the level of Pediatric medicine training including the medical co-management of patients hospitalized for surgical disorders.&lt;/b&gt;&lt;/p&gt;&lt;p style=&apos;margin-top: 15px;&apos;&gt;&lt;span style=&apos;color: red; font-weight: bold;&apos;&gt;*&lt;/span&gt; These include but are not restricted to: Abdominal Pain, Acute Renal Failure, Acute Respiratory Failure, Acid/Base Disturbance, Alcohol and Drug Intoxication / Withdrawal, Altered Mental Status, Allergic Reaction, Anemia, Ascites, Asthma, Cardiac Arrhythmia, Cellulitis, Chest Pain, Child Abuse and Neglect, Cholecystitis, Colitis, Congestive Heart Failure, Dehydration, Diabetes Mellitus, Diarrhea, Dizziness, Electrolyte disturbance, Fever, Gastrointestinal Bleed, Headache, Hepatic Diseases, Hypertension, Infections, Kawasaki Disease, Kidney/Ureteral Stone, Meningitis / Encephalitis, Nausea with Vomiting, Osteomyelitis, Pancreatitis, Pericarditis, Poisoning, Psychiatric Disturbance, Pneumonia, Seizure, Shock, Sickle Cell Disease, Sepsis Syndrome, Small Bowel Obstruction / Ileus, Stroke, Suicidal Behavior, Syncope, Thyroid Dysfunction, Urinary Tract Infection, Venous Thromboembollism and Weakness.&lt;/p&gt;&quot;
+    }
+  },
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Set Values</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Central_venous_catheter_insertion</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Central venous catheter insertion&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;C&quot;,
+    &quot;developerName&quot; : &quot;C&quot;,
+    &quot;value&quot; : &quot;C&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Central_venous_catheter_insertion</uniqueIndex>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;CustomLWC1&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfCompetency_Peds_HM_CertificationHeader&quot;,
+  &quot;bStandalone&quot; : true,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;parent-attribute&quot;,
+    &quot;source&quot; : &quot;%attestationText%&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;CustomLWC2&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfCompetency_Peds_HM_CertificationHeaderV2&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ ]
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC3</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;CustomLWC3&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfCompetency_ISV_Critical_Care_NPPA_SubHeader&quot;,
+  &quot;bStandalone&quot; : true,
+  &quot;customAttributes&quot; : [ {
+    &quot;name&quot; : &quot;record-id&quot;,
+    &quot;source&quot; : &quot;Procedure&quot;
+  } ]
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Date</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Date&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;dateType&quot; : &quot;string&quot;,
+  &quot;modelDateFormat&quot; : &quot;yyyy-MM-dd&quot;,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;minDate&quot; : &quot;&quot;,
+  &quot;maxDate&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Date</type>
+            <uniqueIndex>Date</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Date2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Date&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;dateType&quot; : &quot;string&quot;,
+  &quot;modelDateFormat&quot; : &quot;yyyy-MM-dd&quot;,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;minDate&quot; : &quot;&quot;,
+  &quot;maxDate&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>13.0</sequenceNumber>
+            <type>Date</type>
+            <uniqueIndex>Date2</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Date_v3</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6.0,
+  &quot;label&quot; : &quot;Date&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12.0,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;dateType&quot; : &quot;string&quot;,
+  &quot;modelDateFormat&quot; : &quot;yyyy-MM-dd&quot;,
+  &quot;dateFormat&quot; : &quot;MM-dd-yyyy&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false,
+  &quot;minDate&quot; : &quot;&quot;,
+  &quot;maxDate&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>17.0</sequenceNumber>
+            <type>Date</type>
+            <uniqueIndex>Date_v3</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Do_you_have_or_are_you_able_to_obtain_procedure_case_logs_showing_thatQT</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12.0,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;font-weight:bold;\&quot;&gt;Do you have or are you able to obtain procedure / case logs showing that you have performed these procedures within the last 2 years?&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Procedure / Case logs are records that track the number of patients treated and/or procedures performed by a clinician, often used to document competency and meet training requirements. A copy of these logs can be requested from the hospital/employer&apos;s medical staff office, quality assurance department, Health Information Management department, or billing office. Typically, these records are only released to the clinician themselves.&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;font-weight:bold;\&quot;&gt;Do you have or are you able to obtain procedure / case logs showing that you have performed these procedures within the last 2 years?&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Procedure / Case logs are records that track the number of patients treated and/or procedures performed by a clinician, often used to document competency and meet training requirements. A copy of these logs can be requested from the hospital/employer&apos;s medical staff office, quality assurance department, Health Information Management department, or billing office. Typically, these records are only released to the clinician themselves.&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>14.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>Do_you_have_or_are_you_able_to_obtain_procedure_case_logs_showing_thatQT</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Do_you_have_or_are_you_able_to_obtain_procedure_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : true,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>15.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Do_you_have_or_are_you_able_to_obtain_procedure_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Endotracheal_Intubation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Endotracheal Intubation&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;C&quot;,
+    &quot;developerName&quot; : &quot;C&quot;,
+    &quot;value&quot; : &quot;C&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Endotracheal_Intubation</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Initial</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Initial&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;placeholder&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text</type>
+            <uniqueIndex>Initial</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Initial_v3</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6.0,
+  &quot;label&quot; : &quot;Initial&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12.0,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0.0,
+  &quot;maxLength&quot; : 255.0,
+  &quot;placeholder&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0.0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>16.0</sequenceNumber>
+            <type>Text</type>
+            <uniqueIndex>Initial_v3</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>InitialV2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Initial&quot;,
+  &quot;showInputWidth&quot; : false,
+  &quot;inputWidth&quot; : 12,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;mask&quot; : &quot;&quot;,
+  &quot;pattern&quot; : &quot;&quot;,
+  &quot;ptrnErrText&quot; : &quot;&quot;,
+  &quot;minLength&quot; : 0,
+  &quot;maxLength&quot; : 255,
+  &quot;placeholder&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;debounceValue&quot; : 0,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Text</type>
+            <uniqueIndex>InitialV2</uniqueIndex>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LineBreak1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;label&quot; : &quot;LineBreak1&quot;,
+  &quot;padding&quot; : 10,
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Line Break</type>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Lumbar_Puncture_V2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Lumbar Puncture&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;C&quot;,
+    &quot;developerName&quot; : &quot;C&quot;,
+    &quot;value&quot; : &quot;C&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Lumbar_Puncture_V2</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Neonatal_Resuscitation_V2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Neonatal Resuscitation&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;C&quot;,
+    &quot;developerName&quot; : &quot;C&quot;,
+    &quot;value&quot; : &quot;C&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Neonatal_Resuscitation_V2</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Pediatric_Advanced_Life_Support_V2</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Pediatric Advanced Life Support&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;C&quot;,
+    &quot;developerName&quot; : &quot;C&quot;,
+    &quot;value&quot; : &quot;C&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Pediatric_Advanced_Life_Support_V2</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>Ventilator_management_less_than_72_hours</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Ventilator management (less than 72 hours)&quot;,
+  &quot;required&quot; : true,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;A&quot;,
+    &quot;developerName&quot; : &quot;A&quot;,
+    &quot;value&quot; : &quot;A&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;B&quot;,
+    &quot;developerName&quot; : &quot;B&quot;,
+    &quot;value&quot; : &quot;B&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;C&quot;,
+    &quot;developerName&quot; : &quot;C&quot;,
+    &quot;value&quot; : &quot;C&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>Ventilator_management_less_than_72_hours</uniqueIndex>
+        </childElements>
+        <designerCustomizationType>Discovery Framework</designerCustomizationType>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Step1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;PEDIATRIC HOSPITAL MEDICINE – PHYSICIAN - CERTIFICATION OF COMPETENCY&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Previous&quot;,
+  &quot;previousWidth&quot; : 3.0,
+  &quot;nextLabel&quot; : &quot;Submit&quot;,
+  &quot;nextWidth&quot; : 3.0,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save for later&quot;,
+  &quot;saveMessage&quot; : &quot;Are you sure you want to save it for later?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000.0,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000.0,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : null,
+  &quot;allowSaveForLater&quot; : true,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:false,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:false,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:true,&quot;mergeSavedData&quot;:false,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:null,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;right&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;}</propertySetConfig>
+    <subType>CoCPedsHM</subType>
+    <type>Competency</type>
+    <uniqueName>Competency_CoCPedsHM_English_4</uniqueName>
+    <versionNumber>4.0</versionNumber>
+    <webComponentKey>82f628a4-2064-762e-8037-d8cacce302b1</webComponentKey>
+</OmniScript>

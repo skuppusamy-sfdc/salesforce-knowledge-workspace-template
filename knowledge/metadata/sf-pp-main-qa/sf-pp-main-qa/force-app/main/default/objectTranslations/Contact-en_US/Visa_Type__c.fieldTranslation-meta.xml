@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Visa Type --></label>
+    <name>Visa_Type__c</name>
+    <picklistValues>
+        <masterLabel>Birth Abroad Cert</masterLabel>
+        <translation><!-- Birth Abroad Cert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citizen/Naturalized</masterLabel>
+        <translation><!-- Citizen/Naturalized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-2</masterLabel>
+        <translation><!-- E-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAD</masterLabel>
+        <translation><!-- EAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-1B</masterLabel>
+        <translation><!-- H-1B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-1C</masterLabel>
+        <translation><!-- H-1C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-2B</masterLabel>
+        <translation><!-- H-2B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H-3B</masterLabel>
+        <translation><!-- H-3B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J-1</masterLabel>
+        <translation><!-- J-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J-2</masterLabel>
+        <translation><!-- J-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L</masterLabel>
+        <translation><!-- L --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O-1</masterLabel>
+        <translation><!-- O-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P</masterLabel>
+        <translation><!-- P --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm (Green Card)</masterLabel>
+        <translation><!-- Perm (Green Card) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R</masterLabel>
+        <translation><!-- R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TN</masterLabel>
+        <translation><!-- TN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

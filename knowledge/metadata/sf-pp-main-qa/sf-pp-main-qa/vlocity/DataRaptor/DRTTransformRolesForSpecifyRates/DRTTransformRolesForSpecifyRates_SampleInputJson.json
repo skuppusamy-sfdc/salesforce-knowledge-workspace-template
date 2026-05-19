@@ -1,0 +1,28 @@
+{
+    "listOfData": [
+        {
+            "rates": {
+                "cpaId": "0rR7x00000002mbEAA",
+                "name": "EE Lead Midlevel Provider",
+                "rate": 12
+            },
+            "role": "Night Shift Bonus"
+        },
+        {
+            "rates": {
+                "cpaId": "0rR7x00000002mbEAA",
+                "name": "EE Nurse Practitioner",
+                "rate": 12
+            },
+            "role": "Night Shift Bonus"
+        },
+        {
+            "rates": {
+                "cpaId": "0rR7x00000002mbEAA",
+                "name": "EE Physician Assistant",
+                "rate": 12
+            },
+            "role": "Night Shift Bonus"
+        }
+    ]
+}

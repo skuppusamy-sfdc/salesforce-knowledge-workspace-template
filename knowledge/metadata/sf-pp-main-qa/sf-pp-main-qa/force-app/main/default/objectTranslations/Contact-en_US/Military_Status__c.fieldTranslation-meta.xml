@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Military Status --></label>
+    <name>Military_Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government Civilian</masterLabel>
+        <translation><!-- Government Civilian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guard</masterLabel>
+        <translation><!-- Guard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive</masterLabel>
+        <translation><!-- Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reserve</masterLabel>
+        <translation><!-- Reserve --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retired</masterLabel>
+        <translation><!-- Retired --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

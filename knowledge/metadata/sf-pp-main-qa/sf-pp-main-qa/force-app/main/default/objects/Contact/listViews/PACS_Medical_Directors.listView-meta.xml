@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PACS_Medical_Directors</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Facility_Type__c</field>
+        <operation>equals</operation>
+        <value>Skilled Nursing Facility</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>equals</operation>
+        <value>Medical Director</value>
+    </filters>
+    <label>PACS Medical Directors</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form on File --></label>
+    <name>Form_on_File__c</name>
+    <picklistValues>
+        <masterLabel>Copy Received</masterLabel>
+        <translation><!-- Copy Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need Copy</masterLabel>
+        <translation><!-- Need Copy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Required</masterLabel>
+        <translation><!-- Not Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

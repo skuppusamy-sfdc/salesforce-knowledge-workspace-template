@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Presentation__c</fullName>
+    <label>Type of Presentation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Formal Proposal</fullName>
+                <default>false</default>
+                <label>Formal Proposal</label>
+            </value>
+            <value>
+                <fullName>Response to RFP/RFI</fullName>
+                <default>false</default>
+                <label>Response to RFP/RFI</label>
+            </value>
+            <value>
+                <fullName>SCP Introduction</fullName>
+                <default>false</default>
+                <label>SCP Introduction</label>
+            </value>
+            <value>
+                <fullName>CEO Introduction</fullName>
+                <default>false</default>
+                <label>CEO Introduction</label>
+            </value>
+            <value>
+                <fullName>Proposal Finalist</fullName>
+                <default>false</default>
+                <label>Proposal Finalist</label>
+            </value>
+            <value>
+                <fullName>Finalist Presentation Follow-up</fullName>
+                <default>false</default>
+                <label>Finalist Presentation Follow-up</label>
+            </value>
+            <value>
+                <fullName>QBR</fullName>
+                <default>false</default>
+                <label>QBR</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

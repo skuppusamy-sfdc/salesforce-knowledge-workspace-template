@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1st_Interaction__c</fullName>
+    <description>Date and time of first 2 way engagement with lead</description>
+    <inlineHelpText>Date and time of first 2 way engagement with lead</inlineHelpText>
+    <label>Initial Interaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

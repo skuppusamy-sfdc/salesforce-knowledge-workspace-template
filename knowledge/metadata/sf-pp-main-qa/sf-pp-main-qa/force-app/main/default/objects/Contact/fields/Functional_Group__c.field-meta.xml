@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Functional_Group__c</fullName>
+    <label>Functional Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative/Human Resources</fullName>
+                <default>false</default>
+                <label>Administrative/Human Resources</label>
+            </value>
+            <value>
+                <fullName>Board of Directors/Trustees</fullName>
+                <default>false</default>
+                <label>Board of Directors/Trustees</label>
+            </value>
+            <value>
+                <fullName>Chief Executive/President/Administrator</fullName>
+                <default>false</default>
+                <label>Chief Executive/President/Administrator</label>
+            </value>
+            <value>
+                <fullName>Medical/Quality/Care Management</fullName>
+                <default>false</default>
+                <label>Medical/Quality/Care Management</label>
+            </value>
+            <value>
+                <fullName>Nurse/Nursing Executive</fullName>
+                <default>false</default>
+                <label>Nurse/Nursing Executive</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Sales/Marketing/Business Development</fullName>
+                <default>false</default>
+                <label>Sales/Marketing/Business Development</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,36 @@
+{
+    "contractRec": {
+        "AccountName": "Executed Contract Clinician",
+        "Employment_Type__c": "Employee",
+        "OwnerId": "0057x00000TUdWHAA1",
+        "Perpetual__c": false,
+        "PreviousContractId": "8007x00000cANFFAA4",
+        "StartDate": "2025-08-01",
+        "accountId": "0017x00001GkcjhAAB",
+        "recordtypeId": "0127x00000GcMEPAA3",
+        "status": "Draft"
+    },
+    "employeeType": "Employee",
+    "endDate": null,
+    "isNPPA": false,
+    "previousContractId": "",
+    "providerNetworkRec": [
+        {
+            "EndDate": "2028-08-29",
+            "HealthcarePayerNetworkId": "0bf7x0000000Ac5AAE",
+            "HealthcareProviderId": "0cm7x000001Y6gjAAC",
+            "Healthcare_Practitioner_Facility__c": "0bS7x0000003DVNEA2",
+            "StartDate": "2025-08-01",
+            "clonedFrom": "0mw7x0000000qzVAAQ"
+        },
+        {
+            "EndDate": "2028-08-29",
+            "HealthcarePayerNetworkId": "0bf7x0000000Ac5AAE",
+            "HealthcareProviderId": "0cm7x000001Y6gjAAC",
+            "Healthcare_Practitioner_Facility__c": "0bS7x00000039oLEAQ",
+            "StartDate": "2025-08-01",
+            "clonedFrom": "0mw7x0000000r17AAA"
+        }
+    ],
+    "startDate": "2025-08-01"
+}

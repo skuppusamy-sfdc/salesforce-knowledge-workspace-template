@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_Access__c</fullName>
+    <label>Log Access</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DFS</fullName>
+                <default>false</default>
+                <label>DFS</label>
+            </value>
+            <value>
+                <fullName>Direct EMR</fullName>
+                <default>false</default>
+                <label>Direct EMR</label>
+            </value>
+            <value>
+                <fullName>Emailed</fullName>
+                <default>false</default>
+                <label>Emailed</label>
+            </value>
+            <value>
+                <fullName>Faxed</fullName>
+                <default>false</default>
+                <label>Faxed</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

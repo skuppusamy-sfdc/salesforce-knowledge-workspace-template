@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocuSign_for_Contracting</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>DocuSign for Contracting</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>{!URLFOR(
+  $Site.BaseUrl &amp; &apos;/apex/dfsle__CustomEnvelopeCreation&apos;,
+  null,
+  [
+    sId  = Contract.Id,
+    CCTM = &apos;HR CC~Receives a Copy&apos;,
+    CES  = Contract.Clinician_First_Name__c &amp; &apos; &apos; &amp; Contract.Clinician_Last_Name__c  &amp; &apos; - contract documents - &apos; &amp; TEXT(Contract.StartDate)
+           ,
+    CCRM = &apos;Customer Signer~Signer 1;Role~Company Signer~Signer 2&apos;, 
+
+    CRL  =
+      /* Customer Signer */
+      &apos;Email~&apos;       &amp; Contract.Clinician_Email__c
+      &amp; &apos;;FirstName~&apos; &amp; Contract.Clinician_First_Name__c
+      &amp; &apos;;LastName~&apos;  &amp; Contract.Clinician_Last_Name__c
+      &amp; &apos;;Role~Signer 1;RoutingOrder~1&apos;
+
+      /* Company Signer */
+      &amp; &apos;,Email~&apos;     &amp; $Setup.DocuSign_For_Contracting_Setting__c.Email__c
+      &amp; &apos;;FirstName~&apos; &amp; $Setup.DocuSign_For_Contracting_Setting__c.First_Name__c
+      &amp; &apos;;LastName~&apos;  &amp; $Setup.DocuSign_For_Contracting_Setting__c.Last_Name__c
+      &amp; &apos;;Role~Signer 2;RoutingOrder~2&apos;
+
+      /* HR CC from Hierarchy Custom Setting ($Setup) */
+      &amp; IF(
+          TEXT(Contract.Employment_Type__c) = &apos;Employee&apos;,
+          &apos;,Email~&apos;       &amp; $Setup.DocuSign_For_Contracting_Setting__c.HR_Email__c
+          &amp; &apos;;LastName~&apos;  &amp; $Setup.DocuSign_For_Contracting_Setting__c.HR_Last_Name__c
+          &amp; &apos;;Role~HR CC;RoutingOrder~1&apos;,
+          &apos;&apos;
+        ),
+
+    RES = &apos;1,3,3,1,60,3&apos;,
+    LA  = 0,
+    CFS = &apos;Envelope Name~&apos; + Contract.Clinician_First_Name__c &amp; &apos; &apos; &amp; Contract.Clinician_Last_Name__c  &amp; &apos; - contract documents - &apos; &amp; TEXT(Contract.StartDate) +
+&apos;~1~1,Document Type~Clinician Agreement~1~1&apos;
+  ]
+)}</url>
+</WebLink>

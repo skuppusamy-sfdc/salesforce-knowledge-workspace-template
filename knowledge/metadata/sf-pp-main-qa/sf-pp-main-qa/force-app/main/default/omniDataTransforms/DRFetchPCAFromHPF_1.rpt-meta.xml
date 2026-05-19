@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRFetchPCAFromHPF</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom1270</globalKey>
+        <inputFieldName>PCAList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCAId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom5778</globalKey>
+        <inputFieldName>PCAList:Duration_Months__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DurationInMonths</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Bonus&quot;</filterValue>
+        <globalKey>DRFetchPCAFromHPFCustom6243</globalKey>
+        <inputFieldName>ContractPaymentAgreement.Type__c</inputFieldName>
+        <inputObjectName>PreventiveCareAgreement</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>PCAList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Clinician&quot;</filterValue>
+        <globalKey>DRFetchPCAFromHPFCustom2882</globalKey>
+        <inputFieldName>ContractPaymentAgreement.Contract.RecordType.DeveloperName</inputFieldName>
+        <inputObjectName>PreventiveCareAgreement</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>PCAList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom374</globalKey>
+        <inputFieldName>PCAList:checkDuration</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CheckDuration</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Sign On Bonus&quot;</filterValue>
+        <globalKey>DRFetchPCAFromHPFCustom7759</globalKey>
+        <inputFieldName>Type__r.Name</inputFieldName>
+        <inputObjectName>PreventiveCareAgreement</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>PCAList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:PCAList:Duration_Months__c ISNOTBLANK | var:PCAList:ContractPaymentAgreement.Contract.StartDate var:PCAList:Duration_Months__c ADDMONTH var:PCAList:ContractPaymentAgreement.Contract.StartDate IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(%PCAList:Duration_Months__c%),ADDMONTH(%PCAList:ContractPaymentAgreement.Contract.StartDate%,PCAList:Duration_Months__c),%PCAList:ContractPaymentAgreement.Contract.StartDate%)</formulaExpression>
+        <formulaResultPath>PCAList:checkDuration</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRFetchPCAFromHPFCustom3356</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>PracAccId</filterValue>
+        <globalKey>DRFetchPCAFromHPFCustom3333</globalKey>
+        <inputFieldName>ContractPaymentAgreement.Contract.AccountId</inputFieldName>
+        <inputObjectName>PreventiveCareAgreement</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>PCAList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom7915</globalKey>
+        <inputFieldName>PCAList:ContractPaymentAgreement.Provider_Network_Contract__r.Healthcare_Practitioner_Facility__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HPFId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom1326</globalKey>
+        <inputFieldName>PCAList:ContractPaymentAgreement.Contract.StartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContractStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom5392</globalKey>
+        <inputFieldName>PCAList:ContractPaymentAgreement.Contract.Account.PersonContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PractitionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRFetchPCAFromHPFCustom6810</globalKey>
+        <inputFieldName>PCAList:ContractPaymentAgreement.Provider_Network_Contract__r.Healthcare_Practitioner_Facility__r.AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRFetchPCAFromHPF</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ServiceAccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;0&quot; : {
+    &quot;Name&quot; : &quot;test S&quot;,
+    &quot;PracAccId&quot; : &quot;0017x00001LCOLOAA5&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x00000036iPEAQ&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x00001A7C9aAAF&quot;,
+    &quot;Status&quot; : &quot;Active&quot;
+  },
+  &quot;1&quot; : {
+    &quot;Name&quot; : &quot;Ochsner St. Martin Hospital-Hospitalist&quot;,
+    &quot;PracAccId&quot; : &quot;0017x0000170atPAAQ&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;Colorado&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x000000371oEAA&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x00000wuHS1AAM&quot;,
+    &quot;Status&quot; : &quot;Prospect&quot;
+  },
+  &quot;2&quot; : {
+    &quot;Name&quot; : &quot;Test Service Account 0012&quot;,
+    &quot;PracAccId&quot; : &quot;0017x00001FybMwAAJ&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003DjtEAE&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x000014gww2AAA&quot;,
+    &quot;Status&quot; : &quot;Active&quot;
+  },
+  &quot;3&quot; : {
+    &quot;Name&quot; : &quot;Test Service Account 001&quot;,
+    &quot;PracAccId&quot; : &quot;0017x00001GgBroAAF&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003KbhEAE&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x000015QqQzAAK&quot;,
+    &quot;Status&quot; : &quot;Prospect&quot;
+  },
+  &quot;4&quot; : {
+    &quot;Name&quot; : &quot;Test 1&quot;,
+    &quot;PracAccId&quot; : &quot;0017x00001GgBroAAF&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003KlNEAU&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x000015QqQzAAK&quot;,
+    &quot;Status&quot; : &quot;Prospect&quot;
+  },
+  &quot;5&quot; : {
+    &quot;Name&quot; : &quot;Test Service Account 001112&quot;,
+    &quot;PracAccId&quot; : &quot;0017x00001GgBroAAF&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003KobEAE&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x000015QqQzAAK&quot;,
+    &quot;Status&quot; : &quot;Prospect&quot;
+  },
+  &quot;6&quot; : {
+    &quot;Name&quot; : &quot;Test Service Account 0012&quot;,
+    &quot;PracAccId&quot; : &quot;0017x00001OsCYyAAN&quot;,
+    &quot;PractitionerMailingState&quot; : &quot;&quot;,
+    &quot;ServiceAccountId&quot; : &quot;0017x000017KgM0AAK&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003UMXEA2&quot;,
+    &quot;PractitionerId&quot; : &quot;0037x00001E5TSEAA3&quot;,
+    &quot;Status&quot; : &quot;Active&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DRFetchPCAFromHPF_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

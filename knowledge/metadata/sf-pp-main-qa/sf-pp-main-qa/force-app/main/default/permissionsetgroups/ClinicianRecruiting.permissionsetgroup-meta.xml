@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access needed to perform Clinician Recruiting activities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Clinician Recruiting</label>
+    <permissionSets>ASYMBL_ASM_User</permissionSets>
+    <permissionSets>ASYMBL_ATS_User</permissionSets>
+    <permissionSets>ATS_Recruiter</permissionSets>
+    <permissionSets>Create_Reports_and_Dashboards</permissionSets>
+    <permissionSets>DocGen_User_Ext</permissionSets>
+    <permissionSets>Lock_Contract</permissionSets>
+    <permissionSets>Manage_Clinician_Contracts</permissionSets>
+    <permissionSets>Manage_Clinician_Identifiers_Credentials_Specialties</permissionSets>
+    <permissionSets>Manage_Clinician_Rates</permissionSets>
+    <permissionSets>Manage_Clinician_Recruiting</permissionSets>
+    <permissionSets>Manage_Clinician_to_Facility_Relationships</permissionSets>
+    <permissionSets>Manage_Clinicians</permissionSets>
+    <permissionSets>Manage_Collaborative_Practice_Agreements</permissionSets>
+    <permissionSets>View_Client_Contracts</permissionSets>
+    <permissionSets>View_Clinician_Corporate_Tax_Information</permissionSets>
+    <permissionSets>force__DocGenRuntime</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

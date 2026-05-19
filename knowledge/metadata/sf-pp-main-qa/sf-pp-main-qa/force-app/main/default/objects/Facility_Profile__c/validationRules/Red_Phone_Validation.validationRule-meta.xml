@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Red_Phone_Validation</fullName>
+    <active>true</active>
+    <description>Phone format</description>
+    <errorConditionFormula>AND(LEN( Red_Phone__c ) &lt;&gt; 0, 
+NOT ( 
+AND( 
+
+LEFT(Red_Phone__c,1)=&quot;(&quot;, 
+MID(Red_Phone__c,5,1)=&quot;)&quot;, 
+MID(Red_Phone__c,6,1)=&quot; &quot;, 
+MID(Red_Phone__c,10,1)=&quot;-&quot;, 
+
+
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 2, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 3, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 4, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 7, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 8, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 9, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 11, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 12, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 13, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 14, 1)), 
+
+OR(AND(LEN(Red_Phone__c)&lt;=20,MID(Red_Phone__c, 15,2)=&quot; x&quot;, 
+
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 17, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 18, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 19, 1)), 
+CONTAINS(&quot;0123456789&quot;, MID (Red_Phone__c, 20, 1)) 
+), LEN(Red_Phone__c)&lt;=14 
+) 
+) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Red_Phone__c</errorDisplayField>
+    <errorMessage>You Must use numbers or exact phone format 
+(123) 444-5577</errorMessage>
+</ValidationRule>

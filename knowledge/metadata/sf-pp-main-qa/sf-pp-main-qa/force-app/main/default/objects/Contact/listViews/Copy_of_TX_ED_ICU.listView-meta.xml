@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_TX_ED_ICU</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account.ED_Volume__c</columns>
+    <columns>Account.Current_EM_Incumbent__c</columns>
+    <columns>Account.Group_Ownership__c</columns>
+    <columns>Account.Current_HM_Incumbent__c</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>Account_Owner__c</field>
+        <operation>equals</operation>
+        <value>Holly Gibbons</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>NY</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Executive Officer,Chief Financial Officer,Chief Medical Officer,Chief Nursing Officer,Chief Operating Officer</value>
+    </filters>
+    <filters>
+        <field>Account.texcellency__DefHC_Hospital_Name__c</field>
+        <operation>notContain</operation>
+        <value>healthalliance; mid-hudson</value>
+    </filters>
+    <filters>
+        <field>Account.County__c</field>
+        <operation>contains</operation>
+        <value>nassau,richmond,queens,kings,suffolk</value>
+    </filters>
+    <filters>
+        <field>Account.ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>5000</value>
+    </filters>
+    <filters>
+        <field>FULL_NAME</field>
+        <operation>notContain</operation>
+        <value>deltoro</value>
+    </filters>
+    <label>NY - 5 County</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Record_Needed__c</fullName>
+    <label>Agreement Record Needed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Core Contract</fullName>
+                <default>false</default>
+                <label>New Core Contract</label>
+            </value>
+            <value>
+                <fullName>New Addendum</fullName>
+                <default>false</default>
+                <label>New Addendum</label>
+            </value>
+            <value>
+                <fullName>Update Addendum</fullName>
+                <default>false</default>
+                <label>Update Addendum</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

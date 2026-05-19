@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EM Physician DIAGNOSTIC &amp; THERAPEUTIC PROCEDURES</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;DIAGNOSTIC &amp; THERAPEUTIC PROCEDURES – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Arterial blood gases&lt;/li&gt;
+&lt;li&gt;Arthrocentesis&lt;/li&gt;
+&lt;li&gt;Urethral catheterization&lt;/li&gt;
+&lt;li&gt;Suprapubic catheterization&lt;/li&gt;
+&lt;li&gt;Gastric lavage &lt;/li&gt;
+&lt;li&gt;Incision and drainage of abscesses&lt;/li&gt;
+&lt;li&gt;Nasogastric/oral gastric tube placement&lt;/li&gt;
+&lt;li&gt;Emergency pericardiocentesis&lt;/li&gt;
+&lt;li&gt;Slit lamp exam&lt;/li&gt;
+&lt;li&gt;Preliminary plain film interpretations&lt;/li&gt;
+&lt;li&gt;Needle thoracentesis  &lt;/li&gt;
+&lt;li&gt;Tonometry&lt;/li&gt;
+&lt;li&gt;Lumbar puncture&lt;/li&gt;
+&lt;li&gt;Needle/tube thoracostomy&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>EM_Physician_DIAGNOSTIC_THERAPEUTIC_PROCEDURES</developerName>
+    <name>EM Physician DIAGNOSTIC &amp; THERAPEUTIC PROCEDURES</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

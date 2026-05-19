@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;opportunityId&quot;: &quot;0067x00000VL9T3AAL&quot;,
+    &quot;RequestType&quot;: &quot;Initial Request&quot;,
+    &quot;ContractType&quot;: &quot;Outsourced&quot;,
+    &quot;ExpectedStartDate&quot;: &quot;2025-09-18&quot;,
+    &quot;InitialTermYears&quot;: 8,
+    &quot;StandardYearAutoRenewal&quot;: false,
+    &quot;ServiceType&quot;: &quot;EM&quot;,
+    &quot;ServiceTypeOther&quot;: &quot;&quot;,
+    &quot;ConnectedCareServicesIncluded&quot;: false,
+    &quot;EMTeletriageServices&quot;: false,
+    &quot;HMTelemedicineServices&quot;: false,
+    &quot;Providedescription&quot;: &quot;&quot;,
+    &quot;VolumeProtector&quot;: false,
+    &quot;MaterialChangeLanguage&quot;: false,
+    &quot;StartupCosts&quot;: false,
+    &quot;IfYesforhowlong&quot;: &quot;&quot;,
+    &quot;MaximumAmountHospitalwillContribute&quot;: &quot;&quot;,
+    &quot;CurrentCliniciansunderNonCompete&quot;: false,
+    &quot;IfyeswhatisSCPcontribution&quot;: &quot;&quot;,
+    &quot;LeasedProviders&quot;: false,
+    &quot;OtherLeasedPersonnel&quot;: false,
+    &quot;OtherLeasedPersonnelDescription&quot;: &quot;&quot;,
+    &quot;FinancialArrangement&quot;: &quot;Fee for Service with No Subsidy&quot;,
+    &quot;AnnualSubsidyifapplicable&quot;: &quot;6&quot;,
+    &quot;multipleprograms&quot;: &quot;Yes&quot;,
+    &quot;GovernanceProvisions&quot;: &quot;Quarterly Business Reviews + Regular Operating Reviews&quot;,
+    &quot;StandardMalpracticeLimits&quot;: true,
+    &quot;Ifnonstandardprovidedetailsbelow&quot;: &quot;&quot;,
+    &quot;MalpracticeInsurancePProvidedBBy&quot;: &quot;Client&quot;,
+    &quot;PerformanceQualityMetrics&quot;: false,
+    &quot;PerformanceQualityMetricsSelectOne&quot;: &quot;&quot;,
+    &quot;Ifagreeduponpleaseattachorprovidedetailsbelow&quot;: &quot;&quot;,
+    &quot;UploadNonStandardDetails&quot;: &quot;&quot;,
+    &quot;KPIAtRiskMoney&quot;: false,
+    &quot;amountatrisk&quot;: &quot;&quot;,
+    &quot;KPIIncentiveMoney&quot;: false,
+    &quot;amountofIncentiveMoney&quot;: &quot;&quot;,
+    &quot;GMEProgram&quot;: false,
+    &quot;AdditionalComments&quot;: &quot;&quot;,
+    &quot;SelectPackage&quot;: &quot;&quot;,
+    &quot;ServiceTypeOtherDescription&quot;: &quot;&quot;,
+    &quot;ProfomaId&quot;: &quot;a4N7x000000prALEAY&quot;,
+    &quot;OpportunityAccountName&quot;: &quot;Sam Hospital Account&quot;,
+    &quot;IfYesaretermsreflectedintheProforma&quot;: &quot;&quot;,
+    &quot;Err_RunningContext&quot;: &quot;InitiateContractingRequest&quot;,
+    &quot;Err_CtxId&quot;: &quot;0067x00000VL9T3AAL&quot;,
+    &quot;Err_ProcessType&quot;: &quot;IP&quot;,
+    &quot;ContDocId&quot;: [
+        {
+            &quot;data&quot;: &quot;0697x00000Duv2YAAR&quot;,
+            &quot;filename&quot;: &quot;Screenshot 2025-08-01 at 4.02.32 PM.png&quot;,
+            &quot;vId&quot;: &quot;0687x00000Dx9ZGAAZ&quot;,
+            &quot;size&quot;: 397145,
+            &quot;deleteLabel&quot;: &quot;Delete Screenshot 2025-08-01 at 4.02.32 PM.png&quot;
+        },
+        {
+            &quot;data&quot;: &quot;0697x00000Duv2YAAR&quot;,
+            &quot;filename&quot;: &quot;Screenshot 2025-08-01 at 4.02.32 PM.png&quot;,
+            &quot;vId&quot;: &quot;0687x00000Dx9ZGAAZ&quot;,
+            &quot;size&quot;: 397145,
+            &quot;deleteLabel&quot;: &quot;Delete Screenshot 2025-08-01 at 4.02.32 PM.png&quot;
+        }
+    ],
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004PavEAE&quot;,
+    &quot;elementName&quot;: &quot;IP_InitiateContractingRequestForCAR&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>Clinician</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;case Id&quot; : &quot;%DMLCreareCARcaseRecords:case_1:Id%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DMEgetCaseRecordTypeCAR</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMEgetCaseRecordTypeCAR&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DMLCreareCARcaseRecords</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;opportunityId&quot; : &quot;%opportunityId%&quot;,
+    &quot;RequestType&quot; : &quot;%RequestType%&quot;,
+    &quot;ContractType&quot; : &quot;%ContractType%&quot;,
+    &quot;ExpectedStartDate&quot; : &quot;%ExpectedStartDate%&quot;,
+    &quot;InitialTermYears&quot; : &quot;%InitialTermYears%&quot;,
+    &quot;StandardYearAutoRenewal&quot; : &quot;%StandardYearAutoRenewal%&quot;,
+    &quot;ServiceType&quot; : &quot;%ServiceType%&quot;,
+    &quot;ServiceTypeOther&quot; : &quot;%ServiceTypeOther%&quot;,
+    &quot;ConnectedCareServicesIncluded&quot; : &quot;%ConnectedCareServicesIncluded%&quot;,
+    &quot;EMTeletriageServices&quot; : &quot;%EMTeletriageServices%&quot;,
+    &quot;HMTelemedicineServices&quot; : &quot;%HMTelemedicineServices%&quot;,
+    &quot;recordTypeId&quot; : &quot;%DMEgetCaseRecordTypeCAR:Id%&quot;,
+    &quot;Providedescription&quot; : &quot;%Providedescription%&quot;,
+    &quot;VolumeProtector&quot; : &quot;%VolumeProtector%&quot;,
+    &quot;MaterialChangeLanguage&quot; : &quot;%MaterialChangeLanguage%&quot;,
+    &quot;StartupCosts&quot; : &quot;%StartupCosts%&quot;,
+    &quot;IfYesforhowlong&quot; : &quot;%IfYesforhowlong%&quot;,
+    &quot;MaximumAmountHospitalwillContribute&quot; : &quot;%MaximumAmountHospitalwillContribute%&quot;,
+    &quot;CurrentCliniciansunderNonCompete&quot; : &quot;%CurrentCliniciansunderNonCompete%&quot;,
+    &quot;IfyeswhatisSCPcontribution&quot; : &quot;%IfyeswhatisSCPcontribution%&quot;,
+    &quot;LeasedProviders&quot; : &quot;%LeasedProviders%&quot;,
+    &quot;OtherLeasedPersonnel&quot; : &quot;%OtherLeasedPersonnel%&quot;,
+    &quot;OtherLeasedPersonnelDescription&quot; : &quot;%OtherLeasedPersonnelDescription%&quot;,
+    &quot;FinancialArrangement&quot; : &quot;%FinancialArrangement%&quot;,
+    &quot;AnnualSubsidyifapplicable&quot; : &quot;%AnnualSubsidyifapplicable%&quot;,
+    &quot;multipleprograms&quot; : &quot;%multipleprograms%&quot;,
+    &quot;GovernanceProvisions&quot; : &quot;%GovernanceProvisions%&quot;,
+    &quot;StandardMalpracticeLimits&quot; : &quot;%StandardMalpracticeLimits%&quot;,
+    &quot;Ifnonstandardprovidedetailsbelow&quot; : &quot;%Ifnonstandardprovidedetailsbelow%&quot;,
+    &quot;MalpracticeInsurancePProvidedBBy&quot; : &quot;%MalpracticeInsurancePProvidedBBy%&quot;,
+    &quot;PerformanceQualityMetrics&quot; : &quot;%PerformanceQualityMetrics%&quot;,
+    &quot;PerformanceQualityMetricsSelectOne&quot; : &quot;%PerformanceQualityMetricsSelectOne%&quot;,
+    &quot;Ifagreeduponpleaseattachorprovidedetailsbelow&quot; : &quot;%Ifagreeduponpleaseattachorprovidedetailsbelow%&quot;,
+    &quot;UploadNonStandardDetails&quot; : &quot;%UploadNonStandardDetails%&quot;,
+    &quot;KPIAtRiskMoney&quot; : &quot;%KPIAtRiskMoney%&quot;,
+    &quot;amountatrisk&quot; : &quot;%amountatrisk%&quot;,
+    &quot;KPIIncentiveMoney&quot; : &quot;%KPIIncentiveMoney%&quot;,
+    &quot;amountofIncentiveMoney&quot; : &quot;%amountofIncentiveMoney%&quot;,
+    &quot;GMEProgram&quot; : &quot;%GMEProgram%&quot;,
+    &quot;AdditionalComments&quot; : &quot;%AdditionalComments%&quot;,
+    &quot;SelectPackage&quot; : &quot;%SelectPackage%&quot;,
+    &quot;ServiceTypeOtherDescription&quot; : &quot;%ServiceTypeOtherDescription%&quot;,
+    &quot;ProfomaId&quot; : &quot;%ProfomaId%&quot;,
+    &quot;ClientContractingQueue&quot; : &quot;%DMEgetCaseRecordTypeCAR:ClientContractingQueue%&quot;,
+    &quot;ClientAgreementType&quot; : &quot;Client Agreement&quot;,
+    &quot;CaseOriginManual&quot; : &quot;Manual&quot;,
+    &quot;CasePriorityMedium&quot; : &quot;Medium&quot;,
+    &quot;SubjectOfTheCase&quot; : &quot;Client Agreement Request for %OpportunityAccountName%&quot;,
+    &quot;IfYesaretermsreflectedintheProforma&quot; : &quot;%IfYesaretermsreflectedintheProforma%&quot;,
+    &quot;caseStatus&quot; : &quot;Not Started&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMLCreareCARcaseRecords&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlock1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>InitiateContractingRequestForCAR_Clinician</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>Clinician</subType>
+    <type>InitiateContractingRequestForCAR</type>
+    <uniqueName>InitiateContractingRequestForCAR_Clinician_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>b5646f9f-af74-7b73-8649-c5ed29b96ec1</webComponentKey>
+</OmniIntegrationProcedure>

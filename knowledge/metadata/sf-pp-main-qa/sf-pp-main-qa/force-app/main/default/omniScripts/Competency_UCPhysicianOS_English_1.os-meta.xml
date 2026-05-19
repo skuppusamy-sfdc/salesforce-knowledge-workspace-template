@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniScript xmlns="http://soap.sforce.com/2006/04/metadata">
+    <designerCustomizationType>Discovery Framework</designerCustomizationType>
+    <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegrationProcedure>false</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>true</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>true</isWebCompEnabled>
+    <language>English</language>
+    <name>Competency_UCPhysicianOS</name>
+    <omniProcessElements>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Save-Responses</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;Save&quot;,
+  &quot;remoteClass&quot; : &quot;discoveryfrmwrk.StoreResponses&quot;,
+  &quot;remoteMethod&quot; : &quot;invokeMethod&quot;,
+  &quot;remoteOptions&quot; : {
+    &quot;preTransformBundle&quot; : &quot;&quot;,
+    &quot;postTransformBundle&quot; : &quot;&quot;,
+    &quot;Assessment.Name&quot; : &quot;1.5 Certification of Competency (UC Physician)&quot;
+  },
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;preTransformBundle&quot; : &quot;&quot;,
+  &quot;postTransformBundle&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;extraPayload&quot; : {
+    &quot;omniProcessId&quot; : &quot;%omniProcessId%&quot;,
+    &quot;omniscriptId&quot; : &quot;%omniscriptId%&quot;,
+    &quot;Step1&quot; : &quot;%Step1%&quot;,
+    &quot;ContextId&quot; : &quot;%ContextId%&quot;
+  },
+  &quot;inProgressMessage&quot; : &quot;In Progress&quot;,
+  &quot;postMessage&quot; : &quot;Done&quot;,
+  &quot;failureNextLabel&quot; : &quot;Continue&quot;,
+  &quot;failureAbortLabel&quot; : &quot;Abort&quot;,
+  &quot;failureGoBackLabel&quot; : &quot;Go Back&quot;,
+  &quot;failureAbortMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;validationRequired&quot; : &quot;Step&quot;,
+  &quot;redirectPageName&quot; : &quot;&quot;,
+  &quot;redirectTemplateUrl&quot; : &quot;vlcAcknowledge.html&quot;,
+  &quot;redirectNextLabel&quot; : &quot;Next&quot;,
+  &quot;redirectNextWidth&quot; : 3,
+  &quot;redirectPreviousLabel&quot; : &quot;Previous&quot;,
+  &quot;redirectPreviousWidth&quot; : 3,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;show&quot; : null,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;svgSprite&quot; : &quot;&quot;,
+  &quot;svgIcon&quot; : &quot;&quot;,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;enableDefaultAbort&quot; : false,
+  &quot;enableActionMessage&quot; : false,
+  &quot;useContinuation&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;,
+  &quot;sendOnlyExtraPayload&quot; : true
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ADMINISTRATIVE_AND_LEGAL</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;ADMINISTRATIVE AND LEGAL –   \nINCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Familiar with guidelines regarding transfer of   \npatients&lt;/li&gt;\n&lt;li&gt;Proficient in basic computer skills required for   \ncompleting electronic medical records order   \nentry&lt;/li&gt;\n&lt;li&gt;Familiar with the requirements of EMTALA&lt;/li&gt;\n&lt;li&gt;Familiar with the requirements for medical   \nscreening examination for patients and my   \nobligatio&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;ADMINISTRATIVE AND LEGAL –   &lt;br/&gt;INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Familiar with guidelines regarding transfer of   &lt;br/&gt;patients&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Proficient in basic computer skills required for   &lt;br/&gt;completing electronic medical records order   &lt;br/&gt;entry&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Familiar with the requirements of EMTALA&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Familiar with the requirements for medical   &lt;br/&gt;screening examination for patients and my   &lt;br/&gt;obligatio&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>35.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>ADMINISTRATIVE_AND_LEGAL</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ADMINISTRATIVE_AND_LEGAL_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>36.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>ADMINISTRATIVE_AND_LEGAL_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AIRWAY_TECHNIQUES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;AIRWAY TECHNIQUES-INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Endotracheal intubation&lt;/li&gt;\n&lt;li&gt;Insertion of temporary airway (LMA/KING)&lt;/li&gt;\n&lt;li&gt;Use of bag mask ventilation&lt;/li&gt;\n&lt;li&gt;Insertion of nasal trumpet&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;AIRWAY TECHNIQUES-INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Endotracheal intubation&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Insertion of temporary airway (LMA/KING)&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Use of bag mask ventilation&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Insertion of nasal trumpet&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>AIRWAY_TECHNIQUES</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>AIRWAY_TECHNIQUES_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>AIRWAY_TECHNIQUES_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CARDIAC</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;CARDIAC – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Cardiopulmonary resuscitation&lt;/li&gt;\n&lt;li&gt;Electrocardiogram (interpretation of 12 leads)&lt;/li&gt;\n&lt;li&gt;Emergency cardioversion/defibrillation&lt;/li&gt;\n&lt;li&gt;Initial evaluation of chest pain/AMI   \ndysrhythmia with rapid initiation of transfer&lt;/li&gt;\n&lt;li&gt;Use of an AED&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;CARDIAC – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Cardiopulmonary resuscitation&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Electrocardiogram (interpretation of 12 leads)&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Emergency cardioversion/defibrillation&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Initial evaluation of chest pain/AMI   &lt;br/&gt;dysrhythmia with rapid initiation of transfer&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Use of an AED&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>CARDIAC</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CARDIAC_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>CARDIAC_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CustomLWC1</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 12,
+  &quot;label&quot; : &quot;CustomLWC1&quot;,
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;hide&quot; : false,
+  &quot;lwcName&quot; : &quot;cfCompetency_UCPhysicianHeader&quot;,
+  &quot;bStandalone&quot; : false,
+  &quot;customAttributes&quot; : [ ]
+}</propertySetConfig>
+            <sequenceNumber>0.0</sequenceNumber>
+            <type>Custom Lightning Web Component</type>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DIAGNOSTIC_THERAPEUTIC_PROCEDURES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;DIAGNOSTIC &amp; THERAPEUTIC   \nPROCEDURES – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Arthrocentesis&lt;/li&gt;\n&lt;li&gt;Urethral catheterization&lt;/li&gt;\n&lt;li&gt;Nail trephination&lt;/li&gt;\n&lt;li&gt;Incision and drainage of abscesses&lt;/li&gt;\n&lt;li&gt;Slit lamp exam&lt;/li&gt;\n&lt;li&gt;Preliminary plain film interpretations&lt;/li&gt;\n&lt;li&gt;Ocular tonometry&lt;/li&gt;\n&lt;li&gt;Local anesthesia&lt;/li&gt;\n&lt;li&gt;Digital anesthesia block&lt;/li&gt;\n&lt;li&gt;Trigger point injection&lt;/li&gt;\n&lt;li&gt;Foreign body removal from superficial site or   \nreadily accessible body cavities&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;DIAGNOSTIC &amp; THERAPEUTIC   &lt;br/&gt;PROCEDURES – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Arthrocentesis&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Urethral catheterization&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Nail trephination&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Incision and drainage of abscesses&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Slit lamp exam&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Preliminary plain film interpretations&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Ocular tonometry&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Local anesthesia&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Digital anesthesia block&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Trigger point injection&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Foreign body removal from superficial site or   &lt;br/&gt;readily accessible body cavities&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>DIAGNOSTIC_THERAPEUTIC_PROCEDURES</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DIAGNOSTIC_THERAPEUTIC_PROCEDURES_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>DIAGNOSTIC_THERAPEUTIC_PROCEDURES_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ENT</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;ENT – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Indirect laryngoscopy&lt;/li&gt;\n&lt;li&gt;Evaluation and management of sore throat&lt;/li&gt;\n&lt;li&gt;Evaluation and management of sinusitis&lt;/li&gt;\n&lt;li&gt;Evaluation and management of ear   \ncomplaints&lt;/li&gt;\n&lt;li&gt;Insertion of nasal packing for epistaxis control&lt;/li&gt;\n&lt;li&gt;Local cautery for epistaxis control&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;ENT – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Indirect laryngoscopy&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of sore throat&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of sinusitis&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of ear   &lt;br/&gt;complaints&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Insertion of nasal packing for epistaxis control&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Local cautery for epistaxis control&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>ENT</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ENT_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>ENT_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GI</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;GI – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Evaluation and management of abdominal   \npain&lt;/li&gt;\n&lt;li&gt;Evaluation and management of rectal   \ncomplaints/bleediing&lt;/li&gt;\n&lt;li&gt;Evaluation and management of vomiting and   \ndiarrhea&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;GI – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of abdominal   &lt;br/&gt;pain&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of rectal   &lt;br/&gt;complaints/bleediing&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of vomiting and   &lt;br/&gt;diarrhea&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>13.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>GI</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GI_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>14.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>GI_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GU</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;GU – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Evaluation and management of dysuria&lt;/li&gt;\n&lt;li&gt;Evaluation and management of flank   \npain/kidney Stone&lt;/li&gt;\n&lt;li&gt;Evaluation and management of testicular pain&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;GU – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of dysuria&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of flank   &lt;br/&gt;pain/kidney Stone&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of testicular pain&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>GU</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>GU_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>GU_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>HEMODYNAMIC_TECHNIQUES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;HEMODYNAMIC TECHNIQUES –   \nINCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Peripheral venous access&lt;/li&gt;\n&lt;li&gt;Emergent introsseous access&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;HEMODYNAMIC TECHNIQUES –   &lt;br/&gt;INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Peripheral venous access&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Emergent introsseous access&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>HEMODYNAMIC_TECHNIQUES</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>HEMODYNAMIC_TECHNIQUES_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>HEMODYNAMIC_TECHNIQUES_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OBSTETRICAL_GYNECOLOGICAL_PROCEDURES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OBSTETRICAL/GYNECOLOGICAL PROCEDURES – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Performance of pelvic examination&lt;/li&gt;\n&lt;li&gt;Evaluation and management of pelvic pain&lt;/li&gt;\n&lt;li&gt;Evaluation and management of sexually transmitted   \ndiseases&lt;/li&gt;\n&lt;li&gt;Evaluation and management of early   \npregnancy/minor vaginal bleed/discharge&lt;/li&gt;\n&lt;li&gt;Incision and drainage of Bartolin cyst/placement of  Word catheter&lt;/li&gt;\n&lt;li&gt;Evaluation and management of minor vaginal   \nbleeding/discharge&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OBSTETRICAL/GYNECOLOGICAL PROCEDURES – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Performance of pelvic examination&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of pelvic pain&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of sexually transmitted   &lt;br/&gt;diseases&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of early   &lt;br/&gt;pregnancy/minor vaginal bleed/discharge&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Incision and drainage of Bartolin cyst/placement of  Word catheter&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of minor vaginal   &lt;br/&gt;bleeding/discharge&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>15.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>OBSTETRICAL_GYNECOLOGICAL_PROCEDURES</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OBSTETRICAL_GYNECOLOGICAL_PROCEDURES_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>16.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>OBSTETRICAL_GYNECOLOGICAL_PROCEDURES_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCCUPATIONAL_MEDICINE_DISABILITY_EVALUATION_OF</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCCUPATIONAL MEDICINE DISABILITY EVALUATION OF:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Cervical radiculopathy&lt;/li&gt;\n&lt;li&gt;Lumbar radiculopathy&lt;/li&gt;\n&lt;li&gt;Carpel tunnel syndrome&lt;/li&gt;\n&lt;li&gt;Head injury/concussion&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCCUPATIONAL MEDICINE DISABILITY EVALUATION OF:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Cervical radiculopathy&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Lumbar radiculopathy&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Carpel tunnel syndrome&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Head injury/concussion&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>33.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>OCCUPATIONAL_MEDICINE_DISABILITY_EVALUATION_OF</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCCUPATIONAL_MEDICINE_DISABILITY_EVALUATION_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>34.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>OCCUPATIONAL_MEDICINE_DISABILITY_EVALUATION_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCCUPATIONAL_MEDICINE_INJURY_EVALUATION</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCCUPATIONAL MEDICINE INJURY EVALUATION – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Evaluation and management of back   \npain/acute strain&lt;/li&gt;\n&lt;li&gt;Evaluation and management of neck   \npain/strain&lt;/li&gt;\n&lt;li&gt;Evaluation and management of wrist   \npain/carpel tunnel syndrome&lt;/li&gt;\n&lt;li&gt;Understanding and adherence to state post   \ninjury guidelines&lt;/li&gt;\n&lt;li&gt;Completion of worker’s compensation post   \nInjury Forms&lt;/li&gt;\n&lt;li&gt;Performance of fitness for duty examination&lt;/li&gt;\n&lt;li&gt;Determining work status post Injury/return to   \nwork guidelines&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCCUPATIONAL MEDICINE INJURY EVALUATION – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of back   &lt;br/&gt;pain/acute strain&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of neck   &lt;br/&gt;pain/strain&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of wrist   &lt;br/&gt;pain/carpel tunnel syndrome&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Understanding and adherence to state post   &lt;br/&gt;injury guidelines&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Completion of worker’s compensation post   &lt;br/&gt;Injury Forms&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Performance of fitness for duty examination&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Determining work status post Injury/return to   &lt;br/&gt;work guidelines&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>31.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>OCCUPATIONAL_MEDICINE_INJURY_EVALUATION</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCCUPATIONAL_MEDICINE_INJURY_EVALUATION_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>32.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>OCCUPATIONAL_MEDICINE_INJURY_EVALUATION_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCCUPATIONAL_MEDICINE_PROCEDURES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCCUPATIONAL MEDICINE PROCEDURES - INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Performance of certified DOT examinations&lt;/li&gt;\n&lt;li&gt;Performance of fire/police examinations&lt;/li&gt;\n&lt;li&gt;Certification as Medical Review Officer&lt;/li&gt;\n&lt;li&gt;Development of compliant post injury drug   \ntesting program&lt;/li&gt;\n&lt;li&gt;Interpretation and management of negative   \nand positive post injury, random and other   \nwork related drug screens&lt;/li&gt;\n&lt;li&gt;Interpretation of pulmonary function testing&lt;/li&gt;\n&lt;li&gt;Interpretation of audiometry testing&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCCUPATIONAL MEDICINE PROCEDURES - INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Performance of certified DOT examinations&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Performance of fire/police examinations&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Certification as Medical Review Officer&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Development of compliant post injury drug   &lt;br/&gt;testing program&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Interpretation and management of negative   &lt;br/&gt;and positive post injury, random and other   &lt;br/&gt;work related drug screens&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Interpretation of pulmonary function testing&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Interpretation of audiometry testing&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>29.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>OCCUPATIONAL_MEDICINE_PROCEDURES</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCCUPATIONAL_MEDICINE_PROCEDURES_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>30.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>OCCUPATIONAL_MEDICINE_PROCEDURES_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCULAR_EMERGENCIES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCULAR EMERGENCIES – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Removal of superficial foreign body in conjunctiva  or cornea&lt;/li&gt;\n&lt;li&gt;Management of common eye complaints/infections&lt;/li&gt;\n&lt;li&gt;Management of ocular trauma&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;OCULAR EMERGENCIES – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Removal of superficial foreign body in conjunctiva  or cornea&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Management of common eye complaints/infections&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Management of ocular trauma&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>17.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>OCULAR_EMERGENCIES</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OCULAR_EMERGENCIES_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>18.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>OCULAR_EMERGENCIES_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ORTHOPEDICS</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;ORTHOPEDICS – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Emergent/urgent closed reduction and splinting of fractures&lt;/li&gt;\n&lt;li&gt;Emergent/urgent closed reduction and splinting of simple dislocation of finger, shoulder, elbow, patella&lt;/li&gt;\n&lt;li&gt;Application of leg traction splint&lt;/li&gt;\n&lt;li&gt;Joint aspiration&lt;/li&gt;\n&lt;li&gt;Joint injection/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;ORTHOPEDICS – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Emergent/urgent closed reduction and splinting of fractures&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Emergent/urgent closed reduction and splinting of simple dislocation of finger, shoulder, elbow, patella&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Application of leg traction splint&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Joint aspiration&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Joint injection/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>19.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>ORTHOPEDICS</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ORTHOPEDICS_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>20.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>ORTHOPEDICS_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PEDIATRICS</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;PEDIATRICS - INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Evaluation and management of pediatric fever&lt;/li&gt;\n&lt;li&gt;0-28 days&lt;/li&gt;\n&lt;li&gt;29 days to 36 months&lt;/li&gt;\n&lt;li&gt;&gt;36 months&lt;/li&gt;\n&lt;li&gt;Reduction of radial head dislocation&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;PEDIATRICS - INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of pediatric fever&lt;/li&gt;&lt;br/&gt;&lt;li&gt;0-28 days&lt;/li&gt;&lt;br/&gt;&lt;li&gt;29 days to 36 months&lt;/li&gt;&lt;br/&gt;&lt;li&gt;&gt;36 months&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Reduction of radial head dislocation&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>21.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>PEDIATRICS</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PEDIATRICS_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>22.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>PEDIATRICS_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PULMONARY</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;PULMONARY- INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Evaluation and management of Asthma/COPD&lt;/li&gt;\n&lt;li&gt;Evaluation and management of URI/Bronchitis&lt;/li&gt;\n&lt;li&gt;Evaluation and management of Dyspnea&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;PULMONARY- INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of Asthma/COPD&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of URI/Bronchitis&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Evaluation and management of Dyspnea&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>23.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>PULMONARY</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>PULMONARY_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>24.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>PULMONARY_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TRAUMA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;TRAUMA – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Management of minor head injury&lt;/li&gt;\n&lt;li&gt;Recognition and management of spinal injury&lt;/li&gt;\n&lt;li&gt;Cervical spine Immobilization&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;TRAUMA – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Management of minor head injury&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Recognition and management of spinal injury&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Cervical spine Immobilization&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>25.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>TRAUMA</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TRAUMA_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>26.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>TRAUMA_Response</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>WOUND_MANAGEMENT</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;WOUND MANAGEMENT – INCLUDING:&lt;/span&gt;\n&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;\n&lt;li&gt;Repair of lacerations&lt;/li&gt;\n&lt;li&gt;Single layer closure&lt;/li&gt;\n&lt;li&gt;Multiple layer closure/complex laceration&lt;/li&gt;\n&lt;li&gt;Management of minor burns&lt;/li&gt;\n&lt;/ul&gt;&quot;,
+  &quot;text&quot; : &quot;&lt;span style=\&quot;color:red;\&quot;&gt;WOUND MANAGEMENT – INCLUDING:&lt;/span&gt;&lt;br/&gt;&lt;ul class=\&quot;slds-list_dotted\&quot;&gt;&lt;br/&gt;&lt;li&gt;Repair of lacerations&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Single layer closure&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Multiple layer closure/complex laceration&lt;/li&gt;&lt;br/&gt;&lt;li&gt;Management of minor burns&lt;/li&gt;&lt;br/&gt;&lt;/ul&gt;&quot;,
+  &quot;show&quot; : null,
+  &quot;dataJSON&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;textKey&quot; : &quot;&quot;,
+  &quot;sanitize&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>27.0</sequenceNumber>
+            <type>Text Block</type>
+            <uniqueIndex>WOUND_MANAGEMENT</uniqueIndex>
+        </childElements>
+        <childElements>
+            <designerCustomizationType>Discovery Framework</designerCustomizationType>
+            <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>WOUND_MANAGEMENT_Response</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;controlWidth&quot; : 6,
+  &quot;label&quot; : &quot;Response&quot;,
+  &quot;required&quot; : false,
+  &quot;repeat&quot; : false,
+  &quot;repeatClone&quot; : false,
+  &quot;repeatLimit&quot; : null,
+  &quot;readOnly&quot; : false,
+  &quot;horizontalMode&quot; : false,
+  &quot;defaultValue&quot; : null,
+  &quot;help&quot; : false,
+  &quot;helpText&quot; : &quot;&quot;,
+  &quot;options&quot; : [ {
+    &quot;name&quot; : &quot;Yes&quot;,
+    &quot;developerName&quot; : &quot;Yes&quot;,
+    &quot;value&quot; : &quot;Yes&quot;,
+    &quot;setAll&quot; : false
+  }, {
+    &quot;name&quot; : &quot;No&quot;,
+    &quot;developerName&quot; : &quot;No&quot;,
+    &quot;value&quot; : &quot;No&quot;,
+    &quot;setAll&quot; : false
+  } ],
+  &quot;optionSource&quot; : {
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;controllingField&quot; : {
+    &quot;element&quot; : &quot;&quot;,
+    &quot;type&quot; : &quot;&quot;,
+    &quot;source&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;accessibleInFutureSteps&quot; : false,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;hide&quot; : false,
+  &quot;optionWidth&quot; : 100,
+  &quot;optionHeight&quot; : 100,
+  &quot;imageCountInRow&quot; : 3,
+  &quot;enableCaption&quot; : true,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>28.0</sequenceNumber>
+            <type>Radio</type>
+            <uniqueIndex>WOUND_MANAGEMENT_Response</uniqueIndex>
+        </childElements>
+        <designerCustomizationType>Discovery Framework</designerCustomizationType>
+        <discoveryFrameworkUsageType>0</discoveryFrameworkUsageType>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>Step1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;label&quot; : &quot;URGENT CARE CENTER – PHYSICIAN – CERTIFICATION OF COMPETENCY&quot;,
+  &quot;validationRequired&quot; : true,
+  &quot;previousLabel&quot; : &quot;Previous&quot;,
+  &quot;previousWidth&quot; : 3,
+  &quot;nextLabel&quot; : &quot;Submit&quot;,
+  &quot;nextWidth&quot; : 3,
+  &quot;cancelLabel&quot; : &quot;Cancel&quot;,
+  &quot;cancelMessage&quot; : &quot;Are you sure?&quot;,
+  &quot;saveLabel&quot; : &quot;Save for later&quot;,
+  &quot;saveMessage&quot; : &quot;Are you sure you want to save it for later?&quot;,
+  &quot;completeLabel&quot; : &quot;Complete&quot;,
+  &quot;completeMessage&quot; : &quot;Are you sure you want to complete the script?&quot;,
+  &quot;instruction&quot; : &quot;&quot;,
+  &quot;showPersistentComponent&quot; : [ true, false ],
+  &quot;remoteClass&quot; : &quot;&quot;,
+  &quot;remoteMethod&quot; : &quot;&quot;,
+  &quot;remoteTimeout&quot; : 30000,
+  &quot;remoteOptions&quot; : { },
+  &quot;knowledgeOptions&quot; : {
+    &quot;language&quot; : &quot;English&quot;,
+    &quot;publishStatus&quot; : &quot;Online&quot;,
+    &quot;keyword&quot; : &quot;&quot;,
+    &quot;dataCategoryCriteria&quot; : &quot;&quot;,
+    &quot;remoteTimeout&quot; : 30000,
+    &quot;typeFilter&quot; : &quot;&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;conditionType&quot; : &quot;Hide if False&quot;,
+  &quot;HTMLTemplateId&quot; : &quot;&quot;,
+  &quot;instructionKey&quot; : &quot;&quot;,
+  &quot;chartLabel&quot; : null,
+  &quot;allowSaveForLater&quot; : true,
+  &quot;errorMessage&quot; : {
+    &quot;custom&quot; : [ ],
+    &quot;default&quot; : null
+  },
+  &quot;wpm&quot; : false,
+  &quot;ssm&quot; : false,
+  &quot;message&quot; : { },
+  &quot;pubsub&quot; : false,
+  &quot;businessCategory&quot; : &quot;&quot;,
+  &quot;businessEvent&quot; : &quot;&quot;
+}</propertySetConfig>
+        <sequenceNumber>0.0</sequenceNumber>
+        <type>Step</type>
+    </omniProcessElements>
+    <omniProcessType>OmniScript</omniProcessType>
+    <propertySetConfig>{&quot;persistentComponent&quot;:[{&quot;render&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;sendJSONPath&quot;:&quot;&quot;,&quot;sendJSONNode&quot;:&quot;&quot;,&quot;responseJSONPath&quot;:&quot;&quot;,&quot;responseJSONNode&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcCart&quot;,&quot;itemsKey&quot;:&quot;cartItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;vlcProductConfig.html&quot;,&quot;modalController&quot;:&quot;ModalProductCtrl&quot;,&quot;modalSize&quot;:&quot;lg&quot;}},{&quot;render&quot;:false,&quot;dispOutsideOmni&quot;:false,&quot;label&quot;:&quot;&quot;,&quot;remoteClass&quot;:&quot;&quot;,&quot;remoteMethod&quot;:&quot;&quot;,&quot;remoteTimeout&quot;:30000,&quot;remoteOptions&quot;:{&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;},&quot;preTransformBundle&quot;:&quot;&quot;,&quot;postTransformBundle&quot;:&quot;&quot;,&quot;id&quot;:&quot;vlcKnowledge&quot;,&quot;itemsKey&quot;:&quot;knowledgeItems&quot;,&quot;modalConfigurationSetting&quot;:{&quot;modalHTMLTemplateId&quot;:&quot;&quot;,&quot;modalController&quot;:&quot;&quot;,&quot;modalSize&quot;:&quot;lg&quot;}}],&quot;allowSaveForLater&quot;:false,&quot;saveNameTemplate&quot;:null,&quot;saveExpireInDays&quot;:null,&quot;saveForLaterRedirectPageName&quot;:&quot;sflRedirect&quot;,&quot;saveForLaterRedirectTemplateUrl&quot;:&quot;vlcSaveForLaterAcknowledge.html&quot;,&quot;saveContentEncoded&quot;:false,&quot;saveObjectId&quot;:&quot;%ContextId%&quot;,&quot;saveURLPatterns&quot;:{},&quot;autoSaveOnStepNext&quot;:false,&quot;elementTypeToHTMLTemplateMapping&quot;:{},&quot;seedDataJSON&quot;:{},&quot;trackingCustomData&quot;:{},&quot;enableKnowledge&quot;:false,&quot;bLK&quot;:false,&quot;lkObjName&quot;:null,&quot;knowledgeArticleTypeQueryFieldsMap&quot;:{},&quot;timeTracking&quot;:false,&quot;hideStepChart&quot;:true,&quot;mergeSavedData&quot;:false,&quot;visualforcePagesAvailableInPreview&quot;:{},&quot;cancelType&quot;:&quot;SObject&quot;,&quot;allowCancel&quot;:true,&quot;cancelSource&quot;:&quot;%ContextId%&quot;,&quot;cancelRedirectPageName&quot;:&quot;OmniScriptCancelled&quot;,&quot;cancelRedirectTemplateUrl&quot;:&quot;vlcCancelled.html&quot;,&quot;consoleTabLabel&quot;:&quot;New&quot;,&quot;wpm&quot;:false,&quot;ssm&quot;:false,&quot;message&quot;:{},&quot;pubsub&quot;:false,&quot;autoFocus&quot;:false,&quot;currencyCode&quot;:&quot;&quot;,&quot;showInputWidth&quot;:false,&quot;rtpSeed&quot;:false,&quot;consoleTabTitle&quot;:null,&quot;consoleTabIcon&quot;:&quot;custom:custom18&quot;,&quot;errorMessage&quot;:{&quot;custom&quot;:[]},&quot;stylesheet&quot;:{&quot;newport&quot;:&quot;&quot;,&quot;lightning&quot;:&quot;&quot;,&quot;newportRtl&quot;:&quot;&quot;,&quot;lightningRtl&quot;:&quot;&quot;},&quot;stepChartPlacement&quot;:&quot;right&quot;,&quot;disableUnloadWarn&quot;:true,&quot;scrollBehavior&quot;:&quot;auto&quot;}</propertySetConfig>
+    <subType>UCPhysicianOS</subType>
+    <type>Competency</type>
+    <uniqueName>Competency_UCPhysicianOS_English_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>c904de07-f7fe-d05d-dcb5-544315dc84be</webComponentKey>
+</OmniScript>

@@ -1,0 +1,197 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "recordId",
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom2017",
+        "InputFieldName": "ContractId",
+        "InputObjectName": "ProviderNetworkContract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Records",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom5286",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom3236",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.Account.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom4993",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.Contracting_Corporate_Entity__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractingCorporateEntity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom5564",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.Credentialling_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CredentiallingStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom7416",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.Facility_Title__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FacilityTitle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom5578",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HPFId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom2569",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HPFName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom9296",
+        "InputFieldName": "Records:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PNCId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREFetchHPFsFromContractPNCsCustom4959",
+        "InputFieldName": "Records:Healthcare_Practitioner_Facility__r.Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREFetchHPFsFromContractPNCs",
+        "OmniDataTransformationId": {
+            "Name": "DREFetchHPFsFromContractPNCs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREFetchHPFsFromContractPNCs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__Opportunity_Max_LMD__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The most recently modified date for all the Account Plan Opportunities related to this plan</description>
+    <inlineHelpText>Used in the account plan score</inlineHelpText>
+    <label>Opportunity Max Modified Date</label>
+    <summarizedField>pqcrush__Account_Plan_Opportunity__c.LastModifiedDate</summarizedField>
+    <summaryForeignKey>pqcrush__Account_Plan_Opportunity__c.pqcrush__Account_Plan__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Task_Default_Portal</compactLayoutAssignment>
+    <description>This recordtype will be used by Recruiter using the Corporate Support or Corporate Support to create Task Record</description>
+    <label>Default</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Account Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approvals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinician Notification %28client facing%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coverage Model</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrollment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Go Live</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HiOps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Overview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initiate Implementation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaseback Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leased Clinicians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Care%2FEnrollment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPPA Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations MSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations PCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations Recruiter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orientation%2FTraining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Practice Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUN - Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUN - Preliminary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUN - Revision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VISA Providers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Offboarding_Decision__c</picklist>
+        <values>
+            <fullName>Confirmed Exit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Exiting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Due Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPI Number Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Okta Integration Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

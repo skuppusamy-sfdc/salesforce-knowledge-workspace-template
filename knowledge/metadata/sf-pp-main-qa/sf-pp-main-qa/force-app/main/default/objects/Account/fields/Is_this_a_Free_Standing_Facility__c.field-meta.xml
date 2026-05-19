@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_this_a_Free_Standing_Facility__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is this a Free Standing Facility</description>
+    <label>Is this a Free Standing Facility?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

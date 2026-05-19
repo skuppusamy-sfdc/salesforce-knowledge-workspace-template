@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APAY_Prioritization__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (APAY__c &gt;=16667, 3,
+
+IF (APAY__c &gt;=8334, 2,
+
+IF (APAY__c &gt;=0, 1,
+
+0
+
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>APAY Prioritization</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

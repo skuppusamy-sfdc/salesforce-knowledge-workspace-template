@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HM_Group__c</fullName>
+    <label>HM Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apogee</fullName>
+                <default>false</default>
+                <label>Apogee</label>
+            </value>
+            <value>
+                <fullName>Apollo</fullName>
+                <default>false</default>
+                <label>Apollo</label>
+            </value>
+            <value>
+                <fullName>Cogent</fullName>
+                <default>false</default>
+                <label>Cogent</label>
+            </value>
+            <value>
+                <fullName>Eagle</fullName>
+                <default>false</default>
+                <label>Eagle</label>
+            </value>
+            <value>
+                <fullName>ECI</fullName>
+                <default>false</default>
+                <label>ECI</label>
+            </value>
+            <value>
+                <fullName>EmCare</fullName>
+                <default>false</default>
+                <label>EmCare</label>
+            </value>
+            <value>
+                <fullName>HCAPs</fullName>
+                <default>false</default>
+                <label>HCAPs</label>
+            </value>
+            <value>
+                <fullName>HMG</fullName>
+                <default>false</default>
+                <label>HMG</label>
+            </value>
+            <value>
+                <fullName>Hospital Employees</fullName>
+                <default>false</default>
+                <label>Hospital Employees</label>
+            </value>
+            <value>
+                <fullName>In Compass</fullName>
+                <default>false</default>
+                <label>In Compass</label>
+            </value>
+            <value>
+                <fullName>IPC</fullName>
+                <default>false</default>
+                <label>IPC</label>
+            </value>
+            <value>
+                <fullName>Local</fullName>
+                <default>false</default>
+                <label>Local</label>
+            </value>
+            <value>
+                <fullName>Loya</fullName>
+                <default>false</default>
+                <label>Loya</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Premier Physician Services</fullName>
+                <default>false</default>
+                <label>Premier Physician Services</label>
+            </value>
+            <value>
+                <fullName>Schumacher Group</fullName>
+                <default>false</default>
+                <label>Schumacher Group</label>
+            </value>
+            <value>
+                <fullName>Sound Inpatient</fullName>
+                <default>false</default>
+                <label>Sound Inpatient</label>
+            </value>
+            <value>
+                <fullName>Team Health</fullName>
+                <default>false</default>
+                <label>Team Health</label>
+            </value>
+            <value>
+                <fullName>The Exigence Group</fullName>
+                <default>false</default>
+                <label>The Exigence Group</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Arterial blood gases</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Arterial blood gases</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Arterial_blood_gases</developerName>
+    <name>Arterial blood gases</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

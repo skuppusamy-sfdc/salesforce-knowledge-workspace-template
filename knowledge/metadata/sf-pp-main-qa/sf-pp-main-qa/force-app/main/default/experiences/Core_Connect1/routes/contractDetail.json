@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "8a3c5e79-2228-425b-a576-9032bf486e31",
+  "appPageId" : "0835824d-10ae-4bcb-a5d9-d167369a2555",
+  "configurationTags" : [ ],
+  "devName" : "Contract_Detail__c",
+  "id" : "12a8003a-35d3-4d5b-bbc3-81560ba0d321",
+  "label" : "Contract Detail",
+  "routeType" : "detail-800",
+  "type" : "route",
+  "urlPrefix" : "contract"
+}

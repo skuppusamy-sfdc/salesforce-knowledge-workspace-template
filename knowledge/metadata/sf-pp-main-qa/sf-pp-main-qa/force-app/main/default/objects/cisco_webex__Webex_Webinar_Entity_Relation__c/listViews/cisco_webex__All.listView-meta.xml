@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cisco_webex__All</fullName>
+    <columns>cisco_webex__Webinar_Campaign__c</columns>
+    <columns>NAME</columns>
+    <columns>cisco_webex__WebexExternalId__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

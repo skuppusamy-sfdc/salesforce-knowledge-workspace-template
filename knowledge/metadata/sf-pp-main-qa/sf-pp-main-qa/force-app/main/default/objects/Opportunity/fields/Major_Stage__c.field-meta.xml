@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Major_Stage__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(ispickval(StageName,&apos;Qualification&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Needs Analysis&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Proposal&apos;),&apos;Proposal Request&apos;,
+if(ispickval(StageName,&apos;Negotiation&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Closed Won&apos;),&apos;Contract Signed&apos;,
+if(ispickval(StageName,&apos;Marketing Qualified Lead&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Pre-Qualified Lead&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Sales Accepted Lead&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Sales Qualified Opportunity&apos;),&apos;Lead&apos;,
+if(ispickval(StageName,&apos;Proposal Request&apos;),&apos;Proposal Request&apos;,
+if(ispickval(StageName,&apos;Proposal Development&apos;),&apos;Proposal Development&apos;,
+if(ispickval(StageName,&apos;Proposal Presented&apos;),&apos;Proposal Presented&apos;,
+if(ispickval(StageName,&apos;Down Select&apos;),&apos;Down Select&apos;,
+if(ispickval(StageName,&apos;Verbal Award&apos;),&apos;Verbal&apos;,
+if(ispickval(StageName,&apos;Contract Request&apos;),&apos;Proposal Presented&apos;,
+if(ispickval(StageName,&apos;MOU Signed&apos;),&apos;MOU Signed&apos;,
+if(ispickval(StageName,&apos;Contract Negotiations&apos;),&apos;Proposal Presented&apos;,
+if(ispickval(StageName,&apos;Contract Accepted&apos;),&apos;Proposal Presented&apos;,
+if(ispickval(StageName,&apos;Contract Signed&apos;),&apos;Contract Signed&apos;,
+if(ispickval(StageName,&apos;Started&apos;),&apos;Contract Signed&apos;,
+if(ispickval(StageName,&apos;Project Complete&apos;),&apos;Contract Signed&apos;,
+if(ispickval(StageName,&apos;Closed-No Bid&apos;),&apos;Lost/Inactive&apos;,
+if(ispickval(StageName,&apos;Closed Lost&apos;),&apos;Lost/Inactive&apos;,
+if(ispickval(StageName,&apos;Closed - SCP Declined&apos;),&apos;Lost/Inactive&apos;,
+if(ispickval(StageName,&apos;Closed - Client Abandoned Proposal&apos;),&apos;Lost/Inactive&apos;,
+if(ispickval(StageName,&apos;Quarterly Target&apos;),&apos;Quarterly Target&apos;,
+if(ispickval(StageName,&apos;Closed - Consulting Project Complete&apos;),&apos;Contract Signed&apos;,
+if(ispickval(StageName,&apos;Closed - No Change&apos;),&apos;Closed - No Change&apos;,
+&apos;error&apos;))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Major Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

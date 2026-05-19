@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Admin_Work_Ahead_of_Clinical_Work__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Start Admin Work Ahead of Clinical Work</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

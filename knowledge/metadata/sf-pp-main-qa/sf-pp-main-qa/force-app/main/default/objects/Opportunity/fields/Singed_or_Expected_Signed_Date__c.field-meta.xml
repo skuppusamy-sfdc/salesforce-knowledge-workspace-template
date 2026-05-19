@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Singed_or_Expected_Signed_Date__c</fullName>
+    <formula>if( not(isnull(Contract_Customer_Signed_Date__c)),Contract_Customer_Signed_Date__c,
+
+if( not(isnull(Expected_Sign_Date__c)),Expected_Sign_Date__c,
+null))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>&quot;Date of Preference&quot; formula.  Returns the first non-null value in order from Contract Signed Date, the MOU Signed Date, then Verbal Award Date.</inlineHelpText>
+    <label>Signed or Expected Signed Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,117 @@
+[
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "LoadHealthCareSpecialtyDMCustom6601",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "LoadHealthCareSpecialtyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareSpecialtyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareSpecialtyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "HealthcareProviderSpecialty",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareSpecialtyDMCustom504",
+        "InputFieldName": "SpecialtyName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadHealthCareSpecialtyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareSpecialtyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareSpecialtyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "HealthcareProviderSpecialty",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareSpecialtyDMCustom3895",
+        "InputFieldName": "PractitionerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "LoadHealthCareSpecialtyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareSpecialtyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareSpecialtyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PractitionerId",
+        "OutputObjectName": "HealthcareProviderSpecialty",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareSpecialtyDMCustom4006",
+        "InputFieldName": "PrimaryBoardSpecialty",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "LoadHealthCareSpecialtyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareSpecialtyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareSpecialtyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Primary_Board_Specialty__c",
+        "OutputObjectName": "HealthcareProviderSpecialty",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareSpecialtyDMCustom56",
+        "InputFieldName": "SpecialtyId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadHealthCareSpecialtyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareSpecialtyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareSpecialtyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SpecialtyId",
+        "OutputObjectName": "HealthcareProviderSpecialty",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareSpecialtyDMCustom6098",
+        "InputFieldName": "SubSpecialty",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadHealthCareSpecialtyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareSpecialtyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareSpecialtyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Sub_Specialty__c",
+        "OutputObjectName": "HealthcareProviderSpecialty",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Management of altered level of consciousness</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Management of altered level of consciousness</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Management_of_altered_level_of_consciousness</developerName>
+    <name>Management of altered level of consciousness</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

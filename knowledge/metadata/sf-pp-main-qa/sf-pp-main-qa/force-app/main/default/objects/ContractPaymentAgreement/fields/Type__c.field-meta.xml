@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stipend</fullName>
+                <default>false</default>
+                <label>Stipend</label>
+            </value>
+            <value>
+                <fullName>Shift</fullName>
+                <default>false</default>
+                <label>Shift</label>
+            </value>
+            <value>
+                <fullName>Variable</fullName>
+                <default>false</default>
+                <label>Variable</label>
+            </value>
+            <value>
+                <fullName>Target</fullName>
+                <default>false</default>
+                <label>Target</label>
+            </value>
+            <value>
+                <fullName>Bonus</fullName>
+                <default>false</default>
+                <label>Bonus</label>
+            </value>
+            <value>
+                <fullName>Locum</fullName>
+                <default>false</default>
+                <label>Locum</label>
+            </value>
+            <value>
+                <fullName>Leadership Incentives</fullName>
+                <default>false</default>
+                <label>Leadership Incentives</label>
+            </value>
+            <value>
+                <fullName>Locums</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Locums</label>
+            </value>
+            <value>
+                <fullName>Locums On Call</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Locums On Call</label>
+            </value>
+            <value>
+                <fullName>Locums Travel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Locums Travel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

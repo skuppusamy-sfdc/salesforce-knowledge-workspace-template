@@ -1,0 +1,72 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DrAttachTermSheetCustom7001",
+        "InputFieldName": "GenDocumentId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "LookupByFieldName": "Id",
+        "LookupObjectName": "ContentVersion",
+        "LookupReturnedFieldName": "ContentDocumentId",
+        "Name": "DrAttachTermSheet",
+        "OmniDataTransformationId": {
+            "Name": "DrAttachTermSheet",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DrAttachTermSheet",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContentDocumentId",
+        "OutputObjectName": "ContentDocumentLink",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "DrAttachTermSheetCustom8251",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DrAttachTermSheet",
+        "OmniDataTransformationId": {
+            "Name": "DrAttachTermSheet",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DrAttachTermSheet",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ContentDocumentLink",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DrAttachTermSheetCustom1479",
+        "InputFieldName": "ContextId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DrAttachTermSheet",
+        "OmniDataTransformationId": {
+            "Name": "DrAttachTermSheet",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DrAttachTermSheet",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LinkedEntityId",
+        "OutputObjectName": "ContentDocumentLink",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

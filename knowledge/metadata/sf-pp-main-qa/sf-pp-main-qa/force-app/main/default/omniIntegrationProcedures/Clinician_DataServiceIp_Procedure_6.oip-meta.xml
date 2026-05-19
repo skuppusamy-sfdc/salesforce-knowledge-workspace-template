@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;operation&quot;: &quot;load&quot;,
+    &quot;STP_ClinicianInfo&quot;: {
+        &quot;BLK_ClinicianInformation&quot;: {
+            &quot;MUL_MedicalLicenseState&quot;: &quot;AK;AL;AR;AZ;CA;CO;CT;DC;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD&quot;,
+            &quot;TA_PrimarySpecialty-Block&quot;: {
+                &quot;Name&quot;: &quot;Radiology&quot;,
+                &quot;PrimarySpecId&quot;: null,
+                &quot;CareSpecialtyId&quot;: null,
+                &quot;TA_PrimarySpecialty&quot;: &quot;Radiology&quot;,
+                &quot;Id&quot;: &quot;0bc7x0000000EarAAE&quot;,
+                &quot;RecordId&quot;: &quot;0bc7x0000000EarAAE&quot;,
+                &quot;isPrimaryOrSub&quot;: &quot;true&quot;
+            },
+            &quot;TA_Taxonomy-Block&quot;: {
+                &quot;Name&quot;: &quot;Hospice &amp; Palliative Medicine&quot;,
+                &quot;PracTaxonomyId&quot;: &quot;0bP7x0000000LqrEAE&quot;,
+                &quot;TA_Taxonomy&quot;: &quot;Hospice &amp; Palliative Medicine&quot;
+            },
+            &quot;TA_PracticingSpecialty-Block&quot;: {
+                &quot;Name&quot;: &quot;Cardiology&quot;,
+                &quot;PracSpecId&quot;: null,
+                &quot;CareSpecialtyId&quot;: null,
+                &quot;TA_PracticingSpecialty&quot;: &quot;Cardiology&quot;,
+                &quot;Id&quot;: &quot;0bc7x0000000EcTAAU&quot;,
+                &quot;RecordId&quot;: &quot;0bc7x0000000EcTAAU&quot;,
+                &quot;isPrimaryOrSub&quot;: &quot;true&quot;
+            },
+            &quot;SL_PracticingPreference&quot;: &quot;HM&quot;,
+            &quot;RAD_BoardCeritified&quot;: &quot;Ineligible&quot;,
+            &quot;FullName&quot;: &quot;Roberto Augusto Miki Jr.&quot;,
+            &quot;SL_ProfessionalTitle&quot;: &quot;DO&quot;
+        },
+        &quot;BLK_ProfessionalStatus&quot;: {
+            &quot;TXT_Program&quot;: null,
+            &quot;DT_EndDate&quot;: null
+        },
+        &quot;BLK_SponsorshipDetail&quot;: {
+            &quot;SEL_VisaType&quot;: null,
+            &quot;RAD_SponsorshipNeed&quot;: &quot;No&quot;
+        }
+    },
+    &quot;ClinicianId&quot;: &quot;0017x00001DwGhAAAV&quot;,
+    &quot;LastName&quot;: &quot;&quot;,
+    &quot;ClinicianContactId&quot;: &quot;0037x000012S0m0AAC&quot;,
+    &quot;OriginalClinicianInformation&quot;: {
+        &quot;BLK_ClinicianInformation&quot;: {
+            &quot;TA_PrimarySpecialty-Block&quot;: {
+                &quot;Name&quot;: &quot;Nephrology&quot;,
+                &quot;TA_PrimarySpecialty&quot;: &quot;Nephrology&quot;,
+                &quot;PrimarySpecId&quot;: &quot;0bO7x0000000Zk9EAE&quot;,
+                &quot;CareSpecialtyId&quot;: &quot;0bc7x0000000DzlAAE&quot;
+            },
+            &quot;SL_PracticingPreference&quot;: &quot;HM&quot;,
+            &quot;RAD_BoardCeritified&quot;: &quot;Ineligible&quot;,
+            &quot;TA_Taxonomy-Block&quot;: {
+                &quot;Name&quot;: &quot;Hospice &amp; Palliative Medicine&quot;,
+                &quot;TA_Taxonomy&quot;: &quot;Hospice &amp; Palliative Medicine&quot;,
+                &quot;PracTaxonomyId&quot;: &quot;0bP7x0000000LqrEAE&quot;
+            },
+            &quot;TA_PracticingSpecialty-Block&quot;: {
+                &quot;Name&quot;: &quot;Radiology&quot;,
+                &quot;PracSpecId&quot;: &quot;0bO7x0000000ZkAEAU&quot;,
+                &quot;TA_PracticingSpecialty&quot;: &quot;Radiology&quot;,
+                &quot;CareSpecialtyId&quot;: &quot;0bc7x0000000EarAAE&quot;
+            },
+            &quot;FullName&quot;: &quot;Roberto Augusto Miki Jr.&quot;,
+            &quot;MUL_MedicalLicenseState&quot;: &quot;AZ;CA;CO;CT;DC;DE;FL;GA;HI;IA;ID;IL;IN;KS;KY;LA;MA;MD;AL;AK;AR&quot;,
+            &quot;SL_ProfessionalTitle&quot;: &quot;DO&quot;
+        },
+        &quot;BLK_SponsorshipDetail&quot;: {
+            &quot;RAD_SponsorshipNeed&quot;: &quot;No&quot;
+        }
+    },
+    &quot;Err_RunningContext&quot;: &quot;ClinicianInfo:Clinician_DataServiceIp&quot;,
+    &quot;Err_CtxId&quot;: &quot;0017x00001DwGhAAAV&quot;,
+    &quot;Err_ProcessType&quot;: &quot;IP&quot;,
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004FbZEAU&quot;,
+    &quot;elementName&quot;: &quot;SaveClinicianData&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>DataServiceIp</name>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRE_ClinicianGetById</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DREClinicianGetById&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;clinicianId&quot;,
+    &quot;element&quot; : &quot;clinicianId&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRT_ClinicianInformation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;DRE_ClinicianGetById&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRTClinicianInformation&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RA_ClinicianData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;OriginalClinicianInformation&quot; : &quot;%DRT_ClinicianInformation:STP_ClinicianInfo%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;DRT_ClinicianInformation&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Response Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CB_QueryRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;operation == \&quot;query\&quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DEL_BusinessLicense</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsMedicalLicenseChanged%&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;OriginalList&quot; : &quot;%OriginalClinicianInformation:BLK_ClinicianInformation:MUL_MedicalLicenseState%&quot;,
+    &quot;NewList&quot; : &quot;%STP_ClinicianInfo:BLK_ClinicianInformation:MUL_MedicalLicenseState%&quot;,
+    &quot;ClinicianId&quot; : &quot;%ClinicianContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;Clinician_DelBusinessLicense&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;disableChainable&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;IntegrationProcedureAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>14.0</sequenceNumber>
+            <type>Integration Procedure Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DEL_PersonEducation</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsPersonEducationDeleted% &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_ProfessionalStatus:PersonEducationId%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;PersonEducation&quot;,
+    &quot;Id&quot; : &quot;%OriginalClinicianInformation:BLK_ProfessionalStatus:PersonEducationId%&quot;,
+    &quot;AllOrNone&quot; : false
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>13.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DEL_PractSpecialty</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsPractSpecialtyDeleted% &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PracticingSpecialty-Block:PracSpecId%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;HealthcareProviderSpecialty&quot;,
+    &quot;Id&quot; : &quot;%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PracticingSpecialty-Block:PracSpecId%&quot;,
+    &quot;AllOrNone&quot; : false
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>9.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DEL_PrimarySpecialty</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsPrimarySpecialtyDeleted% &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PrimarySpecialty-Block:PrimarySpecId%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;HealthcareProviderSpecialty&quot;,
+    &quot;Id&quot; : &quot;%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PrimarySpecialty-Block:PrimarySpecId%&quot;,
+    &quot;AllOrNone&quot; : false
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>10.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DEL_Taxonomy</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsTaxonomyDeleted% &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_ClinicianInformation:TA_Taxonomy-Block:PracTaxonomyId%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;HealthcareProviderTaxonomy&quot;,
+    &quot;Id&quot; : &quot;%OriginalClinicianInformation:BLK_ClinicianInformation:TA_Taxonomy-Block:PracTaxonomyId%&quot;,
+    &quot;AllOrNone&quot; : false
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>11.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DEL_VISA</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:VisaNotRequired% &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_SponsorshipDetail:VisaId%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;deleteSObject&quot; : [ {
+    &quot;Type&quot; : &quot;Visa__c&quot;,
+    &quot;Id&quot; : &quot;%OriginalClinicianInformation:BLK_SponsorshipDetail:VisaId%&quot;,
+    &quot;AllOrNone&quot; : false
+  } ],
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;allOrNone&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DeleteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>12.0</sequenceNumber>
+            <type>Delete Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRT_ClinicianLoad</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;STP_ClinicianInfo&quot; : &quot;%STP_ClinicianInfo%&quot;,
+    &quot;ClinicianId&quot; : &quot;%ClinicianId%&quot;,
+    &quot;LastName&quot; : &quot;%LastName%&quot;,
+    &quot;ClinicianContactId&quot; : &quot;%ClinicianContactId%&quot;,
+    &quot;ClinicianTaxonomy&quot; : &quot;=%LA_Taxonomy%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRTClinicianLoad&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>15.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FetchDuplicateSpecilityToDelete</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%LA_FinalSpecialityList%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;FacilityList&quot; : &quot;=%LA_FinalSpecialityList%&quot;,
+    &quot;ClinicianContactId&quot; : &quot;=%ClinicianContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;SpecialityToDelete&quot;,
+  &quot;responseJSONNode&quot; : &quot;SpecialityToBeDeleted&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRExtGetExitingSpecialityAndTaxonomy&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>6.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>FetchTaxonomyToDelete</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%LA_Taxonomy%)&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ClinicianContactId&quot; : &quot;=%ClinicianContactId%&quot;,
+    &quot;TaxonomyList&quot; : &quot;=%LA_Taxonomy%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;TaxonomyToDelete&quot;,
+  &quot;responseJSONNode&quot; : &quot;TaxonomyToBeDeleted&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRExtGetExitingSpecialityAndTaxonomy&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>8.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>IP_LoadClinicianData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;UserChanges&quot; : &quot;%UserChanges%&quot;,
+    &quot;SpecialtyListTobeUpdated&quot; : &quot;=%LA_FinalSpecialityList%&quot;,
+    &quot;SpecialityToDelete&quot; : &quot;=%SpecialityToBeDeleted%&quot;,
+    &quot;TaxonomyToDelete&quot; : &quot;=%TaxonomyToBeDeleted%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;DRT_ClinicianLoad&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;Clinician_Dataload&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;disableChainable&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;IntegrationProcedureAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>16.0</sequenceNumber>
+            <type>Integration Procedure Action</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>DRTransFormPracticingResponse</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;PracticingClinicianSpecialty&quot; : &quot;%LA_PracticingClinicianSpecialty%&quot;,
+    &quot;ClinicianContactId&quot; : &quot;=%ClinicianContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRTransFormPracticingHPCSpecialty&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>DataRaptor Transform Action</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LA_PracticingClinicianSpecialty</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;STP_ClinicianInfo:BLK_ClinicianInformation:TA_PracticingSpecialty-Block&quot;, &quot;OriginalClinicianInformation:BLK_ClinicianInformation:TA_PracticingSpecialty-Block&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>IsPracticingSpecialtyChanged</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsPractSpecialtyChanged%&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>DRTransformPrimaryResponse</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ClinicianContactId&quot; : &quot;%ClinicianContactId%&quot;,
+    &quot;PrimaryClinicianSpecialty&quot; : &quot;%LA_PrimaryClinicianSpecialty%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRTransFormPrimaryHPCSpecialty&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>DataRaptor Transform Action</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>LA_PrimaryClinicianSpecialty</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;STP_ClinicianInfo:BLK_ClinicianInformation:TA_PrimarySpecialty-Block&quot;, &quot;OriginalClinicianInformation:BLK_ClinicianInformation:TA_PrimarySpecialty-Block&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>List Merge Action</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>isPrimarySpecialtyChanged</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%UserChanges:IsPrimarySpecialtyChanged%&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_FinalSpecialityList</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;DRTransformPrimaryResponse&quot;, &quot;DRTransFormPracticingResponse&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction6&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>false</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_FinalSpecialityLists</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ &quot;CareSpecialtyId&quot; ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;LA_MergedSpecialityList&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LA_Taxonomy</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : false,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;OriginalClinicianInformation:BLK_ClinicianInformation:TA_Taxonomy-Block&quot;,
+    &quot;matchingPath&quot; : &quot;%TA_Taxonomy%&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;listKey&quot; : &quot;STP_ClinicianInfo:BLK_ClinicianInformation:TA_Taxonomy-Block&quot;,
+    &quot;matchingPath&quot; : &quot;%TA_Taxonomy%&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  } ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : true,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;STP_ClinicianInfo:BLK_ClinicianInformation:TA_Taxonomy-Block&quot;, &quot;OriginalClinicianInformation:BLK_ClinicianInformation:TA_Taxonomy-Block&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>7.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RA_LoadData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;SpecialityToBeDeleted&quot; : &quot;=%SpecialityToBeDeleted%&quot;,
+    &quot;TaxonomyToBeDeleted&quot; : &quot;=%TaxonomyToBeDeleted%&quot;,
+    &quot;LA_FinalSpecialityList&quot; : &quot;=%LA_FinalSpecialityList%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;IP_LoadClinicianData&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>17.0</sequenceNumber>
+            <type>Response Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>UserChanges</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;IsClinicianChanged&quot; : &quot;=%OriginalClinicianInformation:BLK_Notes:TXA_Comments% &lt;&gt; %STP_ClinicianInfo:BLK_Notes:TXA_Comments% || %OriginalClinicianInformation:BLK_ProfessionalStatus:SL_ProfessionalStatus% &lt;&gt; %STP_ClinicianInfo:BLK_ProfessionalStatus:SL_ProfessionalStatus%\n|| %OriginalClinicianInformation:BLK_ClinicianInformation:SL_ProfessionalTitle% &lt;&gt; %STP_ClinicianInfo:BLK_ClinicianInformation:SL_ProfessionalTitle%\n|| %OriginalClinicianInformation:BLK_ClinicianInformation:SL_PracticingPreference% &lt;&gt; %STP_ClinicianInfo:BLK_ClinicianInformation:SL_PracticingPreference%&quot;,
+    &quot;IsPractSpecialtyChanged&quot; : &quot;=%STP_ClinicianInfo:BLK_ClinicianInformation:TA_PracticingSpecialty-Block:TA_PracticingSpecialty% &lt;&gt; %OriginalClinicianInformation:BLK_ClinicianInformation:TA_PracticingSpecialty-Block:TA_PracticingSpecialty%&quot;,
+    &quot;IsPrimarySpecialtyChanged&quot; : &quot;=%STP_ClinicianInfo:BLK_ClinicianInformation:TA_PrimarySpecialty-Block:TA_PrimarySpecialty% &lt;&gt;\n%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PrimarySpecialty-Block:TA_PrimarySpecialty%&quot;,
+    &quot;IsMedicalLicenseChanged&quot; : &quot;=%OriginalClinicianInformation:BLK_ClinicianInformation:MUL_MedicalLicenseState% &lt;&gt; %STP_ClinicianInfo:BLK_ClinicianInformation:MUL_MedicalLicenseState%&quot;,
+    &quot;IsTaxonomyChanged&quot; : &quot;=ISBLANK(%STP_ClinicianInfo:BLK_ClinicianInformation:TA_Taxonomy-Block:PracTaxonomyId%)&quot;,
+    &quot;IsBoardCertChanged&quot; : &quot;=%OriginalClinicianInformation:BLK_ClinicianInformation:RAD_BoardCeritified% &lt;&gt; %STP_ClinicianInfo:BLK_ClinicianInformation:RAD_BoardCeritified%&quot;,
+    &quot;IsPersonEducationChanged&quot; : &quot;=%OriginalClinicianInformation:BLK_ProfessionalStatus:TXT_Program% &lt;&gt; %STP_ClinicianInfo:BLK_ProfessionalStatus:TXT_Program% ||\n%OriginalClinicianInformation:BLK_ProfessionalStatus:DT_EndDate% &lt;&gt; %STP_ClinicianInfo:BLK_ProfessionalStatus:DT_EndDate%&quot;,
+    &quot;IsVisaChanged&quot; : &quot;=%OriginalClinicianInformation:BLK_SponsorshipDetail:SEL_VisaType% &lt;&gt; %STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType%&quot;,
+    &quot;IsPractSpecialtyDeleted&quot; : &quot;=ISBLANK(%STP_ClinicianInfo:BLK_ClinicianInformation:TA_PracticingSpecialty-Block:PracSpecId%) &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PracticingSpecialty-Block:PracSpecId%)&quot;,
+    &quot;IsPrimarySpecialtyDeleted&quot; : &quot;=ISBLANK(%STP_ClinicianInfo:BLK_ClinicianInformation:TA_PrimarySpecialty-Block:PrimarySpecId%) &amp;&amp; ISNOTBLANK(%OriginalClinicianInformation:BLK_ClinicianInformation:TA_PrimarySpecialty-Block:PrimarySpecId%)&quot;,
+    &quot;IsTaxonomyDeleted&quot; : &quot;=ISBLANK(%STP_ClinicianInfo:BLK_ClinicianInformation:TA_Taxonomy-Block:PracTaxonomyId%)&quot;,
+    &quot;VisaNotRequired&quot; : &quot;=%STP_ClinicianInfo:BLK_SponsorshipDetail:RAD_SponsorshipNeed% == \&quot;No\&quot; || %OriginalClinicianInformation:BLK_SponsorshipDetail:SEL_VisaType% &lt;&gt; %STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType%&quot;,
+    &quot;IsPersonEducationDeleted&quot; : &quot;=%STP_ClinicianInfo:BLK_ProfessionalStatus:SL_ProfessionalStatus% &lt;&gt; \&quot;Resident\&quot; &amp;&amp; %STP_ClinicianInfo:BLK_ProfessionalStatus:SL_ProfessionalStatus% &lt;&gt; \&quot;Student\&quot;&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CB_SaveRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%operation% == \&quot;load\&quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_DataServiceIp</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>DataServiceIp</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_DataServiceIp_Procedure_6</uniqueName>
+    <versionNumber>6.0</versionNumber>
+    <webComponentKey>1c6bd0f5-0764-f7ab-61d7-a7a764bf3240</webComponentKey>
+</OmniIntegrationProcedure>

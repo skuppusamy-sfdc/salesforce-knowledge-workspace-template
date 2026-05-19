@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Confirm_Customer_Satisfaction</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Confirm Customer Satisfaction.</description>
+    <errorConditionFormula>NOT(RecordType.Name = &quot;Growth Opportunity&quot;) &amp;&amp;
+ISPICKVAL(StageName, &quot;Negotiate Contract &amp; Close&quot;) &amp;&amp;
+(ISNULL(Verbal_Award_Date__c) ||
+ISNULL(Expected_Sign_Date__c) ||
+ISNULL(Target_Contract_Start_Date__c))</errorConditionFormula>
+    <errorMessage>Required: RFP Process, Proposal Financial Terms, Data Extract Received, Proposal Date, Patient Collections, Margin, Annual Encounters, Subsidy, Verbal Award Date, Expected Sign Date, Target Contract Start Date, Contract Signed Date &amp; Actual Start Date.</errorMessage>
+</ValidationRule>

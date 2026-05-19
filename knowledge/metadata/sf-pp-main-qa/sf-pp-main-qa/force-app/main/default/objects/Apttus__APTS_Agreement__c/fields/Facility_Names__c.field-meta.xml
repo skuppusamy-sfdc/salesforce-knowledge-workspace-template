@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+<<<<<<<< HEAD:force-app/main/default/objects/Apttus__APTS_Agreement__c/fields/Facility_Names__c.field-meta.xml
+    <fullName>Facility_Names__c</fullName>
+    <label>Facility Names</label>
+========
+    <fullName>Answer__c</fullName>
+    <label>Answer</label>
+>>>>>>>> feature/US-0002330:force-app/main/default/objects/CET_Reference__c/fields/Answer__c.field-meta.xml
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Emergency management of burn victims</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Emergency management of burn victims</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Emergency_management_of_burn_victims</developerName>
+    <name>Emergency management of burn victims</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

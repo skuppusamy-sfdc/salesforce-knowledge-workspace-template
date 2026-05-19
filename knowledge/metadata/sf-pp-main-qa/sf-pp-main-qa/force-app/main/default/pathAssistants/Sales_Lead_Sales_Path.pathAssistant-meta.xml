@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Sales Lead Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Definition: &lt;/span&gt;A lead which does not align with the core requirements to be a SCP Customer (Industry, ED volume, Etc.)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Action: &lt;/span&gt;No additional action&lt;/p&gt;</info>
+        <picklistValueName>Disqualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Definition: Cookied individual where actions can be tracked in Pardot and lead scoring can occur. Individual included in marketing campaigns/nurturing paths.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Action: Nurture lead to become Market Qualified Lead&lt;/p&gt;</info>
+        <picklistValueName>Marketing Lead</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>of_Facilities_in_Scope__c</fieldNames>
+        <fieldNames>Bid_Process__c</fieldNames>
+        <fieldNames>Lead_Source_Detail__c</fieldNames>
+        <fieldNames>Target_Bid_Date__c</fieldNames>
+        <fieldNames>Target_Contract_Start_Date__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Definition: &lt;/span&gt;A marketing lead which has reached the threshold to be assigned to Sales. (Andrew Beazley)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Marketing Qualified Lead</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Definition: &lt;/span&gt;A lead which was qualified and converted and/or attached to an opportunity.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Action: &lt;/span&gt;Sales to continue via sales process as opportunity &lt;/p&gt;</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Sales_Lead</recordTypeName>
+</PathAssistant>

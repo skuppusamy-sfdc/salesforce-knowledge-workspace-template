@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Stage_Progression__c</fullName>
+    <label>Request Stage Progression</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Request Progression to Sales Qualified Opportunity</fullName>
+                <default>false</default>
+                <label>Request Progression to Sales Qualified Opportunity</label>
+            </value>
+            <value>
+                <fullName>Request Progression to Proposal Requested</fullName>
+                <default>false</default>
+                <label>Request Progression to Proposal Requested</label>
+            </value>
+            <value>
+                <fullName>Request Progression to Proposal Development</fullName>
+                <default>false</default>
+                <label>Request Progression to Proposal Development</label>
+            </value>
+            <value>
+                <fullName>Request Progression to Proposal Presented</fullName>
+                <default>false</default>
+                <label>Request Progression to Proposal Presented</label>
+            </value>
+            <value>
+                <fullName>Request Progression to Down Select</fullName>
+                <default>false</default>
+                <label>Request Progression to Down Select</label>
+            </value>
+            <value>
+                <fullName>Request Progression to Contract Request/MOU Approved</fullName>
+                <default>false</default>
+                <label>Request Progression to Contract Request/MOU Approved</label>
+            </value>
+            <value>
+                <fullName>Request to Close Opportunity/Contract Rejected</fullName>
+                <default>false</default>
+                <label>Request to Close Opportunity/Contract Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

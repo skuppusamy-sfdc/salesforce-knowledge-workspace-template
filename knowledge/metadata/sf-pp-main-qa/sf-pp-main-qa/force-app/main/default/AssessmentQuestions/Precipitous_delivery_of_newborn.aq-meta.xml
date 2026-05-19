@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Precipitous delivery of newborn</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Precipitous delivery of newborn</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Precipitous_delivery_of_newborn</developerName>
+    <name>Precipitous delivery of newborn</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

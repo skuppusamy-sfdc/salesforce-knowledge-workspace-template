@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Physician_Documentation_Type__c</fullName>
+    <label>Physician Documentation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allscripts</fullName>
+                <default>false</default>
+                <label>Allscripts</label>
+            </value>
+            <value>
+                <fullName>AthenaHealth</fullName>
+                <default>false</default>
+                <label>AthenaHealth</label>
+            </value>
+            <value>
+                <fullName>Cerner</fullName>
+                <default>false</default>
+                <label>Cerner</label>
+            </value>
+            <value>
+                <fullName>CPSI</fullName>
+                <default>false</default>
+                <label>CPSI</label>
+            </value>
+            <value>
+                <fullName>Empower</fullName>
+                <default>false</default>
+                <label>EmpowER</label>
+            </value>
+            <value>
+                <fullName>EPIC</fullName>
+                <default>false</default>
+                <label>EPIC</label>
+            </value>
+            <value>
+                <fullName>EPowerDoc</fullName>
+                <default>false</default>
+                <label>EPowerDoc</label>
+            </value>
+            <value>
+                <fullName>Gehrimed</fullName>
+                <default>false</default>
+                <label>Gehrimed</label>
+            </value>
+            <value>
+                <fullName>Hybrid (EMR/Paper)</fullName>
+                <default>false</default>
+                <label>Hybrid (EMR/Paper)</label>
+            </value>
+            <value>
+                <fullName>McKesson</fullName>
+                <default>false</default>
+                <label>MCKESSON</label>
+            </value>
+            <value>
+                <fullName>Medhost</fullName>
+                <default>false</default>
+                <label>MEDHOST</label>
+            </value>
+            <value>
+                <fullName>Meditech</fullName>
+                <default>false</default>
+                <label>MEDITECH</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Paper Other</fullName>
+                <default>false</default>
+                <label>Paper Other</label>
+            </value>
+            <value>
+                <fullName>Paper SCP Templates</fullName>
+                <default>false</default>
+                <label>Paper SCP Templates</label>
+            </value>
+            <value>
+                <fullName>Paper T-System</fullName>
+                <default>false</default>
+                <label>Paper T-System</label>
+            </value>
+            <value>
+                <fullName>Paragon</fullName>
+                <default>false</default>
+                <label>Paragon</label>
+            </value>
+            <value>
+                <fullName>PICIS</fullName>
+                <default>false</default>
+                <label>PICIS</label>
+            </value>
+            <value>
+                <fullName>T-System EV</fullName>
+                <default>false</default>
+                <label>T-System EV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

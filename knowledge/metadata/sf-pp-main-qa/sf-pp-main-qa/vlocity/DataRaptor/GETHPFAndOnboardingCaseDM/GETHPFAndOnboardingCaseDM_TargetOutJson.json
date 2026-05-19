@@ -1,0 +1,16 @@
+{
+    "csList": {
+        "csHPFId": "Text",
+        "csParentCaseId": "Text",
+        "csSubject": "Text",
+        "csType": "Text"
+    },
+    "hpfList": {
+        "FacilityName": "Text",
+        "HPFName": "Text",
+        "hpfFacilityAccountId": "Text",
+        "hpfRecordId": "Text",
+        "hpfStatus": "Text"
+    },
+    "onboardingCaseRecordTypeId": "Text"
+}

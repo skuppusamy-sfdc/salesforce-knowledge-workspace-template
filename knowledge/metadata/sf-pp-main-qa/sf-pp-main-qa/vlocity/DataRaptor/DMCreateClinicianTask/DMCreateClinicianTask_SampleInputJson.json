@@ -1,0 +1,22 @@
+{
+    "CB_QueryRecords": {
+    },
+    "CB_SaveRecords": {
+        "IsPracticingSpecialtyChanged": {
+        },
+        "isPrimarySpecialtyChanged": {
+        }
+    },
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CB_QueryRecords": null,
+        "CB_SaveRecords": null
+    }
+}

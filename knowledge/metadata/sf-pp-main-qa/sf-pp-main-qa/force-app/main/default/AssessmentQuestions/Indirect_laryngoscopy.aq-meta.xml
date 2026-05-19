@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Indirect laryngoscopy</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Indirect laryngoscopy</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Indirect_laryngoscopy</developerName>
+    <name>Indirect laryngoscopy</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

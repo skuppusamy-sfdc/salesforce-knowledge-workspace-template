@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EM_Satisfaction__c</fullName>
+    <label>EM Satisfaction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0. Unknown</fullName>
+                <default>true</default>
+                <label>0. Unknown</label>
+            </value>
+            <value>
+                <fullName>1. very dissatisfied</fullName>
+                <default>false</default>
+                <label>1. very dissatisfied</label>
+            </value>
+            <value>
+                <fullName>2. somewhat dissatisfied</fullName>
+                <default>false</default>
+                <label>2. somewhat dissatisfied</label>
+            </value>
+            <value>
+                <fullName>3. neutral	Not Checked</fullName>
+                <default>false</default>
+                <label>3. neutral	Not Checked</label>
+            </value>
+            <value>
+                <fullName>4. somewhat satisfied</fullName>
+                <default>false</default>
+                <label>4. somewhat satisfied</label>
+            </value>
+            <value>
+                <fullName>5. very satisfied</fullName>
+                <default>false</default>
+                <label>5. very satisfied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

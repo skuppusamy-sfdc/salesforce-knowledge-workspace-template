@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_Offboarding_Case_Close_Scenario</fullName>
+    <active>true</active>
+    <description>This is the rule that runs when the filed below is not populated when the user tries to case a close 
+
+Termination Request Date
+Primary Reason</description>
+    <errorConditionFormula>AND(
+   $RecordType.DeveloperName = &quot;Clinician_Offboarding&quot;,
+   ISPICKVAL(Type, &quot;SCP&quot;),
+   ISPICKVAL(Status, &quot;Closed&quot;),
+   ISPICKVAL(Closed_Reason__c, &quot;Complete&quot;),
+   OR(
+      ISBLANK(Termination_Request_Date__c),
+      ISBLANK(TEXT(Reason_for_Termination__c))
+   )
+)</errorConditionFormula>
+    <errorMessage>Please complete all required termination details before closing the case: Termination Request Date and Reason for Termination.</errorMessage>
+</ValidationRule>

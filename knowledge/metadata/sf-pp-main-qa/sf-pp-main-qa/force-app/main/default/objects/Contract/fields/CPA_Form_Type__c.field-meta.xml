@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPA_Form_Type__c</fullName>
+    <label>CPA Form Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acknowledgement of Alternate Physician</fullName>
+                <default>false</default>
+                <label>Acknowledgement of Alternate Physician</label>
+            </value>
+            <value>
+                <fullName>Add/Change Alternative Supervisor</fullName>
+                <default>false</default>
+                <label>Add/Change Alternative Supervisor</label>
+            </value>
+            <value>
+                <fullName>Add/Change Primary Supervisor</fullName>
+                <default>false</default>
+                <label>Add/Change Primary Supervisor</label>
+            </value>
+            <value>
+                <fullName>Addendum to add PA</fullName>
+                <default>false</default>
+                <label>Addendum to add PA</label>
+            </value>
+            <value>
+                <fullName>Adding Alternate Physicians Form</fullName>
+                <default>false</default>
+                <label>Adding Alternate Physicians Form</label>
+            </value>
+            <value>
+                <fullName>Agr for Phys-Superv Adv Prac Prescr Auth</fullName>
+                <default>false</default>
+                <label>Agr for Phys-Superv Adv Prac Prescr Auth</label>
+            </value>
+            <value>
+                <fullName>Alternate Supervising Phys App</fullName>
+                <default>false</default>
+                <label>Alternate Supervising Phys App</label>
+            </value>
+            <value>
+                <fullName>Alternate Supervising Physician Form</fullName>
+                <default>false</default>
+                <label>Alternate Supervising Physician Form</label>
+            </value>
+            <value>
+                <fullName>Alternate Supervising Physician Log</fullName>
+                <default>false</default>
+                <label>Alternate Supervising Physician Log</label>
+            </value>
+            <value>
+                <fullName>App for Registration as Superv Physician</fullName>
+                <default>false</default>
+                <label>App for Registration as Superv Physician</label>
+            </value>
+            <value>
+                <fullName>Application for Approval of a Supervising Relationship with a Licensed Physician or NP</fullName>
+                <default>false</default>
+                <label>Application for Approval of a Supervising Relationship with a Licensed Physician or NP</label>
+            </value>
+            <value>
+                <fullName>Application for Controlled Substance as a PA</fullName>
+                <default>false</default>
+                <label>Application for Controlled Substance as a PA</label>
+            </value>
+            <value>
+                <fullName>Application for Licensure as a PA</fullName>
+                <default>false</default>
+                <label>Application for Licensure as a PA</label>
+            </value>
+            <value>
+                <fullName>APRN New Employment/Change of Practice Request Form</fullName>
+                <default>false</default>
+                <label>APRN New Employment/Change of Practice Request Form</label>
+            </value>
+            <value>
+                <fullName>APRN Protocol</fullName>
+                <default>false</default>
+                <label>APRN Protocol</label>
+            </value>
+            <value>
+                <fullName>APRN Protocol Agreement</fullName>
+                <default>false</default>
+                <label>APRN Protocol Agreement</label>
+            </value>
+            <value>
+                <fullName>APRN Protocol Agreement Information Form</fullName>
+                <default>false</default>
+                <label>APRN Protocol Agreement Information Form</label>
+            </value>
+            <value>
+                <fullName>Back-up Supervising Physician(s) Form</fullName>
+                <default>false</default>
+                <label>Back-up Supervising Physician(s) Form</label>
+            </value>
+            <value>
+                <fullName>Backup Supervising Physician Application</fullName>
+                <default>false</default>
+                <label>Backup Supervising Physician Application</label>
+            </value>
+            <value>
+                <fullName>Basic Job Description Form</fullName>
+                <default>false</default>
+                <label>Basic Job Description Form</label>
+            </value>
+            <value>
+                <fullName>Board Approval Email/Letter</fullName>
+                <default>false</default>
+                <label>Board Approval Email/Letter</label>
+            </value>
+            <value>
+                <fullName>CAPA-CS</fullName>
+                <default>false</default>
+                <label>CAPA-CS</label>
+            </value>
+            <value>
+                <fullName>CAPA-NS</fullName>
+                <default>false</default>
+                <label>CAPA-NS</label>
+            </value>
+            <value>
+                <fullName>Certificate to Prescribe</fullName>
+                <default>false</default>
+                <label>Certificate to Prescribe</label>
+            </value>
+            <value>
+                <fullName>Chart Review</fullName>
+                <default>false</default>
+                <label>Chart Review</label>
+            </value>
+            <value>
+                <fullName>Clinical Prac/Prescr Guide/Protocols</fullName>
+                <default>false</default>
+                <label>Clinical Prac/Prescr Guide/Protocols</label>
+            </value>
+            <value>
+                <fullName>Collaboration Information Form</fullName>
+                <default>false</default>
+                <label>Collaboration Information Form</label>
+            </value>
+            <value>
+                <fullName>Collaborative Practice Agreement</fullName>
+                <default>false</default>
+                <label>Collaborative Practice Agreement</label>
+            </value>
+            <value>
+                <fullName>Collaborative Practice Agreement Termination</fullName>
+                <default>false</default>
+                <label>Collaborative Practice Agreement Termination</label>
+            </value>
+            <value>
+                <fullName>Collaborative Practice Protocol</fullName>
+                <default>false</default>
+                <label>Collaborative Practice Protocol</label>
+            </value>
+            <value>
+                <fullName>Colorado APRN/RXN Articulated Plan</fullName>
+                <default>false</default>
+                <label>Colorado APRN/RXN Articulated Plan</label>
+            </value>
+            <value>
+                <fullName>CON1 &amp; CPA</fullName>
+                <default>false</default>
+                <label>CON1 &amp; CPA</label>
+            </value>
+            <value>
+                <fullName>Continuing Education Tracking form</fullName>
+                <default>false</default>
+                <label>Continuing Education Tracking form</label>
+            </value>
+            <value>
+                <fullName>Covering Physician Letter</fullName>
+                <default>false</default>
+                <label>Covering Physician Letter</label>
+            </value>
+            <value>
+                <fullName>CPA without prescriptive authority</fullName>
+                <default>false</default>
+                <label>CPA without prescriptive authority</label>
+            </value>
+            <value>
+                <fullName>CPA with prescriptive authority</fullName>
+                <default>false</default>
+                <label>CPA with prescriptive authority</label>
+            </value>
+            <value>
+                <fullName>Delegation Agreement</fullName>
+                <default>false</default>
+                <label>Delegation Agreement</label>
+            </value>
+            <value>
+                <fullName>Delegation of Prescribing Controlled Substances To Physician Assistants and Nurse Practitioners</fullName>
+                <default>false</default>
+                <label>Delegation of Prescribing Controlled Substances To Physician Assistants and Nurse Practitioners</label>
+            </value>
+            <value>
+                <fullName>DOCP1</fullName>
+                <default>false</default>
+                <label>DOCP1</label>
+            </value>
+            <value>
+                <fullName>Duties and Delegation Agreement</fullName>
+                <default>false</default>
+                <label>Duties and Delegation Agreement</label>
+            </value>
+            <value>
+                <fullName>Extra signature pgs from collab phys</fullName>
+                <default>false</default>
+                <label>Extra signature pgs from collab phys</label>
+            </value>
+            <value>
+                <fullName>Form 5-App to Prac as Phys Asst</fullName>
+                <default>false</default>
+                <label>Form 5-App to Prac as Phys Asst</label>
+            </value>
+            <value>
+                <fullName>Form B - APRN Termination Form</fullName>
+                <default>false</default>
+                <label>Form B - APRN Termination Form</label>
+            </value>
+            <value>
+                <fullName>Form C - Nurse Protocol Worksheet</fullName>
+                <default>false</default>
+                <label>Form C - Nurse Protocol Worksheet</label>
+            </value>
+            <value>
+                <fullName>Intent to Practice</fullName>
+                <default>false</default>
+                <label>Intent to Practice</label>
+            </value>
+            <value>
+                <fullName>Mentorship Agreement</fullName>
+                <default>false</default>
+                <label>Mentorship Agreement</label>
+            </value>
+            <value>
+                <fullName>Notice of Delegated Authority for Prescription and Schedule Controlled Substance</fullName>
+                <default>false</default>
+                <label>Notice of Delegated Authority for Prescription and Schedule Controlled Substance</label>
+            </value>
+            <value>
+                <fullName>Notification of a CAPA-CS</fullName>
+                <default>false</default>
+                <label>Notification of a CAPA-CS</label>
+            </value>
+            <value>
+                <fullName>Notification of CAPA-NS</fullName>
+                <default>false</default>
+                <label>Notification of CAPA-NS</label>
+            </value>
+            <value>
+                <fullName>Notification of Termination Form</fullName>
+                <default>false</default>
+                <label>Notification of Termination Form</label>
+            </value>
+            <value>
+                <fullName>Notif to NV of Superv of APRN</fullName>
+                <default>false</default>
+                <label>Notif to NV of Superv of APRN</label>
+            </value>
+            <value>
+                <fullName>Notif to NV of Superv of PA (Allopathic PA)</fullName>
+                <default>false</default>
+                <label>Notif to NV of Superv of PA (Allopathic PA)</label>
+            </value>
+            <value>
+                <fullName>Notif to NV of Superv of PA (Osteopathic PA)</fullName>
+                <default>false</default>
+                <label>Notif to NV of Superv of PA (Osteopathic PA)</label>
+            </value>
+            <value>
+                <fullName>NP-CR Attestation Form</fullName>
+                <default>false</default>
+                <label>NP-CR Attestation Form</label>
+            </value>
+            <value>
+                <fullName>NPS1</fullName>
+                <default>false</default>
+                <label>NPS1</label>
+            </value>
+            <value>
+                <fullName>Nursing Verification and Form A</fullName>
+                <default>false</default>
+                <label>Nursing Verification and Form A</label>
+            </value>
+            <value>
+                <fullName>PAC1</fullName>
+                <default>false</default>
+                <label>PAC1</label>
+            </value>
+            <value>
+                <fullName>PAC2</fullName>
+                <default>false</default>
+                <label>PAC2</label>
+            </value>
+            <value>
+                <fullName>PA Delegate Agr &amp; Stand Proc Reference</fullName>
+                <default>false</default>
+                <label>PA Delegate Agr &amp; Stand Proc Reference</label>
+            </value>
+            <value>
+                <fullName>PAI1</fullName>
+                <default>false</default>
+                <label>PAI1</label>
+            </value>
+            <value>
+                <fullName>PA Notice of Supervisory Control</fullName>
+                <default>false</default>
+                <label>PA Notice of Supervisory Control</label>
+            </value>
+            <value>
+                <fullName>PA Practice Agreement</fullName>
+                <default>false</default>
+                <label>PA Practice Agreement</label>
+            </value>
+            <value>
+                <fullName>PA Protocol &amp; Delegation of Serv Agr</fullName>
+                <default>false</default>
+                <label>PA Protocol &amp; Delegation of Serv Agr</label>
+            </value>
+            <value>
+                <fullName>PA Supervisory Agreement-PASA</fullName>
+                <default>false</default>
+                <label>PA Supervisory Agreement-PASA</label>
+            </value>
+            <value>
+                <fullName>PA Verification of Supervision Form</fullName>
+                <default>false</default>
+                <label>PA Verification of Supervision Form</label>
+            </value>
+            <value>
+                <fullName>PA Written Agreement</fullName>
+                <default>false</default>
+                <label>PA Written Agreement</label>
+            </value>
+            <value>
+                <fullName>Physician Assistant Application for Prescriptive Authority</fullName>
+                <default>false</default>
+                <label>Physician Assistant Application for Prescriptive Authority</label>
+            </value>
+            <value>
+                <fullName>Physician Assistant Formulary</fullName>
+                <default>false</default>
+                <label>Physician Assistant Formulary</label>
+            </value>
+            <value>
+                <fullName>Physician Assistant Job Description</fullName>
+                <default>false</default>
+                <label>Physician Assistant Job Description</label>
+            </value>
+            <value>
+                <fullName>Physician Assistant Supervisory Form</fullName>
+                <default>false</default>
+                <label>Physician Assistant Supervisory Form</label>
+            </value>
+            <value>
+                <fullName>Physician Supervisory Plan</fullName>
+                <default>false</default>
+                <label>Physician Supervisory Plan</label>
+            </value>
+            <value>
+                <fullName>Plan of Supervision</fullName>
+                <default>false</default>
+                <label>Plan of Supervision</label>
+            </value>
+            <value>
+                <fullName>Practice Agreement</fullName>
+                <default>false</default>
+                <label>Practice Agreement</label>
+            </value>
+            <value>
+                <fullName>Practice Arrangement Plan</fullName>
+                <default>false</default>
+                <label>Practice Arrangement Plan</label>
+            </value>
+            <value>
+                <fullName>Practice Notification</fullName>
+                <default>false</default>
+                <label>Practice Notification</label>
+            </value>
+            <value>
+                <fullName>Practice Protocol</fullName>
+                <default>false</default>
+                <label>Practice Protocol</label>
+            </value>
+            <value>
+                <fullName>Prescription Delegation Form</fullName>
+                <default>false</default>
+                <label>Prescription Delegation Form</label>
+            </value>
+            <value>
+                <fullName>Prescriptive Authority</fullName>
+                <default>false</default>
+                <label>Prescriptive Authority</label>
+            </value>
+            <value>
+                <fullName>Prescriptive Authority CPA</fullName>
+                <default>false</default>
+                <label>Prescriptive Authority CPA</label>
+            </value>
+            <value>
+                <fullName>QA Plan &amp; Certif of Prescriptive Auth</fullName>
+                <default>false</default>
+                <label>QA Plan &amp; Certif of Prescriptive Auth</label>
+            </value>
+            <value>
+                <fullName>QI Meeting Documentation</fullName>
+                <default>false</default>
+                <label>QI Meeting Documentation</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance Plan</fullName>
+                <default>false</default>
+                <label>Quality Assurance Plan</label>
+            </value>
+            <value>
+                <fullName>Regis-Prescriptive Delegation &amp; Superv</fullName>
+                <default>false</default>
+                <label>Regis-Prescriptive Delegation &amp; Superv</label>
+            </value>
+            <value>
+                <fullName>Report of Supervising Physicians</fullName>
+                <default>false</default>
+                <label>Report of Supervising Physicians</label>
+            </value>
+            <value>
+                <fullName>Scope of Practice Agreement</fullName>
+                <default>false</default>
+                <label>Scope of Practice Agreement</label>
+            </value>
+            <value>
+                <fullName>SED Attestation</fullName>
+                <default>false</default>
+                <label>SED Attestation</label>
+            </value>
+            <value>
+                <fullName>Separation Form</fullName>
+                <default>false</default>
+                <label>Separation Form</label>
+            </value>
+            <value>
+                <fullName>Standard Care Agreement (aka CPA)</fullName>
+                <default>false</default>
+                <label>Standard Care Agreement (aka CPA)</label>
+            </value>
+            <value>
+                <fullName>Supervising Physician Application</fullName>
+                <default>false</default>
+                <label>Supervising Physician Application</label>
+            </value>
+            <value>
+                <fullName>Supervising Physician Form</fullName>
+                <default>false</default>
+                <label>Supervising Physician Form</label>
+            </value>
+            <value>
+                <fullName>Supervising Physician Statement of Responsibility</fullName>
+                <default>false</default>
+                <label>Supervising Physician Statement of Responsibility</label>
+            </value>
+            <value>
+                <fullName>Supervising Phys on Malpractice App</fullName>
+                <default>false</default>
+                <label>Supervising Phys on Malpractice App</label>
+            </value>
+            <value>
+                <fullName>Supervision Agreement</fullName>
+                <default>false</default>
+                <label>Supervision Agreement</label>
+            </value>
+            <value>
+                <fullName>Supervision Agreement Form</fullName>
+                <default>false</default>
+                <label>Supervision Agreement Form</label>
+            </value>
+            <value>
+                <fullName>Supervision Data Form</fullName>
+                <default>false</default>
+                <label>Supervision Data Form</label>
+            </value>
+            <value>
+                <fullName>Supervision Registration Form</fullName>
+                <default>false</default>
+                <label>Supervision Registration Form</label>
+            </value>
+            <value>
+                <fullName>Transition to Practice Agreement</fullName>
+                <default>false</default>
+                <label>Transition to Practice Agreement</label>
+            </value>
+            <value>
+                <fullName>Verif of CPA &amp; Practice Protocol-Form 4P</fullName>
+                <default>false</default>
+                <label>Verif of CPA &amp; Practice Protocol-Form 4P</label>
+            </value>
+            <value>
+                <fullName>Website verification</fullName>
+                <default>false</default>
+                <label>Website verification</label>
+            </value>
+            <value>
+                <fullName>Written Agreement</fullName>
+                <default>false</default>
+                <label>Written Agreement</label>
+            </value>
+            <value>
+                <fullName>Written Collaborative Agreement</fullName>
+                <default>false</default>
+                <label>Written Collaborative Agreement</label>
+            </value>
+            <value>
+                <fullName>Written Guidelines</fullName>
+                <default>false</default>
+                <label>Written Guidelines</label>
+            </value>
+            <value>
+                <fullName>Written Protocol</fullName>
+                <default>false</default>
+                <label>Written Protocol</label>
+            </value>
+            <value>
+                <fullName>Written Supervisory Agreement</fullName>
+                <default>false</default>
+                <label>Written Supervisory Agreement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

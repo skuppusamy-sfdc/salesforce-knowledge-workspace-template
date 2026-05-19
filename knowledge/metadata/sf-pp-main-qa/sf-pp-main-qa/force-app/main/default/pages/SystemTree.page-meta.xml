@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>34.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>This VF shows account hierarchy information when a user fills in Account field on Leads (Sales Page Layout)</description>
+    <label>SG_SystemTree</label>
+</ApexPage>

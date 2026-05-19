@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COVID_HI_and_Nurse_Triage_Line</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>Account.Staffed_Beds__c</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prime,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>Account.Staffed_Beds__c</field>
+        <operation>greaterThan</operation>
+        <value>50</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Vice President,Nursing</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AL,AZ,AR,CO,FL,GA,IL,IN,IA,KS,MS</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Ouachita,Salina,Community Hospital (AKA Colorado West Healthcare System),Decatur,Lawrence Memorial,Montrose,UnityPoint</value>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>10/18/2020</value>
+    </filters>
+    <label>COVID-AL,AR,AZ,CO,FL,GA,IA,IL,IN,KS,MS</label>
+</ListView>

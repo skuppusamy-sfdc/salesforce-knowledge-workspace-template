@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ER_Group__c</fullName>
+    <label>EM Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4M</fullName>
+                <default>false</default>
+                <label>4M</label>
+            </value>
+            <value>
+                <fullName>4md2</fullName>
+                <default>false</default>
+                <label>4md2</label>
+            </value>
+            <value>
+                <fullName>Affilion</fullName>
+                <default>false</default>
+                <label>Affilion</label>
+            </value>
+            <value>
+                <fullName>Alliance</fullName>
+                <default>false</default>
+                <label>Alliance</label>
+            </value>
+            <value>
+                <fullName>AMN Healthcare</fullName>
+                <default>false</default>
+                <label>AMN Healthcare</label>
+            </value>
+            <value>
+                <fullName>Apollo</fullName>
+                <default>false</default>
+                <label>Apollo</label>
+            </value>
+            <value>
+                <fullName>Born &amp; Bicknell</fullName>
+                <default>false</default>
+                <label>Born &amp; Bicknell</label>
+            </value>
+            <value>
+                <fullName>California Emergency Physicians (CEP)</fullName>
+                <default>false</default>
+                <label>California Emergency Physicians (CEP)</label>
+            </value>
+            <value>
+                <fullName>Cejka Search</fullName>
+                <default>false</default>
+                <label>Cejka Search</label>
+            </value>
+            <value>
+                <fullName>Cornerstone Physicians Management Group (CPMG)</fullName>
+                <default>false</default>
+                <label>Cornerstone Physicians Management Group (CPMG)</label>
+            </value>
+            <value>
+                <fullName>Correct Care</fullName>
+                <default>false</default>
+                <label>Correct Care</label>
+            </value>
+            <value>
+                <fullName>Delta Physician Placement</fullName>
+                <default>false</default>
+                <label>Delta Physician Placement</label>
+            </value>
+            <value>
+                <fullName>EDCare (HPP)</fullName>
+                <default>false</default>
+                <label>EDCare (HPP)</label>
+            </value>
+            <value>
+                <fullName>EmCare</fullName>
+                <default>false</default>
+                <label>EmCare</label>
+            </value>
+            <value>
+                <fullName>Emergency Consultants (ECI)</fullName>
+                <default>false</default>
+                <label>Emergency Consultants (ECI)</label>
+            </value>
+            <value>
+                <fullName>Emergency Medical Associates (EMA)</fullName>
+                <default>false</default>
+                <label>Emergency Medical Associates (EMA)</label>
+            </value>
+            <value>
+                <fullName>Emergency Medical Care (EMC)</fullName>
+                <default>false</default>
+                <label>Emergency Medical Care (EMC)</label>
+            </value>
+            <value>
+                <fullName>Emergency Medicine Physicians (EMP)</fullName>
+                <default>false</default>
+                <label>Emergency Medicine Physicians (EMP)</label>
+            </value>
+            <value>
+                <fullName>Emergency Medicine Specialists</fullName>
+                <default>false</default>
+                <label>Emergency Medicine Specialists</label>
+            </value>
+            <value>
+                <fullName>Emergency Physicians Medical Group (EPMG)</fullName>
+                <default>false</default>
+                <label>Emergency Physicians Medical Group (EPMG)</label>
+            </value>
+            <value>
+                <fullName>Emergency Physicians of Tidewater (EPT)</fullName>
+                <default>false</default>
+                <label>Emergency Physicians of Tidewater (EPT)</label>
+            </value>
+            <value>
+                <fullName>Emergency Service Partners (ESP)</fullName>
+                <default>false</default>
+                <label>Emergency Service Partners (ESP)</label>
+            </value>
+            <value>
+                <fullName>Emergency Staffing Solutions (ESS)</fullName>
+                <default>false</default>
+                <label>Emergency Staffing Solutions (ESS)</label>
+            </value>
+            <value>
+                <fullName>EmergiNet</fullName>
+                <default>false</default>
+                <label>EmergiNet</label>
+            </value>
+            <value>
+                <fullName>EPPA (Emergency Physicians Professional Association)</fullName>
+                <default>false</default>
+                <label>EPPA (Emergency Physicians Professional Association)</label>
+            </value>
+            <value>
+                <fullName>ER Stat</fullName>
+                <default>false</default>
+                <label>ER Stat</label>
+            </value>
+            <value>
+                <fullName>ER-One</fullName>
+                <default>false</default>
+                <label>ER-One</label>
+            </value>
+            <value>
+                <fullName>Hospital Employees</fullName>
+                <default>false</default>
+                <label>Hospital Employees</label>
+            </value>
+            <value>
+                <fullName>Hospital Physician Partners</fullName>
+                <default>false</default>
+                <label>Hospital Physician Partners</label>
+            </value>
+            <value>
+                <fullName>Infinity Healthcare</fullName>
+                <default>false</default>
+                <label>Infinity Healthcare</label>
+            </value>
+            <value>
+                <fullName>Jackson &amp; Coker (JC Nationwide)</fullName>
+                <default>false</default>
+                <label>Jackson &amp; Coker (JC Nationwide)</label>
+            </value>
+            <value>
+                <fullName>Local Group</fullName>
+                <default>false</default>
+                <label>Local Group</label>
+            </value>
+            <value>
+                <fullName>Marshall Emergency Services Associates (MESA)</fullName>
+                <default>false</default>
+                <label>Marshall Emergency Services Associates (MESA)</label>
+            </value>
+            <value>
+                <fullName>MEA Management</fullName>
+                <default>false</default>
+                <label>MEA Management</label>
+            </value>
+            <value>
+                <fullName>MEDS (Midwest Emergency Department Services)</fullName>
+                <default>false</default>
+                <label>MEDS (Midwest Emergency Department Services)</label>
+            </value>
+            <value>
+                <fullName>Meritt Hawkins</fullName>
+                <default>false</default>
+                <label>Meritt Hawkins</label>
+            </value>
+            <value>
+                <fullName>Morningstar Emergency Physicians</fullName>
+                <default>false</default>
+                <label>Morningstar Emergency Physicians</label>
+            </value>
+            <value>
+                <fullName>NES Healthcare Group</fullName>
+                <default>false</default>
+                <label>NES Healthcare Group</label>
+            </value>
+            <value>
+                <fullName>Pegasus</fullName>
+                <default>false</default>
+                <label>Pegasus</label>
+            </value>
+            <value>
+                <fullName>Pinnacle Health Group (PHG)</fullName>
+                <default>false</default>
+                <label>Pinnacle Health Group (PHG)</label>
+            </value>
+            <value>
+                <fullName>Premier Health Care Services</fullName>
+                <default>false</default>
+                <label>Premier Health Care Services</label>
+            </value>
+            <value>
+                <fullName>Professional Physician Services (PPS)</fullName>
+                <default>false</default>
+                <label>Professional Physician Services (PPS)</label>
+            </value>
+            <value>
+                <fullName>Questcare Partners</fullName>
+                <default>false</default>
+                <label>Questcare Partners</label>
+            </value>
+            <value>
+                <fullName>Schumacher Group</fullName>
+                <default>false</default>
+                <label>Schumacher Group</label>
+            </value>
+            <value>
+                <fullName>Sheridan</fullName>
+                <default>false</default>
+                <label>Sheridan</label>
+            </value>
+            <value>
+                <fullName>Sterling (HPP)</fullName>
+                <default>false</default>
+                <label>Sterling (HPP)</label>
+            </value>
+            <value>
+                <fullName>Team Health</fullName>
+                <default>false</default>
+                <label>Team Health</label>
+            </value>
+            <value>
+                <fullName>Valley Emergency Physicians (VEP)</fullName>
+                <default>false</default>
+                <label>Valley Emergency Physicians (VEP)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

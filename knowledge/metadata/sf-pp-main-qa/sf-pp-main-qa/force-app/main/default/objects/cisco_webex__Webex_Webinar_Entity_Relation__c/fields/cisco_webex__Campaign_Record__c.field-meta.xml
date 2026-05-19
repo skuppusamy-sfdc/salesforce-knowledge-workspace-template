@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cisco_webex__Campaign_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Webex Campaign Lookup field</description>
+    <label>Campaign Record</label>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Webinar Campaign Memberships</relationshipLabel>
+    <relationshipName>Webex_Webinar_Entity_Relations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

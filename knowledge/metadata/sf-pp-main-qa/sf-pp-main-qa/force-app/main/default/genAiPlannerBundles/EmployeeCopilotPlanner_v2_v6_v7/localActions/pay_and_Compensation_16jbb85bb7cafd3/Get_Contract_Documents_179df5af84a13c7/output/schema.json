@@ -1,0 +1,19 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "documentLinkList" : {
+      "title" : "documentLinkList",
+      "description" : "List of the document links related to the contract of the given clinician.",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Contract</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Contract with Cases</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>Cases__r</relationship>
+    </join>
+    <label>Contract with Cases</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Name</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>StartDate</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SpecialTerms</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Status</field>
+            <table>Contract</table>
+        </columns>
+        <masterLabel>Contract</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Status</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <masterLabel>Case</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Healthcare_Practitioner_Facility__c.Status__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Anticipated First Shift</displayNameOverride>
+            <field>Healthcare_Practitioner_Facility__c.First_Scheduled_Date__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time Type</displayNameOverride>
+            <field>Healthcare_Practitioner_Facility__c.Time_Type__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Credentialing Status</displayNameOverride>
+            <field>Healthcare_Practitioner_Facility__c.Credentialling_Status__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <masterLabel>Healthcare Practitioner Facility</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>Account.Name</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Person Account : Global Contact ID</displayNameOverride>
+            <field>Account.PersonContact.Global_Contact_ID__c</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Global Facility ID</displayNameOverride>
+            <field>Account.Global_Facility_ID__c</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RecordTypeName</displayNameOverride>
+            <field>Account.RecordTypeName__c</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Staffing Team</displayNameOverride>
+            <field>Account.Staffing_Team__c</field>
+            <table>Contract</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Person Account</displayNameOverride>
+            <field>Account.PersonContact</field>
+            <table>Contract</table>
+        </columns>
+        <masterLabel>Account</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contract Type</displayNameOverride>
+            <field>Provider_Network_Contract__c.Contract_Type__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time Type</displayNameOverride>
+            <field>Provider_Network_Contract__c.Time_Type_Formula__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Shift__c.Type__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rate</displayNameOverride>
+            <field>Shift__c.Rate__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Commitment per Month</displayNameOverride>
+            <field>Shift__c.Work_Commitment_per_Month__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Commitment Frequency</displayNameOverride>
+            <field>Shift__c.Work_Commitment_Frequency__c</field>
+            <table>Contract.Cases__r</table>
+        </columns>
+        <masterLabel>Preventive Care Agreement</masterLabel>
+    </sections>
+</ReportType>

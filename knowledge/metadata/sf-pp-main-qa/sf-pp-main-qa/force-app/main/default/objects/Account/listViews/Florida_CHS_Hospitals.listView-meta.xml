@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Florida_CHS_Hospitals</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>texcellency__DefHC_Network_Name__c</columns>
+    <columns>texcellency__DefHC_Parent_Network_Name__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_EM_Incumbent_Group_Type__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent_Group_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>FL</value>
+    </filters>
+    <filters>
+        <field>texcellency__DefHC_Parent_Network_Name__c</field>
+        <operation>equals</operation>
+        <value>Community Health Systems (AKA CHS)</value>
+    </filters>
+    <label>Florida CHS Hospitals</label>
+</ListView>

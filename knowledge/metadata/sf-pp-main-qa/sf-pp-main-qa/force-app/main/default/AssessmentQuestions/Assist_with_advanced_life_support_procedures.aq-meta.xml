@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Assist with advanced life support procedures</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Assist with advanced life support procedures</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Assist_with_advanced_life_support_procedures</developerName>
+    <name>Assist with advanced life support procedures</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

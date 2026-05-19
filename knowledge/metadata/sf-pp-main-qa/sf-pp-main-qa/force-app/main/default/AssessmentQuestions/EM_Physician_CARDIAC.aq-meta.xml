@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EM Physician CARDIAC</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;CARDIAC - INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Cardiopulmonary resuscitation&lt;/li&gt;
+&lt;li&gt;Electrocardiogram (interpretation of 12 leads)&lt;/li&gt;
+&lt;li&gt;Emergency cardioversion/defibrillation&lt;/li&gt;
+&lt;li&gt;Management of acute cardiac emergencies including cardiac failure, myocardial infarction, cardiac dysrhythmias&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>EM_Physician_CARDIAC</developerName>
+    <name>EM Physician CARDIAC</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

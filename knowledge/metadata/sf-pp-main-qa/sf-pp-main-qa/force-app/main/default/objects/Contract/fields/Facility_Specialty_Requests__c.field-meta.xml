@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Specialty_Requests__c</fullName>
+    <label>Facility Specialty Requests</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cardiac Surgery</fullName>
+                <default>false</default>
+                <label>Cardiac Surgery</label>
+            </value>
+            <value>
+                <fullName>Cardiology - Interventional</fullName>
+                <default>false</default>
+                <label>Cardiology - Interventional</label>
+            </value>
+            <value>
+                <fullName>Cardiology-Invasive</fullName>
+                <default>false</default>
+                <label>Cardiology-Invasive</label>
+            </value>
+            <value>
+                <fullName>Cardiology - Non-Invasive</fullName>
+                <default>false</default>
+                <label>Cardiology - Non-Invasive</label>
+            </value>
+            <value>
+                <fullName>Critical Care Medicine</fullName>
+                <default>false</default>
+                <label>Critical Care Medicine</label>
+            </value>
+            <value>
+                <fullName>Emergency Medicine</fullName>
+                <default>false</default>
+                <label>Emergency Medicine</label>
+            </value>
+            <value>
+                <fullName>Family Practice</fullName>
+                <default>false</default>
+                <label>Family Practice</label>
+            </value>
+            <value>
+                <fullName>Gastroenterology</fullName>
+                <default>false</default>
+                <label>Gastroenterology</label>
+            </value>
+            <value>
+                <fullName>General Surgery</fullName>
+                <default>false</default>
+                <label>General Surgery</label>
+            </value>
+            <value>
+                <fullName>Hemotology/Oncology</fullName>
+                <default>false</default>
+                <label>Hemotology/Oncology</label>
+            </value>
+            <value>
+                <fullName>Hospitalist</fullName>
+                <default>false</default>
+                <label>Hospitalist</label>
+            </value>
+            <value>
+                <fullName>Internal Medicine</fullName>
+                <default>false</default>
+                <label>Internal Medicine</label>
+            </value>
+            <value>
+                <fullName>Nephrology</fullName>
+                <default>false</default>
+                <label>Nephrology</label>
+            </value>
+            <value>
+                <fullName>Neurology</fullName>
+                <default>false</default>
+                <label>Neurology</label>
+            </value>
+            <value>
+                <fullName>OB/GYN</fullName>
+                <default>false</default>
+                <label>OB/GYN</label>
+            </value>
+            <value>
+                <fullName>Opthalmology</fullName>
+                <default>false</default>
+                <label>Opthalmology</label>
+            </value>
+            <value>
+                <fullName>Orthopedic Surgery</fullName>
+                <default>false</default>
+                <label>Orthopedic Surgery</label>
+            </value>
+            <value>
+                <fullName>Pathology</fullName>
+                <default>false</default>
+                <label>Pathology</label>
+            </value>
+            <value>
+                <fullName>Pediatrics</fullName>
+                <default>false</default>
+                <label>Pediatrics</label>
+            </value>
+            <value>
+                <fullName>Psychiatry</fullName>
+                <default>false</default>
+                <label>Psychiatry</label>
+            </value>
+            <value>
+                <fullName>Radiology</fullName>
+                <default>false</default>
+                <label>Radiology</label>
+            </value>
+            <value>
+                <fullName>Trauma Surgery</fullName>
+                <default>false</default>
+                <label>Trauma Surgery</label>
+            </value>
+            <value>
+                <fullName>Urology</fullName>
+                <default>false</default>
+                <label>Urology</label>
+            </value>
+            <value>
+                <fullName>Occupational Medicine</fullName>
+                <default>false</default>
+                <label>Occupational Medicine</label>
+            </value>
+            <value>
+                <fullName>ATLS</fullName>
+                <default>false</default>
+                <label>ATLS</label>
+            </value>
+            <value>
+                <fullName>ACLS</fullName>
+                <default>false</default>
+                <label>ACLS</label>
+            </value>
+            <value>
+                <fullName>PALS</fullName>
+                <default>false</default>
+                <label>PALS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

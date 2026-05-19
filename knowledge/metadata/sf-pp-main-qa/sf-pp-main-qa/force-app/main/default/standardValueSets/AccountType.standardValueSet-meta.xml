@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Target</fullName>
+        <default>false</default>
+        <label>Target Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>JV Exclusion</fullName>
+        <default>false</default>
+        <label>JV Exclusion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-Target Account</fullName>
+        <default>false</default>
+        <label>Non-Target Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EXCLUDED</fullName>
+        <default>false</default>
+        <label>EXCLUDED</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic-1</fullName>
+        <default>false</default>
+        <label>Strategic-1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic-2</fullName>
+        <default>false</default>
+        <label>Strategic-2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategic-3</fullName>
+        <default>false</default>
+        <label>Strategic-3</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer-Strategic-1</fullName>
+        <default>false</default>
+        <label>Customer-Strategic-1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer-Strategic-2</fullName>
+        <default>false</default>
+        <label>Customer-Strategic-2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer-Strategic-3</fullName>
+        <default>false</default>
+        <label>Customer-Strategic-3</label>
+    </standardValue>
+</StandardValueSet>

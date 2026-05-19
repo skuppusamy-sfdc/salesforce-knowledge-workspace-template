@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>SCP Health Conflict Disclosure Review</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:#6fa7d9;font-weight: bold&quot;&gt;SCP Health 
+Conflict of Interest Disclosure Review&lt;/span&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>3</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>SCP_Health_Conflict_Disclosure_Review</developerName>
+    <name>SCP Health Conflict Disclosure Review</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FTE_Hours__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Job_Title_Picklist__c),
+					&quot;Physician&quot;, 144,
+					&quot;Medical Director&quot;, 120,
+					&quot;Assistant Medical Director&quot;, 120,
+					&quot;Lead Advanced Practice Provider&quot;, 140,
+					&quot;Advanced Practice Provider&quot;, 140,
+					&quot;Nurse Practitioner&quot;, 140,
+					&quot;Physician Assistant&quot;, 140,
+					&quot;Resident&quot;, 180,
+					&quot;Physician Advisor&quot;, 144,
+					&quot;Travel Physician&quot;, 180,
+					&quot;Telehospitalist&quot;, 120,
+					&quot;Registered Nurse&quot;, 140,
+					&quot;Licensed Practical Nurse&quot;, 140,
+					140)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This is the FTE equivalent hours based upon the Job&apos;s Title</inlineHelpText>
+    <label>FTE Hours</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

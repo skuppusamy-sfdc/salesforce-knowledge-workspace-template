@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Planned_Hours__c</fullName>
+    <label>Total Planned Hours</label>
+    <summarizedField>ProviderNetworkContract.Number_of_Anticipate_Hours__c</summarizedField>
+    <summaryForeignKey>ProviderNetworkContract.ContractId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

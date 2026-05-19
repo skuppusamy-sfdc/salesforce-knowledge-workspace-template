@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Generic Opportunity Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Bid_Process__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;What unique capabilities do we have that address the client&amp;#39;s problem(s)? &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Do we have a power message/value story clearly articulated with the proof points&lt;/span&gt;?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Build Sales Strategy</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Lost_Date__c</fieldNames>
+        <fieldNames>Other_Detail__c</fieldNames>
+        <info>&lt;p&gt;Upon an Opportunity being marked Closed - Client Abandoned Proposal the following fields are required:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Close Reason&lt;/li&gt;&lt;li&gt;Close Date&lt;/li&gt;&lt;li&gt;Lost Date&lt;/li&gt;&lt;li&gt;Closed Stage Detail&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed - Client Abandoned Proposal</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Lost_Date__c</fieldNames>
+        <fieldNames>Other_Detail__c</fieldNames>
+        <fieldNames>Who_Won__c</fieldNames>
+        <info>&lt;p&gt;Upon an Opportunity being marked Closed - No Change the following fields are required:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Close Reason&lt;/li&gt;&lt;li&gt;Close Date&lt;/li&gt;&lt;li&gt;Lost Date&lt;/li&gt;&lt;li&gt;Closed Stage Detail&lt;/li&gt;&lt;li&gt;Who Won&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed - No Change</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Lost_Date__c</fieldNames>
+        <fieldNames>Other_Detail__c</fieldNames>
+        <fieldNames>Who_Won__c</fieldNames>
+        <info>&lt;p&gt;Upon an Opportunity being marked Closed - No Change/Lost the following fields are required:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Close Reason&lt;/li&gt;&lt;li&gt;Close Date&lt;/li&gt;&lt;li&gt;Lost Date&lt;/li&gt;&lt;li&gt;Closed Stage Detail&lt;/li&gt;&lt;li&gt;Who Won&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed - No Change/Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Lost_Date__c</fieldNames>
+        <fieldNames>Other_Detail__c</fieldNames>
+        <info>&lt;p&gt;Upon an Opportunity being marked Closed - SCP Declined the following fields are required:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Close Reason&lt;/li&gt;&lt;li&gt;Close Date&lt;/li&gt;&lt;li&gt;Lost Date&lt;/li&gt;&lt;li&gt;Closed Stage Detail&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed - SCP Declined</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Lost_Date__c</fieldNames>
+        <fieldNames>Other_Detail__c</fieldNames>
+        <fieldNames>Who_Won__c</fieldNames>
+        <info>&lt;p&gt;Upon an Opportunity being marked Closed Lost the following fields are required:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Close Reason&lt;/li&gt;&lt;li&gt;Close Date&lt;/li&gt;&lt;li&gt;Lost Date&lt;/li&gt;&lt;li&gt;Closed Stage Detail&lt;/li&gt;&lt;li&gt;Who Won&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Close_Reason__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Lost_Date__c</fieldNames>
+        <info>&lt;p&gt;Upon an Opportunity being marked Closed-No Bid the following fields are required:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Lost Date&lt;/li&gt;&lt;li&gt;Close Date&lt;/li&gt;&lt;li&gt;Close Reason&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed-No Bid</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Actual_Start_Date__c</fieldNames>
+        <fieldNames>Who_Won__c</fieldNames>
+        <picklistValueName>Confirm Customer Satisfaction</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Have we identified the correct sponsors/stakeholders? Do we have a sponsor(s)?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Have we socialized our solution with client key stakeholders?&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Develop Sponsorship</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Contract_Customer_Signed_Date__c</fieldNames>
+        <fieldNames>Actual_Start_Date__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Alignment of operations teams to ensure smooth transitions.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Update Provider Group History section. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Implement</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Verbal_Award_Date__c</fieldNames>
+        <fieldNames>Target_Contract_Start_Date__c</fieldNames>
+        <fieldNames>Expected_Sign_Date__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Reconfirm solution with customer; present formal contract, schedule discussed for closure with customer.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Negotiate Contract &amp; Close</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Deal__c</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <fieldNames>Lead_Source_Detail__c</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <picklistValueName>Prospecting</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Deal__c</fieldNames>
+        <fieldNames>Deal_Category_Old__c</fieldNames>
+        <fieldNames>LeadSource</fieldNames>
+        <fieldNames>Lead_Source_Detail__c</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Interaction Planning and Stakeholder Analysis &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;Why is the client looking to make a change?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;What are the consequences of not acting or staying with the status quo?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10pt;&quot;&gt;What are potential objections?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;What is &lt;span style=&quot;font-size: 13px;&quot;&gt;their &lt;/span&gt;decision making process?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Qualify and Discover Needs</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Proposal_Date__c</fieldNames>
+        <fieldNames>Subsidy__c</fieldNames>
+        <fieldNames>Revenue__c</fieldNames>
+        <fieldNames>Margin__c</fieldNames>
+        <fieldNames>Data_Extract_Received__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Present SCP solution(s), iterate with customer to finalize; Differentiate value.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Validate Solution</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Sales_Opportunity</recordTypeName>
+</PathAssistant>

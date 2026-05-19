@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTTransformSelectedHPFRecords</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom1539</globalKey>
+        <inputFieldName>SelectedHpfs:SelectedHpfList:Status__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HpfList:HpfStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:HpfList1 LIST &apos;selectrow/\/\/==/\/\/true&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(%HpfList1%), &apos;selectrow == true&apos;)</formulaExpression>
+        <formulaResultPath>SelectedHpfs:SelectedHpfList</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom2359</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom3414</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>HpfList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom8701</globalKey>
+        <inputFieldName>SelectedHpfs:SelectedHpfList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HpfList:HpfName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom2923</globalKey>
+        <inputFieldName>SelectedHpfs:SelectedHpfList:Employment_Type__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HpfList:HpfEmploymentType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom5088</globalKey>
+        <inputFieldName>SelectedHpfs:SelectedHpfList:UserId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HpfList:UserId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SelectedHpfs:ActiveHpfs LIST &apos;Employment_Type__c/\/\/==/\/\/&quot;Employee&quot;/\/\/||/\/\/Employment_Type__c/\/\/==/\/\/&quot;Independent/\/\/Contractor&quot;/\/\/||/\/\/Employment_Type__c/\/\/==/\/\/&quot;Locum&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(%SelectedHpfs:ActiveHpfs%), &apos;Employment_Type__c == &quot;Employee&quot; || Employment_Type__c == &quot;Independent Contractor&quot; || Employment_Type__c == &quot;Locum&quot;&apos;)</formulaExpression>
+        <formulaResultPath>SelectedHpfs:SelectedHpfList</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom4585</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom7572</globalKey>
+        <inputFieldName>SelectedHpfs:SelectedHpfList:HPFAccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HpfList:HPFAccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformSelectedHPFRecordsCustom1234</globalKey>
+        <inputFieldName>SelectedHpfs:SelectedHpfList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformSelectedHPFRecords</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HpfList:HpfId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;operation&quot; : &quot;transform&quot;,
+  &quot;HpfList1&quot; : [ {
+    &quot;Employment_Type__c&quot; : &quot;Employee&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKrEAM&quot;,
+    &quot;HPFName&quot; : &quot;ABC&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x000019xCh1AAE&quot;,
+    &quot;SelectedCount&quot; : 0,
+    &quot;Selected&quot; : true,
+    &quot;Name&quot; : &quot;ABC&quot;,
+    &quot;Status__c&quot; : &quot;Prospect&quot;
+  }, {
+    &quot;SelectedCount&quot; : 0,
+    &quot;selectrow&quot; : false,
+    &quot;Employment_Type__c&quot; : &quot;Employee&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKsEAM&quot;,
+    &quot;HPFName&quot; : &quot;Apollo hospital&quot;,
+    &quot;UserID&quot; : &quot;0057x00000RWwslAAD&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x00001IDihNAAT&quot;,
+    &quot;Name&quot; : &quot;Apollo hospital&quot;,
+    &quot;Status__c&quot; : &quot;Prospect&quot;
+  }, {
+    &quot;SelectedCount&quot; : 1,
+    &quot;Selected&quot; : true,
+    &quot;Employment_Type__c&quot; : &quot;Locum&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKtEAM&quot;,
+    &quot;HPFName&quot; : &quot;BPC Hospital&quot;,
+    &quot;UserId&quot; : &quot;0057x00000RWwsbAAD&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x000019oDCUAA2&quot;,
+    &quot;Name&quot; : &quot;BPC Hospital&quot;,
+    &quot;Status__c&quot; : &quot;Candidate&quot;
+  }, {
+    &quot;SelectedCount&quot; : 0,
+    &quot;selectrow&quot; : false,
+    &quot;Employment_Type__c&quot; : &quot;Employee&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKuEAM&quot;,
+    &quot;HPFName&quot; : &quot;EM - Children Hospital&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x00001IJtijAAD&quot;,
+    &quot;Name&quot; : &quot;EM - Children Hospital&quot;,
+    &quot;Status__c&quot; : &quot;Prospect&quot;
+  }, {
+    &quot;SelectedCount&quot; : 0,
+    &quot;selectrow&quot; : false,
+    &quot;Employment_Type__c&quot; : &quot;Employee&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKvEAM&quot;,
+    &quot;HPFName&quot; : &quot;Independent HPS&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x00001IFmFxAAL&quot;,
+    &quot;Name&quot; : &quot;Independent HPS&quot;,
+    &quot;Status__c&quot; : &quot;Prospect&quot;
+  }, {
+    &quot;SelectedCount&quot; : 0,
+    &quot;Selected&quot; : false,
+    &quot;Employment_Type__c&quot; : &quot;Employee&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKxEAM&quot;,
+    &quot;HPFName&quot; : &quot;kent&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x00001K02HBAAZ&quot;,
+    &quot;Name&quot; : &quot;kent&quot;,
+    &quot;Status__c&quot; : &quot;Prospect&quot;
+  }, {
+    &quot;SelectedCount&quot; : 0,
+    &quot;selectrow&quot; : true,
+    &quot;Employment_Type__c&quot; : &quot;Locum&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKyEAM&quot;,
+    &quot;HPFName&quot; : &quot;LLM Hospital&quot;,
+    &quot;UserID&quot; : &quot;0057x00000RWwseAAD&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x0000176IKHAA2&quot;,
+    &quot;Name&quot; : &quot;LLM Hospital&quot;,
+    &quot;Status__c&quot; : &quot;Active&quot;
+  }, {
+    &quot;SelectedCount&quot; : 0,
+    &quot;selectrow&quot; : true,
+    &quot;Employment_Type__c&quot; : &quot;Employee&quot;,
+    &quot;Id&quot; : &quot;0bS7x0000003LKzEAM&quot;,
+    &quot;HPFName&quot; : &quot;Locum Facility hospital&quot;,
+    &quot;HPFAccountId&quot; : &quot;0017x00001HgdibAAB&quot;,
+    &quot;Name&quot; : &quot;Locum Facility hospital&quot;,
+    &quot;Status__c&quot; : &quot;Prospect&quot;
+  } ],
+  &quot;omniScriptId&quot; : &quot;0jN7x0000004PCjEAM&quot;,
+  &quot;elementName&quot; : &quot;TransformSelectedHPFRecords&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTTransformSelectedHPFRecords_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

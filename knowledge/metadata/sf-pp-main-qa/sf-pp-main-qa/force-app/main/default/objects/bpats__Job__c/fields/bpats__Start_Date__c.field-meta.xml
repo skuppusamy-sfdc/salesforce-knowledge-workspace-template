@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bpats__Start_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Taking into consideration clinician offboarding, startup go-live, and/or coverage change implementation, this is the desired date the new clinician(s) will start working.</inlineHelpText>
+    <label>Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

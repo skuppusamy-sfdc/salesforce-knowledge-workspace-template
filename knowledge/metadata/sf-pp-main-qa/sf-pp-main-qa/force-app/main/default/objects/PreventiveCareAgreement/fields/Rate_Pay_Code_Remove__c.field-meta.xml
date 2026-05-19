@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_Pay_Code_Remove__c</fullName>
+    <label>Rate Pay Code Remove?</label>
+    <summaryFilterItems>
+        <field>Rate_Pay_Code__c.Is_Deleted__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Rate_Pay_Code__c.Preventive_Care_Agreement__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

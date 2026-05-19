@@ -1,0 +1,62 @@
+/* SLDS-only styling */
+.selection-count {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Responsive selection text for mobile */
+@media (max-width: 768px) {
+    .selection-count {
+        font-size: 0.875rem;
+    }
+    
+    .slds-col.slds-text-align_right {
+        text-align: center !important;
+        margin-top: 0.5rem;
+    }
+    
+    .slds-button-group {
+        justify-content: center;
+    }
+}
+
+/* Ensure buttons don't wrap */
+.slds-button-group {
+    white-space: nowrap;
+}
+
+/* Row number column styling */
+.slds-table tbody tr td:first-child {
+    font-weight: 600;
+    color: #706e6b;
+    background-color: #f3f3f3;
+    text-align: center;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+
+/* Enhanced datatable styling */
+.slds-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.slds-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f7f9fb;
+    z-index: 1;
+}
+
+/* Loading state improvements */
+.slds-spinner_container {
+    position: relative;
+    min-height: 200px;
+}
+
+/* Selection badge improvements */
+.slds-badge {
+    font-size: 0.8125rem;
+    font-weight: 600;
+}

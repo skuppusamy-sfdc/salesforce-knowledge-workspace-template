@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>External Influence &amp; Financial Interest Inquiry</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Are you or a family member engaged in some influential capacity (board membership, consulting, or other political arrangements) or have a material financial interest in a business or enterprise that competes directly, indirectly with, or provides a similar service (health care facility, clinic, diagnostic service, practice management service, staffing or recruiting service, physicians practice, medical billing company, medical coding company or any health care related service) as the Company, irrespective of the location of such business?</questionText>
+        <responseValues>No
+Yes</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>External_Influence_Financial_Interest_Inquiry</developerName>
+    <name>External Influence &amp; Financial Interest Inquiry</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

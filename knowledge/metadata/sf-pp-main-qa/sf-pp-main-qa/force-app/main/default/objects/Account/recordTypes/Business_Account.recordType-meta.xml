@@ -1,0 +1,2918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Account</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Account_Compact_Layout</compactLayoutAssignment>
+    <description>Used to create Non-Medical accounts (all other)</description>
+    <label>Business Account</label>
+    <picklistValues>
+        <picklist>ACH_Pay_Group__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDA Cadence - Felecia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDA Cadence - Mark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DefinitiveHC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engage_CXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Sales Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound BDM Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound VP Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Relationship %2F RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Hospital_Site__c</picklist>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LTAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent Care</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Type__c</picklist>
+        <values>
+            <fullName>Assisted Living Facility Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free-standing ED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Firm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skilled Nursing Facility Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub-system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Accreditation_Agency__c</picklist>
+        <values>
+            <fullName>AAAHC %28Accreditation Association for Ambulatory Health Care%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARF %E2%80%93 Commission on Accreditation of Rehab Facilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIHQ %28Center for Improvement in Healthcare Quality%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNV GL %28DNV GL - Healthcare%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HFAP %28Healthcare Facilities Accreditation Program%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institute for Medical Quality %28IMQ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TJC %28The Joint Commission%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Company__c</picklist>
+        <values>
+            <fullName>Billed Under Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caledonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMBCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hourly Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Data Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOYA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Billed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRehab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synergistics Systems%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Challenge_Ranking__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Check_Pay_Group__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Type__c</picklist>
+        <values>
+            <fullName>LT Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSG Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Credit_Agmt_Status__c</picklist>
+        <values>
+            <fullName>Borrower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Co-Borrower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guarantor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JV-Non-Guarantor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Borrower</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOZISF__ZoomInfo_Enrich_Status__c</picklist>
+        <values>
+            <fullName>Enriched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No-Match</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ED_Observation_Beds__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ER_Group__c</picklist>
+        <values>
+            <fullName>4M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4md2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMN Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affilion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apollo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Born %26 Bicknell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California Emergency Physicians %28CEP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cejka Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cornerstone Physicians Management Group %28CPMG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Physician Placement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDCare %28HPP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPPA %28Emergency Physicians Professional Association%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ER Stat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ER-One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Consultants %28ECI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medical Associates %28EMA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medical Care %28EMC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medicine Physicians %28EMP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medicine Specialists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Physicians Medical Group %28EPMG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Physicians of Tidewater %28EPT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Service Partners %28ESP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Staffing Solutions %28ESS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmergiNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Employees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Physician Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infinity Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackson %26 Coker %28JC Nationwide%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEA Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEDS %28Midwest Emergency Department Services%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marshall Emergency Services Associates %28MESA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meritt Hawkins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morningstar Emergency Physicians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NES Healthcare Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pegasus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinnacle Health Group %28PHG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier Health Care Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Physician Services %28PPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Questcare Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schumacher Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheridan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sterling %28HPP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valley Emergency Physicians %28VEP%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ER_Satisfaction_del__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employed_or_Outsourced__c</picklist>
+        <values>
+            <fullName>Employed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Entity_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Converted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name Changed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Dissolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Name Reserved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Name Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Sent for Filing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reservation Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Former_Group__c</picklist>
+        <values>
+            <fullName>4M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4md2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMN Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Affilion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apogee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apollo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Born %26 Bicknell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>California Emergency Physicians %28CEP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cejka Search</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cogent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cornerstone Physicians Management Group %28CPMG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta Physician Placement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDCare %28HPP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ER Stat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eagle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Consutlants %28ECI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medical Associates %28EMA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medicine Physicians %28EMP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medicine Specialists</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Physicians Medical Group %28EPMG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Physicians of Tidewater %28EPT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Service Partners %28ESP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Staffing Solutions %28ESS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmergiNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCAPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Employees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Physician Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital TeamCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Compass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infinity Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jackson %26 Coker %28JC Nationwide%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marshall Emergency Services Associates %28MESA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meritt Hawkins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morningstar Emergency Physicians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NES Healthcare Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pegasus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phoenix Physicians</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinnacle Health Group %28PHG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier Health Care Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Physician Services %28PPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Questcare Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sheridan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sound Inpatient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sterling %28HPP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Exigence Group</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HM_Group__c</picklist>
+        <values>
+            <fullName>Apogee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apollo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cogent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eagle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmCare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCAPs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Employees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Compass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier Physician Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schumacher Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sound Inpatient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Team Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Exigence Group</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HM_Satisfaction_del__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HPSA_Status__c</picklist>
+        <values>
+            <fullName>Designated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No New Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposed Withdrawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undetermined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HPSA__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hospital_Ownership_Type_2__c</picklist>
+        <values>
+            <fullName>Church Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>City Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>County Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federally Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Authority Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proprietary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Owned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hospital_Ownership_Type__c</picklist>
+        <values>
+            <fullName>For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ICU__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Insurance_Provided_By__c</picklist>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LLC_Management__c</picklist>
+        <values>
+            <fullName>Manager Managed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member Managed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nine_Box_Score__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Patient_Engagement_Facility_Status__c</picklist>
+        <values>
+            <fullName>No Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Interest - System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prime</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Physical_Country__c</picklist>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Physical_State__c</picklist>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Predictive_Margin__c</picklist>
+        <values>
+            <fullName>High Margin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Margin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Med Margin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Procedures__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Program__c</picklist>
+        <values>
+            <fullName>Fellowship Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internship Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre Medical School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residency Program</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RVU_Pay_Group__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>CWO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coastal - Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest - Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southeast - Core</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Residence_Type__c</picklist>
+        <values>
+            <fullName>DO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Review_Indicator__c</picklist>
+        <values>
+            <fullName>For Review - Account Hierarchy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For Review - Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>For Review - New Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SG_Litigation_Status__c</picklist>
+        <values>
+            <fullName>Active lawsuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anticipate future lawsuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No past%2C present or future lawsuits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past lawsuit is complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SG_Services__c</picklist>
+        <values>
+            <fullName>EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_State__c</picklist>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Staffing_Team__c</picklist>
+        <values>
+            <fullName>1 - Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 - National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - United</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Continental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Continental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 - Continental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8 - Continental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9 - United</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ArchWell Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Connect CCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Connect EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Connect HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Connect ISV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colonial - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta - Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delta - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontier - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontier - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontier - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontier - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontier - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frontier - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GL I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GL II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartland - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizon - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest - Teal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phoenix - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pioneer - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pioneer - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pioneer - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pioneer - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post Acute Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S1T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S1T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S1T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2T4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2T5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3T4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S4T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S4T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S4T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC III</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE III</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE IV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE V</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE VI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE VII</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW III</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW IV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW V</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern - Teal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Teal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwestern - Yellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spirit - Blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spirit - Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spirit - Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spirit - Orange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spirit - Purple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teladoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eHealth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>State_of_Formation__c</picklist>
+        <values>
+            <fullName>AK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Statistical_Area_Status__c</picklist>
+        <values>
+            <fullName>Combined Statistical Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metropolitan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micropolitan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Designation__c</picklist>
+        <values>
+            <fullName>C Corp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disregarded Entity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S Corp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trauma_Center_Designation__c</picklist>
+        <values>
+            <fullName>Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Designated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCLUDED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Venue_Rating__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PE_Sales_Qual_Opp</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name = &quot;Patient Engagement Opportunity&quot; &amp;&amp;
+ISPICKVAL(StageName, &quot;Sales Qualified Opportunity&quot;) &amp;&amp;
+(ISPICKVAL(LeadSource,&quot;&quot;) ||
+Lead_Source_Detail__c = &quot;&quot; ||
+ISPICKVAL(Product_Line__c,&quot;&quot;) ||
+ISPICKVAL(Type,&quot;&quot;))</errorConditionFormula>
+    <errorMessage>These fields are required: Lead Source, Lead Source Detail, Product Line, and Type.</errorMessage>
+</ValidationRule>

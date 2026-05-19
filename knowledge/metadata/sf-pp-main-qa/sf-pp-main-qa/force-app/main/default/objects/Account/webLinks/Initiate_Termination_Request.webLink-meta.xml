@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initiate_Termination_Request</fullName>
+    <availability>online</availability>
+    <description>This is the button that will be used for initiating the termination request</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Initiate Termination Request</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/page/omnistudio/omniscript?omniscript__type=Clinician&amp;omniscript__subType=OffboardingOS&amp;omniscript__language=English&amp;omniscript__theme=lightning&amp;omniscript__tabIcon=custom:custom18&amp;omniscript__tabLabel=Clinician_OffboardingOS&amp;c__ContextId={!CASESAFEID(Account.Id)}</url>
+</WebLink>

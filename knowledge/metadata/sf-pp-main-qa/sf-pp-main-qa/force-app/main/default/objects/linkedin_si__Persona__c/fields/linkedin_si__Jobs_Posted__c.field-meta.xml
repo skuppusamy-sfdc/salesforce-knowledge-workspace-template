@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>linkedin_si__Jobs_Posted__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number of open job postings on LinkedIn that match this Persona</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of open job postings on LinkedIn that match this Persona</inlineHelpText>
+    <label>Jobs Posted</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

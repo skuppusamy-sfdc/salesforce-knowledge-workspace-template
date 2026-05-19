@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chk_Converted_Acc__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>This field will be mapped to Accounts when LD record is converted and then a workflow rule on Account will set Owner Name to Jamie Hidalgo.  Do not delete.</description>
+    <label>Chk Converted Acc</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

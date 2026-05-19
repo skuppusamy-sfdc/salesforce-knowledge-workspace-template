@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountIds_In_HPFs_Must_Be_Same</fullName>
+    <active>true</active>
+    <errorConditionFormula>NP_PA_Healthcare_Practitioner_Facility__r.AccountId  &lt;&gt;  Physician_Healthcare_Facility__r.AccountId</errorConditionFormula>
+    <errorMessage>CPA Account Association mismatch. Make sure the MD/DO and NP/PA association is make with the Clinician(s) working for the Facility (Service Account)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+{
+    "HPFRecordList": [
+        {
+            "FacilityName": "testSer1",
+            "HPFName": "testSer1",
+            "hpfAccountId": "0017x000017KgM0AAK",
+            "hpfRecordId": "0bS7x000000371nEAA",
+            "hpfStatus": "Active"
+        },
+        {
+            "FacilityName": "Ochsner St. Martin Hospital-Hospitalist",
+            "HPFName": "Ochsner St. Martin Hospital-Hospitalist",
+            "hpfRecordId": "0bS7x000000371oEAA",
+            "hpfStatus": "Active"
+        },
+        {
+            "FacilityName": "Muskan Ser Acc",
+            "HPFName": "Muskan Ser Acc",
+            "hpfRecordId": "0bS7x000000371pEAA",
+            "hpfStatus": "Active"
+        }
+    ],
+    "accountId": "",
+    "assessmentId": "",
+    "caseRecordTypeId": "",
+    "contactId": ""
+}

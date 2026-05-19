@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Existing_training_or_residency_program__c</fullName>
+    <description>Existing training or residency program EM, IM or FP within 1 hour</description>
+    <externalId>false</externalId>
+    <inlineHelpText>+ 1 point</inlineHelpText>
+    <label>Existing training or residency program</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Shift_Bonus_Type_Added__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>New Shift Bonus Type Added?</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

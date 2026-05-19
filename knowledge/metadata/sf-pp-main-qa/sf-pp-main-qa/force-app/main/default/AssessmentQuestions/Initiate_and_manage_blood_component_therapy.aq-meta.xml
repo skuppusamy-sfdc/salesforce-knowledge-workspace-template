@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Initiate and manage blood component therapy</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Initiate and manage blood component therapy</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Initiate_and_manage_blood_component_therapy</developerName>
+    <name>Initiate and manage blood component therapy</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

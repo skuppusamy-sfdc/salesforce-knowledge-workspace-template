@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ACLS expired</fullName>
+        <default>false</default>
+        <label>ACLS expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrative Physician Only</fullName>
+        <default>false</default>
+        <label>Administrative Physician Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Agreement Expired</fullName>
+        <default>false</default>
+        <label>Agreement Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Amendment Not Returned</fullName>
+        <default>false</default>
+        <label>Amendment Not Returned</label>
+    </customValue>
+    <customValue>
+        <fullName>Annual Compliance Training Incomplete</fullName>
+        <default>false</default>
+        <label>Annual Compliance Training Incomplete</label>
+    </customValue>
+    <customValue>
+        <fullName>ATLS expired</fullName>
+        <default>false</default>
+        <label>ATLS expired</label>
+    </customValue>
+    <customValue>
+        <fullName>BCBS Enrollment Required</fullName>
+        <default>false</default>
+        <label>BCBS Enrollment Required</label>
+    </customValue>
+    <customValue>
+        <fullName>Board Certification Expiration</fullName>
+        <default>false</default>
+        <label>Board Certification Expiration</label>
+    </customValue>
+    <customValue>
+        <fullName>Collab Practice Agr Education not rec&apos;d</fullName>
+        <default>false</default>
+        <label>Collab Practice Agr Education not rec&apos;d</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Malpractice Insurance Expired</fullName>
+        <default>false</default>
+        <label>Commercial Malpractice Insurance Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Conflict of Interest Questionnaire-Not on File</fullName>
+        <default>false</default>
+        <label>Conflict of Interest Questionnaire-Not on File</label>
+    </customValue>
+    <customValue>
+        <fullName>Contracting document is outstanding</fullName>
+        <default>false</default>
+        <label>Contracting document is outstanding</label>
+    </customValue>
+    <customValue>
+        <fullName>CPA/Superv Signatures not rec’d</fullName>
+        <default>false</default>
+        <label>CPA/Superv Signatures not rec’d</label>
+    </customValue>
+    <customValue>
+        <fullName>DEA expired</fullName>
+        <default>false</default>
+        <label>DEA expired</label>
+    </customValue>
+    <customValue>
+        <fullName>FPPE-Focused Professional Practice Eval</fullName>
+        <default>false</default>
+        <label>FPPE-Focused Professional Practice Eval</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Malpractice Insurance Expired</fullName>
+        <default>false</default>
+        <label>Hospital Malpractice Insurance Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Privileges Expired</fullName>
+        <default>false</default>
+        <label>Hospital Privileges Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Privileges Suspended</fullName>
+        <default>false</default>
+        <label>Hospital Privileges Suspended</label>
+    </customValue>
+    <customValue>
+        <fullName>HR - Direct Deposit Form</fullName>
+        <default>false</default>
+        <label>HR - Direct Deposit Form</label>
+    </customValue>
+    <customValue>
+        <fullName>HR - Federal Tax Form</fullName>
+        <default>false</default>
+        <label>HR - Federal Tax Form</label>
+    </customValue>
+    <customValue>
+        <fullName>HR - I9 forms and ID</fullName>
+        <default>false</default>
+        <label>HR - I9 forms and ID</label>
+    </customValue>
+    <customValue>
+        <fullName>HR - IT protocol form</fullName>
+        <default>false</default>
+        <label>HR - IT protocol form</label>
+    </customValue>
+    <customValue>
+        <fullName>HR- Voided Check</fullName>
+        <default>false</default>
+        <label>HR- Voided Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Independent Contractor Agrmt not on file</fullName>
+        <default>false</default>
+        <label>Independent Contractor Agrmt not on file</label>
+    </customValue>
+    <customValue>
+        <fullName>Lack of required CMEs</fullName>
+        <default>false</default>
+        <label>Lack of required CMEs</label>
+    </customValue>
+    <customValue>
+        <fullName>Leased Employee Agreement not on file</fullName>
+        <default>false</default>
+        <label>Leased Employee Agreement not on file</label>
+    </customValue>
+    <customValue>
+        <fullName>Locum Company Malpractice Insurance Expired</fullName>
+        <default>false</default>
+        <label>Locum Company Malpractice Insurance Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Medicaid app not at insurance carrier</fullName>
+        <default>false</default>
+        <label>Medicaid app not at insurance carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>Medicaid PIN# terminated</fullName>
+        <default>false</default>
+        <label>Medicaid PIN# terminated</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Director Agrmt not on file</fullName>
+        <default>false</default>
+        <label>Medical Director Agrmt not on file</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical License Expired</fullName>
+        <default>false</default>
+        <label>Medical License Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Medicare application not at ins carrier</fullName>
+        <default>false</default>
+        <label>Medicare application not at ins carrier</label>
+    </customValue>
+    <customValue>
+        <fullName>Medicare PIN# termed - reenrolled req</fullName>
+        <default>false</default>
+        <label>Medicare PIN# termed - reenrolled req</label>
+    </customValue>
+    <customValue>
+        <fullName>NP/PA employment agmnt not on file</fullName>
+        <default>false</default>
+        <label>NP/PA employment agmnt not on file</label>
+    </customValue>
+    <customValue>
+        <fullName>New HR Agreement not on file</fullName>
+        <default>false</default>
+        <label>New HR Agreement not on file</label>
+    </customValue>
+    <customValue>
+        <fullName>NIHSS certification needed</fullName>
+        <default>false</default>
+        <label>NIHSS certification needed</label>
+    </customValue>
+    <customValue>
+        <fullName>No malpractice insurance coverage</fullName>
+        <default>false</default>
+        <label>No malpractice insurance coverage</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-compliant Covid-19 vaccine</fullName>
+        <default>false</default>
+        <label>Non-compliant Covid-19 vaccine</label>
+    </customValue>
+    <customValue>
+        <fullName>NP License Expired</fullName>
+        <default>false</default>
+        <label>NP License Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>NRP Required</fullName>
+        <default>false</default>
+        <label>NRP Required</label>
+    </customValue>
+    <customValue>
+        <fullName>On leave of absence</fullName>
+        <default>false</default>
+        <label>On leave of absence</label>
+    </customValue>
+    <customValue>
+        <fullName>PA License Expired</fullName>
+        <default>false</default>
+        <label>PA License Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>PALS expired</fullName>
+        <default>false</default>
+        <label>PALS expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Background Check</fullName>
+        <default>false</default>
+        <label>Pending Background Check</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Board Approval(Supervising Phys)</fullName>
+        <default>false</default>
+        <label>Pending Board Approval(Supervising Phys)</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Client Approval</fullName>
+        <default>false</default>
+        <label>Pending Client Approval</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Copy of Collaborative License</fullName>
+        <default>false</default>
+        <label>Pending Copy of Collaborative License</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Corporation Name/TAX ID</fullName>
+        <default>false</default>
+        <label>Pending Corporation Name/TAX ID</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending EMR Training</fullName>
+        <default>false</default>
+        <label>Pending EMR Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending EMTALA Acknowledgement</fullName>
+        <default>false</default>
+        <label>Pending EMTALA Acknowledgement</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending First Schedule Date</fullName>
+        <default>false</default>
+        <label>Pending First Schedule Date</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending HM Employment Agreement</fullName>
+        <default>false</default>
+        <label>Pending HM Employment Agreement</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Risk Mgmt Review</fullName>
+        <default>false</default>
+        <label>Pending Risk Mgmt Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Social Security #</fullName>
+        <default>false</default>
+        <label>Pending Social Security #</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending Vaccination</fullName>
+        <default>false</default>
+        <label>Pending Vaccination</label>
+    </customValue>
+    <customValue>
+        <fullName>PEP not returned</fullName>
+        <default>false</default>
+        <label>PEP not returned</label>
+    </customValue>
+    <customValue>
+        <fullName>Proof of Covid-19 vaccine not on file</fullName>
+        <default>false</default>
+        <label>Proof of Covid-19 vaccine not on file</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider Agreement is no longer valid.</fullName>
+        <default>false</default>
+        <label>Provider Agreement is no longer valid.</label>
+    </customValue>
+    <customValue>
+        <fullName>SCP Insured Locums Malpractice Insurance Expired</fullName>
+        <default>false</default>
+        <label>SCP Insured Locums Malpractice Insurance Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>SCP Malpractice Insurance Expired</fullName>
+        <default>false</default>
+        <label>SCP Malpractice Insurance Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>SCP Request and Release not on flle</fullName>
+        <default>false</default>
+        <label>SCP Request and Release not on flle</label>
+    </customValue>
+    <customValue>
+        <fullName>State Controlled Substance Reg Expired</fullName>
+        <default>false</default>
+        <label>State Controlled Substance Reg Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Telemedicine License Expired</fullName>
+        <default>false</default>
+        <label>Telemedicine License Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Temps granted when scheduled</fullName>
+        <default>false</default>
+        <label>Temps granted when scheduled</label>
+    </customValue>
+    <customValue>
+        <fullName>Time-Based Inactivation</fullName>
+        <default>false</default>
+        <label>Time-Based Inactivation</label>
+    </customValue>
+    <customValue>
+        <fullName>Visa Approval Pending</fullName>
+        <default>false</default>
+        <label>Visa Approval Pending</label>
+    </customValue>
+    <customValue>
+        <fullName>W9 needed for payroll</fullName>
+        <default>false</default>
+        <label>W9 needed for payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider Contracting document is outstanding</fullName>
+        <default>false</default>
+        <label>Provider Contracting document is outstanding</label>
+    </customValue>
+    <masterLabel>Temporary Inactive Reason Value Set</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

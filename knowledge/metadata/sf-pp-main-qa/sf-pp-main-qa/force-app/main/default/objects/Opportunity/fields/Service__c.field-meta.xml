@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service__c</fullName>
+    <label>Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Provider Locator Line</fullName>
+                <default>false</default>
+                <label>Provider Locator Line</label>
+            </value>
+            <value>
+                <fullName>Facilitated Scheduling Service</fullName>
+                <default>false</default>
+                <label>Facilitated Scheduling Service</label>
+            </value>
+            <value>
+                <fullName>Patient Engagement Campaigns</fullName>
+                <default>false</default>
+                <label>Patient Engagement Campaigns</label>
+            </value>
+            <value>
+                <fullName>Health Information and Nurse Triage Line</fullName>
+                <default>false</default>
+                <label>Health Information and Nurse Triage Line</label>
+            </value>
+            <value>
+                <fullName>Post - Discharge Care Coordination Services</fullName>
+                <default>false</default>
+                <label>Post - Discharge Care Coordination Services</label>
+            </value>
+            <value>
+                <fullName>Customized Clinical Support Programs</fullName>
+                <default>false</default>
+                <label>Customized Clinical Support Programs</label>
+            </value>
+            <value>
+                <fullName>Outsourced Marketing, Consulting, and Contract Management Support</fullName>
+                <default>false</default>
+                <label>Outsourced Marketing, Consulting, and Contract Management Support</label>
+            </value>
+            <value>
+                <fullName>Outsourced Back-Office Navigation &amp; Administrative Support</fullName>
+                <default>false</default>
+                <label>Outsourced Back-Office Navigation &amp; Administrative Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ET_Marketing_Lead_Prioritization</fullName>
+    <columns>Other_Lead_Source_Contact__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>pi__grade__c</columns>
+    <columns>pi__score__c</columns>
+    <columns>ENGAGEMENT_SCORE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Account_LD__c</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>pi__last_activity__c</columns>
+    <columns>pi__url__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pi__grade__c</field>
+        <operation>equals</operation>
+        <value>A+,A-,A,B+,B-,B</value>
+    </filters>
+    <filters>
+        <field>pi__score__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>ET: Marketing Lead Prioritization</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserAccessPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <booleanFilter>1</booleanFilter>
+    <description>This policy auto assigns the permission set groups for Core HC Portal Users.</description>
+    <masterLabel>Portal User Access Policy</masterLabel>
+    <order>1</order>
+    <status>Active</status>
+    <triggerType>Create</triggerType>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>Portal_Users</target>
+        <type>PermissionSetGroup</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>HealthCloudExperienceCloudAccessPsl</target>
+        <type>PermissionSetLicense</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>HealthCloudCmtyAccessPSL</target>
+        <type>PermissionSetLicense</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyFilters>
+        <operation>in</operation>
+        <sortOrder>1</sortOrder>
+        <target>core hc customer community plus login user,core hc customer community plus user</target>
+        <type>Profile</type>
+    </userAccessPolicyFilters>
+</UserAccessPolicy>

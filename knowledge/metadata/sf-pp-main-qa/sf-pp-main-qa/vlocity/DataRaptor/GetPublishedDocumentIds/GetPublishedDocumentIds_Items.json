@@ -1,0 +1,51 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "GetPublishedDocumentIdsCustom7591",
+        "InputFieldName": "ContentDocument.LatestPublishedVersionId",
+        "InputObjectName": "ContentDocumentLink",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "GetPublishedDocumentIds",
+        "OmniDataTransformationId": {
+            "Name": "GetPublishedDocumentIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPublishedDocumentIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContentDocumentLink",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContractId",
+        "GlobalKey": "GetPublishedDocumentIdsCustom6816",
+        "InputFieldName": "LinkedEntityId",
+        "InputObjectName": "ContentDocumentLink",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "GetPublishedDocumentIds",
+        "OmniDataTransformationId": {
+            "Name": "GetPublishedDocumentIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPublishedDocumentIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ContentDocumentLink",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,49 @@
+{
+    "FacilityList": [
+        {
+            "HPFName": "test S",
+            "HpfId": "0bS7x000000371lEAA",
+            "Selected": false,
+            "clonedPNCId": "",
+            "facilityId": "0017x000017KgM0AAK",
+            "facilityName": "Test Service Account 0012",
+            "facilityTitle": "Managed Physician",
+            "facilityTitleId": "0hs7x0000007K8wAAE",
+            "pncId": "0mw7x0000000rfRAAQ"
+        },
+        {
+            "HPFName": "BPC Hospital",
+            "HpfId": "0bS7x000000371mEAA",
+            "Selected": false,
+            "clonedPNCId": "",
+            "facilityId": "0017x000019oDCUAA2",
+            "facilityName": "BPC Hospital",
+            "facilityTitle": "EE Asst Hospital Med Program Director",
+            "facilityTitleId": "0hs7x0000007K8eAAE",
+            "pncId": "0mw7x0000000rfSAAQ"
+        },
+        {
+            "HPFName": "testSer1",
+            "HpfId": "0bS7x000000371nEAA",
+            "Selected": false,
+            "clonedPNCId": "",
+            "facilityId": "0017x000019xCh1AAE",
+            "facilityName": "testSer1",
+            "facilityTitle": "Leased Medical Director",
+            "facilityTitleId": "0hs7x0000007K8sAAE",
+            "pncId": "0mw7x0000000rfTAAQ"
+        },
+        {
+            "HPFName": "Ochsner St. Martin Hospital-Hospitalist",
+            "HpfId": "0bS7x000000371oEAA",
+            "Selected": false,
+            "clonedPNCId": "0mw7x0000000rfRAAQ",
+            "facilityId": "0017x000017KgM0AAK",
+            "facilityName": "Test Service Account 0012",
+            "facilityTitle": "Interim Medical Director",
+            "facilityTitleId": "0hs7x0000007K8qAAE",
+            "pncId": "0mw7x0000000srdAAA"
+        }
+    ],
+    "SelectedPNCId": "0mw7x0000000rcFAAQ"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tele_Encounter__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Contract has an Tele Encounter variable type.</description>
+    <label>Tele Encounter</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

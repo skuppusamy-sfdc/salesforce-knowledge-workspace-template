@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;operation&quot;: &quot;transform&quot;,
+    &quot;HpfList&quot;: [
+        {
+            &quot;Id&quot;: &quot;0bS7x00000039oLEAQ&quot;,
+            &quot;SelectedCount&quot;: 1,
+            &quot;Selected&quot;: true,
+            &quot;Name&quot;: &quot;Test Hospital&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 1,
+            &quot;Selected&quot;: true,
+            &quot;Id&quot;: &quot;0bS7x00000039pxEAA&quot;,
+            &quot;Name&quot;: &quot;Test Hospital Facility case&quot;,
+            &quot;Status__c&quot;: &quot;Candidate&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003ACXEA2&quot;,
+            &quot;Name&quot;: &quot;test Practitioner Facility Cred&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003AE9EAM&quot;,
+            &quot;Name&quot;: &quot;test facility cred negative&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003AHNEA2&quot;,
+            &quot;Name&quot;: &quot;Test HCP Active&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003AIzEAM&quot;,
+            &quot;Name&quot;: &quot;Blank Cred&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003AKbEAM&quot;,
+            &quot;Name&quot;: &quot;test combo&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003BtNEAU&quot;,
+            &quot;Name&quot;: &quot;Facility Onboarding Prospect&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003BwbEAE&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 2&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003ByDEAU&quot;,
+            &quot;Name&quot;: &quot;Apollo Hospital Clinician&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003BzpEAE&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 4&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003C1REAU&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 5&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003C33EAE&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 6&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003C4fEAE&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 7&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003C6HEAU&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 8&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003C7tEAE&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 9&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003C9VEAU&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 10&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003CB7EAM&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 11&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003CCjEAM&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 12&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003CELEA2&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 13&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003CO1EAM&quot;,
+            &quot;Name&quot;: &quot;Facility Prospect 14&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003DiHEAU&quot;,
+            &quot;Name&quot;: &quot;Locum Facility&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        },
+        {
+            &quot;SelectedCount&quot;: 0,
+            &quot;Selected&quot;: false,
+            &quot;Id&quot;: &quot;0bS7x0000003E4rEAE&quot;,
+            &quot;Name&quot;: &quot;Locum HPF&quot;,
+            &quot;Status__c&quot;: &quot;Prospect&quot;
+        }
+    ],
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004KjJEAU&quot;,
+    &quot;elementName&quot;: &quot;FilterSelectedHPFRecords&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>false</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>ClinicianOffBoarding</name>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ExtractHpfRecords</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContactId&quot; : &quot;=%getContactId:Account:PersonContactId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMTGetRelatedHPFRecords&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTurboAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>DataRaptor Turbo Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>getContactId</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;ContextId&quot; : &quot;=%ContextId%&quot;
+  },
+  &quot;additionalOutput&quot; : {
+    &quot;&quot; : &quot;&quot;
+  },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMEGetAccountContactId&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTurboAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Turbo Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RA_GetRecords</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;HPFRecords&quot; : &quot;%ExtractHpfRecords:HPFRecords%&quot;,
+    &quot;RelatedHPFS&quot; : &quot;=LISTSIZE(%ExtractHpfRecords:HPFRecords:Id%)&quot;,
+    &quot;ContactId&quot; : &quot;%getContactId:Account:PersonContactId%&quot;,
+    &quot;AccountId&quot; : &quot;%ContextId%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : true,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Response Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CB_GetRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%operation% == \&quot;query\&quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>Load_OffboardingCases</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;recordTypeId&quot; : &quot;%SV_OffboardingcseRecordTypeId:caseRecordTypeId%&quot;,
+    &quot;OffboardingCases&quot; : &quot;%OffboardingCases%&quot;,
+    &quot;ContactId&quot; : &quot;%ContactId%&quot;,
+    &quot;AccountId&quot; : &quot;%AccountId%&quot;,
+    &quot;caseStatus&quot; : &quot;Not Started&quot;,
+    &quot;caseType&quot; : &quot;Facility&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRPCreateOffboardingCases&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>2.0</sequenceNumber>
+                <type>DataRaptor Post Action</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>RA_CreateCases</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;Load_OffboardingCases&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>3.0</sequenceNumber>
+                <type>Response Action</type>
+            </childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>SV_OffboardingcseRecordTypeId</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;caseRecordTypeId&quot; : &quot;=QUERY(\&quot;select Id from RecordType where DeveloperName = &apos;{0}&apos; and SobjectType = &apos;{1}&apos;\&quot;,&apos;Clinician_Offboarding&apos;,&apos;Case&apos;)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>TryCatchBlock</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Try Catch Block</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CB_LoadOffboardingCases</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%operation% == \&quot;load\&quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock4&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DRT_SelectedHpfs</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;HpfList&quot; : &quot;=LIST(%HpfList%)&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DRTTransformSelectedHPFRecords&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Transform Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>RA_TransformData</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;DRT_SelectedHpfs&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Response Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>CB_TransformHPFRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;%operation% == \&quot;transform\&quot;&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Conditional Block</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_Offboarding</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>Offboarding</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_Offboarding_Procedure_2</uniqueName>
+    <versionNumber>2.0</versionNumber>
+    <webComponentKey>316bec4a-3f9b-c899-83ea-101c618464cc</webComponentKey>
+</OmniIntegrationProcedure>

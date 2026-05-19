@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RBrady_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account.texcellency__DefHC_Network_Name__c</columns>
+    <columns>Account.texcellency__DefHC_Parent_NetworkID__c</columns>
+    <columns>Account.Outreach_Parent_Account__c</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Contact_Status__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>Account_Status__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_EM_Incumbent_Group_Type__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent_Group_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>contains</operation>
+        <value>target,prospect</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>notContain</operation>
+        <value>EA,Executive Assistant</value>
+    </filters>
+    <filters>
+        <field>CONTACT.ADDRESS2_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>TN</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>notContain</operation>
+        <value>Customer</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Financial Officer</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Account.Targeting_Total_Score__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>50</value>
+    </filters>
+    <label>RBrady Contacts</label>
+</ListView>

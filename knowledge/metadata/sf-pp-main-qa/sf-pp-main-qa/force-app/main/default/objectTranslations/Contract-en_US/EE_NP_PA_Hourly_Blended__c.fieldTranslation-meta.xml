@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- EE NP/PA Hourly Blended --></label>
+    <name>EE_NP_PA_Hourly_Blended__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,27 @@
+{
+    "recAWI": [
+        {
+            "AssignedToId": "Text",
+            "AssignedToName": "Text",
+            "Comments": "Text",
+            "Id": "Text",
+            "Name": "Text",
+            "ReviewedById": "Text",
+            "ReviewedByName": "Text",
+            "ReviewedDate": "Text",
+            "Status": "Text"
+        },
+        {
+            "AssignedToId": "Text",
+            "AssignedToName": "Text",
+            "Comments": "Text",
+            "Id": "Text",
+            "Name": "Text",
+            "ReviewedById": "Text",
+            "ReviewedByName": "Text",
+            "ReviewedDate": "Text",
+            "Status": "Text"
+        }
+    ],
+    "total": "Text"
+}

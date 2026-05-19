@@ -1,0 +1,21 @@
+{
+    "OffboardingCases": [
+        {
+            "HfName": "BPC Hospital",
+            "HfStatus": "Candidate",
+            "HpfEmploymentType": "Locum",
+            "HpfId": "0bS7x0000003LKtEAM",
+            "HpfName": "BPC Hospital",
+            "HpfStatus": "Candidate",
+            "IsBonusRepayment": null,
+            "IsExitInterviewRequired": null,
+            "IsTicketRequired": 0,
+            "dateTerminationReceived": "2025-09-13",
+            "isVoluntaryTermination": false,
+            "lastDay": "2025-09-06",
+            "serviceNowTicketNumber": "",
+            "terminationReason": null,
+            "terminationRequestDate": "2025-09-01"
+        }
+    ]
+}

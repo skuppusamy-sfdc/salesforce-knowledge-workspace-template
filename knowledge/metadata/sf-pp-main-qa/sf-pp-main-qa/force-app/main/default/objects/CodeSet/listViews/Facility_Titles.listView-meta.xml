@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Titles</fullName>
+    <columns>Name</columns>
+    <columns>StartDate</columns>
+    <columns>EndDate</columns>
+    <columns>Active__c</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>Code_Set_Sub_Type__c</columns>
+    <columns>Can_Have_Leadership_Incentive__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CodeSetType</field>
+        <operation>equals</operation>
+        <value>Facility Title</value>
+    </filters>
+    <label>Facility Titles</label>
+</ListView>

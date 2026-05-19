@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clients_of_Apollo_Neukom_Kwekel</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 or 6)</booleanFilter>
+    <columns>texcellency__DefHC_State__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>texcellency__DefHC_HQCity__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AZ,CA,CO,ID,IA,KS,MN,MT,NE,NV,NM,ND,OR,SD,UT,WA,WI,WY</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer - WW,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>guidance,counseling,addiction,senior,spine,guardian,psychiatric,behavioral,closed,select,rehabilitation,post acute,healthsouth</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>contains</operation>
+        <value>tammi_ne</value>
+    </filters>
+    <filters>
+        <field>Current_EM_Incumbent__c</field>
+        <operation>contains</operation>
+        <value>Apollo</value>
+    </filters>
+    <filters>
+        <field>Current_HM_Incumbent__c</field>
+        <operation>contains</operation>
+        <value>Apollo</value>
+    </filters>
+    <label>Clients of Apollo- Neukom/Kwekel</label>
+</ListView>

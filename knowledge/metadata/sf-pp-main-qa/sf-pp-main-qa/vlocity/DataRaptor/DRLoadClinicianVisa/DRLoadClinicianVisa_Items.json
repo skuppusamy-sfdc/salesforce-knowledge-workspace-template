@@ -1,0 +1,69 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRLoadClinicianVisaCustom7691",
+        "InputFieldName": "ClinicianId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "LinkedObjectSequence": 0,
+        "Name": "DRLoadClinicianVisa",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianVisa",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianVisa",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Clinician__c",
+        "OutputObjectName": "Visa__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "DRLoadClinicianVisaCustom5835",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRLoadClinicianVisa",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianVisa",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianVisa",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Visa__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRLoadClinicianVisaCustom6721",
+        "InputFieldName": "VisaType",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "LinkedObjectSequence": 0,
+        "Name": "DRLoadClinicianVisa",
+        "OmniDataTransformationId": {
+            "Name": "DRLoadClinicianVisa",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRLoadClinicianVisa",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type__c",
+        "OutputObjectName": "Visa__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

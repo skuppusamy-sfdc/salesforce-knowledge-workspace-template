@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Number_of_Residents_Year_c__c</fullName>
+    <externalDeveloperName>Program_Number_of_Residents_Year__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Program Number of Residents/Year</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

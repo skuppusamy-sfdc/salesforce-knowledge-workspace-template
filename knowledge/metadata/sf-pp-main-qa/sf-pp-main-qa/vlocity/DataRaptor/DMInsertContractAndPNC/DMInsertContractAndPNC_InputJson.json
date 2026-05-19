@@ -1,0 +1,24 @@
+{
+    "contractRec": {
+        "Clinician__c": "Text",
+        "Contract_Special_Terms__c": "Text",
+        "Employment_Type__c": "Text",
+        "OwnerId": "Text",
+        "ParentContractId": "Text",
+        "Perpetual__c": "Text",
+        "accountId": "Text",
+        "clonedFrom": "Text",
+        "recordtypeId": "Text",
+        "status": "Text"
+    },
+    "providerNetworkRec": {
+        "Contract_Special_Terms__c": "Text",
+        "Facility_Title__c": "Text",
+        "HealthcarePayerNetworkId": "Text",
+        "HealthcareProviderId": "Text",
+        "Healthcare_Practitioner_Facility__c": "Text",
+        "Status__c": "Text",
+        "Time_Type__c": "Text",
+        "clonedFrom": "Text"
+    }
+}

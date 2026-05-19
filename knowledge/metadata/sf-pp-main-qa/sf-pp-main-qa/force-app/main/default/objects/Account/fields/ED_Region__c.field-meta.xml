@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ED_Region__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL( Region__c, &quot;HM Central&quot;),
+ISPICKVAL( Region__c, &quot;HM West&quot;),
+ISPICKVAL( Region__c, &quot;HM East&quot;),
+ISPICKVAL( Region__c, &quot;WW&quot;),
+ISPICKVAL( Region__c, &quot;CM&quot;),
+ISPICKVAL( Region__c, &quot;UC&quot;),
+ISPICKVAL( Region__c, &quot;PT&quot;)
+),
+BLANKVALUE(TEXT(Parent.Region__c),&quot;No ED Region&quot;),
+TEXT(Region__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ED Region</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

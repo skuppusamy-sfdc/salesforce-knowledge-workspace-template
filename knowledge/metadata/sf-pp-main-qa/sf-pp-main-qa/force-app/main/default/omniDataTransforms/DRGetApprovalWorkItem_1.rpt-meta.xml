@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;recAWI&quot; : [ {
+    &quot;AssignedToName&quot; : &quot;Text&quot;,
+    &quot;ReviewedByName&quot; : &quot;Text&quot;,
+    &quot;ReviewedById&quot; : &quot;Text&quot;,
+    &quot;AssignedToId&quot; : &quot;Text&quot;,
+    &quot;ReviewedDate&quot; : &quot;Text&quot;,
+    &quot;Status&quot; : &quot;Text&quot;,
+    &quot;Comments&quot; : &quot;Text&quot;,
+    &quot;Name&quot; : &quot;Text&quot;,
+    &quot;Id&quot; : &quot;Text&quot;
+  }, {
+    &quot;AssignedToName&quot; : &quot;Text&quot;,
+    &quot;ReviewedByName&quot; : &quot;Text&quot;,
+    &quot;ReviewedById&quot; : &quot;Text&quot;,
+    &quot;AssignedToId&quot; : &quot;Text&quot;,
+    &quot;ReviewedDate&quot; : &quot;Text&quot;,
+    &quot;Status&quot; : &quot;Text&quot;,
+    &quot;Comments&quot; : &quot;Text&quot;,
+    &quot;Name&quot; : &quot;Text&quot;,
+    &quot;Id&quot; : &quot;Text&quot;
+  } ],
+  &quot;total&quot; : &quot;Text&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRGetApprovalWorkItem</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom885</globalKey>
+        <inputFieldName>recApprovalWorkItem:ReviewedBy.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:ReviewedByName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom9392</globalKey>
+        <inputFieldName>recApprovalWorkItem:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom3321</globalKey>
+        <inputFieldName>recApprovalWorkItem:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:recApprovalWorkItem ISBLANK 0 | var:recApprovalWorkItem LISTSIZE IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(recApprovalWorkItem),0,LISTSIZE(recApprovalWorkItem))</formulaExpression>
+        <formulaResultPath>recordTotal</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRGetApprovalWorkItemCustom303</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom4082</globalKey>
+        <inputFieldName>recApprovalWorkItem:ReviewedById</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:ReviewedById</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom3649</globalKey>
+        <inputFieldName>recordTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>total</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom9884</globalKey>
+        <inputFieldName>recApprovalWorkItem:AssignedTo.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:AssignedToName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom305</globalKey>
+        <inputFieldName>recApprovalWorkItem:ReviewedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:ReviewedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom7650</globalKey>
+        <inputFieldName>recApprovalWorkItem:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom5480</globalKey>
+        <inputFieldName>recApprovalWorkItem:AssignedToId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:AssignedToId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>RRId</filterValue>
+        <globalKey>DRGetApprovalWorkItemCustom556</globalKey>
+        <inputFieldName>RelatedRecordId</inputFieldName>
+        <inputObjectName>ApprovalWorkItem</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>recApprovalWorkItem</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRGetApprovalWorkItemCustom4210</globalKey>
+        <inputFieldName>recApprovalWorkItem:Comments</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRGetApprovalWorkItem</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>recAWI:Comments</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;RRId&quot; : &quot;5007x00000eu9WDAAY&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DRGetApprovalWorkItem_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

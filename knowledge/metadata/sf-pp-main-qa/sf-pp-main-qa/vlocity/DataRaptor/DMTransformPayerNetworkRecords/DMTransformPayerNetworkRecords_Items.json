@@ -1,0 +1,46 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTransformPayerNetworkRecordsCustom3693",
+        "InputFieldName": "payerNetworkList:PayerId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTransformPayerNetworkRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTransformPayerNetworkRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTransformPayerNetworkRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "payerNetwork:corporateEntityId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMTransformPayerNetworkRecordsCustom215",
+        "InputFieldName": "payerNetworkList:Id",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMTransformPayerNetworkRecords",
+        "OmniDataTransformationId": {
+            "Name": "DMTransformPayerNetworkRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMTransformPayerNetworkRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "payerNetwork:payerNetworkId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

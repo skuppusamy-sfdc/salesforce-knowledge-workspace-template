@@ -1,0 +1,2023 @@
+# Component-to-Story Map
+
+**Purpose**: Quick lookup to find which stories reference or build specific components.
+
+**Last Updated**: April 22, 2026  
+**Total Components Referenced**: 9  
+**Total Story-Component Mappings**: 1830  
+**Status**: Complete ✅
+
+---
+
+## How to Use This Map
+
+### Finding Stories for a Component
+1. Press Ctrl+F (or Cmd+F)
+2. Search for component name
+3. See all stories that reference it
+
+### Common Use Cases
+- "Which stories built this LWC component?"
+- "What stories modified this Apex class?"
+- "Find all stories related to this Flow"
+
+---
+
+## Top Components by Story Count
+
+| Component | Stories | Most Recent Sprint |
+|-----------|---------|-------------------|
+| ClinicianClientExperience | 1797 | Sprint 9 |
+| Agentforce | 17 | Sprint 14 |
+| Integration | 10 | Sprint 12.2 |
+| Looks like this need to be updated based on below criteria | 1 | Sprint 12 |
+| Current Logic: <DateAbove> >= EffectiveFrom AND <DateAbove> <= EffectiveTo) | 1 | Sprint 12 |
+| Need to update as: <DateAbove> >= EffectiveFrom AND <DateAbove> <= EffectiveTo OR  EffectiveTo = blank) | 1 | Sprint 12 |
+| [https://salesforce.atlassian.net/browse/PR1050558-2557|https://salesforce.atlassian.net/browse/PR1050558-2557|smart-link] | 1 | Sprint 12 |
+| *DisplayProviderNtwrkContract* | 1 | Sprint 8 |
+| *DRFetchProviderNetworkContract* | 1 | Sprint 8 |
+
+---
+
+## Component Details
+
+### *DRFetchProviderNetworkContract*
+
+**Stories using this component**: 1
+
+#### Sprint 8
+
+- **PR1050558-2228**: Improve Provider Network Contract related list component look & feel (from Build Components)
+
+### *DisplayProviderNtwrkContract*
+
+**Stories using this component**: 1
+
+#### Sprint 8
+
+- **PR1050558-2228**: Improve Provider Network Contract related list component look & feel (from Build Components)
+
+### Agentforce
+
+**Stories using this component**: 17
+
+#### Sprint 11
+
+- **PR1050558-3792**: UAT Bug: C&CUAT45 Asked scripted question 'schedule for the month' and did not g
+- **PR1050558-3789**: UAT Bug: C&CUAT44 Facility Rate Change Notice - Full Cohort (NPPA Only)
+- **PR1050558-3788**: UAT Bug: C&CUAT43 Facility Rate Change Notice (Mixed)
+- **PR1050558-3787**: UAT Bug: C&CUAT42 CET EMR retrieval
+- **PR1050558-3786**: UAT Bug: C&CUAT41 CET Benefits Enrollment
+- **PR1050558-3785**: UAT Bug: C&CUAT40 CET Pay & Compensation Agentforce Fail
+
+#### Sprint 12
+
+- **PR1050558-3930**: UAT Bug: C&CUAT72 NO EMR System Detected
+
+#### Sprint 12.1
+
+- **PR1050558-5223**: UAT Bug: C&CUAT395 Agentforce not using hourly blend for EE PT NPPAs
+- **PR1050558-5207**: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5180**: UAT Bug: C&CUAT380 Agentforce: rate change notice process completed, but system 
+- **PR1050558-5179**: UAT Bug: C&CUAT379 Shift rate was removed on new PO and rate change done via Age
+- **PR1050558-4948**: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+
+#### Sprint 12.2
+
+- **PR1050558-5371**: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-4948**: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+
+#### Sprint 12.3
+
+- **PR1050558-5371**: UAT Enhancement: Agentforce Deployment Related Changes
+
+#### Sprint 14
+
+- **PR1050558-5207**: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-3478**: Agentforce Clinician Rate Change Notices Use Case - Enhancement
+
+### ClinicianClientExperience
+
+**Stories using this component**: 1797
+
+#### Sprint 1
+
+- **PR1050558-228**: Related lists on the clinician record are not displaying correctly.
+- **PR1050558-220**: Issues on Related Clinician Records
+- **PR1050558-216**: Contract & Related objects Page layouts mismatch.
+- **PR1050558-212**: Added extra tab on right-most column where record-type= Competitor
+- **PR1050558-211**: Issues on Account record page layout
+- **PR1050558-205**: Configure Service Line Object
+- **PR1050558-203**: View & Edit Access is Missing for BDA, Legal, And Recruiter users.
+- **PR1050558-201**: Corporate Support Permission Set Updates
+- **PR1050558-168**: Account Edit Access
+- **PR1050558-166**: Permission Set Groups
+- **PR1050558-165**: Permission Sets
+- **PR1050558-164**: Project Management Tool Installation
+- **PR1050558-107**: Duplicate Clinician Records
+- **PR1050558-88**: Create Service Records
+- **PR1050558-87**: Related Clinician Records
+- **PR1050558-86**: Initial National, Facility, and Service Line Account Records
+- **PR1050558-81**: Initial Clinician Record
+- **PR1050558-80**: Facility Contract and Rate Records
+- **PR1050558-79**: Create Facility Records
+- **PR1050558-78**: Corporate Support App
+- **PR1050558-77**: Corporate Support Profile
+- **PR1050558-30**: Organization Wide Defaults
+- **PR1050558-23**: Create Clinician Person Accounts
+- **PR1050558-20**: OmniStudio Installation
+- **PR1050558-19**: Test Users
+
+#### Sprint 10
+
+- **PR1050558-4190**: Observation Bug - In Create HPF Flow, if user do not select any HPF, then also i
+- **PR1050558-3475**: Regression Bug - Upon navigating back and forth on Rate Details screen on the Sp
+- **PR1050558-3456**: Observation Bug: Duplicates records are being displayed on Cloned PO contracts d
+- **PR1050558-3454**: RPC record with blank Pay code getting created when a PO contract is cloned
+- **PR1050558-3452**: When adding new shift with old shift records having same facility title and rate
+- **PR1050558-3450**: Duplicates records are getting created because of Cloned Shift records PCA.
+- **PR1050558-3446**: Regression bug _Rate Pay Code not populated on first PCA record via flow after C
+- **PR1050558-3442**: Issues in Addendum related fields
+- **PR1050558-3441**: Observation - User able to delete the facility rate from the 'Facility Rates as 
+- **PR1050558-3440**: Regression: Story PR1050558-892 Clinician Contract Request: Leased or Locums
+- **PR1050558-3436**: Duplicate rates are being created after configure rate flow.
+- **PR1050558-3434**: The Clinician Contract record is not getting created after submission of Contrac
+- **PR1050558-3394**: Rates are not visible in summary tab of Clinician & Practice Operation contract.
+- **PR1050558-3393**: The end date is not getting updated when the new contract start date arrives
+- **PR1050558-3385**: Anticipated Clinical Hours field not visible on Clinician Contract record UI
+- **PR1050558-3374**: Clinician Portal User License
+- **PR1050558-3337**: Issues in clinician contract approval process
+- **PR1050558-3334**: [Observation Bug]: Contract is created with record type clinician instead of Pra
+- **PR1050558-3330**: [Observation Bug] : Contract is cloned when there is existing contract with stat
+- **PR1050558-3329**: Anticipated Clinical Hours not populating after contract creation (maps to *_No_
+- **PR1050558-3328**: 'Anticipated Clinical Hours' field on Contract not populated even after user ent
+- **PR1050558-3325**: Clinician contract not submitted to the correct VPO user for approval
+- **PR1050558-3323**: EE NP/PA Full Time Weekly Blended field missing in UI
+- **PR1050558-3319**: Data Quality and Clinician Exp Specialist Persona are not able to access Clinica
+- **PR1050558-3318**: Observation Bug: A loop is going on for the Initiate Clinical Termination Reques
+- **PR1050558-3234**: Bonus Rate not calculating for PCA Rate Plans (EE_NPPA Hourly Blended & Overage 
+- **PR1050558-3233**: Permission for Integration User - Rate Pay Code, Contract Point Phone
+- **PR1050558-3230**: Tech - Update External Sharing Settings - 2 of 2
+- **PR1050558-3212**: View Practice Operations rate on Configure Rates
+- **PR1050558-3211**: Comparison View - Clinician Contract
+- **PR1050558-3208**: Fix test classes
+- **PR1050558-3206**: [Regression Bug] - There should be only one Primary taxonomy record.
+- **PR1050558-3197**: Regression Bug - Upon clicking the Save for Later button and confirming it, an e
+- **PR1050558-3196**: Term sheet is not generated correctly for contract with multiple HPF
+- **PR1050558-3187**: Facility Change Request: Coverage Change - Only Pay Code Change - Auto Update Ex
+- **PR1050558-3171**: Location details displayed for HPF records not in 'Active' status
+- **PR1050558-3017**: Facility Change Request: Practice Operation Contract - Rules
+- **PR1050558-3012**: Bonus option not removed for Practice Operations contract
+- **PR1050558-3005**: Tech - Update External Sharing Settings 1 of 2
+- **PR1050558-3004**: Unable to update first clinical shift field on HPF as system admin user.
+- **PR1050558-2987**: Event is being triggered for Leased/locums.
+- **PR1050558-2986**: Issues on Add Additional Fields
+- **PR1050558-2964**: [Regression bug] - Open shift APAY forms Validation.
+- **PR1050558-2955**: Clinician Contract Request: SCP to book Travel
+- **PR1050558-2951**: [Observation Bug]:  Open Shift Apay request Form.
+- **PR1050558-2950**: Offboarding Tasks - Facility Specific - Update Task
+- **PR1050558-2947**: Clinician Contract Request: Contract Roll up of "Anticipated Clinical Hours"
+- **PR1050558-2928**: Clinician Contract Date Alignment - No Employment Type Change
+- **PR1050558-2924**: Add Additional Fields
+- **PR1050558-2916**: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-2906**: Facility Change Request: Rates & Coverage 2 of 2
+- **PR1050558-2876**: The URL for the CCPA Privacy Policy on the Core Connect portal displays a grey h
+- **PR1050558-2832**: Term Sheet Generation - Trigger Contract Generation
+- **PR1050558-2830**: Integration Platform Event: Re-Trigger Integration
+- **PR1050558-2828**: HPF Updates & Platform Event: Contract becomes Active
+- **PR1050558-2827**: HPF Updates & Platform Event: First Clinical Shift and Active (Integration)
+- **PR1050558-2826**: Update Rates in Qgenda
+- **PR1050558-2822**: Clinician Contract Request: Copy rates from Old HPF to New
+- **PR1050558-2819**: Clinical Support Case - Multiple issues.
+- **PR1050558-2815**: Notification for Employment Type Changes
+- **PR1050558-2811**: Generate Term Sheet - Term Sheet Generation
+- **PR1050558-2785**: NP/PA Tier Management: Clinician 2 of 2
+- **PR1050558-2679**: Intake Form Case - Set required fields within assessments
+- **PR1050558-2678**: Facility Term: Date of Client Termination Triggers Auto Clinician Offboarding Pr
+- **PR1050558-2677**: Clinician Offboarding - Termination Details Updates for Partner
+- **PR1050558-2676**: Clinician Offboarding - Termination Details Updates for Locums, Leased, Managed
+- **PR1050558-2675**: Case (RT: Clinician Change) & “Data Quality” queue
+- **PR1050558-2673**: Military Status Change Requests
+- **PR1050558-2672**: Business Entity Change Requests
+- **PR1050558-2670**: Clinician Name Change Requests
+- **PR1050558-2668**: Add Additional Fields for Integration
+- **PR1050558-2659**: Clinicians Contract Request: Fields Needed to Determine Addendum
+- **PR1050558-2640**: [Regression Bug]: All Persona user dont have access to Corporate Support console
+- **PR1050558-2639**: Facility Term: Initiate Clinician Termination - SCP and/or Facility
+- **PR1050558-2636**: Deal Team/Account Team Role Updates
+- **PR1050558-2635**: Account (Service Account) - Add Case Related List
+- **PR1050558-2634**: Contract (Client Contract) - Add Case Related List
+- **PR1050558-2633**: Clinician "At a Glance" UI - Updates
+- **PR1050558-2630**: Contracts Page Update - Add Path
+- **PR1050558-2616**: Update Case Related Lists on Clinician Record
+- **PR1050558-2558**: Clinician Contract Date Alignment
+- **PR1050558-2554**: Locums Rate Management
+- **PR1050558-2552**: Update Permissions for List Views
+- **PR1050558-2551**: Conditional Requirements for Clinician NPI
+- **PR1050558-2537**: Facility Rate Creation - Allow different rates based on Time Type
+- **PR1050558-2474**: Clinician Offboarding: Connect Termination and Clinical Match Processes
+- **PR1050558-2473**: Clinician Offboarding: Termination Updates
+- **PR1050558-2471**: Clinician Offboarding - Termination Details Update
+- **PR1050558-2469**: Open Shift APAY Request: Approval
+- **PR1050558-2468**: Collaborative Practice Agreement Review UI: Name Fields
+- **PR1050558-2467**: Clinician Contract: Leased and Locums Update to Executed Status
+- **PR1050558-2462**: Enable Integration to Workday for SCP Offboarding - 2 of 2
+- **PR1050558-2431**: Update Clinician Visa Data Model
+- **PR1050558-2422**: Service Account Attributes
+- **PR1050558-2421**: Automated Case Record Closure: Offboarding
+- **PR1050558-2418**: Insurance Provided By Validation Rule
+- **PR1050558-2239**: Clinician Contracting - Job Requisition Handoff to Asymbl
+- **PR1050558-2238**: Clinician Contract Update: Rate Pay Code
+- **PR1050558-2237**: Clinician Onboarding Case & Task Updates
+- **PR1050558-2227**: Client Rate Configuration - Cloning and Editing - "Re-Add"
+- **PR1050558-2224**: Open Shift APAY Request - Security Matrix updates
+- **PR1050558-2188**: Client Contract List Views
+- **PR1050558-2114**: Review Credentialling Fields
+- **PR1050558-2023**: Approval Work Item - Replace Approval Trace component
+- **PR1050558-1809**: Clinician Contract List Views - Update All Clinician Contracts - Approved
+- **PR1050558-1794**: Add Additional Fields
+- **PR1050558-1750**: Clinician Agreement Approval Process: VPO
+- **PR1050558-1739**: Facility Change Request: Rates & Coverage 1 of 2
+- **PR1050558-1726**: Inactivation Alert Automated Email
+- **PR1050558-1725**: Clinician Support Case
+- **PR1050558-1677**: Automatically Update the Opportunity Status
+- **PR1050558-1667**: Add Account Contact Relationship
+- **PR1050558-1584**: Clinician Contract Auto Populate Client Rate
+- **PR1050558-1028**: Intake Form Automation - Send Reminder after 3 days
+- **PR1050558-842**: IT Support Ticket
+- **PR1050558-472**: Client Agreement Request
+- **PR1050558-319**: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-230**: Coordinate Contracting Data Model with Conga Build
+- **PR1050558-199**: Guided Screening Call Field Updates
+
+#### Sprint 11
+
+- **PR1050558-3913**: UAT Bug: C&CUAT68 E2E | UAT | "HPF" option was not available in the user interfa
+- **PR1050558-3901**: UAT Bug: C&CUAT58 Was not able to submit rate change once selected site and subm
+- **PR1050558-3900**: SIT Bug: C&CSIT09 SF HC_ Unable to execute contract for employee type "Independe
+- **PR1050558-3848**: Regression Bug - Issues on clincian contract
+- **PR1050558-3847**: Issues with POC and CCM record creation
+- **PR1050558-3800**: Regression bug : Configure rate - PCA records are being created with Type as Fac
+- **PR1050558-3797**: UAT Bug: C&CUAT52 Lisha Falk - Corporate Entity Mismatch approver - Cannot see C
+- **PR1050558-3790**: Offboarding cases created for clinicians having Professional title other than NP
+- **PR1050558-3783**: UAT Bug: C&CUAT37 Term Sheet missing data that should be pulled from Contract Re
+- **PR1050558-3781**: Email is not being triggered to Clinician after contract status changed to Execu
+- **PR1050558-3780**: Higher facility rates to be synced from PO contract based on contract start date
+- **PR1050558-3773**: Regression_Bug: Closed Case related list on clinician record showing all case re
+- **PR1050558-3772**: Error when offboarding cases are closed without required details
+- **PR1050558-3770**: UAT Bug: C&CUAT33  Applying as clinician to job on external job board - not seei
+- **PR1050558-3769**: UAT Bug: C&CUAT32 Error received when trying to Generate Term Sheet from Approve
+- **PR1050558-3767**: UAT Bug: C&CUAT31 Document sent via DocuSign and Contract Record status/dates no
+- **PR1050558-3765**: UAT Bug: C&CUAT30 Clinician Contract Specialists need ability to see Related lis
+- **PR1050558-3764**: UAT Bug: C&CUAT29 Cannot view bonus details that were configured
+- **PR1050558-3760**: Regression Bug - Unable to update NPI or created HPF for clinician
+- **PR1050558-3757**: Issues in Pro Forma Model Approval, Rejection and Email.
+- **PR1050558-3740**: Client Offboarding Parent Case not closed when child cases are closed
+- **PR1050558-3703**: UAT Bug: C&CUAT28 HPF created when Candidate was moved from Interview to Offer i
+- **PR1050558-3674**: UAT Bug: C&CUAT27 EE NPPA Salary Calculation Incorrect/Needs Review
+- **PR1050558-3673**: UAT Bug: C&CUAT26 VPO not assigned to approve on Contract Record
+- **PR1050558-3672**: UAT Bug: C&CUAT25 Component Error when Scheduling Interview
+- **PR1050558-3670**: UAT Bug: C&CUAT HPF Not found error
+- **PR1050558-3669**: UAT Bug: C&CUAT24 PCA and PNC records not updated when I Continued with Draft Re
+- **PR1050558-3668**: Child case not closed even though there is no task related to it
+- **PR1050558-3663**: UAT Bug: C&CUAT21 Error received when DocuSign for Contracting selected from Con
+- **PR1050558-3624**: UAT Bug: C&CUAT20 Error received when selecting "Create Conga Agreement" from Co
+- **PR1050558-3623**: UAT Bug: C&CUAT19 EE NPPA rate fields are populated on a Contract Record for an 
+- **PR1050558-3622**: UAT Bug: C&CUAT18 Contract Request for Locums Clinician submitted and not update
+- **PR1050558-3621**: UAT Bug: C&CUAT17 Submit Contract Request button from Summary tab on Contract Re
+- **PR1050558-3620**: UAT Bug: C&CUAT16 Contract Request Bonus Configuration not saving to record and 
+- **PR1050558-3615**: UAT Enhancement: C&CUAT Error Handling
+- **PR1050558-3609**: UAT Bug: C&CUAT10.2 Unable to view Corporate Support app
+- **PR1050558-3608**: UAT Bug: C&CUAT08 Blank screen after screen flows when selecting Contract Reques
+- **PR1050558-3606**: UAT Bug: C&CUAT07 Agentforce error - "Something went wrong" / Unable to describe
+- **PR1050558-3605**: UAT Bug: C&CUAT06 Agentforce icon not visible in CET profile
+- **PR1050558-3600**: UAT Bug: C&CUAT01 Lacie Massingill getting error in UAT2 when trying to create c
+- **PR1050558-3596**: Previous active contract not getting updated when a contract starting today is m
+- **PR1050558-3595**: Intermettiently While completing the specify rates flow upon finish, getting a e
+- **PR1050558-3594**: Change management fields are not getting checked.
+- **PR1050558-3581**: The Column Type is missing and under List Views Filter the Task Record Type = De
+- **PR1050558-3580**: Issue in PMT Project layout
+- **PR1050558-3576**: Incorrect configuration for offboarding email report.
+- **PR1050558-3572**: Update HPF Temporary Inactive Reason data type
+- **PR1050558-3570**: SIT: C&CSIT05 Post risk review_ Close Out Genda_No Event is being sent from SF H
+- **PR1050558-3569**: SIT: C&CSIT04 SCP Termination event is received for IC but with insufficient dat
+- **PR1050558-3566**: SIT: C&CSIT03 Provider Contracting | Unable to Create EE Clinician Contract in S
+- **PR1050558-3565**: Practice Operation Change Object
+- **PR1050558-3564**: As Sales VP, unable to receive mails
+- **PR1050558-3546**: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3545**: Tech - SSO Flow - Send Clinician Info to Okta
+- **PR1050558-3522**: Experience Cloud related task/work
+- **PR1050558-3518**: Client Contract Request - Create new fields
+- **PR1050558-3459**: Client Onboarding - Configure Action Plan Template
+- **PR1050558-3449**: Facility Change Request: Reset flags when cloning a Practice Operations or Clini
+- **PR1050558-3445**: Access to Medical Staff Office Fax field
+- **PR1050558-3444**: Clinicians Contract Request: Mixed Bag Shift Rates?
+- **PR1050558-3392**: Facility Rate Creation - Clean Up - Remove "Shift" from Contract (RT: Clinician)
+- **PR1050558-3391**: Client Change Management Object
+- **PR1050558-3389**: Client Change Management - Update the Batch job to use Process Type = "Automatio
+- **PR1050558-3384**: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3383**: Add Additional Fields
+- **PR1050558-3374**: Clinician Portal User License
+- **PR1050558-3240**: Client Onboarding - Set PMT Task “Task Completion %” field
+- **PR1050558-3233**: Permission for Integration User - Rate Pay Code, Contract Point Phone
+- **PR1050558-3212**: View Practice Operations rate on Configure Rates
+- **PR1050558-3211**: Comparison View - Clinician Contract
+- **PR1050558-3207**: Facility Change Request: Practice Operation Contract - Auto End Date
+- **PR1050558-3205**: Queues to Support Onboarding/SUN process - List Views
+- **PR1050558-3204**: Queues to Support Onboarding/SUN process - Queue Creation
+- **PR1050558-3190**: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-3187**: Facility Change Request: Coverage Change - Only Pay Code Change - Auto Update Ex
+- **PR1050558-3027**: Client Onboarding - PMT Project, PMT Phase, & PMT Task
+- **PR1050558-3026**: Client Onboarding - Implementation Queue
+- **PR1050558-3024**: Facility Change Request: Sync Practice Operations Contract rates to a Clinician 
+- **PR1050558-3018**: Facility Change Request: Practice Operation Contract - Send notification when fu
+- **PR1050558-3017**: Facility Change Request: Practice Operation Contract - Rules
+- **PR1050558-2988**: Facility Change Request: No Hard Deletes & Exclude "Is Deleted" Rates [Part 1 of
+- **PR1050558-2928**: Clinician Contract Date Alignment - No Employment Type Change
+- **PR1050558-2924**: Add Additional Fields
+- **PR1050558-2916**: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-2906**: Facility Change Request: Rates & Coverage 2 of 2
+- **PR1050558-2815**: Notification for Employment Type Changes
+- **PR1050558-2811**: Generate Term Sheet - Term Sheet Generation
+- **PR1050558-2678**: Facility Term: Date of Client Termination Triggers Auto Clinician Offboarding Pr
+- **PR1050558-2659**: Clinicians Contract Request: Fields Needed to Determine Addendum
+- **PR1050558-2638**: Facility Term: Offboarding Email
+- **PR1050558-2637**: Facility Term: Auto Close Cases
+- **PR1050558-2474**: Clinician Offboarding: Connect Termination and Clinical Match Processes
+- **PR1050558-2151**: Auto Create Client Contract (Practice Operations) - Task Creation
+- **PR1050558-2139**: Client Onboarding - Auto Task Creation - LOI Executed
+- **PR1050558-2088**: Client Onboarding - Auto Task Creation - Manually Confirm Onboarding Start
+- **PR1050558-2087**: Client Onboarding - Auto Task Creation -  “Green Light for Client Outreach”
+- **PR1050558-1802**: Client Onboarding - Task Activities within HC
+- **PR1050558-1800**: Facility Term: Review Clinician Roster
+- **PR1050558-1794**: Add Additional Fields
+- **PR1050558-1723**: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-1684**: Facility Term: Auto Create Tasks
+- **PR1050558-1683**: Facility Term: Auto Create Cases
+- **PR1050558-1682**: Facility Change Request: Clinician Side Manual  Change Management tasks
+- **PR1050558-1679**: Client Onboarding - Trigger Auto task creation
+- **PR1050558-1678**: Client Onboarding - Auto Task Creation - Contract Status = Executed
+- **PR1050558-1073**: Update Agreement Request - Email Alert
+- **PR1050558-905**: SUN Orchestration - Trigger Case Creation
+- **PR1050558-319**: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-317**: Facility Term
+- **PR1050558-314**: Client Onboarding - Action Plan Template
+- **PR1050558-313**: Client Onboarding - Update PMT Layout
+
+#### Sprint 12
+
+- **PR1050558-4378**: UAT Bug: C&CUAT154 - A-2 addendum on Base contract is not loading correctly for 
+- **PR1050558-4351**: UAT Bug: C&CUAT153 IC PRN NPPA Template Failure
+- **PR1050558-4315**: Regression bug_Time format mismatch between PNC record and FINAL SUN email
+- **PR1050558-4300**: UAT Bug: C&CUAT150 Termination Details checkboxes have been removed
+- **PR1050558-4297**: UAT Bug: C&CUAT149 Rate Change Notice for EE NPPA
+- **PR1050558-4293**: UAT Bug: C&CUAT148 Leadership Change Error
+- **PR1050558-4292**: UAT Bug: C&CUAT147 OFF_02- Process Voluntary Offboarding (Facility Only) - no CP
+- **PR1050558-4291**: UAT Bug: C&CUAT146 OFF-001 _Initiate Voluntary Offboarding (Facility Only)_Job r
+- **PR1050558-4289**: REGRESSION BUG: HPF Field = Temporary Inactive Reason - Remove Restricted pickli
+- **PR1050558-4285**: Hire Date not updated on the Contract record
+- **PR1050558-4265**: Regression bug _Withdrawing one job removes all active applications instead of o
+- **PR1050558-4250**: Regression bug _Extra Facility section displayed in portal onboarding screen whe
+- **PR1050558-4245**: UAT Bug: C&CUAT145 Matt Hebert is not performing Transition Specialist tasks but
+- **PR1050558-4243**: UI Bug: Offboarding Details section name on case layout is incorrect
+- **PR1050558-4242**: [Regression]Upon Deleting the PCA from Configure Rates button, Salary is not get
+- **PR1050558-4223**: UI Enhancement - Issues on Person Account LRP Enhancements
+- **PR1050558-4221**: User redirected to login page instead of reset password when user is reactivated
+- **PR1050558-4218**: UAT Bug: C&CUAT142 OFF010-Full SCP Offboarding - Clinical Match Approval_ Legal 
+- **PR1050558-4211**: UAT Bug : C&CUAT139 Unable to Approve APAY Shift request
+- **PR1050558-4204**: UAT Bug: On Contract record, the field labels should be  Contract  Start Date an
+- **PR1050558-4198**: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4192**: Duplicate CCM records created when Clinician contract is Executed
+- **PR1050558-4191**: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4189**: UAT Bug: C&CUAT138 SCP Offboarding details is not auto-populating
+- **PR1050558-4188**: UAT Bug: C&CUAT137 Offboarding - Employee Review Task created in error
+- **PR1050558-4187**: UAT Bug: C&CUAT136 Type of Rates mislabeled in Summary tab of Contract Record
+- **PR1050558-4186**: UAT Bug: C&CUAT135 Recruiters unable to see tasks details on tasks not assigned 
+- **PR1050558-4185**: UAT Bug: C&CUAT134 Heading glitch
+- **PR1050558-4172**: UAT Enhancement: "Credentialing" Updates
+- **PR1050558-4168**: LOI Contract – Fields Editable in Executed Status (Not Expected)
+- **PR1050558-4167**: UAT Bug: C&CUAT129 Clinician Name Change / Status Change
+- **PR1050558-4166**: UAT Bug: C&CUAT133 -  OM-010 Clinician Name Change Fail
+- **PR1050558-4163**: UAT Bug: C&CUAT127 - Case not populated on Clinician case logs
+- **PR1050558-4161**: UAT Bug: C&CUAT131 -  OM-011 Unable to complete test due to feature not being av
+- **PR1050558-4160**: UAT Bug: C&CUAT125 Credentialing is spelled incorrectly on fields
+- **PR1050558-4159**: UAT Bug: C&CUAT130 -  OM-009 Open CET Inquiry Cases list view option is not show
+- **PR1050558-4158**: Field Ops/SFO Case Access
+- **PR1050558-4154**: UAT Bug: C&CUAT124 Job Req for Backfill not created when Voluntary Offboarding i
+- **PR1050558-4153**: UAT Bug: C&CUAT123 Offboarding Case is Not getting created
+- **PR1050558-4146**: UAT Bug: C&CUAT122 Executed Term Sheet Not Displaying in Contract List View
+- **PR1050558-4145**: Field configuration issues.
+- **PR1050558-4143**: Regression bug: Clinician Facility Offboarding case is not getting created for M
+- **PR1050558-4141**: UAT Bug: C&CUAT120 - Clinician Change Request' option is not available in down a
+- **PR1050558-4140**: UAT Bug: C&CUAT119 - "IT Support" option is not available in Global Support Acti
+- **PR1050558-4138**: Temporary Inactive Reason API name fix
+- **PR1050558-4137**: Regression Bug - Type of Rate screen blank on PO Contract for Coverage Change = 
+- **PR1050558-4136**: Upon completion of Amend Contract the new LOI Contract should be displayed and p
+- **PR1050558-4135**: UAT Bug: C&CUAT117 -  Case didn't auto close once task was completed
+- **PR1050558-4134**: UAT Bug: C&CUAT116 -  CONT-018 Unable to Update Contract status to ""Contracting
+- **PR1050558-4133**: UAT Bug: C&CUAT115 -  OM_001 & OM-002 _Leadership Change
+- **PR1050558-4131**: Guided experience is not closed when using Cancel button
+- **PR1050558-4130**: Sun Notification Emails (Preliminary, Final & Revision) Missing Key Data Fields
+- **PR1050558-4129**: Add Configuration Issues
+- **PR1050558-4128**: UAT Bug: C&CUAT114 No Exit Interview task created for SCP Offboarding case
+- **PR1050558-4127**: UAT Bug: C&CUAT113 User does not have access to Offboarding cases
+- **PR1050558-4126**: UAT Bug: C&CUAT112 Delayed Email Receipt
+- **PR1050558-4125**: UAT Enhancement: C&CUAT111 In the info bubble – this was previously known as Fir
+- **PR1050558-4124**: 'Cloned From' field not populated on cloned RPC records
+- **PR1050558-4123**: UAT Enhancement: Collaborative Practice Agreement Review UI Update
+- **PR1050558-4120**: UAT Bug: C&CUAT110 Field label was misspelled, please correct
+- **PR1050558-4118**: The system does text to text compare and deletes the task records that does not 
+- **PR1050558-4110**: UAT Bug: C&CUAT108 Collaborative Practice Agreements not created for EE NP with 
+- **PR1050558-4109**: Client Contract -  Update 'child' contract page (Contract Type ≠ Master) & Actio
+- **PR1050558-4107**: Client Contract Request - Letter of Intent - Update Design for Displaying relate
+- **PR1050558-4103**: UAT Bug: C&CUAT107 CONT 0017__Generate, Send & Execute Term Sheet
+- **PR1050558-4102**: Error when linking multiple accounts to client contract using 'Add PNC' button
+- **PR1050558-4101**: Error when creating client contract without end date
+- **PR1050558-4094**: Submit Pro Forma Model for Approval - Send Rejection Email to VP Sales Ops DL
+- **PR1050558-4091**: Observation bug: NPPA Tier field is not copied over from PO contract when we cre
+- **PR1050558-4089**: Regression Bug - Sent PEP tasks is not closing when PEP sent date field updates 
+- **PR1050558-4088**: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-4085**: Welcome email not triggered when new Clinician user is created in Scenario envir
+- **PR1050558-4084**: Observation Bug: Unable to Specify Locums rates at Practice Operation contract.
+- **PR1050558-4081**: Regression Bug - Configure Rates UI is not aligned correctly
+- **PR1050558-4078**: UAT Enhancement: Update Clinician Contracting Permission Set
+- **PR1050558-4074**: UAT Bug: C&CUAT99 Contract Specialist needs to be able to view CTI record and in
+- **PR1050558-4073**: Observation Bug - User is able to add blank rates on clinician contract
+- **PR1050558-4071**: Legal Team Member is not able to proceed ahead after clicking on Save button on 
+- **PR1050558-4068**: UAT Bug: C&CUAT96 Approval Work Item Not Generated After Contract Submission for
+- **PR1050558-4067**: UAT Bug: C&CUAT97 ONB-004 Process Manual onboarding Facility only
+- **PR1050558-4066**: Regression bug: Delete icon for HPF appears misaligned and displayed outside the
+- **PR1050558-4065**: Client Contract Request - Configurations tab - Layout
+- **PR1050558-4062**: UAT Bug: C&CUAT95 Error Received when trying to generate term sheet
+- **PR1050558-4060**: UAT Bug: C&CUAT92 Jira 2907 - Clinician - Approved & Term Sheet Executed filters
+- **PR1050558-4057**: UAT Bug: C&CUAT89 $0 Rates causing error
+- **PR1050558-4051**: Client Contract - Updates to support allowing multiple Masters with the same Ser
+- **PR1050558-4036**: Conditional field sections (“Termination,” “Compensation,” “Protection,” “Insura
+- **PR1050558-4035**: Compensation details of HPF are displayed individually instead of a single table
+- **PR1050558-4029**: Tech Bug: Flow failure email
+- **PR1050558-4010**: UI Enhancement: Contract Summary UI Enhancements
+- **PR1050558-4009**: UI Enhancement: Person Account LRP Enhancements
+- **PR1050558-4008**: UI Enhancement: Task Related List Columns
+- **PR1050558-4007**: UI Enhancement: HPF Name Automation Update
+- **PR1050558-4005**: UAT Enhancement: Allow $0 Rates on Clinician Contracts
+- **PR1050558-4003**: UAT Bug: C&CUAT83 Relocation Bonus amount/terms not appearing in term sheet
+- **PR1050558-4001**: UAT Enhancement: Clinician Contract - Bonus Approval Updates
+- **PR1050558-3998**: Clinician Onboarding Event is being triggered on HPF record updates rather than 
+- **PR1050558-3993**: Client Onboarding - Trigger Task Creation - Ensure Task Record Type = Default
+- **PR1050558-3992**: UAT Bug: C&CUAT80 Applicant moved through Kanban to offer - HPF created in Inact
+- **PR1050558-3991**: UAT Bug: C&CUAT79 Contract bonus approval issue
+- **PR1050558-3990**: UAT Bug: C&CUAT78 Compensation not populating on term sheet
+- **PR1050558-3988**: UAT Bug: C&CUAT76 Global ID (Service Account and Person Account) has comma in it
+- **PR1050558-3960**: UAT Bug: C&CUAT75 When trying to request a term sheet, I'm getting an error that
+- **PR1050558-3950**: Remove 'Term Sheet Executed' field and Related Components
+- **PR1050558-3939**: UI Enhancement: HC Clinician Portal UI Enhancements
+- **PR1050558-3931**: TECH - Clinician Contract Request: Summary Screen - Add HPF - Refine Logic for s
+- **PR1050558-3924**: Client Contract Request - Configurations tab - Edit
+- **PR1050558-3921**: Regression Bug: When PCA is deleted from Summary tab & Configure the same rate a
+- **PR1050558-3912**: Contract object: Add 'RecordType DeveloperName'
+- **PR1050558-3901**: UAT Bug: C&CUAT58 Was not able to submit rate change once selected site and subm
+- **PR1050558-3848**: Regression Bug - Issues on clincian contract
+- **PR1050558-3803**: Facility Term: Add Case related list to Client Offboarding Case
+- **PR1050558-3797**: UAT Bug: C&CUAT52 Lisha Falk - Corporate Entity Mismatch approver - Cannot see C
+- **PR1050558-3783**: UAT Bug: C&CUAT37 Term Sheet missing data that should be pulled from Contract Re
+- **PR1050558-3779**: UAT Enhancement: EE NPPA Salary Calculation Update
+- **PR1050558-3777**: Facility Change Request: No Hard Deletes & Exclude "Is Deleted" Rates [Part 2 of
+- **PR1050558-3768**: Contract Provider Network Relation Object
+- **PR1050558-3767**: UAT Bug: C&CUAT31 Document sent via DocuSign and Contract Record status/dates no
+- **PR1050558-3766**: Change mapping
+- **PR1050558-3757**: Issues in Pro Forma Model Approval, Rejection and Email.
+- **PR1050558-3619**: Client Contract Request - Add New Provider Network Contracts
+- **PR1050558-3614**: Tech - SSO Flow - Send Clinician Info to Okta - UPDATE - change criteria and sen
+- **PR1050558-3585**: Update permissions to Opportunity records
+- **PR1050558-3583**: Create/Update Code Set (Facility Title) Records
+- **PR1050558-3574**: Client Change Management - Clinician Contract Executed between PO Contracts
+- **PR1050558-3573**: Tech - SSO Flow - Reactivate User & Update Platform Event
+- **PR1050558-3572**: Update HPF Temporary Inactive Reason data type
+- **PR1050558-3546**: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3545**: Tech - SSO Flow - Send Clinician Info to Okta
+- **PR1050558-3521**: Add Additional Fields
+- **PR1050558-3520**: Client Contract Request - Letter of Intent - Action = Terminate Contract
+- **PR1050558-3519**: Client Contract Request - Configurations tab - View & Delete Configuration
+- **PR1050558-3518**: Client Contract Request - Create new fields
+- **PR1050558-3517**: SUN Orchestration - Trigger Task Creation
+- **PR1050558-3474**: Client Contract Request - Client Contract - Action = Terminate Contract
+- **PR1050558-3469**: Client Contract Request - Letter of Intent - Email Alert
+- **PR1050558-3468**: Client Contract Request - Letter of Intent - Action = Activate Contract
+- **PR1050558-3467**: Client Contract Request - Letter of Intent - Action = Expire Contract
+- **PR1050558-3466**: Client Contract Request - Letter of Intent - Action = Amend Contract
+- **PR1050558-3465**: Client Contract Request - Letter of Intent - Action = Cancel Contract
+- **PR1050558-3464**: Client Contract Request - Letter of Intent - View & Edit
+- **PR1050558-3463**: Client Contract Request - Letter of Intent - Update LOI guided experience
+- **PR1050558-3459**: Client Onboarding - Configure Action Plan Template
+- **PR1050558-3451**: Client Onboarding - Auto Task Creation for Onboarding Task related to PMT Phase
+- **PR1050558-3445**: Access to Medical Staff Office Fax field
+- **PR1050558-3444**: Clinicians Contract Request: Mixed Bag Shift Rates?
+- **PR1050558-3388**: Client Change Management - Create Records
+- **PR1050558-3384**: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3375**: Tech - HC Portal Configuration - Update Sender and Portal Admin
+- **PR1050558-3351**: Client Contract Request - Client Contract - Action = Activate Contract
+- **PR1050558-3347**: Client Contract Request - Client Contract - Action = Expire Contract
+- **PR1050558-3343**: Client Contract Request - Client Contract - Action = Amend Contract
+- **PR1050558-3339**: Client Contract Request - Client Contract - Action = Cancel Contract
+- **PR1050558-3338**: Client Onboarding - Create Task based on Service Line
+- **PR1050558-3240**: Client Onboarding - Set PMT Task “Task Completion %” field
+- **PR1050558-3205**: Queues to Support Onboarding/SUN process - List Views
+- **PR1050558-3204**: Queues to Support Onboarding/SUN process - Queue Creation
+- **PR1050558-3201**: Generate Term Sheet - Term Sheet Generation - Add Other Type of Rates
+- **PR1050558-3190**: Facility Change Request: Coverage Change - Only Shift change & Pay Code Change -
+- **PR1050558-3027**: Client Onboarding - PMT Project, PMT Phase, & PMT Task
+- **PR1050558-3026**: Client Onboarding - Implementation Queue
+- **PR1050558-3024**: Facility Change Request: Sync Practice Operations Contract rates to a Clinician 
+- **PR1050558-3023**: Client Contract Request - Edit Client Contract (Add Configuration)
+- **PR1050558-3022**: Client Contract Request - View Client Contract
+- **PR1050558-3021**: Client Contract Request - New Client Contract
+- **PR1050558-3020**: Client Contract Request - Expanded View
+- **PR1050558-3019**: Client Contract Request - View related Client Contracts on Accounts
+- **PR1050558-3013**: Tech - SSO Flow - Experience Cloud Welcome Email
+- **PR1050558-2965**: Clinician Contract - Update Cloning to include Rate Pay Codes
+- **PR1050558-2907**: Term Sheet Generation - “Send Term Sheet for Signature” & List View
+- **PR1050558-2807**: Client Contract Request - Client Contract - Status & Key Date Updates
+- **PR1050558-2638**: Facility Term: Offboarding Email
+- **PR1050558-2637**: Facility Term: Auto Close Cases
+- **PR1050558-2472**: Clinician Offboarding: Backfill Needed
+- **PR1050558-2442**: Client Contract Request - Letter of Intent - Status & Key Date Updates
+- **PR1050558-2441**: Client Contract Request - Client Agreement Request Case Layout & List View
+- **PR1050558-2151**: Auto Create Client Contract (Practice Operations) - Task Creation
+- **PR1050558-2139**: Client Onboarding - Auto Task Creation - LOI Executed
+- **PR1050558-2120**: Workday Hire Date Change
+- **PR1050558-2088**: Client Onboarding - Auto Task Creation - Manually Confirm Onboarding Start
+- **PR1050558-2087**: Client Onboarding - Auto Task Creation -  “Green Light for Client Outreach”
+- **PR1050558-1800**: Facility Term: Review Clinician Roster
+- **PR1050558-1736**: Client Contract Request View for Legal
+- **PR1050558-1723**: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-1684**: Facility Term: Auto Create Tasks
+- **PR1050558-1683**: Facility Term: Auto Create Cases
+- **PR1050558-1682**: Facility Change Request: Clinician Side Manual  Change Management tasks
+- **PR1050558-1679**: Client Onboarding - Trigger Auto task creation
+- **PR1050558-1678**: Client Onboarding - Auto Task Creation - Contract Status = Executed
+- **PR1050558-1073**: Update Agreement Request - Email Alert
+- **PR1050558-905**: SUN Orchestration - Trigger Case Creation
+- **PR1050558-887**: SUN Orchestration - Email Alert
+- **PR1050558-886**: SUN Task Template Setup
+- **PR1050558-479**: Submit Pro Forma Model for Approval
+- **PR1050558-319**: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-317**: Facility Term
+- **PR1050558-314**: Client Onboarding - Action Plan Template
+- **PR1050558-313**: Client Onboarding - Update PMT Layout
+
+#### Sprint 12.1
+
+- **PR1050558-5223**: UAT Bug: C&CUAT395 Agentforce not using hourly blend for EE PT NPPAs
+- **PR1050558-5221**: UAT Bug: C&CUAT393 Incorrect Effective From Date Populating on Rehire HPF
+- **PR1050558-5208**: UAT Enhancement: C&CUAT390 From the Service Account Missing Client Contract Link
+- **PR1050558-5207**: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5202**: UAT Enhancement: HPF Effective Dates UPDATE
+- **PR1050558-5199**: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5198**: UAT Bug: C&CUAT386 Fully Executed Contract Not Moving From Approved Status
+- **PR1050558-5184**: UAT Bug: C&CUAT384 Unable to create contract correctly. HPF error
+- **PR1050558-5183**: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5182**: UAT Bug: C&CUAT382 HPFs switching to inactive before all Facility Off Boarding t
+- **PR1050558-5180**: UAT Bug: C&CUAT380 Agentforce: rate change notice process completed, but system 
+- **PR1050558-5179**: UAT Bug: C&CUAT379 Shift rate was removed on new PO and rate change done via Age
+- **PR1050558-5174**: UAT Bug: C&CUAT376 Cannot see the Facility Global ID
+- **PR1050558-5173**: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5172**: E2E Bug: C&CUAT375 Provider rates did not end date in QGenda when the provider w
+- **PR1050558-5169**: UAT Enhancement: C&CUAT372 Rate Change (Increase) being created by Request Contr
+- **PR1050558-5168**: UAT Bug: C&CUAT371 CTI has to have an expiration date for the termination to fir
+- **PR1050558-5167**: UAT Enhancement: C&CUAT263 Permissions to run reports
+- **PR1050558-5158**: Issues in new HPFs created from Job
+- **PR1050558-5155**: UAT Bug: C&CUAT369 Agentforce - Null rate displayed on new clinician contract fr
+- **PR1050558-5154**: UAT Bug: C&CUAT370 Agentforce - Clinician displayed in list but doesn't have an 
+- **PR1050558-5152**: UAT Enhancement: Activate Services Object Record Types
+- **PR1050558-5151**: UAT Enhancement: Clinician Contract - Facility Title Change - Auto Create Facili
+- **PR1050558-5150**: HPF Selection ignores "Effective From" Date Validation when HPF is added using A
+- **PR1050558-5147**: UAT Bug: C&CUAT366 Coverage Change only Practice Ops Executed - Downstream proce
+- **PR1050558-5145**: Regression bug _HPF Details Not Displaying for Existing Active/Prospect HPFs in 
+- **PR1050558-5140**: Regression bug : Incorrect Rate Data in Configure Rate Flow on Subsequent Loads
+- **PR1050558-5121**: UAT Enhancement: Update Clinician Onboarding Task Assignment
+- **PR1050558-5120**: UAT Enhancement : Grant Payroll Access for Pay Codes
+- **PR1050558-5118**: UAT Bug: C&CUAT364 Warning Message in Error - Experience Cloud
+- **PR1050558-5117**: UAT Enhancement: Prevent Clinician Contract with Same Start Date
+- **PR1050558-5116**: UAT Enhancement: C&CUAT363 Add Facility Global ID to Facility page
+- **PR1050558-5115**: UAT Bug: C&CUAT362 IC PRN NPPA - Base Rates missing on Addendum A
+- **PR1050558-5107**: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5104**: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5098**: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095**: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5094**: UAT Bug: C&CUAT351 Data input by Applicant on Intake Form not displayed in SF on
+- **PR1050558-5093**: UAT Enhancement: Add Time Type to Pay Codes Layout
+- **PR1050558-5092**: UAT Bug: C&CUAT350 Job Record for IC PRN NPPA and IC PRN Physician requiring use
+- **PR1050558-5091**: UAT Enhancement - Adjust Manual Create HPF Experience and HPF View/Edit
+- **PR1050558-5090**: UAT Enhancement - Date Validation for Automated Create HPF from Job
+- **PR1050558-5083**: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-5082**: UAT Bug: C&CUAT347 EE PT Contract updated to executed error
+- **PR1050558-5081**: E2E Bug: C&CUAT346 Clinician Offboarding Dates
+- **PR1050558-5080**: UAT Enhancement: C&CUAT345 Terming provider in salesforce shows a closed case if
+- **PR1050558-5079**: UAT Enhancement: C&CUAT344 Need the ability to terminate a provider (facility an
+- **PR1050558-5075**: UAT Enhancement: C&CUAT341 Rate Active Date - Net New Field
+- **PR1050558-5070**: UAT Bug: C&CUAT338 Misspelled word in picklist on Interview Feedback form
+- **PR1050558-5068**: UAT Enhancement: Include Active HPFs in Clinician Contract
+- **PR1050558-5065**: UAT Bug: C&CUAT336 Recruiter cannot see assessment
+- **PR1050558-5064**: UAT Enhancement: C&CUAT335 Populate Intake Form Answers to Clinician Person Acco
+- **PR1050558-5051**: UAT Enhancement: Require Recruiters to Populate 'Requested Start Date' on ATS Ap
+- **PR1050558-5011**: Duplicate task is created when Applicant is moved to "Awaiting intake form" usin
+- **PR1050558-5010**: Task is not created for clinician with blank email ID.
+- **PR1050558-5003**: E2E Bug: C&CUAT330 Duplicate Positions and Hires
+- **PR1050558-5001**: UAT Enhancement: C&CUAT328 Experience Cloud - Change Your Password
+- **PR1050558-5000**: UAT Bug: C&CUAT327 Submitted Applicant Name Changed on Applicant Card
+- **PR1050558-4998**: UAT Enhancement: Add Blended Rates ("EE NP/PA Hourly Blended") to Preventive Car
+- **PR1050558-4997**: UAT Enahancement: C&CUAT326 Contract & HPF Effective Dates
+- **PR1050558-4989**: UAT Bug: C&CUAT325 EE FT RN Agreement generated incorrectly
+- **PR1050558-4986**: UAT Bug: C&CUAT321 Testing Existing NPPA with Compensation Changes
+- **PR1050558-4985**: UAT Bug: C&CUAT320 Contract Signed Date - Candidate - is wrong
+- **PR1050558-4983**: E2E Bug: C&CUAT318 Hire Date in past
+- **PR1050558-4981**: Observation bug: Activate button is displayed when it should not be available
+- **PR1050558-4980**: UAT Enhancement - Date Validation for Manual Create HPF
+- **PR1050558-4979**: UAT Enhancement: C&CUAT315 Suffix should not be required on Intake Form
+- **PR1050558-4977**: Observed Bug: Contact Email Validation for Intake Form
+- **PR1050558-4973**: Intake Form Criteria Update: Update Logic from HPF to Job
+- **PR1050558-4970**: UAT Enhancement: Risk Review - Add visibility to the Assessment on the Risk Revi
+- **PR1050558-4969**: UAT Bug: Ok to Send Rates field is not present on HPF record.
+- **PR1050558-4961**: Issue in Omni flows
+- **PR1050558-4958**: UAT Enhancement: User unable to complete the assessment in HC Portal
+- **PR1050558-4954**: UAT Enhancement: Clinician Contract - Facility Title Change - HPF Updates to OLD
+- **PR1050558-4953**: Observation Bug - 'Contract Active' field on Service Account not being updated a
+- **PR1050558-4952**: Agentforce is updating part time rates in Full time PCA.
+- **PR1050558-4951**: Regression Bug: Contracts are not being Cancelled after inactivation of HPF.
+- **PR1050558-4948**: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+- **PR1050558-4947**: Observation bug _Variable Rate Display Issue in Cloned HPF
+- **PR1050558-4945**: UAT Bug: C&CUAT311 Clinician Contract Record configured for IC Physician - dupli
+- **PR1050558-4944**: UAT Bug: C&CUAT310 Clone a contract - failed to refresh client rates thus result
+- **PR1050558-4942**: UAT Enhancement: Refresh Client Rate button: Deleting Rates when Facility Rate f
+- **PR1050558-4940**: UAT Bug: C&CUAT307 Global Provider ID not visible for Recruiter Persona
+- **PR1050558-4935**: Platform Event Update - 'HPFUpdate' - trigger based on Credentialing Status
+- **PR1050558-4934**: UAT Bug: C&CUAT306 Cloned contract has PCA records and data on PCA records are c
+- **PR1050558-4933**: UAT Bug: C&CUAT305 Missing UI elements on Experience Cloud
+- **PR1050558-4928**: TECH Story - Omnistudio Security Enhancements in Spring ‘26
+- **PR1050558-4927**: UAT Bug: Clinician Offboarding: Termination Updates
+- **PR1050558-4926**: UAT Bug: C&CUAT304 Applicant/Prospect User License/Profile Setup Incorrect
+- **PR1050558-4925**: UAT Bug: C&CUAT303 Intake form not present
+- **PR1050558-4923**: UAT Bug: C&CUAT302 Facility Offboarding is occurring at the wrong time
+- **PR1050558-4922**: Update related to PR1050558-4889 Change Locums value to Locum
+- **PR1050558-4918**: UAT Enhancement: Practice Operations Contract - NPPA Tier & Contract Start Date 
+- **PR1050558-4917**: UAT Enhancement :Update HPF Contracting Status When Contract is Executed
+- **PR1050558-4911**: UAT Enhancement C&CUAT297 Account Name on Facility Offboarding case is invalid
+- **PR1050558-4908**: UAT Bug: C&CUAT295 Night Shift Bonus did not pull into contract for EE NPPA
+- **PR1050558-4907**: UAT Enhancement: Prevent Duplicate Email addresses for Active Clinician Portal U
+- **PR1050558-4902**: UAT Enhancement: Practice Operations Contract - NPPA Tier, Contract Start Date &
+- **PR1050558-4897**: UAT Enhancement: C&CUAT294 Data Quality, MSL, and PE Team Personas need to be ab
+- **PR1050558-4895**: UAT Bug: C&CUAT292 Permission set missing on  auto creation of user
+- **PR1050558-4894**: UAT Enhancement: C&CUAT291 Experience Cloud log in requesting username in error
+- **PR1050558-4893**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4892**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4891**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4869**: UAT Bug: C&CUAT288 Roster misspelled on Clinician Review case
+- **PR1050558-4867**: UAT Bug: C&CUAT287 Hire date not populating when selecting "Start Admin Work Ahe
+- **PR1050558-4864**: UAT Bug: C&CUAT286 Intake Form Email not sent
+- **PR1050558-4863**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4862**: UAT Enhancement: Convert Data Type for ID Fields
+- **PR1050558-4861**: UAT Enhancement: Update CDC Channel - add fields and update triggers
+- **PR1050558-4859**: UAT Bug: C&CUAT284 EE Physician Base Agreement missing Add A
+- **PR1050558-4858**: UAT Bug: C&CUAT283 EE NPPA Addendum B generating in error
+- **PR1050558-4856**: UAT Enhancement : Clinician Contract Approvals
+- **PR1050558-4855**: Regression Bug: Rates are not filtered based on facility title on Facility as Re
+- **PR1050558-4854**: UAT Bug: C&CUAT282 Blue screen when creating a contract
+- **PR1050558-4853**: UAT Bug: C&CUAT281 When there is a mismatch NPPA it needs to be routed to the mi
+- **PR1050558-4846**: Regression Bug: NPPA tier mismatch confirmation is not working when HPF is added
+- **PR1050558-4844**: UAT Enhancement: NP/PA Tier Process - Add HPF
+- **PR1050558-4840**: UAT Enhancement: HPF Inactive Date Trigger to Qgenda - Update when each HPF is i
+- **PR1050558-4839**: Platform Event Update - Case Creation After Flow
+- **PR1050558-4838**: UAT Enhancement: Send Admin Work Flag via Integration
+- **PR1050558-4835**: Last Day field not visible in UI for SCP Offboarding case
+- **PR1050558-4832**: Regression Bug : NPPA tier is being updated on Non EE Full/Part Time contract fr
+- **PR1050558-4828**: Regression Bug: EE NPPA Monthly/Weekly/ Overage fields should not be calculated 
+- **PR1050558-4819**: Rates are not cloned fully and CPA Start date is not populated on the cloned rat
+- **PR1050558-4810**: HPFs with same corporate entity but different Code Set Sub Type gets added on cl
+- **PR1050558-4806**: UAT Enhancement: Clinician Contract - Automatically reload the page when you "Re
+- **PR1050558-4805**: UAT Bug: C&CUAT274 HPF isn't loading on new Contract
+- **PR1050558-4797**: On Practice Operations Contract as SFO User all fields are not displayed under C
+- **PR1050558-4794**: Bug: Clinician Contract - "Refresh Client Rate" is deleting the cloned rates fro
+- **PR1050558-4793**: UAT Enhancement: Clinician Contract - Do not display duplicate rates on Summary 
+- **PR1050558-4792**: UAT Enhancement: Clinician Contract - 'Add HPF' display cloned rates on Summary 
+- **PR1050558-4791**: UAT Enhancement: Clinician Contract - Add Time to "Last Synched Date" field
+- **PR1050558-4784**: UAT Bug: C&CUAT271 Hour Commitment entered onto HPF through Contract Request scr
+- **PR1050558-4781**: UAT Bug: Practice Operations Contract - 'Rate' field in Specify Rate only hold w
+- **PR1050558-4767**: UAT Bug: C&CUAT265 Emails not sending
+- **PR1050558-4765**: UAT Bug: Clinician Contract Cloning should use Start Date not Create Date
+- **PR1050558-4764**: UAT Bug: Clinician Contract - Rates pulling in from irrelevant HPF
+- **PR1050558-4763**: Observation bug: During Clinician contract request - Active Contracts should be 
+- **PR1050558-4758**: Regression Bug: Unable to Add Account team roles in Service Account LRP due to p
+- **PR1050558-4752**: Regression Bug: NPPA tier mismatch confirmation does not occur when HPF is added
+- **PR1050558-4750**: UAT Enhancement: NP/PA Tier Process
+- **PR1050558-4749**: UAT Enhancement: C&CUAT263 Legal - Client Contracting - Legal needs permissions 
+- **PR1050558-4748**: Clinician Hire Date
+- **PR1050558-4747**: UAT Bug: C&CUAT262 Facility Offboarding only terminated one HPF, not all connect
+- **PR1050558-4746**: UAT Bug: C&CUAT261 Cloned contract pulling in incorrect contract during duplicat
+- **PR1050558-4742**: UAT Bug: C&CUAT259 Clinician had Inactive HPF and Recruiter added new HPF for sa
+- **PR1050558-4739**: UAT Enhancement :Task to Clear QGenda for Reactivating a Clincian
+- **PR1050558-4734**: Regression Bug: NPPA calculation  issue - Contract Request flow.
+- **PR1050558-4732**: Regression Bug - Status picklist values incorrect for LOI and client contract
+- **PR1050558-4728**: UAT Bug: C&CUAT256 Candidate tied to job passed Recruiter Screen and put in Awai
+- **PR1050558-4727**: E2E Bug: CDC Channel Update
+- **PR1050558-4726**: UAT Bug: C&CUAT254 Recruiter unable to edit # of anticipated to work monthly on 
+- **PR1050558-4722**: UAT Bug: C&CUAT252 Wrongly Label Payroll Field
+- **PR1050558-4721**: UAT Bug: C&CUAT249 NPPA Tier getting populated on HPF for Physician
+- **PR1050558-4720**: UAT Bug: C&CUAT250 Agreement Record tied to Executed Contract Record not updated
+- **PR1050558-4718**: UAT Bug: An error occurred with your "Create SUN - Revision PMT Case" flow
+- **PR1050558-4716**: UAT Bug: An Error Occurred with Your "Create PMT Cases" Flow
+- **PR1050558-4711**: UAT Bug: An error occurred with your "Welcome Clinician Onboarding Email Flow" f
+- **PR1050558-4710**: UAT Bug: An error occurred with your "DocuSign Update Signed Date on Contract an
+- **PR1050558-4708**: UAT Bug: C&CUAT247 Rob Reilly and Kenneth Cerney do not have access to Related R
+- **PR1050558-4707**: NPPA Tier Defaulted for Part-Time Contracts Causing Incorrect NP/PA Calculations
+- **PR1050558-4706**: E2E Enhancement: Populate Last Day for SCP Offboarding Case
+- **PR1050558-4705**: UAT Enhancement: Update Integration to Workday for SCP Offboarding - EE add Glob
+- **PR1050558-4698**: Observation Bug: Facility selection screen on the contract request flow does not
+- **PR1050558-4697**: Observation Bug - Part/Full time Rates are being showing for Fulltime/Part Time 
+- **PR1050558-4685**: UAT Enhancement: C&CUAT245 SCP Contracting entities
+- **PR1050558-4683**: UAT Enhancement: C&CUAT243 Update Practice Operations fields
+- **PR1050558-4674**: Hire Date when Employment Type is Changing
+- **PR1050558-4673**: Regression Bug:  PCA records are not updated as Is deleted when the related shif
+- **PR1050558-4672**: 'Reason for Termination' field not populated on SCP Offboarding case
+- **PR1050558-4667**: UAT Enhancement: EE NPPA Salary Calculation Update part 2
+- **PR1050558-4662**: Regression Issue:At A Glance Portal View shows blank
+- **PR1050558-4656**: UAT Enhancement: Exclude Legacy Id from Client and Clinician Contract & PCA Clon
+- **PR1050558-4648**: Regression Bug: Clinician onboarding welcome email is received despite the email
+- **PR1050558-4640**: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-4638**: Some personas don't have access to view Time Type of HPF related list on service
+- **PR1050558-4634**: E2E Bug: C&CUAT234 WorkDay_Part time EE Nurse Practitioners and EE Physician Ass
+- **PR1050558-4630**: UAT Enhancement: Update matching logic for "Refresh Client Rates"
+- **PR1050558-4629**: UAT Enhancement: C&CUAT233 Practice Operations Contract not End Dated and causin
+- **PR1050558-4628**: UAT Enhancement: C&CUAT232 Client Contract Term & Renewal Contract End Date Not 
+- **PR1050558-4627**: UAT Bug: C&CUAT231 PNC creation and related SCP Corporate Entity
+- **PR1050558-4621**: UAT Enhancement: C&CUAT229 Missing Validation between Contract Active + Begin Fa
+- **PR1050558-4620**: UAT Bug: C&CUAT228 Opportunity Status = Closed
+- **PR1050558-4614**: UAT Bug: C&CUAT223 Client Termination email not received
+- **PR1050558-4613**: E2E Bug: C&CUAT222 QGenda_ Hire IC_ Received Contact Phone Number error
+- **PR1050558-4612**: E2E Bug: C&CUAT221 Invalid Compensation_Plan_ID value ('') sent from Salesforce 
+- **PR1050558-4611**: E2E Bug: C&CUAT220 Workday Integration Contracting Corporate value mismatch betw
+- **PR1050558-4597**: UAT Bug: C&CUAT219 Offboarding Parent case didn't create
+- **PR1050558-4596**: UAT Bug: C&CUAT218 Unable to edit Service Account
+- **PR1050558-4595**: UAT Enhancement: C&CUAT217 Upload attachments to Service Account and/or PNC
+- **PR1050558-4594**: Update Role Hierarchy
+- **PR1050558-4593**: NP/PA Onboarding Comments field on HPF
+- **PR1050558-4592**: E2E Bug: C&CUAT216 Mulesoft : incorrect Company name is appearing
+- **PR1050558-4591**: UAT Bug: C&CUAT215 Clinician has Active Business Entity CTI on Person Account bu
+- **PR1050558-4590**: E2E Bug: C&CUAT214 MuleSoft: Duplicate hires for the same clinician
+- **PR1050558-4589**: UAT Bug: C&CUAT213 Other Bonus requested but A-2 not generated
+- **PR1050558-4586**: E2E Bug: C&CUAT210 Pay code is not available in SF
+- **PR1050558-4583**: UAT Enhancement: C&CUAT207 Letter of Intent Request - Letter of Intent - Status 
+- **PR1050558-4580**: UAT Enhancement: C&CUAT204 View of Contracts from Opportunity
+- **PR1050558-4578**: UAT Enhancement: C&CUAT202 Edit functionality needed for all statuses
+- **PR1050558-4576**: Regression Bug - Clinician contract status picklist fields and path are incorrec
+- **PR1050558-4569**: HPF Field History Tracking
+- **PR1050558-4568**: User able to recall the Approved Clinician contract
+- **PR1050558-4564**: UAT Bug: C&CUAT198 EE PT Hourly Blend not calculated
+- **PR1050558-4563**: UAT Enhancement: C&CUAT197 Add new values to Agreement Category
+- **PR1050558-4561**: UAT Bug: C&CUAT195 "Refresh Client Rates" didn't work after removal of rates
+- **PR1050558-4558**: Recall comments not getting updated on the approval entry
+- **PR1050558-4556**: Failed to update Healthcare Practitioner Facility History
+- **PR1050558-4555**: UAT Bug: Opportunity's 'Initiate Contracting Request' - Incorrect version for Le
+- **PR1050558-4553**: Clinician NP/PA Tier Updates
+- **PR1050558-4548**: On Client Contract upon entering start and end date in Past, an error message is
+- **PR1050558-4540**: UAT Bug: C&CUAT189 Addendum A Issues
+- **PR1050558-4539**: UAT Bug: C&CUAT188 Workday Mapping or Data Issue
+- **PR1050558-4538**: UAT Bug: C&CUAT187 Finance Unable to edit fields
+- **PR1050558-4537**: UAT Bug: C&CUAT186 Cannot add Pay Codes
+- **PR1050558-4536**: UAT Bug: Update Welcome Clinician Onboarding Email Flow to handle 'Null'
+- **PR1050558-4532**: Unable to Log In to Specific Users
+- **PR1050558-4531**: UAT Bug: C&CUAT185 Workday Integration Logs not Generated
+- **PR1050558-4527**: UAT Bug: CICUAT184 Contract Change Details not Present
+- **PR1050558-4521**: UAT Bug: C&CUAT183 Error message when viewing all tasks for client account
+- **PR1050558-4520**: UAT Bug: C&CUAT182 Sales VP unable to update Account Team
+- **PR1050558-4518**: Regression bug - Issues in Screening call guided flow
+- **PR1050558-4513**: SFO Persona is unable to update the Contract End Date field.
+- **PR1050558-4512**: While working on LOI and Client Contract with status Draft - When user updates t
+- **PR1050558-4511**: Unable to Change Status from Contracting – In Progress to Executed
+- **PR1050558-4506**: UAT Bug: C&CUAT181 Begin Facility Termination error
+- **PR1050558-4505**: UAT Bug: C&CUAT180 Service Account Name not populating
+- **PR1050558-4499**: UAT Bug: Client Onboarding Action Plan Templates Missing
+- **PR1050558-4493**: UAT Bug: C&CUAT179 Contracts not create
+- **PR1050558-4492**: Regression Bug: NPPA Tier management/Calculation issues.
+- **PR1050558-4490**: Regression Bug - On Configure Contract flow, Agreement Category field consist in
+- **PR1050558-4489**: UAT Bug: C&CUAT178 UAT2_SIT_E2E testing_Access Issue for Integration Log
+- **PR1050558-4488**: UAT Bug: C&CUAT177 Final Approval email not Received
+- **PR1050558-4476**: UAT Bug: C&CUAT176 Can't select "Send Term Sheet for Signatures"
+- **PR1050558-4475**: UAT Bug: C&CUAT174 Client Testing - Configure Contract
+- **PR1050558-4474**: UAT Bug: C&CUAT175 DocuSign Automation not updating Contract Record status to Ex
+- **PR1050558-4460**: Migrate Manage AgentForce Agents PS from QA to UAT
+- **PR1050558-4448**: UAT Enhancement: C&CUAT166 Email Approval Requests - Client Pro Forma
+- **PR1050558-4447**: UAT Enhancement: C&CUAT165 DAM Approval and Rejection emails
+- **PR1050558-4446**: UAT Bug: C&CUAT168 Robin Magee in Legal error when exectuing Client Contract scr
+- **PR1050558-4439**: Regression Bug - Issues with CoC Form in HC portal
+- **PR1050558-4433**: UAT Enhancement: Contract - Add validation that Start can NOT be after End Date
+- **PR1050558-4432**: UAT Enhancement: Automated Onboarding Task Record Closure - I9 Update
+- **PR1050558-4417**: Regression Bug - Issue on CoC Questionnaire in HC portal
+- **PR1050558-4412**: UAT Bug: C&CUAT164 Data Migration Team Validation Fix - Internal Renewal Start D
+- **PR1050558-4409**: UAT Enhancement: Generate Term Sheet - Term Sheet Generation - Add back Clinicia
+- **PR1050558-4405**: Additional Enhancement: New Clinician Athena Notification - Update mapping from 
+- **PR1050558-4404**: UAT Bug: C&CUAT163 Clinician has eligible HPFs for a Contract Request, but not a
+- **PR1050558-4402**: UAT Bug: C&CUAT160 CDM003_Sales VP is not able to access Opportunity
+- **PR1050558-4401**: UAT Bug: C&CUAT161 CDM008_CDM_0013_Need COO CFO SVP Growth persona
+- **PR1050558-4398**: UAT Bug: C&CUAT159 CDM_006_Sales VP is able to edit the proforma model after sub
+- **PR1050558-4397**: UAT Bug: C&CUAT158 CDM_002_Unable to add Deal team when logged in as persona "BD
+- **PR1050558-4395**: Flow Errors
+- **PR1050558-4394**: Observation Bug - Clinician's Professional Status is populated under Professiona
+- **PR1050558-4391**: UAT Bug: C&CUAT157 Cannot add Contact Role to Opportunity
+- **PR1050558-4390**: UAT Bug: C&CUAT156 Can't Add Candidate to Job
+- **PR1050558-4389**: UAT Bug: C&CUAT155 Clinician Name not pulling into templates when no CTI record 
+- **PR1050558-4383**: Observation Bug: When logged in as a HealthcloudRestrictedUser, the Initiate Ear
+- **PR1050558-4378**: UAT Bug: C&CUAT154 - A-2 addendum on Base contract is not loading correctly for 
+- **PR1050558-4376**: Update PMT Phase field = "Client Start Up Time" to a picklist and update flow
+- **PR1050558-4375**: Regression Bug - I9 Update tasks is not closing when I9 Status field updates on 
+- **PR1050558-4367**: UAT Enhancement: Update PNC fields = "Client Termination Time" & "Client Start U
+- **PR1050558-4366**: UAT Enhancement: Update HPF field = "Received Current Completed References" to a
+- **PR1050558-4362**: UAT Enhancement: Add Additional Fields
+- **PR1050558-4350**: UAT Enhancement: C&CUAT152 Signature Block on all templates should reference Cli
+- **PR1050558-4347**: UAT Enhancement: Remove Primary Reason Field & Populate Reason for Termination
+- **PR1050558-4345**: Client Contract - Action = Amend Contract: not cloning child Contract Types
+- **PR1050558-4339**: Update HPF 'Temporary Inactive Reason' - Remove dependency on Credentialing Stat
+- **PR1050558-4337**: UAT Enhancement: Leadership Change HPF Date Filter Update
+- **PR1050558-4327**: Regression Bug - Agreement Request Email Alert
+- **PR1050558-4323**: Client Contract - "Configure Contract" guided experience not closing
+- **PR1050558-4320**: 'Letter Of Intent' & 'Practice Operations' Contracts - Highlight panel should NO
+- **PR1050558-4309**: Training Enhancement: Update Related Lists on Clinician and Case Record
+- **PR1050558-4308**: Training Enhancement: Contract Field Visibility and Edit Access
+- **PR1050558-4287**: UAT Enhancement: SCP Offboarding - Employee Review Task
+- **PR1050558-4243**: UI Bug: Offboarding Details section name on case layout is incorrect
+- **PR1050558-4203**: UAT Enhancement: View Clinicians from Service Account Record
+- **PR1050558-4201**: SCP Offboarding Case Updates
+- **PR1050558-4200**: Customer Community License Updates
+- **PR1050558-4198**: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4191**: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4175**: RUL - Security
+- **PR1050558-4158**: Field Ops/SFO Case Access
+- **PR1050558-4157**: UAT Enhancement: Contract Summary UI Adjustment
+- **PR1050558-4138**: Temporary Inactive Reason API name fix
+- **PR1050558-4126**: UAT Bug: C&CUAT112 Delayed Email Receipt
+- **PR1050558-4123**: UAT Enhancement: Collaborative Practice Agreement Review UI Update
+- **PR1050558-4107**: Client Contract Request - Letter of Intent - Update Design for Displaying relate
+- **PR1050558-4094**: Submit Pro Forma Model for Approval - Send Rejection Email to VP Sales Ops DL
+- **PR1050558-4089**: Regression Bug - Sent PEP tasks is not closing when PEP sent date field updates 
+- **PR1050558-4088**: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-4078**: UAT Enhancement: Update Clinician Contracting Permission Set
+- **PR1050558-4065**: Client Contract Request - Configurations tab - Layout
+- **PR1050558-4051**: Client Contract - Updates to support allowing multiple Masters with the same Ser
+- **PR1050558-4029**: Tech Bug: Flow failure email
+- **PR1050558-4014**: UAT Enhancement: C&CUAT88 Recruiters need the ability to withdraw a Contract req
+- **PR1050558-4012**: UAT Enhancement: C&CUAT86 HPF and Agreement history sections
+- **PR1050558-4010**: UI Enhancement: Contract Summary UI Enhancements
+- **PR1050558-4009**: UI Enhancement: Person Account LRP Enhancements
+- **PR1050558-4008**: UI Enhancement: Task Related List Columns
+- **PR1050558-4007**: UI Enhancement: HPF Name Automation Update
+- **PR1050558-4005**: UAT Enhancement: Allow $0 Rates on Clinician Contracts
+- **PR1050558-3950**: Remove 'Term Sheet Executed' field and Related Components
+- **PR1050558-3939**: UI Enhancement: HC Clinician Portal UI Enhancements
+- **PR1050558-3924**: Client Contract Request - Configurations tab - Edit
+- **PR1050558-3779**: UAT Enhancement: EE NPPA Salary Calculation Update
+- **PR1050558-3619**: Client Contract Request - Add New Provider Network Contracts
+- **PR1050558-3616**: UAT Enhancement: Corporation and Tax Information Updates
+- **PR1050558-3614**: Tech - SSO Flow - Send Clinician Info to Okta - UPDATE - change criteria and sen
+- **PR1050558-3585**: Update permissions to Opportunity records
+- **PR1050558-3583**: Create/Update Code Set (Facility Title) Records
+- **PR1050558-3573**: Tech - SSO Flow - Reactivate User & Update Platform Event
+- **PR1050558-3546**: Tech - SSO Flow - Update Portal Login
+- **PR1050558-3521**: Add Additional Fields
+- **PR1050558-3520**: Client Contract Request - Letter of Intent - Action = Terminate Contract
+- **PR1050558-3519**: Client Contract Request - Configurations tab - View & Delete Configuration
+- **PR1050558-3517**: SUN Orchestration - Trigger Task Creation
+- **PR1050558-3474**: Client Contract Request - Client Contract - Action = Terminate Contract
+- **PR1050558-3469**: Client Contract Request - Letter of Intent - Email Alert
+- **PR1050558-3468**: Client Contract Request - Letter of Intent - Action = Activate Contract
+- **PR1050558-3467**: Client Contract Request - Letter of Intent - Action = Expire Contract
+- **PR1050558-3466**: Client Contract Request - Letter of Intent - Action = Amend Contract
+- **PR1050558-3465**: Client Contract Request - Letter of Intent - Action = Cancel Contract
+- **PR1050558-3464**: Client Contract Request - Letter of Intent - View & Edit
+- **PR1050558-3463**: Client Contract Request - Letter of Intent - Update LOI guided experience
+- **PR1050558-3451**: Client Onboarding - Auto Task Creation for Onboarding Task related to PMT Phase
+- **PR1050558-3445**: Access to Medical Staff Office Fax field
+- **PR1050558-3441**: Observation - User able to delete the facility rate from the 'Facility Rates as 
+- **PR1050558-3384**: IC NP/PA Terminate on Anniversary Date
+- **PR1050558-3375**: Tech - HC Portal Configuration - Update Sender and Portal Admin
+- **PR1050558-3351**: Client Contract Request - Client Contract - Action = Activate Contract
+- **PR1050558-3347**: Client Contract Request - Client Contract - Action = Expire Contract
+- **PR1050558-3343**: Client Contract Request - Client Contract - Action = Amend Contract
+- **PR1050558-3339**: Client Contract Request - Client Contract - Action = Cancel Contract
+- **PR1050558-3338**: Client Onboarding - Create Task based on Service Line
+- **PR1050558-3201**: Generate Term Sheet - Term Sheet Generation - Add Other Type of Rates
+- **PR1050558-3023**: Client Contract Request - Edit Client Contract (Add Configuration)
+- **PR1050558-3022**: Client Contract Request - View Client Contract
+- **PR1050558-3021**: Client Contract Request - New Client Contract
+- **PR1050558-3020**: Client Contract Request - Expanded View
+- **PR1050558-3013**: Tech - SSO Flow - Experience Cloud Welcome Email
+- **PR1050558-2908**: UAT Enhancement: Enable Integration to Workday for SCP Offboarding - IC Delay 12
+- **PR1050558-2907**: Term Sheet Generation - “Send Term Sheet for Signature” & List View
+- **PR1050558-2813**: New Clinician Athena Notification
+- **PR1050558-2807**: Client Contract Request - Client Contract - Status & Key Date Updates
+- **PR1050558-2472**: Clinician Offboarding: Backfill Needed
+- **PR1050558-2442**: Client Contract Request - Letter of Intent - Status & Key Date Updates
+- **PR1050558-2441**: Client Contract Request - Client Agreement Request Case Layout & List View
+- **PR1050558-2184**: Unable to change ATS applicant stage to "Recruiter Screen" - Process failed erro
+- **PR1050558-2120**: Workday Hire Date Change
+- **PR1050558-1736**: Client Contract Request View for Legal
+- **PR1050558-1723**: Executed Contract: Automate Email to Clinician with mySCP Instructions
+- **PR1050558-887**: SUN Orchestration - Email Alert
+- **PR1050558-886**: SUN Task Template Setup
+- **PR1050558-479**: Submit Pro Forma Model for Approval
+
+#### Sprint 12.2
+
+- **PR1050558-5424**: PROD Bug: C&CUAT464 - PROD - Should not be able to edit the Provider Contract
+- **PR1050558-5423**: PROD Bug: C&CUAT463 - PROD - Able to edit and save changes to fields on HPF
+- **PR1050558-5422**: PROD Bug: C&CUAT462 - PROD- Service Acct- Missing edit permissions or record set
+- **PR1050558-5421**: PROD Bug: C&CUAT461 - PROD - Not able to edit Clinician Payroll fields on Servic
+- **PR1050558-5419**: PROD Bug: C&CUAT460 - PROD - Missing variable attributes on PCA
+- **PR1050558-5418**: UAT Bug: C&CUAT459 - UAT1 - Facility Offboarding didn't happen for Fort Duncan
+- **PR1050558-5417**: PROD Bug: C&CUAT458 - PROD - Should not be able edit the Corporate Entity Accoun
+- **PR1050558-5415**: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5414**: PROD Bug: C&CUAT455 - PROD - no global ID
+- **PR1050558-5412**: PROD Bug: C&CUAT454 PROD - Facility Global ID Missing under System Information
+- **PR1050558-5410**: Observation Bug - IC NPPA Termination - Cases are created with blank Subject & N
+- **PR1050558-5405**: UAT Bug: C&CUAT452 UAT 1 - System allowing me to add multiple rates to one shift
+- **PR1050558-5401**: UAT Bug: C&CUAT450 Integration Log does not show up in Salesforce Reporting
+- **PR1050558-5396**: E2E Bug: C&CUAT448 UAT1 Per Zach R - Assign to Amit - Pay Code Missing Test
+- **PR1050558-5394**: UAT Bug: C&CUAT447 UAT1 - Agentforce - Rate Change Notice letter table view
+- **PR1050558-5392**: UAT Bug: C&CUAT445 UAT1 - Unable to specify rates on PO for Coverage Change only
+- **PR1050558-5391**: TECH Only Flow Optimization
+- **PR1050558-5389**: UAT Bug: C&CUAT443 UAT1 - contract pulling inactive sites
+- **PR1050558-5385**: UAT Bug: C&CUAT439 - UAT1 - Experience Cloud Tracker Statuses not updating prope
+- **PR1050558-5384**: UAT Bug: C&CUAT438 - UAT1 - Emails not received by intended recipients
+- **PR1050558-5383**: UAT Bug: C&C437 - UAT1 - Start from Previous Active on Clinician Contract - New 
+- **PR1050558-5382**: UAT Bug: C&CUAT436 - UAT1 - Pay Codes on PO are not getting pulled forward to ne
+- **PR1050558-5377**: E2E Bug: C&CUAT434 UAT1- Leased Provider Location (hospital) Failed to push to Q
+- **PR1050558-5374**: UAT Bug: C&CUAT431 JobPosting_UAT 1_Unable to post jobs to job boards_There is i
+- **PR1050558-5373**: UAT Bug: C&CUAT430 UAT 1 - Term sheet error
+- **PR1050558-5371**: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-5369**: UAT Bug: C&CUAT428 - UAT1 - IC to EE Contract Error
+- **PR1050558-5368**: UAT Bug: C&CUAT427 - UAT1 - Not able to add members to deal team
+- **PR1050558-5367**: UAT Bug: C&CUAT426 - UAT1 - Experience Cloud Tracker is invalid
+- **PR1050558-5366**: UAT Bug: C&CUAT425 - UAT1 - Data Migration - CTI Expiration Date
+- **PR1050558-5346**: UAT Bug: Prevent Clinician Contract with Same Start Date - Cancel
+- **PR1050558-5326**: UAT Bug: C&CUAT424 - UAT1 - Termination Reason Codes from UAT2 to UAT1 not mappe
+- **PR1050558-5325**: UAT Bug: C&CUAT423 - UAT1 - Mulesoft Integration did not trigger for IC Provider
+- **PR1050558-5324**: UAT Bug: C&CUAT422 - UAT1 - Unable to End Date Clinician Contract
+- **PR1050558-5323**: UAT Bug: C&CUAT421 - UAT1 - Pay Code Testing
+- **PR1050558-5322**: UAT Bug: C&CUAT420 - UAT1 - Lack of Conga access
+- **PR1050558-5321**: UAT Bug: C&CUAT419 - UAT1 - Interview Template
+- **PR1050558-5320**: UAT Bug: C&CUAT418 - UAT1 - Incorrect layout
+- **PR1050558-5318**: UAT Bug - C&CUAT416 - UAT1 - Unable to generate term sheet
+- **PR1050558-5317**: UAT Bug: C&CUAT415 - UAT1 - Interview request page layout error
+- **PR1050558-5316**: UAT Bug - C&CUAT414 - UAT1 - Scheduling an interview error
+- **PR1050558-5315**: UAT Bug - C&CUAT413 - UAT1 - Add HPF
+- **PR1050558-5312**: UAT Bug: C&CUAT412 UAT1 - Experience Cloud - Intake Form not present
+- **PR1050558-5311**: UAT Bug: C&CUAT411 UAT1 - Experience Cloud Candidate Tracker missing
+- **PR1050558-5292**: UAT Bug: C&CUAT409 Kanban fields displayed are incorrect
+- **PR1050558-5288**: UAT Bug: C&CUAT405 When ClinicianCoverageUpdateBatch ran it did not update the p
+- **PR1050558-5287**: UAT Bug: C&CUAT404 Pay Codes not loaded in drop down box
+- **PR1050558-5286**: UAT Bug: New Clinician Athena Notification - Correct 'Global Provider ID' mappin
+- **PR1050558-5284**: UAT Bug: C&CUAT403 Error in UAT- in the contracting screens- cannot proceed with
+- **PR1050558-5218**: PFA Proxy - Clinician Updates
+- **PR1050558-5202**: UAT Enhancement: HPF Effective Dates UPDATE
+- **PR1050558-5199**: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5198**: UAT Bug: C&CUAT386 Fully Executed Contract Not Moving From Approved Status
+- **PR1050558-5121**: UAT Enhancement: Update Clinician Onboarding Task Assignment
+- **PR1050558-5118**: UAT Bug: C&CUAT364 Warning Message in Error - Experience Cloud
+- **PR1050558-5117**: UAT Enhancement: Prevent Clinician Contract with Same Start Date
+- **PR1050558-5107**: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5098**: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095**: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5093**: UAT Enhancement: Add Time Type to Pay Codes Layout
+- **PR1050558-5083**: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-5080**: UAT Enhancement: C&CUAT345 Terming provider in salesforce shows a closed case if
+- **PR1050558-4977**: Observed Bug: Contact Email Validation for Intake Form
+- **PR1050558-4973**: Intake Form Criteria Update: Update Logic from HPF to Job
+- **PR1050558-4970**: UAT Enhancement: Risk Review - Add visibility to the Assessment on the Risk Revi
+- **PR1050558-4954**: UAT Enhancement: Clinician Contract - Facility Title Change - HPF Updates to OLD
+- **PR1050558-4948**: UAT Enhancement : Clone the Acknowledge Flag field while Cloning the contract
+- **PR1050558-4944**: UAT Bug: C&CUAT310 Clone a contract - failed to refresh client rates thus result
+- **PR1050558-4918**: UAT Enhancement: Practice Operations Contract - NPPA Tier & Contract Start Date 
+- **PR1050558-4917**: UAT Enhancement :Update HPF Contracting Status When Contract is Executed
+- **PR1050558-4907**: UAT Enhancement: Prevent Duplicate Email addresses for Active Clinician Portal U
+- **PR1050558-4902**: UAT Enhancement: Practice Operations Contract - NPPA Tier, Contract Start Date &
+- **PR1050558-4897**: UAT Enhancement: C&CUAT294 Data Quality, MSL, and PE Team Personas need to be ab
+- **PR1050558-4893**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4892**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4891**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4863**: UAT Enhancement: Clinician Contract - Include PO Contract Status = Superseded - 
+- **PR1050558-4856**: UAT Enhancement : Clinician Contract Approvals
+- **PR1050558-4840**: UAT Enhancement: HPF Inactive Date Trigger to Qgenda - Update when each HPF is i
+- **PR1050558-4839**: Platform Event Update - Case Creation After Flow
+- **PR1050558-4838**: UAT Enhancement: Send Admin Work Flag via Integration
+- **PR1050558-4705**: UAT Enhancement: Update Integration to Workday for SCP Offboarding - EE add Glob
+- **PR1050558-4674**: Hire Date when Employment Type is Changing
+- **PR1050558-4640**: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-4630**: UAT Enhancement: Update matching logic for "Refresh Client Rates"
+- **PR1050558-4628**: UAT Enhancement: C&CUAT232 Client Contract Term & Renewal Contract End Date Not 
+- **PR1050558-4594**: Update Role Hierarchy
+- **PR1050558-4593**: NP/PA Onboarding Comments field on HPF
+- **PR1050558-4553**: Clinician NP/PA Tier Updates
+- **PR1050558-4395**: Flow Errors
+- **PR1050558-4200**: Customer Community License Updates
+- **PR1050558-4198**: Client Change Management - Update Client Change Management Status based on Task 
+- **PR1050558-4191**: Tech - SSO Flow - TESTING ONLY - Okta to Add/Remove SSO Permission
+- **PR1050558-4158**: Field Ops/SFO Case Access
+- **PR1050558-4088**: Tech - Mass Delete PCA handle EE NPPA Salary Calculation Update
+- **PR1050558-3445**: Access to Medical Staff Office Fax field
+
+#### Sprint 12.3
+
+- **PR1050558-5829**: PROD Enhancement: UPHypercare133 - Add validation on SCP Case field = Offboardin
+- **PR1050558-5828**: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5721**: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5653**: PROD Bug: UPHypercare199 - Clinician reporting not receiving the link to set up 
+- **PR1050558-5649**: PROD Bug: UPHypercare194 - Contract specialist not able to create conga agreemen
+- **PR1050558-5647**: PROD Bug: UPHypercare192 - Still getting the frozen blue screen when trying to r
+- **PR1050558-5644**: PROD Bug: UPHypercare191 - Christus Health Emergency Center-Mount Pleasant - EM 
+- **PR1050558-5642**: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5634**: PROD Enhancement: UPHypercare186 - Receiving error when generating term sheet
+- **PR1050558-5625**: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5624**: PROD Bug: UPHypercare173 - 20 Facility re-names failed due to an existing team w
+- **PR1050558-5617**: PROD Bug: System is creating duplicate HealthcareProvider records
+- **PR1050558-5609**: PROD Bug: UPHypercare165 - scp-provider-recruiting getting value too large 255
+- **PR1050558-5594**: PROD Enhancement: UPHypercare147 - Risk Review Process not pulling correct HPFs
+- **PR1050558-5591**: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5589**: PROD Bug: UPHypercare140 - Facility Profile is not available in the UI
+- **PR1050558-5588**: PROD Enhancement: UPHypercare139 - First Clinical Shift integration is encounter
+- **PR1050558-5587**: PROD Bug: UPHypercare136 - Corporate Entity Missing- Creating issues with Reques
+- **PR1050558-5580**: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5578**: PROD Bug: UPHypercare132 - Coverage only batch update
+- **PR1050558-5568**: PROD Bug: UPHypercare123 - PROD Bug: Healthcare Practitioner Facility - history 
+- **PR1050558-5554**: PROD Bug: UPHypercare112 - HPF Status - Data Migration Issue
+- **PR1050558-5547**: PROD Bug: UPHypercare102 - Issues with Clinicians No longer in Care App
+- **PR1050558-5545**: PROD Bug: UPHypercare100 - Per the data migration spreadsheet, the legacy PFA.Ag
+- **PR1050558-5533**: PROD Bug: UPHypercare84 - Intake Form button on the clinician record generates i
+- **PR1050558-5530**: PROD Bug: UPHypercare82 - NPPA Form Type Creation Error
+- **PR1050558-5524**: PROD Bug: UPHypercare72 - Apay request submission on HPF is not reaching the VPO
+- **PR1050558-5519**: PROD Bug: UPHypercare66 - Duplicate HPFs being created
+- **PR1050558-5518**: PROD Bug: UPHypercare65 - The Kanban board in Asymbl looked odd for Kathleen Seg
+- **PR1050558-5515**: PROD Bug: Flow error for 'Update Previous HPF on contract Activation Scheduled F
+- **PR1050558-5514**: PROD Bug: UPHypercare61 - Clinician not receiving Intake Form email
+- **PR1050558-5513**: PROD Bug: UPHypercare60 - Research/Resolve - Multiple Practice Ops Agreement Act
+- **PR1050558-5512**: PROD Bug: UPHypercare59 - Clinicians not populating when searching to tie to job
+- **PR1050558-5509**: PROD Enhancement: UPHypercare45 - Recruiters should not be able to create Conga 
+- **PR1050558-5507**: PROD Bug: UPHypercare43 - NPPA Blended Rates not calculating on Details tab
+- **PR1050558-5505**: PROD Bug: Clinician Offboarding Automation Fix
+- **PR1050558-5504**: PROD Bug: Incorrect PMT Project Lighting Record Page  assignment
+- **PR1050558-5501**: PROD Bug: UPHypercare40 - Error on attempting to activate Contract
+- **PR1050558-5493**: PROD Enhancement: UPHypercare37 - Data Quality Needs Access to Create, Edit and 
+- **PR1050558-5489**: Facility tile (code set) is using standard Active field rather than custom IsAct
+- **PR1050558-5486**: PROD Bug: UPHypercare33 - Coverage only overrate duplication
+- **PR1050558-5474**: PROD Bug: Integration User needs ability to update/create Training record
+- **PR1050558-5470**: PROD Bug: Training object - Integration user needs access to Assigned Date field
+- **PR1050558-5456**: PROD Enhancement: UPHypercare26 Update task Subject = 'Populate the Shift Map & 
+- **PR1050558-5452**: PROD Bug: UPHypercare24 Can't see bonus details
+- **PR1050558-5451**: PROD Bug: UPHypercare23 - Anticipated Clinical Hours not Populating on Contract 
+- **PR1050558-5450**: PROD Bug: UPHypercare22 - Contract Compensation Calculation Error - Clinician/NP
+- **PR1050558-5449**: PROD Bug: UPHypercare21 - Portal User not Created (PROD)
+- **PR1050558-5448**: PROD Bug: UPHypercare20 - Effective date not populating on HPF
+- **PR1050558-5441**: PROD Enhancement: C&CUAT466 Payroll Report Building Access
+- **PR1050558-5424**: PROD Bug: C&CUAT464 - PROD - Should not be able to edit the Provider Contract
+- **PR1050558-5423**: PROD Bug: C&CUAT463 - PROD - Able to edit and save changes to fields on HPF
+- **PR1050558-5418**: UAT Bug: C&CUAT459 - UAT1 - Facility Offboarding didn't happen for Fort Duncan
+- **PR1050558-5417**: PROD Bug: C&CUAT458 - PROD - Should not be able edit the Corporate Entity Accoun
+- **PR1050558-5416**: PROD Bug: C&CUAT457 - PROD - Person Account, Related Tab DocuSign sections
+- **PR1050558-5415**: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5399**: TECH Only Flow Optimization - Part 2
+- **PR1050558-5391**: TECH Only Flow Optimization
+- **PR1050558-5385**: UAT Bug: C&CUAT439 - UAT1 - Experience Cloud Tracker Statuses not updating prope
+- **PR1050558-5371**: UAT Enhancement: Agentforce Deployment Related Changes
+- **PR1050558-5227**: UAT Enhancement: C&CUAT398 Contract Request - Time Type Visibility on Rate Confi
+- **PR1050558-5225**: UAT Enhancement: C&CUAT397 Leased Provider Contract
+- **PR1050558-5221**: UAT Bug: C&CUAT393 Incorrect Effective From Date Populating on Rehire HPF
+- **PR1050558-5220**: UAT Enhancement: C&CUAT392 Edits needed to: Review Overlapping HPF effective dat
+- **PR1050558-5208**: UAT Enhancement: C&CUAT390 From the Service Account Missing Client Contract Link
+- **PR1050558-5206**: UAT Enhancement: Update Intake Form State Input
+- **PR1050558-5199**: UAT Bug: C&CUAT387 Incorrect NPPA Tier Selection Error
+- **PR1050558-5183**: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5173**: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5153**: UAT Enhancement: C&CUAT368 Add Time Type to Summary Tab on Practice Ops record
+- **PR1050558-5107**: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5104**: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5098**: UAT Bug: C&CUAT354 Resume Not Stored on Clinician Account
+- **PR1050558-5095**: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+
+#### Sprint 12.4
+
+- **PR1050558-5811**: PROD Bug: UPHypercare277 - Sent contract but status not updating
+- **PR1050558-5807**: PROD Bug: UPHypercare275 - No contract agreements showing on the related tab of 
+- **PR1050558-5806**: PROD Bug: UPHypercare274 - Risk Review Bug: Error with RMO trying to approve
+- **PR1050558-5805**: PROD Bug: UPHypercare273 - Status is not changing after the DocuSign has been se
+- **PR1050558-5793**: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5792**: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5791**: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5788**: PROD Permissions: UPHypercare264 - Operation Finance financial impact field
+- **PR1050558-5781**: PROD Bug: UPHypercare263 - Hire Date Populating on Clinician Contract with No Fi
+- **PR1050558-5775**: PROD Bug: UPHypercare260 - The addendum A is not generating
+- **PR1050558-5772**: PROD Bug: UPHypercare258 - Missing CustomerSignedDate for locums
+- **PR1050558-5765**: PROD Bug: C&CUAT252 - Special terms on request but didn't route to Tactical
+- **PR1050558-5763**: PROD Bug: UPHypercare253 - Clinician has an inactive HPF with effective date 2/1
+- **PR1050558-5734**: PROD Enhancement: UPHypercare251 - Need 2 decimal places on certain fields (PCA)
+- **PR1050558-5730**: PROD Bug: UPHypercare248 - Case assigned to Corporate Entity Mismatch Queue but 
+- **PR1050558-5729**: PROD Bug: UPHypercare244 - There is currently no reporting for clinical recruiti
+- **PR1050558-5726**: Preventive Care Agreement - Add Field History
+- **PR1050558-5721**: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5716**: PROD Bug: UPHypercare241 - NPPA Blended Rate not pulling for clinician
+- **PR1050558-5715**: PROD Bug: UPHypercare239 - Moved clinician Brian Brown (282612) to Offer in kanb
+- **PR1050558-5714**: PROD Bug: UPHypercare238 - Provider System Status field is not working as expect
+- **PR1050558-5710**: PROD Bug: UPHypercare235 - Sent contract but status not updating
+- **PR1050558-5704**: PROD Bug: UPHypercare229 - OnBase Facility List Issues
+- **PR1050558-5703**: PROD Bug: UPHypercare228 - Missing service lines used for financial reporting
+- **PR1050558-5690**: PROD Bug: UPHypercare220 - Clinicians still not receiving Intake Form when movin
+- **PR1050558-5678**: PROD Bug: UPHypercare215 - Client Termination Notification Email
+- **PR1050558-5677**: PROD Bug: UPHypercare214 - Only 1 contract Agreement record created for an IC wi
+- **PR1050558-5669**: PROD Bug: UPHypercare207 - Clinician Encore error
+- **PR1050558-5668**: PROD Enhancement: UPHypercare206 - Multiple Tactical AWIs on Clinician Contract
+- **PR1050558-5653**: PROD Bug: UPHypercare199 - Clinician reporting not receiving the link to set up 
+- **PR1050558-5647**: PROD Bug: UPHypercare192 - Still getting the frozen blue screen when trying to r
+- **PR1050558-5644**: PROD Bug: UPHypercare191 - Christus Health Emergency Center-Mount Pleasant - EM 
+- **PR1050558-5625**: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5617**: PROD Bug: System is creating duplicate HealthcareProvider records
+- **PR1050558-5609**: PROD Bug: UPHypercare165 - scp-provider-recruiting getting value too large 255
+- **PR1050558-5591**: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5589**: PROD Bug: UPHypercare140 - Facility Profile is not available in the UI
+- **PR1050558-5588**: PROD Enhancement: UPHypercare139 - First Clinical Shift integration is encounter
+- **PR1050558-5545**: PROD Bug: UPHypercare100 - Per the data migration spreadsheet, the legacy PFA.Ag
+- **PR1050558-5530**: PROD Bug: UPHypercare82 - NPPA Form Type Creation Error
+- **PR1050558-5456**: PROD Enhancement: UPHypercare26 Update task Subject = 'Populate the Shift Map & 
+- **PR1050558-5206**: UAT Enhancement: Update Intake Form State Input
+- **PR1050558-5183**: UAT Enhancement: C&CUAT383 Term Sheet Status not updated appropriately to Not Ap
+- **PR1050558-5173**: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5107**: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-5104**: UAT Enhancement: C&CUAT359 Stipend Tier and Admin Hours on Practice Ops record n
+- **PR1050558-5095**: UAT Bug: C&CUAT352 Resume Not Parsing - Job Board submission
+- **PR1050558-5083**: UAT Enhancement: C&CUAT348 Candidate Tracker not Updating properly
+- **PR1050558-4911**: UAT Enhancement C&CUAT297 Account Name on Facility Offboarding case is invalid
+- **PR1050558-4744**: Contract Payment Agreement Related List Columns
+
+#### Sprint 12.5
+
+- **PR1050558-6314**: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 3
+- **PR1050558-6307**: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 2
+- **PR1050558-6260**: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6237**: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5962**: PROD Permissions: UPHypercare353 - New hire Victoria Allen not appearing in Sale
+- **PR1050558-5951**: PROD Bug: UPHypercare343 - Clinicians with previous active agreements in the old
+- **PR1050558-5947**: PROD Bug: UPHypercare340 - QGenda Scheduling Event Firing Too Early
+- **PR1050558-5924**: PROD Enhancement: UPHypercare338 - Update how Rates are displayed in the Summary
+- **PR1050558-5923**: PROD Bug: UPHypercare337 - Hospital Contact Information
+- **PR1050558-5919**: PROD Bug: UPHypercare334 - Have to select NPPA Tier mismatch for a physician HPF
+- **PR1050558-5918**: PROD Bug: UPHypercare332 - Multiple HPFs with the same EffFrom or EffTo Date
+- **PR1050558-5915**: PROD Bug: UPHypercare331 - HRSC email notification triggering for all clinician 
+- **PR1050558-5914**: PROD Enhancement: HPF - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5903**: Regression Bug - When SCP case is closed as No longer existing  (i.e.Closed & Ca
+- **PR1050558-5893**: PROD Bug: UPHypercare318 - Contract Record not updating properly.
+- **PR1050558-5874**: PROD Enhancement: Platform Event = HPFUpdate, Type = Rate for HPF - Add Locum
+- **PR1050558-5873**: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5872**: PROD Bug: UPHypercare310 - Unable to see past Conflict of Interest forms
+- **PR1050558-5871**: PROD Bug: Flow Error - Clinician Contract Review Approval Flow
+- **PR1050558-5869**: PROD Bug: UPHypercare307 - Missing Clinician Data for Okta set up
+- **PR1050558-5866**: Facility rates are updated on clinician contract for CCM of type = Manual.
+- **PR1050558-5862**: PROD Bug: UPHypercare306 - Commencement bonus isn't populating onto the agreemen
+- **PR1050558-5860**: PROD Bug: UPHypercare304 - Another provider is not receiving the intake form hin
+- **PR1050558-5859**: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5858**: PROD Bug: UPHypercare302 - Incumbent clinicians receiving Intake Portal email, b
+- **PR1050558-5857**: PROD Bug: UPHypercare301 - Rate tables are not loading for a particular provider
+- **PR1050558-5852**: PROD Permissions: UPHypercare297: Access to edit monthly shifts requested on HPF
+- **PR1050558-5848**: PROD Enhancement: UPHypercare295 - Update SCP Onboarding Tasks
+- **PR1050558-5844**: PROD Bug: UPHypercare293 - GPID no longer showing at top of screen on Person Acc
+- **PR1050558-5841**: PROD Enhancement: UPHypercare291 - Correcting Status and Category for a Client C
+- **PR1050558-5831**: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5828**: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5827**: PROD Bug: UPHypercare285 - Salesforce Bonus Approval Concern
+- **PR1050558-5824**: Two Reporting Permission Sets
+- **PR1050558-5823**: PROD Enhancement: HPF - Add Section = 'Insurance Information'
+- **PR1050558-5822**: PROD Enhancement: 'Risk Management' Account Team Role
+- **PR1050558-5811**: PROD Bug: UPHypercare277 - Sent contract but status not updating
+- **PR1050558-5807**: PROD Bug: UPHypercare275 - No contract agreements showing on the related tab of 
+- **PR1050558-5806**: PROD Bug: UPHypercare274 - Risk Review Bug: Error with RMO trying to approve
+- **PR1050558-5805**: PROD Bug: UPHypercare273 - Status is not changing after the DocuSign has been se
+- **PR1050558-5793**: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5792**: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5791**: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5788**: PROD Permissions: UPHypercare264 - Operation Finance financial impact field
+- **PR1050558-5781**: PROD Bug: UPHypercare263 - Hire Date Populating on Clinician Contract with No Fi
+- **PR1050558-5763**: PROD Bug: UPHypercare253 - Clinician has an inactive HPF with effective date 2/1
+- **PR1050558-5733**: PROD Enhancement: UPHypercare250 - NPPA 'Call' shift with per shift unit of meas
+- **PR1050558-5728**: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5721**: PROD Bug: System is creating duplicate HealthcareProvider records (Data Migratio
+- **PR1050558-5704**: PROD Bug: UPHypercare229 - OnBase Facility List Issues
+- **PR1050558-5693**: PROD Enhancement: UPHypercare223 - PO Contract Overview not populating
+- **PR1050558-5692**: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5690**: PROD Bug: UPHypercare220 - Clinicians still not receiving Intake Form when movin
+- **PR1050558-5678**: PROD Bug: UPHypercare215 - Client Termination Notification Email
+- **PR1050558-5669**: PROD Bug: UPHypercare207 - Clinician Encore error
+- **PR1050558-5668**: PROD Enhancement: UPHypercare206 - Multiple Tactical AWIs on Clinician Contract
+- **PR1050558-5653**: PROD Bug: UPHypercare199 - Clinician reporting not receiving the link to set up 
+- **PR1050558-5642**: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5641**: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 1
+- **PR1050558-5625**: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5621**: PROD Enhancement: UPHypercare118 - Missing data to process task- Create Team Ass
+- **PR1050558-5614**: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5597**: PROD Permissions: UPhypercare151: Access to Leadership Change
+- **PR1050558-5591**: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5580**: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5525**: PROD Enhancement: UPHypercare73 - Need a solution for recruiters to request a ne
+- **PR1050558-5521**: PROD Enhancement: UPHypercare68 - Update logic on Contract Status - Contracts wi
+- **PR1050558-5495**: PROD Enhancement: UPHypercare48 Ability to verify Staffing Operations Agreement 
+- **PR1050558-5457**: UAT Enhancement: Intake Form: Clinician Profile Assessment CTI section missing f
+- **PR1050558-5415**: PROD Enhancement: C&CUAT456 Can update Contract to Active  but should not
+- **PR1050558-5319**: UAT Enhancement: C&CUAT417 - UAT1 - Unable to populate Hour Commitment on Agreem
+- **PR1050558-5232**: UAT Enhancement: C&CUAT402 Validation Rule Needed: Any Parent Case should not be
+- **PR1050558-5231**: UAT Enhancement: C&CUAT401 Validation Rule Needed: SCP Offboarding Case Should n
+- **PR1050558-5222**: UAT Enhancement: C&CUAT394 GAP Scenario
+- **PR1050558-5173**: UAT Enhancement - Facility Change Request: Coverage Change UPDATE
+- **PR1050558-5169**: UAT Enhancement: C&CUAT372 Rate Change (Increase) being created by Request Contr
+- **PR1050558-5168**: UAT Bug: C&CUAT371 CTI has to have an expiration date for the termination to fir
+- **PR1050558-5107**: UAT Bug: C&CUAT361 Reminder Emails received for Intake Form in Error
+- **PR1050558-4921**: UAT Enhancement: C&CUAT301 On the CPA screen in Clinician Onboarding enhance the
+
+#### Sprint 12.6
+
+- **PR1050558-5965**: PROD Bug: UPHypercare357 - Clinician Contracts Tab under Service Line is blank
+- **PR1050558-5951**: PROD Bug: UPHypercare343 - Clinicians with previous active agreements in the old
+- **PR1050558-5950**: PROD Enhancement: Facility Change Request - Coverage Change - Add additional che
+- **PR1050558-5917**: PROD Enhancement: PCA - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5914**: PROD Enhancement: HPF - Updated 'Time Type' picklist value from 'On Call' to 'On
+- **PR1050558-5871**: PROD Bug: Flow Error - Clinician Contract Review Approval Flow
+- **PR1050558-5870**: UAT Enhancement - Facility Change Request: Update Task Verbiage for Mixed Rates
+- **PR1050558-5862**: PROD Bug: UPHypercare306 - Commencement bonus isn't populating onto the agreemen
+- **PR1050558-5858**: PROD Bug: UPHypercare302 - Incumbent clinicians receiving Intake Portal email, b
+- **PR1050558-5853**: PROD Permissions: UPHypercare298: Unable to edit bootcamp date fields
+- **PR1050558-5844**: PROD Bug: UPHypercare293 - GPID no longer showing at top of screen on Person Acc
+- **PR1050558-5806**: PROD Bug: UPHypercare274 - Risk Review Bug: Error with RMO trying to approve
+- **PR1050558-5788**: PROD Permissions: UPHypercare264 - Operation Finance financial impact field
+- **PR1050558-5733**: PROD Enhancement: UPHypercare250 - NPPA 'Call' shift with per shift unit of meas
+- **PR1050558-5707**: PROD Enhancement: UPHypercare232 - Adjust logic when cloning a Clinician Contrac
+- **PR1050558-5703**: PROD Bug: UPHypercare228 - Missing service lines used for financial reporting
+- **PR1050558-5693**: PROD Enhancement: UPHypercare223 - PO Contract Overview not populating
+- **PR1050558-5668**: PROD Enhancement: UPHypercare206 - Multiple Tactical AWIs on Clinician Contract
+- **PR1050558-5642**: PROD Enhancement: UPHypercare189 - Special Terms in Contract didn't Route to Tac
+- **PR1050558-5625**: PROD Bug: UPHypercare174 - Report:  SF new provider & existing provider reports
+- **PR1050558-5591**: PROD Bug: UPHypercare144 - Client Contract Activated Date
+- **PR1050558-5521**: PROD Enhancement: UPHypercare68 - Update logic on Contract Status - Contracts wi
+- **PR1050558-2984**: [Observation Bug] :Client contract rates allows per-shift records to be created 
+
+#### Sprint 13
+
+- **PR1050558-6268**: Assessments created even if there are existing ones within the threshold period
+- **PR1050558-6252**: HPF Validation Rule Update
+- **PR1050558-6229**: PO contract approval process issues
+- **PR1050558-6222**: Case History related list not available for certain case record types
+- **PR1050558-6215**: Recruiter is not able to see EmailMessageRecord.
+- **PR1050558-6206**: Intake Form tasks for Name or NPI change not getting created immeditately after 
+- **PR1050558-6170**: Guided Flow fails to clone contracts when source PO Contract status is "Supersed
+- **PR1050558-6169**: Unable to Add Shifts to PO Contracts created via Guided Experience with Shift co
+- **PR1050558-6146**: Cloned Clinician Contract - Term Sheet Status field not getting set to Not Appli
+- **PR1050558-6142**: Bug: Reset Password issues.
+- **PR1050558-6141**: PROD Enhancement: UPHypercare380 - Clinician Updates to QGenda Credentialing - H
+- **PR1050558-6124**: Prod Bug: Clinician Contract field 'Contracting Corporate Entity' should be read
+- **PR1050558-6098**: PROD Enhancement: Clinician Onboarding tasks - Populate 'Name' (WhoID)
+- **PR1050558-6096**: PROD Enhancement: UPHypercare380 - Service Account Address Updates to QGenda Cre
+- **PR1050558-6062**: PROD Enhancement: UPHypercare267 - Review CPA Relationship not populating with p
+- **PR1050558-6058**: PROD Bug: UPHypercare398 - Offboarding Facility Termination
+- **PR1050558-6015**: Compliance Rule Assignments - Needs Mapping
+- **PR1050558-6002**: PROD Enhancement: PERMISSIONS – Assessment Object Visibility for Compliance & Da
+- **PR1050558-6001**: UAT Enhancement: Single Intake Completion (No Repeat Intake on Stage/Opportunity
+- **PR1050558-6000**: PROD Enhancement: Intake Status Auto-Update on Assessment Completion
+- **PR1050558-5999**: PROD Enhancement: Recruiter Self-Service: Password Reset Link / Username Visibil
+- **PR1050558-5998**: UAT Enhancement: Registration URL Exposure (Recruiter Backup Access Path)
+- **PR1050558-5984**: PROD Enhancement: UPHypercare369 - HPF Termination Date not correct
+- **PR1050558-5974**: PROD Enhancement: UPHypercare364 - Add 3 fields to Integration_Log__c object in 
+- **PR1050558-5966**: PROD Enhancement: UPHypercare360 - VPO not being notified of APay requests
+- **PR1050558-5863**: PROD Enhancement: Send individual HPF Inactivation Email
+- **PR1050558-5859**: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5840**: PROD Enhancement: UPHypercare289 - Risk Team - Needs Access to Edit Fields
+- **PR1050558-5831**: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5828**: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5793**: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5791**: PROD Bug: UPHypercare267 - Review CPA Relationship not populating with physician
+- **PR1050558-5728**: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5709**: PROD Enhancement: UPHypercare234 - Need the system to check if candidate has an 
+- **PR1050558-5692**: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5614**: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5580**: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5140**: Regression bug : Incorrect Rate Data in Configure Rate Flow on Subsequent Loads
+
+#### Sprint 14
+
+- **PR1050558-6425**: Bug: Re-contract Email Failure & all data showing in Report email.
+- **PR1050558-6417**: Issues with updates related to HPFs inactive over 365 days
+- **PR1050558-6416**: Bug: Inactivation Report Failing to Process 'Provider Next Scheduled Date'
+- **PR1050558-6387**: Bug: AWI Triggered on IC to EE Conversion Despite Matching CCEs
+- **PR1050558-6386**: Bug: Incorrect AWI Generation for Matching CCEs
+- **PR1050558-6382**: Email Message activity record and task created even though email is not sent
+- **PR1050558-6359**: Issues for Billing only Indicator.
+- **PR1050558-6354**: Observation: Old HPF is not marked as 'Superseded' if delinked from clinician co
+- **PR1050558-6350**: HPF Status Update Failure for Related HPFs (superseded) when active HPF turns In
+- **PR1050558-6349**: Observation: User is able to add 'Superseded' HPF to clinician contract
+- **PR1050558-6348**: Observation: Facility offboarding Guided flow is showing  HPF with status = supe
+- **PR1050558-6322**: PROD Bug: TeamRole - Off Boarding Tasks Flow missing Metadata during deployment
+- **PR1050558-6314**: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 3
+- **PR1050558-6307**: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 2
+- **PR1050558-6264**: Create two fields on Integration_Log__c - Error_Code__c and Retry_Count__c
+- **PR1050558-6260**: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6237**: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-6235**: PROD Enhancement: Update HPF Status from "Superseded" to "Inactive"
+- **PR1050558-6233**: Clinician Experience Site Login Redirecting to QA
+- **PR1050558-6208**: PROD Enhancement: Remove ability for Recruiters to create Account Record Type = 
+- **PR1050558-6163**: Client Change Management: Update Permission Set = Manage Clinician Contract
+- **PR1050558-6148**: Client Change Management: Update Canceled Status criteria for Process Type = Age
+- **PR1050558-6141**: PROD Enhancement: UPHypercare380 - Clinician Updates to QGenda Credentialing - H
+- **PR1050558-6098**: PROD Enhancement: Clinician Onboarding tasks - Populate 'Name' (WhoID)
+- **PR1050558-6097**: PROD Enhancement: UPHypercare410 - Unable to check the Nocturnist box on HPFs
+- **PR1050558-6096**: PROD Enhancement: UPHypercare380 - Service Account Address Updates to QGenda Cre
+- **PR1050558-6082**: PROD Enhancement: UPHypercare403 - Copy CES to on the Welcome to Clinician
+- **PR1050558-6037**: PROD Bug: UPHypercare392 - Agentforce did not create the notice letters
+- **PR1050558-6015**: Compliance Rule Assignments - Needs Mapping
+- **PR1050558-6002**: PROD Enhancement: PERMISSIONS – Assessment Object Visibility for Compliance & Da
+- **PR1050558-6001**: UAT Enhancement: Single Intake Completion (No Repeat Intake on Stage/Opportunity
+- **PR1050558-6000**: PROD Enhancement: Intake Status Auto-Update on Assessment Completion
+- **PR1050558-5999**: PROD Enhancement: Recruiter Self-Service: Password Reset Link / Username Visibil
+- **PR1050558-5998**: UAT Enhancement: Registration URL Exposure (Recruiter Backup Access Path)
+- **PR1050558-5984**: PROD Enhancement: UPHypercare369 - HPF Termination Date not correct
+- **PR1050558-5921**: PROD Enhancement: Service Account, HPF and Clinician Contract - Add Billing Only
+- **PR1050558-5873**: PROD Enhancement: UPHypercare311 - Remove Locum clinicians from the welcome emai
+- **PR1050558-5863**: PROD Enhancement: Send individual HPF Inactivation Email
+- **PR1050558-5859**: PROD Enhancement: UPHypercare303 - EE/Employed clinicians not receiving Certific
+- **PR1050558-5840**: PROD Enhancement: UPHypercare289 - Risk Team - Needs Access to Edit Fields
+- **PR1050558-5831**: PROD Enhancement: UPHypercare287 - Remove Legal Client Contracting from Practice
+- **PR1050558-5828**: PROD Enhancement: UPHypercare133 - Add Case History
+- **PR1050558-5793**: PROD Enhancement: UPHypercare269 - Transition Specialist Queue has a column for 
+- **PR1050558-5792**: PROD Enhancement: UPHypercare268 - HPF termination date for what may have been a
+- **PR1050558-5728**: PROD Enhancement: UPHypercare243 - Provider Contracting needs access to Practice
+- **PR1050558-5709**: PROD Enhancement: UPHypercare234 - Need the system to check if candidate has an 
+- **PR1050558-5708**: PROD Enhancement: UPHypercare233 - Adjust cloning logic related to entity, when 
+- **PR1050558-5692**: PROD Enhancement: UPHypercare221 - Start-up Practice Operations
+- **PR1050558-5648**: PROD Enhancement: HPF Inactive Date Trigger to Qgenda - Update when an HPF inact
+- **PR1050558-5641**: PROD Enhancement: Update the Clinician Inactivation Process & 3 month report - 1
+- **PR1050558-5614**: PROD Permissions: UPHypercare149 & 289: Report for COI - 2 HC Licenses Needed
+- **PR1050558-5580**: PROD Enhancement: UPHypercare133 - HPF 'Status' is getting set to 'Inactive' bef
+- **PR1050558-5207**: UAT Bug: C&CUAT389 Agentforce: successful completion message from agent, but Con
+- **PR1050558-5170**: UAT Enhancement: C&CUAT373 Update criteria for how Agentforce displays list of i
+- **PR1050558-4780**: UAT Enhancement: Optimize Clinician Contract Views
+- **PR1050558-3478**: Agentforce Clinician Rate Change Notices Use Case - Enhancement
+
+#### Sprint 2
+
+- **PR1050558-369**: Issues on Guided Create HPF: Clinician Info
+- **PR1050558-350**: Not able to view the list of tasks when log In as System Admin user
+- **PR1050558-349**: Contract (Clinician) status field has extra picklist value.
+- **PR1050558-331**: Contract related list is not configured correctly.
+- **PR1050558-324**: Not able to view Core Connect and SCP Health banner when login prospect portal
+- **PR1050558-321**: Not able to edit the fields by clicking on Pencil Icon in Clinician Creation
+- **PR1050558-296**: Duplicate records being created for Taxonomy & Board certification upon NPI upda
+- **PR1050558-289**: Remove "Next" Navigation When Facing Error
+- **PR1050558-284**: NPI Field on clinician record is editable.
+- **PR1050558-283**: Not able to land on the Contacts page.
+- **PR1050558-282**: Next button should be disabled or rename when selecting existing record and New 
+- **PR1050558-281**: Added extra Save for later link when creating clinician record.
+- **PR1050558-250**: Record not get created when clicking on Next button in Create Clinician
+- **PR1050558-244**: Add Additional Fields
+- **PR1050558-243**: External Client Apps APP for Mulesoft
+- **PR1050558-242**: Update Standard Care Fee Agreement to Preventive Care Agreement
+- **PR1050558-218**: Missing Account Plans related list for all record types
+- **PR1050558-217**: Add LRP and Page Layouts to System Administrator
+- **PR1050558-209**: Guided Create HPF: Facility Selection
+- **PR1050558-196**: Clinician Visa Information
+- **PR1050558-195**: Guided Clinician Creation
+- **PR1050558-192**: NPI Management
+- **PR1050558-147**: CPA Relationship and Contract Records
+- **PR1050558-144**: Prospect Portal Login & Home
+- **PR1050558-123**: Guided Create HPF: Clinician Info
+- **PR1050558-83**: Clinician Contract Records
+
+#### Sprint 3
+
+- **PR1050558-618**: Failed to mention mandatory fields - Facility Title and Rate in Facility Rate Cr
+- **PR1050558-590**: [Regression Bug] Taxonomy record showing record ID in name field.
+- **PR1050558-588**: [Regression Bug] "Update NPI" omni flow is not working for Recruiter.
+- **PR1050558-564**: [Regression_Bug] Service line field is missing on Service Account record page.
+- **PR1050558-485**: Integration Log Object
+- **PR1050558-474**: Page layout fields are missing in Services and Case (Clinical Onboarding) object
+- **PR1050558-465**: Active field is not updating based on end date criteria.
+- **PR1050558-462**: Activity related list's Columns are not matching as per AC.
+- **PR1050558-434**: Delete Deprecated Picklist Fields
+- **PR1050558-421**: Clinician Risk Review - Record Type & Layout
+- **PR1050558-382**: Facility Rate Creation - Summary Screen
+- **PR1050558-378**: Business Licences are created but those are Indistinguishable.
+- **PR1050558-374**: Code Set Object
+- **PR1050558-370**: Generic Error Logger for Application Errors
+- **PR1050558-358**: Assessment & Assessment Question Response Object
+- **PR1050558-340**: Update the Account Account Relationship
+- **PR1050558-337**: Standardize Facility Title Values
+- **PR1050558-332**: Automatically Assign the "Portal User" Permission Set
+- **PR1050558-298**: Facility Rate Creation - Type of Rate = Shift
+- **PR1050558-290**: Add Additional Fields
+- **PR1050558-248**: OmniStudio Permission Set
+- **PR1050558-245**: Update Related Lists on Clinician Record
+- **PR1050558-235**: CDC Channel
+- **PR1050558-234**: Standardize State Picklist Values
+- **PR1050558-232**: Integration Profile and Permission Set
+- **PR1050558-219**: Clinician Risk Review
+
+#### Sprint 4
+
+- **PR1050558-902**: Delete Icons are showing when there is no data available
+- **PR1050558-879**: Permission sets don't have access to 'Birthdate' field on Contact object
+- **PR1050558-878**: On Task record page header line and buttons are not visible.
+- **PR1050558-877**: Provider Network Contract related list missing from Contract (Clinician)
+- **PR1050558-867**: Dependency incorrect for 'Temporary Inactive Reason' field
+- **PR1050558-866**: Child cases are created with Priority = medium even specifying on onboarding flo
+- **PR1050558-865**: Facility Onboarding Child cases are creating for HPF Credential status = Active,
+- **PR1050558-849**: Healthcare Practitioner Facility column missing in Open Onboarding, Open Risk Re
+- **PR1050558-832**: Type field value not defaulted to Night Shift Bonus value
+- **PR1050558-831**: Correct field values not displayed in Account Hierarchy columns
+- **PR1050558-827**: Configure Case Page - Intake Form
+- **PR1050558-818**: Type field is missing on Rate Details screen.
+- **PR1050558-817**: Fields are missing in Preventive Care Agreement record
+- **PR1050558-815**: User is able to see 'New' Action button on Accounts Related list
+- **PR1050558-814**: Field (I9 Completed)  is not visible for HR persona on Clinician record.
+- **PR1050558-776**: SPIKE - Pro Forma Outputs - POC for Option 1
+- **PR1050558-716**: Update Guided Clinician Creation
+- **PR1050558-715**: Facility Rate Creation - Summary tab
+- **PR1050558-703**: Facility Rate Creation - Button and Record Creation
+- **PR1050558-622**: Clinician Onboarding Record Automation - SCP Onboarding - Child Cases (Manually 
+- **PR1050558-621**: Clinician Onboarding Record Automation - Facility Onboarding - Child Cases (Manu
+- **PR1050558-610**: Clinician Onboarding Record Automation - Facility Onboarding - Parent (Manually 
+- **PR1050558-608**: Facility Rate Creation - Type of Rate = Bonus
+- **PR1050558-607**: Facility Rate Creation - Type of Rate = Target
+- **PR1050558-606**: Facility Rate Creation - Type of Rate = Variable
+- **PR1050558-605**: Facility Rate Creation - Type of Rate = Stipend
+- **PR1050558-592**: Create Default Task Record Type and Page Layout - Portal
+- **PR1050558-573**: Initial Role Hierarchy
+- **PR1050558-572**: Agreement Request - Email Alert
+- **PR1050558-566**: MSL-CC Queue
+- **PR1050558-563**: Enrollment Specialist Queue
+- **PR1050558-562**: Clinician Onboarding Record Automation - SCP Onboarding - Parent (Manually Trigg
+- **PR1050558-561**: Clinician Onboarding Case & Task Templates
+- **PR1050558-560**: View Preventive Care Agreement on Contract Payment Agreement
+- **PR1050558-473**: Automatically Create Healthcare Provider & Healthcare Payer Network Records
+- **PR1050558-470**: Facility Rate Creation - Type of Rate = Leadership Incentives
+- **PR1050558-469**: Add Additional Fields
+- **PR1050558-467**: Intake Form Case
+- **PR1050558-430**: Clinician Attributes in Salesforce to Send to Workday
+- **PR1050558-429**: Credentialing & Scheduling Attributes from QGenda
+- **PR1050558-386**: Update NPI Management
+- **PR1050558-385**: Update Guided Clinician Creation - Geographic Preference
+- **PR1050558-379**: Client Division (Operational Structure)
+- **PR1050558-359**: Create Default Task Record Type and Page Layout
+- **PR1050558-236**: Portal Login
+- **PR1050558-227**: Account Hierarchy Columns
+- **PR1050558-226**: Salesforce App Cleanup
+- **PR1050558-208**: View Provider Network Contract on Contract Record
+- **PR1050558-204**: Prospect Portal Home Page & Record Detail
+- **PR1050558-145**: Manual Onboarding Case Creation
+
+#### Sprint 5
+
+- **PR1050558-1407**: Random rates are being displayed when user selects shifts
+- **PR1050558-1391**: Missing options in the taxonomy field as specified in the Health Cloud Records s
+- **PR1050558-1386**: Blank and duplicate row displayed in HPF list in Contract Request flow
+- **PR1050558-1379**: The 'Shift' word needs to be Append on Type field for the Specify Rate flow.
+- **PR1050558-1365**: Error message not displayed when there is an existing open Facility
+- **PR1050558-1361**: The records are not getting created for the Specify Rate flow.
+- **PR1050558-1358**: MSL/Recruiter User is not able to see  LinkedIn Sales Navigator component
+- **PR1050558-1316**: Multiple issues on Pro Forma Model and Pro Forma Facility Detail record pages.
+- **PR1050558-1309**: BDA/Recruiter/MSL unable to add team members on service account
+- **PR1050558-1289**: Duplicate Record is Displayed on the Summary records and for any Type of Rate Re
+- **PR1050558-1237**: Regression Bug:The Account field is missing on the Parent Case of Record Type - 
+- **PR1050558-1165**: Access Issue - Fields are not visible to Clinician Contracting Specialist person
+- **PR1050558-1164**: Access Issue - Fields are not visible to Clinician Contracting Specialist person
+- **PR1050558-1153**: As Data Quality user - Contract Request button is missing on Clinician record.
+- **PR1050558-1151**: Regression Bug - Issues in Specify Rates flow launched from Corporate Support Co
+- **PR1050558-1139**: Unable to create HPF record
+- **PR1050558-1102**: Risk Review Approvals - Update Case Account field
+- **PR1050558-1098**: The New button does not appear correctly on the Shift related list.
+- **PR1050558-1091**: Clinician Contract Request: HPF Selection (Functionality for Facility Selection 
+- **PR1050558-1090**: The fields and header does not appear correctly on the PCA and Shift records.
+- **PR1050558-1076**: 'Comments' field missing on Clinician Onboarding case page layout for Recruiter
+- **PR1050558-1057**: Upon submission of Specify Rate flow the records are not getting created under t
+- **PR1050558-1056**: Facility Rate Creation - Update Summary Tab Record Visibility
+- **PR1050558-908**: Attach/Upload file option is visible when user select No on risk review confirma
+- **PR1050558-903**: Risk Review Approvals - Decision & Views
+- **PR1050558-893**: Clinician Contract Request: HPF Selection
+- **PR1050558-892**: Clinician Contract Request: Leased or Locums
+- **PR1050558-882**: Facility Rate Creation - Summary tab - Shift updates
+- **PR1050558-857**: Enrollment Specialist Queue - Support Cases
+- **PR1050558-852**: Intake Form Automation - Closed
+- **PR1050558-840**: Clinician Experience Specialist Test User
+- **PR1050558-839**: Facility Rate Creation - Type of Rate = All: Add Override Prohibited
+- **PR1050558-838**: Facility Rate Creation - Type of Rate = Variable, Stipend & Leadership Incentive
+- **PR1050558-836**: Update Employment Type on Healthcare Practitioner Facility
+- **PR1050558-835**: Update Initiate Early Onboarding - SCP Error Message
+- **PR1050558-833**: Update Code Set Object and Facility Title Records
+- **PR1050558-822**: Enforce Contract to Manually Initiate Onboarding
+- **PR1050558-811**: Automatically Provision HC Portal Access
+- **PR1050558-809**: Configure Case Page - Onboarding
+- **PR1050558-796**: Integration User - View Encrypted Data
+- **PR1050558-777**: Facility Rate Creation - Rate Rules/Validations
+- **PR1050558-774**: Facility Rate Creation - Type of Rate = Variable: Modify Type
+- **PR1050558-755**: Updating Portal Links
+- **PR1050558-712**: Create Permission Set for AffectLayer Apps
+- **PR1050558-707**: Attach Files During Risk Review
+- **PR1050558-702**: Clinician Contract Executed Automation (Field Creation)
+- **PR1050558-700**: Specify Corporate Entity Type
+- **PR1050558-697**: Shift Custom Object & PCA Cleanup
+- **PR1050558-666**: Update Guided Create HPF - Board Cert & Medical License
+- **PR1050558-617**: Standardize Care Taxonomy Records
+- **PR1050558-616**: Standardize Care Specialty Records
+- **PR1050558-615**: Intake Form Automation - Send
+- **PR1050558-614**: Create Account Team Roles
+- **PR1050558-589**: [Regression Bug] Create HPF & Job Association Flow is not working for Recruiter.
+- **PR1050558-486**: Facility Rate Creation - Type of Rate = Shift: Add Shift Type
+- **PR1050558-471**: Pro Forma Outputs
+- **PR1050558-326**: Manage Primary Taxonomy and Specialty
+- **PR1050558-291**: Create HPF: Facility Selection & Specify Facility Title
+- **PR1050558-246**: Risk Review Approvals - Submit
+- **PR1050558-210**: Clinician Contract Request: Shift Rates
+
+#### Sprint 6
+
+- **PR1050558-2086**: Clinician Contract Request: Bonus - Enforce additional bonus on 1 Facility/HPF
+- **PR1050558-1813**: Value for fields in 'Review CPA Relationship' table not displayed
+- **PR1050558-1812**: Issues related to Configure Rate screen from Clinician Contract
+- **PR1050558-1808**: Start date is not populated on the cloned Contract's CPA records
+- **PR1050558-1807**: Not able to see CPA and PCA records created for multiple records
+- **PR1050558-1783**: The existing Clinician Contract Records are not getting displayed under the Agre
+- **PR1050558-1771**: Observation Bug: The NP/PA section should not be displayed as per DD. As it is n
+- **PR1050558-1770**: On the Details tab, the Previous Contract field should be displayed. But as of n
+- **PR1050558-1767**: Issues in the Additional Fields added on objects
+- **PR1050558-1747**: Integration User - Add New Provider Network Contract fields
+- **PR1050558-1715**: Not able to Configure Rate for Clinician Contracts
+- **PR1050558-1714**: Contract record is being created without HPF.
+- **PR1050558-1710**: Integration User - Edit HPF
+- **PR1050558-1709**: Role Hierarchy - Add VP DB Finance & SVP Growth
+- **PR1050558-1650**: User should not be able to remove the Pay code once it is created
+- **PR1050558-1649**: Tech Story to Remove Fields
+- **PR1050558-1635**: Clinician Application Visibility - Update Permissions
+- **PR1050558-1617**: Regression Bug: Risk review cases are not getting closed post approval.
+- **PR1050558-1616**: Manage Clinician Onboarding Permission Set is missing from the "Legal" Permissio
+- **PR1050558-1589**: Platform Event - First Scheduled Date
+- **PR1050558-1585**: User is seeing the Error message even after the shift is added to the Client Con
+- **PR1050558-1579**: Clinician Contract Request: Add Recruiter Permissions
+- **PR1050558-1577**: Healthcare Provider Specialty record not getting creatd when creating HPF
+- **PR1050558-1568**: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1435**: Auto Create Relationship Records for CPA - CPA Review Object
+- **PR1050558-1407**: Random rates are being displayed when user selects shifts
+- **PR1050558-1391**: Missing options in the taxonomy field as specified in the Health Cloud Records s
+- **PR1050558-1389**: Clinician Contract Request: Summary Screen - Add HPF
+- **PR1050558-1387**: Integration User Access
+- **PR1050558-1368**: Add Banner to HC Portal
+- **PR1050558-1367**: Pay Code Data Load
+- **PR1050558-1366**: Facility Rate Creation - Add Error Message if no available Shifts
+- **PR1050558-1364**: Clinician Onboarding Record Automation - SCP Onboarding - Update Case Owner for 
+- **PR1050558-1362**: Case owner for the SCP Onboarding (per Clinician) is not Account Team's "Clinici
+- **PR1050558-1332**: Clinician Contract Request: Select Employment Type
+- **PR1050558-1317**: Clinician Contract - Prevent Active EE/IC at the same time
+- **PR1050558-1305**: Add Additional Fields
+- **PR1050558-1257**: Update Test Users - Add Public Groups
+- **PR1050558-1256**: Contract Selection During Manually Initiated Onboarding
+- **PR1050558-1243**: Client Contract Update - Pay Code Association
+- **PR1050558-1240**: Clinician Contract Summary UI - Connect Clinician Rate to Facility Rate
+- **PR1050558-1173**: Pay Code Association to Client/Clinician
+- **PR1050558-1172**: Enrollment Specialist - Update Test User
+- **PR1050558-1138**: Clinician Contract Request: Leased or Locums - Create/update records
+- **PR1050558-1113**: Risk Review - Populate AccountId with Service Account
+- **PR1050558-1112**: Update Case layout - Clinician Intake Form & Risk Review
+- **PR1050558-1111**: Standardize Service Line Records
+- **PR1050558-1110**: Clinician Contract Request: Leadership Incentives
+- **PR1050558-1109**: Clinician Contract Request: Stipend Rates
+- **PR1050558-1108**: Clinician Contract Request: Variable Rates
+- **PR1050558-1103**: Clinician Contract Request: Target Rates
+- **PR1050558-1091**: Clinician Contract Request: HPF Selection (Functionality for Facility Selection 
+- **PR1050558-1074**: Add Files on Contract
+- **PR1050558-1072**: Collaborative Practice Agreement Legal Requirements - Load Data
+- **PR1050558-1070**: Clinician Contract Request: Contract Changes
+- **PR1050558-894**: Clinician Contract Request: Summary Screen
+- **PR1050558-893**: Clinician Contract Request: HPF Selection
+- **PR1050558-892**: Clinician Contract Request: Leased or Locums
+- **PR1050558-891**: Clinician Application Withdrawal - HC Portal
+- **PR1050558-890**: Clinician Application Visibility - HC Portal
+- **PR1050558-841**: Code Set List Views
+- **PR1050558-823**: Create HPF from Job
+- **PR1050558-822**: Enforce Contract to Manually Initiate Onboarding
+- **PR1050558-821**: Risk Review Approvals - Notification to Payroll
+- **PR1050558-702**: Clinician Contract Executed Automation (Field Creation)
+- **PR1050558-614**: Create Account Team Roles
+- **PR1050558-471**: Pro Forma Outputs
+- **PR1050558-468**: App Home Page
+- **PR1050558-326**: Manage Primary Taxonomy and Specialty
+- **PR1050558-302**: Collaborative Practice Agreement Review UI
+- **PR1050558-299**: Clinician Contract Summary UI - Cloned Indicator
+- **PR1050558-249**: Pay Code Management
+- **PR1050558-210**: Clinician Contract Request: Shift Rates
+- **PR1050558-194**: Clinician Contract Request: Bonus
+- **PR1050558-167**: Collaborative Practice Agreement Legal Requirements
+
+#### Sprint 7
+
+- **PR1050558-2436**: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2426**: Not all cases and tasks on the clinician account are closed when the HPF is made
+- **PR1050558-2223**: HPF status is not updated to Inactive status when LWD is more than 12 months for
+- **PR1050558-2218**: All HPFs of sister sites are being validated for LDW without considering status
+- **PR1050558-2213**: Observation Bug: CPA not created for one of the scenario
+- **PR1050558-2212**: Observation Bug:While creating a Shift record as an SFO, getting insufficient ac
+- **PR1050558-2206**: When clicked on Open Shift APAY button from Clinician Experience Specialist or S
+- **PR1050558-2205**: HR persona does not have access to Facility/SCP onboarding Cases & related task.
+- **PR1050558-2203**: Observation Bug:  At a Glance tab
+- **PR1050558-2202**: If on HPF record status is Prospect and without updating the Contracting Status,
+- **PR1050558-2201**: Shift rates not getting updated on cloned contract
+- **PR1050558-2191**: User is able to see few fields present in page layout which has to be removed in
+- **PR1050558-2190**: SFO user unable to add rates for Target type on the cloned contract
+- **PR1050558-2184**: Unable to change ATS applicant stage to "Recruiter Screen" - Process failed erro
+- **PR1050558-2183**: Credentialling Status and Temporary Inactive Reason Fields Are Not Read-Only in 
+- **PR1050558-2180**: SFO user unable to add, update or remove rates on the cloned client contract
+- **PR1050558-2175**: The MSL persona cannot view the Payer Enrollment child case of Parent Facility O
+- **PR1050558-2171**: Existing sharing setting giving access of Clinical Match case records who are no
+- **PR1050558-2164**: Regression Bug - Unable to configure rate on clinician record even though CPA Cl
+- **PR1050558-2163**: When navigating through stages it is throwing error and not allowing to move for
+- **PR1050558-2156**: On both the list views the Column -All Clinician Contracts - Approved and My Cli
+- **PR1050558-2154**: Task Detail page is not visible for MSL User.
+- **PR1050558-2153**: Initiate Clinician Match process flow is not working
+- **PR1050558-2149**: Regression bug - Issues on 'Summary' tab of client contract
+- **PR1050558-2146**: CPA and Rates not getting added on clinician contract when multiple HPFs have sa
+- **PR1050558-2144**: Issues related to Bonus
+- **PR1050558-2135**: User is able to see the Approval Work item assigned to individual's in Assigned 
+- **PR1050558-2134**: Duplicate records being created for Taxonomy & Speciality
+- **PR1050558-2130**: Incorrect field values when ATS Applicant stage is updated as 'Offer'
+- **PR1050558-2115**: On the Header, the Approval Name should be displayed. As of now another Name fie
+- **PR1050558-2089**: Clinician Contract Request: Update Naming Convention for Contract Payment Agreem
+- **PR1050558-2086**: Clinician Contract Request: Bonus - Enforce additional bonus on 1 Facility/HPF
+- **PR1050558-2080**: Additional Bonuses should be available to one Facility
+- **PR1050558-2078**: CPA and Rates not getting created on clinician contract when multiple HPFs have 
+- **PR1050558-2016**: Update Facility Title Record for Ambassador NP/PA
+- **PR1050558-2013**: Update Role Name to VP BD Finance
+- **PR1050558-2011**: Automated Onboarding Task Record Closure: Facility Onboarding
+- **PR1050558-1941**: Failed to update Clinician Application Withdrawal - HC Portal
+- **PR1050558-1808**: Start date is not populated on the cloned Contract's CPA records
+- **PR1050558-1789**: Automatically Provision HC Portal Access: Update ATS Stage
+- **PR1050558-1787**: Add Account Contact Relationship to Service Account
+- **PR1050558-1775**: Offboarding Case Record Type Setup
+- **PR1050558-1772**: CDC Channel: Update ContractTrigger
+- **PR1050558-1749**: Integration User - Remove old Provider Network Contract fields
+- **PR1050558-1747**: Integration User - Add New Provider Network Contract fields
+- **PR1050558-1719**: Healthcare Practitioner Facility Status Automation
+- **PR1050558-1718**: Clinician Contract Management
+- **PR1050558-1716**: HPF Updates & Platform Event: First Clinical Shift and Active
+- **PR1050558-1712**: Update Sharing Settings
+- **PR1050558-1710**: Integration User - Edit HPF
+- **PR1050558-1709**: Role Hierarchy - Add VP DB Finance & SVP Growth
+- **PR1050558-1708**: Manage Sister Relationships
+- **PR1050558-1707**: Clinical Match Approval
+- **PR1050558-1704**: View HPFs from Clinician Contract
+- **PR1050558-1703**: Corporate Entity Mismatch Queue
+- **PR1050558-1666**: Clinician Contract: Other Bonus Details
+- **PR1050558-1660**: Initiate Clinical Match Process
+- **PR1050558-1659**: Clinician Contract Special Terms
+- **PR1050558-1655**: Auto Create Relationship Records for CPA - Physician
+- **PR1050558-1651**: Add Additional Fields
+- **PR1050558-1628**: Approval Work Items
+- **PR1050558-1589**: Platform Event - First Scheduled Date
+- **PR1050558-1583**: Add SCP Logo to Prospect Portal
+- **PR1050558-1582**: Tactical Team Queue
+- **PR1050558-1580**: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-1579**: Clinician Contract Request: Add Recruiter Permissions
+- **PR1050558-1568**: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1419**: Client Rate Configuration - Cloning and Editing
+- **PR1050558-1415**: Creating Shifts - Physician or NP/PA
+- **PR1050558-1392**: Update Clinician Taxonomy Selection
+- **PR1050558-1387**: Integration User Access
+- **PR1050558-1369**: Automatic Corporate Entity Association at HPF Create
+- **PR1050558-1368**: Add Banner to HC Portal
+- **PR1050558-1334**: Clinician "At a Glance" Status Calculation
+- **PR1050558-1317**: Clinician Contract - Prevent Active EE/IC at the same time
+- **PR1050558-1257**: Update Test Users - Add Public Groups
+- **PR1050558-1256**: Contract Selection During Manually Initiated Onboarding
+- **PR1050558-1172**: Enrollment Specialist - Update Test User
+- **PR1050558-1168**: Risk Review - Auto Inactivate HPFs when denied
+- **PR1050558-1138**: Clinician Contract Request: Leased or Locums - Create/update records
+- **PR1050558-1112**: Update Case layout - Clinician Intake Form & Risk Review
+- **PR1050558-1110**: Clinician Contract Request: Leadership Incentives
+- **PR1050558-1109**: Clinician Contract Request: Stipend Rates
+- **PR1050558-1108**: Clinician Contract Request: Variable Rates
+- **PR1050558-1103**: Clinician Contract Request: Target Rates
+- **PR1050558-1074**: Add Files on Contract
+- **PR1050558-891**: Clinician Application Withdrawal - HC Portal
+- **PR1050558-889**: Clinician "At a Glance" UI
+- **PR1050558-888**: Clinician “At a Glance” Display Responsive based on Audience
+- **PR1050558-823**: Create HPF from Job
+- **PR1050558-810**: Automatically Create Healthcare Provider Records - Client
+- **PR1050558-701**: Clinician Offboarding - Facility Selection
+- **PR1050558-620**: Automated Onboarding Case Record Closure
+- **PR1050558-619**: Automated Onboarding Record Creation (When Contract is Executed)
+- **PR1050558-559**: Automated Onboarding Task Creation - SCP Onboarding
+- **PR1050558-468**: App Home Page
+- **PR1050558-425**: Clinician Contract List Views
+- **PR1050558-326**: Manage Primary Taxonomy and Specialty
+- **PR1050558-309**: Open Shift APAY Request
+- **PR1050558-306**: Clinician Offboarding - Termination Details
+- **PR1050558-302**: Collaborative Practice Agreement Review UI
+- **PR1050558-301**: Clinician Agreement Approval Process: Mismatch & Tactical
+- **PR1050558-247**: Automated Onboarding Task Creation - Facility Onboarding
+- **PR1050558-194**: Clinician Contract Request: Bonus
+- **PR1050558-193**: Clinical Match Group Indicator
+- **PR1050558-146**: Auto Create Relationship Records for CPA - Nurse Practitioner or Physician Assis
+
+#### Sprint 8
+
+- **PR1050558-2658**: Regression_Bug - End Date of Executed contract updated when a new Draft contract
+- **PR1050558-2657**: End Date not updated for an IC contract created from previous active contract
+- **PR1050558-2656**: If we naviagte back and forth on Specify Rate flow, then Shift type details gets
+- **PR1050558-2654**: Not able to see Files related list where Record type as Client Contract & Letter
+- **PR1050558-2650**: Unable to mark LOI Contract as Executed – Permission Error
+- **PR1050558-2649**: CPA records are not getting created when creating a clinician contract previous 
+- **PR1050558-2646**: Initiate Contracting Request button visible even when Pro Forma Status is blank
+- **PR1050558-2645**: Start and End Date not pre-populated correctly when user changes Employee Type
+- **PR1050558-2643**: Facility task - Review Contract for Termination should be assigned to HR Queue.
+- **PR1050558-2642**: SCP Offboarding task's are not getting created.
+- **PR1050558-2641**: Regression_Bug: User unable to view 'Preventive Care Agreement' related list on 
+- **PR1050558-2640**: [Regression Bug]: All Persona user dont have access to Corporate Support console
+- **PR1050558-2629**: User allowed to enter more than the required digits in the new Bonus fields
+- **PR1050558-2628**: User is asked to enter values for new Bonus fields even when they don't select a
+- **PR1050558-2627**: The Shifts records are not being displayed under the Specify Rates flow on Pract
+- **PR1050558-2625**: The SFO user currently does not have access to the Services object.
+- **PR1050558-2624**: Sales VP Persona don't have access to Edit the Green Light for Client Outreach f
+- **PR1050558-2621**: On Event Details, payload the Administrative Details is not coming.
+- **PR1050558-2620**: Incorrect picklist values in Status field using Contract Record (Record Type = C
+- **PR1050558-2619**: Add Additional Fields
+- **PR1050558-2618**: Info Due Tasks at Services level are created for Inactive Services as well
+- **PR1050558-2611**: Additional Related tab present on Trainings Related list.
+- **PR1050558-2594**: Division Medical Officer is not able to create Exit Interview Case
+- **PR1050558-2576**: On the Service Record page only on the Related list the Service History and Acti
+- **PR1050558-2556**: Business Development Associate is not able to Add Opportunity Team Members
+- **PR1050558-2477**: Opportunity Layout – Missing Deal Workstreams Tab in Right Region
+- **PR1050558-2465**: Failed to update members of the Data Quality Role are included in the Data Quali
+- **PR1050558-2461**: The field should allow limit upto (131,072). But as of now only taking 255 chara
+- **PR1050558-2450**: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2447**: Set up Discovery framework - Configuration
+- **PR1050558-2444**: Data Quality persona is unable to update contract status to Executed.
+- **PR1050558-2443**: The Links should be visible on basis of Visibility Condition
+- **PR1050558-2436**: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2429**: Regression_Bug: Clinician Record Page - Cases/Contracts Not filtering Correctly
+- **PR1050558-2427**: Help text for Last Day field is not as per AC
+- **PR1050558-2426**: Not all cases and tasks on the clinician account are closed when the HPF is made
+- **PR1050558-2424**: UI Related changes on Termination Details screen
+- **PR1050558-2423**: Clinician Contract: Set Start Date for Cloned Contract
+- **PR1050558-2228**: Improve Provider Network Contract related list component look & feel
+- **PR1050558-2223**: HPF status is not updated to Inactive status when LWD is more than 12 months for
+- **PR1050558-2220**: Intake Form: Automated Task Creation to Review NPI
+- **PR1050558-2219**: Intake Form: Automated Task Creation to Review Name Change
+- **PR1050558-2218**: All HPFs of sister sites are being validated for LDW without considering status
+- **PR1050558-2208**: HPF Inactive Date Trigger to Qgenda
+- **PR1050558-2188**: Client Contract List Views
+- **PR1050558-2186**: Clinical Match Case Record Type - Update Sharing Rule
+- **PR1050558-2182**: Enable Integration to Workday for SCP Offboarding - 1 of 2
+- **PR1050558-2166**: Opportunity (Growth Oppty) Object - Add Contracts Related List
+- **PR1050558-2164**: Regression Bug - Unable to configure rate on clinician record even though CPA Cl
+- **PR1050558-2162**: Clinician Attributes from Workday to Salesforce
+- **PR1050558-2152**: Services Object - Set History Tracking & Layout Updates
+- **PR1050558-2150**: Update Corporation and Tax Information
+- **PR1050558-2143**: Opportunity & Services Objects Info Due Updates
+- **PR1050558-2142**: Contract Object Record Type Setup
+- **PR1050558-2137**: Auto Create Client Contract (Practice Operations)
+- **PR1050558-2123**: Clinician Contract Request: Bonus Details
+- **PR1050558-2119**: New HPF for Already Active Clinicians
+- **PR1050558-2118**: Clinician Contract: Auto Populate Contracting Corporate Entity
+- **PR1050558-2113**: Review Bootcamp and Proctor Fields
+- **PR1050558-2112**: Review User Profile Key Field
+- **PR1050558-2108**: Error Log: Workday Duplicate Tax ID
+- **PR1050558-2081**: Opportunity Team (Deal Team)
+- **PR1050558-2021**: Clinician Offboarding: EE Involuntary Termination
+- **PR1050558-2015**: Clinician Offboarding - Termination Details for Locums
+- **PR1050558-1799**: Client Contracting - Early Start Confirmed
+- **PR1050558-1798**: Client Needs Questionnaire - Auto Task Creation for Internal Info Due Process
+- **PR1050558-1792**: Approval Work Items - List View Updates
+- **PR1050558-1787**: Add Account Contact Relationship to Service Account
+- **PR1050558-1775**: Offboarding Case Record Type Setup
+- **PR1050558-1773**: Client Shift Rate Configuration
+- **PR1050558-1772**: CDC Channel: Update ContractTrigger
+- **PR1050558-1733**: Offboarding Tasks - SCP
+- **PR1050558-1728**: Offboarding Tasks - Facility Specific
+- **PR1050558-1727**: Offboarding Cases
+- **PR1050558-1722**: Executed Contract: Automate Task Creation for Locums
+- **PR1050558-1721**: Clinician Contract Request: Start Admin Work Ahead of Clinical
+- **PR1050558-1720**: Intake Form: Automated Task Creation to Review Corporation and Tax Info
+- **PR1050558-1717**: Healthcare Practitioner Facility Management
+- **PR1050558-1716**: HPF Updates & Platform Event: First Clinical Shift and Active
+- **PR1050558-1704**: View HPFs from Clinician Contract
+- **PR1050558-1703**: Corporate Entity Mismatch Queue
+- **PR1050558-1696**: Clinician Contract: Set Start Date
+- **PR1050558-1676**: Client Contracting - “LOI Request”
+- **PR1050558-1675**: Client Needs Questionnaire - Data Collection
+- **PR1050558-1653**: Clinician "At a Glance" - Offboarding
+- **PR1050558-1651**: Add Additional Fields
+- **PR1050558-1628**: Approval Work Items
+- **PR1050558-1589**: Platform Event - First Scheduled Date
+- **PR1050558-1583**: Add SCP Logo to Prospect Portal
+- **PR1050558-1580**: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-1568**: Submit Pro Forma Model for Approval - Layout updates
+- **PR1050558-1392**: Update Clinician Taxonomy Selection
+- **PR1050558-1369**: Automatic Corporate Entity Association at HPF Create
+- **PR1050558-1097**: Intake Form Case - Load Assessment Questions & Capture Question Responses
+- **PR1050558-1095**: Intake Form Case - Conflict of Interest Form
+- **PR1050558-1094**: Intake Form Case - Certification of Competency Questions
+- **PR1050558-884**: Exit Interview Feedback Capture
+- **PR1050558-883**: Exit Interview Feedback Security
+- **PR1050558-810**: Automatically Create Healthcare Provider Records - Client
+- **PR1050558-775**: Corporate Compliance Status
+- **PR1050558-488**: Record Type Cleanup
+- **PR1050558-487**: CDC Channel Update - Clinician Contract Executed/Start Admin Work
+- **PR1050558-384**: HC Portal Helpful Links Visibility
+- **PR1050558-319**: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-310**: Opportunity (Growth Oppty) Object
+- **PR1050558-309**: Open Shift APAY Request
+- **PR1050558-231**: Intake Form - Clinician Profile Updates
+
+#### Sprint 9
+
+- **PR1050558-3004**: Unable to update first clinical shift field on HPF as system admin user.
+- **PR1050558-3001**: Name field is not added in Platform event & Permissions are missing for platform
+- **PR1050558-2998**: Child task are not updating to Cancelled when Offboarding decision = No longer e
+- **PR1050558-2987**: Event is being triggered for Leased/locums.
+- **PR1050558-2986**: Issues on Add Additional Fields
+- **PR1050558-2985**: Issues in Screening Call guided flow
+- **PR1050558-2983**: Integration log object status picklist value not updated.
+- **PR1050558-2981**: After Update NPI Screen getting Error.
+- **PR1050558-2969**: Practice Operations contract not submitted to correct user when there are multip
+- **PR1050558-2964**: [Regression bug] - Open shift APAY forms Validation.
+- **PR1050558-2962**: Practice Operations contract not submitted to Division Operating Officer approva
+- **PR1050558-2957**: Case record not getting created when complete the Client Agreement Request flow
+- **PR1050558-2951**: [Observation Bug]:  Open Shift Apay request Form.
+- **PR1050558-2949**: New Custom button “Create Clinician Change” - Screen flow, to capture the fields
+- **PR1050558-2946**: Field allows more than 50 characters, exceeding the expected character limit
+- **PR1050558-2941**: Issue with Bonus type rate configuration on clinician contract
+- **PR1050558-2921**: The Filter is not present on Facility and alongwith it when doing the mass updat
+- **PR1050558-2915**: Validation Rule is also throwing error for offboarding case of Type = Facility.
+- **PR1050558-2914**: Only some personas have access to the IT Support Cases.
+- **PR1050558-2896**: [Regression Issue ]-Initiate Termination Request - Select at least one HPF valid
+- **PR1050558-2892**: Initiate Leadership Change - Create Case RT: Leadership Change
+- **PR1050558-2876**: The URL for the CCPA Privacy Policy on the Core Connect portal displays a grey h
+- **PR1050558-2830**: Integration Platform Event: Re-Trigger Integration
+- **PR1050558-2819**: Clinical Support Case - Multiple issues.
+- **PR1050558-2810**: Update HPF Field = Temporary Inactive Reason
+- **PR1050558-2797**: Unable to see the Files and Tasks related lists in the Related tab of the Offboa
+- **PR1050558-2793**: Facility Change Request: Approvals 2 of 2
+- **PR1050558-2791**: Clinician Contract Request: Capture "Anticipated Clinical Hours"
+- **PR1050558-2790**: Facility Rate Creation - Type of Rate = Stipend - Add "Stipend Tier" & "Admin Ho
+- **PR1050558-2783**: Corporate Support users cannot view required fields/filters in Inactive HPF Repo
+- **PR1050558-2677**: Clinician Offboarding - Termination Details Updates for Partner
+- **PR1050558-2676**: Clinician Offboarding - Termination Details Updates for Locums, Leased, Managed
+- **PR1050558-2675**: Case (RT: Clinician Change) & “Data Quality” queue
+- **PR1050558-2673**: Military Status Change Requests
+- **PR1050558-2672**: Business Entity Change Requests
+- **PR1050558-2670**: Clinician Name Change Requests
+- **PR1050558-2668**: Add Additional Fields for Integration
+- **PR1050558-2640**: [Regression Bug]: All Persona user dont have access to Corporate Support console
+- **PR1050558-2636**: Deal Team/Account Team Role Updates
+- **PR1050558-2623**: Notification to Workday for First Clinical Shift Change
+- **PR1050558-2619**: Add Additional Fields
+- **PR1050558-2616**: Update Case Related Lists on Clinician Record
+- **PR1050558-2593**: Clinician Contract Request: Contract Changes - Cloning updates (Bonus Rates & In
+- **PR1050558-2592**: Clinician Contract Request: Bonus Details - Update Payments
+- **PR1050558-2559**: Clinician Contract Update: Add Time Type
+- **PR1050558-2558**: Clinician Contract Date Alignment
+- **PR1050558-2557**: Initiate Leadership Change from Service Account
+- **PR1050558-2554**: Locums Rate Management
+- **PR1050558-2552**: Update Permissions for List Views
+- **PR1050558-2551**: Conditional Requirements for Clinician NPI
+- **PR1050558-2537**: Facility Rate Creation - Allow different rates based on Time Type
+- **PR1050558-2528**: Clinician Contract Request: Shift Rate Details - Populate Type field
+- **PR1050558-2527**: Clinician Contract - Update Related Lists (Approval Work Items & Clinician Contr
+- **PR1050558-2526**: Clinician Contract Request: Add hide/show logic for "Submit Contract Request" bu
+- **PR1050558-2473**: Clinician Offboarding: Termination Updates
+- **PR1050558-2471**: Clinician Offboarding - Termination Details Update
+- **PR1050558-2469**: Open Shift APAY Request: Approval
+- **PR1050558-2468**: Collaborative Practice Agreement Review UI: Name Fields
+- **PR1050558-2467**: Clinician Contract: Leased and Locums Update to Executed Status
+- **PR1050558-2462**: Enable Integration to Workday for SCP Offboarding - 2 of 2
+- **PR1050558-2450**: Enhanced Clinician Inactivation: Case and Task Closure
+- **PR1050558-2447**: Set up Discovery framework - Configuration
+- **PR1050558-2431**: Update Clinician Visa Data Model
+- **PR1050558-2430**: Update Bonus Configuration for Client and Clinician
+- **PR1050558-2422**: Service Account Attributes
+- **PR1050558-2421**: Automated Case Record Closure: Offboarding
+- **PR1050558-2418**: Insurance Provided By Validation Rule
+- **PR1050558-2238**: Clinician Contract Update: Rate Pay Code
+- **PR1050558-2237**: Clinician Onboarding Case & Task Updates
+- **PR1050558-2235**: NP/PA Tier Management: Clinician 1 of 2
+- **PR1050558-2225**: Related Clinician Records - Add Collaborative Practice Agreement
+- **PR1050558-2224**: Open Shift APAY Request - Security Matrix updates
+- **PR1050558-2220**: Intake Form: Automated Task Creation to Review NPI
+- **PR1050558-2219**: Intake Form: Automated Task Creation to Review Name Change
+- **PR1050558-2210**: Clinician Contract Request: Update CPA naming
+- **PR1050558-2188**: Client Contract List Views
+- **PR1050558-2186**: Clinical Match Case Record Type - Update Sharing Rule
+- **PR1050558-2182**: Enable Integration to Workday for SCP Offboarding - 1 of 2
+- **PR1050558-2166**: Opportunity (Growth Oppty) Object - Add Contracts Related List
+- **PR1050558-2162**: Clinician Attributes from Workday to Salesforce
+- **PR1050558-2152**: Services Object - Set History Tracking & Layout Updates
+- **PR1050558-2150**: Update Corporation and Tax Information
+- **PR1050558-2143**: Opportunity & Services Objects Info Due Updates
+- **PR1050558-2142**: Contract Object Record Type Setup
+- **PR1050558-2137**: Auto Create Client Contract (Practice Operations)
+- **PR1050558-2126**: HC Portal Flip from Login to SSO
+- **PR1050558-2119**: New HPF for Already Active Clinicians
+- **PR1050558-2118**: Clinician Contract: Auto Populate Contracting Corporate Entity
+- **PR1050558-2114**: Review Credentialling Fields
+- **PR1050558-2113**: Review Bootcamp and Proctor Fields
+- **PR1050558-2112**: Review User Profile Key Field
+- **PR1050558-2111**: Review Pay Plan Fields
+- **PR1050558-2081**: Opportunity Team (Deal Team)
+- **PR1050558-2021**: Clinician Offboarding: EE Involuntary Termination
+- **PR1050558-2018**: NP/PA Tier Management: Client
+- **PR1050558-2015**: Clinician Offboarding - Termination Details for Locums
+- **PR1050558-1799**: Client Contracting - Early Start Confirmed
+- **PR1050558-1798**: Client Needs Questionnaire - Auto Task Creation for Internal Info Due Process
+- **PR1050558-1792**: Approval Work Items - List View Updates
+- **PR1050558-1740**: Facility Change Request: Approvals
+- **PR1050558-1733**: Offboarding Tasks - SCP
+- **PR1050558-1728**: Offboarding Tasks - Facility Specific
+- **PR1050558-1727**: Offboarding Cases
+- **PR1050558-1726**: Inactivation Alert Automated Email
+- **PR1050558-1725**: Clinician Support Case
+- **PR1050558-1722**: Executed Contract: Automate Task Creation for Locums
+- **PR1050558-1721**: Clinician Contract Request: Start Admin Work Ahead of Clinical
+- **PR1050558-1720**: Intake Form: Automated Task Creation to Review Corporation and Tax Info
+- **PR1050558-1677**: Automatically Update the Opportunity Status
+- **PR1050558-1676**: Client Contracting - “LOI Request”
+- **PR1050558-1675**: Client Needs Questionnaire - Data Collection
+- **PR1050558-1667**: Add Account Contact Relationship
+- **PR1050558-1580**: Enhanced Clinician Inactivation: HPF Status Updates
+- **PR1050558-1096**: Intake Form Case - CCPA Notice
+- **PR1050558-842**: IT Support Ticket
+- **PR1050558-775**: Corporate Compliance Status
+- **PR1050558-488**: Record Type Cleanup
+- **PR1050558-487**: CDC Channel Update - Clinician Contract Executed/Start Admin Work
+- **PR1050558-472**: Client Agreement Request
+- **PR1050558-319**: Employee Self-Service Experience (Link to MySCP - Employee Audience)
+- **PR1050558-310**: Opportunity (Growth Oppty) Object
+- **PR1050558-199**: Guided Screening Call Field Updates
+
+### Current Logic: <DateAbove> >= EffectiveFrom AND <DateAbove> <= EffectiveTo)
+
+**Stories using this component**: 1
+
+#### Sprint 12
+
+- **PR1050558-4293**: UAT Bug: C&CUAT148 Leadership Change Error (from Build Components)
+
+### Integration
+
+**Stories using this component**: 10
+
+#### Sprint 11
+
+- **PR1050558-3913**: UAT Bug: C&CUAT68 E2E | UAT | "HPF" option was not available in the user interfa
+
+#### Sprint 12.1
+
+- **PR1050558-4727**: E2E Bug: CDC Channel Update
+- **PR1050558-4640**: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+- **PR1050558-4634**: E2E Bug: C&CUAT234 WorkDay_Part time EE Nurse Practitioners and EE Physician Ass
+- **PR1050558-4613**: E2E Bug: C&CUAT222 QGenda_ Hire IC_ Received Contact Phone Number error
+- **PR1050558-4612**: E2E Bug: C&CUAT221 Invalid Compensation_Plan_ID value ('') sent from Salesforce 
+- **PR1050558-4611**: E2E Bug: C&CUAT220 Workday Integration Contracting Corporate value mismatch betw
+- **PR1050558-4592**: E2E Bug: C&CUAT216 Mulesoft : incorrect Company name is appearing
+- **PR1050558-4586**: E2E Bug: C&CUAT210 Pay code is not available in SF
+
+#### Sprint 12.2
+
+- **PR1050558-4640**: E2E Bug: C&CUAT236 SF HC & MS_ Termination of IC event_ Event should be delayed 
+
+### Looks like this need to be updated based on below criteria
+
+**Stories using this component**: 1
+
+#### Sprint 12
+
+- **PR1050558-4293**: UAT Bug: C&CUAT148 Leadership Change Error (from Build Components)
+
+### Need to update as: <DateAbove> >= EffectiveFrom AND <DateAbove> <= EffectiveTo OR  EffectiveTo = blank)
+
+**Stories using this component**: 1
+
+#### Sprint 12
+
+- **PR1050558-4293**: UAT Bug: C&CUAT148 Leadership Change Error (from Build Components)
+
+### [https://salesforce.atlassian.net/browse/PR1050558-2557|https://salesforce.atlassian.net/browse/PR1050558-2557|smart-link]
+
+**Stories using this component**: 1
+
+#### Sprint 12
+
+- **PR1050558-4293**: UAT Bug: C&CUAT148 Leadership Change Error (from Build Components)
+
+
+---
+
+## Usage Notes
+
+- Components are extracted from JIRA 'Components' and 'Build Components' fields
+- This map helps with impact analysis and conflict detection
+- For component metadata details, see `COMPONENT-CATALOG.md`
+- For story details, see `MASTER-STORY-INDEX.md`

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to track Webex chat room status changes</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <description>This is the ID of the room</description>
+        <fieldName>roomId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the new status of the room</description>
+        <fieldName>roomStatus</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexRoomStatusChangeChannel</masterLabel>
+</LightningMessageChannel>

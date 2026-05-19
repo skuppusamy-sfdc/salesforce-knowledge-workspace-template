@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>linkedin_si__Linkedin_Company_Page_Url__c</fullName>
+    <deprecated>false</deprecated>
+    <description>LinkedIn&apos;s company profile URL</description>
+    <label>LinkedIn.com Company Page URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

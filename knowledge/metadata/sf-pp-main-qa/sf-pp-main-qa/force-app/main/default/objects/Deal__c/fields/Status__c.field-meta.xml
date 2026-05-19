@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Won</fullName>
+                <default>false</default>
+                <label>Won</label>
+            </value>
+            <value>
+                <fullName>Lost</fullName>
+                <default>false</default>
+                <label>Lost</label>
+            </value>
+            <value>
+                <fullName>Closed - Client Abandoned Proposal</fullName>
+                <default>false</default>
+                <label>Closed - Client Abandoned Proposal</label>
+            </value>
+            <value>
+                <fullName>Closed - No Change</fullName>
+                <default>false</default>
+                <label>Closed - No Change</label>
+            </value>
+            <value>
+                <fullName>Closed - No Change/Lost</fullName>
+                <default>false</default>
+                <label>Closed - No Change/Lost</label>
+            </value>
+            <value>
+                <fullName>Closed-No Bid</fullName>
+                <default>false</default>
+                <label>Closed-No Bid</label>
+            </value>
+            <value>
+                <fullName>Closed - SCP Declined</fullName>
+                <default>false</default>
+                <label>Closed - SCP Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

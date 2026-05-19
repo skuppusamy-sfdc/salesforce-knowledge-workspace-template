@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Title_should_not_be_Inactive</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(ISNEW(),NOT(Facility_Title__r.Active__c)),
+
+AND(ISCHANGED(Facility_Title__c),NOT(Facility_Title__r.Active__c))
+)</errorConditionFormula>
+    <errorDisplayField>Facility_Title__c</errorDisplayField>
+    <errorMessage>Facility Title can not be inactive.</errorMessage>
+</ValidationRule>

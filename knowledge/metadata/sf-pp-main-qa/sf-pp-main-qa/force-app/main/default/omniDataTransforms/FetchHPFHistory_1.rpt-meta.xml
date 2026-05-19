@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>PR1050558-4569: Added logic for the custom HPF History related list.</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;OldValue&quot; : &quot;2025-12-17&quot;,
+  &quot;NewValue&quot; : &quot;2025-12-17&quot;,
+  &quot;Field&quot; : &quot;Anticipated_Termination_Date__c&quot;,
+  &quot;CreatedByName&quot; : &quot;Srishty Sharma&quot;,
+  &quot;CreatedDate&quot; : &quot;2025-12-16T11:42:17.000Z&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>FetchHPFHistory</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FetchHPFHistoryCustom9854</globalKey>
+        <inputFieldName>hpfhistory:CreatedBy.Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CreatedByName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FetchHPFHistoryCustom4065</globalKey>
+        <inputFieldName>hpfhistory:OldValue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OldValue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>recordId</filterValue>
+        <globalKey>FetchHPFHistoryCustom589</globalKey>
+        <inputFieldName>HealthcarePractitionerFacilityId</inputFieldName>
+        <inputObjectName>HealthcarePractitionerFacilityHistory</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>hpfhistory</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FetchHPFHistoryCustom5127</globalKey>
+        <inputFieldName>hpfhistory:NewValue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NewValue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>ORDER BY</filterOperator>
+        <filterValue>createdDate DESC</filterValue>
+        <globalKey>FetchHPFHistoryCustom9364</globalKey>
+        <inputObjectName>HealthcarePractitionerFacilityHistory</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>hpfhistory</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FetchHPFHistoryCustom2317</globalKey>
+        <inputFieldName>hpfhistory:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FetchHPFHistoryCustom2328</globalKey>
+        <inputFieldName>hpfhistory:Field</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FetchHPFHistory</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Field</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;recordId&quot; : &quot;0bS7x0000003Kn0EAE&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>FetchHPFHistory_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

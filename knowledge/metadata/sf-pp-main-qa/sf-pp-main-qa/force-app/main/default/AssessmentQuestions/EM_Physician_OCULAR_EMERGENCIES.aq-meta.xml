@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EM Physician OCULAR EMERGENCIES</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;OCULAR EMERGENCIES – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Removal of superficial foreign body in conjunctiva or   
+cornea&lt;/li&gt;
+&lt;li&gt;Management of ocular trauma&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>EM_Physician_OCULAR_EMERGENCIES</developerName>
+    <name>EM Physician OCULAR EMERGENCIES</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

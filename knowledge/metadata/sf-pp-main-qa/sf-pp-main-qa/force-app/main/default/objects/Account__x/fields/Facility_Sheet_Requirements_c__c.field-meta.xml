@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Sheet_Requirements_c__c</fullName>
+    <externalDeveloperName>Facility_Sheet_Requirements__c</externalDeveloperName>
+    <isFilteringDisabled>true</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>true</isSortingDisabled>
+    <label>Facility Sheet Requirements</label>
+    <length>350</length>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

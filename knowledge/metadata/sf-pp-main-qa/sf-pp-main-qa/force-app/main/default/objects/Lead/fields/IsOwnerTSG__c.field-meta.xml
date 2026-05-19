@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsOwnerTSG__c</fullName>
+    <description>This formula field is checked when the Lead Discovery Owner has TSG Profile</description>
+    <formula>Owner:User.Profile.Name == &apos;TSG Sales&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsOwnerTSG</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

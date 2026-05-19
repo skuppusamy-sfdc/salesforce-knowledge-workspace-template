@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FK_$Facility_Profile__c.Clinical_Data_Feed_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Facility_Profile__c.Clinical_Data_Feed_First_DOS__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Facility_Profile__c.CDF_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FK_$Facility_Profile__c.Chart_Acquisition__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Clinical Data Feed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contract_Active__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Service_Line__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>HM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CDF Live by First DOA - HM</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList@Account.Facility_Profile__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FK_$Facility_Profile__c.Clinical_Data_Feed_Start_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

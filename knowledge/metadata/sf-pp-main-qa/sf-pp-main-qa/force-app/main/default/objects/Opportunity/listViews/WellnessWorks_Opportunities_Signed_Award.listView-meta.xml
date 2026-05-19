@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WellnessWorks_Opportunities_Signed_Award</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Sign_Date__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>RAD_Stage__c</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>Product_Line__c</columns>
+    <columns>Implementation_Fee__c</columns>
+    <columns>Monthly_Fee__c</columns>
+    <columns>Annualized__c</columns>
+    <columns>Program_Count__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Service_Line_s__c</field>
+        <operation>equals</operation>
+        <value>WW</value>
+    </filters>
+    <filters>
+        <field>Product_Line__c</field>
+        <operation>notEqual</operation>
+        <value>Care Coordination</value>
+    </filters>
+    <filters>
+        <field>RAD_Stage__c</field>
+        <operation>equals</operation>
+        <value>Awarded,Signed</value>
+    </filters>
+    <label>All WellnessWorks Opportunities</label>
+</ListView>

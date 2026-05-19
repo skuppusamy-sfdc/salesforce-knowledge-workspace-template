@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__Map_Member_Max_Modified_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Latest modified date of related map members, used for scoring of account plans if there is a related plan</description>
+    <label>Map Member Max Modified Date</label>
+    <summarizedField>pqcrush__Relationship_Map_Member__c.LastModifiedDate</summarizedField>
+    <summaryForeignKey>pqcrush__Relationship_Map_Member__c.pqcrush__Relationship_Map__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

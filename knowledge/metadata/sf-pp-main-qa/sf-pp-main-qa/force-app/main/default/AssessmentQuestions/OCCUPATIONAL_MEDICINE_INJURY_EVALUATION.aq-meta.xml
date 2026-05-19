@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>OCCUPATIONAL MEDICINE INJURY EVALUATION</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;OCCUPATIONAL MEDICINE INJURY EVALUATION – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Evaluation and management of back   
+pain/acute strain&lt;/li&gt;
+&lt;li&gt;Evaluation and management of neck   
+pain/strain&lt;/li&gt;
+&lt;li&gt;Evaluation and management of wrist   
+pain/carpel tunnel syndrome&lt;/li&gt;
+&lt;li&gt;Understanding and adherence to state post   
+injury guidelines&lt;/li&gt;
+&lt;li&gt;Completion of worker’s compensation post   
+Injury Forms&lt;/li&gt;
+&lt;li&gt;Performance of fitness for duty examination&lt;/li&gt;
+&lt;li&gt;Determining work status post Injury/return to   
+work guidelines&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>OCCUPATIONAL_MEDICINE_INJURY_EVALUATION</developerName>
+    <name>OCCUPATIONAL MEDICINE INJURY EVALUATION</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

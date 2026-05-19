@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>HealthcarePractitionerFacility$HPF_Number__c</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility$HealthcareProvider.ProviderType</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility$Last_Date_Worked__c</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility$Account.PersonContact</field>
+    </columns>
+    <columns>
+        <field>HealthcarePractitionerFacility$Account</field>
+    </columns>
+    <format>Tabular</format>
+    <name>QGenda Updates Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Healthcare_Practitioner_Facility_with_CPA_and_Contract__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>HealthcarePractitionerFacility$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

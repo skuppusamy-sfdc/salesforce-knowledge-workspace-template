@@ -1,0 +1,15 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "snapshot" : {
+      "title" : "{!$Label.InvocableActionGetRecordDetails.InvocableActionRecordDetailsOutputLabel}",
+      "description" : "Record details, including object fields and values, records from related lists, and more.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

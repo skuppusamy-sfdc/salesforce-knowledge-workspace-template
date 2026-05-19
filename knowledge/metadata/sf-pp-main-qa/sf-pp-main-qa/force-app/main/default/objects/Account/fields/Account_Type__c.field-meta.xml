@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Type__c</fullName>
+    <label>Facility Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>System</fullName>
+                <default>false</default>
+                <label>System</label>
+            </value>
+            <value>
+                <fullName>Sub-system</fullName>
+                <default>false</default>
+                <label>Sub-system</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Free-standing ED</fullName>
+                <default>false</default>
+                <label>Free-standing ED</label>
+            </value>
+            <value>
+                <fullName>Physician Group</fullName>
+                <default>false</default>
+                <label>Physician Group</label>
+            </value>
+            <value>
+                <fullName>National Firm</fullName>
+                <default>false</default>
+                <label>National Firm</label>
+            </value>
+            <value>
+                <fullName>Regional Firm</fullName>
+                <default>false</default>
+                <label>Regional Firm</label>
+            </value>
+            <value>
+                <fullName>LTAC</fullName>
+                <default>false</default>
+                <label>LTAC</label>
+            </value>
+            <value>
+                <fullName>Urgent Care</fullName>
+                <default>false</default>
+                <label>Urgent Care</label>
+            </value>
+            <value>
+                <fullName>Skilled Nursing Facility</fullName>
+                <default>false</default>
+                <label>Skilled Nursing Facility</label>
+            </value>
+            <value>
+                <fullName>Assisted Living Facility</fullName>
+                <default>false</default>
+                <label>Assisted Living Facility</label>
+            </value>
+            <value>
+                <fullName>Assisted Living Facility Corporation</fullName>
+                <default>false</default>
+                <label>Assisted Living Facility Corporation</label>
+            </value>
+            <value>
+                <fullName>Skilled Nursing Facility Corporation</fullName>
+                <default>false</default>
+                <label>Skilled Nursing Facility Corporation</label>
+            </value>
+            <value>
+                <fullName>ALF Corp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ALF Corp</label>
+            </value>
+            <value>
+                <fullName>Health System</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Health System</label>
+            </value>
+            <value>
+                <fullName>Inactive Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inactive Account</label>
+            </value>
+            <value>
+                <fullName>Non-Acute Care Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-Acute Care Hospital</label>
+            </value>
+            <value>
+                <fullName>SNF Corp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SNF Corp</label>
+            </value>
+            <value>
+                <fullName>SNF System</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SNF System</label>
+            </value>
+            <value>
+                <fullName>Swing Bed Unit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Swing Bed Unit</label>
+            </value>
+            <value>
+                <fullName>VA/Military Hospital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VA/Military Hospital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

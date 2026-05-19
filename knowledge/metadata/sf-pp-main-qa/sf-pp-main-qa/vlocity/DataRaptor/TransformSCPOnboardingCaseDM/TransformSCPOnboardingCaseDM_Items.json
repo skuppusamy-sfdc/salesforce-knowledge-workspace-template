@@ -1,0 +1,112 @@
+[
+    {
+        "DefaultValue": "Manual",
+        "FilterGroup": 0,
+        "GlobalKey": "TransformSCPOnboardingCaseDMCustom676",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "TransformSCPOnboardingCaseDM",
+        "OmniDataTransformationId": {
+            "Name": "TransformSCPOnboardingCaseDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformSCPOnboardingCaseDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "scpCase:caseOrigin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "TransformSCPOnboardingCaseDMCustom2908",
+        "InputFieldName": "scpPriority",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "TransformSCPOnboardingCaseDM",
+        "OmniDataTransformationId": {
+            "Name": "TransformSCPOnboardingCaseDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformSCPOnboardingCaseDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "scpCase:casePriority",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "SCP Onboarding",
+        "FilterGroup": 0,
+        "GlobalKey": "TransformSCPOnboardingCaseDMCustom3535",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "TransformSCPOnboardingCaseDM",
+        "OmniDataTransformationId": {
+            "Name": "TransformSCPOnboardingCaseDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformSCPOnboardingCaseDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "scpCase:caseSubject",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "SCP",
+        "FilterGroup": 0,
+        "GlobalKey": "TransformSCPOnboardingCaseDMCustom4218",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "TransformSCPOnboardingCaseDM",
+        "OmniDataTransformationId": {
+            "Name": "TransformSCPOnboardingCaseDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformSCPOnboardingCaseDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "scpCase:caseType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "TransformSCPOnboardingCaseDMCustom3402",
+        "InputFieldName": "CaseOwner",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "TransformSCPOnboardingCaseDM",
+        "OmniDataTransformationId": {
+            "Name": "TransformSCPOnboardingCaseDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformSCPOnboardingCaseDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "scpCase:ownerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

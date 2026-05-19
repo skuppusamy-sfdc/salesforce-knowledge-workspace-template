@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_EE_NPPA__c</fullName>
+    <formula>AND(TEXT(Contract__r.Employment_Type__c) = &apos;Employee&apos;,OR(TEXT(Contract__r.Account.Professional_Title__pc) = &apos;NP&apos;,TEXT(Contract__r.Account.Professional_Title__pc) = &apos;PA&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is EE NPPA</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

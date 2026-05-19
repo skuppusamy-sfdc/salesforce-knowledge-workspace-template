@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PR1050558-479 : Submit for Contracting Action</description>
+    <flowDefinition>Proforma_Contracting_Screen_Flow</flowDefinition>
+    <label>Submit for Contracting</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

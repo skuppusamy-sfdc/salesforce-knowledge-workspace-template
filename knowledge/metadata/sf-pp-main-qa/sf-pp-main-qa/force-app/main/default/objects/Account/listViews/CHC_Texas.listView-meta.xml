@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CHC_Texas</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>DHC_Case_Mix_Index_CMI_Medicare__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DHC_Case_Mix_Index_CMI_Medicare__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>CHC Texas</label>
+</ListView>

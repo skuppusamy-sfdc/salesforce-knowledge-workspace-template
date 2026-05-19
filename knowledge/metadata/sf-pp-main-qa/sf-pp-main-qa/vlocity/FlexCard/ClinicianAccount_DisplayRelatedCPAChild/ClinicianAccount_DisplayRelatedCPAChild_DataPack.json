@@ -1,0 +1,36 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "[\n    {\n      \"Name\": \"CPA-00000\",\n      \"Credentialing Status\": \"Pending\",\n      \"Id\": \"a3S7x000001NkO9EAK\",\n      \"First Scheduled Date\": \"2025-09-24\",\n      \"Supervision/Collaboration Status\": \"Compliant\",\n      \"Physician Name\": \"Mr.JoeannaLAasen\",\n      \"NP/PA Professional Title\": \"LPN\",\n      \"NP/PA Name\": \"Mr.JoeannaLAasen\",\n      \"Relationship Status\": \"Alternate Supervising Physician\"\n    },\n    {\n      \"Name\": \"CPA-00107\",\n      \"Credentialing Status\": \"Billing Only\",\n      \"Id\": \"a3S7x000001jmEPEAY\",\n      \"First Scheduled Date\": \"2025-10-02\",\n      \"Supervision/Collaboration Status\": \"Active Superv Phys/INA@ this account\",\n      \"Physician Name\": \"Mr.JoeannaLAasen\",\n      \"NP/PA Professional Title\": \"LPN\",\n      \"NP/PA Name\": \"Mr.JoeannaLAasen\",\n      \"Relationship Status\": \"Alternate Collaborating Physician\"\n    }\n  ]",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "ClinicianAccount_DisplayRelatedCPAChild",
+    "Namespace": "",
+    "OmniUiCardKey": "ClinicianAccount_DisplayRelatedCPAChild/Salesforce/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "ClinicianAccount_DisplayRelatedCPAChild.json",
+    "SampleDataSourceResponse": "[{\"Name\":\"CPA-00000\",\"Credentialing Status\":\"Pending\",\"Id\":\"a3S7x000001NkO9EAK\",\"First Scheduled Date\":\"2025-09-24\",\"Supervision/Collaboration Status\":\"Compliant\",\"Physician Name\":\"Mr.JoeannaLAasen\",\"NP/PA Professional Title\":\"LPN\",\"NP/PA Name\":\"Mr.JoeannaLAasen\",\"Relationship Status\":\"Alternate Supervising Physician\"},{\"Name\":\"CPA-00107\",\"Credentialing Status\":\"Billing Only\",\"Id\":\"a3S7x000001jmEPEAY\",\"First Scheduled Date\":\"2025-10-02\",\"Supervision/Collaboration Status\":\"Active Superv Phys/INA@ this account\",\"Physician Name\":\"Mr.JoeannaLAasen\",\"NP/PA Professional Title\":\"LPN\",\"NP/PA Name\":\"Mr.JoeannaLAasen\",\"Relationship Status\":\"Alternate Collaborating Physician\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "ClinicianAccount_DisplayRelatedCPAChild_Salesforce_1",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/ClinicianAccount_DisplayRelatedCPAChild"
+}

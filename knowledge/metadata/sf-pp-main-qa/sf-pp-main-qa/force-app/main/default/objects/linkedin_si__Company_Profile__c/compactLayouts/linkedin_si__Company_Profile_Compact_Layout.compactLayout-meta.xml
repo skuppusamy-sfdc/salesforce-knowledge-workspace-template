@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>linkedin_si__Company_Profile_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>linkedin_si__Global_Employee_Count__c</fields>
+    <fields>linkedin_si__Global_Employee_Growth__c</fields>
+    <fields>linkedin_si__Headquarters_City__c</fields>
+    <fields>linkedin_si__Headquarters_State__c</fields>
+    <fields>linkedin_si__Headquarters_Country__c</fields>
+    <label>Company Profile Compact Layout</label>
+</CompactLayout>

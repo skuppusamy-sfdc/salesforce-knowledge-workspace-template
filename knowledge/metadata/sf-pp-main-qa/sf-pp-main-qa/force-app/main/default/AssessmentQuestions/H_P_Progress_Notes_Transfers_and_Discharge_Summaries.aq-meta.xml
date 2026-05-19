@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>H&amp;P, Progress Notes, Transfers, and Discharge Summaries</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Documents in the medical record a complete history and physical examination for acute and complex chronically ill patients upon initial admission/consultation and key components of patient&apos;s progress via progress notes as medically necessary, transfer, and discharge summary.</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>H_P_Progress_Notes_Transfers_and_Discharge_Summaries</developerName>
+    <name>H&amp;P, Progress Notes, Transfers, and Discharge Summaries</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,114 @@
+[
+    {
+        "FilterGroup": 0,
+        "FormulaExpression": "\"$\"+ExistingPCARecs:Rate__c +\" \"+ ExistingPCARecs:Unit_of_Measure__c",
+        "FormulaResultPath": "ExistingPCARecs:Rate",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTTransformPreventiveContractAgreementForShiftRatesCustom4192",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformPreventiveContractAgreementForShiftRatesCustom5845",
+        "InputFieldName": "ExistingPCARecs:FacilityTitle__r:Name",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FacilityTitle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformPreventiveContractAgreementForShiftRatesCustom2626",
+        "InputFieldName": "ExistingPCARecs:Rate",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Rate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformPreventiveContractAgreementForShiftRatesCustom9193",
+        "InputFieldName": "ExistingPCARecs:Shift__r:Shift_Day_of_the_Week__c",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ShiftDay",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformPreventiveContractAgreementForShiftRatesCustom9245",
+        "InputFieldName": "ExistingPCARecs:Shift__r:Name",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformPreventiveContractAgreementForShiftRates",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ShiftName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

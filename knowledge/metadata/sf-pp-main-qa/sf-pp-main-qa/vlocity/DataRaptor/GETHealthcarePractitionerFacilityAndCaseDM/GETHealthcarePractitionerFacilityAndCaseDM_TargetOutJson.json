@@ -1,0 +1,13 @@
+{
+    "csList": {
+        "csHPFId": "Text"
+    },
+    "hpfList": {
+        "FacilityName": "Text",
+        "HPFName": "Text",
+        "hpfAccountId": "Text",
+        "hpfRecordId": "Text",
+        "hpfStatus": "Text"
+    },
+    "riskReviewRecordTypeId": "Text"
+}

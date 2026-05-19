@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Provider_Guarantee_Clause__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (New_Provider_Guarantee__c = TRUE,
+( &quot;Notwithstanding the foregoing, Company shall pay to provider $&quot; &amp;
+text( floor( Preventive_Care_Agreement__r.Rate__c ) ) + &quot;.&quot; + right( text( ( 1 + Preventive_Care_Agreement__r.Rate__c - floor( Preventive_Care_Agreement__r.Rate__c ) ) * 100 ), 2 ) &amp;
+&quot;/hour or Provider’s Total Compensation, whichever is greater, for shifts worked at Hospital for the &quot; &amp;
+CASE (text( Preventive_Care_Agreement__r.Months_Provider_Guarantee__c ),
+&quot;1&quot;, &quot;one&quot;,
+&quot;2&quot;, &quot;two&quot;,
+&quot;3&quot;, &quot;three&quot;,
+&quot;4&quot;, &quot;four&quot;,
+&quot;5&quot;, &quot;five&quot;,
+&quot;6&quot;, &quot;six&quot;,
+&quot;7&quot;, &quot;seven&quot;,
+&quot;8&quot;, &quot;eight&quot;,
+&quot;9&quot;, &quot;nine&quot;,
+&quot;10&quot;, &quot;ten&quot;,
+&quot;11&quot;, &quot;eleven&quot;,
+&quot;12&quot;, &quot;twelve&quot;,&quot;N/A&quot;)
+
+&amp; &quot; (&quot; &amp; text(Preventive_Care_Agreement__r.Months_Provider_Guarantee__c)
+
+&amp; &quot;) calendar months commencing with the first month in which Physician first works a shift on behalf of Company at Hospital.&quot;),
+
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>New Provider Guarantee Clause</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

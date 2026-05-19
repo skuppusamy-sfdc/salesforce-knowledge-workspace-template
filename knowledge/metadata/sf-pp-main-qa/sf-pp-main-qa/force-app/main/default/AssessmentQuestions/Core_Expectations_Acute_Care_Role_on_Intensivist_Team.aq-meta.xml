@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Core Expectations: Acute Care Role on Intensivist Team</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Core Expectations
+Functions within the acute care hospital and/or sub-acute/post-acute setting, working in collaboration with, and being an integral member of the Intensivist team. Primary role involves the care of acute and complex chronically ill patients 16 years of age and older by managing the day to day patient care from admission to discharge</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Core_Expectations_Acute_Care_Role_on_Intensivist_Team</developerName>
+    <name>Core Expectations: Acute Care Role on Intensivist Team</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

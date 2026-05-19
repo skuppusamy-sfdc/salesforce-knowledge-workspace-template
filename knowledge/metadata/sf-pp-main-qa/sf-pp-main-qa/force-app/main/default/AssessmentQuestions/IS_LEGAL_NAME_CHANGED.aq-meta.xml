@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>IS LEGAL NAME CHANGED</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is Legal Name Changed</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Formula</dataType>
+    <developerName>IS_LEGAL_NAME_CHANGED</developerName>
+    <formulaResponseDataType>Boolean</formulaResponseDataType>
+    <name>IS LEGAL NAME CHANGED</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

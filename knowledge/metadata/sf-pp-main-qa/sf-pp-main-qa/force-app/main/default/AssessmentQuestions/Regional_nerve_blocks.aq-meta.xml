@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Regional nerve blocks</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Regional nerve blocks</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Regional_nerve_blocks</developerName>
+    <name>Regional nerve blocks</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

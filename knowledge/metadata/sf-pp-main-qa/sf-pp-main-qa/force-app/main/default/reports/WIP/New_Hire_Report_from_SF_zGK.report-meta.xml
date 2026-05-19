@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Header_Company__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$FirstName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$LastName</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$SSN_Encrypted__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$First_Clinical_Shift__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Birthdate</field>
+    </columns>
+    <columns>
+        <field>Account$BillingAddress</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Contacts$Global_Contact_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$Facility_Title__c</field>
+    </columns>
+    <columns>
+        <field>Account$PersonContact.Professional_Title__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$Credentialling_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Status__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>Case(
+    TEXT(HealthcarePractitionerFacility.Facility_Title__c.Code_Set_Sub_Type__c),
+    &quot;Employee&quot;, &quot;W2&quot;,
+    &quot;Independent Contractor&quot;, &quot;1099&quot;,
+    &quot;Leased&quot;, &quot;N/A&quot;,
+    &quot;Locum&quot;, &quot;N/A&quot;,
+    &quot;Partner&quot;, &quot;K1&quot;,
+    &quot;Managed&quot;, &quot;N/A&quot;,
+    &quot;N/A&quot;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Tax Form</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$Credentialling_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Active,Temporarily Inactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Contract_Active__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$Facility_Title__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>External Locums,Leased Employee,Leased Medical Director</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$EffectiveTo</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$Facility_Title__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>1099</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CDF1</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1099</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>New Hire Report from SF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Contacts_with_HPF__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Contacts.HealthcarePractitionerFacility$First_Clinical_Shift__c</dateColumn>
+        <endDate>2025-12-13</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2025-11-23</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Sheet_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A checked box means it is approved</description>
+    <inlineHelpText>A checked box means it is approved</inlineHelpText>
+    <label>Term Sheet Approved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

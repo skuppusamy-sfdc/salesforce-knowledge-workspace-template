@@ -1,0 +1,19 @@
+{
+    "ContextId": null,
+    "TryCatchBlock": {
+        "CB_OnboardingTypeFacility": {
+        },
+        "CB_OnboardingTypeSCP": {
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "TryCatchBlock": null
+    }
+}

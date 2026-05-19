@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Division__c</fullName>
+    <label>Client Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I</fullName>
+                <default>false</default>
+                <label>I</label>
+            </value>
+            <value>
+                <fullName>II</fullName>
+                <default>false</default>
+                <label>II</label>
+            </value>
+            <value>
+                <fullName>PAPS</fullName>
+                <default>false</default>
+                <label>PAPS</label>
+            </value>
+            <value>
+                <fullName>Wellness Works</fullName>
+                <default>false</default>
+                <label>Wellness Works</label>
+            </value>
+            <value>
+                <fullName>CS Partners</fullName>
+                <default>false</default>
+                <label>CS Partners</label>
+            </value>
+            <value>
+                <fullName>eHealth</fullName>
+                <default>false</default>
+                <label>eHealth</label>
+            </value>
+            <value>
+                <fullName>None Assigned</fullName>
+                <default>false</default>
+                <label>None Assigned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

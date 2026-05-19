@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Acknowledgement Date</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Acknowledgement Date</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>Acknowledgement_Date</developerName>
+    <name>Acknowledgement Date</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

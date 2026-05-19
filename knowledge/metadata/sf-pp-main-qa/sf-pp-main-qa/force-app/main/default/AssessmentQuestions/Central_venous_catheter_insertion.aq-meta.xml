@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Central venous catheter insertion</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Central venous catheter insertion</questionText>
+        <responseValues>A
+B
+C</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Central_venous_catheter_insertion</developerName>
+    <name>Central venous catheter insertion</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

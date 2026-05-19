@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Recruiting</fullName>
+        <default>false</default>
+        <label>Recruiting</label>
+    </customValue>
+    <customValue>
+        <fullName>Candidate Pre-Screen (Facility Cred)</fullName>
+        <default>false</default>
+        <label>Candidate Pre-Screen (Facility Cred)</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheduling</fullName>
+        <default>false</default>
+        <label>Scheduling</label>
+    </customValue>
+    <customValue>
+        <fullName>Provider Enrollment</fullName>
+        <default>false</default>
+        <label>Provider Enrollment</label>
+    </customValue>
+    <customValue>
+        <fullName>Coding</fullName>
+        <default>false</default>
+        <label>Coding</label>
+    </customValue>
+    <customValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+    </customValue>
+    <customValue>
+        <fullName>Privileging (CVO)</fullName>
+        <default>false</default>
+        <label>Privileging (CVO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Leased Providers</fullName>
+        <default>false</default>
+        <label>Leased Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Providers</fullName>
+        <default>false</default>
+        <label>Managed Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>Billing Pro Fee</fullName>
+        <default>false</default>
+        <label>Billing Pro Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Coding Pro Fee</fullName>
+        <default>false</default>
+        <label>Coding Pro Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Tele-Hybrid</fullName>
+        <default>false</default>
+        <label>Tele-Hybrid</label>
+    </customValue>
+    <customValue>
+        <fullName>Tele-Triage</fullName>
+        <default>false</default>
+        <label>Tele-Triage</label>
+    </customValue>
+    <customValue>
+        <fullName>Tele-Admitter</fullName>
+        <default>false</default>
+        <label>Tele-Admitter</label>
+    </customValue>
+    <customValue>
+        <fullName>Tele-Rounder</fullName>
+        <default>false</default>
+        <label>Tele-Rounder</label>
+    </customValue>
+    <customValue>
+        <fullName>Tele-Nocturnist</fullName>
+        <default>false</default>
+        <label>Tele-Nocturnist</label>
+    </customValue>
+    <customValue>
+        <fullName>Tele-Consults</fullName>
+        <default>false</default>
+        <label>Tele-Consults</label>
+    </customValue>
+    <masterLabel>Services Sold</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

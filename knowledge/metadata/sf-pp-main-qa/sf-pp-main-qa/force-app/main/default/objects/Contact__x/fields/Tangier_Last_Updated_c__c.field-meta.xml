@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tangier_Last_Updated_c__c</fullName>
+    <externalDeveloperName>Tangier_Last_Updated__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Tangier Last Updated</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

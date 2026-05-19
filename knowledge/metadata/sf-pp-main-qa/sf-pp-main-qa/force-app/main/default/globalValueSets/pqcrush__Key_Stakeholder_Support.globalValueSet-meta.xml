@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Blocker</fullName>
+        <default>false</default>
+        <label>Blocker</label>
+    </customValue>
+    <customValue>
+        <fullName>Floater</fullName>
+        <default>false</default>
+        <label>Neutral</label>
+    </customValue>
+    <customValue>
+        <fullName>Supporter</fullName>
+        <default>false</default>
+        <label>Supporter</label>
+    </customValue>
+    <customValue>
+        <fullName>Champion</fullName>
+        <default>false</default>
+        <label>Champion</label>
+    </customValue>
+    <masterLabel>Key Stakeholder Support</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

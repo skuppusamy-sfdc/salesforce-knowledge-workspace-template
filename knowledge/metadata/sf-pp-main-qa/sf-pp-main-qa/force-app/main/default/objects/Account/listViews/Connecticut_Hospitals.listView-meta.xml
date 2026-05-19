@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connecticut_Hospitals</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_EM_Incumbent_Group_Type__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent_Group_Type__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>Group_Ownership__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>NV</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>No Interest,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Forensic,mental,hospice,VA,veteran,psychiatric,behavioral,closed,select,rehabilitation,post acute,healthsouth</value>
+    </filters>
+    <filters>
+        <field>Independent__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Account_Type__c</field>
+        <operation>equals</operation>
+        <value>System,Sub-system,Hospital,Free-standing ED,Urgent Care</value>
+    </filters>
+    <label>Nevada Hospitals</label>
+</ListView>

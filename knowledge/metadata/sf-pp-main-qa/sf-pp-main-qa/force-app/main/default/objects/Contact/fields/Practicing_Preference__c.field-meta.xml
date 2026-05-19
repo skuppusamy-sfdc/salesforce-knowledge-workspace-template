@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Practicing_Preference__c</fullName>
+    <label>Practicing Preference</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HM</fullName>
+                <default>false</default>
+                <label>HM</label>
+            </value>
+            <value>
+                <fullName>EM</fullName>
+                <default>false</default>
+                <label>EM</label>
+            </value>
+            <value>
+                <fullName>CC</fullName>
+                <default>false</default>
+                <label>CC</label>
+            </value>
+            <value>
+                <fullName>UC</fullName>
+                <default>false</default>
+                <label>UC</label>
+            </value>
+            <value>
+                <fullName>Tele</fullName>
+                <default>false</default>
+                <label>Tele</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTTransformRolesForSpecifyRates</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;role&quot; | var:listOfData LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;role&quot;, LIST(%listOfData%))</formulaExpression>
+        <formulaResultPath>func</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTTransformRolesForSpecifyRates264432929575218</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformRolesForSpecifyRates</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTTransformRolesForSpecifyRates8675404198385421</globalKey>
+        <inputFieldName>func:role</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTTransformRolesForSpecifyRates</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>roles:role</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;listOfData&quot; : [ {
+    &quot;rates&quot; : {
+      &quot;name&quot; : &quot;EE Lead Midlevel Provider&quot;,
+      &quot;cpaId&quot; : &quot;0rR7x00000002mbEAA&quot;,
+      &quot;rate&quot; : 12
+    },
+    &quot;role&quot; : &quot;Night Shift Bonus&quot;
+  }, {
+    &quot;rates&quot; : {
+      &quot;name&quot; : &quot;EE Nurse Practitioner&quot;,
+      &quot;cpaId&quot; : &quot;0rR7x00000002mbEAA&quot;,
+      &quot;rate&quot; : 12
+    },
+    &quot;role&quot; : &quot;Night Shift Bonus&quot;
+  }, {
+    &quot;rates&quot; : {
+      &quot;name&quot; : &quot;EE Physician Assistant&quot;,
+      &quot;cpaId&quot; : &quot;0rR7x00000002mbEAA&quot;,
+      &quot;rate&quot; : 12
+    },
+    &quot;role&quot; : &quot;Night Shift Bonus&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTTransformRolesForSpecifyRates_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

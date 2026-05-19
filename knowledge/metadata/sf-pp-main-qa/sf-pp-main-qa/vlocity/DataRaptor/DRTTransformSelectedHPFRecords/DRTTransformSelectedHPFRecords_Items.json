@@ -1,0 +1,160 @@
+[
+    {
+        "FilterGroup": 0,
+        "FormulaExpression": "FILTER(LIST(%HpfList%), 'Selected == true')",
+        "FormulaResultPath": "SelectedHpfs:SelectedHpfList",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom2359",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FormulaExpression": "FILTER(LIST(%SelectedHpfs:ActiveHpfs%), 'Employment_Type__c == \"Employee\" || Employment_Type__c == \"Independent Contractor\" || Employment_Type__c == \"Locum\"')",
+        "FormulaResultPath": "SelectedHpfs:SelectedHpfList",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom4585",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom2923",
+        "InputFieldName": "SelectedHpfs:SelectedHpfList:Employment_Type__c",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HpfList:HpfEmploymentType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom1234",
+        "InputFieldName": "SelectedHpfs:SelectedHpfList:Id",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HpfList:HpfId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom8701",
+        "InputFieldName": "SelectedHpfs:SelectedHpfList:Name",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HpfList:HpfName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom1539",
+        "InputFieldName": "SelectedHpfs:SelectedHpfList:Status__c",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HpfList:HpfStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTTransformSelectedHPFRecordsCustom5088",
+        "InputFieldName": "SelectedHpfs:SelectedHpfList:UserId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTTransformSelectedHPFRecords",
+        "OmniDataTransformationId": {
+            "Name": "DRTTransformSelectedHPFRecords",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTTransformSelectedHPFRecords",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HpfList:UserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

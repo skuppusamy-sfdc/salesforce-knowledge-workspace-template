@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Endotracheal intubation (adult and child)</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Endotracheal intubation (adult and child)</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Endotracheal_intubation_adult_and_child</developerName>
+    <name>Endotracheal intubation (adult and child)</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

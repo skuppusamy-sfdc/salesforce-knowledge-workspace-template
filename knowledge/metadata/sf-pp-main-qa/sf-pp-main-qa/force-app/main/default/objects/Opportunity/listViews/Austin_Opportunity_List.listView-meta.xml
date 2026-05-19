@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Austin_Opportunity_List</fullName>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Deal__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Total_Revenue__c</columns>
+    <columns>Margin__c</columns>
+    <columns>Projected_Current_Year_Margin__c</columns>
+    <columns>Target_Contract_Start_Date__c</columns>
+    <columns>Expected_Sign_Date__c</columns>
+    <columns>Market_Manager__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Marketing Qualified Lead,Sales Qualified Opportunity,Proposal Request,Proposal Presented,Down Select,Verbal Award,MOU Signed,Contract Signed,Started</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_YEAR</value>
+    </filters>
+    <filters>
+        <field>Market_Manager__c</field>
+        <operation>equals</operation>
+        <value>Jessica Austin</value>
+    </filters>
+    <label>Austin Opportunity List</label>
+</ListView>

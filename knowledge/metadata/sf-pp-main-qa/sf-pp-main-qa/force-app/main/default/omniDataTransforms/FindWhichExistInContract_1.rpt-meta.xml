@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;FindWhichExistInContract&quot; : null,
+    &quot;GetHpfByCorporateEntityIds&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;ExistingHpfs&quot; : [ {
+    &quot;accountName&quot; : &quot;Text&quot;,
+    &quot;AccountId&quot; : &quot;Text&quot;,
+    &quot;contractingStatus&quot; : &quot;Text&quot;,
+    &quot;hpfStatus&quot; : &quot;Text&quot;,
+    &quot;facilityTitle&quot; : &quot;Text&quot;,
+    &quot;Id&quot; : &quot;Text&quot;,
+    &quot;recordId&quot; : &quot;Text&quot;,
+    &quot;checked&quot; : true,
+    &quot;Contracting_Corporate_Entity__c&quot; : &quot;&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>FindWhichExistInContract</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>Hpfs:Id</filterValue>
+        <globalKey>FindWhichExistInContractCustom7705</globalKey>
+        <inputFieldName>Healthcare_Practitioner_Facility__c</inputFieldName>
+        <inputObjectName>ProviderNetworkContract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FindWhichExistInContract</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Pncs</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FindWhichExistInContractCustom4181</globalKey>
+        <inputFieldName>Pncs:Healthcare_Practitioner_Facility__r.Account.Name</inputFieldName>
+        <inputObjectName>ProviderNetworkContract</inputObjectName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FindWhichExistInContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExistingHpfs:Name</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterDataType>REFERENCE</filterDataType>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>CurrentContractId</filterValue>
+        <globalKey>FindWhichExistInContractCustom7881</globalKey>
+        <inputFieldName>ContractId</inputFieldName>
+        <inputObjectName>ProviderNetworkContract</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FindWhichExistInContract</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Pncs</outputFieldName>
+        <outputObjectName>Turbo Extract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FindWhichExistInContractCustom2024</globalKey>
+        <inputFieldName>Pncs:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FindWhichExistInContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExistingHpfs:PncId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FindWhichExistInContractCustom885</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FindWhichExistInContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ExistingHpfs</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FindWhichExistInContractCustom1812</globalKey>
+        <inputFieldName>Pncs:Healthcare_Practitioner_Facility__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FindWhichExistInContract</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExistingHpfs:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CurrentContractId&quot; : &quot;8007x00000j3ic8AAA&quot;,
+  &quot;Hpfs&quot; : [ {
+    &quot;Id&quot; : &quot;0bS7x0000003OPBEA2&quot;
+  }, {
+    &quot;Id&quot; : &quot;0bS7x0000003uthEAA&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>FindWhichExistInContract_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

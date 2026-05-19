@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eMAC_Down_Select</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name = &quot;eMAC Sales Opportunity&quot; &amp;&amp;
+ISPICKVAL(StageName, &quot;Down Select&quot;) &amp;&amp;
+(TEXT(Bid_Process__c) = &quot;&quot;||
+ISPICKVAL(Division__c,&quot;&quot;)||
+ISNULL(Proposal_Date__c)||
+ISNULL(Margin__c)||
+ISNULL(Volume__c))</errorConditionFormula>
+    <errorMessage>These fields are required: RFP Process, Division, Proposal Date, Total Margin, and Annual Encounters.</errorMessage>
+</ValidationRule>

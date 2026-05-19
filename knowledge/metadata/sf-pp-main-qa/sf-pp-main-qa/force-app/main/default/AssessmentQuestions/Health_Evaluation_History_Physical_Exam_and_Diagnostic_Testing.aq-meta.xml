@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Health Evaluation: History, Physical Exam, and Diagnostic Testing</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Evaluate an individual’s health by taking a history, performing a physical examination and ordering and interpreting results from appropriate laboratory and diagnostic tests/procedures</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Health_Evaluation_History_Physical_Exam_and_Diagnostic_Testing</developerName>
+    <name>Health Evaluation: History, Physical Exam, and Diagnostic Testing</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateNPINumberOnPC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(NPI__pc)),
+  NOT(REGEX(TRIM(NPI__pc), &quot;^1[0-9]{9}$&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>NPI__pc</errorDisplayField>
+    <errorMessage>Make sure the NPI Number should be of 10 digits and starts with 1.</errorMessage>
+</ValidationRule>

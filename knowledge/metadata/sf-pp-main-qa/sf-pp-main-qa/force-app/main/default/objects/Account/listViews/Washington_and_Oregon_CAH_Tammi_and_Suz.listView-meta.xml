@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Washington_and_Oregon_CAH_Tammi_and_Suz</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>OR,WA</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer - WW,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>texcellency__DefHC_Hospital_Type__c</field>
+        <operation>equals</operation>
+        <value>Critical Access Hospital</value>
+    </filters>
+    <label>Washington and Oregon CAH- Tammi and Suz</label>
+</ListView>

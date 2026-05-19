@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Job__c</fullName>
+    <description>Picklist, to be taken from Bullhorn&apos;s Custom Text 19</description>
+    <label>Type of Job</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Staff Physician - DO</fullName>
+                <default>false</default>
+                <label>Staff Physician - DO</label>
+            </value>
+            <value>
+                <fullName>Staff Physician - MD</fullName>
+                <default>false</default>
+                <label>Staff Physician - MD</label>
+            </value>
+            <value>
+                <fullName>Nurse Practitioner</fullName>
+                <default>false</default>
+                <label>Nurse Practitioner</label>
+            </value>
+            <value>
+                <fullName>Physician Assistant</fullName>
+                <default>false</default>
+                <label>Physician Assistant</label>
+            </value>
+            <value>
+                <fullName>Medical Director</fullName>
+                <default>false</default>
+                <label>Medical Director</label>
+            </value>
+            <value>
+                <fullName>Assistant Medical Director</fullName>
+                <default>false</default>
+                <label>Assistant Medical Director</label>
+            </value>
+            <value>
+                <fullName>Lead NP</fullName>
+                <default>false</default>
+                <label>Lead NP</label>
+            </value>
+            <value>
+                <fullName>Lead PA</fullName>
+                <default>false</default>
+                <label>Lead PA</label>
+            </value>
+            <value>
+                <fullName>Resident</fullName>
+                <default>false</default>
+                <label>Resident</label>
+            </value>
+            <value>
+                <fullName>Physician Advisor</fullName>
+                <default>false</default>
+                <label>Physician Advisor</label>
+            </value>
+            <value>
+                <fullName>Travel Physician</fullName>
+                <default>false</default>
+                <label>Travel Physician</label>
+            </value>
+            <value>
+                <fullName>Telehospitalist</fullName>
+                <default>false</default>
+                <label>Telehospitalist</label>
+            </value>
+            <value>
+                <fullName>Registered Nurse</fullName>
+                <default>false</default>
+                <label>Registered Nurse</label>
+            </value>
+            <value>
+                <fullName>Licensed Practical Nurse</fullName>
+                <default>false</default>
+                <label>Licensed Practical Nurse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

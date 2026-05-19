@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Conflict of Interest Disclosure</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>I hereby certify that the information set forth above is true and complete to the best of my knowledge, and I expressly authorize SCP Health (SCP) to confirm the accuracy of same through all appropriate means, including contacting the appropriate parties for same. I hereby further acknowledge and understand that SCP may, from time to time, request additional information, but that it is my sole obligation to notify SCP Health in the event that any circumstances or information herein changes or requires updating throughout the year.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Disclosure</dataType>
+    <developerName>Conflict_of_Interest_Disclosure</developerName>
+    <name>Conflict of Interest Disclosure</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

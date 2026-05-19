@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PACS_Clsd_Abnd_Decld_NoChange</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is closed for PACS services.</description>
+    <errorConditionFormula>RecordType.Name = &quot;Post Acute Care Services Opportunity&quot; &amp;&amp;
+
+(ISPICKVAL(StageName, &quot;Closed - SCP Declined&quot;)||
+ ISPICKVAL(StageName, &quot;Closed - Client Abandoned Proposal&quot;)||
+ ISPICKVAL(StageName, &quot;Closed - No Change&quot;))&amp;&amp;
+  
+(ISNULL(CloseDate)||
+ ISPICKVAL(Close_Reason__c, &quot;&quot;)||
+ ISNULL(Lost_Date__c))</errorConditionFormula>
+    <errorMessage>Required Fields: Lost Date, Close Date and Close Reason.</errorMessage>
+</ValidationRule>

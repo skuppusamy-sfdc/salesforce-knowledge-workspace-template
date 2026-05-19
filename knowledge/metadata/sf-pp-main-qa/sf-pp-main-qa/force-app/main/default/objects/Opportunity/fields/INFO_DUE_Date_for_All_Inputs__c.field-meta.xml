@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INFO_DUE_Date_for_All_Inputs__c</fullName>
+    <description>Created as part of PR1050558-2143</description>
+    <label>INFO DUE Date for All Inputs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

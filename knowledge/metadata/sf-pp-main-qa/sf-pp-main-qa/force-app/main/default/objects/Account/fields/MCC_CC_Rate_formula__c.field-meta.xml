@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCC_CC_Rate_formula__c</fullName>
+    <formula>MCC_CC_RATE__c * 100</formula>
+    <label>MCC/CC Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

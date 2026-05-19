@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Tier__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        NOT(Current_Client__c),
+        Encounter_Level_Data__c,
+        NOT(Med_Mal_Limits_Unique__c),
+        Gross_Margin__c &lt;= 2500000,
+        Gross_Margin_Percent__c &gt;= 0.10,
+        At_Risk_of_Margin__c &lt;= 0.05,
+        NOT(New_State__c),
+        TEXT(Financial_Contract_Type__c) = &quot;Guaranteed Management Fee ($)&quot;,
+        Compensation_Buffer__c &gt;= 0.05,
+        NOT(Physician_Comp_Above_Below_State_Avg__c)
+    ),
+    &quot;Offline Approval&quot;,
+    &quot;DAM Approval&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Approval Tier</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

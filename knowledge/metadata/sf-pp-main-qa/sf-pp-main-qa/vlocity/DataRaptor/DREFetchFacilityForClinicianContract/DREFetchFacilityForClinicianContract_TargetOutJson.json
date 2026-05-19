@@ -1,0 +1,14 @@
+{
+    "facilityList": {
+        "HPFName": "Text",
+        "HpfId": "Text",
+        "Selected": false,
+        "cpaRecords": {
+        },
+        "facilityId": "Text",
+        "facilityName": "Text",
+        "facilityTitle": "Text",
+        "facilityTitleId": "Text",
+        "pncId": "Text"
+    }
+}

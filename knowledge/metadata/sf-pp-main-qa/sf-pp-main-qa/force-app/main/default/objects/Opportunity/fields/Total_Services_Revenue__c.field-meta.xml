@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Services_Revenue__c</fullName>
+    <label>Total Revenue</label>
+    <summarizedField>Services__c.Total_Revenue__c</summarizedField>
+    <summaryFilterItems>
+        <field>Services__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Services__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

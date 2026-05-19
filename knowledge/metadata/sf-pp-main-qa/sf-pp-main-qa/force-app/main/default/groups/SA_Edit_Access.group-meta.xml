@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users in this group are granted read and edit access to Accounts with record type &apos;Service Account&apos;</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <name>SA Edit Access</name>
+</Group>

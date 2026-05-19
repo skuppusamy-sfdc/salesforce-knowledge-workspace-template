@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_CORE_Gross_Margin__c</fullName>
+    <description>OLD Field to be reviewed for deletion.  Goaling changed from GM to OM at start of 2024, then financed changed proforma setup and calculations.  The OM calculation is now used and labeled as GM and we no longer reference OM.</description>
+    <label>Total CORE Gross Margin - OLD</label>
+    <summarizedField>Services__c.Gross_Margin__c</summarizedField>
+    <summaryFilterItems>
+        <field>Services__c.RecordTypeId</field>
+        <operation>equals</operation>
+        <value>Emergency Medicine (EM), Hospital Medicine (HM), Free Standing ED (FSED), Integrated Care Physician (ICP), Intensive Care Unit (ICU), Urgent Care (UC)</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Services__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Services__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

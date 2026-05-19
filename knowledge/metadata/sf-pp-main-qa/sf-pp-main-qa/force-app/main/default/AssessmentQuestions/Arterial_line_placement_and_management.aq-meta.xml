@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Arterial line placement and management</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Arterial line placement and management</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Arterial_line_placement_and_management</developerName>
+    <name>Arterial line placement and management</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

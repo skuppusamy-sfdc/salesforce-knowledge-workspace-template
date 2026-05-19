@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__Reports_To__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; &amp; pqcrush__Contact__r.ReportsToId, pqcrush__Contact__r.ReportsTo.FirstName + &quot; &quot; + pqcrush__Contact__r.ReportsTo.LastName)</formula>
+    <label>Reports To</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

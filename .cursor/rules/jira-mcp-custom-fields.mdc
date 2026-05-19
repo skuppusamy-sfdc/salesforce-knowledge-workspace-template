@@ -1,0 +1,107 @@
+---
+description: Always include project-specific custom fields when fetching Jira stories via the Atlassian MCP server
+globs:
+alwaysApply: true
+---
+
+# Jira MCP Custom Fields — PR1050558 Project
+
+When using the Atlassian MCP server (`plugin-atlassian-atlassian`) to fetch Jira issues for the **PR1050558** project, you MUST explicitly request the project's custom fields. The default `getJiraIssue` and `searchJiraIssuesUsingJql` responses only return standard fields and omit custom fields like Acceptance Criteria and Solution.
+
+## Cloud ID
+
+The Salesforce Jira cloud ID is: `e4adcd9e-7f5a-47eb-9e06-f34d025e104f`
+
+## Required Custom Fields
+
+Always include these in the `fields` array parameter:
+
+| Display Name | Field ID | Type |
+|---|---|---|
+| Acceptance Criteria | `customfield_10033` | Rich text (ADF) |
+| Solution | `customfield_10040` | Rich text (ADF) |
+| Build Components | `customfield_10034` | Rich text (ADF) |
+| Deployment Instructions | `customfield_10035` | Rich text (ADF) |
+| Sprint | `customfield_10020` | Sprint array |
+| Story Points | `customfield_10047` | Number |
+| Percentage Complete | `customfield_10042` | Select |
+| Business Owner | `customfield_10216` | User picker |
+| Start Date | `customfield_10015` | Date |
+| External ID | `customfield_10037` | Text |
+| Date Confirmed | `customfield_10043` | Date |
+
+## Standard `getJiraIssue` Call Template
+
+When fetching a single story, always use this pattern:
+
+```json
+{
+  "cloudId": "e4adcd9e-7f5a-47eb-9e06-f34d025e104f",
+  "issueIdOrKey": "<STORY-KEY>",
+  "fields": [
+    "summary",
+    "description",
+    "status",
+    "issuetype",
+    "priority",
+    "assignee",
+    "components",
+    "labels",
+    "fixVersions",
+    "parent",
+    "issuelinks",
+    "customfield_10033",
+    "customfield_10040",
+    "customfield_10034",
+    "customfield_10035",
+    "customfield_10020",
+    "customfield_10047",
+    "customfield_10042",
+    "customfield_10216",
+    "customfield_10015",
+    "customfield_10037",
+    "customfield_10043"
+  ],
+  "responseContentFormat": "markdown"
+}
+```
+
+## Standard `searchJiraIssuesUsingJql` Call Template
+
+When searching for stories, always include the same custom fields:
+
+```json
+{
+  "cloudId": "e4adcd9e-7f5a-47eb-9e06-f34d025e104f",
+  "jql": "<YOUR-JQL>",
+  "fields": [
+    "summary",
+    "description",
+    "status",
+    "issuetype",
+    "priority",
+    "assignee",
+    "components",
+    "labels",
+    "fixVersions",
+    "customfield_10033",
+    "customfield_10040",
+    "customfield_10034",
+    "customfield_10035",
+    "customfield_10020",
+    "customfield_10047",
+    "customfield_10042"
+  ],
+  "responseContentFormat": "markdown"
+}
+```
+
+## Content Format Notes
+
+- Rich text custom fields (AC, Solution, Build Components, Deployment Instructions) are returned in **Atlassian Document Format (ADF)** — a nested JSON structure with `type: "doc"` at the root.
+- Use `"responseContentFormat": "markdown"` to get the `description` field in markdown, but note that custom rich-text fields still come back as ADF regardless of this setting.
+- When presenting AC or Solution content to the user, parse the ADF `content` array to extract the readable text, preserving structure (headings, lists, bold, links).
+
+## Do NOT Rely on Defaults
+
+Never call `getJiraIssue` without the `fields` parameter. The Jira REST API default "navigable" field set does NOT include project custom fields, which means **Acceptance Criteria, Solution, Build Components, and Deployment Instructions will be silently omitted**.

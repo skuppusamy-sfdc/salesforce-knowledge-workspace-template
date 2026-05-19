@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICP_Johnston_8K_15K</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT.NAME</columns>
+    <columns>Account_DHC_Network_Name__c</columns>
+    <columns>Account_Geo_Classification__c</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <columns>Facility_Type__c</columns>
+    <columns>Account.Current_EM_Incumbent__c</columns>
+    <columns>Account.Current_HM_Incumbent__c</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>Target,Prospect,No Interest</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>notContain</operation>
+        <value>resigned,Retired,Gone,Do Not Use,DNU,retiring,deceased</value>
+    </filters>
+    <filters>
+        <field>Account_State__c</field>
+        <operation>equals</operation>
+        <value>Maine,Vermont,New hampshire,Connecticut,Massachusetts,Rhode Island,North Carolina,South Carolina,Virginia,West Virginia,Delaware,New York,DC,Maryland,New Jersey,Pennsylvania</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>closed,rehabilitation,long term acute,psychiatric,select,acuity,mental</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notContain</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>Account_ED_Volume__c</field>
+        <operation>greaterThan</operation>
+        <value>7000</value>
+    </filters>
+    <filters>
+        <field>Account_ED_Volume__c</field>
+        <operation>lessThan</operation>
+        <value>15000</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Executive Officer,Chief Operating Officer</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <label>ICP: Johnston &gt;8K&lt;15K</label>
+</ListView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FinalList&quot; : [ {
+    &quot;Name&quot; : &quot;Cardiology&quot;,
+    &quot;TA_PrimarySpecialty&quot; : &quot;Cardiology&quot;,
+    &quot;SpecId&quot; : null,
+    &quot;RecordId&quot; : &quot;0bc7x0000000EcTAAU&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000EcTAAU&quot;,
+    &quot;IsPrimary&quot; : true,
+    &quot;isPrimaryOrSub&quot; : &quot;true&quot;
+  }, {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;SpecId&quot; : &quot;0bO7x0000000c3hEAA&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;IsPrimary&quot; : false
+  }, {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;SpecId&quot; : null,
+    &quot;RecordId&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;TA_PracticingSpecialty&quot; : &quot;Radiology&quot;,
+    &quot;IsPrimary&quot; : null,
+    &quot;isPrimaryOrSub&quot; : &quot;true&quot;,
+    &quot;isSubSpecialty&quot; : true
+  }, {
+    &quot;Name&quot; : &quot;Nephrology&quot;,
+    &quot;SpecId&quot; : &quot;0bO7x0000000c5JEAQ&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000DzlAAE&quot;,
+    &quot;isSubSpecialty&quot; : false
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTHPCareSpecialty</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTHPCareSpecialtyCustom810</globalKey>
+        <inputFieldName>FinalList:isSubSpecialty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTHPCareSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isSubSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTHPCareSpecialtyCustom5473</globalKey>
+        <inputFieldName>FinalList:IsPrimary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTHPCareSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isPrimary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTHPCareSpecialtyCustom8987</globalKey>
+        <inputFieldName>clinicianId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTHPCareSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PractionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTHPCareSpecialtyCustom146</globalKey>
+        <inputFieldName>FinalList:SpecId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTHPCareSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HCPSpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTHPCareSpecialtyCustom6129</globalKey>
+        <inputFieldName>FinalList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTHPCareSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CareSpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTHPCareSpecialtyCustom2048</globalKey>
+        <inputFieldName>FinalList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTHPCareSpecialty</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CareSpecialtyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;FinalList&quot; : [ {
+    &quot;Name&quot; : &quot;Cardiology&quot;,
+    &quot;TA_PrimarySpecialty&quot; : &quot;Cardiology&quot;,
+    &quot;SpecId&quot; : null,
+    &quot;RecordId&quot; : &quot;0bc7x0000000EcTAAU&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000EcTAAU&quot;,
+    &quot;IsPrimary&quot; : true,
+    &quot;isPrimaryOrSub&quot; : &quot;true&quot;
+  }, {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;SpecId&quot; : &quot;0bO7x0000000c3hEAA&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;IsPrimary&quot; : false
+  }, {
+    &quot;Name&quot; : &quot;Radiology&quot;,
+    &quot;SpecId&quot; : null,
+    &quot;RecordId&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000EarAAE&quot;,
+    &quot;TA_PracticingSpecialty&quot; : &quot;Radiology&quot;,
+    &quot;IsPrimary&quot; : null,
+    &quot;isPrimaryOrSub&quot; : &quot;true&quot;,
+    &quot;isSubSpecialty&quot; : true
+  }, {
+    &quot;Name&quot; : &quot;Nephrology&quot;,
+    &quot;SpecId&quot; : &quot;0bO7x0000000c5JEAQ&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000DzlAAE&quot;,
+    &quot;isSubSpecialty&quot; : false
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTHPCareSpecialty_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

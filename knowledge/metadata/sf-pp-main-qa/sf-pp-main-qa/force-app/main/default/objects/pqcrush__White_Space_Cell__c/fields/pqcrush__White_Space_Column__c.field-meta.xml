@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__White_Space_Column__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Column</label>
+    <referenceTo>pqcrush__White_Space_Column__c</referenceTo>
+    <relationshipLabel>White Space Cells</relationshipLabel>
+    <relationshipName>White_Space_Cells</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

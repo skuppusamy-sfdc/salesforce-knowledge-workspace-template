@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COVID_KY_LA_MO_NC_NM_OK_PA_SC_TN_TX_VA_W</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>Account.Staffed_Beds__c</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prime,Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>Account.Staffed_Beds__c</field>
+        <operation>greaterThan</operation>
+        <value>50</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Chief Nursing Officer,CNO</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>LA,MO,NM,NC,OK,PA,SC,TN,TX,VA,WV</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>,Tammany,Knox,Great River,san Juan,Pleasant Valley</value>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_ACTIVITY</field>
+        <operation>lessThan</operation>
+        <value>10/18/2020</value>
+    </filters>
+    <filters>
+        <field>PARENT.NAME</field>
+        <operation>notContain</operation>
+        <value>Tammany,Ballad,Lafayette,Ochsner,Opelousas</value>
+    </filters>
+    <label>COVID-KY,LA,MO,NC,NM,OK,PA,SC,TN,TX,VA,W</label>
+</ListView>

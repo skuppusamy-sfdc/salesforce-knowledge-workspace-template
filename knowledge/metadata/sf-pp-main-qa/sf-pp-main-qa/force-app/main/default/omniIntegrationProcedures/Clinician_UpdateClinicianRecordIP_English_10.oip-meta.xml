@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;clinicianRecordId&quot;: &quot;0017x00001G68sPAAR&quot;,
+    &quot;taxanomiesFromNPPES&quot;: {
+        &quot;primary&quot;: true,
+        &quot;license&quot;: &quot;22709&quot;,
+        &quot;state&quot;: &quot;NE&quot;,
+        &quot;taxonomy_group&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;208000000X&quot;,
+        &quot;desc&quot;: &quot;Pediatrics&quot;
+    },
+    &quot;basicInformationFromNPPES&quot;: {
+        &quot;name_suffix&quot;: &quot;--&quot;,
+        &quot;name_prefix&quot;: &quot;Dr.&quot;,
+        &quot;status&quot;: &quot;A&quot;,
+        &quot;last_updated&quot;: &quot;2007-07-08&quot;,
+        &quot;enumeration_date&quot;: &quot;2006-10-12&quot;,
+        &quot;sex&quot;: &quot;F&quot;,
+        &quot;sole_proprietor&quot;: &quot;NO&quot;,
+        &quot;credential&quot;: &quot;MD&quot;,
+        &quot;middle_name&quot;: &quot;K&quot;,
+        &quot;last_name&quot;: &quot;ANDERSON&quot;,
+        &quot;first_name&quot;: &quot;RACHEL&quot;
+    },
+    &quot;enteredNPINumber&quot;: &quot;1669561106&quot;,
+    &quot;clinicianTaxanomies&quot;: [
+        {
+            &quot;IsPrimaryTaxonomy&quot;: false,
+            &quot;Name&quot;: &quot;Pediatrics&quot;,
+            &quot;Id&quot;: &quot;0bP7x0000000HVVEA2&quot;,
+            &quot;PractitionerId&quot;: &quot;0037x000014oK7BAAU&quot;
+        },
+        {
+            &quot;IsPrimaryTaxonomy&quot;: false,
+            &quot;Name&quot;: &quot;Allopathic &amp; Osteopathic Physicians/Surgery/Hospice and Palliative Medicine&quot;,
+            &quot;Id&quot;: &quot;0bP7x0000000N4fEAE&quot;,
+            &quot;PractitionerId&quot;: &quot;0037x000014oK7BAAU&quot;,
+            &quot;TaxonomyCode&quot;: &quot;2086H0002X&quot;
+        },
+        {
+            &quot;IsPrimaryTaxonomy&quot;: false,
+            &quot;Name&quot;: &quot;Physician Assistants &amp; Advanced Practice Nursing Providers/Clinical Nurse Specialist, Psychiatric/Mental Health, Adult&quot;,
+            &quot;Id&quot;: &quot;0bP7x0000000NUTEA2&quot;,
+            &quot;PractitionerId&quot;: &quot;0037x000014oK7BAAU&quot;,
+            &quot;TaxonomyCode&quot;: &quot;364SP0809X&quot;
+        },
+        {
+            &quot;IsPrimaryTaxonomy&quot;: false,
+            &quot;Name&quot;: &quot;Allopathic &amp; Osteopathic Physicians/General Practice&quot;,
+            &quot;Id&quot;: &quot;0bP7x0000000NXhEAM&quot;,
+            &quot;PractitionerId&quot;: &quot;0037x000014oK7BAAU&quot;,
+            &quot;TaxonomyCode&quot;: &quot;208D00000X&quot;
+        },
+        {
+            &quot;IsPrimaryTaxonomy&quot;: true,
+            &quot;Name&quot;: &quot;Physician Assistants &amp; Advanced Practice Nursing Providers/Nurse Practitioner, Pediatrics&quot;,
+            &quot;Id&quot;: &quot;0bP7x0000000NZJEA2&quot;,
+            &quot;PractitionerId&quot;: &quot;0037x000014oK7BAAU&quot;,
+            &quot;TaxonomyCode&quot;: &quot;363LP0200X&quot;
+        }
+    ],
+    &quot;clinicianBoardCertifications&quot;: {
+        &quot;Id&quot;: &quot;0YS7x00000007O5GAI&quot;,
+        &quot;PractitionerId&quot;: &quot;0037x000014oK7BAAU&quot;,
+        &quot;CertificationName&quot;: &quot;Board Certification&quot;
+    },
+    &quot;clinicianDetails&quot;: {
+        &quot;Name&quot;: &quot;Rachel K Anderson&quot;,
+        &quot;MiddleName&quot;: &quot;K&quot;,
+        &quot;LastName&quot;: &quot;Anderson&quot;,
+        &quot;Id&quot;: &quot;0017x00001G68sPAAR&quot;,
+        &quot;RecordTypeId&quot;: &quot;0127x00000GaDvBAAV&quot;,
+        &quot;PersonContactId&quot;: &quot;0037x000014oK7BAAU&quot;,
+        &quot;FirstName&quot;: &quot;Rachel&quot;
+    },
+    &quot;Err_RunningContext&quot;: &quot;ClinicianValidateClinicianDataVsNPPESOutputOS:Clinician_UpdateClinicianRecordIP&quot;,
+    &quot;Err_CtxId&quot;: &quot;0017x00001G68sPAAR&quot;,
+    &quot;Err_ProcessType&quot;: &quot;IP&quot;,
+    &quot;casedFirstNameFromNPPES&quot;: &quot;Rachel&quot;,
+    &quot;casedMiddleNameFromNPPES&quot;: &quot;K&quot;,
+    &quot;casedLastNameFromNPPES&quot;: &quot;Anderson&quot;,
+    &quot;omniScriptId&quot;: &quot;0jN7x0000004ZqPEAU&quot;,
+    &quot;elementName&quot;: &quot;UpdateClinicianRecord&quot;
+}</customJavaScript>
+    <description>Updates Clinician record with Board Certifications And HealthCare Taxonomies.</description>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>English</language>
+    <name>ClinicianUpdateClinicianRecordIP</name>
+    <omniProcessElements>
+        <description>Response Action</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;ResponseAction&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;isActive&quot; : true,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <description>Get taxonomy Code and Id</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>DMExtractTaxonomyCode</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DMExtractTaxonomyCode&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;taxanomiesFromNPPES&quot;,
+    &quot;element&quot; : &quot;taxanomiesFromNPPES&quot;
+  }, {
+    &quot;inputParam&quot; : &quot;clinicianRecordId&quot;,
+    &quot;element&quot; : &quot;clinicianDetails:PersonContactId&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;isActive&quot; : true,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { },
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Extract Action</type>
+        </childElements>
+        <childElements>
+            <description>List Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ListActionSetPrimaryTaxonomyList</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;useFormulas&quot; : false,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : true,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;ListUpdateTaxonomyHC&quot;,
+    &quot;matchingPath&quot; : &quot;TaxonomyCode&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;matchingPath&quot; : &quot;code&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;,
+    &quot;listKey&quot; : &quot;taxanomiesFromNPPESList&quot;
+  } ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;ListUpdateTaxonomyHC&quot;, &quot;taxanomiesFromNPPESList&quot; ],
+  &quot;filterListFormula&quot; : &quot;Name != null&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;Name&quot; : &quot;=IF(ISBLANK(Name), desc, Name)&quot;,
+    &quot;primary&quot; : &quot;=IF(primary == true, true, false)&quot;
+  },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;isActive&quot; : true,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;restOptions&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ListAction4&quot;
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <description>List Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ListUpdateTaxonomyHC</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : false,
+  &quot;useFormulas&quot; : false,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;advancedMerge&quot; : true,
+  &quot;advancedMergeMap&quot; : [ {
+    &quot;listKey&quot; : &quot;DMExtractTaxonomyCode:taxonomyCare&quot;,
+    &quot;matchingPath&quot; : &quot;TaxonomyCode&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  }, {
+    &quot;listKey&quot; : &quot;DMExtractTaxonomyCode:HCTaxonomyList&quot;,
+    &quot;matchingPath&quot; : &quot;TaxonomyCode&quot;,
+    &quot;normalizeKey&quot; : &quot;1&quot;
+  } ],
+  &quot;preventIntraListMerge&quot; : false,
+  &quot;mergeFields&quot; : [ ],
+  &quot;allowMergeNulls&quot; : false,
+  &quot;hasPrimary&quot; : false,
+  &quot;primaryListKey&quot; : &quot;&quot;,
+  &quot;sortBy&quot; : [ ],
+  &quot;sortInDescendingOrder&quot; : false,
+  &quot;mergeListsOrder&quot; : [ &quot;DMExtractTaxonomyCode:taxonomyCare&quot;, &quot;DMExtractTaxonomyCode:HCTaxonomyList&quot; ],
+  &quot;filterListFormula&quot; : &quot;&quot;,
+  &quot;dynamicOutputFields&quot; : &quot;&quot;,
+  &quot;updateFieldValue&quot; : {
+    &quot;TaxonomyId&quot; : &quot;=IF(ISBLANK(TaxonomyId), Id, TaxonomyId)&quot;
+  },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;isActive&quot; : true,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;&quot;,
+  &quot;disOnTplt&quot; : false,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>List Merge Action</type>
+        </childElements>
+        <childElements>
+            <description>Data Mapper Post Action</description>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LoadClinicianRecordWithTaxAndCertsNew</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;casedLastNameFromNPPES&quot; : &quot;=%casedLastNameFromNPPES%&quot;,
+    &quot;NPPESBasic&quot; : &quot;=%basicInformationFromNPPES%&quot;,
+    &quot;casedMiddleNameFromNPPES&quot; : &quot;=%casedMiddleNameFromNPPES%&quot;,
+    &quot;ContextId&quot; : &quot;=%clinicianRecordId%&quot;,
+    &quot;casedFirstNameFromNPPES&quot; : &quot;=%casedFirstNameFromNPPES%&quot;,
+    &quot;TaxonomiesToBeUpserted&quot; : &quot;=%ListActionSetPrimaryTaxonomyList%&quot;,
+    &quot;NPINumber&quot; : &quot;=%enteredNPINumber%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;LoadClinicianRecordWithTaxAndCertsNew&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;disOnTplt&quot; : false,
+  &quot;id&quot; : &quot;&quot;,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>DataRaptor Post Action</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>SV_taxanomiesFromNPPES</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;taxanomiesFromNPPESList&quot; : &quot;=LIST(%taxanomiesFromNPPES%)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;taxanomiesFromNPPESList&quot;,
+  &quot;responseJSONNode&quot; : &quot;taxanomiesFromNPPESList&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <description>Try-Catch Block</description>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlockForCliniciansAndRelatedRecords</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failOnBlockError&quot; : false,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logerror&quot;,
+  &quot;failureResponse&quot; : { },
+  &quot;id&quot; : &quot;&quot;,
+  &quot;internalNotes&quot; : &quot;&quot;,
+  &quot;isActive&quot; : true,
+  &quot;restOptions&quot; : { }
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_UpdateClinicianRecordIP</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>UpdateClinicianRecordIP</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_UpdateClinicianRecordIP_English_10</uniqueName>
+    <versionNumber>10.0</versionNumber>
+    <webComponentKey>f8205359-4838-e155-7705-771861a747cb</webComponentKey>
+</OmniIntegrationProcedure>

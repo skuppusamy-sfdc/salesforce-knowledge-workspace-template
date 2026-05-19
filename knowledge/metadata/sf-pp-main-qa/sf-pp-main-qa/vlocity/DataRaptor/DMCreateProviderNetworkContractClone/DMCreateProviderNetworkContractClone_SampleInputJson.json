@@ -1,0 +1,32 @@
+{
+    "LA_MergeList": [
+        {
+            "AccountName": "Muskan Ser Acc",
+            "CPAAccount__c": "0017x00001Bn7slAAB",
+            "CPAAgreementType": "Preventive Care Agreement",
+            "CPAContractId": "8007x00000ZrVsjAAF",
+            "CPAId": "0rR7x00000001wzEAA",
+            "CPAKey": "17B2ADCB3A4D412EB85DC6D35D56EAC1-1457876826",
+            "CPAName": "Muskan Ser Acc",
+            "CPAStatus": "ACTIVATED",
+            "CPAType__c": "Shift",
+            "ContractPaymentAgreementId": "0rR7x00000001wzEAA",
+            "FacilityTitleName": "Ambassador NP/PA",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "Id": "0bS7x0000003CELEA2",
+            "Name": "PCA-0069",
+            "OverrideProhibited": false,
+            "PCAId": "0s47x00000005SjAAI",
+            "Rate__c": 78,
+            "Unit_of_Measure__c": "per Hour",
+            "accountName": "Test Service Account",
+            "checked": true,
+            "contractingStatus": null,
+            "effectiveDate": null,
+            "facilityId": "0hs7x0000007K8aAAE",
+            "facilityTitle": "Ambassador NP/PA",
+            "hpfStatus": "Prospect",
+            "selectRate": true
+        }
+    ]
+}

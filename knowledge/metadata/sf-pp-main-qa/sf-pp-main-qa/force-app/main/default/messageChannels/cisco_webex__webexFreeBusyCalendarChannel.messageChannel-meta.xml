@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to get the calendar availability for certain users</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <description>FreeBusy API response</description>
+        <fieldName>calendarFreeBusyScheduleResponse</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexFreeBusyCalendarChannel</masterLabel>
+</LightningMessageChannel>

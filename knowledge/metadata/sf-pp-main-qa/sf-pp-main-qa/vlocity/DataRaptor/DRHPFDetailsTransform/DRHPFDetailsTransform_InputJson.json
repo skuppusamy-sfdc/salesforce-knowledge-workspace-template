@@ -1,0 +1,30 @@
+{
+    "hpfRecord": [
+        {
+            "Facility_Title__c": "0hs7x0000007K8aAAE",
+            "Facility_Title__r": {
+                "Code_Set_Sub_Type__c": "Independent Contractor",
+                "Id": "0hs7x0000007K8aAAE"
+            },
+            "Id": "0bS7x0000003DDdEAM",
+            "Practitioner": {
+                "Id": "0037x000015QqQzAAK",
+                "Professional_Status__c": "Resident"
+            },
+            "PractitionerId": "0037x000015QqQzAAK"
+        },
+        {
+            "Facility_Title__c": "0hs7x0000007K8bAAE",
+            "Facility_Title__r": {
+                "Code_Set_Sub_Type__c": "Employee",
+                "Id": "0hs7x0000007K8bAAE"
+            },
+            "Id": "0bS7x0000003KbhEAE",
+            "Practitioner": {
+                "Id": "0037x000015QqQzAAK",
+                "Professional_Status__c": "Resident"
+            },
+            "PractitionerId": "0037x000015QqQzAAK"
+        }
+    ]
+}

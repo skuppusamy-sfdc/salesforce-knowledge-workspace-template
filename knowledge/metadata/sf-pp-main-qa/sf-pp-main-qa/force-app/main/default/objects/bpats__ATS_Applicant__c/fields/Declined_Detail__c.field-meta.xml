@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Declined_Detail__c</fullName>
+    <description>Indicates the reason a candidate has been declined</description>
+    <inlineHelpText>select a reason the candidate has been declined</inlineHelpText>
+    <label>Declined Detail</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Declined__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cannot Sponsor Visa</fullName>
+                <default>false</default>
+                <label>Cannot Sponsor Visa</label>
+            </value>
+            <value>
+                <fullName>Clinical Experience</fullName>
+                <default>false</default>
+                <label>Clinical Experience</label>
+            </value>
+            <value>
+                <fullName>Credentials</fullName>
+                <default>false</default>
+                <label>Credentials</label>
+            </value>
+            <value>
+                <fullName>Do not hire</fullName>
+                <default>false</default>
+                <label>Do not hire</label>
+            </value>
+            <value>
+                <fullName>Location Terminated</fullName>
+                <default>false</default>
+                <label>Location Terminated</label>
+            </value>
+            <value>
+                <fullName>No position available</fullName>
+                <default>false</default>
+                <label>No position available</label>
+            </value>
+            <value>
+                <fullName>Qualifications</fullName>
+                <default>false</default>
+                <label>Qualifications</label>
+            </value>
+            <value>
+                <fullName>Reference</fullName>
+                <default>false</default>
+                <label>Reference</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Accepted Another Position</fullName>
+                <default>false</default>
+                <label>Accepted Another Position</label>
+            </value>
+            <value>
+                <fullName>Benefits Package Not Competitive</fullName>
+                <default>false</default>
+                <label>Benefits Package Not Competitive</label>
+            </value>
+            <value>
+                <fullName>Clinical Scope Not Aligned with My Skills or Interests</fullName>
+                <default>false</default>
+                <label>Clinical Scope Not Aligned with My Skills or Interests</label>
+            </value>
+            <value>
+                <fullName>Compensation Package Not Competitive</fullName>
+                <default>false</default>
+                <label>Compensation Package Not Competitive</label>
+            </value>
+            <value>
+                <fullName>Concerns about Practice Culture, Stability, or Reputation</fullName>
+                <default>false</default>
+                <label>Concerns about Practice Culture, Stability, or Reputation</label>
+            </value>
+            <value>
+                <fullName>Contract Terms (Non-Financial) Not Acceptable</fullName>
+                <default>false</default>
+                <label>Contract Terms (Non-Financial) Not Acceptable</label>
+            </value>
+            <value>
+                <fullName>Credentialing Process Too Burdensome</fullName>
+                <default>false</default>
+                <label>Credentialing Process Too Burdensome</label>
+            </value>
+            <value>
+                <fullName>Decided to Stay at Current Position</fullName>
+                <default>false</default>
+                <label>Decided to Stay at Current Position</label>
+            </value>
+            <value>
+                <fullName>Licensing or Visa Complications</fullName>
+                <default>false</default>
+                <label>Licensing or Visa Complications</label>
+            </value>
+            <value>
+                <fullName>Location Not Desirable</fullName>
+                <default>false</default>
+                <label>Location Not Desirable</label>
+            </value>
+            <value>
+                <fullName>Negative Interview Experience</fullName>
+                <default>false</default>
+                <label>Negative Interview Experience</label>
+            </value>
+            <value>
+                <fullName>No Longer Seeking a New Opportunity</fullName>
+                <default>false</default>
+                <label>No Longer Seeking a New Opportunity</label>
+            </value>
+            <value>
+                <fullName>Organization’s Values Not Aligned with Mine</fullName>
+                <default>false</default>
+                <label>Organization’s Values Not Aligned with Mine</label>
+            </value>
+            <value>
+                <fullName>Personal Circumstances Have Changed</fullName>
+                <default>false</default>
+                <label>Personal Circumstances Have Changed</label>
+            </value>
+            <value>
+                <fullName>Poor Communication During Recruitment</fullName>
+                <default>false</default>
+                <label>Poor Communication During Recruitment</label>
+            </value>
+            <value>
+                <fullName>Practice Model Not a Good Fit</fullName>
+                <default>false</default>
+                <label>Practice Model Not a Good Fit</label>
+            </value>
+            <value>
+                <fullName>Prefer Not to Disclose</fullName>
+                <default>false</default>
+                <label>Prefer Not to Disclose</label>
+            </value>
+            <value>
+                <fullName>Process Taking Too Long</fullName>
+                <default>false</default>
+                <label>Process Taking Too Long</label>
+            </value>
+            <value>
+                <fullName>Scheduling Expectations Not Acceptable</fullName>
+                <default>false</default>
+                <label>Scheduling Expectations Not Acceptable</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>144 hour commitment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>144 hour commitment</label>
+            </value>
+            <value>
+                <fullName>Accepted Another Offer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Accepted Another Offer</label>
+            </value>
+            <value>
+                <fullName>Benefits</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Benefits</label>
+            </value>
+            <value>
+                <fullName>Compensation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Compensation</label>
+            </value>
+            <value>
+                <fullName>Contracting Delay</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contracting Delay</label>
+            </value>
+            <value>
+                <fullName>Culture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Culture</label>
+            </value>
+            <value>
+                <fullName>Exclusivity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Exclusivity</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>No loan forgiveness</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No loan forgiveness</label>
+            </value>
+            <value>
+                <fullName>Practice Model</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Practice Model</label>
+            </value>
+            <value>
+                <fullName>Schedule</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Schedule</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Cannot Sponsor Visa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Clinical Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Credentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Do not hire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Location Terminated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>No position available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Qualifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Reference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <valueName>Unresponsive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCP Declined</controllingFieldValue>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Accepted Another Position</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Benefits Package Not Competitive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Clinical Scope Not Aligned with My Skills or Interests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Compensation Package Not Competitive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Concerns about Practice Culture, Stability, or Reputation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Contract Terms (Non-Financial) Not Acceptable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Credentialing Process Too Burdensome</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Decided to Stay at Current Position</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Licensing or Visa Complications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Location Not Desirable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Negative Interview Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>No Longer Seeking a New Opportunity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Organization’s Values Not Aligned with Mine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Personal Circumstances Have Changed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Poor Communication During Recruitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Practice Model Not a Good Fit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Prefer Not to Disclose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Process Taking Too Long</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Candidate Declined</controllingFieldValue>
+            <valueName>Scheduling Expectations Not Acceptable</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

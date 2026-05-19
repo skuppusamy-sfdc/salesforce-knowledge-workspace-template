@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Task on Contract Creation</label>
+    <protected>true</protected>
+    <values>
+        <field>Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Priority__c</field>
+        <value xsi:type="xsd:string">Normal</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">Open</value>
+    </values>
+    <values>
+        <field>Subject__c</field>
+        <value xsi:type="xsd:string">Populate the Shift Map &amp; Rates template</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Malpractice Claims History</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Previous denial of liability coverage</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Risk_Review_Malpractice_Claims_History_Question_5</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Malpractice Claims History</name>
+    <questionCategory>Malpractice Claims History</questionCategory>
+</AssessmentQuestion>

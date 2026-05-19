@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>[ {
+  &quot;SelectedId&quot; : &quot;0bS7x0000003ACXEA2&quot;,
+  &quot;Selectedchecked&quot; : true,
+  &quot;SelectedhpfStatus&quot; : &quot;Prospect&quot;,
+  &quot;SelectedeffectiveDate&quot; : &quot;2025-07-22&quot;,
+  &quot;SelectedaccountName&quot; : &quot;test facility&quot;,
+  &quot;SelectedfacilityTitle&quot; : &quot;External Locums&quot;
+}, {
+  &quot;SelectedeffectiveDate&quot; : &quot;2025-07-22&quot;,
+  &quot;SelectedId&quot; : &quot;0bS7x0000003AE9EAM&quot;,
+  &quot;Selectedchecked&quot; : true,
+  &quot;SelectedhpfStatus&quot; : &quot;Prospect&quot;,
+  &quot;SelectedaccountName&quot; : &quot;test facility&quot;,
+  &quot;SelectedfacilityTitle&quot; : &quot;Leased Employee&quot;
+} ]</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRLoadClinicianHPFUpdate</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLoadClinicianHPFUpdateCustom8382</globalKey>
+        <inputFieldName>Data:SelectedeffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadClinicianHPFUpdate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EffectiveFrom</outputFieldName>
+        <outputObjectName>HealthcarePractitionerFacility</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLoadClinicianHPFUpdateCustom4802</globalKey>
+        <inputFieldName>Data:SelectedId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadClinicianHPFUpdate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>HealthcarePractitionerFacility</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLoadClinicianHPFUpdateCustom6425</globalKey>
+        <inputFieldName>Data:SelectedNoOfhours</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLoadClinicianHPFUpdate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>No_of_Hours_Anticipated_to_Work__c</outputFieldName>
+        <outputObjectName>HealthcarePractitionerFacility</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLoadClinicianHPFUpdateCustom3051</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLoadClinicianHPFUpdate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>HealthcarePractitionerFacility</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;Err_RunningContext&quot; : &quot;ClinicianContractRequestOS&quot;,
+  &quot;Err_CtxId&quot; : &quot;001bf00000TIsSmAAL&quot;,
+  &quot;Err_ProcessType&quot; : &quot;IP&quot;,
+  &quot;Data&quot; : {
+    &quot;SelectedNoOfhours&quot; : 133,
+    &quot;SelectedId&quot; : &quot;0bSbf000000AsTlEAK&quot;,
+    &quot;SelectedeffectiveDate&quot; : &quot;2025-12-22&quot;,
+    &quot;SelectedcontractingStatus&quot; : &quot;&quot;,
+    &quot;SelectedaccountName&quot; : &quot;TEST Service Account 25thNov&quot;,
+    &quot;SelectedfacilityTitle&quot; : &quot;Physician&quot;,
+    &quot;Selectedchecked&quot; : true,
+    &quot;SelectedhpfStatus&quot; : &quot;Prospect&quot;
+  },
+  &quot;omniScriptId&quot; : &quot;0jNbf0000005KB0EAM&quot;,
+  &quot;elementName&quot; : &quot;IP_UpdateClinicianHPFSelected&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLoadClinicianHPFUpdate_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Facility Carrier Type --></label>
+    <name>Facility_Carrier_Type__c</name>
+    <picklistValues>
+        <masterLabel>ACO</masterLabel>
+        <translation><!-- ACO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASO</masterLabel>
+        <translation><!-- ASO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>After Hours Charge</masterLabel>
+        <translation><!-- After Hours Charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All COMM Products</masterLabel>
+        <translation><!-- All COMM Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>All Products</masterLabel>
+        <translation><!-- All Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIN-Clinically Integrated Network</masterLabel>
+        <translation><!-- CIN-Clinically Integrated Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPT Suppression</masterLabel>
+        <translation><!-- CPT Suppression --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Integration</masterLabel>
+        <translation><!-- Clinical Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct</masterLabel>
+        <translation><!-- Direct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EHP</masterLabel>
+        <translation><!-- EHP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EKG Suppression</masterLabel>
+        <translation><!-- EKG Suppression --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPO</masterLabel>
+        <translation><!-- EPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange</masterLabel>
+        <translation><!-- Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Rate</masterLabel>
+        <translation><!-- Flat Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HMO</masterLabel>
+        <translation><!-- HMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospice</masterLabel>
+        <translation><!-- Hospice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital Employee</masterLabel>
+        <translation><!-- Hospital Employee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital Employee Work Comp</masterLabel>
+        <translation><!-- Hospital Employee Work Comp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital Specific Information</masterLabel>
+        <translation><!-- Hospital Specific Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital System Affiliation</masterLabel>
+        <translation><!-- Hospital System Affiliation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indemnity</masterLabel>
+        <translation><!-- Indemnity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indigent</masterLabel>
+        <translation><!-- Indigent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inmate/Prison</masterLabel>
+        <translation><!-- Inmate/Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ins Pmt &amp; Bill Co-ins Only</masterLabel>
+        <translation><!-- Ins Pmt &amp; Bill Co-ins Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ins Pmt &amp; Bill Co-pay Only</masterLabel>
+        <translation><!-- Ins Pmt &amp; Bill Co-pay Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ins Pmt &amp; Bill Ded Only</masterLabel>
+        <translation><!-- Ins Pmt &amp; Bill Ded Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Only</masterLabel>
+        <translation><!-- Insurance Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOA</masterLabel>
+        <translation><!-- LOA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSE</masterLabel>
+        <translation><!-- MSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicaid</masterLabel>
+        <translation><!-- Medicaid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicare</masterLabel>
+        <translation><!-- Medicare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAR</masterLabel>
+        <translation><!-- PAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHO</masterLabel>
+        <translation><!-- PHO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS</masterLabel>
+        <translation><!-- POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPO</masterLabel>
+        <translation><!-- PPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPP</masterLabel>
+        <translation><!-- PPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repricer</masterLabel>
+        <translation><!-- Repricer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Arrangement</masterLabel>
+        <translation><!-- Special Arrangement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suture Removal Suppression</masterLabel>
+        <translation><!-- Suture Removal Suppression --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traditional</masterLabel>
+        <translation><!-- Traditional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UCR</masterLabel>
+        <translation><!-- UCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UCR 3 Balance Bill</masterLabel>
+        <translation><!-- UCR 3 Balance Bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninsured discount</masterLabel>
+        <translation><!-- Uninsured discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worker&apos;s Comp</masterLabel>
+        <translation><!-- Worker&apos;s Comp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

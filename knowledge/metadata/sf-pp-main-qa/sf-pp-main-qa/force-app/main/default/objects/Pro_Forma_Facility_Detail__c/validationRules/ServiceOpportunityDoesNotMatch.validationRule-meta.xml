@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceOpportunityDoesNotMatch</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Model__r.Opportunity__c)),
+    NOT(ISBLANK(Opportunity_Service__r.Opportunity__c)),
+Model__r.Opportunity__c &lt;&gt;  Opportunity_Service__r.Opportunity__c
+)</errorConditionFormula>
+    <errorMessage>The &quot;Service Opportunity&quot; Does Not Match With &quot;Pro Forma Model Opportunity&quot;</errorMessage>
+</ValidationRule>

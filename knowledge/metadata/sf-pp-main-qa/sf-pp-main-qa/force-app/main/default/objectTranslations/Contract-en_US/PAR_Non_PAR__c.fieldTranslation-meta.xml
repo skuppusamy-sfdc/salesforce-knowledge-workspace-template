@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PAR/Non-PAR --></label>
+    <name>PAR_Non_PAR__c</name>
+    <picklistValues>
+        <masterLabel>NON-PAR</masterLabel>
+        <translation><!-- NON-PAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAR</masterLabel>
+        <translation><!-- PAR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

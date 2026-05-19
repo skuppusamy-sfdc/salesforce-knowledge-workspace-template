@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Neonatal Resuscitation V2</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Neonatal Resuscitation</questionText>
+        <responseValues>A
+B
+C</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Neonatal_Resuscitation_V2</developerName>
+    <name>Neonatal Resuscitation V2</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

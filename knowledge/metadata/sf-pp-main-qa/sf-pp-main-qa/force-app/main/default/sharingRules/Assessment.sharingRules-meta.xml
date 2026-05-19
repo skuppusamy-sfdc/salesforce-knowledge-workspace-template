@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Assessment_Sharing_Rule_for_Clinician_Risk_Review</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Rule to provide ability to view the related Risk Review Assessment response to public group Clinician Risk Review.</description>
+        <label>Assessment Sharing Rule for Clinician Risk Review</label>
+        <sharedTo>
+            <group>Clinician_Risk_Review</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>Risk Review</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Clinician_Survey_Edit_Access_to_Assessments</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Clinician Survey Edit Access to Assessments</label>
+        <sharedTo>
+            <group>Clinician_Survey_Edit</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Clinician_Survey_Read_Access_to_Assessment</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Clinician Survey Read Access to Assessment</label>
+        <sharedTo>
+            <group>Clinician_Survey_Read</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Intake_Form_with_Manage_Onboarding_Forms</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Intake Form with Manage Onboarding Forms</label>
+        <sharedTo>
+            <group>Manage_Onboarding_Forms</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>Intake Form</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

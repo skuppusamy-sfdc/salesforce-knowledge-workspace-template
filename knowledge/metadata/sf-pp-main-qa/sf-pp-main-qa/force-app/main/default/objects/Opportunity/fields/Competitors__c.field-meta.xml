@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitors__c</fullName>
+    <inlineHelpText>Select all competitors, including the incumbent if applicable, who are fighting to win the business.</inlineHelpText>
+    <label>Competitors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TEAMHealth</fullName>
+                <default>false</default>
+                <label>TEAMHealth</label>
+            </value>
+            <value>
+                <fullName>US Acute Care Solutions (USACS)</fullName>
+                <default>false</default>
+                <label>US Acute Care Solutions (USACS)</label>
+            </value>
+            <value>
+                <fullName>Envision</fullName>
+                <default>false</default>
+                <label>Envision</label>
+            </value>
+            <value>
+                <fullName>Vituity</fullName>
+                <default>false</default>
+                <label>Vituity</label>
+            </value>
+            <value>
+                <fullName>Sound Physicians</fullName>
+                <default>false</default>
+                <label>Sound Physicians</label>
+            </value>
+            <value>
+                <fullName>Apollo MD</fullName>
+                <default>false</default>
+                <label>Apollo MD</label>
+            </value>
+            <value>
+                <fullName>Employed</fullName>
+                <default>false</default>
+                <label>Employed</label>
+            </value>
+            <value>
+                <fullName>Regional Group</fullName>
+                <default>false</default>
+                <label>Regional Group</label>
+            </value>
+            <value>
+                <fullName>Local Groups</fullName>
+                <default>false</default>
+                <label>Local Groups</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

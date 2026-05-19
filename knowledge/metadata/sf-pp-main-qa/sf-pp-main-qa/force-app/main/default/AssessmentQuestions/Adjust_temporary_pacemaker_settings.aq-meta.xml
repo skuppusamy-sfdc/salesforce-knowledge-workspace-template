@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Adjust temporary pacemaker settings</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Adjust temporary pacemaker settings</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Adjust_temporary_pacemaker_settings</developerName>
+    <name>Adjust temporary pacemaker settings</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

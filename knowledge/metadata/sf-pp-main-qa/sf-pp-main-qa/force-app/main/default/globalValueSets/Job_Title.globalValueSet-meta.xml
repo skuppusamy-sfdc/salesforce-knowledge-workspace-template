@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Physician</fullName>
+        <default>false</default>
+        <label>Physician</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Director</fullName>
+        <default>false</default>
+        <label>Medical Director</label>
+    </customValue>
+    <customValue>
+        <fullName>Assistant Medical Director</fullName>
+        <default>false</default>
+        <label>Assistant Medical Director</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Advanced Practice Provider</fullName>
+        <default>false</default>
+        <label>Lead Advanced Practice Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurse Practitioner</fullName>
+        <default>false</default>
+        <label>Nurse Practitioner</label>
+    </customValue>
+    <customValue>
+        <fullName>Physician Assistant</fullName>
+        <default>false</default>
+        <label>Physician Assistant</label>
+    </customValue>
+    <customValue>
+        <fullName>Resident</fullName>
+        <default>false</default>
+        <label>Resident</label>
+    </customValue>
+    <customValue>
+        <fullName>Physician Advisor</fullName>
+        <default>false</default>
+        <label>Physician Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Travel Physician</fullName>
+        <default>false</default>
+        <label>Travel Physician</label>
+    </customValue>
+    <customValue>
+        <fullName>Telehospitalist</fullName>
+        <default>false</default>
+        <label>Telehospitalist</label>
+    </customValue>
+    <customValue>
+        <fullName>Registered Nurse</fullName>
+        <default>false</default>
+        <label>Registered Nurse</label>
+    </customValue>
+    <customValue>
+        <fullName>Licensed Practical Nurse</fullName>
+        <default>false</default>
+        <label>Licensed Practical Nurse</label>
+    </customValue>
+    <customValue>
+        <fullName>Nurse Practitioner or Physician Assistant</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nurse Practitioner or Physician Assistant</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Practice Provider</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Practice Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Travel Nurse Practitioner or Physician Assistant</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Travel Nurse Practitioner or Physician Assistant</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Nurse Practitioner or Lead Physician Assistant</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lead Nurse Practitioner or Lead Physician Assistant</label>
+    </customValue>
+    <masterLabel>Job Title</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

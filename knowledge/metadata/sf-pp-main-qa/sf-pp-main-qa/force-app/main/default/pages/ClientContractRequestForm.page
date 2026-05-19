@@ -1,0 +1,9 @@
+<apex:page lightningStylesheets="true">
+    <apex:form >
+        <div>
+            <b>Please click on below button to submit Client Contract - Request Form</b>
+        </div>
+        <br/>
+        <apex:commandButton style="slds-button slds-button_brand" value="Submit Client Contract Request Form" onclick="window.open('https://sgcorp.my.site.com/s/?submittedby={!$User.FirstName}{!$User.LastName}', '_blank');" />
+    </apex:form>
+</apex:page>

@@ -1,0 +1,73 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRFetchPayCodesCBOptions035101154173986404",
+        "InputFieldName": "PC_List:Pay_Code_Label__c",
+        "InputObjectName": "Pay_Codes__c",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRFetchPayCodesCBOptions",
+        "OmniDataTransformationId": {
+            "Name": "DRFetchPayCodesCBOptions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFetchPayCodesCBOptions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "label",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRFetchPayCodesCBOptions976526346624441",
+        "InputFieldName": "PC_List:Id",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRFetchPayCodesCBOptions",
+        "OmniDataTransformationId": {
+            "Name": "DRFetchPayCodesCBOptions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFetchPayCodesCBOptions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "STRING",
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "DRFetchPayCodesCBOptions9360928247906432",
+        "InputFieldName": "Pay_Code_Label__c",
+        "InputObjectName": "Pay_Codes__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRFetchPayCodesCBOptions",
+        "OmniDataTransformationId": {
+            "Name": "DRFetchPayCodesCBOptions",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFetchPayCodesCBOptions",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PC_List",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

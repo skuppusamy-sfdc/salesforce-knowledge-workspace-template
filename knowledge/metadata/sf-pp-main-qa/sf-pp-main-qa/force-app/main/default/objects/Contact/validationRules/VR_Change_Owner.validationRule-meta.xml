@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Change_Owner</fullName>
+    <active>true</active>
+    <description>Just these profiles can can re-assign contacts: Sales Admin Information Manager, Sales Admin Process Manager, TSG Sales, &amp; CBDO</description>
+    <errorConditionFormula>ISCHANGED( OwnerId ) &amp;&amp; NOT(($Profile.Name = &quot;CBDO&quot; || $Profile.Name = &quot;TSG Sales&quot; || $Profile.Name = &quot;Sales Admin Information Manager&quot; || $Profile.Name = &quot;Sales Admin Process Manager&quot; || $Profile.Name = &quot;System Administrator&quot; ||  $Permission.Data_Quality))</errorConditionFormula>
+    <errorMessage>You are not authorized to reassign Contacts. You may request Sales Operations or the CBDO to perform the reassignment for you.</errorMessage>
+</ValidationRule>

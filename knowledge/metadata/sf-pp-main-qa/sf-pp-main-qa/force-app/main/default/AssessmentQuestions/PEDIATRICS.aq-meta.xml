@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PEDIATRICS</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;PEDIATRICS - INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Evaluation and management of pediatric fever&lt;/li&gt;
+&lt;li&gt;0-28 days&lt;/li&gt;
+&lt;li&gt;29 days to 36 months&lt;/li&gt;
+&lt;li&gt;&gt;36 months&lt;/li&gt;
+&lt;li&gt;Reduction of radial head dislocation&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>PEDIATRICS</developerName>
+    <name>PEDIATRICS</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

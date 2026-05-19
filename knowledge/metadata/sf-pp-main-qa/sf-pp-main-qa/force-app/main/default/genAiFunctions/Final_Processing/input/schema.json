@@ -1,0 +1,28 @@
+{
+  "required" : [ "accountId", "contractId", "userConsent" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "accountId" : {
+      "title" : "selected account id",
+      "description" : "id of the selected account record id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contractId" : {
+      "title" : "selected contract id",
+      "description" : "id of the selected contract record id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "userConsent" : {
+      "title" : "user consent",
+      "description" : "user consent after generate preview link is displayed",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

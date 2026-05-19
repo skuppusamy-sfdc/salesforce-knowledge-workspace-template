@@ -1,0 +1,58 @@
+{
+    "BoardCertificationToBeCreated": {
+        "CurrentCertificationDate": "2017-05-01",
+        "Id": "0YS7x00000005VxGAI",
+        "Name": "Board Certified",
+        "Status": "Certified"
+    },
+    "ContextId": "",
+    "NPPESBasic": {
+        "board_certification_name": "Baord Certified",
+        "board_certification_status": "Certified",
+        "certification_date": "2021-05-07",
+        "current_npi_number": "1245319599",
+        "enumeration_date": "2014-04-03",
+        "first_name": "PAUL",
+        "last_name": "VARANO",
+        "last_updated": "2021-07-14",
+        "middle_name": "THOMAS",
+        "sex": "M",
+        "sole_proprietor": "NO",
+        "status": "A"
+    },
+    "PractitionerId": "",
+    "TaxonomiesToBeUpserted": [
+        {
+            "Id": "0bP7x00000009uXEAQ",
+            "Name": "TEST",
+            "PractitionerId": "0037x00000wuHS1AAM"
+        },
+        {
+            "Id": "0bP7x0000000BujEAE",
+            "Name": "Internal Medicine",
+            "PractitionerId": "0037x00000wuHS1AAM",
+            "code": "207R00000X",
+            "desc": "Internal Medicine",
+            "license": "MD443150",
+            "primary": false,
+            "state": "PA",
+            "taxonomy_group": ""
+        },
+        {
+            "Id": "0bP7x0000000BukEAE",
+            "Name": "Hospitalist",
+            "PractitionerId": "0037x00000wuHS1AAM",
+            "code": "208M00000X",
+            "desc": "Hospitalist",
+            "license": "MD443150",
+            "primary": true,
+            "state": "PA",
+            "taxonomy_group": ""
+        }
+    ],
+    "boardCertificationName": "",
+    "boardCertificationStatus": "",
+    "casedFirstNameFromNPPES": "",
+    "casedLastNameFromNPPES": "",
+    "casedMiddleNameFromNPPES": ""
+}

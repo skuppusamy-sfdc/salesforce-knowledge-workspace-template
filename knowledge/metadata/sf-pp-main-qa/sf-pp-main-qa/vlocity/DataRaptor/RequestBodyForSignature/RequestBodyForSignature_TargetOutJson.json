@@ -1,0 +1,24 @@
+{
+    "recipients": {
+        "carbonCopies": [
+            {
+                "email": "Text",
+                "name": "",
+                "recipientId": "",
+                "recipientType": "",
+                "routingOrder": "",
+                "signerRole": ""
+            }
+        ],
+        "signers": [
+            {
+                "email": "Text",
+                "name": "",
+                "recipientId": "",
+                "recipientType": "",
+                "routingOrder": "",
+                "signerRole": ""
+            }
+        ]
+    }
+}

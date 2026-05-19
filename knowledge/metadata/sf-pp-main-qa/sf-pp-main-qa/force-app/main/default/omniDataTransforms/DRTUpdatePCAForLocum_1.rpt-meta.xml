@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTUpdatePCAForLocum</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTUpdatePCAForLocumCustom5840</globalKey>
+        <inputFieldName>PCA:Shifts_Requested__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTUpdatePCAForLocum</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCA:ShiftsRequested</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTUpdatePCAForLocumCustom4530</globalKey>
+        <inputFieldName>PCA:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTUpdatePCAForLocum</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCA:Type:value</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTUpdatePCAForLocumCustom3584</globalKey>
+        <inputFieldName>PCA:UnitofMeasure</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTUpdatePCAForLocum</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCA:UnitOfMeasure</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTUpdatePCAForLocumCustom2300</globalKey>
+        <inputFieldName>PCA:CPAId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTUpdatePCAForLocum</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCA:contractPaymentAgreementId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTUpdatePCAForLocumCustom2447</globalKey>
+        <inputFieldName>PCA:FacilityTitle__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTUpdatePCAForLocum</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCA:FacilityTitle:value</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTUpdatePCAForLocumCustom2754</globalKey>
+        <inputFieldName>PCA:RateLocum</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTUpdatePCAForLocum</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PCA:Rate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;PCA&quot; : [ {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;RateLocum&quot; : 349,
+    &quot;BonusMeasureType&quot; : &quot;NA&quot;,
+    &quot;Type&quot; : &quot;0hs7x0000008zpVAAQ&quot;,
+    &quot;isSelectRate&quot; : true,
+    &quot;PCAId&quot; : &quot;0s47x0000000QAbAAM&quot;,
+    &quot;CPAStatus&quot; : &quot;DRAFT&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Medical Director&quot;,
+    &quot;RecordtypeName&quot; : &quot;Clinician&quot;,
+    &quot;CPAName&quot; : &quot;00002708-22--Locum&quot;,
+    &quot;TargetMeasurePercent&quot; : 0,
+    &quot;shiftReqOverrideProhibited&quot; : true,
+    &quot;BonusPayout&quot; : 0,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;UnitofMeasure&quot; : &quot;per Hour&quot;,
+    &quot;Type_New&quot; : &quot;Normal Hourly&quot;,
+    &quot;CPAType__c&quot; : &quot;Locum&quot;,
+    &quot;CPAKey&quot; : &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+    &quot;Name&quot; : &quot;PCA-10211&quot;,
+    &quot;PNCId&quot; : &quot;0mw7x0000000smnAAA&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000cWbOLAA0&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8xAAE&quot;,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;,
+    &quot;TypeName&quot; : &quot;Normal Hourly&quot;
+  }, {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;RateLocum&quot; : 56,
+    &quot;BonusMeasureType&quot; : &quot;NA&quot;,
+    &quot;Type&quot; : &quot;0hs7x0000008zpWAAQ&quot;,
+    &quot;isSelectRate&quot; : true,
+    &quot;PCAId&quot; : &quot;0s47x0000000QAcAAM&quot;,
+    &quot;CPAStatus&quot; : &quot;DRAFT&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Medical Director&quot;,
+    &quot;RecordtypeName&quot; : &quot;Clinician&quot;,
+    &quot;CPAName&quot; : &quot;00002708-22--Locum&quot;,
+    &quot;TargetMeasurePercent&quot; : 0,
+    &quot;shiftReqOverrideProhibited&quot; : true,
+    &quot;BonusPayout&quot; : 0,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;UnitofMeasure&quot; : &quot;per Hour&quot;,
+    &quot;Type_New&quot; : &quot;Holiday&quot;,
+    &quot;CPAType__c&quot; : &quot;Locum&quot;,
+    &quot;CPAKey&quot; : &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+    &quot;Name&quot; : &quot;PCA-10212&quot;,
+    &quot;PNCId&quot; : &quot;0mw7x0000000smnAAA&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000cWbOLAA0&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8xAAE&quot;,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;,
+    &quot;TypeName&quot; : &quot;Holiday&quot;
+  }, {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;RateLocum&quot; : 67,
+    &quot;BonusMeasureType&quot; : &quot;NA&quot;,
+    &quot;Type&quot; : &quot;0hs7x0000008zpXAAQ&quot;,
+    &quot;isSelectRate&quot; : true,
+    &quot;PCAId&quot; : &quot;0s47x0000000QAdAAM&quot;,
+    &quot;CPAStatus&quot; : &quot;DRAFT&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Medical Director&quot;,
+    &quot;RecordtypeName&quot; : &quot;Clinician&quot;,
+    &quot;CPAName&quot; : &quot;00002708-22--Locum&quot;,
+    &quot;TargetMeasurePercent&quot; : 0,
+    &quot;shiftReqOverrideProhibited&quot; : true,
+    &quot;BonusPayout&quot; : 0,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;UnitofMeasure&quot; : &quot;per Hour&quot;,
+    &quot;Type_New&quot; : &quot;On Call&quot;,
+    &quot;CPAType__c&quot; : &quot;Locum&quot;,
+    &quot;CPAKey&quot; : &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+    &quot;Name&quot; : &quot;PCA-10213&quot;,
+    &quot;PNCId&quot; : &quot;0mw7x0000000smnAAA&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000cWbOLAA0&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8xAAE&quot;,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;,
+    &quot;TypeName&quot; : &quot;On Call&quot;
+  }, {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;RateLocum&quot; : 12.12,
+    &quot;BonusMeasureType&quot; : &quot;NA&quot;,
+    &quot;Type&quot; : &quot;0hs7x0000008zpYAAQ&quot;,
+    &quot;isSelectRate&quot; : true,
+    &quot;PCAId&quot; : &quot;0s47x0000000QAeAAM&quot;,
+    &quot;CPAStatus&quot; : &quot;DRAFT&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Medical Director&quot;,
+    &quot;RecordtypeName&quot; : &quot;Clinician&quot;,
+    &quot;CPAName&quot; : &quot;00002708-22--Locum&quot;,
+    &quot;TargetMeasurePercent&quot; : 0,
+    &quot;shiftReqOverrideProhibited&quot; : true,
+    &quot;BonusPayout&quot; : 0,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;UnitofMeasure&quot; : &quot;per Hour&quot;,
+    &quot;Type_New&quot; : &quot;HM Rounding&quot;,
+    &quot;CPAType__c&quot; : &quot;Locum&quot;,
+    &quot;CPAKey&quot; : &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+    &quot;Name&quot; : &quot;PCA-10214&quot;,
+    &quot;PNCId&quot; : &quot;0mw7x0000000smnAAA&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000cWbOLAA0&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8xAAE&quot;,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;,
+    &quot;TypeName&quot; : &quot;HM Rounding&quot;
+  }, {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;RateLocum&quot; : 123,
+    &quot;BonusMeasureType&quot; : &quot;NA&quot;,
+    &quot;Type&quot; : &quot;0hs7x0000008zpZAAQ&quot;,
+    &quot;isSelectRate&quot; : true,
+    &quot;PCAId&quot; : &quot;0s47x0000000QAfAAM&quot;,
+    &quot;CPAStatus&quot; : &quot;DRAFT&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Medical Director&quot;,
+    &quot;RecordtypeName&quot; : &quot;Clinician&quot;,
+    &quot;CPAName&quot; : &quot;00002708-22--Locum&quot;,
+    &quot;TargetMeasurePercent&quot; : 0,
+    &quot;shiftReqOverrideProhibited&quot; : true,
+    &quot;BonusPayout&quot; : 0,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;UnitofMeasure&quot; : &quot;per Hour&quot;,
+    &quot;Type_New&quot; : &quot;Travel Hourly&quot;,
+    &quot;CPAType__c&quot; : &quot;Locum&quot;,
+    &quot;CPAKey&quot; : &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+    &quot;Name&quot; : &quot;PCA-10215&quot;,
+    &quot;PNCId&quot; : &quot;0mw7x0000000smnAAA&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000cWbOLAA0&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8xAAE&quot;,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;,
+    &quot;TypeName&quot; : &quot;Travel Hourly&quot;
+  }, {
+    &quot;AccountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;CPAId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;BonusMeasureType&quot; : &quot;NA&quot;,
+    &quot;Type&quot; : &quot;0hs7x0000008zpaAAA&quot;,
+    &quot;isSelectRate&quot; : true,
+    &quot;PCAId&quot; : &quot;0s47x0000000QCDAA2&quot;,
+    &quot;CPAStatus&quot; : &quot;DRAFT&quot;,
+    &quot;FacilityTitleName&quot; : &quot;Medical Director&quot;,
+    &quot;RecordtypeName&quot; : &quot;Clinician&quot;,
+    &quot;CPAName&quot; : &quot;00002708-22--Locum&quot;,
+    &quot;TargetMeasurePercent&quot; : 0,
+    &quot;Shifts_Requested__c&quot; : 89,
+    &quot;shiftReqOverrideProhibited&quot; : false,
+    &quot;BonusPayout&quot; : 0,
+    &quot;ContractPaymentAgreementId&quot; : &quot;0rR7x0000000N1REAU&quot;,
+    &quot;UnitofMeasure&quot; : &quot;per Month&quot;,
+    &quot;Type_New&quot; : &quot;Shifts Requested&quot;,
+    &quot;CPAType__c&quot; : &quot;Locum&quot;,
+    &quot;CPAKey&quot; : &quot;7FA8A2A026272E72B987B684A5FACCC31057107424&quot;,
+    &quot;Name&quot; : &quot;PCA-10217&quot;,
+    &quot;PNCId&quot; : &quot;0mw7x0000000smnAAA&quot;,
+    &quot;CPAContractId&quot; : &quot;8007x00000cWbOLAA0&quot;,
+    &quot;FacilityTitle__c&quot; : &quot;0hs7x0000007K8xAAE&quot;,
+    &quot;CPAAgreementType&quot; : &quot;Preventive Care Agreement&quot;,
+    &quot;TypeName&quot; : &quot;Shifts Requested&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTUpdatePCAForLocum_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

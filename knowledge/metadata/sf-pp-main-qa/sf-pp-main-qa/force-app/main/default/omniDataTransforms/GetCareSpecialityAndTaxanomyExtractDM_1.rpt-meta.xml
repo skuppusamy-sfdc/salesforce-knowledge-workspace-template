@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;careSpecialtyList&quot; : [ {
+    &quot;Name&quot; : &quot;Testing 1&quot;,
+    &quot;SpecialtyCode&quot; : &quot;213423&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000CUDAA2&quot;
+  }, {
+    &quot;Name&quot; : &quot;TEST Harsh&quot;,
+    &quot;SpecialtyCode&quot; : &quot;12332&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000CVpAAM&quot;,
+    &quot;RecordId&quot; : &quot;&quot;
+  }, {
+    &quot;Name&quot; : &quot;TEST KL&quot;,
+    &quot;SpecialtyCode&quot; : &quot;32253&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000CXRAA2&quot;
+  } ],
+  &quot;careTaxonomyList&quot; : [ {
+    &quot;Name&quot; : &quot;External AD&quot;,
+    &quot;Id&quot; : &quot;0bK7x0000001hCbEAI&quot;,
+    &quot;RecordId&quot; : &quot;&quot;
+  } ]
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>LIKE</filterOperator>
+        <filterValue>Key</filterValue>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDM37668109541442485</globalKey>
+        <inputFieldName>Name</inputFieldName>
+        <inputObjectName>CareSpecialty</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>careSpecialtyList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDM26461577687678783</globalKey>
+        <inputFieldName>careSpecialtyList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careSpecialtyList:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>1.0</filterGroup>
+        <filterOperator>LIKE</filterOperator>
+        <filterValue>Key</filterValue>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDMCustom501</globalKey>
+        <inputFieldName>Description</inputFieldName>
+        <inputObjectName>CareTaxonomy</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>careTaxonomyList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDMCustom8213</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careSpecialtyList:isPrimaryOrSub</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDMCustom5725</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careTaxonomyList:primaryTaxonomy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDM8905383001576583</globalKey>
+        <inputFieldName>careTaxonomyList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careTaxonomyList:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDM5108144469090777</globalKey>
+        <inputFieldName>careTaxonomyList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careTaxonomyList:RecordId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDM06499328624437017</globalKey>
+        <inputFieldName>careSpecialtyList:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careSpecialtyList:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDM1486102473891262</globalKey>
+        <inputFieldName>careSpecialtyList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careSpecialtyList:RecordId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>GetCareSpecialityAndTaxanomyExtractDMCustom3923</globalKey>
+        <inputFieldName>careTaxonomyList:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>GetCareSpecialityAndTaxanomyExtractDM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>careTaxonomyList:Description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Key&quot; : &quot;o&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>GetCareSpecialityAndTaxanomyExtractDM_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

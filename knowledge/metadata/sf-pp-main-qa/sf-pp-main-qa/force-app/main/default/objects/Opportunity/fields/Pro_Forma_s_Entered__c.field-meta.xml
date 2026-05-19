@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pro_Forma_s_Entered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Select this checkbox after you have entered the pro forma data into the services</inlineHelpText>
+    <label>Pro Forma $s Entered?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

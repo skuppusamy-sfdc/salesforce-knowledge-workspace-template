@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApolloMD_Recruiting_Campaign_8_7_17</fullName>
+    <booleanFilter>1 or 2</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <columns>ER_Group__c</columns>
+    <columns>HM_Group__c</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>Facility_E_mail__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ER_Group__c</field>
+        <operation>equals</operation>
+        <value>Apollo</value>
+    </filters>
+    <filters>
+        <field>HM_Group__c</field>
+        <operation>equals</operation>
+        <value>Apollo</value>
+    </filters>
+    <label>ApolloMD Recruiting Campaign 8/7/17</label>
+</ListView>

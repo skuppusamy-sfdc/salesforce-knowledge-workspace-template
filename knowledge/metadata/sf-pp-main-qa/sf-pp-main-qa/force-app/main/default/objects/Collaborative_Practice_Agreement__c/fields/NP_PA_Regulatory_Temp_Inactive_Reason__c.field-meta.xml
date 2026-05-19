@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NP_PA_Regulatory_Temp_Inactive_Reason__c</fullName>
+    <label>NP/PA Regulatory Temp Inactive Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agreement in Renewal</fullName>
+                <default>false</default>
+                <label>Agreement in Renewal</label>
+            </value>
+            <value>
+                <fullName>Approved Supervisor, not an SG Physician</fullName>
+                <default>false</default>
+                <label>Approved Supervisor, not an SG Physician</label>
+            </value>
+            <value>
+                <fullName>No active collaborating physician</fullName>
+                <default>false</default>
+                <label>No active collaborating physician</label>
+            </value>
+            <value>
+                <fullName>No active primary superv/delegating phys</fullName>
+                <default>false</default>
+                <label>No active primary superv/delegating phys</label>
+            </value>
+            <value>
+                <fullName>Phys Exceeded Superv/Collab Threshold</fullName>
+                <default>false</default>
+                <label>Phys Exceeded Superv/Collab Threshold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

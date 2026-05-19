@@ -1,0 +1,182 @@
+<apex:page id="TruSalesApp" standardController="Opportunity" extensions="TruSalesAppController">
+    <!--    <apex:outputPanel layout="none" rendered="{!$Setup.TruSales_App_Settings__c.Enable_Manual_Button_on_VF__c && !CONTAINS($User.UITheme, 'Theme4')}">-->
+    <apex:outputPanel layout="none" rendered="{!settings.Enable_Manual_Button_on_VF__c && !CONTAINS($User.UITheme, 'Theme4')}">
+        <div id="buttonContainer" style="text-align: center; display: flex; justify-content: center">
+            <button id="requestFeedback" disabled="disabled">
+                <img src="{!$Resource.TruSalesPicture}" alt="Request Feedback" style="height: 16px"/>
+                Request Feedback
+            </button>
+        </div>
+    </apex:outputPanel>
+
+    <style>
+        button[disabled] {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        button#requestFeedback {
+            padding: 4px;
+            margin: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        button#requestFeedback > img {
+            margin-right: .5rem;
+        }
+    </style>
+
+    <script>
+        let showBtnFromCheckSuitable = false;
+        let showBtnFromCheckUser = false;
+
+        (() => {
+
+
+            const opportunityId = '{!Opportunity.Id}';
+            let isSuitable = false;
+            let userStatus = false;
+            <!--let truSalesURL = '{!settings.API_EndPoint__c}/request-feedback/{!Opportunity.Id}';-->
+
+            let truSalesURL = '{!settings.API_EndPoint__c}/request-feedback/{!Opportunity.Id}';
+            if ('{!settings.API_EndPoint__c}' === 'https://api.primary-intel.com')
+                truSalesURL = 'https://trusales.primary-intel.com/request-feedback/{!Opportunity.Id}';
+            else truSalesURL = 'https://trusales-sandbox.primary-intel.com/request-feedback/{!Opportunity.Id}';
+
+            const requestFeedbackButton = document.querySelector('#requestFeedback') || document.createElement('button');
+
+            function checkSuitable() {
+
+                return new Promise((resolve, reject) =>{
+                    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.TruSalesAppController.isSuitableOpportunity}', opportunityId, response => {
+
+                        isSuitable = response;
+
+                        if (isSuitable) {
+
+                            //requestFeedbackButton.removeAttribute('disabled');
+                            showBtnFromCheckSuitable = true;
+
+                            if (sessionStorage.getItem('TruSales_OppId') === '{!Opportunity.Id}') {
+                                if (!((typeof sforce != 'undefined') && sforce && (!!sforce.one))) {
+                                    window.open(truSalesURL);
+
+                                    syncClosedOpportunities();
+                                }
+                            }
+
+                            sessionStorage.removeItem('TruSales_OppId');
+                        } else {
+                            //requestFeedbackButton.setAttribute('disabled', 'true');
+
+                            showBtnFromCheckSuitable = false;
+
+                            sessionStorage.setItem('TruSales_OppId', '{!Opportunity.Id}');
+                        }
+
+                        resolve(response);
+                    });
+                })
+
+
+            }
+
+
+            requestFeedbackButton.addEventListener('click', () => {
+                if (!isSuitable)
+                    return;
+
+                syncClosedOpportunities();
+
+                window.open(truSalesURL);
+            });
+
+            function syncClosedOpportunities() {
+                (async () => {
+                    const lastSyncData = await (await fetch('{!settings.API_EndPoint__c}/sfa/clients/{!settings.TruVoice_Client_ID__c}/sales-history', {
+                        method: 'GET',
+                        headers: {
+                            'apikey': '{!settings.TruVoice_API_Key__c}',
+                            'x-truvoice-client': '{!settings.TruVoice_Client_ID__c}'
+                        }
+                    })).json();
+
+                    const programId = '58af4da0b310d92314627232';
+                    let products = {};
+
+                    const productsData = await (await fetch('{!settings.API_EndPoint__c}/sfa/clients/{!settings.TruVoice_Client_ID__c}/initiatives/' + programId + '/products', {
+                        method: 'GET',
+                        headers: {
+                            'apikey': '{!settings.TruVoice_API_Key__c}',
+                            'x-truvoice-client': '{!settings.TruVoice_Client_ID__c}'
+                        }
+                    })).json();
+
+                    Array.from(productsData).map(item => {
+                        products[item.id] = item.name;
+                    });
+
+                    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.TruSalesAppController.getJSONStringForOpportunitiesSync}', lastSyncData.last_sync.substring(0, 10), '{!Opportunity.OwnerId}', products, (jsonSyncString) => {
+                        fetch('{!settings.API_EndPoint__c}/sfa/clients/{!settings.TruVoice_Client_ID__c}/initiatives/' + programId + '/sales-history', {
+                            method: 'POST',
+                            headers: {
+                                'apikey': '{!settings.TruVoice_API_Key__c}',
+                                'x-truvoice-client': '{!settings.TruVoice_Client_ID__c}',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.parse(jsonSyncString)
+                        });
+                    }, {
+                        escape: false
+                    });
+                })();
+            }
+
+
+            function checkUser() {
+                return new Promise((resolve, reject) =>{
+                    console.log('checkUser');
+
+                    Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.TruSalesAppController.getUserInfo}', response => {
+
+                        userStatus = response;
+                        resolve(response);
+                    });
+
+                })
+            }
+
+
+            function showBtn() {
+                console.log("ShowBtn");
+
+
+                checkUser().then(response => {
+                    showBtnFromCheckUser = response;
+                    console.log('showBtnFromCheckUser resp:', response);
+                    checkSuitable().then(response => {
+                        showBtnFromCheckSuitable = response;
+                        if(showBtnFromCheckSuitable && showBtnFromCheckUser)
+                        {
+                            requestFeedbackButton.removeAttribute('disabled');
+                        }
+                        else
+                        {
+                            requestFeedbackButton.setAttribute('disabled', 'true');
+                        }
+                    });
+
+                });
+
+            }
+            showBtn();
+
+        })();
+
+
+
+
+    </script>
+</apex:page>

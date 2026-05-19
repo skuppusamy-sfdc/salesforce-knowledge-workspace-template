@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hospital_Executives_Northeast</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Account_Status__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_DHC_Network_Name__c</columns>
+    <columns>Account_State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>CT,DE,DC,ME,MD,MA,NH,NJ,NY,OH,PA,RI,VT,VA,WV</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>AbleTo,Accolade,Inc,AdvantageCare Physicians,Advocare Doctors,Aledade,Amazon.com,Amwell,Antidote Health,Array Behavioral Care,Aware Recovery Care,Belong Health,Bicycle Health,Buoy,Cecelia Health,Cityblock Health,ConcertoCare</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>CVS Health,Devoted Health,Eden Health,Equum Health,Evolent Health,EZaccessMD,Firefly Health,Folx Health,Galileo,Genoa Telepsychiatry,Hoy Health,Hydrogen Health,innovaTel Telepsychiatry,Iora Health Inc,K Health</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>CarePoint Health,Carilion Clinic,Kroger Health,LetsGetChecked,LifeMD,Marathon Health,Maven Clinic,MedExpress,Omnicare,Inc.,Oscar Health Insurance,Parsley Health,Planned Parenthood Federation of America</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>Privia Health,Quartet Health,Inc.,Radish Health,Rite Aid,Ro,Summus Global,Talkiatry,Talkspace,Tapestryhealth,Thirty Madison,TriHealth,Twentyeight Health,Valera Health,Vault Health,Vori Health,Vytalize Health</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>,DocGo,EHE Health,Equum Medical,Iora Health,Salvo Studios</value>
+    </filters>
+    <label>Hospital Executives - Northeast</label>
+</ListView>

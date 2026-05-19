@@ -1,0 +1,16 @@
+<template>
+    <lightning-dual-listbox 
+        name={name}  
+    label={label}
+    source-label="Available"
+    selected-label="Selected"
+    field-level-help={helpText}
+    options={options}
+    onchange={handleChange}
+        value={selectedValues}  
+        required={isRequired}
+        size=4>
+    </lightning-dual-listbox>
+    <p class="slds-text-color_error"
+       if:true={showValidation}>Error: {inputPropertyMap.fieldName} is required.</p>
+</template>

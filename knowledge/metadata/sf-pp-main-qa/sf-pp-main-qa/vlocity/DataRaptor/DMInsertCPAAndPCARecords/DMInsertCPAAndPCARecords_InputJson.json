@@ -1,0 +1,14 @@
+{
+    "CPAList": {
+        "Account__c": "Text",
+        "AgreementType": "Text",
+        "ClonedFrom__c": "Text",
+        "ContractId": "Text",
+        "Description": "Text",
+        "EndDateTime": "Text",
+        "Name": "Text",
+        "StartDateTime": "Text",
+        "Status": "Text",
+        "Type__c": "Text"
+    }
+}

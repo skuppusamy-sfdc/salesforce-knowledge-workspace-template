@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to close a Webex Docked Composer</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This is the ID of the docked composer that will be closed</description>
+        <fieldName>dockedComposerId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the ID of the room that will be closed</description>
+        <fieldName>destinationId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexDockedComposerClose</masterLabel>
+</LightningMessageChannel>

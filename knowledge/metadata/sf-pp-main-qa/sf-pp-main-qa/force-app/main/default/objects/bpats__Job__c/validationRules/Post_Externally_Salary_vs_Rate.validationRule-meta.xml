@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Externally_Salary_vs_Rate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (bpats__Post_Externally__c = True,
+    OR (AND(Text(Planned_Status__c) = &quot;Full Time&quot;, ISBLANK(bpats__Salary__c)),
+        AND(Text(Planned_Status__c) &lt;&gt; &quot;Full Time&quot;, ISBLANK(bpats__Pay_Rate__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>For an external job, Salary must be populated if Planned Status is Full time, and Pay Rate must be filled in if Planned Status is anything else (Part Time or PRN).</errorMessage>
+</ValidationRule>

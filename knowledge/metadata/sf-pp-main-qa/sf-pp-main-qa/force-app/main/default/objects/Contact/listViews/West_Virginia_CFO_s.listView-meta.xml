@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>West_Virginia_CFO_s</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Account_Status__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_DHC_Network_Name__c</columns>
+    <columns>Account_State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Financial Officer</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>WV</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>notContain</operation>
+        <value>Customer</value>
+    </filters>
+    <label>West Virginia CFO&apos;s</label>
+</ListView>

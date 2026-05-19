@@ -1,0 +1,30 @@
+{
+    "LA_MergeList": [
+        {
+            "AccountName": "Test Service Account 0012",
+            "BonusMeasureType": "NA",
+            "BonusPayout": 0,
+            "CPAAccount__c": "0017x000017KgM0AAK",
+            "CPAAgreementType": "Preventive Care Agreement",
+            "CPAContractId": "8007x00000cVk2HAAS",
+            "CPAId": "0rR7x00000006obEAA",
+            "CPAKey": "015BD9A2121F77C6BFE9EEC9A2717C0D-200503908",
+            "CPAName": "Nawal Unit Test-Shift",
+            "CPAStatus": "DRAFT",
+            "CPAType__c": "Shift",
+            "ContractPaymentAgreementId": "0rR7x00000006obEAA",
+            "FacilityTitleName": "Ambassador NP/PA",
+            "FacilityTitle__c": "0hs7x0000007K8aAAE",
+            "Name": "PCA-1331",
+            "OverrideProhibited": true,
+            "PCAId": "0s47x0000000BWXAA2",
+            "PNCId": "0mw7x0000000sjZAAQ",
+            "Rate__c": 1,
+            "ShiftName": "ShiftNew",
+            "Shift__c": "a4Q7x000000DW0TEAW",
+            "TargetMeasurePercent": 0,
+            "Unit_of_Measure__c": "per Hour",
+            "selectRate": true
+        }
+    ]
+}

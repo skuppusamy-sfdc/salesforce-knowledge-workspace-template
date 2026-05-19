@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Shift_Bonus__c</fullName>
+    <label>Reason for Shift Bonus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abrupt Removal of Provider</fullName>
+                <default>false</default>
+                <label>Abrupt Removal of Provider</label>
+            </value>
+            <value>
+                <fullName>Admin Reasons</fullName>
+                <default>false</default>
+                <label>Admin Reasons</label>
+            </value>
+            <value>
+                <fullName>Call Off</fullName>
+                <default>false</default>
+                <label>Call Off</label>
+            </value>
+            <value>
+                <fullName>Core Provider Needed</fullName>
+                <default>false</default>
+                <label>Core Provider Needed</label>
+            </value>
+            <value>
+                <fullName>Higher Hourly Rate</fullName>
+                <default>false</default>
+                <label>Higher Hourly Rate</label>
+            </value>
+            <value>
+                <fullName>Holiday Pay Extra</fullName>
+                <default>false</default>
+                <label>Holiday Pay Extra</label>
+            </value>
+            <value>
+                <fullName>New Start-Up</fullName>
+                <default>false</default>
+                <label>New Start-Up</label>
+            </value>
+            <value>
+                <fullName>Shift Travel-Expenses</fullName>
+                <default>false</default>
+                <label>Shift Travel-Expenses</label>
+            </value>
+            <value>
+                <fullName>Surge/Additional Coverage</fullName>
+                <default>false</default>
+                <label>Surge/Additional Coverage</label>
+            </value>
+            <value>
+                <fullName>Tiered Bonus</fullName>
+                <default>false</default>
+                <label>Tiered Bonus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provider_System_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status__c, &quot;Active&quot;),&quot;Active&quot;,IF(AND(ISPICKVAL(Status__c, &quot;Candidate&quot;),ISPICKVAL(Credentialling_Status__c, &quot;Billing Only&quot;)),&quot;Active&quot;,IF(ISPICKVAL(Status__c, &quot;Candidate&quot;),&quot;Candidate&quot;,IF(ISPICKVAL(Status__c, &quot;Waiting to be Scheduled&quot;),&quot;Active&quot;,IF(ISPICKVAL(Status__c, &quot;WTBS Here-WRKG at Sister Site&quot;),&quot;Active&quot;,
+IF(AND(ISPICKVAL(Status__c, &quot;Inactive&quot;),TerminationDate &gt; (TODAY() - 60)),&quot;Active&quot;,IF(AND(ISPICKVAL(Status__c,&quot;Superseded&quot;),EffectiveTo &gt; TODAY()),&quot;Active&quot;,&quot;&quot;)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Provider System Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

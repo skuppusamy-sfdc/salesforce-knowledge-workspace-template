@@ -1,0 +1,119 @@
+[
+    {
+        "FormulaExpression": "$Vlocity.TRUE",
+        "FormulaResultPath": "primaryTaxonomy",
+        "FormulaSequence": 1,
+        "GlobalKey": "LoadHealthCareTaxonomyDMCustom3519",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadHealthCareTaxonomyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareTaxonomyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareTaxonomyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "LoadHealthCareTaxonomyDMCustom4260",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "LoadHealthCareTaxonomyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareTaxonomyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareTaxonomyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "HealthcareProviderTaxonomy",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareTaxonomyDMCustom3061",
+        "InputFieldName": "primaryTaxonomy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "LoadHealthCareTaxonomyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareTaxonomyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareTaxonomyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsPrimaryTaxonomy",
+        "OutputObjectName": "HealthcareProviderTaxonomy",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareTaxonomyDMCustom3231",
+        "InputFieldName": "TaxonomyName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "LoadHealthCareTaxonomyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareTaxonomyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareTaxonomyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "HealthcareProviderTaxonomy",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareTaxonomyDMCustom43",
+        "InputFieldName": "PractitionerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "LoadHealthCareTaxonomyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareTaxonomyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareTaxonomyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PractitionerId",
+        "OutputObjectName": "HealthcareProviderTaxonomy",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "LoadHealthCareTaxonomyDMCustom8234",
+        "InputFieldName": "TaxonomyId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "LoadHealthCareTaxonomyDM",
+        "OmniDataTransformationId": {
+            "Name": "LoadHealthCareTaxonomyDM",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/LoadHealthCareTaxonomyDM",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TaxonomyId",
+        "OutputObjectName": "HealthcareProviderTaxonomy",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

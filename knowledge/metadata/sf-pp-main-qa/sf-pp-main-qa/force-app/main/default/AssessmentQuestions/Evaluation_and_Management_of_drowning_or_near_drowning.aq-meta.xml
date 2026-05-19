@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Evaluation and Management of drowning or near drowning</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Evaluation and Management of drowning or near drowning</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Evaluation_and_Management_of_drowning_or_near_drowning</developerName>
+    <name>Evaluation and Management of drowning or near drowning</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

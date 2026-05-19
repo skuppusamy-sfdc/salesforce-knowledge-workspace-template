@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Model Confirmed</fullName>
+                <default>false</default>
+                <label>Model Confirmed</label>
+            </value>
+            <value>
+                <fullName>Approved for Contracting</fullName>
+                <default>false</default>
+                <label>Approved for Contracting</label>
+            </value>
+            <value>
+                <fullName>Not Approved - SCP</fullName>
+                <default>false</default>
+                <label>Not Approved - SCP</label>
+            </value>
+            <value>
+                <fullName>Not Approved - Client</fullName>
+                <default>false</default>
+                <label>Not Approved - Client</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

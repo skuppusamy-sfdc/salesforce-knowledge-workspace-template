@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>DEA NUMBER</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>DEA Number</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>DEA_NUMBER</developerName>
+    <name>DEA NUMBER</name>
+    <questionCategory>Base</questionCategory>
+</AssessmentQuestion>

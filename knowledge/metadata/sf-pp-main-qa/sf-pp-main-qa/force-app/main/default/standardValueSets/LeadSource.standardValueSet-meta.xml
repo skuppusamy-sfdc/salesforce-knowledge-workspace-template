@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Client Referral</fullName>
+        <default>false</default>
+        <label>Client Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold Call</fullName>
+        <default>false</default>
+        <label>Cold Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold Call - New Territory</fullName>
+        <default>false</default>
+        <label>Cold Call - New Territory</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold Call-Other</fullName>
+        <default>false</default>
+        <label>Cold Call-Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold Call-TSG Database</fullName>
+        <default>false</default>
+        <label>Cold Call-TSG Database</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Campaign</fullName>
+        <default>false</default>
+        <label>Email Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Campaign-Marketing</fullName>
+        <default>false</default>
+        <label>Email Campaign-Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Connection</fullName>
+        <default>false</default>
+        <label>Email Connection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Employee Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Business Relationships</fullName>
+        <default>false</default>
+        <label>Existing Business Relationships</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing SCP Provider</fullName>
+        <default>false</default>
+        <label>Existing SCP Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google AdWords</fullName>
+        <default>false</default>
+        <label>Google AdWords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inside Connector Campaign</fullName>
+        <default>false</default>
+        <label>Inside Connector Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job-Aggregator-Indeed</fullName>
+        <default>false</default>
+        <label>Job-Aggregator-Indeed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job Aggregator-SimplyHired</fullName>
+        <default>false</default>
+        <label>Job Aggregator-SimplyHired</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-CareerMD</fullName>
+        <default>false</default>
+        <label>Job boards-CareerMD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-DocCafe</fullName>
+        <default>false</default>
+        <label>Job boards-DocCafe</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-ED Physician</fullName>
+        <default>false</default>
+        <label>Job boards-ED Physician</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-HealthECareers</fullName>
+        <default>false</default>
+        <label>Job boards-HealthECareers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Hospitalist Jobs</fullName>
+        <default>false</default>
+        <label>Job boards-Hospitalist Jobs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Hospitalist Working</fullName>
+        <default>false</default>
+        <label>Job boards-Hospitalist Working</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Hospital Jobs online</fullName>
+        <default>false</default>
+        <label>Job boards-Hospital Jobs online</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Hospital Recruiting</fullName>
+        <default>false</default>
+        <label>Job boards-Hospital Recruiting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-MDJobSite</fullName>
+        <default>false</default>
+        <label>Job boards-MDJobSite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-MD Search</fullName>
+        <default>false</default>
+        <label>Job boards-MD Search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Med Working</fullName>
+        <default>false</default>
+        <label>Job boards-Med Working</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-NicheMedicalJobs</fullName>
+        <default>false</default>
+        <label>Job boards-NicheMedicalJobs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-PhysEmp</fullName>
+        <default>false</default>
+        <label>Job boards-PhysEmp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Physician Job board</fullName>
+        <default>false</default>
+        <label>Job boards-Physician Job board</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job-boards-PracticeAlert</fullName>
+        <default>false</default>
+        <label>Job-boards-PracticeAlert</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-PracticeLink</fullName>
+        <default>false</default>
+        <label>Job boards-PracticeLink</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-PracticeMatch</fullName>
+        <default>false</default>
+        <label>Job boards-PracticeMatch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-SG Web lead</fullName>
+        <default>false</default>
+        <label>Job boards-SG Web lead</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Job boards-Targeted Physician</fullName>
+        <default>false</default>
+        <label>Job boards-Targeted Physician</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LGC - Research Referral</fullName>
+        <default>false</default>
+        <label>LGC - Research Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Locum Company</fullName>
+        <default>false</default>
+        <label>Locum Company</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Locums</fullName>
+        <default>false</default>
+        <label>Locums</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketer Previous Business Contact</fullName>
+        <default>false</default>
+        <label>Marketer Previous Business Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Campaign</fullName>
+        <default>false</default>
+        <label>Marketing Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NP/PA Practice Management Session</fullName>
+        <default>false</default>
+        <label>NP/PA Practice Management Session</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NPPES Database</fullName>
+        <default>false</default>
+        <label>NPPES Database</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Application</fullName>
+        <default>false</default>
+        <label>Online Application</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paid Media-ProviderAdv Digital</fullName>
+        <default>false</default>
+        <label>Paid Media-ProviderAdv Digital</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Preferred Provider</fullName>
+        <default>false</default>
+        <label>Preferred Provider</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Hire 360 Passive Candidate</fullName>
+        <default>false</default>
+        <label>Pre-Hire 360 Passive Candidate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Previous SG Business Contact</fullName>
+        <default>false</default>
+        <label>Previous SG Business Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSG Research</fullName>
+        <default>false</default>
+        <label>PSG Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reference</fullName>
+        <default>false</default>
+        <label>Reference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <label>Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral - Current SG Facility</fullName>
+        <default>false</default>
+        <label>Referral - Current SG Facility</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral- Employee</fullName>
+        <default>false</default>
+        <label>Referral- Employee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral - Internal Employee</fullName>
+        <default>false</default>
+        <label>Referral - Internal Employee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral - Other</fullName>
+        <default>false</default>
+        <label>Referral - Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral - Outside Physician</fullName>
+        <default>false</default>
+        <label>Referral - Outside Physician</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral- Physician</fullName>
+        <default>false</default>
+        <label>Referral- Physician</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral - SG Physician</fullName>
+        <default>false</default>
+        <label>Referral - SG Physician</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Breakfast Event</fullName>
+        <default>false</default>
+        <label>Residency Breakfast Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Didactic/Practice Mgmt Session</fullName>
+        <default>false</default>
+        <label>Residency Didactic/Practice Mgmt Session</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Dinner</fullName>
+        <default>false</default>
+        <label>Residency Dinner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Journal Club</fullName>
+        <default>false</default>
+        <label>Residency Journal Club</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency - Kopp Directory</fullName>
+        <default>false</default>
+        <label>Residency - Kopp Directory</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Noon Conference</fullName>
+        <default>false</default>
+        <label>Residency Noon Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Recruiting Event</fullName>
+        <default>false</default>
+        <label>Residency Recruiting Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Recruiting Event/Career Fair</fullName>
+        <default>false</default>
+        <label>Residency Recruiting Event/Career Fair</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Residency Visit</fullName>
+        <default>false</default>
+        <label>Residency Visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SG Executive to Corporate Executive</fullName>
+        <default>false</default>
+        <label>SG Executive to Corporate Executive</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media-Doximity</fullName>
+        <default>false</default>
+        <label>Social Media-Doximity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media-Facebook</fullName>
+        <default>false</default>
+        <label>Social Media-Facebook</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media-Linked-In</fullName>
+        <default>false</default>
+        <label>Social Media-Linked-In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media-Other</fullName>
+        <default>false</default>
+        <label>Social Media-Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Start Up</fullName>
+        <default>false</default>
+        <label>Start Up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Start-up</fullName>
+        <default>false</default>
+        <label>Start-up</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Text Campaign</fullName>
+        <default>false</default>
+        <label>Text Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshow</fullName>
+        <default>false</default>
+        <label>Tradeshow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show - Hospital Associations</fullName>
+        <default>false</default>
+        <label>Trade Show - Hospital Associations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trade Show - Other</fullName>
+        <default>false</default>
+        <label>Trade Show - Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-AAFP</fullName>
+        <default>false</default>
+        <label>Tradeshows-AAFP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-AAFP -Emergency &amp; Urgent Care</fullName>
+        <default>false</default>
+        <label>Tradeshows-AAFP -Emergency &amp; Urgent Care</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-AAFP -Residents &amp; Students</fullName>
+        <default>false</default>
+        <label>Tradeshows-AAFP -Residents &amp; Students</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-AAFP-Topics in Internal Med</fullName>
+        <default>false</default>
+        <label>Tradeshows-AAFP-Topics in Internal Med</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-AANP</fullName>
+        <default>false</default>
+        <label>Tradeshows-AANP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-ACEP-2015</fullName>
+        <default>false</default>
+        <label>Tradeshows-ACEP-2015</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-ACEP-2016</fullName>
+        <default>false</default>
+        <label>Tradeshows-ACEP-2016</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-ACOEP - Fall</fullName>
+        <default>false</default>
+        <label>Tradeshows-ACOEP - Fall</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-ACOI</fullName>
+        <default>false</default>
+        <label>Tradeshows-ACOI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-BHUAT</fullName>
+        <default>false</default>
+        <label>Tradeshows-BHUAT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-CareerMD</fullName>
+        <default>false</default>
+        <label>Tradeshows-CareerMD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-GA-ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-GA-ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows- GCEP-Rural Emergency</fullName>
+        <default>false</default>
+        <label>Tradeshows- GCEP-Rural Emergency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-IL-ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-IL-ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-NY -ACEP-Career</fullName>
+        <default>false</default>
+        <label>Tradeshows-NY -ACEP-Career</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-OH -ACEP-Career</fullName>
+        <default>false</default>
+        <label>Tradeshows-OH -ACEP-Career</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-Peds-ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-Peds-ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-PR-ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-PR-ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-PracticeMatch</fullName>
+        <default>false</default>
+        <label>Tradeshows-PracticeMatch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SEC-ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-SEC-ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SHM-2016</fullName>
+        <default>false</default>
+        <label>Tradeshows-SHM-2016</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SHM-2026</fullName>
+        <default>false</default>
+        <label>Tradeshows-SHM-2026</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SHM Leadership Academy</fullName>
+        <default>false</default>
+        <label>Tradeshows-SHM Leadership Academy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SHM - PIT(CA)</fullName>
+        <default>false</default>
+        <label>Tradeshows-SHM - PIT(CA)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SHM - PIT(IL)</fullName>
+        <default>false</default>
+        <label>Tradeshows-SHM - PIT(IL)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-SHM - PIT(PA)</fullName>
+        <default>false</default>
+        <label>Tradeshows-SHM - PIT(PA)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-Southern Hospital Medical</fullName>
+        <default>false</default>
+        <label>Tradeshows-Southern Hospital Medical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-TAPA</fullName>
+        <default>false</default>
+        <label>Tradeshows-TAPA</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-TX -ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-TX -ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-TXAFP</fullName>
+        <default>false</default>
+        <label>Tradeshows-TXAFP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tradeshows-WA-ACEP</fullName>
+        <default>false</default>
+        <label>Tradeshows-WA-ACEP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website-DocCafe</fullName>
+        <default>false</default>
+        <label>Website-DocCafe</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website-Healthgrades</fullName>
+        <default>false</default>
+        <label>Website-Healthgrades</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website-PracticeLink</fullName>
+        <default>false</default>
+        <label>Website-PracticeLink</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website-PracticeMatch</fullName>
+        <default>false</default>
+        <label>Website-PracticeMatch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website-SCP Job Posting</fullName>
+        <default>false</default>
+        <label>Website-SCP Job Posting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Word of mouth</fullName>
+        <default>false</default>
+        <label>Word of mouth</label>
+    </standardValue>
+</StandardValueSet>

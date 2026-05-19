@@ -1,0 +1,36 @@
+{
+    "ContextId": "0017x0000170atPAAQ",
+    "NPINumber": 1083940985,
+    "NPPESBasic": {
+        "enumeration_date": "2009-10-27",
+        "first_name": "AMANULLA",
+        "last_name": "KHAJI",
+        "last_updated": "2017-05-01",
+        "name_prefix": "--",
+        "name_suffix": "--",
+        "sex": "M",
+        "sole_proprietor": "NO",
+        "status": "A"
+    },
+    "TaxonomiesToBeUpserted": [
+        {
+            "code": "207R00000X",
+            "desc": "Internal Medicine",
+            "license": "MD443150",
+            "primary": false,
+            "state": "PA",
+            "taxonomy_group": ""
+        },
+        {
+            "code": "208M00000X",
+            "desc": "Hospitalist",
+            "license": "MD443150",
+            "primary": true,
+            "state": "PA",
+            "taxonomy_group": ""
+        }
+    ],
+    "casedFirstNameFromNPPES": "Amanulla",
+    "casedLastNameFromNPPES": "Khaji",
+    "casedMiddleNameFromNPPES": null
+}

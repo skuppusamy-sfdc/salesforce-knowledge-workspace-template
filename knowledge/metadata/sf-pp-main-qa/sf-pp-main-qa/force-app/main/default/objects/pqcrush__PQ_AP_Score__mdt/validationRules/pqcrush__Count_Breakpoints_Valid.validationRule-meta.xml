@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__Count_Breakpoints_Valid</fullName>
+    <active>true</active>
+    <description>Validates that all count breakpoints are greater than zero and that the values are in order</description>
+    <errorConditionFormula>pqcrush__Count_BP_Low__c &lt; 0 || pqcrush__Count_BP_Low__c &gt; pqcrush__Count_BP_Mid__c || pqcrush__Count_BP_Mid__c &gt; pqcrush__Count_BP_High__c</errorConditionFormula>
+    <errorMessage>One or more of the count breakpoints is out of order or has a negative value</errorMessage>
+</ValidationRule>

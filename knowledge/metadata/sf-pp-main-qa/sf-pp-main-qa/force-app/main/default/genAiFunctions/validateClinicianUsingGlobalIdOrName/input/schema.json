@@ -1,0 +1,20 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "clinicianName" : {
+      "title" : "clinicianName",
+      "description" : "this will contain clinicianName",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "globalId" : {
+      "title" : "globalId",
+      "description" : "takes the global Id",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

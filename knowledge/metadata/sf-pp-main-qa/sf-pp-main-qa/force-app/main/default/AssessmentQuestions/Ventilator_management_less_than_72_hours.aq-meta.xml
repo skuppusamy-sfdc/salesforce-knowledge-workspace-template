@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Ventilator management (less than 72 hours)</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Ventilator management (less than 72 hours)</questionText>
+        <responseValues>A
+B
+C</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Ventilator_management_less_than_72_hours</developerName>
+    <name>Ventilator management (less than 72 hours)</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

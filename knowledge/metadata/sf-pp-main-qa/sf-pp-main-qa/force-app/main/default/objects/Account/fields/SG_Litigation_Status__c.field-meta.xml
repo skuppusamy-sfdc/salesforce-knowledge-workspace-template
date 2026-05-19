@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SG_Litigation_Status__c</fullName>
+    <label>Litigation Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>No past, present or future lawsuits</fullName>
+                <default>false</default>
+                <label>No past, present or future lawsuits</label>
+            </value>
+            <value>
+                <fullName>Past lawsuit is complete</fullName>
+                <default>false</default>
+                <label>Past lawsuit is complete</label>
+            </value>
+            <value>
+                <fullName>Active lawsuit</fullName>
+                <default>false</default>
+                <label>Active lawsuit</label>
+            </value>
+            <value>
+                <fullName>Anticipate future lawsuit</fullName>
+                <default>false</default>
+                <label>Anticipate future lawsuit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

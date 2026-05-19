@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exit_Interview</fullName>
+    <active>true</active>
+    <label>Exit Interview</label>
+    <picklistValues>
+        <picklist>Offboarding_Decision__c</picklist>
+        <values>
+            <fullName>Confirmed Exit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Exiting</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

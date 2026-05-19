@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Magnet_Designation__c</fullName>
+    <description>Whether a hospital is designated a magnet facilty by the American Nurses Credentialing Center (ANCC)</description>
+    <externalId>false</externalId>
+    <label>Magnet Designation</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

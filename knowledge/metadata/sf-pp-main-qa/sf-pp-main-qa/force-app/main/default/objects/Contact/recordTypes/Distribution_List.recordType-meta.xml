@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_List</fullName>
+    <active>false</active>
+    <compactLayoutAssignment>Contact_Compact_Layout</compactLayoutAssignment>
+    <description>Record Type used to create a new Distribution List with Email. This is used in the Deal Team of the Opportunity Page Layout.</description>
+    <label>Distribution List</label>
+    <picklistValues>
+        <picklist>Company_Role__c</picklist>
+        <values>
+            <fullName>Competitive intelligence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Status__c</picklist>
+        <values>
+            <fullName>Key Contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DHC_Standardized_Title__c</picklist>
+        <values>
+            <fullName>Administrative Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chairman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Compliance Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Development Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Executive Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Financial Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Human Resources Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Information Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Legal Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Marketing Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Medical Information Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Medical Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Nursing Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Operating Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Pharmacy Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Quality Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Strategy Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief of Radiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief of Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coding Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commissioner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contracting Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Anesthesiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Business Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Cardiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of ICU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Labor and Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Materials Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Obstetrics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Oncology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Orthopedics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Patient Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Purchasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Radiology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Rehabilitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Respiratory Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Sterile Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Supply Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Womens Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director of Wound Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Department Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Services Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Vice President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faculty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Counsel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIM Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Security Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infection Prevention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurse Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutritional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating Room Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PACS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Access Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Accounts Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Financial Services Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Leader-Liaison</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician Recruiter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician in Chief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Practice Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiologist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiology Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recruiter %28Other%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue Cycle Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk Management Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secretary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgical Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treasurer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trustee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Medical Affairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Nursing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Patient Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of Sales-Marketing-Business Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President of the Board</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOZISF__ZoomInfo_Enrich_Status__c</picklist>
+        <values>
+            <fullName>Company Enrich Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enriched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No-Match</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Functional_Group__c</picklist>
+        <values>
+            <fullName>Administrative%2FHuman Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board of Directors%2FTrustees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chief Executive%2FPresident%2FAdministrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical%2FQuality%2FCare Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nurse%2FNursing Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales%2FMarketing%2FBusiness Development</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>I9_Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Verify Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Section 1 In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Section 2 In Progress</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__Level__c</picklist>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__No_longer_at_Company__c</picklist>
+        <values>
+            <fullName>Ignore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not at Company</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opt_in_Status__c</picklist>
+        <values>
+            <fullName>Not Specified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Position_Level__c</picklist>
+        <values>
+            <fullName>Board of Directors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C-Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manager%2FDirector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship_Type__c</picklist>
+        <values>
+            <fullName>Account Management - Connected Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BD</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

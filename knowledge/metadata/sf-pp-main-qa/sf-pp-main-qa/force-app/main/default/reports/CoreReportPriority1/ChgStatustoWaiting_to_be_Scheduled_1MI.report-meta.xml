@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$First_Scheduled_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$PersonContact.Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$Legacy_PFA_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account$Staffing_Team__c</field>
+    </columns>
+    <columns>
+        <field>Account$PersonContact</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$Facility_Title__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$Credentialling_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts.HealthcarePractitionerFacility$Temporary_Inactive_Reason__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$First_Scheduled_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$Credentialling_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Billing Only,Credentialed Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>SCP Health-Central (Consolidated Account View) - TELE,OMS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$Time_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Full Time,Part Time</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts.HealthcarePractitionerFacility$Temporary_Inactive_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>excludes</operator>
+            <value>Administrative Physician Only</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ChgStatusto-Waiting to be Scheduled</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Contacts_with_HPF__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$LastActivityDate</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionDeveloperNames>PREFIX</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>FIRST_NAME</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MIDDLE_NAME</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>LAST_NAME</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>SUFFIX</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PROFESSIONAL_TITLE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MAIDEN_PREVIOUS_FORMER_NAME</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>SSN</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>NPI</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PHONE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MOBILE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MAILING_STREET</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MAILING_CITY</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MAILING_STATE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MAILING_ZIP</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>MAILING_ADDRESS_SAME_AS_PAYROLL_ADDRESS</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PAYROLL_ADDRESS_STREET</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PAYROLL_ADDRESS_CITY</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PAYROLL_ADDRESS_STATE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>PAYROLL_ADDRESS_ZIP</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>DEA_NUMBER</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>ISSUE_DATE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>DEA_STATE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>CORPORATION_AND_TAX_INFORMATION_TYPE</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>CORPORATION_AND_TAX_CLASSIFICATION</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>CORPORATION_NAME</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>CORPORATE_TAX_ID</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>CORPORATION_ADDRESS</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>STATE_OF_INCORPORATION</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>LEGAL_NAME_HELP_TEXT</assessmentQuestionDeveloperNames>
+    <assessmentQuestionDeveloperNames>DEA_SUBTITLE</assessmentQuestionDeveloperNames>
+    <developerName>Clinician_Profile_Updates</developerName>
+    <name>Clinician Profile Updates</name>
+</AssessmentQuestionSet>

@@ -1,0 +1,22 @@
+{
+    "ElapsedTime": 416,
+    "Input": {
+        "AnticipatedStartDateforServices": "2025-09-04",
+        "ClientAddress": "Client Address\n",
+        "DescriptionofServices": "Description of Services (i.e. HM & CC programs managed by SCP)",
+        "FinancialTerms": "Financial Terms (i.e. MG, subsidy, at risk money/incentive money, etc.)",
+        "LocationofeachHospital": "Location of each Hospital (City & State)\n",
+        "NameofClientEntity": "",
+        "NameofClientRepresentativeLOIwillbeaddressedto": "Name of Client Representative LOI will be addressed to",
+        "NameofeachHospital": "Name of each Hospital\n",
+        "OpportunityAccountId": "0017x00001KRaG1AAL",
+        "OtherKeyTermsAssumptions": "Other Key Terms & Assumptions (i.e. MOR/Governance/GME program, Malpractice limits, etc.)",
+        "ProposedTermofAgreement": "Proposed Term of Agreement (i.e. 3 years)",
+        "TypeofServicestobeprovidedateachHospital": "Type of Services to be provided at each Hospital (EM/HM/ICU/Connected Care)",
+        "contractRecordId": "0127x00000IhoSDAAZ",
+        "opportunityId": "0067x00000VL9T3AAL",
+        "opportunityOwnerId": "0057x00000UppDhAAJ"
+    },
+    "Status": false,
+    "Type": "DataRaptor Post Action"
+}

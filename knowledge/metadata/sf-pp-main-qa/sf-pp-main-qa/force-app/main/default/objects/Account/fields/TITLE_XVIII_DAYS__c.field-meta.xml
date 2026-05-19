@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TITLE_XVIII_DAYS__c</fullName>
+    <description>Total Medicaid Patient Days</description>
+    <externalId>false</externalId>
+    <label>Total Medicaid Patient Days</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

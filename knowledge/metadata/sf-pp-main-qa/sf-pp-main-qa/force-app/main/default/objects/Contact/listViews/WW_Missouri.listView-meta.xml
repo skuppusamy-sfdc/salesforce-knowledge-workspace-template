@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WW_Missouri</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Account_State__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.ADDRESS2_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>MO</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Chief Executive Officer,CEO,CFO,COO,Business Development</value>
+    </filters>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>customer,prospect,target</value>
+    </filters>
+    <label>WW - MO - CEO - Pam - 10/03</label>
+</ListView>

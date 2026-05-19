@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Processed_Clinical_Ids__c</fullName>
+    <description>In account-management-agent: comma-separated contract IDs selected by user in draft contracts table for post-processing.</description>
+    <label>Non Processed Clinical Ids</label>
+    <length>131072</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

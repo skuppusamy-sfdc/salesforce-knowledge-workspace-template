@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pqcrush__OwnerValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!ISPICKVAL(pqcrush__Role__c, &apos;Edit&apos;), pqcrush__User__c ==  pqcrush__Account_Plan__r.OwnerId)</errorConditionFormula>
+    <errorDisplayField>pqcrush__Role__c</errorDisplayField>
+    <errorMessage>The owner must be an editor</errorMessage>
+</ValidationRule>

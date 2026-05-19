@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_New_Competitor</fullName>
+    <availability>online</availability>
+    <description>Custom button for creating a new record from a Opportunity record</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Competitor</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0X/e?CF00N17000000Slvw={!Opportunity.Name}&amp;CF00N17000000Slvw_lkid={!Opportunity.Id}&amp;retURL=%2F{!Opportunity.Id}&amp;CF00N17000000Slvt={!Opportunity.Account}&amp;CF00N17000000Slvt_lkid={!Opportunity.AccountId}</url>
+</WebLink>

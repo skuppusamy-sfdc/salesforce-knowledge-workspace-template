@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Stage__c</fullName>
+    <label>Pipeline Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contract Accepted</fullName>
+                <default>false</default>
+                <label>Contract Accepted</label>
+            </value>
+            <value>
+                <fullName>Contract Negotiated</fullName>
+                <default>false</default>
+                <label>Contract Negotiated</label>
+            </value>
+            <value>
+                <fullName>Contract Request</fullName>
+                <default>false</default>
+                <label>Contract Request</label>
+            </value>
+            <value>
+                <fullName>Down Select</fullName>
+                <default>false</default>
+                <label>Down Select</label>
+            </value>
+            <value>
+                <fullName>Marketing Qualified Lead</fullName>
+                <default>false</default>
+                <label>Marketing Qualified Lead</label>
+            </value>
+            <value>
+                <fullName>Proposal Development</fullName>
+                <default>false</default>
+                <label>Proposal Development</label>
+            </value>
+            <value>
+                <fullName>Proposal Presented</fullName>
+                <default>false</default>
+                <label>Proposal Presented</label>
+            </value>
+            <value>
+                <fullName>Proposal Request</fullName>
+                <default>false</default>
+                <label>Proposal Request</label>
+            </value>
+            <value>
+                <fullName>Sales Qualified Lead</fullName>
+                <default>false</default>
+                <label>Sales Qualified Lead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

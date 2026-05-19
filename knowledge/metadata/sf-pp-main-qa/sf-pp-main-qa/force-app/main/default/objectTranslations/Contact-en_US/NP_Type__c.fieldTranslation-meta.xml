@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NP Type --></label>
+    <name>NP_Type__c</name>
+    <picklistValues>
+        <masterLabel>Acute Care Nurse Practitioner</masterLabel>
+        <translation><!-- Acute Care Nurse Practitioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adult-Gerontology Acute Care Nurse Practitioner</masterLabel>
+        <translation><!-- Adult-Gerontology Acute Care Nurse Practitioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency Nurse Practitioner</masterLabel>
+        <translation><!-- Emergency Nurse Practitioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Nurse Practitioner</masterLabel>
+        <translation><!-- Family Nurse Practitioner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

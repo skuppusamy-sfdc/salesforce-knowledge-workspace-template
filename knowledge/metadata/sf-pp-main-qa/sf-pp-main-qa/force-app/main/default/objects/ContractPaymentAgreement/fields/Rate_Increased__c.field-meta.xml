@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_Increased__c</fullName>
+    <label>Rate Increased?</label>
+    <summaryFilterItems>
+        <field>PreventiveCareAgreement.Existing_Rate_Increased__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PreventiveCareAgreement.ContractPaymentAgreementId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

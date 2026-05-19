@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notification for Employment Type Changes</name>
+    <style>none</style>
+    <subject>Employment Type Change for {!Account.Name}</subject>
+    <textOnly>{!Account.Name} ({!Account.Global_Provider_ID__pc}) is changing Employment Type. Kindly coordinate with the relevant stakeholders and initiate the necessary preparations for processing.  Thank you for your attention to this matter.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

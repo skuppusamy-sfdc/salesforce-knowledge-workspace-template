@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access for all Corporate Support users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Corporate Support Group</label>
+    <permissionSets>Assessment_Extension</permissionSets>
+    <permissionSets>Corporate_Support</permissionSets>
+    <permissionSets>Create_and_Manage_Personal_Reports</permissionSets>
+    <permissionSets>Create_and_Manage_Public_Reports</permissionSets>
+    <permissionSets>Export_Reports</permissionSets>
+    <permissionSets>OmniStudio_User_Extension</permissionSets>
+    <permissionSets>View_Client_Onboarding</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__AssessmentEnvelope</permissionSets>
+    <permissionSets>force__HealthCloudFoundation</permissionSets>
+    <permissionSets>force__HealthCloudProviderNetworkManagement</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

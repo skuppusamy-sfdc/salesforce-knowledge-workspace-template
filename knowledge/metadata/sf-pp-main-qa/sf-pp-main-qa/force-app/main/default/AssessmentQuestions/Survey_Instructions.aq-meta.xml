@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Survey Instructions</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Please rate each statement using the scale below:
+
+1 = Strongly Disagree / Very Poor → 5 = Strongly Agree / Excellent</questionText>
+        <responseValues>1
+2
+3
+4
+5</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Survey_Instructions</developerName>
+    <name>Survey Instructions</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

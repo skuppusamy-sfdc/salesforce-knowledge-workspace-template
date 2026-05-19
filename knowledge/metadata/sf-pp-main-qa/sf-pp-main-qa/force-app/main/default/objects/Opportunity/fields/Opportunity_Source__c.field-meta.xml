@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Source__c</fullName>
+    <label>Opportunity Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+                <label>Advertisement</label>
+            </value>
+            <value>
+                <fullName>Cold Call - Loss Campaign</fullName>
+                <default>false</default>
+                <label>Cold Call - Loss Campaign</label>
+            </value>
+            <value>
+                <fullName>Current EM Client</fullName>
+                <default>false</default>
+                <label>Current EM Client</label>
+            </value>
+            <value>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+                <label>Employee Referral</label>
+            </value>
+            <value>
+                <fullName>Exec Relationship</fullName>
+                <default>false</default>
+                <label>Exec Relationship</label>
+            </value>
+            <value>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+                <label>External Referral</label>
+            </value>
+            <value>
+                <fullName>Inbound Email</fullName>
+                <default>false</default>
+                <label>Inbound Email</label>
+            </value>
+            <value>
+                <fullName>Inbound Google Adwords</fullName>
+                <default>false</default>
+                <label>Inbound Google Adwords</label>
+            </value>
+            <value>
+                <fullName>Inbound In-person</fullName>
+                <default>false</default>
+                <label>Inbound In-person</label>
+            </value>
+            <value>
+                <fullName>Inbound Phone</fullName>
+                <default>false</default>
+                <label>Inbound Phone</label>
+            </value>
+            <value>
+                <fullName>Inbound Website</fullName>
+                <default>false</default>
+                <label>Inbound Website</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Outbound Email</fullName>
+                <default>false</default>
+                <label>Outbound Email</label>
+            </value>
+            <value>
+                <fullName>Outbound In-person</fullName>
+                <default>false</default>
+                <label>Outbound In-person</label>
+            </value>
+            <value>
+                <fullName>Outbound Phone</fullName>
+                <default>false</default>
+                <label>Outbound Phone</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Prev Business Contact</fullName>
+                <default>false</default>
+                <label>Prev Business Contact</label>
+            </value>
+            <value>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+                <label>Public Relations</label>
+            </value>
+            <value>
+                <fullName>Sales VP Contact</fullName>
+                <default>false</default>
+                <label>Sales VP Contact</label>
+            </value>
+            <value>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+                <label>Seminar - Internal</label>
+            </value>
+            <value>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+                <label>Seminar - Partner</label>
+            </value>
+            <value>
+                <fullName>System Relationship</fullName>
+                <default>false</default>
+                <label>System Relationship</label>
+            </value>
+            <value>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+                <label>Trade Show</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+                <label>Word of mouth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

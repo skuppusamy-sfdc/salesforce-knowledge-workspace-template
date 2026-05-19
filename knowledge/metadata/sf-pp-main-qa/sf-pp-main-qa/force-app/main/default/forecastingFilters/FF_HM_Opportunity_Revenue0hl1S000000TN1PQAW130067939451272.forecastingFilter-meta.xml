@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingFilter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <filterLogic>1</filterLogic>
+    <forecastingType>HM_Opportunity_Revenue</forecastingType>
+    <forecastingTypeSource>FTS_HM_Opportunity_Revenue7sy1S000000TN1KQAW304012030657257</forecastingTypeSource>
+    <isProtected>false</isProtected>
+    <masterLabel>FF_HM_Opportunity_Revenue0hl1S000000TN1PQAW130067939451272</masterLabel>
+</ForecastingFilter>

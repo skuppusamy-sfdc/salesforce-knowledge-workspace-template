@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Started</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is Started for Core services.</description>
+    <errorConditionFormula>NOT(
+  OR(RecordType.Name = &quot;Optum Sales Opportunity&quot;,
+     RecordType.Name = &quot;Consulting Services Sales&quot;,
+     RecordType.Name = &quot;Primary Care Opportunity&quot;,
+     RecordType.Name = &quot;Patient Engagement Opportunity&quot;,
+     RecordType.Name = &quot;SNF - Skilled Nursing Facility&quot;,
+     RecordType.Name = &quot;AL - Assisted Living Facility&quot;,
+     RecordType.Name = &quot;eMAC Sales Opportunity&quot;)) &amp;&amp;
+ ISPICKVAL(StageName, &quot;Started&quot;) &amp;&amp; 
+(TEXT(Bid_Process__c) = &quot;&quot;||  
+ ISPICKVAL(Data_Extract_Received__c,&quot;&quot;)|| 
+ ISNULL(Proposal_Date__c)|| 
+ ISNULL(Added_Options__c)|| 
+ ISNULL(Revenue__c)|| 
+ ISNULL(Margin__c)|| 
+ ISNULL(Volume__c)|| 
+ ISNULL(Subsidy__c)||
+ ISNULL(Verbal_Award_Date__c) || 
+ ISNULL(Expected_Sign_Date__c) || 
+ ISNULL(Target_Contract_Start_Date__c)||
+ ISNULL(Contract_Customer_Signed_Date__c )||
+ ISNULL(Actual_Start_Date__c ))</errorConditionFormula>
+    <errorMessage>Required: RFP Process, Prop Fin Terms, Data Extract Received, Prop Date, Added Options, Pat. Collections, Margin, Annual Encounters, Subsidy, Verbal Award Date, Expected Sign Date, Target Contract Start Date, Contract Signed Date &amp; Actual Start Date.</errorMessage>
+</ValidationRule>

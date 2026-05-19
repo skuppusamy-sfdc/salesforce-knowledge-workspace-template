@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Started</fullName>
+        <default>false</default>
+        <label>Not Started</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>Complete</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Approved</fullName>
+        <default>false</default>
+        <label>Not Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on Response</fullName>
+        <default>false</default>
+        <label>Waiting on Response</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

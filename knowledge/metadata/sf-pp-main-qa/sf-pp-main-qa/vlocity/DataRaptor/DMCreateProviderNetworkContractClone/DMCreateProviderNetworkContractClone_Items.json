@@ -1,0 +1,223 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem1",
+        "InputFieldName": "Clinician",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Clinician__c",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem2",
+        "InputFieldName": "ContractId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractId",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "2999-01-01",
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom7656",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EndDate",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom7536",
+        "InputFieldName": "hpfList:FacilityTitleName",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Facility_Title__c",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom3008",
+        "InputFieldName": "PayerId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HealthcarePayerNetworkId",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom2081",
+        "InputFieldName": "ProviderId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HealthcareProviderId",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem3",
+        "InputFieldName": "hpfList:Id",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Healthcare_Practitioner_Facility__c",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem0",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "$Vlocity.TODAY",
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom1375",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StartDate",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMCreateProviderNetworkContractCloneCustom0jI7x0000001l9lEAAItem4",
+        "InputFieldName": "Status",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMCreateProviderNetworkContractClone",
+        "OmniDataTransformationId": {
+            "Name": "DMCreateProviderNetworkContractClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMCreateProviderNetworkContractClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status__c",
+        "OutputObjectName": "ProviderNetworkContract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rate_Pay_Code_Remove__c</fullName>
+    <label>Rate Pay Code Remove?</label>
+    <summarizedField>PreventiveCareAgreement.Rate_Pay_Code_Remove__c</summarizedField>
+    <summaryForeignKey>PreventiveCareAgreement.ContractPaymentAgreementId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,12 @@
+{
+    "CPA": {
+        "FacilityTitle": "Text",
+        "FirstScheduledDate": "Text",
+        "NPPAAProfessional Title": "Text",
+        "NPPAName": "Text",
+        "Name": "Text",
+        "PhysicianName": "Text",
+        "RelationshipStatus": "Text",
+        "SupervisionCollaborationStatus": "Text"
+    }
+}

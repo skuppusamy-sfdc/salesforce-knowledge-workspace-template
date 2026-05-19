@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>OTHER SKILLS AND CONDITIONS</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;OTHER SKILLS AND CONDITIONS - INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Acute psychiatric illness&lt;/li&gt;
+&lt;li&gt;Alcohol overdose and withdrawal symptoms&lt;/li&gt;
+&lt;li&gt;Management of poisonings&lt;/li&gt;
+&lt;li&gt;Management of drowning and near drowning&lt;/li&gt;
+&lt;li&gt;Management of patients with altered level of   
+consciousness&lt;/li&gt;
+&lt;li&gt;Other procedures necessary to save life or   
+limb&lt;/li&gt;
+&lt;li&gt;Evaluation and management of pediatric and   
+neonatal illnesses, injury and emergencies&lt;/li&gt;
+&lt;li&gt;Performing and interpreting bedside   
+ultrasound&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>OTHER_SKILLS_AND_CONDITIONS</developerName>
+    <name>OTHER SKILLS AND CONDITIONS</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

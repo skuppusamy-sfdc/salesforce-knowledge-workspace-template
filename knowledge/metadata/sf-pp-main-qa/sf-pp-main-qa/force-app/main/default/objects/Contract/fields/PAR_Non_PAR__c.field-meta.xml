@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAR_Non_PAR__c</fullName>
+    <label>PAR/Non-PAR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PAR</fullName>
+                <default>false</default>
+                <label>PAR</label>
+            </value>
+            <value>
+                <fullName>NON-PAR</fullName>
+                <default>false</default>
+                <label>NON-PAR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

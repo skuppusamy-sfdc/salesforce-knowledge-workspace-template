@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weighted_Score2__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( (ScoreCardMatrix__r.Criteria_Fields__c),
+&quot;ED Volume&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Phy in State (EM, FP, or IM)&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Hospital Service Area HH Inco&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Population Size of Svc Area&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Ownership/Geography&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;CBSA Classification&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Proximity to SG ED Client&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Managed Care Favorability&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;SG Favorability&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Net Operating Profit Margin&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+&quot;Staffed Beds&quot;, ScoreCardMatrix__r.WEIGHTED_CONSTANTS_C__c * Score__c,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Weighted Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

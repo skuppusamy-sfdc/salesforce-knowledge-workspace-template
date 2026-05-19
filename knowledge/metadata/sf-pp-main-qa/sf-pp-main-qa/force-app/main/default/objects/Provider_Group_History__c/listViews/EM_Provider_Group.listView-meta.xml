@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EM_Provider_Group</fullName>
+    <columns>NAME</columns>
+    <columns>Hospital__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Satisfaction__c</columns>
+    <columns>Incumbent__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Provider_Group_History__c.EM_Provider_Group</value>
+    </filters>
+    <label>EM Provider Group</label>
+</ListView>

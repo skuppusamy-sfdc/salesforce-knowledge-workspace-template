@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to update Webex chat room</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <description>This is the id of the person a room will be opened with</description>
+        <fieldName>personId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the ID of the selected room that will be opened</description>
+        <fieldName>roomId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the title of the selected room that will be opened</description>
+        <fieldName>roomTitle</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the email of the person a room will be opened with</description>
+        <fieldName>personEmail</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the start time of this message channel publish</description>
+        <fieldName>startTime</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexRoomOpenChannel</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>texcellency__Detailed_View</fullName>
+    <columns>NAME</columns>
+    <columns>texcellency__Level__c</columns>
+    <columns>texcellency__Logger__c</columns>
+    <columns>texcellency__Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Detailed View</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Arterial puncture and blood gas sampling</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Arterial puncture and blood gas sampling</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Arterial_puncture_and_blood_gas_sampling</developerName>
+    <name>Arterial puncture and blood gas sampling</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

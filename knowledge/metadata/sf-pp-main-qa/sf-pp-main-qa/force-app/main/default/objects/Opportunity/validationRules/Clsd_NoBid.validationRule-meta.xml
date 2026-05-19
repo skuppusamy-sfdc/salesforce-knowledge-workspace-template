@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clsd_NoBid</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Closed No-Bid.</description>
+    <errorConditionFormula>(ISPICKVAL(StageName, &quot;Closed-No Bid&quot;))&amp;&amp;  
+(ISNULL(CloseDate)||
+ ISPICKVAL(Close_Reason__c, &quot;&quot;)||
+ ISNULL(Lost_Date__c) ||
+ ISNULL( Who_Won__c ))</errorConditionFormula>
+    <errorMessage>Required Fields: Lost Date, Close Date, Close Reason and Who Won.</errorMessage>
+</ValidationRule>

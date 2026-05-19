@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Recovery History</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Completed and current SCP Applicant Profile and Release (aka Request &amp; Release)</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Risk_Review_Recovery_History_Question_1</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Recovery History</name>
+    <questionCategory>Recovery History</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,5 @@
+{
+  "title" : "Draft Contract Output",
+  "description" : "Single draft contract item (Contract Id, Contract Number, Start Date, Clinician Name)",
+  "lightning:type" : "@apexClassType/c__DraftContractOutput"
+}

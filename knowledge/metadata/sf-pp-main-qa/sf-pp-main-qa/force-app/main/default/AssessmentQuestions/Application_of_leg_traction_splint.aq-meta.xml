@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Application of leg traction splint</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Application of leg traction splint</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Application_of_leg_traction_splint</developerName>
+    <name>Application of leg traction splint</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

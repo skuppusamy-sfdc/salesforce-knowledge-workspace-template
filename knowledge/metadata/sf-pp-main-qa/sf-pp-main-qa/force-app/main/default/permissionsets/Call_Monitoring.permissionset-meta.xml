@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Call Monitoring for Sales Dialer; Enables Monitoring for Voice Calls.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Call Monitoring</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>VoiceCoach</name>
+    </userPermissions>
+</PermissionSet>

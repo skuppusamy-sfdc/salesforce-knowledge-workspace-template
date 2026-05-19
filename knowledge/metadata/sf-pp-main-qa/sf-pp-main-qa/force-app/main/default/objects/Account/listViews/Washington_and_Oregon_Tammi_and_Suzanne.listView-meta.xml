@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Washington_and_Oregon_Tammi_and_Suzanne</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>texcellency__DefHC_Hospital_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AZ,CA,CO,ID,IA,KS,MN,MT,NE,NV,NM,OK,OR,SD,UT,WA,WI,WY</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Target</value>
+    </filters>
+    <filters>
+        <field>NP_PA_Hours_Per_Day__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>texcellency__DefHC_Hospital_Type__c</field>
+        <operation>contains</operation>
+        <value>Health system</value>
+    </filters>
+    <label>Systems in Tammi and Suzanne&apos;s territory</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PACS_Closed_Lost</fullName>
+    <active>false</active>
+    <description>Verifies required fields are populated when Stage is Closed Lost or Closed - No Change/Lost  for PACS services.</description>
+    <errorConditionFormula>RecordType.Name = &quot;Post Acute Care Services Opportunity&quot; &amp;&amp;
+(ISPICKVAL(StageName, &quot;Closed Lost&quot;) ||
+ISPICKVAL(StageName, &quot;Closed - No Change/Lost&quot;)) &amp;&amp; 
+(TEXT(Close_Reason__c) = &quot;&quot; ||
+ ISNULL(CloseDate) ||
+ ISNULL(Lost_Date__c ) ||
+ ISNULL(Close_Narrative__c ))</errorConditionFormula>
+    <errorMessage>Required Fields: Close Date, Lost Date, Close Reason and Closed/Lost Narrative.</errorMessage>
+</ValidationRule>

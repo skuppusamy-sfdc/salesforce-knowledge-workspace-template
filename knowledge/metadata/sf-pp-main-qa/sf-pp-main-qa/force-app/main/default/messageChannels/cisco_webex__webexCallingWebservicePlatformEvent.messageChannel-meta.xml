@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to send the payload received from WebexCallingWebhooks platform event</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This is the ID of the meeting</description>
+        <fieldName>meetingId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the type of telephony event</description>
+        <fieldName>event</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the webex ID of the call</description>
+        <fieldName>callId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the webex ID of the person</description>
+        <fieldName>personId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the name of the person who called</description>
+        <fieldName>name</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the event type</description>
+        <fieldName>eventType</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the webex ID of the person who created the event</description>
+        <fieldName>createdBy</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the datetime when the call was answered</description>
+        <fieldName>answeredDatetime</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the datetime when the call was initiated</description>
+        <fieldName>createdDatetime</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the datetime when the call was hangup</description>
+        <fieldName>disconnectedDatetime</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the type of call</description>
+        <fieldName>callType</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the calling person phone number</description>
+        <fieldName>phoneNumber</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the state of the call</description>
+        <fieldName>state</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This is the personality field for the call</description>
+        <fieldName>personality</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexCallingWebservicePlatformEvent</masterLabel>
+</LightningMessageChannel>

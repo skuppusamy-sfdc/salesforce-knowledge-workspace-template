@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Personal History</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Criminal proceeding or conviction (excluding misdemeanors related to minor traffic violations).
+DUI/DWI(s) are not considered a minor traffic violation; therefore, require a risk review</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Risk_Review_Personal_History_Question_2</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Personal History</name>
+    <questionCategory>Personal History</questionCategory>
+</AssessmentQuestion>

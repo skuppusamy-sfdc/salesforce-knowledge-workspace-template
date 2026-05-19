@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acceptable_EPF_documentation_type__c</fullName>
+    <label>Acceptable EPF documentation type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Text file - Delimited</fullName>
+                <default>false</default>
+                <label>Text file - Delimited</label>
+            </value>
+            <value>
+                <fullName>Text file - Fixed Width</fullName>
+                <default>false</default>
+                <label>Text file - Fixed Width</label>
+            </value>
+            <value>
+                <fullName>HL7 - 2.x</fullName>
+                <default>false</default>
+                <label>HL7 - 2.x</label>
+            </value>
+            <value>
+                <fullName>HL7 - 3.x</fullName>
+                <default>false</default>
+                <label>HL7 - 3.x</label>
+            </value>
+            <value>
+                <fullName>XML</fullName>
+                <default>false</default>
+                <label>XML</label>
+            </value>
+            <value>
+                <fullName>Excel</fullName>
+                <default>false</default>
+                <label>Excel</label>
+            </value>
+            <value>
+                <fullName>Web Service</fullName>
+                <default>false</default>
+                <label>Web Service</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

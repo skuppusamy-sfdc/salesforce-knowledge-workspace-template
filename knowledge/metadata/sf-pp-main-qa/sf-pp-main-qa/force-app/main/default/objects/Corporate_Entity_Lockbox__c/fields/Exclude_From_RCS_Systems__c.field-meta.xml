@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclude_From_RCS_Systems__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For IT Purposes
+
+Used by an SSIS package to determine whether or not to integrate billing and facility data into RCS systems. 
+
+Onbase tables:
+cc_BillingCompany
+cc_Facility_List
+
+Encounter Id Service table:
+Billing</description>
+    <inlineHelpText>Exclude from Onbase and Encounter Id Service?</inlineHelpText>
+    <label>Exclude From RCS Systems</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

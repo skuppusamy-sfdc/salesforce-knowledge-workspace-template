@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Lightning Message Channel used to refresh call history when new call event occurs</description>
+    <isExposed>false</isExposed>
+    <lightningMessageFields>
+        <fieldName>data</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>logId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>dockedComposerId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>WebexCallHistoryRefreshChannel</masterLabel>
+</LightningMessageChannel>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Measure__c</fullName>
+    <label>Measure</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Revenue</fullName>
+                <default>false</default>
+                <label>Revenue</label>
+            </value>
+            <value>
+                <fullName>Margin</fullName>
+                <default>false</default>
+                <label>Margin</label>
+            </value>
+            <value>
+                <fullName>Contract Equivalents</fullName>
+                <default>false</default>
+                <label>Contract Equivalents</label>
+            </value>
+            <value>
+                <fullName>Contracts Lost</fullName>
+                <default>false</default>
+                <label>Contracts Lost</label>
+            </value>
+            <value>
+                <fullName>Contracts Won</fullName>
+                <default>false</default>
+                <label>Contracts Won</label>
+            </value>
+            <value>
+                <fullName>Win Rate(%)</fullName>
+                <default>false</default>
+                <label>Win Rate(%)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,150 @@
+{
+  "appPageId" : "0835824d-10ae-4bcb-a5d9-d167369a2555",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "08d79a95-9c6e-4efc-93c1-35df49c5de6d",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.Prospect_Portal_Graphic_Assets131.1}\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "28de29e5-426c-4419-83da-01ccba15b299",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c88eec42-b161-4c4b-81fe-508d07551152",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flexcardName" : "Clinician_AtGlanceSection",
+        "objectApiName" : "{!objectApiName}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "runtime_omnistudio:flexcard",
+      "id" : "672aed3c-a2d5-4dea-b173-83e110dfe048",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "All",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "bpats__ATS_Action__c",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "272961ac-abf1-47a2-98d9-df168fd0bb27",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "industries_common:assessmentContainerCommunity",
+      "id" : "9a90b028-008f-4455-a8f9-41409a4ff0b0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : false,
+        "filterName" : "OpenTasks",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "Task",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
+        "showDisplay" : "grid",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : false,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "db1f2528-9175-4b07-82c2-84c7640a6936",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "01822fc4-26b1-456c-befa-3be27a93de4b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5e6f1436-912e-41a3-bb76-7f2b9a9c578a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0159bcd4-8ebf-45b8-a38d-8cb54a1a1f55",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7f672eb4-b996-450e-a3b3-67e8317c883e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<a href=\"https://staging.myscphealth.com/\"\n   class=\"slds-button slds-button_neutral\"\n   style=\"color:#0176d3;\"\n   target=\"_blank\"\n   rel=\"noopener\"\n   title=\"Log in to MySCP\">\n   Log in to MySCP\n</a>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "b5fadca1-2465-40c7-8d6e-27061ab92165",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "flowArguments" : "[{\"label\":\"CurrentUserId\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!CurrentUser.id}\"}]",
+        "flowName" : "User_Detail_Flow_For_Experience_Cloud"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "003f5b28-e269-4a40-9679-0a2ea90b8d28",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "flexcardName" : "HCPortalLinks",
+        "objectApiName" : "{!objectApiName}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "runtime_omnistudio:flexcard",
+      "id" : "868f2f73-1ea9-464d-88ef-9b9785e313f8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2d0e5ee9-30b9-47c4-a208-251dab03a7a5",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "e3ffd750-2d45-4880-bb63-38bf9689d644",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

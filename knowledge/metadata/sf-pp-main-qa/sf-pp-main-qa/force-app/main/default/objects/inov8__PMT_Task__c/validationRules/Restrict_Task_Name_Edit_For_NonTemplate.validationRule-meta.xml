@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Task_Name_Edit_For_NonTemplate</fullName>
+    <active>true</active>
+    <description>You cannot edit the Task Name (Milestone).</description>
+    <errorConditionFormula>AND(
+    NOT( inov8__IsTemplate__c),
+    ISCHANGED( Name )
+)</errorConditionFormula>
+    <errorMessage>You cannot edit the Task Name (Milestone).</errorMessage>
+</ValidationRule>

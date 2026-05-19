@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accreditation_Agency__c</fullName>
+    <label>Accreditation Agency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AAAHC (Accreditation Association for Ambulatory Health Care)</fullName>
+                <default>false</default>
+                <label>AAAHC (Accreditation Association for Ambulatory Health Care)</label>
+            </value>
+            <value>
+                <fullName>CARF – Commission on Accreditation of Rehab Facilities</fullName>
+                <default>false</default>
+                <label>CARF – Commission on Accreditation of Rehab Facilities</label>
+            </value>
+            <value>
+                <fullName>CIHQ (Center for Improvement in Healthcare Quality)</fullName>
+                <default>false</default>
+                <label>CIHQ (Center for Improvement in Healthcare Quality)</label>
+            </value>
+            <value>
+                <fullName>DNV GL (DNV GL - Healthcare)</fullName>
+                <default>false</default>
+                <label>DNV GL (DNV GL - Healthcare)</label>
+            </value>
+            <value>
+                <fullName>HFAP (Healthcare Facilities Accreditation Program)</fullName>
+                <default>false</default>
+                <label>HFAP (Healthcare Facilities Accreditation Program)</label>
+            </value>
+            <value>
+                <fullName>Institute for Medical Quality (IMQ)</fullName>
+                <default>false</default>
+                <label>Institute for Medical Quality (IMQ)</label>
+            </value>
+            <value>
+                <fullName>TJC (The Joint Commission)</fullName>
+                <default>false</default>
+                <label>TJC (The Joint Commission)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

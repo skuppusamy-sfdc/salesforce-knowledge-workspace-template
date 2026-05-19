@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Operations__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Client Operations</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <filterItems>
+            <field>Operational_Structure__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Client Operations</value>
+        </filterItems>
+        <filterItems>
+            <field>Operational_Structure__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Legacy</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Operational_Structure__c</referenceTo>
+    <relationshipLabel>Accounts (Client Operations)</relationshipLabel>
+    <relationshipName>ClientOperationsAccounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

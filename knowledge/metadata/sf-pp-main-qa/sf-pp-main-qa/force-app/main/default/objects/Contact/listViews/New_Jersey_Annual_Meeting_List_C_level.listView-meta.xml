@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Jersey_Annual_Meeting_List_C_level</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT.NAME</columns>
+    <columns>Account_DHC_Network_Name__c</columns>
+    <columns>Account_Geo_Classification__c</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>Account_ED_Volume__c</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>Target,Prospect,No Interest</value>
+    </filters>
+    <filters>
+        <field>Account_Owner__c</field>
+        <operation>equals</operation>
+        <value>Holly Gibbons</value>
+    </filters>
+    <filters>
+        <field>Account_State__c</field>
+        <operation>equals</operation>
+        <value>New Jersey</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>careone,kindred,specialized,closed,select,acuity,rehabilitation,rehab,mental,psychiatric</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notContain</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>DHC_Ownership_Status__c</field>
+        <operation>notContain</operation>
+        <value>Federal</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Executive Officer,Chief Financial Officer,Chief Nursing Officer,Chief Operating Officer,Chief Quality Officer,Chief Strategy Officer,Vice President of Medical Affairs</value>
+    </filters>
+    <label>New Jersey Annual Meeting List - C-level</label>
+</ListView>

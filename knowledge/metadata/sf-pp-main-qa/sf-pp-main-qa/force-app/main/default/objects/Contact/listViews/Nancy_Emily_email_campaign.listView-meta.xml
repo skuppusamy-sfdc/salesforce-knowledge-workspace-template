@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nancy_Emily_email_campaign</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.FIRST_NAME</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>CONTACT.SALUTATION</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Account_Status__c</field>
+        <operation>equals</operation>
+        <value>Target,prospect</value>
+    </filters>
+    <filters>
+        <field>Account_Owner__c</field>
+        <operation>equals</operation>
+        <value>Jen Beaudoin</value>
+    </filters>
+    <filters>
+        <field>Account_Targeting_Total_Score__c</field>
+        <operation>equals</operation>
+        <value>55</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>CEO,Chief Executive Officer,Chief Operating Officer,COO</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <label>Intro to SCP – A clinical service partne</label>
+</ListView>

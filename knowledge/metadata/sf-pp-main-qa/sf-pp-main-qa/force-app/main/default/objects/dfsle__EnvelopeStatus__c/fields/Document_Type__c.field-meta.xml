@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Type__c</fullName>
+    <label>Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2022 Director Amendment</fullName>
+                <default>false</default>
+                <label>2022 Director Amendment</label>
+            </value>
+            <value>
+                <fullName>Agreement Packet</fullName>
+                <default>false</default>
+                <label>Agreement Packet</label>
+            </value>
+            <value>
+                <fullName>BAA</fullName>
+                <default>false</default>
+                <label>BAA</label>
+            </value>
+            <value>
+                <fullName>Business Entity Verification Form</fullName>
+                <default>false</default>
+                <label>Business Entity Verification Form</label>
+            </value>
+            <value>
+                <fullName>Chart Review Attestation</fullName>
+                <default>false</default>
+                <label>Chart Review Attestation</label>
+            </value>
+            <value>
+                <fullName>Christus 0801</fullName>
+                <default>false</default>
+                <label>Christus 0801</label>
+            </value>
+            <value>
+                <fullName>Clinical Affairs Matching Request</fullName>
+                <default>false</default>
+                <label>Clinical Affairs Matching Request</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2.0</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2.0</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 1</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 1</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 2</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 2</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 3</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 3</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 4</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 4</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 5</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 5</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 6</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 6</label>
+            </value>
+            <value>
+                <fullName>Clinical Comp 2023 - Wave 7</fullName>
+                <default>false</default>
+                <label>Clinical Comp 2023 - Wave 7</label>
+            </value>
+            <value>
+                <fullName>Direct Deposit Form</fullName>
+                <default>false</default>
+                <label>Direct Deposit Form</label>
+            </value>
+            <value>
+                <fullName>Hospital Application</fullName>
+                <default>false</default>
+                <label>Hospital Application</label>
+            </value>
+            <value>
+                <fullName>Hospital Reappointment Application</fullName>
+                <default>false</default>
+                <label>Hospital Reappointment Application</label>
+            </value>
+            <value>
+                <fullName>Intake Form</fullName>
+                <default>false</default>
+                <label>Intake Form</label>
+            </value>
+            <value>
+                <fullName>Medical Board NP/PA Collaborating/Supervising Physician Form</fullName>
+                <default>false</default>
+                <label>Medical Board NP/PA Collaborating/Supervising Physician Form</label>
+            </value>
+            <value>
+                <fullName>NAA - Teladoc</fullName>
+                <default>false</default>
+                <label>NAA - Teladoc</label>
+            </value>
+            <value>
+                <fullName>NDA</fullName>
+                <default>false</default>
+                <label>NDA</label>
+            </value>
+            <value>
+                <fullName>Nursing Board NP Collaborating Physician Form</fullName>
+                <default>false</default>
+                <label>Nursing Board NP Collaborating Physician Form</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>POA Letter</fullName>
+                <default>false</default>
+                <label>POA Letter</label>
+            </value>
+            <value>
+                <fullName>Proctorship Template</fullName>
+                <default>false</default>
+                <label>Proctorship Template</label>
+            </value>
+            <value>
+                <fullName>Provider Agreement</fullName>
+                <default>false</default>
+                <label>Provider Agreement</label>
+            </value>
+            <value>
+                <fullName>Provider Enrollment Application</fullName>
+                <default>false</default>
+                <label>Provider Enrollment Application</label>
+            </value>
+            <value>
+                <fullName>Provider Risk Review</fullName>
+                <default>false</default>
+                <label>Provider Risk Review</label>
+            </value>
+            <value>
+                <fullName>Request &amp; Release</fullName>
+                <default>false</default>
+                <label>Request &amp; Release</label>
+            </value>
+            <value>
+                <fullName>RVU Amendment</fullName>
+                <default>false</default>
+                <label>RVU Amendment</label>
+            </value>
+            <value>
+                <fullName>Teladoc Follow Up</fullName>
+                <default>false</default>
+                <label>Teladoc Follow Up</label>
+            </value>
+            <value>
+                <fullName>Teladoc Term Letter</fullName>
+                <default>false</default>
+                <label>Teladoc Term Letter</label>
+            </value>
+            <value>
+                <fullName>Vaccination Verification</fullName>
+                <default>false</default>
+                <label>Vaccination Verification</label>
+            </value>
+            <value>
+                <fullName>W9</fullName>
+                <default>false</default>
+                <label>W9</label>
+            </value>
+            <value>
+                <fullName>Franciscan0801</fullName>
+                <default>false</default>
+                <label>Franciscan0801</label>
+            </value>
+            <value>
+                <fullName>Clinician Agreement</fullName>
+                <default>false</default>
+                <label>Clinician Agreement</label>
+            </value>
+            <value>
+                <fullName>Term Sheet</fullName>
+                <default>false</default>
+                <label>Term Sheet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

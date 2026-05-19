@@ -1,0 +1,64 @@
+{
+    "ClinicianId": "",
+    "ClinicianSpecialty": [
+        {
+            "Id": "0bc7x0000000CXRAA2",
+            "IsPrimary": true,
+            "Name": "TEST KL",
+            "PrimarySpecId": null,
+            "RecordId": "0bc7x0000000CXRAA2",
+            "SubSpecialty": false,
+            "TA_PrimarySpecialty": "TEST KL"
+        },
+        {
+            "Id": "0bc7x0000000CXRAA2",
+            "IsPrimary": false,
+            "Name": "TEST KL",
+            "PracSpecId": null,
+            "RecordId": "0bc7x0000000CXRAA2",
+            "SubSpecialty": true,
+            "TA_PracticingSpecialty": "TEST KL"
+        }
+    ],
+    "STP_ClinicianInfo": {
+        "BLK_ClinicianInformation": {
+            "FullName": "Harsh G Sr.",
+            "MUL_MedicalLicenseState": "CT;HI;KS",
+            "RAD_BoardCeritified": "Yes",
+            "SL_PracticingPreference": "HM",
+            "SL_ProfessionalTitle": "CRNA",
+            "TA_PracticingSpecialty-Block": {
+                "Id": "0bc7x0000000CXRAA2",
+                "Name": "TEST KL",
+                "PracSpecId": null,
+                "RecordId": "0bc7x0000000CXRAA2",
+                "TA_PracticingSpecialty": "TEST KL"
+            },
+            "TA_PrimarySpecialty-Block": {
+                "Id": "0bc7x0000000CXRAA2",
+                "Name": "TEST KL",
+                "PrimarySpecId": null,
+                "RecordId": "0bc7x0000000CXRAA2",
+                "TA_PrimarySpecialty": "TEST KL"
+            },
+            "TA_Taxonomy-Block": {
+                "Id": "0bc7x0000000CUDAA2",
+                "Name": "Testing 1",
+                "RecordId": "0bc7x0000000CUDAA2",
+                "TA_Taxonomy": "Testing 1"
+            }
+        },
+        "BLK_Notes": {
+            "TXA_Comments": "TEXT"
+        },
+        "BLK_ProfessionalStatus": {
+            "DT_EndDate": "2025-06-13",
+            "SL_ProfessionalStatus": "Resident",
+            "TXT_Program": "2"
+        },
+        "BLK_SponsorshipDetail": {
+            "RAD_SponsorshipNeed": "Yes",
+            "SEL_VisaType": "Birth Abroad Cert"
+        }
+    }
+}

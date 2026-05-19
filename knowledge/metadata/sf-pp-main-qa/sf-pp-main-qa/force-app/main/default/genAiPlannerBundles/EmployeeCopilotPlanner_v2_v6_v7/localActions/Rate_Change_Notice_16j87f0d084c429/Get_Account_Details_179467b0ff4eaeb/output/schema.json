@@ -1,0 +1,26 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "details" : {
+      "title" : "Formatted Details",
+      "description" : "Show nicely formatted record information to user",
+      "maxLength" : 100000,
+      "lightning:type" : "lightning__richTextType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "returnedAccountId" : {
+      "title" : "selected AccountId",
+      "description" : "store in selectedAccountId",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

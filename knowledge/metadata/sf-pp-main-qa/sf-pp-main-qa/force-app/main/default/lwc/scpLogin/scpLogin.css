@@ -1,0 +1,92 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+	width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input-group { 
+	margin-top: 1rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-container lightning-input .slds-input {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.input-icon {
+    color: #555;
+}
+
+.input-field {
+    flex: 1;
+	--lwc-shadowButtonFocus: 0;
+    --lwc-borderWidthThin: 0;
+    --slds-c-input-shadow-focus: 0;
+    --sds-c-input-shadow-focus: 0;
+}
+
+.button-section {
+    margin-top: 1rem;
+	text-align: left;
+}
+
+.login-btn {
+    background-color: #003da5;
+    color: white;
+    width: 100%;
+    border-radius: 0.3rem;
+	margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+	font-size: 16px;
+}
+
+:host .login-btn{
+	--slds-c-button-line-height: 2rem;
+}
+
+.error-text {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.forgot-password {
+    margin-top: 0.8rem;
+    color: #003da5;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+:host ::slotted(lightning-button.login-btn),
+:host .login-btn,
+:host .slds-button_stretch {
+    --slds-c-button-sizing-height: 45px; /* increases height */
+    --slds-c-button-line-height: 45px;
+    --slds-c-button-font-weight: 700;
+    --slds-c-button-font-size: 1rem;
+    border-radius: 0.4rem;
+}

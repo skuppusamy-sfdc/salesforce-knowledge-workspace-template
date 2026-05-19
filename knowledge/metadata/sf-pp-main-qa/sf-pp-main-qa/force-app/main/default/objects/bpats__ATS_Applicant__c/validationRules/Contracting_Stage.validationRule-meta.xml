@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracting_Stage</fullName>
+    <active>true</active>
+    <description>The Agreement Sent Date must be filled out on the Applicant record before moving to Contracting stage.</description>
+    <errorConditionFormula>AND(
+bpats__Stage__r.bpats__Sequence__c = 8,
+ISBLANK (Agreement_Sent_Date__c ))</errorConditionFormula>
+    <errorMessage>The Agreement Sent Date must be filled out on the Applicant record before moving to Contracting stage.</errorMessage>
+</ValidationRule>

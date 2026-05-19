@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Site_Privileging_Status__c</fullName>
+    <label>System Site Privileging Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Independent Client site, unique medical staff app and one approving body</fullName>
+                <default>false</default>
+                <label>Independent Client site, unique medical staff app and one approving body</label>
+            </value>
+            <value>
+                <fullName>Affiliated Client site, system medical staff app and one approving body</fullName>
+                <default>false</default>
+                <label>Affiliated Client site, system medical staff app and one approving body</label>
+            </value>
+            <value>
+                <fullName>Affiliated Client site, system medical staff app and separate approving bodies</fullName>
+                <default>false</default>
+                <label>Affiliated Client site, system medical staff app and separate approving bodies</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

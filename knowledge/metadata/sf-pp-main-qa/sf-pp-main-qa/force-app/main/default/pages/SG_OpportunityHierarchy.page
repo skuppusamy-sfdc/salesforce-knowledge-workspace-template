@@ -1,0 +1,76 @@
+<apex:page standardController="Opportunity" extensions="SystemTreeExtension">
+  
+  
+  <style>
+     tr.dataRow {
+       background-color:white;
+     }
+     tr.dataRow:hover {
+       background-color: #e3f3ff;
+     };
+     
+ </style>
+ 
+<apex:form >
+ <apex:pageBlock >
+  <table align="center" class="list " border="0" cellpadding="0" cellspacing="0">
+   <tr>
+     <td>Name</td>
+     <td>Account Type</td>
+   </tr>
+  <apex:repeat value="{!systems}" var="s">
+     <tr>
+        <td>{!systems[s].Name}</td>
+        <td>{!systems[s].Account_Type__c}</td>
+     </tr>
+     
+     <apex:repeat value="{!facility[s]}" var="f">
+         <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{!facility[s][f].Name}</td>
+            <td>{!facility[s][f].Account_Type__c}</td>
+         </tr>     
+     </apex:repeat>
+     
+     <apex:repeat value="{!subsystem[s]}" var="sb">
+        <tr>
+         <td>&nbsp;&nbsp;{!subsystem[s][sb].Name}</td>
+         <td>{!subsystem[s][sb].Account_Type__c}</td>    
+       </tr>
+       
+      <apex:repeat value="{!facility[sb]}" var="f">
+         <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{!facility[sb][f].Name}</td>
+            <td>{!facility[sb][f].Account_Type__c}</td>
+         </tr>
+          
+        </apex:repeat>
+       
+       <apex:repeat value="{!subsubsystem[sb]}" var="sbsb">
+        <tr>
+         <td>&nbsp;&nbsp;&nbsp;&nbsp;{!subsubsystem[sb][sbsb].Name}</td>
+         <td>{!subsubsystem[sb][sbsb].Account_Type__c}</td>    
+        </tr>
+        
+       <apex:repeat value="{!facility[sbsb]}" var="sbf">
+         <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{!facility[sbsb][sbf].Name}</td>
+            <td>{!facility[sbsb][sbf].Account_Type__c}</td>
+         </tr>
+          
+        </apex:repeat>
+       </apex:repeat>
+      
+      </apex:repeat>
+    </apex:repeat>
+    
+    <apex:repeat value="{!noType}" var="nt">
+      <tr>
+        <td>{!noType[nt].Name}</td>
+        <td></td>
+      </tr>
+    </apex:repeat>
+  
+   </table> 
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Lead</fullName>
+    <active>true</active>
+    <businessProcess>Sales Lead Process</businessProcess>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <description>A sales lead with any potential customer buying SG Services. This can include a Hospital Facility, System, Sub-system, etc.</description>
+    <label>Sales Lead</label>
+    <picklistValues>
+        <picklist>Bid_Process__c</picklist>
+        <values>
+            <fullName>By Invitation %2B BAFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>By Invitation %2B Negot Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Bid %2B BAFO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Bid %2B Negot Terms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sole-Sourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DOZISF__ZoomInfo_Enrich_Status__c</picklist>
+        <values>
+            <fullName>Company Enrich Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enriched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No-Match</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EM_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HM_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDA Cadence - Felecia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BDA Cadence - Mark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DefinitiveHC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engage_CXO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn Sales Navigator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound BDM Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound VP Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Relationship %2F RFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opt_in_Status__c</picklist>
+        <values>
+            <fullName>Not Specified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opt-out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_s__c</picklist>
+        <values>
+            <fullName>EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subsidium_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TM_Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

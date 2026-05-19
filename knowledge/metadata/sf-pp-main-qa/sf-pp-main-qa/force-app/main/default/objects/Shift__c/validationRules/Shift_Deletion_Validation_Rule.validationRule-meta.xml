@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift_Deletion_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    Is_Deleted__c = TRUE,
+    ISBLANK(Cloned_From__c)
+)</errorConditionFormula>
+    <errorMessage>To delete Shift records, please uncheck the Is Deleted field and use the delete button.</errorMessage>
+</ValidationRule>

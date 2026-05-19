@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tammi_and_Suzanne_s_top_hospitals</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ED_Volume__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Targeting_Total_Score__c</columns>
+    <columns>Planned_Targeted_Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AZ,CA,CO,ID,MT,NE,NV,NM,ND,OR,SD,UT,WA,WY</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>Current_EM_Incumbent__c</field>
+        <operation>equals</operation>
+        <value>Envision</value>
+    </filters>
+    <label>Tammi and Suzanne&apos;s top hospitals</label>
+</ListView>

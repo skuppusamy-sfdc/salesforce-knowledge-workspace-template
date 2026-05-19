@@ -1,0 +1,27 @@
+{
+    "ContractId": "800gP000004agzMQAQ",
+    "Pncs": [
+        {
+            "HPFName": "District 5 UH - HM",
+            "HpfId": "0bSgP0000000EHVUA2",
+            "Selected": false,
+            "clonedPNCId": "",
+            "facilityId": "001gP000002V7k1QAC",
+            "facilityName": "District 5 UH - HM",
+            "facilityTitle": "EE Physician",
+            "facilityTitleId": "0hsgP00000003kXQAQ",
+            "pncId": "0mwgP0000000AozQAE"
+        },
+        {
+            "HPFName": "District 2 UH - Emergency",
+            "HpfId": "0bSgP0000000CvdUAE",
+            "Selected": false,
+            "clonedPNCId": "",
+            "facilityId": "001gP000002D1dbQAC",
+            "facilityName": "District 2 UH - Emergency",
+            "facilityTitle": "EE Physician",
+            "facilityTitleId": "0hsgP00000003kXQAQ",
+            "pncId": "0mwgP0000000B57QAE"
+        }
+    ]
+}

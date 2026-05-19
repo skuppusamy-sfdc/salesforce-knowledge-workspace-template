@@ -1,0 +1,5 @@
+{
+  "title" : "Async Job Output",
+  "description" : "Job monitor for Clone Contract, Contract Sync, and Generate Letter async jobs",
+  "lightning:type" : "@apexClassType/c__AsyncJobOutput"
+}

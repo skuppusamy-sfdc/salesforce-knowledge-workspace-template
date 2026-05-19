@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Key Stakeholder</fullName>
+        <default>true</default>
+        <label>Key Stakeholder</label>
+    </customValue>
+    <customValue>
+        <fullName>Relationship Map</fullName>
+        <default>false</default>
+        <label>Relationship Map</label>
+    </customValue>
+    <description>The type of map for objects that can refer to Key Stakeholders and Relationship Map Members</description>
+    <masterLabel>Map Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>ORTHOPEDICS</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;ORTHOPEDICS – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Emergent/urgent closed reduction and splinting of fractures&lt;/li&gt;
+&lt;li&gt;Emergent/urgent closed reduction and splinting of simple dislocation of finger, shoulder, elbow, patella&lt;/li&gt;
+&lt;li&gt;Application of leg traction splint&lt;/li&gt;
+&lt;li&gt;Joint aspiration&lt;/li&gt;
+&lt;li&gt;Joint injection&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>ORTHOPEDICS</developerName>
+    <name>ORTHOPEDICS</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

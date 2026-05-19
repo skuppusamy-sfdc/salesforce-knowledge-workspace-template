@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendWithDocuSign</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send with Docusign</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR($Site.BaseUrl + &apos;/apex/dfsle__sending&apos;, null, [
+sId = Contract.Id,
+DST = &apos;ef314017-4e2b-4368-bdf8-cd53d5eef0fe&apos;,
+CRL = &apos;Email~&apos; + Contract.Clinician_Email__c + &apos;;FirstName~&apos; + Contract.Clinician_First_Name__c + &apos;;LastName~&apos; + Contract.Clinician_Last_Name__c + &apos;;Role~Signer 1&apos;,
+LA = &apos;0&apos;,
+SRS = &apos;1&apos;,
+RES = &apos;1,3,3,1,60,3&apos;,
+LF = &apos;0&apos;,
+MRL = &apos;1&apos;,
+STB = &apos;1&apos;,
+SSB = &apos;0&apos;,
+SES = &apos;1&apos;,
+SEM = &apos;1&apos;,
+SCS = &apos;0&apos;])}</url>
+</WebLink>

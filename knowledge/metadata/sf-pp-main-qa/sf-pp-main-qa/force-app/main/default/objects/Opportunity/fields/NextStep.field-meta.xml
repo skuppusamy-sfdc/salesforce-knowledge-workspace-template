@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextStep</fullName>
+    <inlineHelpText>Use this field to list the next steps/updates with the opportunity.  Start the field with the date of your entry &amp; include date of action to be taken. Example: 9/16/22 Scheduling meeting w/ CEO to review proposal for week of 10/1/22.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+</CustomField>

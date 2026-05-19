@@ -1,0 +1,402 @@
+<apex:page standardController="Account">
+    <!-- Updated version 6/30/17  -->
+    <!--<apex:outputLink value="/!{Account.id}">{!Account.Name}</apex:outputLink>-->
+    <apex:sectionHeader title="Account Edit" subtitle="{!Account.name}"/>
+    <apex:form >
+        <apex:pageBlock title="Account Edit" mode="inlineEdit">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Back to {!Account.name}" id="backButton" action="/{!Account.id}" />
+                <apex:commandButton value="Save" id="SaveButton" action="{!save}" style="display: none;"/>
+                <apex:commandButton value="Cancel" id="CancelButton" action="{!cancel}" style="display: none;"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" id="SaveButton" action="{!save}" style="display: none;"/>
+                <apex:commandButton value="Cancel" id="CancelButton" action="{!cancel}" style="display: none;"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Account Information" columns="2">
+            <apex:outputField value="{!Account.texcellency__DefHC_Network_Name__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_Parent_Network_Name__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_Hospital_Name__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_Hospital_Type__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_FirmType__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.NPI_Number__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Program_340B_ID__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+
+
+            <apex:pageBlockSection title="Address Information" columns="1">
+
+                <apex:outputField value="{!Account.texcellency__DefHC_Address__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_HQCity__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_State__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_ZipCode__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.County__c}">       
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.BillingCountry}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_Website__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Facility_E_mail__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Operational/Clinical Performance" columns="2">
+                <apex:outputField value="{!Account.TOTAL_ER_VISITS__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.COST_PER_DISCHARGE_CMI_ADJUSTED__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.COST_PER_DISCHARGE_CMI_ADJUSTED_STATE__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_NumDischarges__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.CMI__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.COST_PER_DISCHARGE_CMI_ADJUSTED__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_AvgLengthOfStay__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_AvgDailyCensus__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.NUM_DENIED_CLAIMS_MEDICARE__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.EST_NUM_MEDICARE_CLAIMS_INPATIENT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_MedicareProviderNumber__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Provider_Number_Note__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Hospital Statistics" columns="2">
+
+                <apex:outputField value="{!Account.texcellency__DefHC_NumEmployees__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+
+                <apex:outputField value="{!Account.texcellency__DefHC_NumAffiliatedPhysicians__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+
+                <apex:outputField value="{!Account.Number_Interns_Residents__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.ED_Observation_Beds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Num_Registered_Nurses__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Specialty_Beds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_NumBeds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Acute_Beds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.TOTAL_FACILITY_SQ_FT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Staffed_Beds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.AVE_AGE_PLANT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Total_Beds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Facility_Services__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Description}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Specialty_Support__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_NumMedicareBeds__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_NumOperatingRooms__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Hospital Designations, Certifications, & Affiliations" columns="2">
+
+                <apex:outputField value="{!Account.Magnet_Designation__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Trauma_Center_Level__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+
+                <apex:outputField value="{!Account.Sole_Community_Hospital__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_MeaningfulUseStatus__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Pediatric_Trauma_Center_Level__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField><apex:outputField value="{!Account.texcellency__DefHC_AffiliationsACO__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Medical_School_Affiliation__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_AffiliationsGPO__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Demographic Intelligence" columns="2">
+                
+                <apex:outputField value="{!Account.HQ_Region__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.HQ_Latitude__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.HPSA_Last_Update_Date__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.HQ_Longitude__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Industry}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.CBSA_Code_Description__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Population_Comments__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.CBSA_POPULATION_EST_2011_07_01__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Community_Comments__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.CBSA_POPULATION_GROWTH_2010_2011__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Nearby_Places__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Geographic_Classification__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Affiliations" columns="2">
+                <apex:outputField value="{!Account.Hospital_Ownership__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_OwnershipStatus__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Group_Ownership__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_NumHospitalsInNetwork__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.CIN_Affiliations__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_EMR_Vendor_Ambulatory__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_EMR_Vendor_Inpatient__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Financial Stability/Viability" columns="2">
+                
+                <apex:outputField value="{!Account.Date_of_Fiscal_Year_End__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_FinancialDataDate__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                
+                <apex:outputField value="{!Account.Tot_Patient_Revenue__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.texcellency__DefHC_NetMedicareRevenue__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Net_Medicaid_Revenue__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Revenues__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>                            
+                <apex:outputField value="{!Account.texcellency__DefHC_NetPatientRev__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Patient_Discounts__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Charity_Care_Charges__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField> 
+                <apex:outputField value="{!Account.Tot_Overhead_Costs__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>  
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.Tot_Operating_Expenses__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Total_Contractor_Labor__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_OperatingIncome__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />                
+                <apex:outputField value="{!Account.Net_Income__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>  
+                <apex:outputField value="{!Account.Tot_Other_Income__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>      
+                <apex:outputField value="{!Account.EBITDA__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem /> 
+                <apex:outputField value="{!Account.EST_VBP_ADJUSTMENT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.texcellency__DefHC_CashOnHand__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_DaysCashOnHand__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Days_Sales_Outstanding__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                 <apex:pageBlockSectionItem /> 
+                <apex:outputField value="{!Account.Tot_Assets__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                 <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.Tot_Fixed_Assets__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Tot_Current_Assets__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Tot_Other_Assets__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.Current_Ratio__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.Tot_Liabilities__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.Tot_Current_Liabilities__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.Long_Term_Liabilities__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.EST_TOTAL_CLAIMS_INPATIENT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.EST_TOTAL_CLAIMS_OUTPATIENT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.EST_NUM_MEDICARE_CLAIMS_OUTPATIENT__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.texcellency__DefHC_TotalMedicareCharges__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.DSH_Payment_Medicare__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.TOTAL_DAYS__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:pageBlockSectionItem />
+                <apex:outputField value="{!Account.TITLE_XIX_DAYS__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.TITLE_XVIII_DAYS__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.NUMBER_DISCHARGES_TITLE_XIX__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.NUMBER_DISCHARGES_TITLE_XVIII__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>`
+
+            <apex:pageBlockSection title="System Information" columns="2">
+
+                <apex:outputField value="{!Account.texcellency__DefHC_SyncTime__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+                <apex:outputField value="{!Account.texcellency__DefHC_DateCreated__c}">
+                    <apex:inlineEditSupport event="ondblClick" showOnEdit="SaveButton, CancelButton"/>
+                </apex:outputField>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

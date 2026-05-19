@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>linkedin_si__Global_Employee_Growth__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The percent change in total employees at the company over the past 12 months</description>
+    <label>Global Employee Growth</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

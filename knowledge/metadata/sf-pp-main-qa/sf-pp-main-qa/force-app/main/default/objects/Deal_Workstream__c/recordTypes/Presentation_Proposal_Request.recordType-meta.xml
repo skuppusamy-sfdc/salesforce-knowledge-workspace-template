@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_Proposal_Request</fullName>
+    <active>true</active>
+    <description>PROPOSAL TEAM REQUEST - Submit a request to the proposals team to support Client-facing presentation and/or proposal generation.</description>
+    <label>Presentation/Proposal Request</label>
+    <picklistValues>
+        <picklist>Financial_Terms_Construct_to_be_Used__c</picklist>
+        <values>
+            <fullName>Flat Subsidy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimization Partnership%2FFlat Subsidy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - Provide Description</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance Partnership</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Output_Required__c</picklist>
+        <values>
+            <fullName>Booklet Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other - provide additional details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentation %2F Slide Deck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printed Materials</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Printing_Y_N__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Line__c</picklist>
+        <values>
+            <fullName>Connected Care - Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Care - During</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Care - Next</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected Care - Proactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Medicine - EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free Standing ED - FSED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital Medicine - HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innovation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Care Physician - ICP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intensive Care Unit - ICU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Service Lines - Non-core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent Care - ICU</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>BD Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Process - Proposals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete - Abandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVP Growth Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted to Proposals</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Presentation__c</picklist>
+        <values>
+            <fullName>CEO Introduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finalist Presentation Follow-up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formal Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Finalist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QBR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response to RFP%2FRFI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCP Introduction</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

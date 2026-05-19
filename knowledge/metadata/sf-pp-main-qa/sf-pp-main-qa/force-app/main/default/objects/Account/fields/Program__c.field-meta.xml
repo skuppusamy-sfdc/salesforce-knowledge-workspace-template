@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <label>Program</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre Medical School</fullName>
+                <default>false</default>
+                <label>Pre Medical School</label>
+            </value>
+            <value>
+                <fullName>Medical School</fullName>
+                <default>false</default>
+                <label>Medical School</label>
+            </value>
+            <value>
+                <fullName>Internship Program</fullName>
+                <default>false</default>
+                <label>Internship Program</label>
+            </value>
+            <value>
+                <fullName>Residency Program</fullName>
+                <default>false</default>
+                <label>Residency Program</label>
+            </value>
+            <value>
+                <fullName>Fellowship Program</fullName>
+                <default>false</default>
+                <label>Fellowship Program</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

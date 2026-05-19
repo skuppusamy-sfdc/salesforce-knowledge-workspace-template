@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Line_Incumbent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Select the incumbent for this individual service line.  Each service line record will need the incumbent listed.</inlineHelpText>
+    <label>Service Line Incumbent</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>You may only select a competitor account.</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Competitors</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Services (Service Line Incumbent)</relationshipLabel>
+    <relationshipName>Services_of_Incumbent</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

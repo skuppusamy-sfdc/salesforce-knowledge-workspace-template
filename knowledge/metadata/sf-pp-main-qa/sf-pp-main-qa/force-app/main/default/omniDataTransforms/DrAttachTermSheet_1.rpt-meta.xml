@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;GenDocumentId&quot; : &quot;0687x00000E34OoAAJ&quot;,
+  &quot;UserId&quot; : &quot;005Ps000006JRqjIAG&quot;,
+  &quot;ContextId&quot; : &quot;8007x00000eXMsLAAW&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DrAttachTermSheet</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrAttachTermSheetCustom7001</globalKey>
+        <inputFieldName>GenDocumentId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>Id</lookupByFieldName>
+        <lookupObjectName>ContentVersion</lookupObjectName>
+        <lookupReturnedFieldName>ContentDocumentId</lookupReturnedFieldName>
+        <name>DrAttachTermSheet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContentDocumentId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DrAttachTermSheetCustom8251</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DrAttachTermSheet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DrAttachTermSheetCustom1479</globalKey>
+        <inputFieldName>ContextId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DrAttachTermSheet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LinkedEntityId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;GenDocumentId&quot; : &quot;0687x00000E34OoAAJ&quot;,
+  &quot;UserId&quot; : &quot;005Ps000006JRqjIAG&quot;,
+  &quot;ContextId&quot; : &quot;8007x00000eXMsLAAW&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DrAttachTermSheet_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

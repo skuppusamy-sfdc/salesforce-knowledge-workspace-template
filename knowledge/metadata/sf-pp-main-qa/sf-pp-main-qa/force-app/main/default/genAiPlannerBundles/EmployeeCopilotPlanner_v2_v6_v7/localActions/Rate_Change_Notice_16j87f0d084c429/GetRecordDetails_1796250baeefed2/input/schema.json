@@ -1,0 +1,14 @@
+{
+  "required" : [ "recordId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "recordId" : {
+      "title" : "{!$Label.InvocableActionGetRecordDetails.InvocableActionInputRecordIdLabel}",
+      "description" : "The ID of a Salesforce record to get the record details for.",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>texcellency__API_Key__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Unique key used to authorize access to Definitive HC API</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a unique text string issued by Definitive HC which allows a SalesForce organization access Definitive API.</inlineHelpText>
+    <label>API Key</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

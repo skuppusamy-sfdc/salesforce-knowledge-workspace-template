@@ -1,0 +1,12 @@
+<template>
+    <div class="footer-container">
+        <template lwc:if={showCancel}>
+            <lightning-button label="Cancel" variant="neutral" onclick={handleCancel}>
+            </lightning-button>
+        </template>
+        <template lwc:if={showSave}>
+            <lightning-button label="Save" variant="brand" onclick={handleSave}>
+            </lightning-button>
+        </template>
+    </div>
+</template>

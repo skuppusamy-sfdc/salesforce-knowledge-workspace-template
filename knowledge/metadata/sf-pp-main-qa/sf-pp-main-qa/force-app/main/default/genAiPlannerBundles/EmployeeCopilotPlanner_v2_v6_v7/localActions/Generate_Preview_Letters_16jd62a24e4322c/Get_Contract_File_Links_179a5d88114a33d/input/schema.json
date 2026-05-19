@@ -1,0 +1,22 @@
+{
+  "required" : [ "accountId", "contractId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "accountId" : {
+      "title" : "selected account id",
+      "description" : "id of the selected account record id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contractId" : {
+      "title" : "selected contract id",
+      "description" : "id of the selected contract record id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants create and edit access to Contracts, related objects, and their fields to         manage facility contracts</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.Contract_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.Term_Sheet_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Pro_Forma_Facility_Detail__c.Pro_Form_Model_Opportunity_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Pro_Forma_Facility_Detail__c.Pro_Form_Model_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Client Contracts Community</label>
+    <recordTypeVisibilities>
+        <recordType>Contract.Client_Contract</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

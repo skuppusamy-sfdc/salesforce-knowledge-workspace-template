@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Gap_Explanation_c__c</fullName>
+    <externalDeveloperName>Time_Gap_Explanation__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Time Gap Explanation</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

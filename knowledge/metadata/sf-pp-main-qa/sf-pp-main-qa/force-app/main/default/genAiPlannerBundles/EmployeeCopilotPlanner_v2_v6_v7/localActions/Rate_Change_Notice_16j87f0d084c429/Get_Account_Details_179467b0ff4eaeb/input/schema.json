@@ -1,0 +1,15 @@
+{
+  "required" : [ "AccountId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AccountId" : {
+      "title" : "Account Id selected by the user",
+      "description" : "Pass selected Account record Id as input",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Title_Clinician_Type__c</fullName>
+    <description>Checks and compiles the Clinician Type values from the Facility Title for use in the external job board XML feed</description>
+    <externalId>false</externalId>
+    <formula>/* 1. Check for DO */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;DO&quot;), &quot;DO&quot;, NULL) &amp;
+
+/* Add comma if DO is selected AND any subsequent value is selected */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;DO&quot;) &amp;&amp; 
+  (INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;LPN&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;NP&quot;)  || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;PA&quot;)  || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;RN&quot;)  || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;MD&quot;)), &quot;, &quot;, NULL) &amp;
+
+/* 2. Check for LPN */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;LPN&quot;), &quot;LPN&quot;, NULL) &amp;
+
+/* Add comma if LPN is selected AND any subsequent value is selected */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;LPN&quot;) &amp;&amp; 
+  (INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;NP&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;PA&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;RN&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;MD&quot;)), &quot;, &quot;, NULL) &amp;
+
+/* 3. Check for NP */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;NP&quot;), &quot;NP&quot;, NULL) &amp;
+
+/* Add comma if NP is selected AND any subsequent value is selected */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;NP&quot;) &amp;&amp; 
+  (INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;PA&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;RN&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;MD&quot;)), &quot;, &quot;, NULL) &amp;
+
+/* 4. Check for PA */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;PA&quot;), &quot;PA&quot;, NULL) &amp;
+
+/* Add comma if PA is selected AND any subsequent value is selected */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;PA&quot;) &amp;&amp; 
+  (INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;RN&quot;) || 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;MD&quot;)), &quot;, &quot;, NULL) &amp;
+
+/* 5. Check for RN */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;RN&quot;), &quot;RN&quot;, NULL) &amp;
+
+/* Add comma if RN is selected AND MD is selected */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;RN&quot;) &amp;&amp; 
+   INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;MD&quot;), &quot;, &quot;, NULL) &amp;
+
+/* 6. Check for MD (No trailing comma needed as this is the last item) */
+IF(INCLUDES(Facility_Title_Lookup__r.Clinician_Type__c, &quot;MD&quot;), &quot;MD&quot;, NULL)</formula>
+    <inlineHelpText>Clinician Type from the Facility Title</inlineHelpText>
+    <label>Facility Title Clinician Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

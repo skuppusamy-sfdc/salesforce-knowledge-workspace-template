@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lifepoint</fullName>
+    <columns>PARENT_NAME</columns>
+    <columns>texcellency__DefHC_Network_Name__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Market_Manager__c</columns>
+    <columns>Independent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PARENT_NAME</field>
+        <operation>contains</operation>
+        <value>Maine</value>
+    </filters>
+    <label>Lifepoint</label>
+</ListView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>ENT</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;ENT – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Indirect laryngoscopy&lt;/li&gt;
+&lt;li&gt;Evaluation and management of sore throat&lt;/li&gt;
+&lt;li&gt;Evaluation and management of sinusitis&lt;/li&gt;
+&lt;li&gt;Evaluation and management of ear   
+complaints&lt;/li&gt;
+&lt;li&gt;Insertion of nasal packing for epistaxis control&lt;/li&gt;
+&lt;li&gt;Local cautery for epistaxis control&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>ENT</developerName>
+    <name>ENT</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

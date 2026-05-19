@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Critical Care Management Declaration</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>I am capable of managing medical conditions and performing procedures typically encountered in the practice of Critical Care Medicine, with the appropriate critical care training and certification to include the comanagement of patients for medical and surgical disorders.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>Critical_Care_Management_Declaration</developerName>
+    <name>Critical Care Management Declaration</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

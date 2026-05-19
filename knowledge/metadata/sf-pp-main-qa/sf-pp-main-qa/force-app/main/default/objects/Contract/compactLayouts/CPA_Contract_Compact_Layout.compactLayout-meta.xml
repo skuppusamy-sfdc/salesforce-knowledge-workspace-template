@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPA_Contract_Compact_Layout</fullName>
+    <fields>ContractNumber</fields>
+    <label>CPA Contract Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Service_Team__c</fullName>
+    <description>Client Service Team</description>
+    <label>Client Service Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S1T1</fullName>
+                <default>false</default>
+                <label>S1T1</label>
+            </value>
+            <value>
+                <fullName>S1T2</fullName>
+                <default>false</default>
+                <label>S1T2</label>
+            </value>
+            <value>
+                <fullName>S1T3</fullName>
+                <default>false</default>
+                <label>S1T3</label>
+            </value>
+            <value>
+                <fullName>S2T1</fullName>
+                <default>false</default>
+                <label>S2T1</label>
+            </value>
+            <value>
+                <fullName>S2T2</fullName>
+                <default>false</default>
+                <label>S2T2</label>
+            </value>
+            <value>
+                <fullName>S2T3</fullName>
+                <default>false</default>
+                <label>S2T3</label>
+            </value>
+            <value>
+                <fullName>S2T4</fullName>
+                <default>false</default>
+                <label>S2T4</label>
+            </value>
+            <value>
+                <fullName>S2T5</fullName>
+                <default>false</default>
+                <label>S2T5</label>
+            </value>
+            <value>
+                <fullName>S3T1</fullName>
+                <default>false</default>
+                <label>S3T1</label>
+            </value>
+            <value>
+                <fullName>S3T2</fullName>
+                <default>false</default>
+                <label>S3T2</label>
+            </value>
+            <value>
+                <fullName>S3T3</fullName>
+                <default>false</default>
+                <label>S3T3</label>
+            </value>
+            <value>
+                <fullName>S4T1</fullName>
+                <default>false</default>
+                <label>S4T1</label>
+            </value>
+            <value>
+                <fullName>S4T2</fullName>
+                <default>false</default>
+                <label>S4T2</label>
+            </value>
+            <value>
+                <fullName>S4T3</fullName>
+                <default>false</default>
+                <label>S4T3</label>
+            </value>
+            <value>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <label>Delta</label>
+            </value>
+            <value>
+                <fullName>GL I</fullName>
+                <default>false</default>
+                <label>GL I</label>
+            </value>
+            <value>
+                <fullName>GL II</fullName>
+                <default>false</default>
+                <label>GL II</label>
+            </value>
+            <value>
+                <fullName>HM Central</fullName>
+                <default>false</default>
+                <label>HM Central</label>
+            </value>
+            <value>
+                <fullName>HM East</fullName>
+                <default>false</default>
+                <label>HM East</label>
+            </value>
+            <value>
+                <fullName>HM West</fullName>
+                <default>false</default>
+                <label>HM West</label>
+            </value>
+            <value>
+                <fullName>MW</fullName>
+                <default>false</default>
+                <label>MW</label>
+            </value>
+            <value>
+                <fullName>MW II</fullName>
+                <default>false</default>
+                <label>MW II</label>
+            </value>
+            <value>
+                <fullName>PT</fullName>
+                <default>false</default>
+                <label>PT</label>
+            </value>
+            <value>
+                <fullName>SE II</fullName>
+                <default>false</default>
+                <label>SE II</label>
+            </value>
+            <value>
+                <fullName>SE III</fullName>
+                <default>false</default>
+                <label>SE III</label>
+            </value>
+            <value>
+                <fullName>SE IV</fullName>
+                <default>false</default>
+                <label>SE IV</label>
+            </value>
+            <value>
+                <fullName>SE V</fullName>
+                <default>false</default>
+                <label>SE V</label>
+            </value>
+            <value>
+                <fullName>SE VI</fullName>
+                <default>false</default>
+                <label>SE VI</label>
+            </value>
+            <value>
+                <fullName>SE VII</fullName>
+                <default>false</default>
+                <label>SE VII</label>
+            </value>
+            <value>
+                <fullName>SW I</fullName>
+                <default>false</default>
+                <label>SW I</label>
+            </value>
+            <value>
+                <fullName>SW II</fullName>
+                <default>false</default>
+                <label>SW II</label>
+            </value>
+            <value>
+                <fullName>SW III</fullName>
+                <default>false</default>
+                <label>SW III</label>
+            </value>
+            <value>
+                <fullName>SW IV</fullName>
+                <default>false</default>
+                <label>SW IV</label>
+            </value>
+            <value>
+                <fullName>SW V</fullName>
+                <default>false</default>
+                <label>SW V</label>
+            </value>
+            <value>
+                <fullName>UC</fullName>
+                <default>false</default>
+                <label>UC</label>
+            </value>
+            <value>
+                <fullName>SC I</fullName>
+                <default>false</default>
+                <label>SC I</label>
+            </value>
+            <value>
+                <fullName>SC II</fullName>
+                <default>false</default>
+                <label>SC II</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Ownership &amp; Escalation</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Before my first shift, I clearly understood who to contact if something went wrong and felt comfortable doing so.</questionText>
+        <responseValues>1
+2
+3
+4
+5</responseValues>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Ownership_Escalation</developerName>
+    <name>Ownership &amp; Escalation</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

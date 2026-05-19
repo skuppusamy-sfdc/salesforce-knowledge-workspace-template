@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GlobalFacilityID__c</fullName>
+    <description>Global Facility ID from the Facility record for the XML feed to external job boards.</description>
+    <externalId>false</externalId>
+    <formula>VALUE( bpats__Account__r.Global_Facility_ID__c )</formula>
+    <inlineHelpText>Global Facility ID from Facility record</inlineHelpText>
+    <label>Global Facility Id</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

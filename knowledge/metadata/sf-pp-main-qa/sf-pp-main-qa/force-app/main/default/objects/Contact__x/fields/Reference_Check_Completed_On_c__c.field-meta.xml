@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_Check_Completed_On_c__c</fullName>
+    <externalDeveloperName>Reference_Check_Completed_On__c</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Reference Check Completed On</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

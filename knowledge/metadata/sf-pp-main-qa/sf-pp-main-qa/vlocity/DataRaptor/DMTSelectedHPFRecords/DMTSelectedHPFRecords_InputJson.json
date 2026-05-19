@@ -1,0 +1,21 @@
+{
+    "SelectedlstRecords": [
+        {
+            "Id": "0017x00001EJ4ztAAD",
+            "accountName": "test facility",
+            "checked": true,
+            "contractingStatus": null,
+            "effectiveDate": null,
+            "facilityTitle": "External Locums",
+            "hpfStatus": "Prospect"
+        },
+        {
+            "accountName": "test facility",
+            "checked": true,
+            "contractingStatus": null,
+            "effectiveDate": null,
+            "facilityTitle": "Leased Employee",
+            "hpfStatus": "Prospect"
+        }
+    ]
+}

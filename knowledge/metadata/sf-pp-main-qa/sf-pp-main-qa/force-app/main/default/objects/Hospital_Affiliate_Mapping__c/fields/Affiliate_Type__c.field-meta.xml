@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Affiliate_Type__c</fullName>
+    <label>Affiliate Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affiliated</fullName>
+                <default>false</default>
+                <label>Affiliated</label>
+            </value>
+            <value>
+                <fullName>Owned</fullName>
+                <default>false</default>
+                <label>Owned</label>
+            </value>
+            <value>
+                <fullName>Managed</fullName>
+                <default>false</default>
+                <label>Managed</label>
+            </value>
+            <value>
+                <fullName>Join Venture</fullName>
+                <default>false</default>
+                <label>Join Venture</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

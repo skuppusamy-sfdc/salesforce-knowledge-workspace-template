@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_of_Measure__c</fullName>
+    <label>Unit of Measure</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>per Metric</fullName>
+                <default>false</default>
+                <label>per Metric</label>
+            </value>
+            <value>
+                <fullName>% Salary Reduction</fullName>
+                <default>false</default>
+                <label>% Salary Reduction</label>
+            </value>
+            <value>
+                <fullName>per Monthly Tier</fullName>
+                <default>false</default>
+                <label>per Monthly Tier</label>
+            </value>
+            <value>
+                <fullName>per Hour</fullName>
+                <default>false</default>
+                <label>per Hour</label>
+            </value>
+            <value>
+                <fullName>per Shift</fullName>
+                <default>false</default>
+                <label>per Shift</label>
+            </value>
+            <value>
+                <fullName>per Month</fullName>
+                <default>false</default>
+                <label>per Month</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

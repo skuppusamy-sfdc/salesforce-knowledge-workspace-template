@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eMAC_Verbal_Award</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name = &quot;eMAC Sales Opportunity&quot; &amp;&amp;
+ISPICKVAL(StageName, &quot;Verbal Award&quot;) &amp;&amp;
+(TEXT(Bid_Process__c) = &quot;&quot;||
+ISPICKVAL(Division__c,&quot;&quot;)||
+ISNULL(Proposal_Date__c)||
+ISNULL(Margin__c)||
+ISNULL(Volume__c)||
+ISNULL(Verbal_Award_Date__c) ||
+ISNULL(Expected_Sign_Date__c) ||
+ISNULL(Target_Contract_Start_Date__c))</errorConditionFormula>
+    <errorMessage>These fields are required: RFP Process, Division, Proposal Date, Total Margin, Annual Encounters, Verbal Award Date, Expected Sign Date, and Target Contract Start Date.</errorMessage>
+</ValidationRule>

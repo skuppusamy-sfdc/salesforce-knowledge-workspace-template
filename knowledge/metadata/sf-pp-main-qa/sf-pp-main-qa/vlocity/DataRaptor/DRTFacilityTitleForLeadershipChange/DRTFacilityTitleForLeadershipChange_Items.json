@@ -1,0 +1,115 @@
+[
+    {
+        "FilterGroup": 0,
+        "FormulaExpression": "FUNCTION(\"OmniUtility\", \"convert\", LIST(%FacilityTitles%), \"Name\")",
+        "FormulaResultPath": "FacilityTitleList",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTFacilityTitleForLeadershipChangeCustom7331",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTFacilityTitleForLeadershipChange",
+        "OmniDataTransformationId": {
+            "Name": "DRTFacilityTitleForLeadershipChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFacilityTitleForLeadershipChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTFacilityTitleForLeadershipChangeCustom9717",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTFacilityTitleForLeadershipChange",
+        "OmniDataTransformationId": {
+            "Name": "DRTFacilityTitleForLeadershipChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFacilityTitleForLeadershipChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "FacilityTitleList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTFacilityTitleForLeadershipChangeCustom7708",
+        "InputFieldName": "TypeOfChange",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTFacilityTitleForLeadershipChange",
+        "OmniDataTransformationId": {
+            "Name": "DRTFacilityTitleForLeadershipChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFacilityTitleForLeadershipChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FacilityTitleList:Change",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTFacilityTitleForLeadershipChangeCustom9423",
+        "InputFieldName": "FacilityTitleList:Name",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTFacilityTitleForLeadershipChange",
+        "OmniDataTransformationId": {
+            "Name": "DRTFacilityTitleForLeadershipChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFacilityTitleForLeadershipChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FacilityTitleList:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DRTFacilityTitleForLeadershipChangeCustom8316",
+        "InputFieldName": "TypeOfChange",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DRTFacilityTitleForLeadershipChange",
+        "OmniDataTransformationId": {
+            "Name": "DRTFacilityTitleForLeadershipChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTFacilityTitleForLeadershipChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FacilityTitleList:Type",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\n  \"New Leader - New Hire\" : \"New Hire\",\n  \"New Leader - Existing Clinician\" : \"Facility Title Change\"\n}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

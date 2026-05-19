@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Other</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Any suspensions or exclusions from Insurance Plans/Third Party Payors (route to Compliance)</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Risk_Review_Other_Question_4</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Other</name>
+    <questionCategory>Other</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Status__c</fullName>
+    <label>Escalation Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annual Compliance Training Esc 1 (7 Weeks from Assignment)</fullName>
+                <default>false</default>
+                <label>Annual Compliance Training Esc 1 (7 Weeks from Assignment)</label>
+            </value>
+            <value>
+                <fullName>Annual Compliance Training Esc 2 (11 Weeks from Assignment)</fullName>
+                <default>false</default>
+                <label>Annual Compliance Training Esc 2 (11 Weeks from Assignment)</label>
+            </value>
+            <value>
+                <fullName>Annual Compliance Training Esc 3 (13 Weeks from Assignment)</fullName>
+                <default>false</default>
+                <label>Annual Compliance Training Esc 3 (13 Weeks from Assignment)</label>
+            </value>
+            <value>
+                <fullName>Onboarding Compliance Training Escalation 1 (31 to 60 days)</fullName>
+                <default>false</default>
+                <label>Onboarding Compliance Training Escalation 1 (31 to 60 days)</label>
+            </value>
+            <value>
+                <fullName>Onboarding Compliance Training Escalation 2 (61-75 days)</fullName>
+                <default>false</default>
+                <label>Onboarding Compliance Training Escalation 2 (61-75 days)</label>
+            </value>
+            <value>
+                <fullName>Onboarding Compliance Training Escalation 3 (76+ days)</fullName>
+                <default>false</default>
+                <label>Onboarding Compliance Training Escalation 3 (76+ days)</label>
+            </value>
+            <value>
+                <fullName>COI Disclosure Esc 1 (7 Weeks from Assignment)</fullName>
+                <default>false</default>
+                <label>COI Disclosure Esc 1 (7 Weeks from Assignment)</label>
+            </value>
+            <value>
+                <fullName>COI Disclosure Esc 2 (11 Weeks from Assignment)</fullName>
+                <default>false</default>
+                <label>COI Disclosure Esc 2 (11 Weeks from Assignment)</label>
+            </value>
+            <value>
+                <fullName>COI Disclosure Esc 3 (13 Weeks from Assignment)</fullName>
+                <default>false</default>
+                <label>COI Disclosure Esc 3 (13 Weeks from Assignment)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

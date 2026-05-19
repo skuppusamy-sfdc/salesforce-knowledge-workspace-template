@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Provide_Close_Reason</fullName>
+    <active>false</active>
+    <description>Force the user to provide a reason code when the Opportunity Stage is Closed-No Bid and Closed-Lost</description>
+    <errorConditionFormula>AND(
+  OR(
+  ISPICKVAL(StageName, &quot;Closed-No Bid&quot;),
+  ISPICKVAL(StageName, &quot;Closed Lost&quot;)        
+  ),
+        ISPICKVAL(Close_Reason__c,&quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Close_Reason__c</errorDisplayField>
+    <errorMessage>Please provide the Close Reason</errorMessage>
+</ValidationRule>

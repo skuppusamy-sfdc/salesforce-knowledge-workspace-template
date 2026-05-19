@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RBrady_Contacts_2</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>PARENT.NAME</columns>
+    <columns>Account.texcellency__DefHC_Network_Name__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Contact_Status__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>Account_Status__c</columns>
+    <columns>Current_EM_Incumbent__c</columns>
+    <columns>Current_EM_Incumbent_Group_Type__c</columns>
+    <columns>Current_HM_Incumbent__c</columns>
+    <columns>Current_HM_Incumbent_Group_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE_CODE</field>
+        <operation>equals</operation>
+        <value>AR,CO,IL,IN,IA,KS,MI,MN,MO,MT,NE,ND,OH,OK,SD,WI,WY</value>
+    </filters>
+    <filters>
+        <field>Account.texcellency__DefHC_Network_Name__c</field>
+        <operation>contains</operation>
+        <value>Centura,Dignity,CHI Franciscan,CHI Health,CHI Memorial,CHI Saint Joseph,CHI St Alexius,CHI St Joseph,CHI St Vincent,TriHealth,Trinity Health System,CommonSpirit,MercyOne</value>
+    </filters>
+    <filters>
+        <field>DHC_Standardized_Title__c</field>
+        <operation>equals</operation>
+        <value>Chief Executive Officer,Chief Financial Officer,President</value>
+    </filters>
+    <label>RBrady Contacts #2</label>
+</ListView>

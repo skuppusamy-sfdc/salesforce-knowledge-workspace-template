@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adventist_Health_West</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>DHC_Standardized_Title__c</columns>
+    <columns>Account.Staffed_Beds__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>Account.Account_Type__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Prospect,Target</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>contains</operation>
+        <value>@</value>
+    </filters>
+    <filters>
+        <field>Contact_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive,Do Not Contact</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>strategy,business development,marketing</value>
+    </filters>
+    <filters>
+        <field>Account.texcellency__DefHC_Network_Name__c</field>
+        <operation>equals</operation>
+        <value>Adventist Health,Adventist Health Central Valley Network</value>
+    </filters>
+    <filters>
+        <field>FULL_NAME</field>
+        <operation>notEqual</operation>
+        <value>Cory Ferrier</value>
+    </filters>
+    <label>Adventist Health - West</label>
+</ListView>

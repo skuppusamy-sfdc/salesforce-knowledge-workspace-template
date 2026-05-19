@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exception_Type__c</fullName>
+    <label>Exception Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance Violation</fullName>
+                <default>false</default>
+                <label>Compliance Violation</label>
+            </value>
+            <value>
+                <fullName>Compliance Warning</fullName>
+                <default>false</default>
+                <label>Compliance Warning</label>
+            </value>
+            <value>
+                <fullName>Information</fullName>
+                <default>false</default>
+                <label>Information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

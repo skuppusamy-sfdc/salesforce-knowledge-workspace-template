@@ -1,0 +1,16 @@
+{
+    "ClinicianContactId": "0037x000012S0m0AAC",
+    "PracticingClinicianSpecialty": [
+        {
+            "PracSpecId": null,
+            "RecordId": "0bc7x0000000DzlAAE",
+            "TA_PracticingSpecialty": "Nephrology",
+            "isPrimaryOrSub": "true"
+        },
+        {
+            "Name": "Cardiology",
+            "PracSpecId": "0bO7x0000000XwsEAE",
+            "TA_PracticingSpecialty": "Cardiology"
+        }
+    ]
+}

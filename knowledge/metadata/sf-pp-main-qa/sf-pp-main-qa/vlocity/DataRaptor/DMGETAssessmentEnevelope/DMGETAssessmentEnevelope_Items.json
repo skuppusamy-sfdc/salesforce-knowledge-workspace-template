@@ -1,0 +1,93 @@
+[
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMGETAssessmentEnevelopeCustom114",
+        "InputFieldName": "assessmentEnvelopeItem:AssessmentEnvelope.AccountId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMGETAssessmentEnevelope",
+        "OmniDataTransformationId": {
+            "Name": "DMGETAssessmentEnevelope",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMGETAssessmentEnevelope",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AE_AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMGETAssessmentEnevelopeCustom1664",
+        "InputFieldName": "assessmentEnvelopeItem:AssessmentEnvelope.ContactId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMGETAssessmentEnevelope",
+        "OmniDataTransformationId": {
+            "Name": "DMGETAssessmentEnevelope",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMGETAssessmentEnevelope",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AE_ContactId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "GlobalKey": "DMGETAssessmentEnevelopeCustom4455",
+        "InputFieldName": "assessmentEnvelopeItem:AssessmentEnvelope.RequestReferenceId",
+        "InputObjectQuerySequence": 0,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMGETAssessmentEnevelope",
+        "OmniDataTransformationId": {
+            "Name": "DMGETAssessmentEnevelope",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMGETAssessmentEnevelope",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AE_RequestReferenceId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssessmentEnvelopeItemId",
+        "GlobalKey": "DMGETAssessmentEnevelopeCustom1655",
+        "InputFieldName": "Id",
+        "InputObjectName": "AssessmentEnvelopeItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DMGETAssessmentEnevelope",
+        "OmniDataTransformationId": {
+            "Name": "DMGETAssessmentEnevelope",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DMGETAssessmentEnevelope",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "assessmentEnvelopeItem",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

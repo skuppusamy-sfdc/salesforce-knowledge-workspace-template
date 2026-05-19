@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiFormatSpecificationSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <field>bpats__Job__c.Job_Prioritization__c</field>
+    <formatType>ICON</formatType>
+    <masterLabel>Job Prioritization Ruleset</masterLabel>
+    <sobjectType>bpats__Job__c</sobjectType>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;red&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>1</order>
+        <visibilityRule>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>GE</operator>
+                <rightValue>8</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;orange&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>2</order>
+        <visibilityRule>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>GE</operator>
+                <rightValue>5</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>LE</operator>
+                <rightValue>7</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;gray&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>3</order>
+        <visibilityRule>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>GE</operator>
+                <rightValue>3</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>LE</operator>
+                <rightValue>4</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;green&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>4</order>
+        <visibilityRule>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>GE</operator>
+                <rightValue>1</rightValue>
+            </criteria>
+            <criteria>
+                <leftValue>{!Record.Job_Prioritization__c}</leftValue>
+                <operator>LE</operator>
+                <rightValue>2</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+</UiFormatSpecificationSet>

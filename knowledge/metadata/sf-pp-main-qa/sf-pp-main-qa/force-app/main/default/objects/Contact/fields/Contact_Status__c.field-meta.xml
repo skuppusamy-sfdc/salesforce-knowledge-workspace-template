@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Status__c</fullName>
+    <label>Contact Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Key Contact</fullName>
+                <default>false</default>
+                <label>Key Contact</label>
+            </value>
+            <value>
+                <fullName>2025 - DO NOT EMAIL STATUS</fullName>
+                <default>false</default>
+                <label>2025 - DO NOT EMAIL STATUS</label>
+            </value>
+            <value>
+                <fullName>ACTIVE &lt; 12MOS</fullName>
+                <default>false</default>
+                <label>ACTIVE &lt; 12MOS</label>
+            </value>
+            <value>
+                <fullName>INACTIVE &gt; 12MOS</fullName>
+                <default>false</default>
+                <label>INACTIVE &gt; 12MOS</label>
+            </value>
+            <value>
+                <fullName>Monitored</fullName>
+                <default>false</default>
+                <label>Monitored</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

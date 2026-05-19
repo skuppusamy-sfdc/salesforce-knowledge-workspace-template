@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Flow Footer</masterLabel>
+    <description>Reusable footer with Cancel and Save buttons for screen flows</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="showSave" type="Boolean" label="Show Save Button" description="Display the Save button on this footer"/>
+            <property name="showCancel" type="Boolean" label="Show Cancel Button" description="Display the Cancel button on this footer"/>
+            <property name="recordId" type="String" label="Record Id" />
+            <property name="source" type="String" label="Source" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

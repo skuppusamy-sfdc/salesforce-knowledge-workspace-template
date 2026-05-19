@@ -1,0 +1,60 @@
+{
+  "required" : [ "accId", "contractId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "accId" : {
+      "title" : "account recId",
+      "description" : "stores id of account selected by user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "actionType" : {
+      "title" : "Action Type",
+      "description" : "Type of action to perform (GET_DATA, GET_ALL_IDS, GET_SUMMARY, SUBMIT_SELECTION). Default: GET_DATA",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contractId" : {
+      "title" : "Contract recId",
+      "description" : "stores id of user selected Contract",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "filterCriteria" : {
+      "title" : "Filter Criteria",
+      "description" : "Optional filter criteria for records",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "MessagingSessionId" : {
+      "title" : "Messaging SessionId",
+      "description" : "stores the current session ",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "selectedRecordIds" : {
+      "title" : "Selected Record IDs",
+      "description" : "List of selected record IDs for submission",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "submissionDataJson" : {
+      "title" : "Submission Data JSON",
+      "description" : "JSON string containing submission metadata",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

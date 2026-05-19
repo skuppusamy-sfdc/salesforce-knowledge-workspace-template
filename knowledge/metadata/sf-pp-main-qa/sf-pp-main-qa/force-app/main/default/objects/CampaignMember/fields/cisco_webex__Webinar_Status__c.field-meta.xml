@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cisco_webex__Webinar_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Webinar Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>true</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Invited</fullName>
+                <default>false</default>
+                <label>Invited</label>
+            </value>
+            <value>
+                <fullName>Registered</fullName>
+                <default>false</default>
+                <label>Registered</label>
+            </value>
+            <value>
+                <fullName>Attended</fullName>
+                <default>false</default>
+                <label>Attended</label>
+            </value>
+            <value>
+                <fullName>No-Show</fullName>
+                <default>false</default>
+                <label>No-Show</label>
+            </value>
+            <value>
+                <fullName>Not Invited</fullName>
+                <default>false</default>
+                <label>Not Invited</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

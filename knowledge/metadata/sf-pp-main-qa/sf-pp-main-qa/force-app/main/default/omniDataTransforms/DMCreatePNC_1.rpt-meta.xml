@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DMCreatePNC</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC8152246865273426</globalKey>
+        <inputFieldName>Clinician</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:isNPPA true == var:EndDate &quot;&quot; == &amp;&amp; | | var:StartDate &quot;yyyy-MM-dd&quot; FORMATDATETIMEGMT 1 ADDYEAR | var:EndDate &quot;&quot; == | &quot;2099-01-01&quot; &quot;yyyy-MM-dd&quot; FORMATDATETIMEGMT | var:EndDate &quot;yyyy-MM-dd&quot; FORMATDATETIMEGMT IF IF</formulaConverted>
+        <formulaExpression>IF(isNPPA == true &amp;&amp; EndDate == &quot;&quot;, ADDYEAR(FORMATDATETIMEGMT(StartDate, &quot;yyyy-MM-dd&quot;), 1),IF(EndDate == &quot;&quot;,FORMATDATETIMEGMT(&quot;2099-01-01&quot;, &quot;yyyy-MM-dd&quot;),FORMATDATETIMEGMT(EndDate, &quot;yyyy-MM-dd&quot;)))</formulaExpression>
+        <formulaResultPath>endDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DMCreatePNCCustom2090</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC854755336721889</globalKey>
+        <inputFieldName>ContractId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContractId</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC9624195009653194</globalKey>
+        <inputFieldName>hpfList:payerNetworkId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HealthcarePayerNetworkId</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC8476274193678729</globalKey>
+        <inputFieldName>endDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>EndDate</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC031969193176061395</globalKey>
+        <inputFieldName>startDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>StartDate</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DMCreatePNC49519908884933594</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC9760114614558502</globalKey>
+        <inputFieldName>ProviderId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HealthcareProviderId</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC8883694779059829</globalKey>
+        <inputFieldName>hpfList:facilityTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Facility_Title__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:StartDate &quot;yyyy-MM-dd&quot; FORMATDATETIMEGMT</formulaConverted>
+        <formulaExpression>FORMATDATETIMEGMT(StartDate, &quot;yyyy-MM-dd&quot;)</formulaExpression>
+        <formulaResultPath>startDate</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DMCreatePNCCustom1499</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC5900170163117809</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DMCreatePNC23157241250009375</globalKey>
+        <inputFieldName>hpfList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DMCreatePNC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Healthcare_Practitioner_Facility__c</outputFieldName>
+        <outputObjectName>ProviderNetworkContract</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;Clinician&quot; : &quot;0037x000015UUyCAAW&quot;,
+  &quot;EndDate&quot; : &quot;&quot;,
+  &quot;ContractId&quot; : &quot;8007x00000dxvdJAAQ&quot;,
+  &quot;isNPPA&quot; : false,
+  &quot;hpfList&quot; : [ {
+    &quot;hpfStatus&quot; : &quot;Prospect&quot;,
+    &quot;effectiveDate&quot; : null,
+    &quot;payerNetworkId&quot; : &quot;0bf7x0000000C7dAAE&quot;,
+    &quot;contractingStatus&quot; : null,
+    &quot;Id&quot; : &quot;0bS7x0000003DVNEA2&quot;,
+    &quot;checked&quot; : true,
+    &quot;facilityTitle&quot; : &quot;EE Nurse Practitioner&quot;,
+    &quot;corporateEntityId&quot; : &quot;0017x00001Igg8RAAR&quot;,
+    &quot;accountName&quot; : &quot;BPC Hospital&quot;,
+    &quot;facilityId&quot; : &quot;0hs7x0000007K8iAAE&quot;,
+    &quot;Contracting_Corporate_Entity__c&quot; : &quot;0017x00001Igg8RAAR&quot;,
+    &quot;accountId&quot; : &quot;0017x000019oDCUAA2&quot;
+  } ],
+  &quot;Status&quot; : &quot;Draft&quot;,
+  &quot;ProviderId&quot; : &quot;0cm7x000001f6fBAAQ&quot;,
+  &quot;StartDate&quot; : &quot;2025-08-01&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DMCreatePNC_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

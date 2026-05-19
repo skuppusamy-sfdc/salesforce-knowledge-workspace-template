@@ -1,0 +1,76 @@
+[
+    {
+        "GroupedByMeasureStatus": true,
+        "LoopBlockIterationIndex": 1,
+        "LoopBlockIterationStatus": true,
+        "ResultSet": {
+            "Measure": "Director At Risk Stipend",
+            "Records": [
+                {
+                    "Id": "0s4am0000000EB7AAM",
+                    "Measure": "Director At Risk Stipend",
+                    "MeasureType": "per Month",
+                    "Rate": 100,
+                    "RateType": "Stipend",
+                    "RoleName": "EE Asst Hospital Med Program Director"
+                },
+                {
+                    "Id": "0s4am0000000EBFAA2",
+                    "Measure": "Director At Risk Stipend",
+                    "MeasureType": "per Month",
+                    "Rate": 100,
+                    "RateType": "Stipend",
+                    "RoleName": "Medical Director"
+                }
+            ]
+        }
+    },
+    {
+        "GroupedByMeasureStatus": true,
+        "LoopBlockIterationIndex": 2,
+        "LoopBlockIterationStatus": true,
+        "ResultSet": {
+            "Measure": "Director Quarterly Upside Stipend",
+            "Records": {
+                "Id": "0s4am0000000EBCAA2",
+                "Measure": "Director Quarterly Upside Stipend",
+                "MeasureType": "per Month",
+                "Rate": 100,
+                "RateType": "Stipend",
+                "RoleName": "EE Hospital Medicine Program Director"
+            }
+        }
+    },
+    {
+        "GroupedByMeasureStatus": true,
+        "LoopBlockIterationIndex": 3,
+        "LoopBlockIterationStatus": true,
+        "ResultSet": {
+            "Measure": "Director Annual Retention Stipend",
+            "Records": {
+                "Id": "0s4am0000000EBHAA2",
+                "Measure": "Director Annual Retention Stipend",
+                "MeasureType": "per Month",
+                "Rate": 100,
+                "RateType": "Stipend",
+                "RoleName": "Medical Director"
+            }
+        }
+    },
+    {
+        "GroupedByMeasureStatus": true,
+        "LoopBlockIterationIndex": 4,
+        "LoopBlockIterationStatus": true,
+        "ResultSet": {
+            "Measure": "Director Incentive",
+            "Records": {
+                "Id": "0s4am0000000EBIAA2",
+                "Measure": "Director Incentive",
+                "MeasureType": "per Month",
+                "Rate": 100,
+                "RateType": "Stipend",
+                "RoleName": "Medical Director"
+            }
+        }
+    }
+]

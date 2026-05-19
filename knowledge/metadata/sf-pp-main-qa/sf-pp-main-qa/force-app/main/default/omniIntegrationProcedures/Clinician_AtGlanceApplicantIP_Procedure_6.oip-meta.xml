@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;AccountId&quot;: &quot;0017x0000170atPAAQ&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>Clinician_AtGlanceApplicantIP</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>RA_Applicants</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : { },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;LB_Applicants&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>CheckUserProfile</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;ProfileConfig&quot;,
+  &quot;responseJSONNode&quot; : &quot;ProfileConfig&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;GetCommunityProfileConfig&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;ProfileName&quot;,
+    &quot;element&quot; : &quot;ProfileName&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTurboAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>DataRaptor Turbo Action</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>GetAccountId</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;QueryId&quot; : &quot;=QUERY(\&quot;Select AccountId from User where Id = &apos;{0}&apos;\&quot;,%UserId%)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;QueryId&quot;,
+  &quot;responseJSONNode&quot; : &quot;AccountId&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues5&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>ExternalUser</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;ISNOTBLANK(%ProfileConfig%)&quot;,
+  &quot;isIfElseBlock&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ConditionalBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>2.0</sequenceNumber>
+            <type>Conditional Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>IP_DataService</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;AccountId&quot; : &quot;=%AccountId%&quot;,
+    &quot;InvokeFor&quot; : &quot;Applicant&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : true,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;Applications&quot;,
+  &quot;responseJSONNode&quot; : &quot;Applications&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;integrationProcedureKey&quot; : &quot;Clinician_AtGlanceDataServiceIP&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;disableChainable&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;IntegrationProcedureAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>3.0</sequenceNumber>
+            <type>Integration Procedure Action</type>
+        </childElements>
+        <childElements>
+            <childElements>
+                <isActive>true</isActive>
+                <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+                <level>2.0</level>
+                <name>SV_Interview</name>
+                <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+                <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;OnlineInterviewFeedbackProvided&quot; : &quot;=FILTER(LIST(%Applications:OnlineInterview%),&apos;Status == \&quot;Feedback Provided\&quot;&apos;)&quot;,
+    &quot;OnlineInterviewScheduled&quot; : &quot;=FILTER(LIST(%Applications:OnlineInterview%),&apos;Status == \&quot;Scheduled\&quot;&apos;)&quot;,
+    &quot;OfflineInterviewFeedbackProvided&quot; : &quot;=FILTER(LIST(%Applications:OfflineInterview%),&apos;Status == \&quot;Feedback Provided\&quot;&apos;)&quot;,
+    &quot;OfflineInterviewScheduled&quot; : &quot;=FILTER(LIST(%Applications:OfflineInterview%),&apos;Status == \&quot;Scheduled\&quot;&apos;)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+                <sequenceNumber>1.0</sequenceNumber>
+                <type>Set Values</type>
+            </childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>LB_Applicants</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;loopList&quot; : &quot;Applications&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;loopOutput&quot; : {
+    &quot;ApplicationSubmitted&quot; : &quot;=IF((%Applications:StageName%==\&quot;Submission\&quot; || %Applications:StageName%==\&quot;Recruiter Screen\&quot; || %Applications:StageName%==\&quot;Awaiting Intake Form\&quot; || %Applications:StageName%==\&quot;Presenting\&quot; || %Applications:StageName% ==\&quot;Interview\&quot; || %Applications:StageName%==\&quot;Offer\&quot; || %Applications:StageName%==\&quot;Term Sheet\&quot; || %Applications:StageName%==\&quot;Contracting\&quot; || %Applications:StageName%==\&quot;Placement\&quot;),\&quot;Complete\&quot;,\&quot;In Progress\&quot;)&quot;,
+    &quot;RecruiterScreen&quot; : &quot;=IF((%Applications:StageName%==\&quot;Recruiter Screen\&quot; || %Applications:StageName%==\&quot;Awaiting Intake Form\&quot; || %Applications:StageName%==\&quot;Presenting\&quot; || %Applications:StageName% ==\&quot;Interview\&quot; || %Applications:StageName%==\&quot;Offer\&quot; || %Applications:StageName%==\&quot;Term Sheet\&quot; || %Applications:StageName%==\&quot;Contracting\&quot; || %Applications:StageName%==\&quot;Placement\&quot;),\&quot;Complete\&quot;,\&quot;In Progress\&quot;)&quot;,
+    &quot;ReferenceCheck&quot; : &quot;=IF(%Applications:ReferenceComplete%==\&quot;Initiated\&quot;,\&quot;Complete\&quot;,\&quot;In Progress\&quot;)&quot;,
+    &quot;CandidatePresentation&quot; : &quot;=IF((%Applications:StageName% ==\&quot;Interview\&quot; || %Applications:StageName%==\&quot;Offer\&quot; || %Applications:StageName%==\&quot;Term Sheet\&quot; || %Applications:StageName%==\&quot;Contracting\&quot; || %Applications:StageName%==\&quot;Placement\&quot;),\&quot;Complete\&quot;,IF(%Applications:StageName%==\&quot;Presenting\&quot;,\&quot;In Progress\&quot;,\&quot;Not Started\&quot;))&quot;,
+    &quot;VirtualInterview&quot; : &quot;=IF(ISNOTBLANK(%SV_Interview:OnlineInterviewFeedbackProvided%),\&quot;Complete\&quot;,IF(ISNOTBLANK(%SV_Interview:OnlineInterviewScheduled%),\&quot;In Progress\&quot;,\&quot;Not Started\&quot;))&quot;,
+    &quot;OnsiteInterview&quot; : &quot;=IF(ISNOTBLANK(%SV_Interview:OfflineInterviewFeedbackProvided%),\&quot;Complete\&quot;,IF(ISNOTBLANK(%SV_Interview:OfflineInterviewScheduled%),\&quot;In Progress\&quot;,\&quot;Not Started\&quot;))&quot;,
+    &quot;VerbalOffer&quot; : &quot;=IF((%Applications:StageName%==\&quot;Term Sheet\&quot; || %Applications:StageName%==\&quot;Contracting\&quot; || %Applications:StageName%==\&quot;Placement\&quot;),\&quot;Complete\&quot;,IF(%Applications:StageName%==\&quot;Offer\&quot;,\&quot;In Progress\&quot;,\&quot;Not Started\&quot;))&quot;,
+    &quot;TermSheet&quot; : &quot;=IF((%Applications:StageName%==\&quot;Contracting\&quot; || %Applications:StageName%==\&quot;Placement\&quot;),\&quot;Complete\&quot;,IF(%Applications:StageName%==\&quot;Term Sheet\&quot;,\&quot;In Progress\&quot;,\&quot;Not Started\&quot;))&quot;,
+    &quot;ContractSent&quot; : &quot;=IF(%SV_RecordCount:ContractSentDateCount% &gt; 0,\&quot;Complete\&quot;,\&quot;In Progress\&quot;)&quot;,
+    &quot;OfferExpired&quot; : &quot;=IF(%SV_RecordCount:ExpiredContractCount% &gt; 0,\&quot;Complete\&quot;,\&quot;In Progress\&quot;)&quot;,
+    &quot;Name&quot; : &quot;=%Applications:JobName%&quot;,
+    &quot;FacilityName&quot; : &quot;=%Applications:FacilityName%&quot;
+  },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;LoopBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>5.0</sequenceNumber>
+            <type>Loop Block</type>
+        </childElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>SV_RecordCount</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;elementValueMap&quot; : {
+    &quot;ExpiredContractCount&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() FROM Contract WHERE AccountId = &apos;{0}&apos; AND Status = &apos;{1}&apos;  AND RecordType.DeveloperName =&apos;{2}&apos; \&quot; , %AccountId%, \&quot;Expired\&quot;,\&quot;Clinician\&quot;)&quot;,
+    &quot;ContractSentDateCount&quot; : &quot;=COUNTQUERY( \&quot;SELECT COUNT() FROM Contract WHERE AccountId = &apos;{0}&apos; AND Sent_Date__c != null  AND RecordType.DeveloperName =&apos;{1}&apos; \&quot; , %AccountId%,\&quot;Clinician\&quot;)&quot;
+  },
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;SetValues6&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>4.0</sequenceNumber>
+            <type>Set Values</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlock</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : { },
+  &quot;remoteClass&quot; : &quot;OmniUtility&quot;,
+  &quot;remoteMethod&quot; : &quot;logError&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>Clinician_AtGlanceApplicantIP</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>AtGlanceApplicantIP</subType>
+    <type>Clinician</type>
+    <uniqueName>Clinician_AtGlanceApplicantIP_Procedure_6</uniqueName>
+    <versionNumber>6.0</versionNumber>
+    <webComponentKey>7058ad9c-70d7-d29c-af9f-4b8f3965ad7e</webComponentKey>
+</OmniIntegrationProcedure>

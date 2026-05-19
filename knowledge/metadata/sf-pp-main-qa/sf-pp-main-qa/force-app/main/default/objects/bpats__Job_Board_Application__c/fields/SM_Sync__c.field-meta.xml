@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SM_Sync__c</fullName>
+    <description>Formula used to determine whether the Job Board Applicant record should be synced with the Asymbl Search &amp; Match product.</description>
+    <formula>CASE(bpats__Status__c,
+&quot;Added to Job&quot;, 0,
+&quot;Rejected&quot;, 0,
+&quot;Discarded&quot;, 0,
+1) = 1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Whether the Job Board Applicant record should be synced with Asymbl Search &amp; Match</inlineHelpText>
+    <label>SM Sync</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

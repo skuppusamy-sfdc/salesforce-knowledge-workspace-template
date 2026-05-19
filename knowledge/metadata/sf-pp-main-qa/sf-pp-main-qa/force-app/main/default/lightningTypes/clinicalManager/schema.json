@@ -1,0 +1,5 @@
+{
+  "title" : "Clinical Manager Data",
+  "description" : "Clinical Manager Lightning Type for Agentforce",
+  "lightning:type" : "@apexClassType/c__ClinicalManagerController$ClinicalManagerList"
+}

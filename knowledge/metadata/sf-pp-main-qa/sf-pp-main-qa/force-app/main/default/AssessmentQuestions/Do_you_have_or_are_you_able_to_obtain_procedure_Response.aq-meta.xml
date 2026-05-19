@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Do you have or are you able to obtain procedure Response</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Response</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Do_you_have_or_are_you_able_to_obtain_procedure_Response</developerName>
+    <name>Do you have or are you able to obtain procedure Response</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>OBSTETRICAL/GYNECOLOGICAL PROCEDURES</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>&lt;span style=&quot;color:red;&quot;&gt;OBSTETRICAL/GYNECOLOGICAL PROCEDURES – INCLUDING:&lt;/span&gt;
+&lt;ul class=&quot;slds-list_dotted&quot;&gt;
+&lt;li&gt;Performance of pelvic examination&lt;/li&gt;
+&lt;li&gt;Evaluation and management of pelvic pain&lt;/li&gt;
+&lt;li&gt;Evaluation and management of sexually transmitted   
+diseases&lt;/li&gt;
+&lt;li&gt;Evaluation and management of early   
+pregnancy/minor vaginal bleed/discharge&lt;/li&gt;
+&lt;li&gt;Incision and drainage of Bartolin cyst/placement of  Word catheter&lt;/li&gt;
+&lt;li&gt;Evaluation and management of minor vaginal   
+bleeding/discharge&lt;/li&gt;
+&lt;/ul&gt;</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>OBSTETRICAL_GYNECOLOGICAL_PROCEDURES</developerName>
+    <name>OBSTETRICAL/GYNECOLOGICAL PROCEDURES</name>
+    <questionCategory>Physician</questionCategory>
+</AssessmentQuestion>

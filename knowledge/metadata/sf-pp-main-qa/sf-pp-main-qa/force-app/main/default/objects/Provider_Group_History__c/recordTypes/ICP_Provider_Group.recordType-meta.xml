@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICP_Provider_Group</fullName>
+    <active>true</active>
+    <label>ICP Provider Group</label>
+    <picklistValues>
+        <picklist>Current_or_Previous__c</picklist>
+        <values>
+            <fullName>Current Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previous Group</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group_Type__c</picklist>
+        <values>
+            <fullName>Employed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Satisfaction__c</picklist>
+        <values>
+            <fullName>0%2E Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2E Very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E Somewhat dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2E Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%2E Somewhat satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E Very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

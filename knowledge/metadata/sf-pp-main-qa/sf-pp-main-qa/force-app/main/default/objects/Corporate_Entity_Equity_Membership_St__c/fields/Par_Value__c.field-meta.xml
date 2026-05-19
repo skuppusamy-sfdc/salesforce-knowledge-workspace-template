@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Par_Value__c</fullName>
+    <label>Par Value</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>$0.00</fullName>
+                <default>false</default>
+                <label>$0.00</label>
+            </value>
+            <value>
+                <fullName>$0.01</fullName>
+                <default>false</default>
+                <label>$0.01</label>
+            </value>
+            <value>
+                <fullName>$1.00</fullName>
+                <default>false</default>
+                <label>$1.00</label>
+            </value>
+            <value>
+                <fullName>$10.00</fullName>
+                <default>false</default>
+                <label>$10.00</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

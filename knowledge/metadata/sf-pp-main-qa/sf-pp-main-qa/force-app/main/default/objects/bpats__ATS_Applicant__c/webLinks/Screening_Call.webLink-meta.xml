@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screening_Call</fullName>
+    <availability>online</availability>
+    <description>This button will launch the omniscript used for Applicant Screening Call</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Screening Call</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/page/omnistudio/omniscript?omniscript__type=Applicant&amp;omniscript__subType=ScreeningCall&amp;omniscript__language=English&amp;omniscript__theme=lightning&amp;omniscript__tabIcon=custom:custom18&amp;omniscript__tabLabel=Applicant_ScreeningCall&amp;c__ContextId={!CASESAFEID( bpats__ATS_Applicant__c.Id)}</url>
+</WebLink>

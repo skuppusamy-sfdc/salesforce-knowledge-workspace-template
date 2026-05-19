@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PE_Down_Select</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.Name = &quot;Patient Engagement Opportunity&quot; &amp;&amp;
+ISPICKVAL(StageName, &quot;Down Select&quot;) &amp;&amp;
+(ISNULL(Expected_Sign_Date__c) ||
+ISNULL( Target_Contract_Start_Date__c))</errorConditionFormula>
+    <errorMessage>These fields are required: Expected Sign Date and Target Contract Start Date.</errorMessage>
+</ValidationRule>

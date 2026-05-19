@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Core_Clsd_No_Change_Lost</fullName>
+    <active>true</active>
+    <description>Verifies required fields are populated when Stage is Closed - No Change, Closed Lost or Closed - No Change/Lost for Core Services.</description>
+    <errorConditionFormula>NOT(RecordType.Name = &quot;Patient Engagement Opportunity&quot;)&amp;&amp;
+(ISPICKVAL(StageName, &quot;Closed - No Change&quot;)||
+ ISPICKVAL(StageName, &quot;Closed Lost&quot;)||
+ ISPICKVAL(StageName, &quot;Closed - No Change/Lost&quot;))&amp;&amp;
+ (ISNULL(CloseDate)||
+ ISNULL(Who_Won__c)||
+ ISBLANK(Other_Detail__c) ||
+ ISPICKVAL(Close_Reason__c, &quot;&quot;)||
+ ISNULL(Lost_Date__c))</errorConditionFormula>
+    <errorMessage>Required Fields: Lost Date, Close Date, Close Reason, Closed Stage Detail and Who Won.</errorMessage>
+</ValidationRule>

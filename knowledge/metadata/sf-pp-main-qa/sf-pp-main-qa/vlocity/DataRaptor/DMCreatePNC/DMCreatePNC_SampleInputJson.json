@@ -1,0 +1,25 @@
+{
+    "Clinician": "0037x000015UUyCAAW",
+    "ContractId": "8007x00000dxvdJAAQ",
+    "EndDate": "",
+    "ProviderId": "0cm7x000001f6fBAAQ",
+    "StartDate": "2025-08-01",
+    "Status": "Draft",
+    "hpfList": [
+        {
+            "Contracting_Corporate_Entity__c": "0017x00001Igg8RAAR",
+            "Id": "0bS7x0000003DVNEA2",
+            "accountId": "0017x000019oDCUAA2",
+            "accountName": "BPC Hospital",
+            "checked": true,
+            "contractingStatus": null,
+            "corporateEntityId": "0017x00001Igg8RAAR",
+            "effectiveDate": null,
+            "facilityId": "0hs7x0000007K8iAAE",
+            "facilityTitle": "EE Nurse Practitioner",
+            "hpfStatus": "Prospect",
+            "payerNetworkId": "0bf7x0000000C7dAAE"
+        }
+    ],
+    "isNPPA": false
+}

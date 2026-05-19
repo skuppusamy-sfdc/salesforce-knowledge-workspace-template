@@ -1,0 +1,22 @@
+{
+    "pcaRecords": {
+        "CPA_ContractId": "Text",
+        "PCA_FacilityTitle": {
+            "Id": "Text",
+            "Name": "Text"
+        },
+        "PCA_Id": "Text",
+        "PCA_Name": "Text",
+        "PCA_Shift": {
+            "FullName": "Text",
+            "Id": "Text",
+            "Name": "Text"
+        },
+        "ratePayCodes": {
+            "RPC_Name": "Text"
+        }
+    },
+    "ratePayCodes": {
+        "RPC_Name": "Text"
+    }
+}

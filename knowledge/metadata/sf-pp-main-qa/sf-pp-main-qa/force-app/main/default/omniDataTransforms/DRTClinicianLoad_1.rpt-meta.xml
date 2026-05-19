@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ClinicianId&quot; : &quot;&quot;,
+  &quot;STP_ClinicianInfo&quot; : {
+    &quot;BLK_Notes&quot; : {
+      &quot;TXA_Comments&quot; : &quot;TEXT&quot;
+    },
+    &quot;BLK_ProfessionalStatus&quot; : {
+      &quot;SL_ProfessionalStatus&quot; : &quot;Resident&quot;,
+      &quot;DT_EndDate&quot; : &quot;2025-06-13&quot;,
+      &quot;TXT_Program&quot; : &quot;2&quot;
+    },
+    &quot;BLK_ClinicianInformation&quot; : {
+      &quot;SL_PracticingPreference&quot; : &quot;HM&quot;,
+      &quot;TA_PrimarySpecialty-Block&quot; : {
+        &quot;Name&quot; : &quot;TEST KL&quot;,
+        &quot;TA_PrimarySpecialty&quot; : &quot;TEST KL&quot;,
+        &quot;RecordId&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+        &quot;Id&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+        &quot;PrimarySpecId&quot; : null
+      },
+      &quot;RAD_BoardCeritified&quot; : &quot;Yes&quot;,
+      &quot;TA_Taxonomy-Block&quot; : {
+        &quot;Name&quot; : &quot;Testing 1&quot;,
+        &quot;RecordId&quot; : &quot;0bc7x0000000CUDAA2&quot;,
+        &quot;Id&quot; : &quot;0bc7x0000000CUDAA2&quot;,
+        &quot;TA_Taxonomy&quot; : &quot;Testing 1&quot;
+      },
+      &quot;TA_PracticingSpecialty-Block&quot; : {
+        &quot;Name&quot; : &quot;TEST KL&quot;,
+        &quot;RecordId&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+        &quot;Id&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+        &quot;PracSpecId&quot; : null,
+        &quot;TA_PracticingSpecialty&quot; : &quot;TEST KL&quot;
+      },
+      &quot;FullName&quot; : &quot;Harsh G Sr.&quot;,
+      &quot;SL_ProfessionalTitle&quot; : &quot;CRNA&quot;,
+      &quot;MUL_MedicalLicenseState&quot; : &quot;CT;HI;KS&quot;
+    },
+    &quot;BLK_SponsorshipDetail&quot; : {
+      &quot;SEL_VisaType&quot; : &quot;Birth Abroad Cert&quot;,
+      &quot;RAD_SponsorshipNeed&quot; : &quot;Yes&quot;
+    }
+  },
+  &quot;ClinicianSpecialty&quot; : [ {
+    &quot;Name&quot; : &quot;TEST KL&quot;,
+    &quot;TA_PrimarySpecialty&quot; : &quot;TEST KL&quot;,
+    &quot;RecordId&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+    &quot;PrimarySpecId&quot; : null,
+    &quot;IsPrimary&quot; : true,
+    &quot;SubSpecialty&quot; : false
+  }, {
+    &quot;Name&quot; : &quot;TEST KL&quot;,
+    &quot;RecordId&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+    &quot;Id&quot; : &quot;0bc7x0000000CXRAA2&quot;,
+    &quot;PracSpecId&quot; : null,
+    &quot;IsPrimary&quot; : false,
+    &quot;TA_PracticingSpecialty&quot; : &quot;TEST KL&quot;,
+    &quot;SubSpecialty&quot; : true
+  } ]
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;Clinician&quot; : {
+    &quot;ProfessionalTitle&quot; : &quot;Text&quot;,
+    &quot;ClinicianId&quot; : &quot;Text&quot;
+  },
+  &quot;ClinicianSpecialty&quot; : [ {
+    &quot;PractitionerId&quot; : &quot;Text&quot;,
+    &quot;SpecialtyId&quot; : &quot;Text&quot;,
+    &quot;SpecialtyName&quot; : &quot;Text&quot;,
+    &quot;SubSpecialty&quot; : &quot;Text&quot;,
+    &quot;PrimaryBoardSpecialty&quot; : &quot;Text&quot;
+  } ],
+  &quot;ClinicianMedicalLicense&quot; : {
+    &quot;clinicianId&quot; : &quot;Text&quot;,
+    &quot;medicalLicenseList&quot; : &quot;Text&quot;,
+    &quot;jurisdictionType&quot; : &quot;Text&quot;,
+    &quot;licenseName&quot; : &quot;Text&quot;,
+    &quot;status&quot; : &quot;Text&quot;,
+    &quot;type&quot; : &quot;Text&quot;
+  },
+  &quot;ClinicianTaxonomy&quot; : {
+    &quot;PractitionerId&quot; : &quot;Text&quot;,
+    &quot;TaxonomyId&quot; : &quot;&quot;,
+    &quot;TaxonomyName&quot; : &quot;&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRTClinicianLoad</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom7752</globalKey>
+        <inputFieldName>ClinicianSpecialty:SubSpecialty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianSpecialty:SubSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom4315</globalKey>
+        <inputFieldName>ClinicianSpecialty:IsPrimary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianSpecialty:PrimaryBoardSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom855</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_ProfessionalStatus:SL_ProfessionalStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:ProfessionalStatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom4890</globalKey>
+        <inputFieldName>ClinicianId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:ClinicianId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom3751</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianSpecialty:PractitionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom9172</globalKey>
+        <inputFieldName>ClinicianTaxonomy:PracTaxonomyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianTaxonomy:HCPTaxonomyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom7727</globalKey>
+        <inputFieldName>ClinicianSpecialty:TA_PracticingSpecialty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianSpecialty:SpecialtyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom4942</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianBoardCertification:clinicianId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom9331</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_ProfessionalStatus:TXT_Program</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianEducation:Program</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom9447</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianVisa:ClinicianId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom8567</globalKey>
+        <inputFieldName>ClinicianTaxonomy:RecordId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianTaxonomy:TaxonomyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom1973</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianMedicalLicense:clinicianId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom4219</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ClinicianSpecialty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom5073</globalKey>
+        <inputFieldName>ClinicianTaxonomy:TA_Taxonomy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianTaxonomy:TaxonomyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom2675</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_Notes:TXA_Comments</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:Comments</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom3654</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_ProfessionalStatus:DT_EndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianEducation:EndDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom6992</globalKey>
+        <inputFieldName>MedicalLicenseList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianMedicalLicense:medicalLicenseList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom8326</globalKey>
+        <inputFieldName>ClinicianSpecialty:RecordId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianSpecialty:SpecialtyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom8887</globalKey>
+        <inputFieldName>ClinicianVisaType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:VisaType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom4235</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianTaxonomy:PractitionerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:STP_ClinicianInfo:BLK_ClinicianInformation:MUL_MedicalLicenseState &quot;;&quot; SPLIT</formulaConverted>
+        <formulaExpression>SPLIT(%STP_ClinicianInfo:BLK_ClinicianInformation:MUL_MedicalLicenseState%,&quot;;&quot;)</formulaExpression>
+        <formulaResultPath>MedicalLicenseList</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTClinicianLoadCustom1760</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom1203</globalKey>
+        <inputFieldName>LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianMedicalLicense:LastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom9451</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_ClinicianInformation:SL_PracticingPreference</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:PracticingPreference</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom986</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_ClinicianInformation:SL_ProfessionalTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:ProfessionalTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom3913</globalKey>
+        <inputFieldName>ClinicianTaxonomy:primaryTaxonomy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianTaxonomy:primaryTaxonomy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:STP_ClinicianInfo:BLK_SponsorshipDetail:RAD_SponsorshipNeed &quot;No&quot; == | var:STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType ISBLANK || &quot;&quot; var:STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType IF</formulaConverted>
+        <formulaExpression>IF(%STP_ClinicianInfo:BLK_SponsorshipDetail:RAD_SponsorshipNeed% == &quot;No&quot; || ISBLANK(%STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType%),&quot;&quot;,%STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType%)</formulaExpression>
+        <formulaResultPath>ClinicianVisaType</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTClinicianLoadCustom4754</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom5463</globalKey>
+        <inputFieldName>ClinicianSponsorshipNeed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clinician:SponsorshipNeed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom7930</globalKey>
+        <inputFieldName>STP_ClinicianInfo:BLK_ClinicianInformation:RAD_BoardCeritified</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianBoardCertification:status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom5449</globalKey>
+        <inputFieldName>ClinicianContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianEducation:ClinicianId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTClinicianLoadCustom1106</globalKey>
+        <inputFieldName>ClinicianSpecialty:TA_PrimarySpecialty</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClinicianSpecialty:SpecialtyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:STP_ClinicianInfo:BLK_SponsorshipDetail:RAD_SponsorshipNeed &quot;No&quot; == | var:STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType ISBLANK || &quot;No&quot; &quot;Yes&quot; IF</formulaConverted>
+        <formulaExpression>IF(%STP_ClinicianInfo:BLK_SponsorshipDetail:RAD_SponsorshipNeed% == &quot;No&quot; || ISBLANK(%STP_ClinicianInfo:BLK_SponsorshipDetail:SEL_VisaType%),&quot;No&quot;,&quot;Yes&quot;)</formulaExpression>
+        <formulaResultPath>ClinicianSponsorshipNeed</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTClinicianLoadCustom5951</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTClinicianLoad</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;STP_ClinicianInfo&quot; : {
+    &quot;BLK_Notes&quot; : {
+      &quot;TXA_Comments&quot; : &quot;this is np&quot;
+    },
+    &quot;BLK_ProfessionalStatus&quot; : {
+      &quot;SL_ProfessionalStatus&quot; : &quot;Practicing&quot;,
+      &quot;DT_EndDate&quot; : null,
+      &quot;TXT_Program&quot; : null
+    },
+    &quot;BLK_ClinicianInformation&quot; : {
+      &quot;SL_PracticingPreference&quot; : &quot;HM&quot;,
+      &quot;TA_PrimarySpecialty-Block&quot; : {
+        &quot;TA_PrimarySpecialty&quot; : &quot;Anesthesiology&quot;,
+        &quot;PrimarySpecId&quot; : &quot;0bOgP0000000vuLUAQ&quot;,
+        &quot;CareSpecialtyId&quot; : &quot;0bcgP000000020EQAQ&quot;
+      },
+      &quot;RAD_BoardCeritified&quot; : &quot;Certified&quot;,
+      &quot;TA_Taxonomy-Block&quot; : {
+        &quot;primaryTaxonomy&quot; : &quot;true&quot;,
+        &quot;RecordId&quot; : &quot;0bKgP000000011zUAA&quot;,
+        &quot;TA_Taxonomy&quot; : &quot;Allopathic &amp; Osteopathic Physicians/General Practice&quot;,
+        &quot;Description&quot; : &quot;Allopathic &amp; Osteopathic Physicians/General Practice&quot;
+      },
+      &quot;TA_PracticingSpecialty-Block&quot; : {
+        &quot;PracSpecId&quot; : &quot;0bOgP0000000vuMUAQ&quot;,
+        &quot;TA_PracticingSpecialty&quot; : &quot;Hospitalist&quot;,
+        &quot;CareSpecialtyId&quot; : &quot;0bcgP000000020RQAQ&quot;
+      },
+      &quot;FullName&quot; : &quot;Rahul Adwani&quot;,
+      &quot;SL_ProfessionalTitle&quot; : &quot;NP&quot;,
+      &quot;MUL_MedicalLicenseState&quot; : null
+    },
+    &quot;BLK_SponsorshipDetail&quot; : {
+      &quot;SEL_VisaType&quot; : null,
+      &quot;RAD_SponsorshipNeed&quot; : &quot;No&quot;
+    }
+  },
+  &quot;LastName&quot; : &quot;&quot;,
+  &quot;ClinicianTaxonomy&quot; : {
+    &quot;primaryTaxonomy&quot; : &quot;true&quot;,
+    &quot;RecordId&quot; : &quot;0bKgP000000011zUAA&quot;,
+    &quot;TA_Taxonomy&quot; : &quot;Allopathic &amp; Osteopathic Physicians/General Practice&quot;,
+    &quot;Description&quot; : &quot;Allopathic &amp; Osteopathic Physicians/General Practice&quot;
+  },
+  &quot;ClinicianContactId&quot; : &quot;003gP0000092pu5QAA&quot;,
+  &quot;ClinicianId&quot; : &quot;001gP000006GQJFQA4&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTClinicianLoad_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

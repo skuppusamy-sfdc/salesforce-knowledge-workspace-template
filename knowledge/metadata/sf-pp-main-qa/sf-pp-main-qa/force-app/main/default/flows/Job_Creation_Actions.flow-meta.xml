@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Decision_1</name>
+        <label>Is Post Externally checked?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Decision_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.bpats__Post_Externally__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Status_to_Open_Posted</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Carries over field values from the Facility to the job record</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>frm_ClientSegment</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+  UPPER( TRIM( {!$Record.Facility_Name__r.Client_Service_Tier__c} ) ),
+  &quot;Local/Rural&quot;, &quot;Local/Rural&quot;,
+  &quot;Regional&quot;,    &quot;Regional&quot;,
+  &quot;Strategic&quot;,    &quot;Strategic&quot;,
+  null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>frm_Is_Leadership</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK(TEXT({!$Record.Job_Title_Picklist__c})), &quot;&quot;,
+CASE(TEXT({!$Record.Job_Title_Picklist__c}), &quot;Medical Director&quot;, &quot;YES&quot;, &quot;Assistant Medical Director&quot;, &quot;YES&quot;, &quot;Lead Advanced Practice Provider&quot;, &quot;YES&quot;, &quot;NO&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Checks the &quot;Client Startup Date&quot; field on the facility, and then returns Yes, if started within the last 365 days, and No if not.</description>
+        <name>frm_Is_Startup</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    AND(
+        NOT(ISBLANK({!$Record.Facility_Name__r.Client_Startup_Date__c})),
+        {!$Record.Facility_Name__r.Client_Startup_Date__c} &gt;= (TODAY() - 365),
+        {!$Record.Facility_Name__r.Client_Startup_Date__c} &lt;= TODAY()
+    ),
+    &quot;YES&quot;,
+    &quot;NO&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>frm_JobName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.bpats__Job_Number__c} + &quot; - &quot; + TEXT({!$Record.Job_Title_Picklist__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Checks the Parent Service Line on the Facility to populate the field on the Job</description>
+        <name>frm_ServiceLine</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+  UPPER( TRIM( {!$Record.Facility_Name__r.Service_Line__r.Parent__r.API_Name__c} ) ),
+  &quot;CCARE&quot;, &quot;CCARE&quot;,
+  &quot;EM&quot;,    &quot;EM&quot;,
+  &quot;HM&quot;,    &quot;HM&quot;,
+  &quot;UC&quot;,    &quot;UC&quot;,
+  &quot;VH&quot;,    &quot;VH&quot;,
+  &quot;Core&quot;,  &quot;Other&quot;,
+  &quot;Non Core&quot;, &quot;Other&quot;,
+  &quot;Other&quot;   /* default / anything else (incl. blank) */
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Type of Job list as text</description>
+        <name>frm_txtTypeOfJob</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Job_Title_Picklist__c})</expression>
+    </formulas>
+    <interviewLabel>Job Creation Actions {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Job Creation Actions</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Job_Fields</name>
+        <label>Set Job Fields</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Decision_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Facility_Name__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Client_Segment__c</field>
+            <value>
+                <elementReference>frm_ClientSegment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__City__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingCity</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__CountryCode__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingCountryCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__GeocodeAccuracy__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingGeocodeAccuracy</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__Latitude__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingLatitude</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__Longitude__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingLongitude</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__PostalCode__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingPostalCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__StateCode__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingStateCode</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Facility_Address__Street__s</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.BillingStreet</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Leadership_Position__c</field>
+            <value>
+                <elementReference>frm_Is_Leadership</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>frm_JobName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Service_Line_Parent__c</field>
+            <value>
+                <elementReference>frm_ServiceLine</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Start_Up_Designation__c</field>
+            <value>
+                <elementReference>frm_Is_Startup</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>bpats__Account__c</field>
+            <value>
+                <elementReference>$Record.Facility_Name__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>bpats__Job_Title__c</field>
+            <value>
+                <elementReference>frm_txtTypeOfJob</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Status_to_Open_Posted</name>
+        <label>Set Status to Open/Posted</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>bpats__Status__c</field>
+            <value>
+                <stringValue>Open/Posted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Job_Fields</targetReference>
+        </connector>
+        <object>bpats__Job__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

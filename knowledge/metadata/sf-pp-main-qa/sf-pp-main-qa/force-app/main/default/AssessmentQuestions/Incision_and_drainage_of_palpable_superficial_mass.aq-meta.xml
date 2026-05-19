@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Incision and drainage of palpable superficial mass</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Incision and drainage of palpable superficial mass</questionText>
+        <responseValues>A
+B</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Incision_and_drainage_of_palpable_superficial_mass</developerName>
+    <name>Incision and drainage of palpable superficial mass</name>
+    <questionCategory>NP/PA</questionCategory>
+</AssessmentQuestion>
